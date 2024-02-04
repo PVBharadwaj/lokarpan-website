@@ -16,7 +16,7 @@
     "react-fast-marquee": "1.6.2",
     "react-icons": "latest",
     "react-router-dom": "latest",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "latest",
     "react-stickynode": "4.1.1",
     "reactjs-popup": "2.0.6",
