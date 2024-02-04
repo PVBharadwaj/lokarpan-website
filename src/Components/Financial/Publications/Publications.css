@@ -85,6 +85,7 @@
 
   .row {
     flex-direction: column;
+    gap: 20px;
   }
   .responsive-data-grid .MuiDataGrid-colCell[data-field="description"] {
     width: 150px !important; 
