@@ -1,0 +1,56 @@
+.SecNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  background-color: white;
+  color: #424242;
+  padding: 0px 123px;
+}
+
+.SecNavbar .dropdown-content {
+  top: 132px;
+}
+
+.apply-btn {
+  height: 40px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-left: 40px;
+}
+
+.mobile-view-dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 805px) {
+  .SecNavbar {
+    padding: 10px 30px;
+  }
+
+  .mobile-view-dropdown {
+    display: block;
+  }
+
+  .SecNavbar > .navbar-links {
+    display: none;
+    transition: max-height 2s ease;
+    max-height: 0px;
+  }
+
+  .SecNavbar > .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    max-height: 100vh;
+    top: 132px;
+    left: 0px;
+    right: 0px;
+  }
+}

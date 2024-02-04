@@ -1,0 +1,36 @@
+.fellows-page {
+  padding: 0px 123px;
+}
+
+.year-pointer{
+  position: absolute;
+  right: 50px;
+  top: 330px;
+}
+
+.year-pointer-index{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.year-pointer-btn{
+  width: 60px;
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
+  border: solid 1px #dedede;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 805px) {
+  .fellows-page {
+    padding: 10px 30px;
+  }
+
+  .year-pointer, .year-pointer-index{
+    display: none;
+  }
+}

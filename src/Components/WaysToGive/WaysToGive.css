@@ -1,0 +1,94 @@
+.ways-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 123px 200px;
+}
+
+.ways-top {
+  width: 100%;
+  height: 512px;
+  background-image: url(https://www.colorhexa.com/ebebeb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+}
+
+
+.give-card {
+  display: flex;
+  padding: 50px 0px;
+}
+
+.give-card img {
+  width: 480px;
+  height: 310px;
+}
+
+.give-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.give-card-text h1 {
+  font-size: 28px;
+  padding: 15px;
+}
+.give-card-text p {
+  font-size: 16px;
+  padding: 15px;
+}
+
+.give-card-text a {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 805px) {
+  .ways-page {
+    padding: 10px 30px;
+  }
+
+  .ways-top h1 {
+    font-size: 40px;
+  }
+
+  .give-card {
+    flex-direction: column;
+  }
+
+  .give-card-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .give-card img {
+    width: 100%;
+    height: 310px;
+  }
+
+  .give-card-text {
+    padding: 0px;
+  }
+
+  .give-card-text h1 {
+    font-size: 36px;
+    padding: 15px 0px;
+  }
+  .give-card-text p {
+    font-size: 16px;
+    padding: 15px 0px;
+  }
+
+  .give-card-text a {
+    font-size: 16px;
+    padding: 0px;
+  }
+}

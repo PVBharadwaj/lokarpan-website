@@ -1,0 +1,110 @@
+.financial-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 123px;
+}
+
+.fin-desp-head {
+  margin: 90px;
+}
+
+.fin-desp-head h1 {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.fin-desp-head p {
+  font-size: 24px;
+}
+
+.fin-annual-repo {
+  margin: 80px;
+}
+
+.report-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin: 80px 40px;
+}
+
+.add-repo .fin-title {
+  text-align: left;
+}
+
+.archives {
+  padding: 20px 40px 60px;
+}
+
+.add-repo-text {
+  padding: 15px 0px;
+  text-align: left;
+}
+
+.add-repo-text h3 {
+  font-size: 24px;
+}
+
+.fin-title {
+  font-size: 36px;
+  /* margin: 30px; */
+}
+
+.desp-cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.add-repo-text {
+  grid-column: span 4;
+}
+
+.desp-cards-col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.file {
+  padding: 5px 20px;
+}
+
+@media only screen and (max-width: 805px) {
+  .financial-page {
+    padding: 10px 30px;
+  }
+
+  .fin-desp-head {
+    margin: 50px 0px;
+  }
+
+  .fin-desp-head h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 35px 0px;
+  }
+
+  .fin-desp-head p {
+    font-size: 16px;
+  }
+
+  .fin-annual-repo {
+    margin: 0px;
+  }
+
+  .add-repo .fin-title {
+    text-align: center;
+  }
+
+  .add-repo-text {
+    grid-column: span 12;
+    text-align: center;
+  }
+}

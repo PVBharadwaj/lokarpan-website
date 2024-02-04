@@ -1,0 +1,179 @@
+.app-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 123px;
+}
+
+.app-title {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.application-img {
+  width: 100%;
+  height: 400px;
+}
+
+.title2 {
+  font-size: 64px;
+}
+
+.title3 {
+  font-size: 48px;
+}
+
+.app-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 100px;
+}
+
+.browse {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+
+.browse-text {
+  width: 480px;
+  height: auto;
+  padding: 30px;
+  text-align: left;
+}
+
+.browse-text button {
+  margin: 40px 0px;
+}
+
+.browse-img {
+  width: 515px;
+  height: 352px;
+}
+
+.application-para1 {
+  font-size: 28px;
+  height: auto;
+  padding: 30px 0px 80px;
+}
+
+.application-para2 {
+  font-size: 24px;
+  height: auto;
+  padding: 30px 0px 80px;
+}
+
+.app-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.plan {
+  margin-top: 50px;
+  width: 100%;
+}
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* margin: 10px 20px; */
+  padding: 20px;
+  gap: 24px;
+  border: solid 1px #e2e4e5;
+  border-radius: 10px;
+  /* width: 245px; */
+}
+
+.plan-list p,
+.plan-list h1 {
+  margin: 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.blue {
+  color: #2478dc;
+}
+
+.red {
+  color: #c63c55;
+}
+
+.green {
+  color: #158c21;
+}
+
+.app-card-icon {
+  margin-right: 3px;
+}
+
+.choose-plan {
+  display: none;
+}
+
+@media only screen and (max-width: 805px) {
+  .app-page {
+    padding: 10px 30px;
+  }
+
+  .app-div {
+    padding: 10px 0px;
+  }
+
+  .title2 {
+    font-size: 36px;
+  }
+
+  .title3 {
+    font-size: 36px;
+  }
+
+  .application-img {
+    width: 390px;
+    height: 400px;
+  }
+  .application-para1 {
+    font-size: 16px;
+    padding: 16px 0px 45px;
+  }
+
+  .application-para2 {
+    font-size: 14px;
+    padding: 10px 0px 42px;
+  }
+
+  .choose-plan {
+    display: block;
+  }
+
+  .plan-list {
+    margin: 10px 0px;
+    width: 100%;
+  }
+
+  .browse {
+    flex-direction: column-reverse;
+    margin: 30px 0px;
+  }
+
+  .browse-text {
+    width: 100%;
+    padding: 30px 0px;
+    text-align: left;
+  }
+
+  .browse-text button {
+    margin: 55px 0px 25px;
+  }
+
+  .browse-img {
+    width: 390px;
+    height: 230px;
+  }
+}

@@ -1,0 +1,127 @@
+.faqs-container {
+  width: 75%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.donate-upper-section {
+  width: 90%;
+  height: 120px;
+  gap: 20px;
+  padding: 20px;
+}
+.hor-line {
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  margin: 20px 0;
+}
+.donate-faq-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.each-question {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 120px;
+  padding: 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+.question-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqs-para1 {
+  font-family: "Inter" sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.faqs-head1 {
+  font-family: "Inter" sans-serif;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.faqs-para2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.space {
+  margin-bottom: 10px;
+}
+.questions-container {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.question {
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  margin: 0;
+  color: black;
+  position: relative;
+  font-size: 15px;
+}
+
+.question::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  border: 2px solid black;
+  display: block;
+  border-left: none;
+  border-top: none;
+  margin: 0 6px 4px 10px;
+  cursor: pointer;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+  opacity: 0.5;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+.ans-sec {
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.8s ease;
+  padding: 0 20px;
+  opacity: 0;
+}
+.ans-sec > * {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.input {
+  display: none;
+}
+
+.input:checked + label + div {
+  max-height: 200px;
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+}
+.input:checked + label + div > * {
+  opacity: 1;
+}
+
+.input:checked + label::after {
+  transform: translate(0px, 3px) rotate(-135deg);
+}

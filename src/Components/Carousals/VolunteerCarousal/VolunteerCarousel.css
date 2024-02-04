@@ -1,0 +1,172 @@
+.volunteer-carousel-main {
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 50px;
+  padding-bottom: 200px;
+}
+
+.remove-inline-block {
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.carousel-container {
+  grid-column: span 12;
+  grid-row: span 12;
+}
+
+.carousel-container1 {
+  grid-column: span 5;
+  grid-row: span 5;
+  height: 150px;
+}
+.carousel-container2 {
+  grid-column: span 7;
+  grid-row: span 12;
+}
+
+.slick-dots li{
+  margin: 0 10px;
+}
+
+.slick-track {
+  width: 100%;
+}
+
+.carousel-container3 {
+  grid-column: span 5;
+  grid-row: span 1;
+  grid-row-start: 7;
+  align-items: left;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex !important;
+  flex-direction: column;
+  text-align: left;
+}
+
+.carousel-inner * {
+  padding: 10px;
+}
+
+.img-carousel {
+  width: 50px !important;
+  height: 50px;
+  border: none;
+  display: flex !important;
+  flex-direction: column;
+  opacity: 0.6;
+  text-align: center;
+  align-items: center;
+}
+
+.center {
+  opacity: 1;
+}
+
+.main-img {
+  height: 650px;
+  width: 535px;
+}
+
+.main-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-carousel img {
+  width: 25px;
+  height: 25px;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots li {
+  padding: 20px;
+}
+
+.custom-arrow {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  bottom: -50px;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 1;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.arrow-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav-icon {
+  border: solid 1px black;
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 805px) {
+  .volunteer-carousel-main {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }  
+
+  .remove-inline-block {
+    height: 800px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
+  
+  .carousel-container {
+    grid-column: span 6;
+    grid-row: span 6;
+  }
+
+  .carousel-container > div {
+    height: 100%;
+  }
+  
+  .carousel-container1 {
+    grid-column: span 6;
+    grid-row: span 3;
+    height: 50px;
+  }
+  .carousel-container2 {
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+
+  .prev-arrow {
+    bottom: 43% !important; 
+    left: 43% !important;
+  }
+
+  .next-arrow {
+    bottom: 43% !important; 
+    left:55% !important;
+  }
+
+  .main-img {
+    height: 650px;
+    width: 100%;
+  }
+  
+  
+}

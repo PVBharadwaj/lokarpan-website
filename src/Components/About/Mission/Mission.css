@@ -1,0 +1,131 @@
+.mission-section-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mission-1st-secction {
+  padding: 4rem 20%;
+}
+.mission-head {
+  font-size: 30px;
+  font-weight: 650;
+}
+.mission-content1 {
+  font-size: 15px;
+  font-weight: 500;
+
+  padding-top: 3rem;
+}
+.mission-content2 {
+  font-weight: 500;
+  padding-top: 1rem;
+}
+.our-purpose {
+  display: flex;
+
+  padding: 6rem 2rem;
+}
+.image-cont {
+  justify-content: flex-start;
+  width: 50%;
+  padding-left: 20%;
+}
+.image-cont .h1 {
+  font-size: 30px;
+  font-weight: 650;
+  text-align: left;
+
+  width: 80%;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+}
+.purpose-cont {
+  padding-left: 3rem;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  width: 80%;
+}
+.image-purpose {
+  width: 50%;
+  padding-right: 15%;
+}
+.imgg {
+  width: 450px;
+  height: 280px;
+  background-color: black;
+}
+
+.our-mission {
+  justify-content: center;
+  display: flex;
+  height: 350px;
+
+  padding: 5rem 20%;
+}
+.our-mission-image {
+  width: 60%;
+  border-radius: 2rem 0 0 2rem;
+  color: #fff;
+  background-color: #000;
+  margin-left: 4rem;
+}
+.our-mission-text {
+  padding-top: 3rem;
+  padding-left: 1rem;
+  border-radius: 0 2rem 2rem 0;
+  width: 50%;
+  color: #fff;
+  background-color: #032437;
+  text-align: left;
+  font-weight: 500;
+}
+.our-mission-text-heading {
+  padding-bottom: 1rem;
+  font-weight: 650;
+  font-size: 30px;
+  width: 50%;
+}
+.our-mission-text-content {
+  font-size: 15px;
+  width: 85%;
+}
+.our-mission-text-button {
+  padding-top: 1.5rem;
+}
+.our-mission-text-button button {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+
+  border-radius: 5px;
+  border: none;
+}
+.our-vision {
+  padding: 4rem 25% 10% 25%;
+}
+.our-vision-head {
+  font-size: 40px;
+  font-weight: 650;
+}
+.our-vision-subhead {
+  padding: 2rem;
+  font-size: 30px;
+  font-weight: 600;
+}
+.our-vision-text {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 3rem;
+}
+.our-vision-button {
+  padding: 2rem;
+}
+.our-vision-button button {
+  border: 1px solid #646a7b;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+}

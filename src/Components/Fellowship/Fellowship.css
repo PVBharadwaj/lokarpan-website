@@ -1,0 +1,195 @@
+.fellowship-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 123px;
+}
+
+.fellowship-top {
+  width: 100%;
+  height: 512px;
+  background-image: url(https://images.unsplash.com/photo-1474314881477-04c4aac40a0e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw2NjU4OTB8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.second-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 50px 0px;
+}
+
+.sub-div {
+  display: flex;
+  flex-direction: column;
+  /* width: 465px; */
+  text-align: left;
+}
+
+.second-div > .sub-div > .impact-title {
+  padding: 12px 0px;
+  font-size: 36px;
+}
+
+.second-div > .sub-div > .impact-data {
+  font-size: 28px;
+}
+
+.fellow-img {
+  height: 298px;
+  /* width: 465px; */
+}
+
+.fellowship-top > .impact-title {
+  font-size: 48px;
+  padding: 20px 150px;
+}
+
+.third-div > .impact-title {
+  padding: 0px 150px 80px;
+  font-size: 36px;
+}
+
+.fellow-data {
+  font-size: 16px;
+  padding: 20px 0px;
+}
+
+.third-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.impact-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  width: 100%;
+}
+
+.impact-img {
+  width: 355px;
+  height: 265px;
+}
+
+.impact-head {
+  font-size: 24px;
+  padding: 40px 50px;
+}
+
+.impact-head,
+.impact-data,
+.fourth-div,
+.fourth-div-data,
+.opp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.fourth-div-data {
+  padding: 30px 130px;
+  font-size: 24px;
+}
+
+.fourth-div > .impact-title {
+  font-size: 36px;
+  padding: 20px;
+}
+
+.opp {
+  padding: 50px 150px;
+  margin-bottom: 150px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(178, 228, 255),
+    rgb(212, 212, 212)
+  );
+}
+
+.opp-data {
+  padding: 50px 150px;
+  font-size: 36px;
+}
+
+.opp-head {
+  font-size: 20px;
+  padding: 0px;
+}
+
+.apply {
+  padding: 10px 50px;
+  background-color: white;
+  border: solid black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 805px) {
+  .fellowship-top > .impact-title {
+    font-size: 20px;
+    padding: 10px 50px;
+    text-align: left;
+  }
+
+  .fellowship-top {
+    width: 100%;
+    height: 296px;
+  }
+  .fellowship-page {
+    padding: 10px 30px;
+  }
+  .second-div {
+    flex-direction: column;
+    gap: 15px;
+    /* padding: 50px 0px; */
+  }
+  .second-div > .sub-div > .impact-data {
+    font-size: 16px;
+  }
+  .third-div > .impact-div {
+    flex-direction: column;
+  }
+  .third-div > .impact-div > .impact-head {
+    font-size: 20px;
+  }
+  .third-div > .impact-title {
+    padding: 0px 0px 25px;
+    font-size: 28px;
+  }
+
+  .impact-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fourth-div-data {
+    padding: 0px;
+    font-size: 16px;
+  }
+  .opp {
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+  .opp-data,
+  .opp-head {
+    padding: 10px 0px;
+  }
+  .opp-head {
+    font-size: 16px;
+    padding: 20px 0px;
+  }
+  .opp-data {
+    padding: 5px 15px 40px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,115 @@
+.being-a-volunteer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 123px;
+}
+
+.whydonate-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 28px;
+}
+
+.whydonate-img img {
+  width: 1060px;
+  height: 388px;
+}
+
+.volunteer-first-div {
+  padding: 80px;
+}
+
+.volunteer-first-div h1 {
+  padding: 20px;
+  font-size: 64px;
+  color: black;
+}
+
+.volunteer-first-div p {
+  font-size: 24px;
+  padding: 10px 120px;
+}
+
+.donate-card {
+  display: flex;
+  padding: 30px 90px;
+}
+
+.donate-card img {
+  width: 510px;
+  height: 310px;
+}
+
+.donate-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 30px;
+}
+
+.donate-card-text h1 {
+  font-size: 28px;
+  padding: 15px;
+}
+.donate-card-text p {
+  font-size: 16px;
+  padding: 15px;
+}
+
+.opp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* width: 100%; */
+  /* padding: 80px; */
+  /* margin-top: 90px; */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(178, 228, 255),
+    rgb(212, 212, 212)
+  );
+}
+
+.opp h1 {
+  font-size: 40px;
+}
+
+.hyperlinks {
+  margin: 40px;
+}
+
+.hyperlinks a {
+  text-decoration: none;
+}
+
+.donate-hyperlink {
+  background-color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 14px 16px;
+  margin: 24px;
+}
+
+@media only screen and (max-width: 805px) {
+  .being-a-volunteer {
+    padding: 10px 30px;
+  }
+  .volunteer-first-div {
+    padding: 100px 0px;
+  }
+  .volunteer-first-div h1 {
+    padding: 20px 0px;
+    font-size: 40px;
+  }
+  
+  .volunteer-first-div p {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+}

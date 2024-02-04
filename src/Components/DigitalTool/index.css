@@ -1,0 +1,154 @@
+.digital-tool-container {
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.digital-tool-head-cont {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.digital-tool-head-cont h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+.digital-tool-img-sec {
+  width: 100%;
+  height: 280px;
+  margin: 160px auto;
+  background-color: #ffffff;
+}
+.digital-tool-head-cont p {
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.digital-tool-img-sec h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.img-cont {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-cont-img {
+  height: 70%;
+  width: 120px;
+  border-radius: 20px;
+  margin: auto;
+}
+.browse-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 160px);
+  height: 600px;
+  margin: 100px auto;
+}
+.browse-cont h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.browse-cont p {
+  font-size: 28px;
+  color: #555;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.temp-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.temp-each-cont {
+  height: 300px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 30px 25px;
+}
+.temp-each-cont h4 {
+  margin: 5px;
+  margin-left: 0;
+  font-size: 28px;
+}
+.temp-each-cont p {
+  margin: 5px;
+  margin-left: 0;
+  font-size: 16px;
+}
+.icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9c9c9;
+}
+.digital-tool-last-sec {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px auto;
+}
+
+.digital-tool-last-sec h3 {
+  margin: 20px;
+}
+.digital-tool-last-sec p {
+  margin: 20px;
+}
+.digital-tool-btn {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+}

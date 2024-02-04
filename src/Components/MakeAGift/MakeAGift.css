@@ -1,0 +1,39 @@
+.ways-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+
+.ways-img img {
+    width: 100%;
+    height: 388px;
+  }
+  
+.make-a-gift-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 123px;
+}
+
+.make-a-gift-div .give-para1, .make-a-gift-div .give-para2{
+    padding: 10px 140px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 805px) {
+    .make-a-gift-div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 30px;
+    }
+    
+    .make-a-gift-div .give-para1, .make-a-gift-div .give-para2{
+        padding: 10px;
+        font-size: 24px;
+    }
+}
