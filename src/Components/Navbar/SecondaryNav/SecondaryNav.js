@@ -12,10 +12,10 @@ const SecondaryNav = () => {
       <div className="navbar-logo">Leadership</div>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          Browse all <FaAngleDown />
+          <FaAngleDown />
         </p>
       </div>
-      <ul className={` navbar-links ${isNavmenuOpen ? "active" : ""}`}>
+      <ul className={`navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
         <li className="navbar-item">
           <a href="/board">Board</a>
         </li>

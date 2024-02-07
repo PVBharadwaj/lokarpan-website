@@ -18,10 +18,10 @@ const DonateSubNav = () => {
       </div>
         <ul className={` navbar-links ${isNavmenuOpen ? "active" : ""}`}>
           <li className="navbar-item">
-            <a href="/donate">Donate</a>
+            <a className="disabled" href="/donate">Donate</a>
           </li>
           <li className="navbar-item">
-            <a href="/faqs">Faq</a>
+            <a href="/faqs">FAQ</a>
           </li>
         </ul>
     </nav>

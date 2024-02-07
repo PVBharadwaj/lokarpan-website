@@ -12,12 +12,12 @@ const FinancialNav = () => {
       <div className="navbar-logo">Financials</div>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          Browse all <FaAngleDown />
+          <FaAngleDown />
         </p>
       </div>
-      <ul className={` navbar-links ${isNavmenuOpen ? "active" : ""}`}>
+      <ul className={` navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
         <li className="navbar-item">
-          <a href="/financials">Overview</a>
+          <a className="disabled" href="/financials">Overview</a>
         </li>
         <li className="navbar-item">
           <a href="/publications">Publications</a>

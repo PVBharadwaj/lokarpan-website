@@ -1,48 +1,24 @@
 import { FaAngleDown } from "react-icons/fa";
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 
 const EducationSubNav = () => {
-  const [isNavmenuOpen, setNavmenuOpen] = useState(null);
-  const toggleNavmenu = () => {
-    setNavmenuOpen(!isNavmenuOpen);
-  };
-  const [isMobileNavmenuOpen, setMobileNavmenuOpen] = useState(null);
-  const toggleMobileNavmenu = () => {
-    setMobileNavmenuOpen(!isMobileNavmenuOpen);
-  };
+
   return (
     <nav className="SecNavbar">
       <div className="navbar-logo">Education</div>
-      <div className="navbar-rest">
-        <p className="mobile-item navbar-item" onClick={toggleMobileNavmenu}>
-          Browse all <FaAngleDown />
-        </p>
-        <ul
-          className={`navbar-links mobile-none click-dropdown ${
-            isMobileNavmenuOpen ? "active" : ""
-          }`}
-        >
-          <li className="navbar-item">
+        <ul className="navbar-links">
+          <li className="navbar-item mobile">
             <a href="/approach">Approach</a>
           </li>
-          <li className="navbar-item">
+          <li className="navbar-item mobile">
             <a href="/digital-tool">Digital Tools</a>
           </li>
           <li className="navbar-item dropdown">
-            {/* <a href="/about">
-              Browse all <FaAngleDown />
-            </a> */}
-            <p onClick={toggleNavmenu}>
+            <p>
               Browse all <FaAngleDown />
             </p>
-
-            {/* <div className="dropdown-content"> */}
-            <div
-              className={` navbar-links click-dropdown ${
-                isNavmenuOpen ? "active" : ""
-              }`}
-            >
+            <div className="dropdown-content">
               <div className="dropdown-container">
                 <h4>Explore About</h4>
                 <ul>
@@ -69,7 +45,6 @@ const EducationSubNav = () => {
             </div>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };

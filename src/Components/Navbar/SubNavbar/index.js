@@ -1,47 +1,3 @@
-// import { NavLink } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import { FaAngleDown } from "react-icons/fa";
-// import "./index.css";
-
-// const SubNavbar = ({ isDropdownVisible }) => {
-//   console.log("sub", isDropdownVisible);
-//   const navbarStyle = isDropdownVisible ? { position: "static" } : {};
-//   console.log(navbarStyle);
-//   return (
-//     <div className="nav-container-sub" style={navbarStyle}>
-//       <nav className="sub-nav">
-//         <ul className="sub-nav-list">
-//           <li className="sub-nav-first-child">
-//             <NavLink
-//               to={"/our-role"}
-//               className="nav-link"
-//               style={{ fontSize: "20px", fontWeight: "bold" }}
-//             >
-//               About
-//             </NavLink>
-//           </li>
-//           <li>
-//             <NavLink to={"/"} className="nav-link">
-//               History
-//             </NavLink>
-//           </li>
-//           <li>
-//             <NavLink to={"/"} className="nav-link">
-//               Mission
-//             </NavLink>
-//           </li>
-//           <li className="browse-section">
-//             <p>Browse All</p>
-//             <FaAngleDown />
-//           </li>
-//         </ul>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default SubNavbar;
-
 import { FaAngleDown } from "react-icons/fa";
 import "./index.css";
 import "./../Navbar.css";
@@ -50,7 +6,6 @@ const SubNavbar = () => {
   return (
     <nav className="SecNavbar">
       <div className="navbar-logo">About</div>
-      <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item mobile">
             <a href="/staff">History</a>
@@ -89,7 +44,6 @@ const SubNavbar = () => {
             </div>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };

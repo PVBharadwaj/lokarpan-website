@@ -5,6 +5,8 @@ import { CiSearch } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 import { FaChevronRight } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,24 +32,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">Lokarpan</div>
-      <div className="navbar-rest">
         <div class="back" onClick={handleBackClick}>
           <IoIosArrowBack
             className={activeDropdown !== null ? "down active" : "down"}
           />
         </div>
 
-        <div
-          className={`hamburger ${isMenuOpen ? "active" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
         <ul
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
         >
+          <RxCross2 className="cross" onClick={toggleMenu}/>
           <li className="navbar-item">
             <a href="/">Home</a>
           </li>
@@ -224,21 +218,22 @@ const Navbar = () => {
         </ul>
         <ul className="navbar-links navbar-icons">
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <CiSearch />
+            <CiSearch className="navbar-icon-inner" />
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
               }`}
             >
-            {/* <div className={`dropdown-content ${searchdropdown ? "active" : ""}`}> */}
               <NavSearchbar />
             </div>
           </li>
           <li className="navbar-item">
-            <IoPersonOutline />
+            <IoPersonOutline className="navbar-icon-inner" />
+          </li>
+          <li className="navbar-item">
+            <RxHamburgerMenu className="hamburger navbar-icon-inner" onClick={toggleMenu}/>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Staff.css";
+import axios from "axios";
 
 const StaffData = [
   {
@@ -87,6 +88,26 @@ const StaffData = [
 ];
 
 const Staff = () => {
+
+  
+  // const [StaffData, setStaffData] = useState([]);
+
+  // useEffect(() => {
+  //   // Make an HTTP GET request to fetch staff data from the backend
+  //   axios.get('http://127.0.0.1:8000/api/staff/')
+  //     .then(response => {
+  //       // Update the state with the fetched staff data
+  //       setStaffData(response.data);
+  //       alert("success");
+  //     })
+  //     .catch(error => {
+  //       // Handle errors
+  //       alert("error");
+  //       console.error('Error fetching staff data:', error);
+  //     });
+  // }, []);
+
+
   return (
     <>
       <SecondaryNav />

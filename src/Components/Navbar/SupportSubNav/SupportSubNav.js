@@ -10,11 +10,10 @@ const SupportSubNav = () => {
   return (
     <nav className="SecNavbar">
       <div className="navbar-logo">Support</div>
-      <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item dropdown">
             <p onClick={toggleNavmenu}>
-              Browse all <FaAngleDown />
+              <FaAngleDown />
             </p>
             <div
               className={` navbar-links click-dropdown ${
@@ -38,22 +37,17 @@ const SupportSubNav = () => {
                   <li>
                     <a href="/donate">Donate Now</a>
                   </li>
-                  <li className="navbar-item navbar-item-btn-browse">
-                    <button type="button" className="apply-btn">
+                  <li className="navbar-item navbar-item-btn-browse apply-btn">
                       <a href="/donate">Donate</a>
-                    </button>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
-          <li className="navbar-item navbar-item-btn">
-            <button type="button" className="apply-btn">
+          <li className="navbar-item navbar-item-btn apply-btn">
               <a href="/donate">Donate</a>
-            </button>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };
