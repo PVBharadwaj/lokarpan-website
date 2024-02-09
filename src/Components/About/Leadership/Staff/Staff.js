@@ -93,15 +93,12 @@ const Staff = () => {
   // const [StaffData, setStaffData] = useState([]);
 
   // useEffect(() => {
-  //   // Make an HTTP GET request to fetch staff data from the backend
   //   axios.get('http://127.0.0.1:8000/api/staff/')
   //     .then(response => {
-  //       // Update the state with the fetched staff data
   //       setStaffData(response.data);
   //       alert("success");
   //     })
   //     .catch(error => {
-  //       // Handle errors
   //       alert("error");
   //       console.error('Error fetching staff data:', error);
   //     });
@@ -155,10 +152,10 @@ const Card = ({ item }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img className="image" src={item.img} alt={item.name} />
+      <img className="image" src={item.Picture} alt={item.Name} />
       <div className={Mouseon ? "on" : "off"}>
-        <h3 className="profile-name">{item.name}</h3>
-        <h4 className="profile-position">{item.position}</h4>
+        <h3 className="profile-name">{item.Name}</h3>
+        <h4 className="profile-position">{item.Title}</h4>
         <p className="profile-text">{item.description}</p>
         <a href="www.google.com" target={"_blank"}>
           {item.hyperlink2}
