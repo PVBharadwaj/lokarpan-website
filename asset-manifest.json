@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/lokarpan-website/static/css/main.becc050a.css",
-    "main.js": "/lokarpan-website/static/js/main.decc6071.js",
+    "main.js": "/lokarpan-website/static/js/main.7ab8b5c3.js",
     "static/media/slick.svg": "/lokarpan-website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/lokarpan-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/lokarpan-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/lokarpan-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/lokarpan-website/index.html",
     "main.becc050a.css.map": "/lokarpan-website/static/css/main.becc050a.css.map",
-    "main.decc6071.js.map": "/lokarpan-website/static/js/main.decc6071.js.map"
+    "main.7ab8b5c3.js.map": "/lokarpan-website/static/js/main.7ab8b5c3.js.map"
   },
   "entrypoints": [
     "static/css/main.becc050a.css",
-    "static/js/main.decc6071.js"
+    "static/js/main.7ab8b5c3.js"
   ]
 }
