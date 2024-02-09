@@ -33,52 +33,51 @@ import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
 import "./styles.css";
 
-class App extends Component {
-  render() {
+function App() {
     return (
       <div className="App">
+      <BrowserRouter basename="/lokarpan-website">
         <Navbar />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<OurRole />}></Route>
-            <Route path="/leadership" element={<Leadership />}></Route>
-            <Route path="/career" element={<Career />}></Route>
-            <Route path="/board" element={<Board />}></Route>
-            <Route path="/staff" element={<Staff />}></Route>
-            <Route path="/educators" element={<Educators />}></Route>
-            <Route path="/fellows" element={<Fellows />}></Route>
-            <Route path="/fellowship" element={<Fellowship />}></Route>
-            <Route path="/our-role" element={<OurRole />}></Route>
-            <Route path="/health" element={<Health />}></Route>
-            <Route path="/financials" element={<Financials />}></Route>
-            <Route path="/faqs" element={<Faqs />}></Route>
-            <Route path="/publications" element={<Publications />}></Route>
-            <Route path="/application" element={<Application />}></Route>
-            <Route path="/approach" element={<Approach />}></Route>
-            <Route path="/digital-tool" element={<DigitalTool />}></Route>
-            <Route path="/impact" element={<Impact />}></Route>
-            <Route path="/environment" element={<Environemnt />}></Route>
-            <Route path="/livelihood" element={<Livelihood />}></Route>
-            <Route path="/moonshots" element={<Moonshots />}></Route>
-            <Route path="/make-a-gift" element={<MakeAGift />}></Route>
-            <Route path="/ways-to-give" element={<WaysToGive />}></Route>
-            <Route path="/donate" element={<Donate />}></Route>
-            <Route path="/why-donate" element={<WhyDonate />}></Route>
-            <Route
-              path="/being-a-volunteer"
-              element={<BeingAVolunteer />}
-            ></Route>
-            <Route path="/podcasts" element={<PodCasts />}></Route>
-            <Route path="/contact-us" element={<ContactUs />}></Route>
-            <Route path="/our-supporter" element={<OurSupporter />}></Route>
-            </Routes>
-          </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<OurRole />}></Route>
+          <Route path="/leadership" element={<Leadership />}></Route>
+          <Route path="/career" element={<Career />}></Route>
+          <Route path="/board" element={<Board />}></Route>
+          <Route path="/staff" element={<Staff />}></Route>
+          <Route path="/educators" element={<Educators />}></Route>
+          <Route path="/fellows" element={<Fellows />}></Route>
+          <Route path="/fellowship" element={<Fellowship />}></Route>
+          <Route path="/our-role" element={<OurRole />}></Route>
+          <Route path="/health" element={<Health />}></Route>
+          <Route path="/financials" element={<Financials />}></Route>
+          <Route path="/faqs" element={<Faqs />}></Route>
+          <Route path="/publications" element={<Publications />}></Route>
+          <Route path="/application" element={<Application />}></Route>
+          <Route path="/approach" element={<Approach />}></Route>
+          <Route path="/digital-tool" element={<DigitalTool />}></Route>
+          <Route path="/impact" element={<Impact />}></Route>
+          <Route path="/environment" element={<Environemnt />}></Route>
+          <Route path="/livelihood" element={<Livelihood />}></Route>
+          <Route path="/moonshots" element={<Moonshots />}></Route>
+          <Route path="/make-a-gift" element={<MakeAGift />}></Route>
+          <Route path="/ways-to-give" element={<WaysToGive />}></Route>
+          <Route path="/donate" element={<Donate />}></Route>
+          <Route path="/why-donate" element={<WhyDonate />}></Route>
+          <Route
+            path="/being-a-volunteer"
+            element={<BeingAVolunteer />}
+          ></Route>
+          <Route path="/podcasts" element={<PodCasts />}></Route>
+          <Route path="/contact-us" element={<ContactUs />}></Route>
+          <Route path="/our-supporter" element={<OurSupporter />}></Route>
+        </Routes>
+
         <Subscribebtn />
         <Footer />
+      </BrowserRouter>
       </div>
     );
   }
-}
 
 export default App;

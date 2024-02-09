@@ -1,8 +1,9 @@
 {
   "homepage": "https://PVBharadwaj.github.io/lokarpan-website",
-  "name": "react",
+  "name": "lokarpan",
   "version": "1.0.0",
   "description": "",
+  "private":"false",
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {

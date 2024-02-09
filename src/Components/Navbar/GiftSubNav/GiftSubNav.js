@@ -1,5 +1,6 @@
 import { FaAngleDown } from "react-icons/fa";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./GiftSubNav.css";
 
 const GiftSubNav = () => {
@@ -24,29 +25,29 @@ const GiftSubNav = () => {
               <div className="dropdown-container">
                 <ul>
                   <li>
-                    <a href="/why-donate">Why Donate</a>
+                    <Link to="/why-donate">Why Donate</Link>
                   </li>
                   <li>
-                    <a href="/being-a-volunteer">Being a Volunteer</a>
+                    <Link to="/being-a-volunteer">Being a Volunteer</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Our Supporters</a>
+                    <Link to="/our-role">Our Supporters</Link>
                   </li>
                   <li>
-                    <a href="/ways-to-give">Ways to Give</a>
+                    <Link to="/ways-to-give">Ways to Give</Link>
                   </li>
                   <li>
-                    <a href="/donate">Donate Now</a>
+                    <Link to="/donate">Donate Now</Link>
                   </li>
                   <li className="navbar-item navbar-item-btn-browse apply-btn">
-                      <a href="/donate">Donate</a>
+                      <Link to="/donate">Donate</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
           <li className="navbar-item navbar-item-btn apply-btn">
-              <a href="/donate">Donate</a>
+              <Link to="/donate">Donate</Link>
           </li>
         </ul>
       </div>

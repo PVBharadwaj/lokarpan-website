@@ -1,6 +1,7 @@
 import { FaAngleDown } from "react-icons/fa";
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const EducationSubNav = () => {
 
@@ -9,10 +10,10 @@ const EducationSubNav = () => {
       <div className="navbar-logo">Education</div>
         <ul className="navbar-links">
           <li className="navbar-item mobile">
-            <a href="/approach">Approach</a>
+            <Link to="/approach">Approach</Link>
           </li>
           <li className="navbar-item mobile">
-            <a href="/digital-tool">Digital Tools</a>
+            <Link to="/digital-tool">Digital Tools</Link>
           </li>
           <li className="navbar-item dropdown">
             <p>
@@ -23,22 +24,22 @@ const EducationSubNav = () => {
                 <h4>Explore About</h4>
                 <ul>
                   <li>
-                    <a href="/our-role">Our Role</a>
+                    <Link to="/our-role">Our Role</Link>
                   </li>
                   <li>
-                    <a href="/history">History</a>
+                    <Link to="/history">History</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Mission</a>
+                    <Link to="/our-role">Mission</Link>
                   </li>
                   <li>
-                    <a href="/leadership">Leadership</a>
+                    <Link to="/leadership">Leadership</Link>
                   </li>
                   <li>
-                    <a href="/career">Careers</a>
+                    <Link to="/career">Careers</Link>
                   </li>
                   <li>
-                    <a href="/financials">Financial</a>
+                    <Link to="/financials">Financial</Link>
                   </li>
                 </ul>
               </div>

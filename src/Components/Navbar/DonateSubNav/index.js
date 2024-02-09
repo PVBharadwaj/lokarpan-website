@@ -1,4 +1,5 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import React, { useState } from "react";
 
@@ -18,10 +19,10 @@ const DonateSubNav = () => {
       </div>
         <ul className={` navbar-links ${isNavmenuOpen ? "active" : ""}`}>
           <li className="navbar-item">
-            <a className="disabled" href="/donate">Donate</a>
+            <Link to="/donate" className="disabled">Donate</Link>
           </li>
           <li className="navbar-item">
-            <a href="/faqs">FAQ</a>
+            <Link to="/faqs">FAQ</Link>
           </li>
         </ul>
     </nav>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import "./Navbar.css";
 import NavSearchbar from "../NavSearchbar/NavSearchbar";
 import { CiSearch } from "react-icons/ci";
@@ -43,10 +44,11 @@ const Navbar = () => {
         >
           <RxCross2 className="cross" onClick={toggleMenu}/>
           <li className="navbar-item">
-            <a href="/">Home</a>
+            
+            <Link to="/">Home</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
             <FaChevronRight className="up" />
             <div
               className={`dropdown-content ${
@@ -57,22 +59,22 @@ const Navbar = () => {
                 <h4>Explore About</h4>
                 <ul>
                   <li>
-                    <a href="/our-role">Our Role</a>
+                    <Link to="/our-role">Our Role</Link>
                   </li>
                   <li>
-                    <a href="/history">History</a>
+                    <Link to="/history">History</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Mission</a>
+                    <Link to="/our-role">Mission</Link>
                   </li>
                   <li>
-                    <a href="/leadership">Leadership</a>
+                    <Link to="/leadership">Leadership</Link>
                   </li>
                   <li>
-                    <a href="/career">Careers</a>
+                    <Link to="/career">Careers</Link>
                   </li>
                   <li>
-                    <a href="/financials">Financial</a>
+                    <Link to="/financials">Financial</Link>
                   </li>
                 </ul>
               </div>
@@ -80,23 +82,23 @@ const Navbar = () => {
                 <h4>Quick Links</h4>
                 <ul className="quick-links">
                   <li>
-                    <a href="/our-role">Alumini</a>
+                    <Link to="/our-role">Alumini</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Contact</a>
+                    <Link to="/our-role">Contact</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Blog</a>
+                    <Link to="/our-role">Blog</Link>
                   </li>
                   <li>
-                    <a href="/leadership">Subscribe</a>
+                    <Link to="/leadership">Subscribe</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <a href="/approach">Education</a>
+            <Link to="/approach">Education</Link>
             <FaChevronRight className="up" />
             <div
               className={`dropdown-content ${
@@ -107,16 +109,16 @@ const Navbar = () => {
                 <h4>Explore Education</h4>
                 <ul>
                   <li>
-                    <a href="/approach">Approach</a>
+                    <Link to="/approach">Approach</Link>
                   </li>
                   <li>
-                    <a href="/digital-tool">Digital Tools</a>
+                    <Link to="/digital-tool">Digital Tools</Link>
                   </li>
                   <li>
-                    <a href="/application">Application</a>
+                    <Link to="/application">Application</Link>
                   </li>
                   <li>
-                    <a href="/podcasts">Podcast</a>
+                    <Link to="/podcasts">Podcast</Link>
                   </li>
                 </ul>
               </div>
@@ -124,26 +126,26 @@ const Navbar = () => {
                 <h4>Quick Links</h4>
                 <ul className="quick-links">
                   <li>
-                    <a href="/impact">Impact</a>
+                    <Link to="/impact">Impact</Link>
                   </li>
                   <li>
-                    <a href="/moonshots">Moonshots</a>
+                    <Link to="/moonshots">Moonshots</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Volunteer</a>
+                    <Link to="/our-role">Volunteer</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
           <li className="navbar-item">
-            <a href="/fellowship">Fellowship</a>
+            <Link to="/fellowship">Fellowship</Link>
           </li>
           <li className="navbar-item">
-            <a href="/">Kith</a>
+            <Link to="/">Kith</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <a href="/design">Design</a>
+            <Link to="/design">Design</Link>
             <FaChevronRight className="up" />
             <div
               className={`dropdown-content ${
@@ -153,29 +155,29 @@ const Navbar = () => {
               <div className="dropdown-container">
                 <ul>
                   <li>
-                    <a href="/our-role">Projects</a>
+                    <Link to="/our-role">Projects</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Design Guidelines</a>
+                    <Link to="/our-role">Design Guidelines</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Resources</a>
+                    <Link to="/our-role">Resources</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
           <li className="navbar-item">
-            <a href="/">Health</a>
+            <Link to="/">Health</Link>
           </li>
           <li className="navbar-item">
-            <a href="/">Environment</a>
+            <Link to="/">Environment</Link>
           </li>
           <li className="navbar-item">
-            <a href="/">Livelihood</a>
+            <Link to="/">Livelihood</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <a href="/ways-to-give">Support</a>
+            <Link to="/ways-to-give">Support</Link>
             <FaChevronRight className="up" />
             <div
               className={`dropdown-content ${
@@ -186,19 +188,19 @@ const Navbar = () => {
                 <h4>Explore Support</h4>
                 <ul>
                   <li>
-                    <a href="/why-donate">Why Donate</a>
+                    <Link to="/why-donate">Why Donate</Link>
                   </li>
                   <li>
-                    <a href="/being-a-volunteer">Being a Volunteer</a>
+                    <Link to="/being-a-volunteer">Being a Volunteer</Link>
                   </li>
                   <li>
-                    <a href="/our-supporter">Our Supporters</a>
+                    <Link to="/our-supporter">Our Supporters</Link>
                   </li>
                   <li>
-                    <a href="/ways-to-give">Ways to Give</a>
+                    <Link to="/ways-to-give">Ways to Give</Link>
                   </li>
                   <li>
-                    <a href="/donate">Donate Now</a>
+                    <Link to="/donate">Donate Now</Link>
                   </li>
                 </ul>
               </div>
@@ -206,10 +208,10 @@ const Navbar = () => {
                 <h4>Quick Links</h4>
                 <ul className="quick-links">
                   <li>
-                    <a href="/financials">Financials</a>
+                    <Link to="/financials">Financials</Link>
                   </li>
                   <li>
-                    <a href="/our-role">Apply for Fellowship</a>
+                    <Link to="/our-role">Apply for Fellowship</Link>
                   </li>
                 </ul>
               </div>

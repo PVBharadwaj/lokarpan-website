@@ -1,6 +1,7 @@
 import { FaAngleDown } from "react-icons/fa";
 import "./FinancialNav.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const FinancialNav = () => {
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
@@ -17,10 +18,10 @@ const FinancialNav = () => {
       </div>
       <ul className={` navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
         <li className="navbar-item">
-          <a className="disabled" href="/financials">Overview</a>
+          <Link to="/financials" className="disabled">Overview</Link>
         </li>
         <li className="navbar-item">
-          <a href="/publications">Publications</a>
+          <Link to="/publications">Publications</Link>
         </li>
       </ul>
     </nav>

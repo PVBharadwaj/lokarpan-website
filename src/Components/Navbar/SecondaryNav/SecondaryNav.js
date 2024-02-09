@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./SecondaryNav.css";
 import { FaAngleDown } from "react-icons/fa";
 
@@ -17,16 +18,16 @@ const SecondaryNav = () => {
       </div>
       <ul className={`navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
         <li className="navbar-item">
-          <a href="/board">Board</a>
+          <Link to="/board">Board</Link>
         </li>
         <li className="navbar-item">
-          <a href="/staff">Staff</a>
+          <Link to="/staff">Staff</Link>
         </li>
         <li className="navbar-item">
-          <a href="/educators">Educators</a>
+          <Link to="/educators">Educators</Link>
         </li>
         <li className="navbar-item">
-          <a href="/fellows">Fellows</a>
+          <Link to="/fellows">Fellows</Link>
         </li>
         <li className="navbar-item">
           <button type="button" className="apply-btn">
