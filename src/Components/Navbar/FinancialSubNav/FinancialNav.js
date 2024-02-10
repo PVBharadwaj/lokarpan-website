@@ -1,27 +1,27 @@
-import { FaAngleDown } from "react-icons/fa";
+import { BsChevronDown } from "react-icons/bs";
 import "./FinancialNav.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const FinancialNav = () => {
+const FinancialNav = (props) => {
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
   return (
     <nav className="SecNavbar">
-      <div className="navbar-logo">Financials</div>
+      <div className="navbar-logo">{props.navbarTitle}</div>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          <FaAngleDown />
+          <BsChevronDown className="react-icon"/>
         </p>
       </div>
       <ul className={` navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
         <li className="navbar-item">
-          <Link to="/financials" className="disabled">Overview</Link>
+          <Link to={`${props.link1}`} className="disabled">{props.navitem1}</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/publications">Publications</Link>
+          <Link to={`${props.link2}`}>{props.navitem2}</Link>
         </li>
       </ul>
     </nav>

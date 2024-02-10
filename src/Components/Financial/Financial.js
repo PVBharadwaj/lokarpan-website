@@ -5,7 +5,7 @@ import "./Financial.css";
 const Financials = () => {
   return (
     <>
-      <FinancialNav />
+      <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
       <div className="financial-page">
         <div className="fin-desp-head">
           <h1>Let’s accelerate sustainable and inclusive growth together.</h1>

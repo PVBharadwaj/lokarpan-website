@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import DonateSubNav from "../Navbar/DonateSubNav";
 import "./Donate.css";
+import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 const Donate = () => {
   const [donationFrequency, setDonationFrequency] = useState("---");
   const [donationAmount, setDonationAmount] = useState("---");
@@ -54,7 +54,7 @@ const Donate = () => {
 
   return (
     <>
-      <DonateSubNav />
+      <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" link1="/donate" link2="/faqs"/>
       <div className="donate-page">
         <div className="donate-head">
           <h1>

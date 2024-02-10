@@ -1,28 +1,45 @@
-import { FaAngleDown } from "react-icons/fa";
-import React from "react";
+import { BsChevronDown } from "react-icons/bs";
+import React, {useState} from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 
 const EducationSubNav = () => {
 
+  const [isNavmenuOpen, setNavmenuOpen] = useState(null);
+  const toggleNavmenu = () => {
+    setNavmenuOpen(!isNavmenuOpen);
+  };
+
   return (
     <nav className="SecNavbar">
       <div className="navbar-logo">Education</div>
-        <ul className="navbar-links">
-          <li className="navbar-item mobile">
+      <div className="navbar-rest">
+      <ul className="navbar-links">
+          <li className="navbar-item desktop-only">
             <Link to="/approach">Approach</Link>
           </li>
-          <li className="navbar-item mobile">
+          <li className="navbar-item desktop-only">
             <Link to="/digital-tool">Digital Tools</Link>
           </li>
           <li className="navbar-item dropdown">
-            <p>
-              Browse all <FaAngleDown />
+            <p onClick={toggleNavmenu}>
+              <span className="desktop-only">Browse All</span>
+              <BsChevronDown className="react-icon" />
             </p>
-            <div className="dropdown-content">
+            <div
+              className={` navbar-links click-dropdown ${
+                isNavmenuOpen ? "active" : ""
+              }`}
+            >
               <div className="dropdown-container">
                 <h4>Explore About</h4>
                 <ul>
+                <li className="navbar-item desktop-only">
+                  <Link to="/approach">Approach</Link>
+                </li>
+                <li className="navbar-item desktop-only">
+                  <Link to="/digital-tool">Digital Tools</Link>
+                </li>
                   <li>
                     <Link to="/our-role">Our Role</Link>
                   </li>
@@ -46,6 +63,8 @@ const EducationSubNav = () => {
             </div>
           </li>
         </ul>
+      </div>
+        
     </nav>
   );
 };

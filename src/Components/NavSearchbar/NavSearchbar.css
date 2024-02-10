@@ -1,12 +1,12 @@
 .nav-searchbar {
   display: flex;
+  width: 100%;
   flex-direction: column;
   padding: 0px;
 }
 
 .nav-form {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -41,6 +41,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-search-exit{
+  cursor: pointer;
 }
 
 .search-quick-links {

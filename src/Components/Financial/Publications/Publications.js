@@ -137,7 +137,7 @@ const Publications = () => {
   };
   return (
     <>
-      <FinancialNav />
+      <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
       <div className="publication-page">
       <div className="public-top">
       <h1 className="public-title">

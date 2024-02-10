@@ -14,7 +14,7 @@
 
 .apply-btn {
   height: 24px;
-  width: 82px;
+  width: 64px;
   display: flex;
   border: 1px solid black;
   border-radius: 100px;
@@ -25,8 +25,23 @@
   align-items: center;
 }
 
+.blue{
+  background-color: #3F86F0;
+  border: 0px;
+  color: #ffffff !important;
+}
+
+.lead-sec-nav{
+  display: flex;
+  gap: 24px;
+}
+
 .mobile-view-dropdown {
   display: none;
+}
+
+.react-icon{
+  color: #646A7B;
 }
 
 
@@ -37,6 +52,10 @@
 
   .mobile-view-dropdown {
     display: block;
+  }
+
+  .lead-mobile-navbar-links{
+    gap: 8px;
   }
 
   .click-dropdown {

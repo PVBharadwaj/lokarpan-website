@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./WaysToGive.css";
 const WaysToGive = () => {
@@ -21,7 +22,7 @@ const WaysToGive = () => {
               ensure that the museums remain an active, innovative centre for
               teaching, learning and research.
             </p>
-            <a href="/make-a-gift">Annual Fund</a>
+            <Link to="/make-a-gift">Annual Fund</Link>
           </div>
         </div>
         <div className="give-card give-card-reverse">
@@ -33,8 +34,8 @@ const WaysToGive = () => {
               Friends recieves unparalleled access to our collections and
               special opportunities to engage with art throughout the year.
             </p>
-            <a href="/">Friends Circle Benifits</a>
-            <a href="/">Free Membership</a>
+            <Link to="/">Friends Circle Benifits</Link>
+            <Link to="/">Free Membership</Link>
           </div>
           <div>
             <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
@@ -52,8 +53,8 @@ const WaysToGive = () => {
               Friends recieves unparalleled access to our collections and
               special opportunities to engage with art throughout the year.
             </p>
-            <a href="/">Friends Circle Benifits</a>
-            <a href="/">Free Membership</a>
+            <Link to="/">Friends Circle Benifits</Link>
+            <Link to="/">Free Membership</Link>
           </div>
         </div>
         <div className="give-card give-card-reverse">
@@ -65,8 +66,8 @@ const WaysToGive = () => {
               Friends recieves unparalleled access to our collections and
               special opportunities to engage with art throughout the year.
             </p>
-            <a href="/">Friends Circle Benifits</a>
-            <a href="/">Free Membership</a>
+            <Link to="/">Friends Circle Benifits</Link>
+            <Link to="/">Free Membership</Link>
           </div>
           <div>
             <img src="https://www.colorhexa.com/ebebeb.png" alt="" />

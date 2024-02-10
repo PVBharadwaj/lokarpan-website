@@ -1,4 +1,4 @@
-import { FaAngleDown } from "react-icons/fa";
+import { BsChevronDown } from "react-icons/bs";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./GiftSubNav.css";
@@ -10,12 +10,13 @@ const GiftSubNav = () => {
   };
   return (
     <nav className="SecNavbar">
-      <div className="navbar-logo">Make A Gift</div>
+      <div className="navbar-logo">Ways to Give</div>
       <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item dropdown">
             <p onClick={toggleNavmenu}>
-              Browse all <FaAngleDown />
+              <span className="desktop-only">Browse All</span>
+              <BsChevronDown className="react-icon"/>
             </p>
             <div
               className={` navbar-links click-dropdown ${
@@ -25,29 +26,29 @@ const GiftSubNav = () => {
               <div className="dropdown-container">
                 <ul>
                   <li>
-                    <Link to="/why-donate">Why Donate</Link>
+                    <Link to="/why-donate">Annual Fund</Link>
                   </li>
                   <li>
-                    <Link to="/being-a-volunteer">Being a Volunteer</Link>
+                    <Link to="/being-a-volunteer">Work of Art</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Our Supporters</Link>
+                    <Link to="/our-role">Endowment Gifts</Link>
                   </li>
                   <li>
-                    <Link to="/ways-to-give">Ways to Give</Link>
+                    <Link to="/ways-to-give">Planned giving</Link>
                   </li>
                   <li>
-                    <Link to="/donate">Donate Now</Link>
+                    <Link to="/donate">Other ways to give</Link>
                   </li>
-                  <li className="navbar-item navbar-item-btn-browse apply-btn">
-                      <Link to="/donate">Donate</Link>
+                  <li>
+                    <Link to="/donate">Expanding Vision</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
-          <li className="navbar-item navbar-item-btn apply-btn">
-              <Link to="/donate">Donate</Link>
+          <li className="navbar-item apply-btn orange">
+              <Link to="/donate" className="apply-btn-text">Donate</Link>
           </li>
         </ul>
       </div>

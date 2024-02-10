@@ -1,7 +1,7 @@
 import { Component } from "react";
-import DonateSubNav from "../Navbar/DonateSubNav";
 import { FaCirclePlus } from "react-icons/fa6";
 import "./index.css";
+import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 
 const questions = [
   {
@@ -56,10 +56,10 @@ const questions = [
 
 class Faqs extends Component {
   render() {
-    const { isDropdownVisible } = this.props;
+    // const {} = this.props;
     return (
       <>
-        <DonateSubNav isDropdownVisible={isDropdownVisible} />
+        <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" />
         <div className="faqs-container">
           <div className="donate-upper-section">
             <p className="faqs-para1">

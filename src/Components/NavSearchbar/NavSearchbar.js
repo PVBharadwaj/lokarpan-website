@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Fuse from "fuse.js";
 import "./NavSearchbar.css";
-import { FaSearch } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { RxCross1 } from "react-icons/rx";
 
 const items = [
   {
@@ -120,7 +121,7 @@ const NavSearchbar = () => {
   return (
     <div className="nav-searchbar">
       <div className="nav-form">
-        <FaSearch className="size-80" />
+        <CiSearch className="react-icon size-80" />
         <input
           className="nav-form-control"
           type="text"
@@ -132,12 +133,10 @@ const NavSearchbar = () => {
           }}
           onChange={handleSearchChange}
         />
+        <RxCross1 className="nav-search-exit"/>
       </div>
       <div className="search-quick-links">
-        {searchResults.length === 0 ? (
-          searchState ? (
-            "No results found"
-          ) : (
+        {(searchState===false) ? (
             <div>
               <h4>Quick Links</h4>
               <ul className="quick-links">
@@ -152,17 +151,18 @@ const NavSearchbar = () => {
                 </li>
               </ul>
             </div>
-          )
-        ) : (
-          searchResults.map((result) => (
-            <ul>
-              <li key={result.item.id}>
-                {" "}
-                <a href={result.item.link}>{result.item.name}</a>
-              </li>
-            </ul>
-          ))
-        )}
+          ) : 
+          ((searchResults.length === 0) ? "No results found" : (
+                searchResults.map((result) => (
+                  <ul>
+                    <li key={result.item.id}>
+                      {" "}
+                      <a href={result.item.link}>{result.item.name}</a>
+                    </li>
+                  </ul>
+                ))
+            ))
+        }
       </div>
     </div>
   );

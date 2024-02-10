@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SecondaryNav.css";
-import { FaAngleDown } from "react-icons/fa";
+import { BsChevronDown } from "react-icons/bs";
 
 const SecondaryNav = () => {
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
@@ -11,29 +11,33 @@ const SecondaryNav = () => {
   return (
     <nav className="SecNavbar">
       <div className="navbar-logo">Leadership</div>
-      <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
-        <p>
-          <FaAngleDown />
-        </p>
-      </div>
-      <ul className={`navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
-        <li className="navbar-item">
-          <Link to="/board">Board</Link>
+      <ul className="navbar-links lead-mobile-navbar-links">
+        <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
+          <p>
+            <BsChevronDown className="react-icon"/>
+          </p>
+        </div>
+        <li>
+          <ul className={`mobile-navbar-links lead-sec-nav ${isNavmenuOpen ? "active" : ""}`}>
+            <li className="navbar-item">
+              <Link to="/board">Board</Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/staff">Staff</Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/educators">Educators</Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/fellows">Fellows</Link>
+            </li>
+          </ul>
+        
         </li>
-        <li className="navbar-item">
-          <Link to="/staff">Staff</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/educators">Educators</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/fellows">Fellows</Link>
-        </li>
-        <li className="navbar-item">
-          <button type="button" className="apply-btn">
-            Apply Now
-          </button>
-        </li>
+        
+        <li className="navbar-item apply-btn blue">
+              <Link to="/donate" className="apply-btn-text">Apply</Link>
+          </li>
       </ul>
     </nav>
   );
