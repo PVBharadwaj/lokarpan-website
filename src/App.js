@@ -32,6 +32,7 @@ import PodCasts from "./Components/Podcasts";
 import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
 import "./styles.css";
+import OnlineEnrollment from "./Components/OnlineEnrollment/OnlineEnrollment";
 
 function App() {
     return (
@@ -71,6 +72,7 @@ function App() {
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
+          <Route path="/enrollment" element={<OnlineEnrollment />}></Route>
         </Routes>
 
         <Subscribebtn />
