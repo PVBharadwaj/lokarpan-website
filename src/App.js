@@ -31,6 +31,7 @@ import BeingAVolunteer from "./Components/BeingAVolunteer/BeingAVolunteer";
 import PodCasts from "./Components/Podcasts";
 import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
+import Education from "./Components/Education";
 import "./styles.css";
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
+          <Route path="/education" element={<Education />}></Route>
         </Routes>
 
         <Subscribebtn />

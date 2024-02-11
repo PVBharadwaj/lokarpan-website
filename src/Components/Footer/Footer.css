@@ -10,7 +10,7 @@
 }
 .footer-container-inner {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .content {
   height: auto;
@@ -47,8 +47,9 @@ li {
 
 .footer-list ul li a {
   text-decoration: none;
-  color: #333333;
+  color: #646a7b;
   font-size: 14px;
+  font-weight: 500;
 }
 .icons-container {
   display: flex;
@@ -66,7 +67,7 @@ li {
 }
 
 .footer-icon {
-  font-size: 32px;
+  font-size: 24px;
 }
 .social-links span a {
   text-decoration: none;
@@ -94,12 +95,29 @@ li {
 .footerArrow {
   display: none;
 }
+.lokarpan-logo {
+  height: 30px;
+  width: 100px;
+}
+.icons-list {
+  width: 150px;
+  margin-top: 20px;
+}
+.mobile-footer-last-sec {
+  display: none;
+}
+.footer-hor-line {
+  display: none;
+}
 @media only screen and (max-width: 805px) {
   .footer-container {
     /* max-width: 450px; */
     padding: 10px 30px;
   }
-
+  .footer-mobile {
+    background-color: #e2e4e5;
+    height: auto;
+  }
   .footer-brand-name {
     display: block;
     margin: 10px 0px;
@@ -121,20 +139,24 @@ li {
 
   .footerArrow {
     display: block;
+    font-size: 12px;
   }
 
   .footer-list-title {
     display: flex;
     justify-content: space-between;
-    padding: 21px 0px;
+    padding: 10px 0px;
+    color: #646a6b;
   }
 
-  .footer-list-title:hover {
+  /* .footer-list-title:hover {
     color: #dedede;
-  }
+  } */
 
   .footer-list h4 {
     margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
   }
 
   .footerArrow.active {
@@ -176,5 +198,29 @@ li {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .social-links span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .social-links span a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .mobile-footer-last-sec {
+    display: inline-block;
+    font-size: 12px;
+  }
+  .desktop-footer-last-sec {
+    display: none;
+  }
+  .footer-list ul li a {
+    font-size: 12px;
+  }
+  .footer-hor-line {
+    display: block;
+    border: 1px solid #646a7b;
+    width: 100%;
+    margin: 10px 0;
   }
 }

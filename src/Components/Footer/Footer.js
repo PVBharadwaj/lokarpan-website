@@ -24,12 +24,29 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer-container">
+    <div className="footer-container footer-mobile">
       <div className="footer-container-inner">
-        <div className="footer-brand-name">
-          <h1>Lokarpan</h1>
-        </div>
         <div className="content">
+          <div className="footer-list">
+            <img
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707625023/Frame_48098098_rag4wi.svg"
+              className="lokarpan-logo"
+            />
+            <div className="icons-container icons-list">
+              <a href="">
+                <FaFacebook className="footer-icon" />
+              </a>
+              <a href="">
+                <FaInstagramSquare className="footer-icon" />
+              </a>
+              <a href="">
+                <FaLinkedin className="footer-icon" />
+              </a>
+              <a href="">
+                <FaMedium className="footer-icon" />
+              </a>
+            </div>
+          </div>
           <div className="footer-list">
             <div
               className="footer-list-title"
@@ -63,6 +80,7 @@ const Footer = () => {
                 <a href="/">Financials</a>
               </li>
             </ul>
+            <hr className="footer-hor-line" />
           </div>
           <div className="footer-list">
             <div
@@ -87,6 +105,7 @@ const Footer = () => {
                 <a href="/">Newsletter</a>
               </li>
             </ul>
+            <hr className="footer-hor-line" />
           </div>
           <div className="footer-list">
             <div
@@ -108,6 +127,7 @@ const Footer = () => {
                 <a href="/">Blog</a>
               </li>
             </ul>
+            <hr className="footer-hor-line" />
           </div>
           <div className="footer-list">
             <div
@@ -136,33 +156,22 @@ const Footer = () => {
                 <a href="/">Our Supporters</a>
               </li>
             </ul>
+            <hr className="footer-hor-line" />
           </div>
         </div>
 
         <div className="social-links">
           <div className="policy-text">
             <span>Copyright @ {year} Lokarpan Inc. All right reserved.</span>
-            <span>
+            <span className="desktop-footer-last-sec">
               <a href="/">Privacy Policy</a>
             </span>
-            <span>
+            <span className="desktop-footer-last-sec">
               <a href="/">Terms of Use</a>
             </span>
-          </div>
-
-          <div className="icons-container">
-            <a href="">
-              <FaFacebook className="footer-icon" />
-            </a>
-            <a href="">
-              <FaInstagramSquare className="footer-icon" />
-            </a>
-            <a href="">
-              <FaLinkedin className="footer-icon" />
-            </a>
-            <a href="">
-              <FaMedium className="footer-icon" />
-            </a>
+            <span className="mobile-footer-last-sec">
+              <a href="/">Privacy Policy</a> | <a href="/">Terms of Use</a>
+            </span>
           </div>
         </div>
       </div>
