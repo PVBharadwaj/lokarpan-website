@@ -156,7 +156,7 @@ class DigitalTool extends Component {
               helping to fight poverty, disease, school parity, and inequity for
               at risk communities.
             </p>
-            <div>
+            <div className="digital-tool-btn-cont">
               <button className="digital-tool-btn">Volunteer</button>
               <button className="digital-tool-btn">Donate</button>
             </div>

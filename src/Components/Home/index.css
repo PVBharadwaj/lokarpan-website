@@ -12,7 +12,7 @@
   max-width: 987px;
   height: 782px;
   display: flex;
-  margin:auto;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@
   object-fit: cover;
 }
 .home-images-container {
-  height:auto;
+  height: auto;
   margin-top: 28px;
   margin-bottom: 120px;
   display: flex;
@@ -140,7 +140,7 @@
 .get-in-touch-container {
   width: 492px;
   height: 210px;
-  margin:auto;
+  margin: auto;
   margin-top: 71px;
   display: flex;
   flex-direction: column;
@@ -287,7 +287,7 @@
   height: auto;
   width: 810px;
   display: flex;
-  margin:auto;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -397,7 +397,7 @@
   border-radius: 32px;
   color: #000000;
   position: relative;
-  margin:auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,9 +479,19 @@
   outline: none;
   background-color: transparent;
 }
-.carousal-icon{
+.carousal-icon {
   font-size: 30px;
   color: #000000;
+}
+.home-donate-btn {
+  height: 40px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: none;
+  margin: 30px auto;
 }
 @media only screen and (max-width: 393px) {
   .home-banner {
@@ -501,168 +511,165 @@
     margin-bottom: 0;
     height: 380px;
   }
- .home-top-container .home-head3 {
+  .home-top-container .home-head3 {
     font-size: 30px;
-    width:calc(100% - 130px);
+    width: calc(100% - 130px);
   }
   .home-para1 {
     font-size: 14px;
     width: calc(100% - 54px);
     margin: 0 auto;
   }
-  .home-full-img{
-    height:300px;
-    margin-bottom:0;
+  .home-full-img {
+    height: 300px;
+    margin-bottom: 0;
   }
   .home-full-img img {
     width: 100%;
     height: 90%;
     object-fit: cover;
   }
-  .lokarpan-head4{
-    font-size:20px;
+  .lokarpan-head4 {
+    font-size: 20px;
   }
-  .home-head3{
-    font-size:24px;
-    width:100%;
-    line-height:30px;
+  .home-head3 {
+    font-size: 24px;
+    width: 100%;
+    line-height: 30px;
   }
-  .who-we-are{
-    width:calc(100% - 40px);
-    margin-top:100px;
+  .who-we-are {
+    width: calc(100% - 40px);
+    margin-top: 100px;
   }
-  .row-container{
-    flex-direction:column;
-    height:300px;
-    margin-bottom:100px;
-   
+  .row-container {
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 100px;
   }
-  .row-element{
-    height:45%;
-    width:100%;
-    align-items:center;
+  .row-element {
+    height: 45%;
+    width: 100%;
+    align-items: center;
   }
-  .design-img{
-    width:140px;
+  .design-img {
+    width: 140px;
   }
-  .under-cont h3{
-    font-size:15px;
-    line-height:20px;
+  .under-cont h3 {
+    font-size: 15px;
+    line-height: 20px;
   }
- .read-btn{
-  margin-top:10px;
-  height:35px;
-  font-size:14px;
-  border-radius:100px;
- }
- .home-images-container{
-  width:calc(100% - 32px);
-  margin:auto;
- }
- .lok-head-cont {
-  height: 300px;
-  width:100%;
-  margin-bottom: 50px;
-}
-.lokarpan-head4{
-  font-size:16px;
-}
-.img2 {
-  width: 100%;
-  height: 50%;
-}
-.img3 {
-  width: 100%;
-  height: 50%;
-  margin-top:50px;
- 
-}
-.images-container {
-  margin-top: 45px;
-  flex-direction:column;
-  width: 100%;
-}
-.get-in-touch-container {
-  width: calc(100% - 32px);
-  height: 166px;
-}
-.get-in-touch-btn {
-  width: 152px;
-  border-radius: 50px;
-  font-size: 14px; 
-}
+  .read-btn {
+    margin-top: 10px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 100px;
+  }
+  .home-images-container {
+    width: calc(100% - 32px);
+    margin: auto;
+  }
+  .lok-head-cont {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .lokarpan-head4 {
+    font-size: 16px;
+  }
+  .img2 {
+    width: 100%;
+    height: 50%;
+  }
+  .img3 {
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+  }
+  .images-container {
+    margin-top: 45px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .get-in-touch-container {
+    width: calc(100% - 32px);
+    height: 166px;
+  }
+  .get-in-touch-btn {
+    width: 152px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
 
-.lokarpan-container {
-  height: 217px;
-  width: calc(100% - 100px);
-  align-self: flex-start;
-  margin: 63px 0;
-  margin-left: 20px;
-}
+  .lokarpan-container {
+    height: 217px;
+    width: calc(100% - 100px);
+    align-self: flex-start;
+    margin: 63px 0;
+    margin-left: 20px;
+  }
 
-.lokarpan-container p {
-  text-align: left;
-  font-size:14px;
-}
-.lokarpan-container h1 {
-  text-align: left;
-  font-size:24px;
-}
-.lokarpan-head5{
-  font-size:16px;
-}
-.app-container-m{
-  width:300px;
-  height:230px;
-  border-radius:16px;
-  
-}
-.text-m {
-  font-size: 24px;
-  font-weight: 500;
-  /* margin-bottom: 10px; */
-  color: #a6d4ff;
-}
-.note-m {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.image-group-m {
-  display: grid;
-  place-items: center;
-  width: 0px;
-  padding: 10px;
-}
-.image-m {
-  object-fit: contain;
-  width: 40px;
-  height: 16px;
-  padding: 5px 10px;
-}
-.animation-btn-m{
-  bottom:15px;
-  right:15px;
-}
-.next-step-section1{
-  width:100%;
-}
-.lokarpan-head6{
-  font-size:28px;
-}
-.lokarpan-head4{
-  font-size:16px;
-}
-.lok {
-  width: calc(100% - 70px);
-}
-.next-step-section1 a {
-  font-size:14px;
-}
-.subscribe-btn{
-  width:150px;
-  border-radius:50px;
-  height:40px;
-  font-size:14px;
-}
+  .lokarpan-container p {
+    text-align: left;
+    font-size: 14px;
+  }
+  .lokarpan-container h1 {
+    text-align: left;
+    font-size: 24px;
+  }
+  .lokarpan-head5 {
+    font-size: 16px;
+  }
+  .app-container-m {
+    width: 300px;
+    height: 230px;
+    border-radius: 16px;
+  }
+  .text-m {
+    font-size: 24px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+    color: #a6d4ff;
+  }
+  .note-m {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .image-group-m {
+    display: grid;
+    place-items: center;
+    width: 0px;
+    padding: 10px;
+  }
+  .image-m {
+    object-fit: contain;
+    width: 40px;
+    height: 16px;
+    padding: 5px 10px;
+  }
+  .animation-btn-m {
+    bottom: 15px;
+    right: 15px;
+  }
+  .next-step-section1 {
+    width: 100%;
+  }
+  .lokarpan-head6 {
+    font-size: 28px;
+  }
+  .lokarpan-head4 {
+    font-size: 16px;
+  }
+  .lok {
+    width: calc(100% - 70px);
+  }
+  .next-step-section1 a {
+    font-size: 14px;
+  }
+  .subscribe-btn {
+    width: 150px;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 14px;
+  }
 }

@@ -3,8 +3,8 @@
   overflow-x: hidden;
 }
 .contact-us-top-section {
-  height: 706px;
-  width: 90%;
+  height: 500px;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -22,43 +22,51 @@
   margin-top: 230px;
 }
 
-.font64 {
+.contact-font64 {
   font-size: 64px;
   line-height: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.font64-left {
+.contact-font64-left {
   font-size: 64px;
   width: 530px;
   margin-bottom: 130px;
 }
-.font24-left {
+.contact-font24-left {
   font-size: 24px;
   font-weight: auto;
   margin-bottom: 0;
   margin-top: 0;
   text-align: left;
 }
-.font24 {
+.contact-font24 {
   font-size: 24px;
   text-align: center;
   margin-top: 0;
 }
-.font28 {
+.contact-font28 {
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 500;
 }
-.font48 {
+.contact-font48 {
   font-size: 48px;
   margin-top: 0;
+  margin-bottom: 30px;
 }
-
-.font16 {
+.contact-font48-left {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.contact-font16 {
   font-size: 16px;
   font-weight: bold;
   margin-top: 5px;
 }
-.font16-normal {
+.contact-font16-normal {
   font-size: 16px;
   margin: 0;
   line-height: 21px;
@@ -67,8 +75,8 @@
 .btn-section {
   height: 50px;
   width: 450px;
-  border: 2px solid #979797;
-  border-radius: 8px;
+  border: 1px solid #979797;
+  border-radius: 30px;
   margin-top: 62px;
   display: flex;
   flex-direction: row;
@@ -104,7 +112,7 @@
   height: 441px;
   width: 910px;
   margin: auto;
-  margin-top: 111px;
+  margin-top: 160px;
 }
 .maps-below-section {
   display: flex;
@@ -113,7 +121,7 @@
   width: 100%;
   height: 80%;
 }
-.img {
+.maps-img {
   height: 100%;
   width: 40%;
 }
@@ -139,7 +147,7 @@
 }
 .each-item {
   height: 90px;
-  width: 258px;
+  width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -157,4 +165,89 @@ a {
 
 .active {
   color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 393px) {
+  .contact-us-top-section {
+    width: calc(100% - 40px);
+    margin: auto;
+    height: 300px;
+  }
+  .contact-sec {
+    width: 100%;
+    height: auto;
+  }
+  .contact-font64 {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .contact-font24 {
+    font-size: 16px;
+  }
+  .btn-section {
+    width: 100%;
+    height: 35px;
+  }
+  .inquiries-sec {
+    width: calc(100% - 40px);
+    margin: 100px auto;
+    height: auto;
+  }
+  .contact-font48 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .inquiries-below-section {
+    flex-direction: column;
+  }
+  .contact-font24-left {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contact-each-ele {
+    font-size: 16px;
+  }
+  .maps-section {
+    width: calc(100% - 30px);
+    margin: auto;
+    height: auto;
+  }
+  .maps-below-section {
+    flex-direction: column;
+  }
+  .maps-img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .maps-below-right-sec {
+    width: 100%;
+  }
+  .contact-last-section {
+    width: calc(100% - 30px);
+    margin: 100px auto;
+    height: auto;
+  }
+  .contact-font64-left {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .contact-font48-left {
+    font-size: 36px;
+  }
+  .list {
+    gap: 60px;
+  }
+  .each-item {
+    width: auto;
+  }
+  .each-item p {
+    line-height: 20px;
+  }
+  a {
+    color: black;
+  }
 }

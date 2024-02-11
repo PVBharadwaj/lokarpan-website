@@ -1,7 +1,7 @@
 import { Component } from "react";
+import DonateSubNav from "../Navbar/DonateSubNav";
 import { FaCirclePlus } from "react-icons/fa6";
 import "./index.css";
-import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 
 const questions = [
   {
@@ -56,26 +56,29 @@ const questions = [
 
 class Faqs extends Component {
   render() {
-    // const {} = this.props;
     return (
       <>
-        <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" />
+        <DonateSubNav />
         <div className="faqs-container">
           <div className="donate-upper-section">
-            <p className="faqs-para1">
-              Through the Stronger Together campaign, our goal is to bridge the
-              learning loss and strengthen our core program in Akanksha schools
-              and communities
-            </p>
-            <p className="faqs-para1">Non-Indian Citizens?</p>
+            <h1 className="faqs-font64">In case you missed anything.</h1>
           </div>
-          <hr className="hor-line" />
-          <div className="donate-faq-section">
-            <p className="faqs-para1">
+          <div className="faqs-browse-sec">
+            <h2>
+              Browse accessories or find new colours to go with your devices.
+            </h2>
+            <p>
               Here are some common questions that you might have. If you don’t
               find what you’re looking for, please write to us and we’ll be
               happy to address your query!
             </p>
+          </div>
+          <div className="donate-faq-section">
+            <div className="faqs-head-sec">
+              <h1 className="faqs-head">frequently asked Questions</h1>
+              <p className="faqs-para">Show All</p>
+            </div>
+
             <ul className="questions-container">
               {questions.map((each) => (
                 <li className="each-question">
@@ -89,14 +92,11 @@ class Faqs extends Component {
                     {each.question}
                   </label>
                   <div className="ans-sec">
-                    <p className="answer">{each.answer}</p>
+                    <p className="faq-answer">{each.answer}</p>
                   </div>
                 </li>
               ))}
             </ul>
-            <button type="button" className="subscribe-btn">
-              Show more FAQ's Here
-            </button>
           </div>
         </div>
       </>

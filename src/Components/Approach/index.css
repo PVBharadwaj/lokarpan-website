@@ -5,10 +5,11 @@
   align-items: center;
   background-size: cover;
   width: 100%;
+  overflow-x: hidden;
 }
 .health-full-img {
   width: 100%;
-  height: 400px;
+  height: 600px;
   overflow: hidden;
   margin-top: 28px;
 }
@@ -19,13 +20,14 @@
   object-fit: cover;
 }
 
-.container {
-  height: 370px;
+.approach-each-container {
+  height: 323px;
   width: 80%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
+  margin: 120px auto;
 }
 
 .content-section {
@@ -37,7 +39,7 @@
   height: 90%;
   margin: auto;
 }
-.img {
+.app-img {
   height: 100%;
   width: 45%;
 }
@@ -65,8 +67,10 @@
   text-align: center;
 }
 .lokarpan-head3 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
+  text-align: left;
+  margin-bottom: 20px;
 }
 .approach-row-container {
   height: 250px;
@@ -87,18 +91,22 @@
 
 .app-row-cont-right-container {
   height: 100%;
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
+.app-row-cont-right-container p {
+  margin-top: 50px;
+  font-size: 24px;
+}
 .sub-btn {
-  height: 30px;
+  height: 40px;
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid black;
   width: 150px;
-  border-radius: 5px;
+  border-radius: 30px;
   margin: 10px;
   margin-left: 0;
 }
@@ -119,15 +127,18 @@
   justify-content: center;
   align-items: flex-start;
   border-top: 2px solid black;
+  margin-top: 30px;
 }
 .approach-modal-each-cont h2 {
   margin: 10px;
   margin-left: 0;
+  font-size: 28px;
 }
 
 .approach-modal-each-cont p {
   margin: 10px;
   margin-left: 0;
+  font-size: 20px;
 }
 .approach-modal-col {
   display: flex;
@@ -143,14 +154,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 
 .app-modal-each-col h3 {
   margin: 0px;
+  font-size: 28px;
 }
 
 .app-modal-each-col p {
   margin: 0px;
+  font-size: 16px;
 }
 .approach-last-sec-cont {
   height: auto;
@@ -164,11 +178,14 @@
 .approach-last-sec-cont h2 {
   margin: 10px;
   margin-left: 0;
+  font-size: 36px;
 }
-
+.approach-last-sec-cont p {
+  font-size: 20px;
+}
 .approach-last-sec-each-cont {
   height: 135px;
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -176,8 +193,190 @@
   margin-top: 40px;
 }
 .approach-last-sec-each-cont div {
-  width: 200px;
+  width: 230px;
   margin: auto;
   border-top: 2px solid black;
   padding-top: 20px;
+}
+.para {
+  font-size: 24px;
+  text-align: justify;
+}
+.sub-head2 {
+  font-size: 36px;
+}
+.sub-head1 {
+  font-size: 24px;
+}
+.new-platform-sec {
+  width: 670px;
+  margin: 100px auto;
+  height: auto;
+}
+.new-platform-sec h1 {
+  font-size: 48px;
+  text-align: center;
+}
+.new-platform-sec p {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px auto;
+}
+.link {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px auto;
+}
+.app-mobile-para {
+  display: none;
+}
+.mobile-approach-modal-container {
+  display: none;
+}
+.mobile-health-full-img {
+  display: none;
+}
+@media screen and (max-width: 393px) {
+  .health-full-img {
+    height: 450px;
+  }
+  .approach-container {
+    width: 100%;
+  }
+  .approach-each-container {
+    height: auto;
+    width: calc(100% - 20px);
+    flex-direction: column;
+    margin: 60px auto;
+  }
+
+  .app-img {
+    width: 100%;
+    order: 1;
+  }
+  .content-section {
+    width: 100%;
+    order: 2;
+  }
+  .lokarpan-head3 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  .para {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .approach-row-container {
+    flex-direction: column;
+    width: calc(100% - 20px);
+    margin: 60px auto;
+    height: auto;
+  }
+  .app-row-cont-right-container p {
+    display: none;
+  }
+  .app-mobile-para {
+    display: block;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+  .app-row-cont-left-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .sub-btn {
+    margin: 10px auto;
+    width: 90%;
+  }
+  .mobile-health-img {
+    display: block;
+    margin: 60px auto;
+  }
+  .approach-modal-container {
+    display: none;
+  }
+  .mobile-approach-modal-container {
+    display: flex;
+    width: calc(100% - 30px);
+    margin: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+  .mobile-approach-modal-each-cont {
+    width: 47%;
+    border-top: none;
+  }
+  .mobile-approach-modal-each-cont h2 {
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .mobile-approach-modal-each-cont p {
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .mobile-health-full-img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 0px;
+  }
+
+  .mobile-health-full-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .approach-last-sec-cont {
+    width: cacl(100% - 30px);
+    margin: auto;
+  }
+  .approach-last-sec-cont h2 {
+    font-size: 28px;
+  }
+  .approach-last-sec-cont p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .approach-last-sec-each-cont {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .approach-last-sec-each-cont div {
+    width: 150px;
+    margin-top: 30px;
+    height: 80px;
+  }
+  .approach-last-sec-each-cont div p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .approach-last-sec-each-cont div h3 {
+    font-size: 24px;
+  }
+  .new-platform-sec {
+    width: calc(100% - 30px);
+    margin: 150px auto;
+  }
+  .new-platform-sec h1 {
+    font-size: 28px;
+  }
+  .new-platform-sec p {
+    font-size: 16px;
+  }
+  .new-platform-sec a {
+    text-align: center;
+  }
 }
