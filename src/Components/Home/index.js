@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { FaRegCirclePause, FaRegCirclePlay } from "react-icons/fa6";
+import { PiPauseCircleThin, PiPlayCircleThin } from "react-icons/pi";
 import Marquee from "react-fast-marquee";
 import "./index.css";
 
@@ -135,9 +135,9 @@ class Home extends Component {
           <div className="arrows-cont">
             <button className="button" onClick={this.handlePauseClick}>
               {!isPaused ? (
-                <FaRegCirclePause className="carousal-icon" />
+                <PiPauseCircleThin className="carousal-icon" />
               ) : (
-                <FaRegCirclePlay className="carousal-icon" />
+                <PiPlayCircleThin className="carousal-icon" />
               )}
             </button>
           </div>
@@ -260,14 +260,14 @@ class Home extends Component {
           </div>
           <button onClick={this.toggleAnimation} className="animation-btn-m">
             {!isAnimationPaused ? (
-              <FaRegCirclePause
+              <PiPauseCircleThin
                 style={{
                   fontSize: "20px",
                   color: "white",
                 }}
               />
             ) : (
-              <FaRegCirclePlay
+              <PiPlayCircleThin
                 style={{
                   fontSize: "20px",
                   color: "white",
@@ -286,7 +286,7 @@ class Home extends Component {
             aimed at social justice, economic growth and self-reliance
           </p>
           <a href="#">Learn More</a>
-          <button type="button" className="subscribe-btn btn">
+          <button type="button" className="home-donate-btn">
             Donate Now
           </button>
         </div>

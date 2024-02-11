@@ -1,12 +1,47 @@
-import { Component } from "react";
-import EducationSubNav from "../Navbar/EducationSubNav";
+import React, { Component } from "react";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
-
+import EducationSubNav from "../Navbar/EducationSubNav";
 import { SiApplepodcasts, SiGooglepodcasts } from "react-icons/si";
 
 import "./index.css";
 
 class PodCasts extends Component {
+  constructor(props) {
+    super(props);
+    this.headingRefs = Array.from({ length: 3 }, () => React.createRef());
+    this.intersectionObserver = null;
+  }
+
+  componentDidMount() {
+    this.intersectionObserver = new IntersectionObserver(
+      this.handleIntersection,
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    // Iterate over the array of refs and observe each heading
+    this.headingRefs.forEach((ref) => {
+      if (ref.current) {
+        this.intersectionObserver.observe(ref.current);
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    if (this.intersectionObserver) {
+      this.intersectionObserver.disconnect();
+    }
+  }
+
+  handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in-animation");
+      } else {
+        entry.target.classList.remove("fade-in-animation");
+      }
+    });
+  };
+
   render() {
     return (
       <>
@@ -18,15 +53,17 @@ class PodCasts extends Component {
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705912565/Group_445_sfzg1n.svg"
               className="podcasts-img"
             />
-            <h1 className="font64">Make Me Care About. With Jen Hatmaker</h1>
-            <p className="font32">
+            <h1 className="font64-podcasts">
+              Make Me Care About. With Jen Hatmaker
+            </h1>
+            <p className="font32-podcasts">
               There are so many things clamoring for our attention, and it’s
               hard to distill which issues are important…or why we should care.
               In partnership with The Bill & Melinda Gates Foundation, Make Me
               Care About... explores topics that have deep importance and impact
               in the world.
             </p>
-            <p className="font25">Subscribe on</p>
+            <p className="font25-podcasts">Subscribe on</p>
             <div className="podcasts-icon-cont">
               <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705863902/Group_1616_osia6s.svg" />
               <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705863924/Vector_1_iundj6.svg" />
@@ -35,27 +72,27 @@ class PodCasts extends Component {
             </div>
           </div>
           <div className="podcast">
-            <h1 className="font48">
+            <h1 className="font48-podcasts" ref={this.headingRefs[0]}>
               Millions of podcasts on topics for everyone.
             </h1>
-            <h1 className="font48">
+            <h1 className="font48-podcasts" ref={this.headingRefs[1]}>
               Seamless listening across all your Apple devices.
             </h1>
-            <h1 className="font48">
+            <h1 className="font48-podcasts" ref={this.headingRefs[2]}>
               Powerful playback controls to customise your listening.
             </h1>
           </div>
           <div className="like-container">
             <div className="like-left-cont">
-              <h1 className="font48-left">Personalized Discovery</h1>
-              <p className="font24">
+              <h1 className="font48-left-podcasts">Personalized Discovery</h1>
+              <p className="font24-podcasts">
                 With personalized recommendations based on what you already
                 listen to, you’ll get more shows catering to your tastes than
                 ever before.
               </p>
             </div>
             <div className="like-right-cont">
-              <p className="font24">You might like</p>
+              <p className="font24-podcasts space-blw">You might like</p>
               <div className="like-right-img-cont">
                 <img
                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
@@ -73,16 +110,16 @@ class PodCasts extends Component {
             </div>
           </div>
           <div className="lower-podcasts-cont">
-            <h1 className="font40">Working with Apple Podcasts.</h1>
-            <p className="font24-left">
+            <h1 className="font40-podcasts">Working with Apple Podcasts.</h1>
+            <p className="font24-podcasts">
               Stay up to date on the latest news, features, and best practices
               that help you create your own podcast.
             </p>
-            <div className="podcasts-icon-cont">
-              <FaSpotify style={{ fontSize: "50px" }} />
-              <FaYoutube style={{ fontSize: "50px" }} />
-              <SiApplepodcasts style={{ fontSize: "50px" }} />
-              <SiGooglepodcasts style={{ fontSize: "50px" }} />
+            <div className="podcasts-icon-cont2">
+              <FaSpotify className="icon-size" />
+              <FaYoutube className="icon-size" />
+              <SiApplepodcasts className="icon-size" />
+              <SiGooglepodcasts className="icon-size" />
             </div>
           </div>
         </div>

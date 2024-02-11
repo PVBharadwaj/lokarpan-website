@@ -7,22 +7,24 @@
 }
 
 .subscribe-btn {
-  height: 50px;
-  width: 387px;
-  border-radius: 5px;
+  height: 38px;
+  width: 309px;
+  border-radius: 100px;
   text-align: center;
-  font-size: 18px;
-  border: 1px solid black;
+  font-size: 15px;
+  border: 1px solid #646a7b;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #646a7b;
+  padding: 10px;
 }
 
 .subscribe {
   height: 18px;
-  width: 25px;
-  margin: 0px 3px;
+  width: 18px;
+  margin: 0px 5px;
   border: none;
 }
 
