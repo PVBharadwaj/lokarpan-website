@@ -34,11 +34,11 @@ const Navbar = () => {
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707625023/Frame_48098098_rag4wi.svg"
               className="lokarpan-logo"
             /></div>
-        {/* <div class="back" onClick={handleBackClick}>
+        <div class="back" onClick={handleBackClick}>
           <IoIosArrowBack
             className={activeDropdown !== null ? "down active" : "down"}
           />
-        </div> */}
+        </div>
 
         <ul
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
@@ -57,11 +57,6 @@ const Navbar = () => {
               }`}
             >
               <div className="dropdown-container">
-              <div class="back" onClick={handleBackClick}>
-          <IoIosArrowBack
-            className={activeDropdown !== null ? "down active" : "down"}
-          />
-        </div>
                 <h4>Explore About</h4>
                 <ul>
                   <li>
