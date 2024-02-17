@@ -12,8 +12,10 @@ import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  // const [searchdropdown, setSearchdropdown] = useState(false);
-
+  const [isSearchmenuOpen, setSearchmenuOpen] = useState(null);
+  const toggleSearchmenu = () => {
+    setSearchmenuOpen(!isSearchmenuOpen);
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -26,18 +28,17 @@ const Navbar = () => {
     setActiveDropdown(null);
   };
 
-  // const handleSearchDropdown = () => {
-  //   setSearchdropdown(!searchdropdown);
-  // }
-
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Lokarpan</div>
-        <div class="back" onClick={handleBackClick}>
+      <div className="navbar-logo"><img
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707625023/Frame_48098098_rag4wi.svg"
+              className="lokarpan-logo"
+            /></div>
+        {/* <div class="back" onClick={handleBackClick}>
           <IoIosArrowBack
             className={activeDropdown !== null ? "down active" : "down"}
           />
-        </div>
+        </div> */}
 
         <ul
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
@@ -56,25 +57,30 @@ const Navbar = () => {
               }`}
             >
               <div className="dropdown-container">
+              <div class="back" onClick={handleBackClick}>
+          <IoIosArrowBack
+            className={activeDropdown !== null ? "down active" : "down"}
+          />
+        </div>
                 <h4>Explore About</h4>
                 <ul>
                   <li>
-                    <Link to="/our-role">Our Role</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Our Role</Link>
                   </li>
                   <li>
-                    <Link to="/history">History</Link>
+                    <Link to="/history" onClick={toggleMenu}>History</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Mission</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Mission</Link>
                   </li>
                   <li>
-                    <Link to="/leadership">Leadership</Link>
+                    <Link to="/leadership" onClick={toggleMenu}>Leadership</Link>
                   </li>
                   <li>
-                    <Link to="/career">Careers</Link>
+                    <Link to="/career" onClick={toggleMenu}>Careers</Link>
                   </li>
                   <li>
-                    <Link to="/financials">Financial</Link>
+                    <Link to="/financials" onClick={toggleMenu}>Financial</Link>
                   </li>
                 </ul>
               </div>
@@ -142,7 +148,7 @@ const Navbar = () => {
             <Link to="/fellowship">Fellowship</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/">Kith</Link>
+            <Link to="/kith-overview">Kith</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/design">Design</Link>
@@ -219,11 +225,16 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className="navbar-links navbar-icons">
-          <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <CiSearch className="navbar-icon-inner" />
-            <div
+          <li className="navbar-item dropdown nav-search" >
+            <CiSearch className="navbar-icon-inner" onClick={toggleSearchmenu} />
+            {/* <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
+              }`}
+            > */}
+            <div
+              className={`click-dropdown  ${
+                isSearchmenuOpen ? "active" : ""
               }`}
             >
               <NavSearchbar />

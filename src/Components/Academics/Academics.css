@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+
+.academics-head {
+    position: relative; 
+    text-align: left !important;
+    align-items: flex-start !important;
+    padding: 175px 550px 175px 123px !important;
+}
+
+.academics-head::before { 
+    content: "";
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYGI8GyDS7u6j9MMxIyRAjGjX56lorApbFeItfHhCWDhqvrH1T');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+
+.academics-head h1, 
+.academics-head p{
+    position: relative;
+}
+
+.academics-div h1{
+    font-size: 62px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.academics-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 150px;
+}
+
+
+.academics-head > p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.academics-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 80px 150px;
+}
+
+.academics-stats p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.academics-div .give-card img{
+    height: 100%;
+}
+
+.academics-div .give-card-text h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.academics-div .give-card-text p{
+    font-size: 20px;
+    padding: 4px 0px;
+}
+
+.academics-div .give-card-text .kith-link{
+    color: #3F86F0;
+}
+
+.academics-div-blue{
+    margin: 0px 150px;
+    padding: 130px 60px;
+    background-color: #3F86F0;
+}
+
+.academics-div-blue h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.academics-div-last{
+    padding-top: 0px;
+}

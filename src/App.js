@@ -32,8 +32,14 @@ import PodCasts from "./Components/Podcasts";
 import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
 import Education from "./Components/Education";
-import "./styles.css";
 import OnlineEnrollment from "./Components/OnlineEnrollment/OnlineEnrollment";
+import HowTo from "./Components/HowTo/HowTo";
+import Kith from "./Components/Kith/Kith";
+import Admission from "./Components/Admission/Admission";
+import LifeAtSchool from "./Components/LifeAtSchool/LifeAtSchool";
+import Academics from "./Components/Academics/Academics";
+import KithDonate from "./Components/KithDonate/KithDonate";
+import "./styles.css";
 
 function App() {
     return (
@@ -66,15 +72,18 @@ function App() {
           <Route path="/ways-to-give" element={<WaysToGive />}></Route>
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/why-donate" element={<WhyDonate />}></Route>
-          <Route
-            path="/being-a-volunteer"
-            element={<BeingAVolunteer />}
-          ></Route>
+          <Route path="/being-a-volunteer" element={<BeingAVolunteer />}></Route>
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
           <Route path="/enrollment" element={<OnlineEnrollment />}></Route>
           <Route path="/education" element={<Education />}></Route>
+          <Route path="/how-to" element={<HowTo />}></Route>
+          <Route path="/kith-overview" element={<Kith />}></Route>
+          <Route path="/admission" element={<Admission />}></Route>
+          <Route path="/life-at-school" element={<LifeAtSchool />}></Route>
+          <Route path="/academics" element={<Academics />}></Route>
+          <Route path="/kith-donate" element={<KithDonate />}></Route>
         </Routes>
 
         <Subscribebtn />

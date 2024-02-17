@@ -133,10 +133,10 @@ const NavSearchbar = () => {
           }}
           onChange={handleSearchChange}
         />
-        <RxCross1 className="nav-search-exit"/>
+        {/* <RxCross1 className="nav-search-exit"/> */}
       </div>
       <div className="search-quick-links">
-        {(searchState===false) ? (
+        {(queryText === "") ? (
             <div>
               <h4>Quick Links</h4>
               <ul className="quick-links">

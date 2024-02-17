@@ -6,7 +6,7 @@ class Approach extends Component {
   render() {
     return (
       <>
-        {/* <EducationSubNav /> */}
+        <EducationSubNav />
 
         <div className="approach-container">
           <div className="health-full-img">
