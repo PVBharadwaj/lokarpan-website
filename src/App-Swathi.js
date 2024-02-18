@@ -36,6 +36,8 @@ import CampusAndCulture from "./Components/CampusAndCulture";
 import SafetyAndWellBeing from "./Components/SafetyAndWellBeing";
 import ClubAndCommitee from "./Components/ClubAndCommitee";
 import Information from "./Components/Information";
+import Alumni from "./Components/Alumni";
+import KithLeadership from "./Components/KithLeadership";
 import "./styles.css";
 
 function App() {
@@ -90,6 +92,8 @@ function App() {
             element={<ClubAndCommitee />}
           ></Route>
           <Route path="/kith/information" element={<Information />}></Route>
+          <Route path="/kith/alumni" element={<Alumni />}></Route>
+          <Route path="/kith/leadership" element={<KithLeadership />}></Route>
         </Routes>
 
         <Subscribebtn />
