@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+
+.kith-donate{
+    color: white;
+    background-color: #3F86F0;
+    padding: 50px 123px;
+}
+
+.kith-donate h1{
+    font-size: 64px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.kith-donate .citizen-dropdown  .drop-content {
+    cursor: pointer;
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    color: white;
+    position: relative;
+    font-size: 24px;
+  }
+
+.kith-donate .citizen-dropdown .drop-content::after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border: 2px solid white;
+    display: block;
+    border-left: none;
+    border-top: none;
+    margin: 0 6px 4px 10px;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+    opacity: 0.5;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.kith-donate-page{
+    padding-top: 130px;
+}

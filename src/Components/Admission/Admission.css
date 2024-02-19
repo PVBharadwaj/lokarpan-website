@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+
+.admissions-head {
+    position: relative; 
+    padding: 175px 250px !important;
+}
+
+.admissions-head::before { 
+    content: "";
+    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX48ORerEzHYrF7ER3ErbmLXT-zo7G6Q0OxaX4uZPgGrgSVCF');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+.admissions-head h1{
+    position: relative;
+    font-size: 62px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.admissions-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 150px;
+}
+
+.admissions-div > p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.admissions-div > .give-card h3{
+    font-size: 50px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.admissions-div > .give-card p{
+    font-size: 24px;
+}
+
+.admissions-div > .give-card > div{
+    width: 500px;
+    height: 300px;
+}
+
+.admissions-grid{
+    display: grid;
+    text-align: left;
+    height: 549px;
+    background-color: #3F86F0;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.admissions-grid-inner{
+    height: 100%;
+    border: 1px solid white;
+    color: white;
+}
+
+.admission-grid-inner1{
+    grid-row: span 4;
+    grid-column: span 5;
+    padding: 20px;
+}
+
+.admission-grid-inner1 > h3{
+    font-size: 64px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.admissions-grid-inner > h3{
+    font-size: 64px;
+    width: 250px;
+}
+
+.admissions-grid-inner > p{
+    font-size: 24px;
+}
+
+.admission-grid-inner1 > p{
+    font-size: 24px;
+}
+
+.admission-grid-inner2{
+    grid-row: span 4;
+    grid-column: span 1;
+}
+
+.admission-grid-inner2 p{    
+    transform-origin: 252px 220px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.admission-grid-inner3{
+    grid-row: span 1;
+    grid-column: span 4;
+    display: flex;
+}
+
+.admission-grid-inner4{
+    grid-row: span 1;
+    grid-column: span 4;
+    display: flex;
+}
+
+.admission-grid-inner5{
+    grid-row: span 1;
+    grid-column: span 4;
+    display: flex;
+}
+
+.admission-grid-inner6{
+    grid-row: span 1;
+    grid-column: span 4;
+    display: flex;
+}
+
+.side-div{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}

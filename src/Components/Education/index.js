@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Marquee from "react-fast-marquee";
 import { FaRegCirclePause, FaRegCirclePlay } from "react-icons/fa6";
-
+import EducationSubNav from "../Navbar/EducationSubNav"
 import "./index.css";
 
 const images = [
@@ -23,7 +23,9 @@ class Education extends Component {
   render() {
     const { isPlaying } = this.state;
     return (
-      <div className="education-container">
+      <>
+      <EducationSubNav />
+            <div className="education-container">
         <div className="education-top-section">
           <h1 className="education-font48">
             We know that the best answers often come from those closest to the
@@ -107,6 +109,8 @@ class Education extends Component {
           </button>
         </div>
       </div>
+      </>
+
     );
   }
 }

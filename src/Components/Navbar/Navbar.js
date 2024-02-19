@@ -5,17 +5,24 @@ import NavSearchbar from "../NavSearchbar/NavSearchbar";
 import { CiSearch } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
-import { FaChevronRight } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  // const [searchdropdown, setSearchdropdown] = useState(false);
-
+  const [isSearchmenuOpen, setSearchmenuOpen] = useState(null);
+  const toggleSearchmenu = () => {
+    setSearchmenuOpen(!isSearchmenuOpen);
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleMenuOnClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setActiveDropdown(null);
   };
 
   const toggleDropdown = (index) => {
@@ -26,13 +33,12 @@ const Navbar = () => {
     setActiveDropdown(null);
   };
 
-  // const handleSearchDropdown = () => {
-  //   setSearchdropdown(!searchdropdown);
-  // }
-
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Lokarpan</div>
+      <div className="navbar-logo"><img
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707625023/Frame_48098098_rag4wi.svg"
+              className="lokarpan-logo"
+            /></div>
         <div class="back" onClick={handleBackClick}>
           <IoIosArrowBack
             className={activeDropdown !== null ? "down active" : "down"}
@@ -49,7 +55,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/about">About</Link>
-            <FaChevronRight className="up" />
+            <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
@@ -59,22 +65,22 @@ const Navbar = () => {
                 <h4>Explore About</h4>
                 <ul>
                   <li>
-                    <Link to="/our-role">Our Role</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Our Role</Link>
                   </li>
                   <li>
-                    <Link to="/history">History</Link>
+                    <Link to="/history" onClick={toggleMenu}>History</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Mission</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Mission</Link>
                   </li>
                   <li>
-                    <Link to="/leadership">Leadership</Link>
+                    <Link to="/leadership" onClick={toggleMenu}>Leadership</Link>
                   </li>
                   <li>
-                    <Link to="/career">Careers</Link>
+                    <Link to="/career" onClick={toggleMenu}>Careers</Link>
                   </li>
                   <li>
-                    <Link to="/financials">Financial</Link>
+                    <Link to="/financials" onClick={toggleMenu}>Financial</Link>
                   </li>
                 </ul>
               </div>
@@ -82,16 +88,16 @@ const Navbar = () => {
                 <h4>Quick Links</h4>
                 <ul className="quick-links">
                   <li>
-                    <Link to="/our-role">Alumini</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Alumini</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Contact</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Contact</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Blog</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Blog</Link>
                   </li>
                   <li>
-                    <Link to="/leadership">Subscribe</Link>
+                    <Link to="/leadership" onClick={toggleMenu}>Subscribe</Link>
                   </li>
                 </ul>
               </div>
@@ -99,7 +105,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/approach">Education</Link>
-            <FaChevronRight className="up" />
+            <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
@@ -109,16 +115,16 @@ const Navbar = () => {
                 <h4>Explore Education</h4>
                 <ul>
                   <li>
-                    <Link to="/approach">Approach</Link>
+                    <Link to="/approach" onClick={toggleMenu}>Approach</Link>
                   </li>
                   <li>
-                    <Link to="/digital-tool">Digital Tools</Link>
+                    <Link to="/digital-tool" onClick={toggleMenu}>Digital Tools</Link>
                   </li>
                   <li>
-                    <Link to="/application">Application</Link>
+                    <Link to="/application" onClick={toggleMenu}>Application</Link>
                   </li>
                   <li>
-                    <Link to="/podcasts">Podcast</Link>
+                    <Link to="/podcasts" onClick={toggleMenu}>Podcast</Link>
                   </li>
                 </ul>
               </div>
@@ -126,13 +132,13 @@ const Navbar = () => {
                 <h4>Quick Links</h4>
                 <ul className="quick-links">
                   <li>
-                    <Link to="/impact">Impact</Link>
+                    <Link to="/impact" onClick={toggleMenu}>Impact</Link>
                   </li>
                   <li>
-                    <Link to="/moonshots">Moonshots</Link>
+                    <Link to="/moonshots" onClick={toggleMenu}>Moonshots</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Volunteer</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Volunteer</Link>
                   </li>
                 </ul>
               </div>
@@ -142,11 +148,11 @@ const Navbar = () => {
             <Link to="/fellowship">Fellowship</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/">Kith</Link>
+            <Link to="/kith-overview">Kith</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/design">Design</Link>
-            <FaChevronRight className="up" />
+            <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
@@ -155,13 +161,13 @@ const Navbar = () => {
               <div className="dropdown-container">
                 <ul>
                   <li>
-                    <Link to="/our-role">Projects</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Projects</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Design Guidelines</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Design Guidelines</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Resources</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Resources</Link>
                   </li>
                 </ul>
               </div>
@@ -178,7 +184,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/ways-to-give">Support</Link>
-            <FaChevronRight className="up" />
+            <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
@@ -188,19 +194,19 @@ const Navbar = () => {
                 <h4>Explore Support</h4>
                 <ul>
                   <li>
-                    <Link to="/why-donate">Why Donate</Link>
+                    <Link to="/why-donate" onClick={toggleMenu}>Why Donate</Link>
                   </li>
                   <li>
-                    <Link to="/being-a-volunteer">Being a Volunteer</Link>
+                    <Link to="/being-a-volunteer" onClick={toggleMenu}>Being a Volunteer</Link>
                   </li>
                   <li>
-                    <Link to="/our-supporter">Our Supporters</Link>
+                    <Link to="/our-supporter" onClick={toggleMenu}>Our Supporters</Link>
                   </li>
                   <li>
-                    <Link to="/ways-to-give">Ways to Give</Link>
+                    <Link to="/ways-to-give" onClick={toggleMenu}>Ways to Give</Link>
                   </li>
                   <li>
-                    <Link to="/donate">Donate Now</Link>
+                    <Link to="/donate" onClick={toggleMenu}>Donate Now</Link>
                   </li>
                 </ul>
               </div>
@@ -208,10 +214,10 @@ const Navbar = () => {
                 <h4>Quick Links</h4>
                 <ul className="quick-links">
                   <li>
-                    <Link to="/financials">Financials</Link>
+                    <Link to="/financials" onClick={toggleMenu}>Financials</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Apply for Fellowship</Link>
+                    <Link to="/our-role" onClick={toggleMenu}>Apply for Fellowship</Link>
                   </li>
                 </ul>
               </div>
@@ -219,11 +225,16 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className="navbar-links navbar-icons">
-          <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <CiSearch className="navbar-icon-inner" />
-            <div
+          <li className="navbar-item dropdown nav-search" >
+            <CiSearch className="navbar-icon-inner" onClick={toggleSearchmenu} />
+            {/* <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
+              }`}
+            > */}
+            <div
+              className={`click-dropdown  ${
+                isSearchmenuOpen ? "active" : ""
               }`}
             >
               <NavSearchbar />

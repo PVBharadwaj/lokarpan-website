@@ -109,9 +109,12 @@
   padding: 0px !important;
 }
 
+.nav-search > .click-dropdown{
+  top: 64px;
+}
+
 .up {
   display: none;
-  color: #bdbdbd;
 }
 
 .hamburger,
@@ -173,7 +176,9 @@
   }
 
   .up {
-    display: block;
+    display: block;  
+    position: absolute;
+    right: 15px;
   }
 
   .dropdown-content {
@@ -192,9 +197,7 @@
 
   .down {
     display: none;
-    color: #bdbdbd;
-    top: 15px;
-    left: 15px;
+    /* color: #bdbdbd; */
   }
 
   .dropdown-content.active {
@@ -206,6 +209,8 @@
     display: block;
     position: fixed;
     z-index: 102;
+    top: 15px;
+    left: 15px;
   }
 
   .dropdown-content.active {
