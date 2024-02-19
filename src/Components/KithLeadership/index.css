@@ -1,0 +1,48 @@
+.kith-leadership-container {
+  width: 100%;
+}
+.kith-leadership-upper-section {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f86f0;
+  padding: 0 120px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.kith-leadership-upper-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.kith-leadership-upper-section div h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.kith-leadership-upper-section div p {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.kith-leadership-upper-section img {
+  width: 45%;
+  height: 60%;
+}
+.kith-leadership-list {
+  width: calc(100% - 250px);
+  height: 180px;
+  margin: 100px auto;
+}
+
+.kith-leadership-list li {
+  list-style-type: disc;
+}

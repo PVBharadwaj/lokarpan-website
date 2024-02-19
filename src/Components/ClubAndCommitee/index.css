@@ -1,0 +1,121 @@
+.club-commitee-container {
+  width: 100%;
+}
+.club-commitee-upper-section {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e4e5;
+}
+.club-commitee-upper-section a {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.club-commitee-upper-section h1 {
+  font-size: 48px;
+  width: calc(100% - 240px);
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.club-commitee-club-section {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+}
+.club-commitee-club-section h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.club-commitee-club-section p {
+  width: calc(100% - 360px);
+  margin: auto;
+  font-size: 32px;
+  text-align: center;
+}
+
+.club-commitee-culture-section {
+  height: 650px;
+  width: 100%;
+  background-color: #3f86f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  margin-bottom: 120px;
+}
+
+.club-commitee-culture-section img {
+  height: 70%;
+  width: 45%;
+}
+
+.club-commitee-culture-section div {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+
+.club-commitee-culture-section div h1 {
+  font-size: 64px;
+}
+.club-commitee-culture-section div p,
+ul li {
+  font-size: 20px;
+}
+
+.club-commitee-culture-section ul {
+  margin: 0;
+  padding: 20px;
+  margin-top: 20px;
+}
+.club-commitee-culture-section ul li {
+  list-style-type: disc;
+}
+.club-commitee-videos-section {
+  height: 350px;
+  width: calc(100% - 300px);
+  margin: 120px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.club-commitee-each-video-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 25%;
+  margin: 30px 20px;
+  margin-top: 0;
+}
+.video {
+  height: 80%;
+  width: 22%;
+}
+.video-space-above {
+  margin-top: 30px;
+}
+.vedio-below-text {
+  font-size: 16px;
+  margin-top: 44px;
+  width: 100%;
+}
