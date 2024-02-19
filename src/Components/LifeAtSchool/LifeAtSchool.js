@@ -38,7 +38,7 @@ const LifeAtSchool = () => {
             </div>
         </div>
       </div>
-      <div className="life-at-school-div">
+      <div className="life-at-school-div life-at-school-div-last">
         <h3>Our Campus</h3>
         <img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1wH2ygpzyPXRHMe5AJEZTXQ0YHN0hMGIYX4bJU-vta4wCnTjP'/>
         <ul>

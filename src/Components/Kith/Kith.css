@@ -253,8 +253,28 @@
     height: 50px;
 }
 
+@media only screen and (max-width: 805px) {
+    .kith-overview-head{
+        padding: 75px 32px !important;
+    }
 
+    .kith-overview-div{
+        padding: 110px 60px;
+        gap: 16px;
+    }
 
+    .kith-overview-div > h1 {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    
+    .kith-overview-div h3 {
+        font-size: 24px;
+    }
+    
+    .kith-overview-div > p,
+    .kith-overview-form p {
+        font-size: 16px;
+    }
 
-
-
+}

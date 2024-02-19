@@ -56,7 +56,6 @@ const HowTo = () => {
             <h1>We are thrilled to extend a warm welcome to you as part of the Lokarpan family.</h1>
       </div>
       <div className='howto-page'>
-        
         <div className='howto-card'>
           <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXf_v9HN0mLlUntyj1dgMwC7buO0yVfOxnml4yhTKr3lut_kUO'/>
           <div className='text-div'>

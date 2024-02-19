@@ -412,7 +412,7 @@ input:checked + .radio-label-with-img {
 }
 
 .grid .names {
-  grid-column: span 3;
+  grid-column: span 6;
 }
 
 .grid .long {
@@ -427,6 +427,10 @@ input:checked + .radio-label-with-img {
 
 .donate-btn{
   width: 70%;
+}
+
+.drop-content{
+  font-size: 14px;
 }
   
 }
