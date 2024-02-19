@@ -94,3 +94,59 @@
 .academics-div-last{
     padding-top: 0px;
 }
+
+@media only screen and (max-width: 805px) {
+    .academics-head{
+        padding: 75px 32px !important;
+    }
+
+    .academics-div{
+        padding: 100px 20px;
+        gap: 16px;
+    }
+
+    .academics-div > h1 {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    
+    .academics-div h3 {
+        font-size: 24px;
+    }
+    
+    .academics-div > p{
+        font-size: 16px;
+    }
+
+    .academics-stats{
+        flex-direction: column;
+        gap: 42px;
+        padding: 50px 20px;
+    }
+
+    .admissions-img-list{
+        flex-direction: column;
+    }
+
+    .academics-div-last{
+        padding-top: 0px;
+    }
+
+    .academics-div-blue{
+        margin: 0px;
+        padding: 50px 32px;
+    }
+
+    .academics-div .give-card-text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .academics-div .give-card-text div{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

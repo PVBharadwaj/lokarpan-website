@@ -3,11 +3,11 @@
 .kith-donate{
     color: white;
     background-color: #3F86F0;
-    padding: 50px 123px;
+    padding: 150px 123px;
 }
 
 .kith-donate h1{
-    font-size: 64px;
+    font-size: 48px;
     font-family: 'Noto Serif Display', serif;
 }
 
@@ -41,4 +41,14 @@
 
 .kith-donate-page{
     padding-top: 130px;
+}
+
+@media only screen and (max-width: 805px) {
+    .kith-donate{
+        padding: 75px 32px;
+    }
+
+    .kith-donate h1{
+        font-size: 24px;
+    }
 }

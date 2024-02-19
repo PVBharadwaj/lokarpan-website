@@ -73,7 +73,6 @@ const Academics = () => {
             <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbG69Pl6oPrw0d8ohefZLHO7ErlfaSnI_dI8UKYbbI7V6KHPrC" alt="" />
           </div>
         </div>
-      {/* </div> */}
       </div>
       <div className="academics-div academics-div-last">
         <h1>Life-long learning</h1>

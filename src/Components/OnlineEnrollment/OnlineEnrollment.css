@@ -112,3 +112,37 @@
     border: none;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 805px) {
+    .enrollment-head{
+        padding: 75px 32px !important;
+    }
+
+    .enrollment-div{
+        padding: 110px 60px;
+        gap: 16px;
+    }
+
+    .enrollment-div > h1 {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    
+    .enrollment-div h3 {
+        font-size: 24px;
+    }
+    
+    .enrollment-div > p,
+    .enrollment-form p {
+        font-size: 16px;
+    }
+
+    .enrollment-form{
+        padding: 100px 20px;
+    }
+
+    .admissions-img-list{
+        flex-direction: column;
+    }
+
+}
