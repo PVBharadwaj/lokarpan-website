@@ -81,7 +81,7 @@ class CampusAndCulture extends Component {
             className="campus-last-section-img"
           />
           <div className="campus-last-section-content">
-            <h1 className="campus-font48">Our Culture</h1>
+            <h1 className="campus-font48 mobile-no-space-above">Our Culture</h1>
             <p className="campus-font18">
               At Lokarpan, we celebrate diversity and believe that it is our
               differences that make us stronger. Our community is built on

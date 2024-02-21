@@ -135,7 +135,7 @@ class Alumni extends Component {
           </div>
         </div>
         <div className="alumni-last-section">
-          <h1 className="alumni-font24 alumni-space-left">
+          <h1 className="alumni-font24-last alumni-space-left">
             Alumni center Resources
           </h1>
           <div className="alumni-last-section-content">

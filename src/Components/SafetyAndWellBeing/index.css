@@ -79,3 +79,40 @@
 .safety-last-section-content-list li {
   list-style-type: disc;
 }
+
+@media screen and (max-width: 392px) {
+  .safety-wellbeing-upper-section {
+    height: 400px;
+  }
+  .safety-font48 {
+    font-size: 28px;
+  }
+  .safety-space-below {
+    margin-bottom: 200px;
+  }
+  .safety-upper-section-content {
+    width: calc(100% - 100px);
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .safety-font24 {
+    font-size: 14px;
+  }
+  .safety-last-section {
+    width: calc(100% - 40px);
+    margin: 50px auto;
+  }
+  .safety-last-section-content {
+    flex-direction: column;
+  }
+  .safety-last-section-content-left {
+    width: 100%;
+  }
+  .safety-last-section-content-right {
+    width: 100%;
+  }
+  .safety-last-section-content-list li {
+    font-size: 14px;
+  }
+}

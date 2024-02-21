@@ -63,6 +63,15 @@ class Information extends Component {
           </div>
           <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707978452/Rectangle_1809_ke4omy.png" />
         </div>
+        <div className="mobile-information-upper-section">
+          <h1>Leadership</h1>
+          <p>
+            At Lokarpan, we believe that leadership is not just about holding a
+            title; it's about inspiring positive change and fostering growth
+            within our community. We are excited to share the various leadership
+            opportunities available and the qualities that define our leaders.
+          </p>
+        </div>
         <ul className="information-list">
           <li>
             <b> Executive Leadership Team:</b> Guide the strategic direction of

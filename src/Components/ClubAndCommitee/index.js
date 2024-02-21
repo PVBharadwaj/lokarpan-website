@@ -1,9 +1,24 @@
 import { Component } from "react";
 import ReactPlayer from "react-player";
+import Marquee from "react-fast-marquee";
 import "./index.css";
 
+const videos = [
+  "https://www.youtube.com/watch?v=iu-LBY7NXD4",
+  "https://www.youtube.com/watch?v=iu-LBY7NXD4",
+  "https://www.youtube.com/watch?v=iu-LBY7NXD4",
+];
+
 class ClubAndCommitee extends Component {
+  state = { isMobileVideoPlaying: false };
+
+  handleIsMobileVideoPlaying = (isPlaying) => {
+    this.setState({ isMobileVideoPlaying: isPlaying });
+  };
+
   render() {
+    const { isMobileVideoPlaying } = this.state;
+    console.log(isMobileVideoPlaying);
     return (
       <div className="club-commitee-container">
         <div className="club-commitee-upper-section">
@@ -96,6 +111,31 @@ class ClubAndCommitee extends Component {
               What is one myth you would like to bust about McKinsey?
             </p>
           </div>
+        </div>
+        <div className="mobile-club-commitee-videos-section">
+          <Marquee
+            gradient={false}
+            play={!isMobileVideoPlaying}
+            pauseOnClick={true}
+          >
+            {videos.map((video, index) => (
+              <div className="mobile-each-video-item">
+                <ReactPlayer
+                  key={index}
+                  url={video}
+                  width="100%"
+                  height="250px"
+                  controls={true}
+                  style={{ marginRight: "20px" }}
+                  onPlay={() => this.handleIsMobileVideoPlaying(true)}
+                  onPause={() => this.handleIsMobileVideoPlaying(false)}
+                  speed={30}
+                />
+
+                <p>What is one myth you would like to bust about McKinsey?</p>
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
     );

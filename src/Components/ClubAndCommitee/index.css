@@ -119,3 +119,84 @@ ul li {
   margin-top: 44px;
   width: 100%;
 }
+
+.mobile-club-commitee-videos-section {
+  display: none;
+}
+
+@media screen and (max-width: 393px) {
+  .club-commitee-upper-section {
+    height: 370px;
+  }
+  .club-commitee-upper-section a {
+    font-size: 16px;
+    margin-top: 100px;
+  }
+  .club-commitee-upper-section h1 {
+    width: calc(100% - 60px);
+    font-size: 16px;
+    height: auto;
+  }
+  .club-commitee-club-section h1 {
+    font-size: 24px;
+  }
+
+  .club-commitee-club-section p {
+    width: calc(100% - 40px);
+    margin: 0px auto;
+    font-size: 14px;
+  }
+
+  .club-commitee-club-section {
+    margin: 20px auto;
+  }
+
+  .club-commitee-culture-section {
+    height: 700px;
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .club-commitee-culture-section img {
+    width: 100%;
+  }
+  .club-commitee-culture-section div {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .club-commitee-culture-section div h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .club-commitee-culture-section div p {
+    font-size: 14px;
+  }
+  .club-commitee-culture-section div ul li {
+    font-size: 14px;
+  }
+
+  .club-commitee-culture-section div ul {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .mobile-club-commitee-videos-section {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .club-commitee-videos-section {
+    display: none;
+  }
+  .mobile-each-video-item {
+    height: 100%;
+    width: 300px;
+    margin: 20px;
+  }
+  .mobile-club-commitee-videos-section p {
+    margin-top: 20px;
+  }
+}
