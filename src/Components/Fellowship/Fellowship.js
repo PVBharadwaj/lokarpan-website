@@ -1,8 +1,11 @@
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import "./Fellowship.css";
 
 const Fellowship = () => {
   return (
     <>
+    <Navbar />
       <div className="fellowship-top">
         <h1 className="impact-title">
           We know the best answers often come from those closest to the problem.
@@ -86,6 +89,7 @@ const Fellowship = () => {
           Apply
         </button>
       </div>
+      <Footer />
     </>
   );
 };

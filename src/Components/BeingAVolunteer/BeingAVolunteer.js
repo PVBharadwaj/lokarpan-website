@@ -1,10 +1,13 @@
 import FlipCard from "../Carousals/FlipCards/FlipCard";
 import VolunteerCarousel from "../Carousals/VolunteerCarousal/VolunteerCarousel";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./BeingAVolunteer.css";
 const BeingAVolunteer = () => {
   return (
     <>
+      <Navbar />
       <SupportSubNav />
       <div className="being-a-volunteer">
         <div className="volunteer-first-div">
@@ -31,6 +34,7 @@ const BeingAVolunteer = () => {
             </a>
           </div>
         </div>
+        <Footer />
     </>
   );
 };

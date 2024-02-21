@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Donate.css";
 import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 const Donate = () => {
   const [donationFrequency, setDonationFrequency] = useState("---");
   const [donationAmount, setDonationAmount] = useState("---");
@@ -54,6 +56,7 @@ const Donate = () => {
 
   return (
     <>
+    <Navbar />
       <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" link1="/donate" link2="/faqs"/>
       <div className="donate-page">
         <div className="donate-head">
@@ -498,6 +501,7 @@ const Donate = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

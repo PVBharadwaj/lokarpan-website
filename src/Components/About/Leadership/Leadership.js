@@ -1,3 +1,5 @@
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 import SecondaryNav from "../../Navbar/SecondaryNav/SecondaryNav";
 import "./Leadership.css";
 
@@ -27,6 +29,7 @@ const Leadership = () => {
 
   return (
     <>
+      <Navbar />
       <SecondaryNav />
       <div className="lead-page">
         <h2 className="title1">Our Leadership</h2>
@@ -52,6 +55,7 @@ const Leadership = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -2,6 +2,8 @@ import { useState } from "react";
 import FinancialNav from "../../Navbar/FinancialSubNav/FinancialNav";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Publications.css";
+import Navbar from "../../Navbar/Navbar";
+import Footer from "../../Footer/Footer";
 
 const Columns = [
   {
@@ -137,6 +139,7 @@ const Publications = () => {
   };
   return (
     <>
+      <Navbar />
       <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
       <div className="publication-page">
       <div className="public-top">
@@ -207,7 +210,7 @@ const Publications = () => {
 
       </div>
       </div>
-      
+      <Footer />
     </>
   );
 };

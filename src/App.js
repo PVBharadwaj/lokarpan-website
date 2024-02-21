@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./Components/Home/index";
-import Navbar from "./Components/Navbar/Navbar";
 import Career from "./Components/Career/index";
 import Leadership from "./Components/About/Leadership/Leadership";
 import Board from "./Components/About/Leadership/Board/board";
@@ -9,7 +8,6 @@ import Staff from "./Components/About/Leadership/Staff/Staff";
 import Educators from "./Components/About/Leadership/Educators/Educators";
 import Fellows from "./Components/About/Leadership/Fellows/Fellows";
 import OurRole from "./Components/OurRole";
-import Footer from "./Components/Footer/Footer";
 import Fellowship from "./Components/Fellowship/Fellowship";
 import Health from "./Components/Health";
 import Financials from "./Components/Financial/Financial";
@@ -51,7 +49,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/lokarpan-website">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<OurRole />}></Route>
@@ -90,25 +87,15 @@ function App() {
           <Route path="/kith/life-at-school" element={<LifeAtSchool />}></Route>
           <Route path="/kith/academics" element={<Academics />}></Route>
           <Route path="/kith/kith-donate" element={<KithDonate />}></Route>
-          <Route
-            path="/kith/campus-and-culture"
-            element={<CampusAndCulture />}
-          ></Route>
-          <Route
-            path="/kith/safety-and-wellbeing"
-            element={<SafetyAndWellBeing />}
-          ></Route>
-          <Route
-            path="/kith/club-and-commitee"
-            element={<ClubAndCommitee />}
-          ></Route>
+          <Route path="/kith/campus-and-culture" element={<CampusAndCulture />} ></Route>
+          <Route path="/kith/safety-and-wellbeing" element={<SafetyAndWellBeing />} ></Route>
+          <Route path="/kith/club-and-commitee" element={<ClubAndCommitee />}></Route>
           <Route path="/kith/information" element={<Information />}></Route>
           <Route path="/kith/alumni" element={<Alumni />}></Route>
           <Route path="/kith/leadership" element={<KithLeadership />}></Route>
         </Routes>
 
         <Subscribebtn />
-        <Footer />
       </BrowserRouter>
     </div>
   );

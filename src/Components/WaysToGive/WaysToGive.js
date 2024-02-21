@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./WaysToGive.css";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 const WaysToGive = () => {
   return (
     <>
+      <Navbar />
       <SupportSubNav />
       <div className="ways-top">
         <h1>Ways to give</h1>
@@ -74,6 +77,7 @@ const WaysToGive = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

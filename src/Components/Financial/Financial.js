@@ -1,10 +1,13 @@
 import FinCarousel from "../Carousals/FinancialCaousal/FinCarousal";
+import Footer from "../Footer/Footer";
 import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
+import Navbar from "../Navbar/Navbar";
 import "./Financial.css";
 
 const Financials = () => {
   return (
     <>
+    <Navbar />
       <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
       <div className="financial-page">
         <div className="fin-desp-head">
@@ -96,6 +99,7 @@ const Financials = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
