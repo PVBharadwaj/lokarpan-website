@@ -11,15 +11,15 @@
     font-family: 'Noto Serif Display', serif;
 }
 
-.kith-donate .citizen-dropdown  .drop-content {
+/* .kith-donate .citizen-dropdown  .drop-content {
     cursor: pointer;
     display: block;
-    padding: 15px 20px;
+    padding: 15px 0px;
     margin: 0;
     color: white;
     position: relative;
     font-size: 24px;
-  }
+  } */
 
 .kith-donate .citizen-dropdown .drop-content::after {
     content: "";
@@ -49,6 +49,6 @@
     }
 
     .kith-donate h1{
-        font-size: 24px;
+        font-size: 20px;
     }
 }

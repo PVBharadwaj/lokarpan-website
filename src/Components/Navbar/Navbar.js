@@ -23,10 +23,12 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // const toggleMenuOnClick = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  //   setActiveDropdown(null);
-  // };
+  const handleNavlinkClick = (e) => {
+    if (window.innerWidth <= 805) { 
+      e.preventDefault();
+      toggleDropdown();
+    }
+  };
 
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
@@ -53,11 +55,10 @@ const Navbar = () => {
         >
           <RxCross2 className="cross" onClick={toggleMenu}/>
           <li className="navbar-item">
-            
             <Link to="/" onClick={toggleMenu}>Home</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={handleNavlinkClick}>About</Link>
             <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
@@ -65,11 +66,6 @@ const Navbar = () => {
               }`}
             >
               <div className="dropdown-container">
-                {/* <div class="back" onClick={handleBackClick}>
-                  <IoIosArrowBack
-                    className={activeDropdown !== null ? "down active" : "down"}
-                  />
-                </div> */}
                 <h4>Explore About</h4>
                 <ul>
                   <li>
@@ -112,7 +108,7 @@ const Navbar = () => {
             </div>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <Link to="/approach">Education</Link>
+            <Link to="/approach" onClick={handleNavlinkClick}>Education</Link>
             <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
@@ -159,7 +155,7 @@ const Navbar = () => {
             <Link to="/kith-overview" onClick={toggleMenu}>Kith</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <Link to="/design">Design</Link>
+            <Link to="/design" onClick={handleNavlinkClick}>Design</Link>
             <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
@@ -191,7 +187,7 @@ const Navbar = () => {
             <Link to="/" onClick={toggleMenu}>Livelihood</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
-            <Link to="/ways-to-give">Support</Link>
+            <Link to="/ways-to-give" onClick={handleNavlinkClick}>Support</Link>
             <IoIosArrowForward className="up" />
             <div
               className={`dropdown-content ${
@@ -235,11 +231,6 @@ const Navbar = () => {
         <ul className="navbar-links navbar-icons">
           <li className="navbar-item dropdown nav-search" >
             <CiSearch className="navbar-icon-inner" onClick={toggleSearchmenu} />
-            {/* <div
-              className={`dropdown-content ${
-                activeDropdown !== null ? "active" : ""
-              }`}
-            > */}
             <div
               className={`click-dropdown  ${
                 isSearchmenuOpen ? "active" : ""
