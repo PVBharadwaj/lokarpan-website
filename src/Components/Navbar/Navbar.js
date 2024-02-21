@@ -13,17 +13,20 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(null);
+
   const toggleSearchmenu = () => {
     setSearchmenuOpen(!isSearchmenuOpen);
   };
+  
   const toggleMenu = () => {
+    setActiveDropdown(null);
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleMenuOnClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-    setActiveDropdown(null);
-  };
+  // const toggleMenuOnClick = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  //   setActiveDropdown(null);
+  // };
 
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
@@ -51,7 +54,7 @@ const Navbar = () => {
           <RxCross2 className="cross" onClick={toggleMenu}/>
           <li className="navbar-item">
             
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={toggleMenu}>Home</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/about">About</Link>
@@ -62,6 +65,11 @@ const Navbar = () => {
               }`}
             >
               <div className="dropdown-container">
+                {/* <div class="back" onClick={handleBackClick}>
+                  <IoIosArrowBack
+                    className={activeDropdown !== null ? "down active" : "down"}
+                  />
+                </div> */}
                 <h4>Explore About</h4>
                 <ul>
                   <li>
@@ -145,10 +153,10 @@ const Navbar = () => {
             </div>
           </li>
           <li className="navbar-item">
-            <Link to="/fellowship">Fellowship</Link>
+            <Link to="/fellowship" onClick={toggleMenu}>Fellowship</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/kith-overview">Kith</Link>
+            <Link to="/kith-overview" onClick={toggleMenu}>Kith</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/design">Design</Link>
@@ -174,13 +182,13 @@ const Navbar = () => {
             </div>
           </li>
           <li className="navbar-item">
-            <Link to="/">Health</Link>
+            <Link to="/" onClick={toggleMenu}>Health</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/">Environment</Link>
+            <Link to="/" onClick={toggleMenu}>Environment</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/">Livelihood</Link>
+            <Link to="/" onClick={toggleMenu}>Livelihood</Link>
           </li>
           <li className="navbar-item dropdown" onClick={toggleDropdown}>
             <Link to="/ways-to-give">Support</Link>

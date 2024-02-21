@@ -74,20 +74,20 @@ function App() {
           <Route path="/moonshots" element={<Moonshots />}></Route>
           <Route path="/make-a-gift" element={<MakeAGift />}></Route>
           <Route path="/ways-to-give" element={<WaysToGive />}></Route>
+          <Route path="/education" element={<Education />}></Route>
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/why-donate" element={<WhyDonate />}></Route>
           <Route path="/being-a-volunteer" element={<BeingAVolunteer />}></Route>
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
-          <Route path="/enrollment" element={<OnlineEnrollment />}></Route>
-          <Route path="/education" element={<Education />}></Route>
-          <Route path="/how-to" element={<HowTo />}></Route>
-          <Route path="/kith-overview" element={<Kith />}></Route>
-          <Route path="/admission" element={<Admission />}></Route>
-          <Route path="/life-at-school" element={<LifeAtSchool />}></Route>
-          <Route path="/academics" element={<Academics />}></Route>
-          <Route path="/kith-donate" element={<KithDonate />}></Route>
+          <Route path="/kith/enrollment" element={<OnlineEnrollment />}></Route>
+          <Route path="/kith/how-to" element={<HowTo />}></Route>
+          <Route path="/kith/kith-overview" element={<Kith />}></Route>
+          <Route path="/kith/admission" element={<Admission />}></Route>
+          <Route path="/kith/life-at-school" element={<LifeAtSchool />}></Route>
+          <Route path="/kith/academics" element={<Academics />}></Route>
+          <Route path="/kith/kith-donate" element={<KithDonate />}></Route>
           <Route
             path="/kith/campus-and-culture"
             element={<CampusAndCulture />}

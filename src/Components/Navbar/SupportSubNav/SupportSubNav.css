@@ -51,10 +51,18 @@
     padding: 20px 10px;
   }
 
-  .click-dropdown.active {
+  /* .click-dropdown.active {
     position: fixed;
     right: 0px;
     left: 0px;
     padding: 20px 10px;
-}
+} */
+
+  .click-dropdown.active {
+    position: absolute;
+    padding: 20px 10px;
+    top: 40px;
+    right: -93px;
+    left: -73vw;
+  }
 }

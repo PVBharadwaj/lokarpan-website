@@ -1,6 +1,7 @@
 import React from 'react'
 import "./OnlineEnrollment.css"
 import { Link } from 'react-router-dom'
+import KithCarousels from '../Carousals/KithCarousels/KithCarousels'
 
 const OnlineEnrollment = () => {
   return (
@@ -43,7 +44,7 @@ const OnlineEnrollment = () => {
       <div className="enrollment-div enrollment-admin">
         <h3>Admissions Contact</h3>
         <div className="admissions-img-list">
-            <div>
+            {/* <div>
                 <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
                 <p>Name</p>
             </div>
@@ -58,7 +59,9 @@ const OnlineEnrollment = () => {
             <div>
                 <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
                 <p>Name</p>
-            </div>
+            </div> */}
+
+            <KithCarousels />
         </div>
       </div>
       {/* <div className="enrollment-page">

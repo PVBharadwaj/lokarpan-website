@@ -163,13 +163,6 @@
         transform-origin: 206px 182px;
     }
     
-    
-
-
-
-
-
-
     .admissions-grid{
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -215,5 +208,9 @@
     .admission-grid-inner6{
         grid-row: span 1;
         grid-column: span 4;
+    }
+
+    .admissions-div > .give-card h3{
+        font-size: 24px;
     }
 }

@@ -31,9 +31,12 @@
 }
 
 @media only screen and (max-width: 805px) {
-  .click-dropdown.active {
+  .education .click-dropdown.active {
     position: absolute;
-    right: 0px;
+    padding: 20px 10px;
+    top: 40px;
+    right: -11px !important;
+    left: -95vw !important;
   }
   .mobile-item {
     display: block;

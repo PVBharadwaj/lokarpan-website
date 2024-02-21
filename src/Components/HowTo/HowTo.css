@@ -158,4 +158,12 @@
     .howto-faqs > h1{
         font-size: 24px;
     }
+
+    .howto-faqs .question{
+        font-size: 14px;
+    }
+
+    .howto-faqs .each-question{
+        padding: 14px;
+    }
 }

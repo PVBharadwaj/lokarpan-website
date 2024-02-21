@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Kith.css"
 import { Link } from 'react-router-dom'
+import KithCarousels from '../Carousals/KithCarousels/KithCarousels'
 
 const Kith = () => {
   return (
@@ -12,7 +13,7 @@ const Kith = () => {
       <div className="kith-overview-div kith-overview-second-div">
           <p>These are just a few of the dedicated individuals who form the backbone of Lokarpan. Each member of our faculty plays a crucial role in driving our initiatives forward and making a positive impact in the communities we serve.</p>
       </div>
-      <div className="kith-overview-div">
+      <div className="kith-overview-div kith-overview-third-div">
         <div className="give-card">
           <div>
             <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjZBPmgfRr4ngdrnA8f5e0ZxXBIAN6rVqq8b9wvzru_TsDwU6F" alt="" />
@@ -39,12 +40,13 @@ const Kith = () => {
       <div className="kith-overview-div kith-overview-grid">
         <div className='overview-grid-inner kith-overview-grid-inner1'>
           <div>
+            <div className='mobile-only' ><img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmeC1kb-RMfD9-shYUt2sTVyOi3L0trP-jRpYHkJAMJphX_tNK' /></div>
           <p>At McKinsey, we hire people, not degrees. There is no set definition for what exceptional looks like</p>
           <Link to="/" className='kith-link'>Ready to apply? Search for other roles</Link> 
           </div>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner2'>
-        <div className='imgdiv'></div>
+        <div className='imgdiv'><img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSm9hB4gUwO0rb3qqHwIBNONwS7H9veer79-IzMRZ7kcZxtdTnU' /></div>
         <div className='textdiv'>
           <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>  
           <Link to="/" className='kith-link'>Learn more about our interviews</Link> 
@@ -57,30 +59,19 @@ const Kith = () => {
           <div className='textdiv'>
           <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
           </div>
-          <div className='imgdiv'></div>
+          <div className='imgdiv'><img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVKYNv_iiNUsku5exuqrCV3GYYjBbrjyBLtVXwM92bkjNDMcVc' /></div>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner5'>
           <div className='textdiv'>
             <p>At McKinsey, we hire people, not degrees. There is no set definition for what exceptional looks like</p>
             <Link to="/" className='kith-link kith-link-static'>Read more on our Blog</Link> 
           </div>
-          <div className='imgdiv'></div>
+          <div className='imgdiv'><img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCY2fU5lwPXDIzPGMryEDHAxJ84yMUcvgYT8YMYZTnHmgqeryV' /></div>
         </div>
       </div>
       <div className='kith-overview-div overview-img-div'>
         <div className="kith-overview-img-list">
-            <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-               
-            </div>
-            <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-               
-            </div>
-            <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-                
-            </div>
+          <KithCarousels />
         </div>
       </div>
       <div className='kith-overview-div kith-overview-last-div'>

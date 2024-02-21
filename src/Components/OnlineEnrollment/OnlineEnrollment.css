@@ -145,4 +145,8 @@
         flex-direction: column;
     }
 
+    .enrollment-admin{
+        padding: 200px 0px;
+    }
+
 }
