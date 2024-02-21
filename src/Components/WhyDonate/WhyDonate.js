@@ -1,9 +1,12 @@
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./WhyDonate.css";
 
 const WhyDonate = () => {
   return (
     <>
+      <Navbar />
       <SupportSubNav />
       <div className="why-donate">
         <div className="donate-first-div">
@@ -73,6 +76,7 @@ const WhyDonate = () => {
           </a>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

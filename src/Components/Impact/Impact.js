@@ -1,9 +1,12 @@
 import "./Impact.css";
 import ImpactCarousel from "../Carousals/ImpactCarousel/ImpactCarousel";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 const Impact = () => {
   return (
     <>
+      <Navbar />
       <div className="fellowship-top">
         <h1 className="impact-title">
           We know the best answers often come from those closest to the problem.
@@ -75,6 +78,7 @@ const Impact = () => {
           Apply
         </button>
       </div>
+      <Footer />
     </>
   );
 };

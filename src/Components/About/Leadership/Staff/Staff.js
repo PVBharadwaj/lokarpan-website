@@ -3,6 +3,8 @@ import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Staff.css";
 import axios from "axios";
+import Navbar from "../../../Navbar/Navbar";
+import Footer from "../../../Footer/Footer";
 
 const StaffData = [
   {
@@ -107,6 +109,7 @@ const Staff = () => {
 
   return (
     <>
+    <Navbar />
       <SecondaryNav />
       <div className="staff-page">
         <h2 className="title1">Team</h2>
@@ -118,6 +121,7 @@ const Staff = () => {
         </div>
         <div className="dummy"></div>
       </div>
+      <Footer />
     </>
   );
 };

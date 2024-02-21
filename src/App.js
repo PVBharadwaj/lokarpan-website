@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./Components/Home/index";
-import Navbar from "./Components/Navbar/Navbar";
 import Career from "./Components/Career/index";
 import Leadership from "./Components/About/Leadership/Leadership";
 import Board from "./Components/About/Leadership/Board/board";
@@ -9,7 +8,6 @@ import Staff from "./Components/About/Leadership/Staff/Staff";
 import Educators from "./Components/About/Leadership/Educators/Educators";
 import Fellows from "./Components/About/Leadership/Fellows/Fellows";
 import OurRole from "./Components/OurRole";
-import Footer from "./Components/Footer/Footer";
 import Fellowship from "./Components/Fellowship/Fellowship";
 import Health from "./Components/Health";
 import Financials from "./Components/Financial/Financial";
@@ -75,6 +73,7 @@ function App() {
           <Route path="/moonshots" element={<Moonshots />}></Route>
           <Route path="/make-a-gift" element={<MakeAGift />}></Route>
           <Route path="/ways-to-give" element={<WaysToGive />}></Route>
+          <Route path="/education" element={<Education />}></Route>
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/why-donate" element={<WhyDonate />}></Route>
           <Route
@@ -84,26 +83,16 @@ function App() {
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
-          <Route path="/enrollment" element={<OnlineEnrollment />}></Route>
-          <Route path="/education" element={<Education />}></Route>
-          <Route path="/how-to" element={<HowTo />}></Route>
-          <Route path="/kith-overview" element={<Kith />}></Route>
-          <Route path="/admission" element={<Admission />}></Route>
-          <Route path="/life-at-school" element={<LifeAtSchool />}></Route>
-          <Route path="/academics" element={<Academics />}></Route>
-          <Route path="/kith-donate" element={<KithDonate />}></Route>
-          <Route
-            path="/kith/campus-and-culture"
-            element={<CampusAndCulture />}
-          ></Route>
-          <Route
-            path="/kith/safety-and-wellbeing"
-            element={<SafetyAndWellBeing />}
-          ></Route>
-          <Route
-            path="/kith/club-and-commitee"
-            element={<ClubAndCommitee />}
-          ></Route>
+          <Route path="/kith/enrollment" element={<OnlineEnrollment />}></Route>
+          <Route path="/kith/how-to" element={<HowTo />}></Route>
+          <Route path="/kith/kith-overview" element={<Kith />}></Route>
+          <Route path="/kith/admission" element={<Admission />}></Route>
+          <Route path="/kith/life-at-school" element={<LifeAtSchool />}></Route>
+          <Route path="/kith/academics" element={<Academics />}></Route>
+          <Route path="/kith/kith-donate" element={<KithDonate />}></Route>
+          <Route path="/kith/campus-and-culture" element={<CampusAndCulture />} ></Route>
+          <Route path="/kith/safety-and-wellbeing" element={<SafetyAndWellBeing />} ></Route>
+          <Route path="/kith/club-and-commitee" element={<ClubAndCommitee />}></Route>
           <Route path="/kith/information" element={<Information />}></Route>
           <Route path="/kith/alumni" element={<Alumni />}></Route>
           <Route path="/kith/leadership" element={<KithLeadership />}></Route>

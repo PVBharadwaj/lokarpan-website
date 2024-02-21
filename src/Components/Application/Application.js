@@ -1,5 +1,7 @@
 import AppCarousel from "../Carousals/ApplicationCarousal/AppCarousal";
+import Footer from "../Footer/Footer";
 import EducationSubNav from "../Navbar/EducationSubNav";
+import Navbar from "../Navbar/Navbar";
 import "./Application.css";
 import { FaRegGem } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
@@ -28,6 +30,7 @@ const Plans = [
 const Application = () => {
   return (
     <>
+      <Navbar />
       <EducationSubNav />
       <div className="app-page">
         <div className="app-div">
@@ -90,6 +93,7 @@ const Application = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

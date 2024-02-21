@@ -2,6 +2,8 @@ import React from 'react'
 import "./HowTo.css"
 import { Link } from 'react-router-dom'
 import SegmentButton from '../Carousals/SegmentButton/SegmentButton';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const HowTo = () => {
   const howtoFaqs = [
@@ -52,7 +54,8 @@ const HowTo = () => {
 
   return (
     <>
-        <div className="howto-div">
+      <Navbar />
+      <div className="howto-div">
             <h1>We are thrilled to extend a warm welcome to you as part of the Lokarpan family.</h1>
       </div>
       <div className='howto-page'>
@@ -93,7 +96,7 @@ const HowTo = () => {
         <h1>Ready to apply</h1>
         <Link to="/" className="kith-apply-btn white border-black">Apply</Link>
       </div>
-
+      <Footer />
     </>
   )
 }

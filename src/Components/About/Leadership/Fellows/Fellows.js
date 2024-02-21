@@ -2,6 +2,8 @@ import { useState } from "react";
 import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Fellows.css";
+import Navbar from "../../../Navbar/Navbar";
+import Footer from "../../../Footer/Footer";
 const FellowData = [
   {
     id: 1,
@@ -92,6 +94,7 @@ const Fellows = () => {
   }
   return (
     <>
+    <Navbar />
       <SecondaryNav />
       <div className="fellows-page">
         <h2 className="title1">Fellows</h2>
@@ -112,6 +115,7 @@ const Fellows = () => {
         </div>
         <div className="dummy"></div>
       </div>
+    <Footer />
     </>
   );
 };

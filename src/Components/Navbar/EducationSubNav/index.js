@@ -21,7 +21,7 @@ const EducationSubNav = () => {
           <li className="navbar-item desktop-only">
             <Link to="/digital-tool">Digital Tools</Link>
           </li>
-          <li className="navbar-item dropdown">
+          <li className="navbar-item dropdown education">
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
               <BsChevronDown className="react-icon" />
