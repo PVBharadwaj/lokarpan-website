@@ -1,12 +1,16 @@
 import { Component } from "react";
 import { FaLinkedin } from "react-icons/fa6";
 import SubNavbar from "../Navbar/SubNavbar";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
 import "./index.css";
 
 class Career extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <SubNavbar />
         <div className="career-container">
           <div className="career-top-container">
@@ -110,6 +114,7 @@ class Career extends Component {
             </button>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

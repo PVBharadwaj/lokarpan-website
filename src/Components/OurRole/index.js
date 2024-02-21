@@ -3,6 +3,8 @@ import SubNavbar from "../Navbar/SubNavbar";
 import { IoMdClose, IoMdExpand } from "react-icons/io";
 import Popup from "reactjs-popup";
 import Slider from "react-slick";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
@@ -48,6 +50,7 @@ class OurRole extends Component {
 
     return (
       <>
+        <Navbar />
         <SubNavbar />
         <div className="our-role-container">
           <div className="top-section">
@@ -3328,13 +3331,14 @@ class OurRole extends Component {
               Lokarpan is a small nonprofit with a big dream. Join others
               helping to fight poverty, disease, school parity, and inequity for
               at risk communities.
-            </p> 
+            </p>
 
             <button type="button" className="our-role-apply-btn">
               Donate Now
             </button>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

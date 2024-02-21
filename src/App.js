@@ -51,7 +51,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/lokarpan-website">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<OurRole />}></Route>
@@ -78,7 +77,10 @@ function App() {
           <Route path="/ways-to-give" element={<WaysToGive />}></Route>
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/why-donate" element={<WhyDonate />}></Route>
-          <Route path="/being-a-volunteer" element={<BeingAVolunteer />}></Route>
+          <Route
+            path="/being-a-volunteer"
+            element={<BeingAVolunteer />}
+          ></Route>
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
@@ -108,7 +110,6 @@ function App() {
         </Routes>
 
         <Subscribebtn />
-        <Footer />
       </BrowserRouter>
     </div>
   );

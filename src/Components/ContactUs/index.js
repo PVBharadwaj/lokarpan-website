@@ -1,5 +1,8 @@
 import { Component } from "react";
 import ContactSubNav from "../Navbar/ContactSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
 import "./index.css";
 
 class ContactUs extends Component {
@@ -11,10 +14,11 @@ class ContactUs extends Component {
   };
   render() {
     const { active } = this.state;
-   
+
     return (
       <>
-        <ContactSubNav  />
+        <Navbar />
+        <ContactSubNav />
 
         <div className="contact-us-container">
           <div className="contact-us-top-section">
@@ -148,6 +152,7 @@ class ContactUs extends Component {
             </ul>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

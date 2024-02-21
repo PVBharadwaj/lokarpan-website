@@ -1,5 +1,7 @@
 import { Component } from "react";
 import DonateSubNav from "../Navbar/DonateSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import { FaCirclePlus } from "react-icons/fa6";
 import "./index.css";
 
@@ -58,6 +60,7 @@ class Faqs extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <DonateSubNav />
         <div className="faqs-container">
           <div className="donate-upper-section">
@@ -99,6 +102,8 @@ class Faqs extends Component {
             </ul>
           </div>
         </div>
+
+        <Footer />
       </>
     );
   }

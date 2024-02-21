@@ -1,11 +1,15 @@
 import { Component } from "react";
 import EducationSubNav from "../Navbar/EducationSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
 import "./index.css";
 
 class Approach extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <EducationSubNav />
 
         <div className="approach-container">
@@ -244,6 +248,7 @@ class Approach extends Component {
             </p>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

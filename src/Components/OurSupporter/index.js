@@ -1,13 +1,15 @@
 import { Component } from "react";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import "./index.css";
 
 class OurSupporter extends Component {
   render() {
-    const { isDropdownVisible } = this.props;
     return (
       <>
-        <SupportSubNav isDropdownVisible={isDropdownVisible} />
+        <Navbar />
+        <SupportSubNav />
 
         <div className="our-supporter-container">
           <div className="our-supporter-top-section">
@@ -77,6 +79,7 @@ class OurSupporter extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

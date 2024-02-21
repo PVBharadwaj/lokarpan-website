@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
 import EducationSubNav from "../Navbar/EducationSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import { SiApplepodcasts, SiGooglepodcasts } from "react-icons/si";
 
 import "./index.css";
@@ -45,6 +47,7 @@ class PodCasts extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <EducationSubNav />
 
         <div className="podcasts-container">
@@ -123,6 +126,7 @@ class PodCasts extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

@@ -1,5 +1,7 @@
 import { Component } from "react";
 import EducationSubNav from "../Navbar/EducationSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import { IoHomeOutline } from "react-icons/io5";
 import "./index.css";
 
@@ -7,6 +9,7 @@ class DigitalTool extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <EducationSubNav />
 
         <div className="digital-tool-container">
@@ -162,6 +165,7 @@ class DigitalTool extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </>
     );
   }
