@@ -1,5 +1,21 @@
 import { Component } from "react";
+import SearchBar from "../Searchbar/Searchbar";
 import "./index.css";
+
+const imagesList = [
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272579/Rectangle_1835_boo8we.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272568/Rectangle_1833_a34cuy.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272555/Rectangle_1834_yqau7k.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272579/Rectangle_1835_boo8we.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272568/Rectangle_1833_a34cuy.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272555/Rectangle_1834_yqau7k.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272579/Rectangle_1835_boo8we.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272568/Rectangle_1833_a34cuy.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272555/Rectangle_1834_yqau7k.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272579/Rectangle_1835_boo8we.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272568/Rectangle_1833_a34cuy.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708272555/Rectangle_1834_yqau7k.png",
+];
 
 class KithLeadership extends Component {
   render() {
@@ -18,6 +34,15 @@ class KithLeadership extends Component {
           </div>
           <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707978452/Rectangle_1809_ke4omy.png" />
         </div>
+        <div className="mobile-kith-leadership-upper-section">
+          <h1>Leadership</h1>
+          <p>
+            At Lokarpan, we believe that leadership is not just about holding a
+            title; it's about inspiring positive change and fostering growth
+            within our community. We are excited to share the various leadership
+            opportunities available and the qualities that define our leaders.
+          </p>
+        </div>
         <ul className="kith-leadership-list">
           <li>
             <b> Executive Leadership Team:</b> Guide the strategic direction of
@@ -34,13 +59,16 @@ class KithLeadership extends Component {
             art for social change.
           </li>
         </ul>
-        <div className="img-contain">
-          {" "}
-          <img
-            className="main-img"
-            src="https://www.webii.net/blog/wp-content/uploads/2019/12/making-websites-human-collage-1.jpg"
-            alt=""
-          />
+        <div className="kith-leadership-images-container">
+          <h1 className="kith-font48">Board</h1>
+          <SearchBar />
+          <ul className="images-list">
+            {imagesList.map((each) => (
+              <li>
+                <img src={each} className="each-list-img" />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     );

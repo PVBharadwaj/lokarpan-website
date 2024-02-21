@@ -147,3 +147,100 @@
   font-size: 16px;
   margin-right: 20px;
 }
+.alumni-font24-last {
+  font-size: 24px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 393px) {
+  .alumni-upper-container {
+    background-size: cover;
+    height: 370px;
+  }
+
+  .alumni-upper-container h1 {
+    width: calc(100% - 60px);
+    margin: auto;
+    font-size: 20px;
+  }
+  .alumni-font36 {
+    font-size: 24px;
+  }
+
+  .safety-last-section-content-left {
+    margin-bottom: 50px;
+  }
+  .alumni-link {
+    font-size: 14px;
+  }
+
+  .alumni-donate-section {
+    flex-direction: column;
+    width: calc(100% - 40px);
+    margin: 100px auto;
+    height: auto;
+  }
+  .alumni-donate-img {
+    width: 100%;
+    height: 240px;
+  }
+  .alumni-donate-cont {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .alumni-donate-cont h1 {
+    font-size: 24px;
+  }
+
+  .alumni-donate-cont p {
+    font-size: 14px;
+  }
+
+  .alumni-mail-section {
+    flex-direction: column;
+    height: 750px;
+    padding-top: 50px;
+  }
+
+  .alumni-mail-first-sec {
+    width: 90%;
+  }
+  .alumni-mail-second-sec {
+    width: 90%;
+  }
+
+  .alumni-mail-second-sec div {
+    margin-bottom: 20px;
+  }
+
+  .alumni-mail-third-sec {
+    width: 90%;
+  }
+  .alumni-font28 {
+    font-size: 20px;
+  }
+  .alumni-font20 {
+    font-size: 14px;
+  }
+  .alumni-mail-second-sec ul li {
+    font-size: 14px;
+  }
+  .alumni-last-section {
+    padding: 0;
+  }
+  .alumni-last-section-content-div {
+    width: 100%;
+    height: 100px;
+  }
+  .alumni-font24 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .alumni-space-left {
+    margin-left: 40px;
+  }
+  .alumni-font24-last {
+    margin-top: 30px;
+  }
+}
