@@ -89,7 +89,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/mission" onClick={toggleMenu}>
                     Mission
                   </Link>
                 </li>
@@ -114,22 +114,24 @@ const Navbar = () => {
               <h4 className="quicklinks-heading">Quick Links</h4>
               <ul className="quick-links">
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
-                    Alumini
+                  <Link to="/alumni" onClick={toggleMenu}>
+                    Alumni
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/contact-us" onClick={toggleMenu}>
                     Contact
                   </Link>
                 </li>
                 <li>
                   <Link to="/our-role" onClick={toggleMenu}>
+                    {/*  need to update to in Link  */}
                     Blog
                   </Link>
                 </li>
                 <li>
                   <Link to="/leadership" onClick={toggleMenu}>
+                    {/*  need to update to in Link  */}
                     Subscribe
                   </Link>
                 </li>
@@ -187,6 +189,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/our-role" onClick={toggleMenu}>
+                    {/*  need to update to in Link  */}
                     Volunteer
                   </Link>
                 </li>
@@ -200,7 +203,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/alumni" onClick={toggleMenu}>
+          <Link to="/kith-overview" onClick={toggleMenu}>
             Kith
           </Link>
         </li>
@@ -236,17 +239,17 @@ const Navbar = () => {
           </div>
         </li>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/health" onClick={toggleMenu}>
             Health
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/environment" onClick={toggleMenu}>
             Environment
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/livelihood" onClick={toggleMenu}>
             Livelihood
           </Link>
         </li>
@@ -299,7 +302,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/fellowship" onClick={toggleMenu}>
                     Apply for Fellowship
                   </Link>
                 </li>

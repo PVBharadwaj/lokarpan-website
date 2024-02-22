@@ -76,7 +76,10 @@ function App() {
           <Route path="/education" element={<Education />}></Route>
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/why-donate" element={<WhyDonate />}></Route>
-          <Route path="/being-a-volunteer" element={<BeingAVolunteer />}></Route>
+          <Route
+            path="/being-a-volunteer"
+            element={<BeingAVolunteer />}
+          ></Route>
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
@@ -87,17 +90,25 @@ function App() {
           <Route path="/life-at-school" element={<LifeAtSchool />}></Route>
           <Route path="/academics" element={<Academics />}></Route>
           <Route path="/kith-donate" element={<KithDonate />}></Route>
-          <Route path="/campus-and-culture" element={<CampusAndCulture />} ></Route>
-          <Route path="/safety-and-wellbeing" element={<SafetyAndWellBeing />} ></Route>
-          <Route path="/club-and-commitee" element={<ClubAndCommitee />}></Route>
-          <Route path="/information" element={<Information />}></Route>
-          <Route path="/alumni" element={<Alumni />}></Route>
+          <Route
+            path="/kith-campus-and-culture"
+            element={<CampusAndCulture />}
+          ></Route>
+          <Route
+            path="/kith-safety-and-wellbeing"
+            element={<SafetyAndWellBeing />}
+          ></Route>
+          <Route
+            path="/kith-club-and-commitee"
+            element={<ClubAndCommitee />}
+          ></Route>
+          <Route path="/kith-information" element={<Information />}></Route>
+          <Route path="/kith-alumni" element={<Alumni />}></Route>
           <Route path="/kith-leadership" element={<KithLeadership />}></Route>
         </Routes>
 
         <Subscribebtn />
       </BrowserRouter>
-      
     </div>
   );
 }
