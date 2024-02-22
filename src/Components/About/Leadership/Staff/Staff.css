@@ -47,7 +47,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 393px) {
   .staff-page {
     padding: 10px 30px;
   }

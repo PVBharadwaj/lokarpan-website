@@ -60,7 +60,7 @@
   outline: none;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 393px) {
   .publication-page {
     padding: 10px 30px;
   }

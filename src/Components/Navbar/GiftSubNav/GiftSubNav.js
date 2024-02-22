@@ -48,7 +48,7 @@ const GiftSubNav = () => {
             </div>
           </li>
           <li className="navbar-item apply-btn orange">
-              <Link to="/donate" className="apply-btn-text">Donate</Link>
+              <Link to="/donate" className="apply-btn-text-white navbar-btn">Donate</Link>
           </li>
         </ul>
       </div>

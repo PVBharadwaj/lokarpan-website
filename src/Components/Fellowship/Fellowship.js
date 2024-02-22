@@ -1,13 +1,15 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import { Link } from "react-router-dom";
 import "./Fellowship.css";
 
 const Fellowship = () => {
   return (
     <>
     <Navbar />
+    <div className="fellowship-nav"><h1>Fellowship</h1></div>
       <div className="fellowship-top">
-        <h1 className="impact-title">
+        <h1>
           We know the best answers often come from those closest to the problem.
         </h1>
       </div>
@@ -16,7 +18,7 @@ const Fellowship = () => {
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYCbI5KhCuKslTWTE56M4U1zl9E7zpyej2e-1lfYsWnQUEorDe"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708613081/DSC03865_1_qx9uvp.png"
               alt="img1"
             />
             <h3 className="impact-title">We look for big ideas.</h3>
@@ -30,7 +32,7 @@ const Fellowship = () => {
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdGzwCWsas9b1EJuQlZj0DDTdP6w6gSL2TwiTS6PqKeoKEMIB2"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708613080/cannon_040_1_skwlle.png"
               alt="img2"
             />
             <h3 className="impact-title">We ask communities what they need.</h3>
@@ -51,17 +53,17 @@ const Fellowship = () => {
           <div className="impact-div">
             <img
               className="impact-img"
-              src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkgaPsD9ITq3p-F4XcX1Jzbkn6rUvMhJfjLvSkHs1fL_6PKd_1"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708614197/DSC03458_1_tjuemh.png"
               alt="img3"
             />
             <img
               className="impact-img"
-              src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzmWbbgTXVQ_-CYk_ea4I0SnFIQNPk2CWmD8K2myQePJax6b_O"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708614186/DSC06753_1_yrt9xp.png"
               alt="img4"
             />
             <img
               className="impact-img"
-              src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1i6yTMN8ELD2xiM9G550H-ktk0y4xtsrmSfJzMUoqjYODRGzt"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708614181/BNF_visited_at_Community_level_during_VHND_1_ogldwj.png"
               alt="img5"
             />
           </div>
@@ -85,9 +87,9 @@ const Fellowship = () => {
           Through Google.org Impact challenges, we award nonprofits and social
           enterprises with support to help bring their ideas to life.
         </p>
-        <button className="apply" type="submit">
-          Apply
-        </button>
+        <div className="apply-btn white">
+          <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>
+        </div>
       </div>
       <Footer />
     </>

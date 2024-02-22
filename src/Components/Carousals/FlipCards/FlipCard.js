@@ -24,7 +24,7 @@ const FlipCard = () => {
                 Browse accessories to find new colors to go with your devices.
               </h1>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17iUre2unRvHGIQXknQu5qvISoZcJAInHxtJG-hCtkw&s"
+                src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632775/image_327_tg9gsn.png"
                 alt=""
               />
             </div>

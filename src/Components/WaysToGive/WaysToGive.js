@@ -14,7 +14,7 @@ const WaysToGive = () => {
       <div className="ways-page">
         <div className="give-card">
           <div>
-            <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
+            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635200/image_341_ym6hdk.png" alt="" />
           </div>
           <div className="give-card-text">
             <h1>Make a Gift</h1>
@@ -41,12 +41,12 @@ const WaysToGive = () => {
             <Link to="/">Free Membership</Link>
           </div>
           <div>
-            <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
+            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_340_ufii5c.png" alt="" />
           </div>
         </div>
         <div className="give-card">
           <div>
-            <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
+            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_344_fiaeft.png" alt="" />
           </div>
           <div className="give-card-text">
             <h1>Fellows</h1>
@@ -73,7 +73,7 @@ const WaysToGive = () => {
             <Link to="/">Free Membership</Link>
           </div>
           <div>
-            <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
+            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635217/image_342_seejwv.png" alt="" />
           </div>
         </div>
       </div>

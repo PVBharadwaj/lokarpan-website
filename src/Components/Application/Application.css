@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 60px 100px;
+  padding: 60px 50px;
 }
 
 .browse {
@@ -46,8 +46,11 @@
   text-align: left;
 }
 
-.browse-text button {
-  margin: 40px 0px;
+.browse-text-button{
+  margin-top: 32px;
+  width: 180px;
+  height: 40px;
+
 }
 
 .browse-img {
@@ -82,12 +85,10 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  /* margin: 10px 20px; */
   padding: 20px;
   gap: 24px;
   border: solid 1px #e2e4e5;
   border-radius: 10px;
-  /* width: 245px; */
 }
 
 .plan-list p,
@@ -97,7 +98,7 @@
   align-items: center;
 }
 
-.blue {
+.appblue {
   color: #2478dc;
 }
 
@@ -117,7 +118,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 393px) {
   .app-page {
     padding: 10px 30px;
   }
@@ -152,28 +153,28 @@
     display: block;
   }
 
+  .choose-plan-second-head{
+    font-weight: bold;
+  }
+
   .plan-list {
     margin: 10px 0px;
     width: 100%;
   }
 
   .browse {
+    width: 100%;
     flex-direction: column-reverse;
     margin: 30px 0px;
   }
 
   .browse-text {
     width: 100%;
-    padding: 30px 0px;
+    padding: 30px 10px;
     text-align: left;
   }
 
-  .browse-text button {
-    margin: 55px 0px 25px;
-  }
-
   .browse-img {
-    width: 390px;
-    height: 230px;
+    width: 100%;
   }
 }

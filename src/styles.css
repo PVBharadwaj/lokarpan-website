@@ -7,3 +7,68 @@
 .App {
   font-family: "Inter", sans-serif;
 }
+
+.apply-btn {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue{
+  background-color: #3F86F0;
+  border: 0px;
+  color: #ffffff !important;
+}
+
+.white{
+  background-color: #ffffff;
+  border: 0px;
+}
+
+.orange{
+  background-color: #FF9F0A;
+  border: 0px;
+}
+
+.transparent{
+  border: solid black 1px;
+}
+
+.body-btn{
+  font-size: 16px !important;
+  padding: 1px 40px;
+  text-decoration: none;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-btn{
+  font-size: 11px !important;
+  padding: 1px 10px;
+  text-decoration: none;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.apply-btn-text-black{
+  color: #000000 !important;
+}
+
+.apply-btn-text-white{
+  color: #ffffff !important;
+}
+
+@media screen and (max-width: 393px) {
+
+  .apply-btn {
+    margin-left: 0px !important;
+  }
+
+}

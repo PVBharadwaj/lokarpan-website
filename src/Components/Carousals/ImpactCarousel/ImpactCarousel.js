@@ -9,42 +9,27 @@ import { FaChevronRight } from "react-icons/fa6";
 const ImpactCarousel = () => {
   const items = [
     {
-      img: "https://www.colorhexa.com/ebebeb.png",
+      img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708622708/KFES3192_1_nxuqap.png",
       head: "Temperature",
       desp: "Model S plaid has the quickest accleration of any vechile in production.",
     },
     {
-      img: "https://www.colorhexa.com/ebebeb.png",
+      img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708622707/puppet_groups_alc_011_1_fezqsa.png",
       head: "Humidity",
       desp: "Model S plaid has the quickest accleration of any vechile in production.",
     },
     {
-      img: "https://www.colorhexa.com/ebebeb.png",
+      img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708622706/IMG_8894_1_vcares.png",
       head: "Temperature",
       desp: "Model S plaid has the quickest accleration of any vechile in production.",
     },
     {
-      img: "https://www.colorhexa.com/ebebeb.png",
+      img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708622703/18062009438_1_hqbd6k.png",
       head: "Humidity",
       desp: "Model S plaid has the quickest accleration of any vechile in production.",
     },
     {
-      img: "https://www.colorhexa.com/ebebeb.png",
-      head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
-    },
-    {
-      img: "https://www.colorhexa.com/ebebeb.png",
-      head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
-    },
-    {
-      img: "https://www.colorhexa.com/ebebeb.png",
-      head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
-    },
-    {
-      img: "https://www.colorhexa.com/ebebeb.png",
+      img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708622702/Classrooms14_ytjf5v.png",
       head: "Temperature and humidity",
       desp: "Model S plaid has the quickest accleration of any vechile in production.",
     },
@@ -92,9 +77,11 @@ const ImpactCarousel = () => {
   };
 
   if (window.innerWidth <= 600) {
-    settings.slidesToShow = 2;
+    settings.slidesToShow = 1;
+    settings.centerMode = true;
   } else {
     settings.slidesToShow = 5;
+    settings.centerMode = false;
   }
 
   return (

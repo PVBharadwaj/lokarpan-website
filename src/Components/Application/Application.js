@@ -5,10 +5,11 @@ import Navbar from "../Navbar/Navbar";
 import "./Application.css";
 import { FaRegGem } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Plans = [
   {
-    color: "blue",
+    color: "appblue",
     name: "Basic",
     cost: "₹100/mo.",
     features: "loremipsum loremipsum",
@@ -37,14 +38,11 @@ const Application = () => {
           <h1 className="app-title title2">Work as one. or one thousand.</h1>
           <img
             className="application-img"
-            src="https://www.colorhexa.com/ebebeb.png"
+            src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png"
             alt=""
           />
           <p className="application-para1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            deserunt cupiditate quae ut a excepturi unde exercitationem culpa
-            animi. Culpa hic laboriosam, deserunt accusantium consectetur
-            mollitia molestiae ad facilis ipsa.
+          Immerse yourself in stories that will challenge your mind and capture your heart. Explore new interests and stay on top of what’s trending. Our global catalogue features leading voices on the topics you care about — from the biggest names to independent creators.
           </p>
           <h2 className="app-title title3">
             We ask communities what they need
@@ -83,11 +81,13 @@ const Application = () => {
               <h1 className="title3">
                 Browse accessories or find new colours to go with your devices.
               </h1>
-              <button className="download-btn">Learn More</button>
+              <div className="apply-btn browse-text-button transparent">
+                <Link to="/" className="apply-btn-text-black body-btn">Learn more</Link>
+              </div>
             </div>
             <img
               className="browse-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708625144/Rectangle_1889_z8esn3.png"
               alt=""
             />
           </div>

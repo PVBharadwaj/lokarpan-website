@@ -9,7 +9,7 @@ const SecondaryNav = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
   return (
-    <nav className="SecNavbar">
+    <nav className="SecNavbar navbar">
       <div className="navbar-logo">Leadership</div>
       <ul className="navbar-links lead-mobile-navbar-links">
         <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
@@ -36,7 +36,7 @@ const SecondaryNav = () => {
         </li>
         
         <li className="navbar-item apply-btn blue">
-              <Link to="/donate" className="apply-btn-text">Apply</Link>
+              <Link to="/donate" className="apply-btn-text-white navbar-btn">Apply</Link>
           </li>
       </ul>
     </nav>

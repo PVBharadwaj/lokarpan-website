@@ -25,22 +25,7 @@
     opacity 0.7s ease-in-out;
 }
 
-.orange{
-  background-color: #FF9F0A;
-  border: 0px;
-}
-
-.apply-btn-text{
-  color: #ffffff !important;
-  font-size: 11px !important;
-  padding: 0px 10px;
-}
-
-@media only screen and (max-width: 805px) {
-
-  .apply-btn {
-    margin-left: 0px !important;
-  }
+@media screen and (max-width: 393px) {
 
   .desktop-only{
     display: none;
@@ -50,13 +35,6 @@
     position: fixed;
     padding: 20px 10px;
   }
-
-  /* .click-dropdown.active {
-    position: fixed;
-    right: 0px;
-    left: 0px;
-    padding: 20px 10px;
-} */
 
   .click-dropdown.active {
     position: absolute;

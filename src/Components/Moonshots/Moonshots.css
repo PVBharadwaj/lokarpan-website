@@ -1,25 +1,19 @@
-/* .moonshots-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 0px 123px;
-}
-
 .moonshots-top {
-  height: 512px;
-  background-image: url(https://www.colorhexa.com/ebebeb.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    width: 100%;
+    height: 750px;
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 805px) {
-  .moonshots-page {
-    padding: 10px 30px;
+.moonshots-opp{
+    background-color: black !important;
   }
-} */
+  
+  
+@media only screen and (max-width: 805px) {
+    .moonshots-top {
+      width: 100%;
+      height: 296px;
+    }
+}

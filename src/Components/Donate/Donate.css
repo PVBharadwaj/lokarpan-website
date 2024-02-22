@@ -318,7 +318,7 @@ input:checked + .radio-label-with-img {
   margin: 32px 0px;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 393px) {
   .donate-page{
     padding: 50px 30px;
   }

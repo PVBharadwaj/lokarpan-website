@@ -2,22 +2,19 @@ import "./Impact.css";
 import ImpactCarousel from "../Carousals/ImpactCarousel/ImpactCarousel";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Impact = () => {
   return (
     <>
       <Navbar />
-      <div className="fellowship-top">
-        <h1 className="impact-title">
-          We know the best answers often come from those closest to the problem.
-        </h1>
-      </div>
+      <div className="impact-top"></div>
       <div className="fellowship-page">
         <div className="second-div">
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708621836/IMG_3313_2_c7dnbw.png"
               alt="img1"
             />
             <h3 className="impact-title">We look for big ideas.</h3>
@@ -31,7 +28,7 @@ const Impact = () => {
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708621836/Rectangle_1933_jveg4a.png"
               alt="img2"
             />
             <h3 className="impact-title">We ask communities what they need.</h3>
@@ -46,7 +43,7 @@ const Impact = () => {
         <div className="third-div">
           <h5 className="impact-head">ACCLERATING IMPACT</h5>
           <h2 className="impact-title">
-            We provide support through a combination of funding, <br />
+            We provide support through a combination of funding, 
             innovation and technical expertise.
           </h2>
         </div>
@@ -68,15 +65,16 @@ const Impact = () => {
           </p>
         </div>
       </div>
-      <div className="opp">
+
+      <div className="opp impact-opp">
         <h3 className="opp-head fellow-data">OPPORTUNITIES</h3>
         <p className="opp-data impact-title">
           Through Google.org Impact challenges, we award nonprofits and social
           enterprises with support to help bring their ideas to life.
         </p>
-        <button className="apply" type="submit">
-          Apply
-        </button>
+        <div className="apply-btn white">
+          <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>
+        </div>
       </div>
       <Footer />
     </>

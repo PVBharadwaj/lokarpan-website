@@ -24,7 +24,7 @@
     font-size: 24px;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 393px) {
     .make-a-gift-div{
         display: flex;
         flex-direction: column;
