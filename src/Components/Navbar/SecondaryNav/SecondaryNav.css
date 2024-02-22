@@ -25,13 +25,13 @@
   align-items: center;
 }
 
-.blue{
-  background-color: #3F86F0;
+.blue {
+  background-color: #3f86f0;
   border: 0px;
   color: #ffffff !important;
 }
 
-.lead-sec-nav{
+.lead-sec-nav {
   display: flex;
   gap: 24px;
 }
@@ -40,10 +40,9 @@
   display: none;
 }
 
-.react-icon{
-  color: #646A7B;
+.react-icon {
+  color: #646a7b;
 }
-
 
 @media only screen and (max-width: 805px) {
   .SecNavbar {
@@ -54,7 +53,7 @@
     display: block;
   }
 
-  .lead-mobile-navbar-links{
+  .lead-mobile-navbar-links {
     gap: 8px;
   }
 
@@ -68,13 +67,13 @@
     right: 0px;
     box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.2);
     transition: max-height 1s ease-in-out, opacity 1s ease-in-out,
-    visibility 0.3s ease;
+      visibility 0.3s ease;
   }
-  
+
   .click-dropdown ul {
     padding: 0px;
   }
-  
+
   .click-dropdown.active {
     max-height: 900px;
     visibility: visible;
@@ -82,5 +81,19 @@
     background-color: white;
     transition: max-height 0.7s ease-in-out, visibility 0.7s ease-in-out,
       opacity 0.7s ease-in-out;
+  }
+  .apply-btn {
+    display: none;
+  }
+  .lead-sec-nav {
+    gap: 0;
+  }
+
+  .mobile-navbar-links .navbar-item a {
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #333333;
   }
 }

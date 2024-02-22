@@ -25,24 +25,23 @@
     opacity 0.7s ease-in-out;
 }
 
-.orange{
-  background-color: #FF9F0A;
+.orange {
+  background-color: #ff9f0a;
   border: 0px;
 }
 
-.apply-btn-text{
+.apply-btn-text {
   color: #ffffff !important;
   font-size: 11px !important;
   padding: 0px 10px;
 }
 
 @media only screen and (max-width: 805px) {
-
   .apply-btn {
     margin-left: 0px !important;
   }
 
-  .desktop-only{
+  .desktop-only {
     display: none;
   }
 
@@ -61,8 +60,8 @@
   .click-dropdown.active {
     position: absolute;
     padding: 20px 10px;
-    top: 40px;
-    right: -93px;
-    left: -73vw;
+    top: 30px;
+    right: -11px !important;
+    left: -93vw !important;
   }
 }

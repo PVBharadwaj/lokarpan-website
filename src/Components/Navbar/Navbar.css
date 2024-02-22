@@ -17,7 +17,6 @@
   font-weight: bold;
 }
 
-
 .navbar-links {
   list-style-type: none;
   display: flex;
@@ -29,6 +28,7 @@
   text-decoration: none;
   color: #424242;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .navbar-links li p {
@@ -66,7 +66,7 @@
   visibility: visible;
 }
 
-.navbar-links{
+.navbar-links {
   display: flex;
   gap: 24px;
 }
@@ -109,7 +109,7 @@
   padding: 0px !important;
 }
 
-.nav-search > .click-dropdown{
+.nav-search > .click-dropdown {
   top: 64px;
 }
 
@@ -118,11 +118,11 @@
 }
 
 .hamburger,
-.down, .cross {
+.down,
+.cross {
   display: none;
   cursor: pointer;
 }
-
 
 /* @media only screen and (max-width: 1500px) {
 } */
@@ -138,7 +138,8 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    padding-top: 40px;
+    bottom: 0; /* added */
+    padding-top: 75px;
     padding-left: 10px;
     flex-direction: column;
     background-color: #fff;
@@ -156,7 +157,7 @@
     visibility: inherit;
   }
 
-  .dropdown-content{
+  .dropdown-content {
     padding: 66px 10px;
   }
 
@@ -170,13 +171,13 @@
     justify-content: space-between;
   }
 
-  .navbar-links.active{
+  .navbar-links.active {
     display: flex;
     gap: 5px;
   }
 
   .up {
-    display: block;  
+    display: block;
     position: absolute;
     right: 15px;
   }
@@ -208,8 +209,8 @@
     display: block;
     position: fixed;
     z-index: 102;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 20px;
   }
 
   .dropdown-content.active {
@@ -221,10 +222,40 @@
     display: block;
   }
 
-  .cross{
+  .cross {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
+    z-index: 102;
+  }
+  .navbar-links li a {
+    /*added*/
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .dropdown-content h4 {
+    font-size: 28px;
+    margin-left: 50px;
+  }
+
+  .dropdown-content ul li a {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .dropdown-content ul li {
+    height: 50px;
+  }
+  .quicklinks-heading {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 }
