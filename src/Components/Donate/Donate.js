@@ -58,8 +58,7 @@ const Donate = () => {
     <>
     <Navbar />
       <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" link1="/donate" link2="/faqs"/>
-      <div className="donate-page">
-        <div className="donate-head">
+      <div className="donate-head">
           <h1>
             Through the Stronger Together campaign, our goal is to bridge the
             learning loss and strengthen our core program in Akanksha schools
@@ -83,7 +82,7 @@ const Donate = () => {
             </div>
           </div>
         </div>
-        <hr />
+      <div className="donate-page">
         <div className="donate-form">
           <form action="" method="get">
             <div className="donate-form-inner">
@@ -259,7 +258,7 @@ const Donate = () => {
                         alt=""
                       />
                       <span className="radio-label-with-img-text">
-                        Frontiers: HIV & <br /> Sickle Cell Disease
+                        Frontiers: HIV & Sickle Cell
                       </span>
                     </label>
                     <input

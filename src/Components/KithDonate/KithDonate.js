@@ -253,7 +253,7 @@ const totalAmount = isNaN(donateAmount + processFee)
                         alt=""
                     />
                     <span className="radio-label-with-img-text">
-                        Frontiers: HIV & <br /> Sickle Cell Disease
+                        Frontiers: HIV & Sickle Cell
                     </span>
                     </label>
                     <input
