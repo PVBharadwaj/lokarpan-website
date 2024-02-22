@@ -1,5 +1,5 @@
 import { Component } from "react";
-import ContactSubNav from "../Navbar/ContactSubNav";
+import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
@@ -18,7 +18,13 @@ class ContactUs extends Component {
     return (
       <>
         <Navbar />
-        <ContactSubNav />
+        <FinancialNav
+          navbarTitle="Contact"
+          navitem1="Get in Touch"
+          navitem2="Subscribe"
+          link1="/contact-us"
+          link2="/subscribe"
+        />
 
         <div className="contact-us-container">
           <div className="contact-us-top-section">

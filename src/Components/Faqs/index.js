@@ -1,5 +1,5 @@
 import { Component } from "react";
-import DonateSubNav from "../Navbar/DonateSubNav";
+import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { FaCirclePlus } from "react-icons/fa6";
@@ -61,7 +61,13 @@ class Faqs extends Component {
     return (
       <>
         <Navbar />
-        <DonateSubNav />
+        <FinancialNav
+          navbarTitle="Donate"
+          navitem1="Donate"
+          navitem2="FAQ"
+          link1="/donate"
+          link2="/faqs"
+        />
         <div className="faqs-container">
           <div className="donate-upper-section">
             <h1 className="faqs-font64">In case you missed anything.</h1>

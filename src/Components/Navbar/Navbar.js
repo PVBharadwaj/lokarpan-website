@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import NavSearchbar from "../NavSearchbar/NavSearchbar";
 import { CiSearch } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -48,12 +49,17 @@ const Navbar = () => {
       </div>
       <div class="back" onClick={handleBackClick}>
         <IoIosArrowBack
+          style={{ fontSize: "20px" }}
           className={activeDropdown !== null ? "down active" : "down"}
         />
       </div>
 
       <ul className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
-        <RxCross2 className="cross" onClick={toggleMenu} />
+        <RxCross2
+          className="cross"
+          onClick={toggleMenu}
+          style={{ fontSize: "20px" }}
+        />
         <li className="navbar-item">
           <Link to="/" onClick={toggleMenu}>
             Home
@@ -63,7 +69,7 @@ const Navbar = () => {
           <Link to="/about" onClick={handleNavlinkClick}>
             About
           </Link>
-          <IoIosArrowForward className="up" />
+          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
@@ -83,7 +89,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/mission" onClick={toggleMenu}>
                     Mission
                   </Link>
                 </li>
@@ -105,25 +111,27 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown-container">
-              <h4>Quick Links</h4>
+              <h4 className="quicklinks-heading">Quick Links</h4>
               <ul className="quick-links">
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
-                    Alumini
+                  <Link to="/alumni" onClick={toggleMenu}>
+                    Alumni
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/contact-us" onClick={toggleMenu}>
                     Contact
                   </Link>
                 </li>
                 <li>
                   <Link to="/our-role" onClick={toggleMenu}>
+                    {/*  need to update to in Link  */}
                     Blog
                   </Link>
                 </li>
                 <li>
                   <Link to="/leadership" onClick={toggleMenu}>
+                    {/*  need to update to in Link  */}
                     Subscribe
                   </Link>
                 </li>
@@ -135,7 +143,7 @@ const Navbar = () => {
           <Link to="/approach" onClick={handleNavlinkClick}>
             Education
           </Link>
-          <IoIosArrowForward className="up" />
+          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
@@ -181,6 +189,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/our-role" onClick={toggleMenu}>
+                    {/*  need to update to in Link  */}
                     Volunteer
                   </Link>
                 </li>
@@ -194,7 +203,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/alumni" onClick={toggleMenu}>
+          <Link to="/kith-overview" onClick={toggleMenu}>
             Kith
           </Link>
         </li>
@@ -202,7 +211,7 @@ const Navbar = () => {
           <Link to="/design" onClick={handleNavlinkClick}>
             Design
           </Link>
-          <IoIosArrowForward className="up" />
+          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
@@ -230,17 +239,17 @@ const Navbar = () => {
           </div>
         </li>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/health" onClick={toggleMenu}>
             Health
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/environment" onClick={toggleMenu}>
             Environment
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/livelihood" onClick={toggleMenu}>
             Livelihood
           </Link>
         </li>
@@ -248,7 +257,7 @@ const Navbar = () => {
           <Link to="/ways-to-give" onClick={handleNavlinkClick}>
             Support
           </Link>
-          <IoIosArrowForward className="up" />
+          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
@@ -293,7 +302,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/fellowship" onClick={toggleMenu}>
                     Apply for Fellowship
                   </Link>
                 </li>
@@ -304,7 +313,11 @@ const Navbar = () => {
       </ul>
       <ul className="navbar-links navbar-icons">
         <li className="navbar-item dropdown nav-search">
-          <CiSearch className="navbar-icon-inner" onClick={toggleSearchmenu} />
+          <FiSearch
+            style={{ color: "#6B7280" }}
+            className="navbar-icon-inner"
+            onClick={toggleSearchmenu}
+          />
           <div
             className={`click-dropdown  ${isSearchmenuOpen ? "active" : ""}`}
           >
@@ -312,11 +325,15 @@ const Navbar = () => {
           </div>
         </li>
         <li className="navbar-item">
-          <IoPersonOutline className="navbar-icon-inner" />
+          <IoPersonOutline
+            className="navbar-icon-inner"
+            style={{ color: "#6B7280" }}
+          />
         </li>
         <li className="navbar-item">
           <RxHamburgerMenu
             className="hamburger navbar-icon-inner"
+            style={{ color: "#6B7280" }}
             onClick={toggleMenu}
           />
         </li>

@@ -39,8 +39,8 @@
   .click-dropdown.active {
     position: absolute;
     padding: 20px 10px;
-    top: 40px;
-    right: -93px;
-    left: -73vw;
+    top: 30px;
+    right: -11px !important;
+    left: -93vw !important;
   }
 }

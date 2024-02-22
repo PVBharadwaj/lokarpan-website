@@ -34,14 +34,26 @@
   .education .click-dropdown.active {
     position: absolute;
     padding: 20px 10px;
-    top: 40px;
+    top: 30px;
     right: -11px !important;
-    left: -95vw !important;
+    left: -91vw !important;
   }
   .mobile-item {
     display: block;
   }
   .mobile-none {
     display: none;
+  }
+  .mobile-heading {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  .dropdown-container ul li a {
+    font-size: 13px;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  .dropdown-container ul li {
+    height: 30px;
   }
 }

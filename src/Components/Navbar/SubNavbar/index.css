@@ -46,3 +46,14 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.react-icon {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 393px) {
+  .click-dropdown.active {
+    right: -11px !important;
+    left: -92vw !important;
+  }
+}
