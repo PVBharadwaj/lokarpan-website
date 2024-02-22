@@ -106,6 +106,7 @@ function App() {
         <Subscribebtn />
         <Footer />
       </BrowserRouter>
+      
     </div>
   );
 }
