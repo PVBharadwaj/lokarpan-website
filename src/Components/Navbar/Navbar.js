@@ -175,7 +175,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown-container">
-              <h4>Quick Links</h4>
+              <h4 className="quicklinks-heading">Quick Links</h4>
               <ul className="quick-links">
                 <li>
                   <Link to="/impact" onClick={toggleMenu}>
@@ -294,7 +294,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown-container">
-              <h4>Quick Links</h4>
+              <h4 className="quicklinks-heading">Quick Links</h4>
               <ul className="quick-links">
                 <li>
                   <Link to="/financials" onClick={toggleMenu}>

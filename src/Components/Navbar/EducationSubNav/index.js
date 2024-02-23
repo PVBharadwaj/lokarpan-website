@@ -35,7 +35,7 @@ const EducationSubNav = () => {
             >
               <div className="dropdown-container">
                 <h4 className="mobile-heading">Explore About</h4>
-                <ul>
+                <ul className="edu-subnav-list">
                   <li className="navbar-item desktop-only">
                     <Link to="/approach">Approach</Link>
                   </li>

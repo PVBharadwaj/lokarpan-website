@@ -26,8 +26,7 @@
 }
 
 @media screen and (max-width: 393px) {
-
-  .desktop-only{
+  .desktop-only {
     display: none;
   }
 
@@ -42,5 +41,13 @@
     top: 30px;
     right: -11px !important;
     left: -93vw !important;
+  }
+
+  .navbar-item.apply-btn.orange {
+    display: none;
+  }
+  .dropdown-container .support-subnav-list li a {
+    font-size: 13px;
+    font-weight: 400;
   }
 }

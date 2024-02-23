@@ -7,11 +7,11 @@
   align-items: center;
 }
 .top-section {
-  height: 178px;
-  width: 833px;
-  margin: auto;
+  height: 600px;
+  width: 100%;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1708677769/cannon_050_1_e38n2u.png");
   text-align: center;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   margin-bottom: 87px;
   gap: 18px;
   display: flex;
@@ -19,6 +19,13 @@
   justify-content: center;
   align-items: center;
 }
+.top-section h1 {
+  color: white;
+  font-size: 64px;
+  width: calc(100% - 500px);
+  margin: auto;
+}
+
 .ways-container {
   display: flex;
   flex-direction: row;
@@ -90,7 +97,8 @@
 .our-role-font24 {
   font-size: 24px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
+  width: 600px;
 }
 .next-step-section {
   height: 220px;
@@ -111,10 +119,12 @@
 .our-role-apply-btn {
   height: 40px;
   width: 150px;
-  border: 1px solid black;
+  border: none;
+  background-color: #ff9f0a;
   border-radius: 30px;
-  background-color: transparent;
-  margin-top: 20px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 500;
 }
 .lokarpan-head1 {
   font-weight: 500;
@@ -149,14 +159,14 @@
   transform: translateY(0);
 }
 
-.top-section {
+/* .top-section {
   height: 178px;
   width: 833px;
   margin: auto;
   text-align: center;
   margin-top: 120px;
   margin-bottom: 87px;
-}
+} */
 
 .menu-items {
   align-items: center;
@@ -309,8 +319,10 @@
   margin-top: 5px;
 }
 .donate-section {
-  height: 250px;
-  width: 480px;
+  height: 600px;
+  width: 100%;
+  background-color: #181818;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,6 +443,12 @@
 .mobile-education-cards-container {
   display: none;
 }
+.last-space {
+  font-size: 64px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
 @media screen and (max-width: 393px) {
   .top-section {
@@ -454,6 +472,7 @@
   .menu-items {
     height: 45px;
     width: 98%;
+    margin-top: 60px;
   }
   .our-role-each-container {
     flex-direction: column;
@@ -523,9 +542,9 @@
     height: 100vh;
   }
   .donate-section {
-    width: calc(100% - 32px);
+    width: 100%;
     margin: 150px auto;
-    height: auto;
+    height: 500px;
   }
   .donate-section .lokarpan-head3 {
     font-size: 40px;
@@ -536,5 +555,24 @@
   .our-role-font24 {
     font-size: 16px;
     text-align: center;
+  }
+  .top-section {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .top-section h1 {
+    color: white;
+    font-size: 24px;
+    width: calc(100% - 100px);
+    margin: auto;
+  }
+  .last-space {
+    font-size: 36px;
+    text-align: center;
+  }
+  .our-role-font24 {
+    width: calc(100% - 40px);
+    margin: 0 auto;
   }
 }

@@ -45,15 +45,19 @@
     display: none;
   }
   .mobile-heading {
-    font-size: 13px;
+    font-size: 28px;
     margin-left: 5px;
   }
   .dropdown-container ul li a {
-    font-size: 13px;
+    font-size: 28px;
     margin-left: 20px;
-    font-weight: 500;
+    font-weight: bold;
   }
   .dropdown-container ul li {
     height: 30px;
+  }
+  .dropdown-container .edu-subnav-list li a {
+    font-size: 13px;
+    font-weight: 400;
   }
 }
