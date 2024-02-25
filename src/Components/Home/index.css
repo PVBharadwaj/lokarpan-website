@@ -771,3 +771,16 @@
     stroke-width: 2 !important;
   }
 }
+
+@media screen and (max-width: 393px) {
+  .app-container-m {
+    width: calc(100% - 32px);
+    height: 300px;
+  }
+  .row-container {
+    width: 90%;
+  }
+  .home-images-container {
+    width: calc(100% - 32px);
+  }
+}
