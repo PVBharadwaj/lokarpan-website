@@ -70,6 +70,7 @@ class Faqs extends Component {
         />
         <div className="faqs-container">
           <div className="donate-upper-section">
+            <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708856246/image_345_du7cda.png" />
             <h1 className="faqs-font64">In case you missed anything.</h1>
           </div>
           <div className="faqs-browse-sec">
@@ -85,23 +86,27 @@ class Faqs extends Component {
           <div className="donate-faq-section">
             <div className="faqs-head-sec">
               <h1 className="faqs-head">frequently asked Questions</h1>
-              <p className="faqs-para">Show All</p>
+              <p className="faqs-para-1">Show All</p>
             </div>
 
-            <ul className="questions-container">
+            <ul className="questions-container-1">
               {questions.map((each) => (
-                <li className="each-question">
+                <li className="each-question-1">
                   <input
                     type="checkbox"
                     id={each.id}
                     name={each.id}
-                    className="input"
+                    className="input-1"
                   />
-                  <label htmlFor={each.id} className="question">
+                  <label
+                    htmlFor={each.id}
+                    className="question-1"
+                    style={{ color: "#000000" }}
+                  >
                     {each.question}
                   </label>
-                  <div className="ans-sec">
-                    <p className="faq-answer">{each.answer}</p>
+                  <div className="ans-sec-1">
+                    <p className="faq-answer-1">{each.answer}</p>
                   </div>
                 </li>
               ))}

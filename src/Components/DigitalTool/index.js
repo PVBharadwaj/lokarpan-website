@@ -14,41 +14,38 @@ class DigitalTool extends Component {
 
         <div className="digital-tool-container">
           <div className="digital-tool-head-cont">
-            <h1>Work as One.Or one thousand</h1>
+            {/* <h1>Work as One.Or one thousand</h1>
             <p>
               Through Google.org Impact Challenges, we award nonprofits and
               social enterprises with support to help bring their ideas to life.
-            </p>
+            </p> */}
+            <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708782682/Group_1765_cvdn5q.png" />
           </div>
           <div className="digital-tool-img-sec">
             <h1>Heading</h1>
             <div className="img-cont">
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784180/Group_1756_wixb2m.png"
                 className="img-cont-img"
               />
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784166/Group_1757_bkkh55.png"
                 className="img-cont-img"
               />
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
                 className="img-cont-img"
               />
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784144/Group_1762_qugdzn.png"
                 className="img-cont-img"
               />
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784137/Group_1761_xkcnfs.png"
                 className="img-cont-img"
               />
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
-                className="img-cont-img"
-              />
-              <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784129/Group_1755_sfm8yd.png"
                 className="img-cont-img"
               />
             </div>
@@ -75,7 +72,10 @@ class DigitalTool extends Component {
           <div className="temp-container">
             <div className="temp-each-cont">
               <div className="icon">
-                <IoHomeOutline style={{ fontSize: "30px" }} />
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784180/Group_1756_wixb2m.png"
+                  className="dig-icon-img"
+                />
               </div>
               <h4>Temperature & Humanity</h4>
               <p>
@@ -88,7 +88,10 @@ class DigitalTool extends Component {
             </div>
             <div className="temp-each-cont">
               <div className="icon">
-                <IoHomeOutline style={{ fontSize: "30px" }} />
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784166/Group_1757_bkkh55.png"
+                  className="dig-icon-img"
+                />
               </div>
               <h4>Temperature & Humanity</h4>
               <p>
@@ -101,7 +104,10 @@ class DigitalTool extends Component {
             </div>
             <div className="temp-each-cont">
               <div className="icon">
-                <IoHomeOutline style={{ fontSize: "30px" }} />
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                  className="dig-icon-img"
+                />
               </div>
               <h4>Temperature & Humanity</h4>
               <p>
@@ -114,7 +120,10 @@ class DigitalTool extends Component {
             </div>
             <div className="temp-each-cont">
               <div className="icon">
-                <IoHomeOutline style={{ fontSize: "30px" }} />
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784144/Group_1762_qugdzn.png"
+                  className="dig-icon-img"
+                />
               </div>
               <h4>Temperature & Humanity</h4>
               <p>
@@ -127,7 +136,10 @@ class DigitalTool extends Component {
             </div>
             <div className="temp-each-cont">
               <div className="icon">
-                <IoHomeOutline style={{ fontSize: "30px" }} />
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784137/Group_1761_xkcnfs.png"
+                  className="dig-icon-img"
+                />
               </div>
               <h4>Temperature & Humanity</h4>
               <p>
@@ -140,7 +152,10 @@ class DigitalTool extends Component {
             </div>
             <div className="temp-each-cont">
               <div className="icon">
-                <IoHomeOutline style={{ fontSize: "30px" }} />
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784129/Group_1755_sfm8yd.png"
+                  className="dig-icon-img"
+                />
               </div>
               <h4>Temperature & Humanity</h4>
               <p>
@@ -153,15 +168,21 @@ class DigitalTool extends Component {
             </div>
           </div>
           <div className="digital-tool-last-sec">
-            <h3>Build the future with Lokarpan</h3>
+            <h3>
+              Browse accessories or find new colours to go with your devices.
+            </h3>
             <p>
-              Lokarpan is a small nonprofit with a big dream. Join others
-              helping to fight poverty, disease, school parity, and inequity for
-              at risk communities.
+              Lokarpan is a non-profit organization registered under the
+              Societies Registration Act 1860. Lokarpan is registered u/s 12A of
+              the Income Tax Act, 1961. Lokarpan is registered under the Foreign
+              Contributions (Regulation) Act FCRA 136550133, and renewed dated
+              01.11.2016 for the receipt of foreign donations. Lokarpan assumes
+              no obligation to update any forward looking statement or
+              information, which speak as of their respective dates.
             </p>
             <div className="digital-tool-btn-cont">
               <button className="digital-tool-btn">Volunteer</button>
-              <button className="digital-tool-btn">Donate</button>
+              <button className="digital-tool-btn donate-orange">Donate</button>
             </div>
           </div>
         </div>

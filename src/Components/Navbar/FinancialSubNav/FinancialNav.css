@@ -1,9 +1,8 @@
-.disabled{
+.disabled {
   color: #979797 !important;
 }
 
-@media screen and (max-width: 393px) {
-
+@media screen and (max-width: 836px) {
   .mobile-navbar-links {
     max-height: 0px;
     visibility: hidden;
@@ -17,17 +16,16 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
     padding-left: 10px;
     background-color: white;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
       visibility 0.5s ease-in-out;
   }
-  
+
   .mobile-navbar-links.active {
     max-height: 900px;
     visibility: visible;
     opacity: 1;
   }
-
 }

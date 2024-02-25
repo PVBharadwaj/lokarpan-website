@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import "./index.css";
+// import "./index.css";
+import "../Health/index.css";
 
 class Livelihood extends Component {
   render() {
@@ -27,10 +28,11 @@ class Livelihood extends Component {
                   Adding years to life and life to years
                 </h1>
                 <p className="health-para">
-                  At McKinsey, we hire people, not degrees. There is no set
-                  definition for what exceptional looks like, and we know it can
-                  come from anywhere. We believe in your potential, regardless
-                  of your pedigree.
+                  Immerse yourself in stories that will challenge your mind and
+                  capture your heart. Explore new interests and stay on top of
+                  what’s trending. Our global catalogue features leading voices
+                  on the topics you care about — from the biggest names to
+                  independent creators.
                 </p>
               </div>
             </div>
@@ -40,10 +42,11 @@ class Livelihood extends Component {
                   Adding years to life and life to years
                 </h1>
                 <p className="health-para">
-                  At McKinsey, we hire people, not degrees. There is no set
-                  definition for what exceptional looks like, and we know it can
-                  come from anywhere. We believe in your potential, regardless
-                  of your pedigree.
+                  Immerse yourself in stories that will challenge your mind and
+                  capture your heart. Explore new interests and stay on top of
+                  what’s trending. Our global catalogue features leading voices
+                  on the topics you care about — from the biggest names to
+                  independent creators.
                 </p>
               </div>
               <img
@@ -63,10 +66,11 @@ class Livelihood extends Component {
                   Adding years to life and life to years
                 </h1>
                 <p className="health-para">
-                  At McKinsey, we hire people, not degrees. There is no set
-                  definition for what exceptional looks like, and we know it can
-                  come from anywhere. We believe in your potential, regardless
-                  of your pedigree.
+                  Immerse yourself in stories that will challenge your mind and
+                  capture your heart. Explore new interests and stay on top of
+                  what’s trending. Our global catalogue features leading voices
+                  on the topics you care about — from the biggest names to
+                  independent creators.
                 </p>
               </div>
             </div>

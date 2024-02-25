@@ -70,7 +70,7 @@
   gap: 24px;
 }
 
-.navbar a{
+.navbar a {
   line-height: 40px;
 }
 
@@ -127,7 +127,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 836px) {
   .navbar {
     padding: 10px;
   }
@@ -173,7 +173,7 @@
 
   .navbar-links.active {
     display: flex;
-    gap: 5px;
+    gap: 15px;
   }
 
   .up {
@@ -225,8 +225,34 @@
   .cross {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     z-index: 102;
-}
+  }
+  .navbar-links li a {
+    font-size: 32px;
+    margin-left: 50px;
+    color: #181818;
+    font-weight: bold;
+  }
+  .dropdown-content h4 {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+  .quicklinks-heading {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .dropdown-container .quick-links li a {
+    font-size: 20px;
+  }
+  .dropdown-container .quick-links li {
+    height: 30px;
+  }
+  .dropdown-container ul li {
+    width: auto;
+  }
 }

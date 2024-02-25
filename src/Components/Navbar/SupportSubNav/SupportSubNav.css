@@ -25,9 +25,8 @@
     opacity 0.7s ease-in-out;
 }
 
-@media screen and (max-width: 393px) {
-
-  .desktop-only{
+@media screen and (max-width: 836px) {
+  .desktop-only {
     display: none;
   }
 
@@ -41,6 +40,14 @@
     padding: 20px 10px;
     top: 30px;
     right: -11px !important;
-    left: -93vw !important;
+    left: -97vw !important;
+  }
+
+  .navbar-item.apply-btn.orange {
+    display: none;
+  }
+  .dropdown-container .support-subnav-list li a {
+    font-size: 13px;
+    font-weight: 400;
   }
 }

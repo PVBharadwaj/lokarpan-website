@@ -51,9 +51,15 @@
   margin-left: 5px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 836px) {
   .click-dropdown.active {
     right: -11px !important;
-    left: -92vw !important;
+    left: -97vw !important;
+  }
+
+  .dropdown-container .subnav-ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
   }
 }

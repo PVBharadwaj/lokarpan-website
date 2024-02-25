@@ -1,16 +1,23 @@
 import { Component } from "react";
 import { PiPauseCircleThin, PiPlayCircleThin } from "react-icons/pi";
+import { FaArrowRight } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "./index.css";
 
 const row1 = [
-  "https://res.cloudinary.com/digbzwlfx/image/upload/v1706087979/Google_da5gas.svg",
-  "https://res.cloudinary.com/digbzwlfx/image/upload/v1706087979/Google_da5gas.svg",
-  "https://res.cloudinary.com/digbzwlfx/image/upload/v1706087979/Google_da5gas.svg",
-  "https://res.cloudinary.com/digbzwlfx/image/upload/v1706087979/Google_da5gas.svg",
-  "https://res.cloudinary.com/digbzwlfx/image/upload/v1706087979/Google_da5gas.svg",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663836/surface1_xiupje.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663824/Group_1732_qqspqz.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663814/Group_1731_iir03j.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663805/layer1_mkt7ox.png",
+];
+
+const row2 = [
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663769/g11008_w9uizp.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663779/Group_1733_wsfgis.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663789/Group_1730_vmmgvj.png",
+  "https://res.cloudinary.com/digbzwlfx/image/upload/v1708663795/Clip_path_group_gp994w.png",
 ];
 
 class Home extends Component {
@@ -37,11 +44,12 @@ class Home extends Component {
             <p>
               Transform entire communities with your support.
               <a href="#">Take action</a>
+              <FaArrowRight style={{ color: "#3F86F0" }} className="arrow" />
             </p>
           </div>
           <div className="home-top-container">
             <p className="home-head1">The Mission</p>
-            <h1 className="home-head3">
+            <h1 className="home-upper-section-head3">
               Commitment beyond conventional boundaries
             </h1>
             <p className="home-para1">
@@ -51,13 +59,12 @@ class Home extends Component {
               economic conditions through participatory projects in health,
               education, income generation, and veterinary care.
             </p>
-          </div>
-          <div className="home-full-img">
             <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
-              alt="home-img"
-              className="home-img"
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708659568/image_306_ianuff.png"
+              className="home-top-container-img"
             />
+          </div>
+          <div className="home-logo-animation-section">
             {/* Animation-section */}
           </div>
 
@@ -72,7 +79,7 @@ class Home extends Component {
           <div className="row-container">
             <div className="row-element">
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708661167/image_307_zahwbv.png"
                 className="design-img"
               />
               <div className="under-cont">
@@ -82,11 +89,11 @@ class Home extends Component {
             </div>
             <div className="row-element">
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708661156/image_308_eg055b.png"
                 className="design-img"
               />
               <div className="under-cont">
-                <h3>Understanding our approach to Rural Design Principles</h3>
+                <h3>How do we solve the education crisis?</h3>
                 <button className="read-btn">Read Now</button>
               </div>
             </div>
@@ -120,17 +127,17 @@ class Home extends Component {
           </div>
           <div className="get-in-touch-container">
             <h3 className="home-head3">Take the next step</h3>
-            <p className="lokarpan-head4">
+            <p className="lokarpan-head4 center">
               Join hands with us, and let's weave stories of change together.
             </p>
-            <button className="get-in-touch-btn">Get in touch</button>
+            <button className="get-in-touch-btn">Apply</button>
           </div>
           <div className="lokarpan-container">
-            <p className="lokarpan-head5">Our Leadership</p>
+            <p className="lokarpan-head5">Our Programs</p>
             <h1 className="home-head3">
               Keeping people safe and making a positive impact
             </h1>
-            <p className="lokarpan-para1">
+            <p className="lokarpan-container-para1">
               Since our formation in 1996, Lokarpan has strived to organise and
               empower rural poor to promote development as a liberating force
               aimed at social justice, economic growth and self-reliance
@@ -249,7 +256,7 @@ class Home extends Component {
                       : "running",
                   }}
                 >
-                  {row1.map((each) => (
+                  {row2.map((each) => (
                     <div className="image-group-m">
                       <img src={each} className="image-m" />
                     </div>
@@ -263,7 +270,7 @@ class Home extends Component {
                       : "running",
                   }}
                 >
-                  {row1.map((each) => (
+                  {row2.map((each) => (
                     <div className="image-group-m">
                       <img src={each} className="image-m" />
                     </div>
@@ -274,15 +281,15 @@ class Home extends Component {
             <button onClick={this.toggleAnimation} className="animation-btn-m">
               {!isAnimationPaused ? (
                 <PiPauseCircleThin
+                  className="play-pause-icon"
                   style={{
-                    fontSize: "20px",
                     color: "white",
                   }}
                 />
               ) : (
                 <PiPlayCircleThin
+                  className="play-pause-icon"
                   style={{
-                    fontSize: "20px",
                     color: "white",
                   }}
                 />
@@ -290,17 +297,15 @@ class Home extends Component {
             </button>
           </div>
           <div className="next-step-section1">
-            <h1 className="lokarpan-head6">
-              Keeping people safe and making a positive impact
-            </h1>
-            <p className="lokarpan-head4 lok">
-              Since our formation in 1996, Lokarpan has strived to organise and
-              empower rural poor to promote development as a liberating force
-              aimed at social justice, economic growth and self-reliance
+            <h1 className="lokarpan-head6">Take Action to Support Change</h1>
+            <p className="lokarpan-head4 lok center">
+              Lokarpan grants support transformational programs for children and
+              adults to lead better and safer lives. Get involved to give every
+              person a fair chance to suceed in life.
             </p>
             <a href="#">Learn More</a>
             <button type="button" className="home-donate-btn">
-              Donate Now
+              Donate
             </button>
           </div>
         </div>

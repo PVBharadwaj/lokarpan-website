@@ -25,8 +25,7 @@
   color: #646a7b;
 }
 
-
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 836px) {
   .SecNavbar {
     padding: 10px;
   }
