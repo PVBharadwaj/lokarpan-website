@@ -65,7 +65,9 @@ class OurSupporter extends Component {
             </div>
           </div>
           <div className="in-support-section">
-            <h1 className="font48">In-Kind support</h1>
+            <h1 className="font64  black support-space-below">
+              In-Kind support
+            </h1>
             <div className="in-support-below-section">
               <p>CRS PACS DFID</p>
               <p>Create Fund TARA Akshar+ City Montessori School</p>

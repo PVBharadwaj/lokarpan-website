@@ -127,7 +127,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 836px) {
   .navbar {
     padding: 10px;
   }
@@ -225,8 +225,8 @@
   .cross {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     z-index: 102;
   }
   .navbar-links li a {

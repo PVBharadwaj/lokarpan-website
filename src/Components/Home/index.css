@@ -554,7 +554,7 @@
   font-size: 30px;
   stroke-width: 5 !important;
 }
-@media only screen and (max-width: 393px) {
+@media only screen and (max-width: 748px) {
   .home-banner {
     height: 39px;
   }
@@ -620,7 +620,7 @@
   }
   .row-container {
     flex-direction: column;
-    height: 300px;
+    height: 400px;
     margin-bottom: 100px;
     margin-top: 0;
   }
@@ -630,7 +630,7 @@
     align-items: center;
   }
   .design-img {
-    width: 140px;
+    border-radius: 20px;
   }
   .under-cont h3 {
     font-size: 15px;
@@ -643,12 +643,13 @@
     border-radius: 100px;
   }
   .home-images-container {
-    width: calc(100% - 32px);
+    width: calc(100% - 100px);
     margin: auto;
   }
   .lok-head-cont {
     height: 300px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     margin-bottom: 50px;
   }
   .lokarpan-head4 {
@@ -702,8 +703,8 @@
     font-size: 16px;
   }
   .app-container-m {
-    width: 300px;
-    height: 230px;
+    width: calc(100% - 100px);
+    height: 350px;
     border-radius: 16px;
   }
   .text-m {
@@ -717,17 +718,21 @@
     font-weight: 500;
     margin-bottom: 10px;
   }
+  .marquee-m {
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
   .image-group-m {
     display: grid;
     place-items: center;
-    width: 0px;
+    height: 100%;
     padding: 10px;
   }
   .image-m {
     object-fit: contain;
-    width: 40px;
-    height: 16px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    width: 100%;
   }
   .animation-btn-m {
     bottom: 15px;

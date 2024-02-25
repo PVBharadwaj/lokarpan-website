@@ -450,7 +450,7 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .top-section {
     height: 277px;
     width: calc(100% - 30px);
@@ -463,10 +463,10 @@
     font-size: 12px;
     height: 40px;
     line-height: 10px;
-    width: 75px;
+    width: 90px;
   }
   .items {
-    column-gap: 0;
+    column-gap: 10px;
     max-width: calc(100% - 7px);
   }
   .menu-items {
@@ -558,7 +558,7 @@
   }
   .top-section {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .top-section h1 {

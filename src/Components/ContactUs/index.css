@@ -3,23 +3,29 @@
   overflow-x: hidden;
 }
 .contact-us-top-section {
-  height: 500px;
-  width: 85%;
+  height: 1100px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 100px;
 }
+.contact-us-top-section img {
+  width: 100%;
+  height: 700px;
+  /* background-size: cover; */
+  background-position: center;
+}
 .contact-sec {
-  width: 560px;
+  width: 700px;
   height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 230px;
+  margin-top: 100px;
 }
 
 .contact-font64 {
@@ -29,7 +35,7 @@
   margin-bottom: 30px;
 }
 .contact-font64-left {
-  font-size: 64px;
+  font-size: 44px;
   width: 530px;
   margin-bottom: 130px;
 }
@@ -37,17 +43,21 @@
   font-size: 24px;
   font-weight: auto;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 20px;
   text-align: left;
 }
+.contact-anchor {
+  font-size: 16px;
+  margin: 20px 0;
+}
 .contact-font24 {
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   margin-top: 0;
 }
 .contact-font28 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  /* margin-bottom: 20px; */
   font-weight: 500;
 }
 .contact-font48 {
@@ -154,9 +164,10 @@
   align-items: flex-start;
   gap: 20px;
 }
-.each-item p {
+.each-item-p {
   margin: 0;
-  line-height: 30px;
+
+  font-size: 16px;
 }
 
 /* a {
@@ -171,14 +182,17 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .contact-us-top-section {
-    width: calc(100% - 40px);
     margin: auto;
-    height: 300px;
+    height: auto;
+  }
+
+  .contact-us-top-section img {
+    height: 400px;
   }
   .contact-sec {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   .contact-font64 {
@@ -189,11 +203,11 @@
     font-size: 16px;
   }
   .btn-section {
-    width: 100%;
+    width: 80%;
     height: 35px;
   }
   .inquiries-sec {
-    width: calc(100% - 40px);
+    width: 80%;
     margin: 100px auto;
     height: auto;
   }
@@ -212,7 +226,7 @@
     font-size: 16px;
   }
   .maps-section {
-    width: calc(100% - 30px);
+    width: 80%;
     margin: auto;
     height: auto;
   }
@@ -227,7 +241,7 @@
     width: 100%;
   }
   .contact-last-section {
-    width: calc(100% - 30px);
+    width: 80%;
     margin: 100px auto;
     height: auto;
   }
@@ -240,14 +254,12 @@
   }
   .list {
     gap: 60px;
+    flex-direction: column;
   }
   .each-item {
     width: auto;
   }
-  .each-item p {
-    line-height: 20px;
-  }
-  a {
-    color: black;
+  .each-item-p {
+    font-size: 20px;
   }
 }

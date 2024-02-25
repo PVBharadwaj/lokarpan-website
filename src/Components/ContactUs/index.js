@@ -28,6 +28,7 @@ class ContactUs extends Component {
 
         <div className="contact-us-container">
           <div className="contact-us-top-section">
+            <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708797777/image_322_huxmrs.png" />
             <div className="contact-sec">
               <h1 className="contact-font64">Contact Us</h1>
               <p className="contact-font24">
@@ -103,7 +104,9 @@ class ContactUs extends Component {
                 <p className="contact-font16-normal">V&P Malhausi</p>
                 <p className="contact-font16-normal">Auariya, UP 206255</p>
                 <p className="contact-font16-normal">India</p>
-                <a>Directions</a>
+                <a href="#" className="contact-anchor">
+                  Directions
+                </a>
                 <h3 className="contact-font24-left">How to access</h3>
                 <p>
                   The Apple Store faces Union Square. Parking: Union Square
@@ -121,37 +124,37 @@ class ContactUs extends Component {
             <ul className="list">
               <li className="each-item">
                 <p className="contact-font28">Donate</p>
-                <p>
+                <p className="each-item-p">
                   Visit our <a href="#">Support</a> Page to find how can help
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">LeaderShip</p>
-                <p>
+                <p className="each-item-p">
                   Visit our <a href="#">LeaderShip</a> to ...
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Alumni</p>
-                <p>
+                <p className="each-item-p">
                   Visit our <a href="#">Alumni Page</a> to ...
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Careers</p>
-                <p>
+                <p className="each-item-p">
                   Visit our <a href="#">Careers Page</a> to ...
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Financial Info</p>
-                <p>
+                <p className="each-item-p">
                   Visit our <a href="#">Financial Info </a> to ...
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Careers</p>
-                <p>
+                <p className="each-item-p">
                   Visit our <a href="#">Careers Page</a> to ...
                 </p>
               </li>
