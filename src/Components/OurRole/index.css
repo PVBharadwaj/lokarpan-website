@@ -453,7 +453,7 @@
 @media screen and (max-width: 748px) {
   .top-section {
     height: 277px;
-    width: calc(100% - 30px);
+    width: 100%;
     margin: auto;
   }
   .top-section h1 {
@@ -574,5 +574,18 @@
   .our-role-font24 {
     width: calc(100% - 40px);
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .items {
+    column-gap: 0px;
+    max-width: calc(100% - 0px);
+  }
+  .element {
+    font-size: 10px;
+    height: 40px;
+    line-height: 10px;
+    width: 70px;
   }
 }

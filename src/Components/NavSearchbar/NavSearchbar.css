@@ -43,7 +43,7 @@
   align-items: center;
 }
 
-.nav-search-exit{
+.nav-search-exit {
   cursor: pointer;
 }
 
@@ -67,8 +67,19 @@
 }
 
 @media screen and (max-width: 836px) {
-
   .nav-form-control {
-    font-size: 30px;
+    font-size: 20px;
+    width: auto;
   }
+
+  .search-quick-links {
+    margin-top: 20px;
+  }
+  .search-quick-links ul li a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 393px) {
 }
