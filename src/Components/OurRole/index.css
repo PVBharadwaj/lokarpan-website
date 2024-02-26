@@ -453,7 +453,7 @@
 @media screen and (max-width: 748px) {
   .top-section {
     height: 277px;
-    width: calc(100% - 30px);
+    width: 100%;
     margin: auto;
   }
   .top-section h1 {
@@ -583,9 +583,9 @@
     max-width: calc(100% - 0px);
   }
   .element {
-    font-size: 12px;
+    font-size: 10px;
     height: 40px;
     line-height: 10px;
-    width: 75px;
+    width: 70px;
   }
 }
