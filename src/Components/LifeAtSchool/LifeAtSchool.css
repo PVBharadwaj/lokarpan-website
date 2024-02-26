@@ -99,7 +99,7 @@
     list-style: disc;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
     .life-at-school-head{
         padding: 75px 32px !important;
     }

@@ -1,10 +1,13 @@
 import React from 'react'
 import "./Academics.css"
 import { Link } from 'react-router-dom'
+import Navbar from '../Navbar/KithNavbar'
+import Footer from '../KithFooter'
 
 const Academics = () => {
   return (
     <>
+    <Navbar />
       <div className="academics-head academics-div">
         <h1>Academics</h1>
         <p>
@@ -99,6 +102,7 @@ const Academics = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

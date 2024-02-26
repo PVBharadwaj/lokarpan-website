@@ -27,12 +27,12 @@ const BeingAVolunteer = () => {
       </div>
       <div className="volunter-opp">
           <h1>
-            An AI power play: Fueling the <br /> next wave of innovation in the{" "}
-            <br /> energy sector
+            An AI power play: Fueling the next wave of innovation in the{" "}
+            energy sector
           </h1>
           <div className="hyperlinks">
           <div className="apply-btn transparent">
-              <Link to="/donate" className="apply-btn-text-black body-btn">Donate</Link>
+              <Link to="/donate" className="apply-btn-text-black body-btn">Apply</Link>
           </div>
           </div>
         </div>

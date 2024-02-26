@@ -25,23 +25,24 @@ const GiftSubNav = () => {
             >
               <div className="dropdown-container">
                 <ul>
+                  <h4 className="gift-nav-head">Explore Make a Gift</h4>
                   <li>
-                    <Link to="/why-donate">Annual Fund</Link>
+                    <Link className="gift-nav-item" to="/why-donate">Annual Fund</Link>
                   </li>
                   <li>
-                    <Link to="/being-a-volunteer">Work of Art</Link>
+                    <Link className="gift-nav-item" to="/being-a-volunteer">Work of Art</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Endowment Gifts</Link>
+                    <Link className="gift-nav-item" to="/our-role">Endowment Gifts</Link>
                   </li>
                   <li>
-                    <Link to="/ways-to-give">Planned giving</Link>
+                    <Link className="gift-nav-item" to="/ways-to-give">Planned giving</Link>
                   </li>
                   <li>
-                    <Link to="/donate">Other ways to give</Link>
+                    <Link className="gift-nav-item" to="/donate">Other ways to give</Link>
                   </li>
                   <li>
-                    <Link to="/donate">Expanding Vision</Link>
+                    <Link className="gift-nav-item" to="/donate">Expanding Vision</Link>
                   </li>
                 </ul>
               </div>

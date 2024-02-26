@@ -95,7 +95,7 @@
     padding-top: 0px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
     .academics-head{
         padding: 75px 32px !important;
     }

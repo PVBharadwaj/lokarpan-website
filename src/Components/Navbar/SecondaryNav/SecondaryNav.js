@@ -9,8 +9,10 @@ const SecondaryNav = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
   return (
-    <nav className="SecNavbar navbar">
-      <div className="navbar-logo">Leadership</div>
+    <nav className="SecNavbar">
+      <div className="navbar-logo">
+        <Link className="navbar-mainlink" to="/leadership">Leadership</Link>
+      </div>
       <ul className="navbar-links lead-mobile-navbar-links">
         <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
           <p>

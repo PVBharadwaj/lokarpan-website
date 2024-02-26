@@ -61,7 +61,7 @@ const Navbar = () => {
           style={{ fontSize: "20px" }}
         />
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/kith/overview" onClick={toggleMenu}>
             overview
           </Link>
         </li>
@@ -123,6 +123,11 @@ const Navbar = () => {
                     Safety & Wellbeing
                   </Link>
                 </li>
+                <li>
+                  <Link to="/kith/academics" onClick={toggleMenu}>
+                    Academics
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -158,6 +163,11 @@ const Navbar = () => {
                 <li>
                   <Link to="/kith/faqs" onClick={toggleMenu}>
                     FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/kith/donate" onClick={toggleMenu}>
+                    Donate
                   </Link>
                 </li>
               </ul>

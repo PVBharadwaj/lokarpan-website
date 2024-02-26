@@ -4,6 +4,9 @@ import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./WhyDonate.css";
 import { Link } from "react-router-dom";
 
+import { IoIosArrowForward } from "react-icons/io";
+import { RxFontSize } from "react-icons/rx";
+
 const WhyDonate = () => {
   return (
     <>
@@ -113,7 +116,8 @@ const WhyDonate = () => {
           </div>
           <div> 
           <a className="donate-hyperlink" href="/faqs">
-            FAQs
+            FAQ
+            <IoIosArrowForward style={{fontSize:"15px"}} />
           </a>
           </div>
 

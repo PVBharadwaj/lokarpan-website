@@ -1,7 +1,3 @@
-.fellows-page {
-  padding: 0px 123px;
-}
-
 .year-pointer{
   position: absolute;
   right: 50px;
@@ -10,7 +6,7 @@
 
 .year-pointer-index{
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: flex-end;
 }
 
@@ -24,11 +20,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 393px) {
-  .fellows-page {
-    padding: 10px 30px;
-  }
-
+@media screen and (max-width: 748px) {
   .year-pointer, .year-pointer-index{
     display: none;
   }

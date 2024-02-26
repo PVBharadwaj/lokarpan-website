@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Admission.css"
+import Navbar from '../Navbar/KithNavbar'
+import Footer from '../KithFooter'
 
 const Admission = () => {
   return (
     <>
+    <Navbar />
         <div className="admissions-head admissions-div">
           <h1>
           We are thrilled to extend a warm welcome to you as part of the Lokarpan family.
@@ -61,6 +64,7 @@ const Admission = () => {
         </div>
        
       </div>
+      <Footer />
     </>
   )
 }

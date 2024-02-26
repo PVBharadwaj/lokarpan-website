@@ -13,18 +13,21 @@ const Plans = [
     name: "Basic",
     cost: "₹100/mo.",
     features: "loremipsum loremipsum",
+    type: "Basic",
   },
   {
     color: "red",
     name: "Plus",
     cost: "₹100/mo.",
     features: "loremipsum loremipsum",
+    type: "Plus",
   },
   {
     color: "green",
     name: "Pro",
     cost: "₹100/mo.",
     features: "loremipsum loremipsum",
+    type: "Pro",
   },
 ];
 
@@ -58,7 +61,8 @@ const Application = () => {
           </p>
         </div>
       </div>
-      <AppCarousel />
+        <div className="app-page"><h1 className="title2">Heading</h1></div>
+        <AppCarousel />
       <div className="app-page">
         <div className="app-div">
           <div className="plan">
@@ -103,30 +107,28 @@ const Card = ({ item }) => {
     <div className="plan-list">
       <h1 className={item.color}>
         <FaRegGem className="app-card-icon" />
-        {/* <i className="bi bi-gem"></i> */}
         {item.name}
       </h1>
       <h1>{item.cost}</h1>
       <p>
         <FaCheckCircle className={`app-card-icon ${item.color}`} />
-        {/* <i className={`bi bi-check-circle-fill ${item.color}`}></i> */}
         {item.features}
       </p>
       <p>
         <FaCheckCircle className={`app-card-icon ${item.color}`} />
-        {/* <i className={`bi bi-check-circle-fill ${item.color}`}></i> */}
         {item.features}
       </p>
       <p>
         <FaCheckCircle className={`app-card-icon  ${item.color}`} />
-        {/* <i className={`bi bi-check-circle-fill ${item.color}`}></i> */}
         {item.features}
       </p>
       <p>
         <FaCheckCircle className={`app-card-icon  ${item.color}`} />
-        {/* <i className={`bi bi-check-circle-fill ${item.color}`}></i> */}
         {item.features}
       </p>
+      <div className="apply-btn transparent">
+              <Link to="/donate" className="apply-btn-text-black body-btn">Choose {item.type}</Link>
+      </div>
     </div>
   );
 };

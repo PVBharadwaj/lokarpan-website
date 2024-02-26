@@ -95,7 +95,9 @@ const Educators = () => {
       <SecondaryNav />
       <div className="educators-page">
         <h2 className="title1">Core Faculty</h2>
-        <SearchBar />
+        <div className="lead-search">
+          <SearchBar />
+        </div>
         <div className="card-list">
           {EducatorsData.map((item, index) => (
             <Card key={index} item={item} />

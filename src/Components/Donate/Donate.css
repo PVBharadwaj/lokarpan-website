@@ -7,7 +7,6 @@
 
 .donate-head {
   display: flex;
-  /* width: 100%; */
   flex-direction: column;
   gap: 32px;
   color: white;
@@ -18,6 +17,7 @@
 .citizen-dropdown {
   padding: 0;
   width: 100%;
+  text-align: center;
 }
 
 .citizen-dropdown-inner {
@@ -35,6 +35,7 @@
   color: white;
   position: relative;
   font-size: 24px;
+  font-weight: 500;
 }
 
 .drop-content::after {
@@ -51,7 +52,7 @@
   transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
   opacity: 0.5;
   position: absolute;
-  right: 20px;
+  right: 316px;
   top: 50%;
 }
 .ans-sec {
@@ -119,10 +120,7 @@
 .grid .frequency,
 .grid .amount {
   grid-column: span 4;
-}
-
-.grid .names {
-  grid-column: span 6;
+  text-align: center;
 }
 
 .grid .long {
@@ -174,7 +172,10 @@ input:checked + .radio-label-with-img {
 }
 
 .radio-label-with-img-text {
-  padding: 12px;
+  padding: 18px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .radio-label-with-img-img {
@@ -191,7 +192,7 @@ input:checked + .radio-label-with-img {
   line-height: 24px;
   border: 2px solid #1e1e1e;
   border-radius: 36px;
-  width: 100%;
+  width: calc(100% - 30px);
 }
 
 .donate-recap-section {
@@ -235,9 +236,10 @@ input:checked + .radio-label-with-img {
 
 /* font-sizes, padding, borders and margins */
 
-.donate-head h1 {
-  font-size: 40px;
+.donate-head h1{
+  font-size: 64px;
 }
+
 
 .donate-head p,
 .recap {
@@ -269,11 +271,12 @@ input:checked + .radio-label-with-img {
 .donate-form-sec-title {
   font-size: 24px;
   padding: 8px 0px;
+  color: #333333;
+  font-weight: 700;
 }
 
 .radio-label {
   font-size: 24px;
-  padding: 10px 40px;
 }
 
 .labelless-input {
@@ -281,7 +284,9 @@ input:checked + .radio-label-with-img {
 }
 
 .input-label {
-  font-size: 24px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
   padding: 10px 40px 10px 0px;
 }
 
@@ -318,22 +323,26 @@ input:checked + .radio-label-with-img {
   margin: 32px 0px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .donate-page{
     padding: 50px 30px;
   }
 
   .donate-head{
     padding: 50px 30px;
+    background-color: #fff;
   }
 
   .donate-head h1 {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
   }
   
   .donate-head p,
   .recap {
     font-size: 16px !important;
+    color: #000;
   }
   
   .donate-part {
@@ -345,7 +354,7 @@ input:checked + .radio-label-with-img {
   }
 
   .donate-form-sec-title {
-    font-size: 24px;
+    font-size: 16px;
     padding: 3px 0px;
   }
   
@@ -354,7 +363,9 @@ input:checked + .radio-label-with-img {
     padding: 1px 4px;
   }
 
-
+  .page-marker{
+    font-size: 12px;
+  }
   
   .labelless-input {
     font-size: 16px;
@@ -417,8 +428,9 @@ input:checked + .radio-label-with-img {
     grid-column: span 3;
   }
 
-  .grid .names {
-    grid-column: span 6;
+  .radio-label, 
+  .input-label{
+    padding: 7px 0px;
   }
 
   .grid .long {
@@ -435,8 +447,31 @@ input:checked + .radio-label-with-img {
     width: 90%;
   }
 
+  .citizen-dropdown {
+    text-align: left;
+  }
+
   .drop-content{
-    font-size: 14px;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .drop-content::after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border: 2px solid #000000;
+    display: block;
+    border-left: none;
+    border-top: none;
+    margin: 0 6px 4px 10px;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+    opacity: 0.5;
+    position: absolute;
+    right: 225px;
+    top: 50%;
   }
   
 }

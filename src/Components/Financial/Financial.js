@@ -9,8 +9,7 @@ const Financials = () => {
     <>
     <Navbar />
       <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
-      <div className="financial-page">
-        <div className="fin-desp-head">
+      <div className="fin-desp-head">
           <h1>Let’s accelerate sustainable and inclusive growth together.</h1>
           <p>
             Lokarpan is a non-profit organization registered under the Societies
@@ -22,6 +21,7 @@ const Financials = () => {
             which speak as of their respective dates.
           </p>
         </div>
+      <div className="financial-page">
         <div className="fin-annual-repo">
           <h2 className="fin-title">Annual Reports</h2>
 
@@ -63,8 +63,6 @@ const Financials = () => {
                 <i class="bi bi-arrow-down-circle"></i>
               </a>
             </div>
-            {/* </div> */}
-            {/* <div className="desp-cards-col"> */}
             <div className="add-repo-text">
               <h3>80 G certificate</h3>
               <a href="/">
@@ -79,8 +77,6 @@ const Financials = () => {
                 <i class="bi bi-arrow-down-circle"></i>
               </a>
             </div>
-            {/* </div> */}
-            {/* <div className="desp-cards-col"> */}
             <div className="add-repo-text">
               <h3>Memorandum of Association</h3>
               <a href="/">
@@ -95,9 +91,9 @@ const Financials = () => {
                 <i class="bi bi-arrow-down-circle"></i>
               </a>
             </div>
-            {/* </div> */}
           </div>
         </div>
+        <div className="dummy"></div>
       </div>
       <Footer />
     </>

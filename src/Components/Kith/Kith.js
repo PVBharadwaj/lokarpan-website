@@ -2,10 +2,13 @@ import React from 'react'
 import "./Kith.css"
 import { Link } from 'react-router-dom'
 import KithCarousels from '../Carousals/KithCarousels/KithCarousels'
+import Navbar from '../Navbar/KithNavbar'
+import Footer from '../KithFooter'
 
 const Kith = () => {
   return (
     <>
+    <Navbar />
       <div className="kith-overview-head kith-overview-div">
           <h1>Overview</h1>
           <p>Those who venture here—to learn, research, teach, work, and grow—join nearly four centuries of students and scholars in the pursuit of truth, knowledge, and a better world</p>
@@ -88,6 +91,7 @@ const Kith = () => {
           <img src='https://pngimg.com/d/google_PNG19624.png' />
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -141,7 +141,6 @@ const Publications = () => {
     <>
       <Navbar />
       <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
-      <div className="publication-page">
       <div className="public-top">
       <h1 className="public-title">
         Let's accelerate sustainable and inclusive growth together.
@@ -156,7 +155,7 @@ const Publications = () => {
         respective dates.
       </p>
       </div>
-      
+      <div className="publication-page">      
       <div >
         <h1 className="public-archives">Archives</h1>
       </div>
