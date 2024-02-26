@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0px 123px;
+  padding: 80px 123px;
 }
 
 .app-title {
@@ -58,16 +58,20 @@
   height: 352px;
 }
 
+.application-para1,
+.application-para2 {
+  height: auto;
+  font-weight: bold;
+  padding: 30px 10px 80px;
+  color: #333333;
+}
+
 .application-para1 {
   font-size: 28px;
-  height: auto;
-  padding: 30px 0px 80px;
 }
 
 .application-para2 {
   font-size: 24px;
-  height: auto;
-  padding: 30px 0px 80px;
 }
 
 .app-card-list {
@@ -98,6 +102,13 @@
   align-items: center;
 }
 
+.choose-plan-para{
+  color: #646A7B;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+
 .appblue {
   color: #2478dc;
 }
@@ -118,7 +129,7 @@
   display: none;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .app-page {
     padding: 10px 30px;
   }

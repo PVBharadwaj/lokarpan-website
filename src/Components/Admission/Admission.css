@@ -131,7 +131,7 @@
     padding: 0px 20px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
     .admissions-head{
         padding: 75px 32px !important;
     }

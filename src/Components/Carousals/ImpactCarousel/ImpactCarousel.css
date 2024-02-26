@@ -40,11 +40,9 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .impact-carousel {
     width: 190px !important;
     height: 190px;
   }
-}
-@media only screen and (max-width: 805px) {
 }

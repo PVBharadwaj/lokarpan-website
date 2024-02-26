@@ -113,7 +113,9 @@ const Staff = () => {
       <SecondaryNav />
       <div className="staff-page">
         <h2 className="title1">Team</h2>
-        <SearchBar />
+        <div className="lead-search">
+      <SearchBar />
+      </div>
         <div className="card-list">
           {StaffData.map((item, index) => (
             <Card key={index} item={item} />

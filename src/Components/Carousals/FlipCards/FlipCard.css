@@ -44,7 +44,9 @@
 .flip-card-back div {
   display: flex;
   text-align: left;
+  gap: 32px;
   margin: 50px;
+  align-items: center;
 }
 
 .flip-card-back div {
@@ -53,7 +55,6 @@
 }
 
 .flip-card-front img {
-  background-color: #bbb;
   color: black;
   height: 300px;
   width: 300px;
@@ -77,15 +78,17 @@
 }
 
 .flip-card-inner h1 {
-  font-size: 48px;
+  font-size: 36px;
   padding: 20px 0px;
 }
 
 .flip-card-inner p {
   font-size: 24px;
+  font-weight: 500;
+  color: #646A7B;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .flip-card-front div,
   .flip-card-back div {
     flex-direction: column;
@@ -102,8 +105,6 @@
   }
 
   .flip-card-front img {
-    background-color: #bbb;
-    color: black;
     height: 200px;
     width: 200px;
   }

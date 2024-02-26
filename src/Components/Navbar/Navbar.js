@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import NavSearchbar from "../NavSearchbar/NavSearchbar";
-import { CiSearch } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 

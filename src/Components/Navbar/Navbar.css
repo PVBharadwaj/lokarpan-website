@@ -56,13 +56,15 @@
   max-height: 0;
   visibility: hidden;
   transition: max-height 1s ease-in-out, opacity 1s ease-in-out,
-    visibility 0.3s ease;
+    visibility 0.3s ease-in-out;
   border-top: 1px solid #979797;
 }
 
 .dropdown:hover .dropdown-content {
   max-height: 900px;
   visibility: visible;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out,
+  visibility 0.3s ease-in-out;
 }
 
 .navbar-links {
@@ -138,7 +140,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    bottom: 0; /* added */
+    bottom: 0; 
     padding-top: 75px;
     padding-left: 10px;
     flex-direction: column;
@@ -165,7 +167,7 @@
     display: flex;
     width: 100%;
     padding: 0px;
-    position: relative;
+    /* position: relative; */
     text-align: left;
     align-items: center;
     justify-content: space-between;
@@ -231,7 +233,7 @@
   }
   .navbar-links li a {
     font-size: 32px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     color: #181818;
     font-weight: bold;
   }

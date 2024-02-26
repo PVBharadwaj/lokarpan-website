@@ -7,17 +7,29 @@
 }
 
 .fin-desp-head {
-  margin: 90px;
+  margin: 0px;
+  padding: 0px 123px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 630px;
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708923066/image_338_t09wfz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fin-desp-head h1 {
   font-size: 48px;
   font-weight: bold;
   padding: 50px;
+  color: white;
 }
 
 .fin-desp-head p {
   font-size: 24px;
+  color: white;
 }
 
 .fin-annual-repo {
@@ -76,22 +88,24 @@ hr {
   padding: 5px 20px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .financial-page {
     padding: 10px 30px;
   }
 
   .fin-desp-head {
-    margin: 50px 0px;
+    padding: 50px 30px;
+    height: 430px;
   }
 
   .fin-desp-head h1 {
     font-size: 40px;
-    font-weight: bold;
-    padding: 35px 0px;
+    padding: 10px 0px;
   }
 
   .fin-desp-head p {
+    padding: 40px 0px;
+    font-weight: bold;
     font-size: 16px;
   }
 

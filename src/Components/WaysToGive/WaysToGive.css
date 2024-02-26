@@ -40,24 +40,27 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  /* padding: 0px 30px; */
 }
 
 .give-card-text h1 {
-  font-size: 28px;
-  padding: 15px 0px;
+  font-size: 48px;
+  padding: 0px 0px 10px;
 }
 .give-card-text p {
-  font-size: 16px;
-  padding: 15px 0px;
+  font-size: 24px;
+  padding: 8px 0px;
+  color: #333333;
+  font-weight: 500;
 }
 
-.give-card-text a {
-  font-size: 16px;
-  /* padding-left: 15px; */
+.give-card-link {
+  font-size: 20px;
+  padding: 6px 0px;
+  text-decoration: underline;
+  color: #3F86F0;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .ways-page {
     padding: 80px 30px;
   }
@@ -94,8 +97,9 @@
     padding: 15px 0px;
   }
 
-  .give-card-text a {
-    font-size: 16px;
-    padding: 0px;
-  }
+.give-card-link {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #3F86F0;
+}
 }

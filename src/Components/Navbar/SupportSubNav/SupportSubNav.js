@@ -13,8 +13,8 @@ const SupportSubNav = () => {
       <div className="navbar-logo">Support</div>
       <ul className="navbar-links">
         <li className="navbar-item dropdown">
-          <p onClick={toggleNavmenu}>
-            <span className="desktop-only">Browse All</span>
+          <p  className="desktop-only" onClick={toggleNavmenu}>
+            <span>Browse All</span>
             <BsChevronDown className="react-icon" />
           </p>
           <div
@@ -24,6 +24,7 @@ const SupportSubNav = () => {
           >
             <div className="dropdown-container">
               <ul className="support-subnav-list">
+              <h4 className="mobile-heading">Explore Support</h4>
                 <li>
                   <Link to="/why-donate">Why Donate</Link>
                 </li>
@@ -49,6 +50,11 @@ const SupportSubNav = () => {
           </Link>
         </li>
       </ul>
+      <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
+        <p>
+          <BsChevronDown className="react-icon"/>
+        </p>
+      </div>
     </nav>
   );
 };

@@ -96,7 +96,9 @@ const Board = () => {
       <SecondaryNav />
       <div className="board-page">
       <h2 className="title1">Board</h2>
+      <div className="lead-search">
       <SearchBar />
+      </div>
       <div className="card-list">
         {BoardData.map((item, index) => (
           <Card key={index} item={item} />

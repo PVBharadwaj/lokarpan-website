@@ -1,9 +1,0 @@
-.educators-page {
-  padding: 0px 123px;
-}
-
-@media screen and (max-width: 393px) {
-  .educators-page {
-    padding: 10px 30px;
-  }
-}

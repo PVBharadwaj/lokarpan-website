@@ -21,7 +21,7 @@
 }
 
 .donate-first-div {
-  padding: 150px;
+  padding: 150px 220px;
   color: white;
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628154/Group_1742_aw1utt.png");
   background-position: center;
@@ -41,11 +41,12 @@
 
 .donate-first-div p {
   font-size: 24px;
+  font-weight: 500;
 }
 
 .donate-card {
   display: flex;
-  gap: 60px;
+  gap: 50px;
   padding: 50px 0px !important;
 }
 
@@ -69,6 +70,8 @@
 }
 .donate-card-text p {
   font-size: 24px;
+  font-weight: 500;
+  color: #333333;
 }
 
 .whydonate-opp {
@@ -112,7 +115,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .why-donate {
     padding: 100px 30px;
   }

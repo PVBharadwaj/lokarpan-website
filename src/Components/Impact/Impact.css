@@ -3,6 +3,7 @@
   height: 750px;
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708621353/image_337_sojroz.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -15,7 +16,7 @@
   background-color: black !important;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 748px) {
   .impact-top {
     width: 100%;
     height: 296px;

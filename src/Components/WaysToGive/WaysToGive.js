@@ -25,7 +25,7 @@ const WaysToGive = () => {
               ensure that the museums remain an active, innovative centre for
               teaching, learning and research.
             </p>
-            <Link to="/make-a-gift">Annual Fund</Link>
+            <Link className="give-card-link" to="/make-a-gift">Annual Fund</Link>
           </div>
         </div>
         <div className="give-card give-card-reverse">
@@ -37,8 +37,8 @@ const WaysToGive = () => {
               Friends recieves unparalleled access to our collections and
               special opportunities to engage with art throughout the year.
             </p>
-            <Link to="/">Friends Circle Benifits</Link>
-            <Link to="/">Free Membership</Link>
+            <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
+            <Link className="give-card-link" to="/">Free Membership</Link>
           </div>
           <div>
             <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_340_ufii5c.png" alt="" />
@@ -56,8 +56,8 @@ const WaysToGive = () => {
               Friends recieves unparalleled access to our collections and
               special opportunities to engage with art throughout the year.
             </p>
-            <Link to="/">Friends Circle Benifits</Link>
-            <Link to="/">Free Membership</Link>
+            <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
+            <Link className="give-card-link" to="/">Free Membership</Link>
           </div>
         </div>
         <div className="give-card give-card-reverse">
@@ -69,8 +69,8 @@ const WaysToGive = () => {
               Friends recieves unparalleled access to our collections and
               special opportunities to engage with art throughout the year.
             </p>
-            <Link to="/">Friends Circle Benifits</Link>
-            <Link to="/">Free Membership</Link>
+            <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
+            <Link className="give-card-link" to="/">Free Membership</Link>
           </div>
           <div>
             <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635217/image_342_seejwv.png" alt="" />

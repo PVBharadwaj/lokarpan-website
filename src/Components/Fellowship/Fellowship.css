@@ -79,6 +79,7 @@
 .fellow-data {
   font-size: 20px;
   padding: 20px 0px;
+  font-weight: 500;
 }
 
 .third-div {
@@ -102,6 +103,8 @@
 
 .impact-head {
   font-size: 24px;
+  color: #181818;
+  font-weight: 500;
 }
 
 .impact-head,
@@ -123,6 +126,7 @@
 .fourth-div-data {
   padding: 0px 120px;
   font-size: 24px;
+  color: #333333;
 }
 
 .fourth-div > .impact-title {
@@ -139,21 +143,23 @@
 .opp-data {
   padding: 50px;
   font-size: 48px;
+  font-weight: bolder;
 }
 
 .opp-head {
   font-size: 20px;
   padding: 0px;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 748px) {
   .fellowship-nav {
     padding: 15px 10px;
   }
   
   .fellowship-top > .impact-title {
     font-size: 20px;
-    padding: 10px 50px;
+    padding: 10px 10px;
     text-align: left;
   }
 
@@ -167,7 +173,7 @@
     height: 296px;
   }
   .fellowship-page {
-    padding: 10px 30px;
+    padding: 10px 10px !important;
   }
   .second-div {
     flex-direction: column;
