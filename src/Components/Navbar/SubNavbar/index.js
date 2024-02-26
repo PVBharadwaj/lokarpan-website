@@ -15,15 +15,15 @@ const SubNavbar = () => {
       <div className="navbar-logo">About</div>
       <div className="navbar-rest">
         <ul className="navbar-links">
-          <li className="navbar-item desktop-only">
+          <li className="navbar-item desktop">
             <Link to="/staff">History</Link>
           </li>
-          <li className="navbar-item desktop-only">
+          <li className="navbar-item desktop">
             <Link to="/educators">Mission</Link>
           </li>
           <li className="navbar-item dropdown">
             <p onClick={toggleNavmenu}>
-              <span className="desktop-only">Browse All</span>
+              <span className="desktop">Browse All</span>
               <BsChevronDown className="react-icon" />
             </p>
             <div
@@ -34,10 +34,10 @@ const SubNavbar = () => {
               <div className="dropdown-container">
                 <h4>Explore About</h4>
                 <ul className="subnav-ul">
-                  <li className="navbar-item desktop-only">
+                  <li className="navbar-item desktop">
                     <Link to="/staff">History</Link>
                   </li>
-                  <li className="navbar-item desktop-only">
+                  <li className="navbar-item desktop">
                     <Link to="/educators">Mission</Link>
                   </li>
                   <li>

@@ -62,4 +62,10 @@
     font-weight: 400;
     color: #333333;
   }
+  .navbar-item.desktop {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
 }
