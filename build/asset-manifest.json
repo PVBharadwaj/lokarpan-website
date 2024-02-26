@@ -1,12 +1,7 @@
 {
   "files": {
-<<<<<<< HEAD
-    "main.css": "/lokarpan-website/static/css/main.e02dc8a9.css",
-    "main.js": "/lokarpan-website/static/js/main.cebf18a5.js",
-=======
-    "main.css": "/lokarpan-website/static/css/main.45e48a9e.css",
-    "main.js": "/lokarpan-website/static/js/main.e126b6c4.js",
->>>>>>> fd8254823581ed61030de2fc8ece1b052b0b7582
+    "main.css": "/lokarpan-website/static/css/main.1bd4ca15.css",
+    "main.js": "/lokarpan-website/static/js/main.9c2398c1.js",
     "reactPlayerYouTube.js": "/lokarpan-website/static/js/reactPlayerYouTube.7d058357.chunk.js",
     "reactPlayerSoundCloud.js": "/lokarpan-website/static/js/reactPlayerSoundCloud.62df2e3b.chunk.js",
     "reactPlayerVimeo.js": "/lokarpan-website/static/js/reactPlayerVimeo.77d3098c.chunk.js",
@@ -25,13 +20,8 @@
     "static/media/slick.ttf": "/lokarpan-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/lokarpan-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/lokarpan-website/index.html",
-<<<<<<< HEAD
-    "main.e02dc8a9.css.map": "/lokarpan-website/static/css/main.e02dc8a9.css.map",
-    "main.cebf18a5.js.map": "/lokarpan-website/static/js/main.cebf18a5.js.map",
-=======
-    "main.45e48a9e.css.map": "/lokarpan-website/static/css/main.45e48a9e.css.map",
-    "main.e126b6c4.js.map": "/lokarpan-website/static/js/main.e126b6c4.js.map",
->>>>>>> fd8254823581ed61030de2fc8ece1b052b0b7582
+    "main.1bd4ca15.css.map": "/lokarpan-website/static/css/main.1bd4ca15.css.map",
+    "main.9c2398c1.js.map": "/lokarpan-website/static/js/main.9c2398c1.js.map",
     "reactPlayerYouTube.7d058357.chunk.js.map": "/lokarpan-website/static/js/reactPlayerYouTube.7d058357.chunk.js.map",
     "reactPlayerSoundCloud.62df2e3b.chunk.js.map": "/lokarpan-website/static/js/reactPlayerSoundCloud.62df2e3b.chunk.js.map",
     "reactPlayerVimeo.77d3098c.chunk.js.map": "/lokarpan-website/static/js/reactPlayerVimeo.77d3098c.chunk.js.map",
@@ -47,12 +37,7 @@
     "reactPlayerPreview.79649fe0.chunk.js.map": "/lokarpan-website/static/js/reactPlayerPreview.79649fe0.chunk.js.map"
   },
   "entrypoints": [
-<<<<<<< HEAD
-    "static/css/main.e02dc8a9.css",
-    "static/js/main.cebf18a5.js"
-=======
-    "static/css/main.45e48a9e.css",
-    "static/js/main.e126b6c4.js"
->>>>>>> fd8254823581ed61030de2fc8ece1b052b0b7582
+    "static/css/main.1bd4ca15.css",
+    "static/js/main.9c2398c1.js"
   ]
 }
