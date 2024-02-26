@@ -576,3 +576,16 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 392px) {
+  .items {
+    column-gap: 0px;
+    max-width: calc(100% - 0px);
+  }
+  .element {
+    font-size: 12px;
+    height: 40px;
+    line-height: 10px;
+    width: 75px;
+  }
+}
