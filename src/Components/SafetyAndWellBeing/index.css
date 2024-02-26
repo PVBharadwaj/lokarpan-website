@@ -18,7 +18,7 @@
 }
 
 .safety-font48 {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -80,7 +80,7 @@
   list-style-type: disc;
 }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 748px) {
   .safety-wellbeing-upper-section {
     height: 400px;
   }
@@ -100,7 +100,7 @@
     font-size: 14px;
   }
   .safety-last-section {
-    width: calc(100% - 40px);
+    width: calc(100% - 100px);
     margin: 50px auto;
   }
   .safety-last-section-content {
@@ -108,11 +108,23 @@
   }
   .safety-last-section-content-left {
     width: 100%;
+    margin-bottom: 40px;
   }
   .safety-last-section-content-right {
     width: 100%;
   }
   .safety-last-section-content-list li {
     font-size: 14px;
+  }
+  .safety-last-img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .safety-last-section {
+    width: calc(100% - 40px);
+  }
+  .safety-last-img {
+    height: 300px;
   }
 }
