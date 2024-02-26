@@ -203,7 +203,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/kith-overview" onClick={toggleMenu}>
+          <Link to="/kith/overview" onClick={toggleMenu}>
             Kith
           </Link>
         </li>
