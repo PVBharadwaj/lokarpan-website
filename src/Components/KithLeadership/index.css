@@ -23,7 +23,7 @@
 }
 
 .kith-leadership-upper-section div h1 {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -89,7 +89,7 @@
   display: none;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .kith-leadership-upper-section {
     display: none;
   }
@@ -99,6 +99,8 @@
     background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1707978452/Rectangle_1809_ke4omy.png");
     height: 360px;
     flex-direction: column;
+    background-position: center;
+    background-size: cover;
     justify-content: center;
     align-content: center;
     color: white;
@@ -115,7 +117,7 @@
     margin: 0 auto;
   }
   .kith-leadership-list {
-    width: calc(100% - 32px);
+    width: calc(100% - 100px);
     height: auto;
     margin: 50px auto;
   }
@@ -134,5 +136,10 @@
   }
   .images-list li {
     margin-left: 80px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .kith-leadership-list {
+    width: calc(100% - 40px);
   }
 }

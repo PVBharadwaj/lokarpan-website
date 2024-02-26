@@ -1,14 +1,16 @@
 import { Component } from "react";
 import { BsArrowRight } from "react-icons/bs";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import KithNavbar from "../Navbar/KithNavbar/index";
+import KithInfoSubNavbar from "../Navbar/KithInfoSubNavbar";
+import KithFooter from "../KithFooter/index";
 import "./index.css";
 
 class Alumni extends Component {
   render() {
     return (
       <>
-        <Navbar />
+        <KithNavbar />
+        <KithInfoSubNavbar />
         <div className="alumni-container">
           <div className="alumni-upper-container">
             <h1>
@@ -229,7 +231,7 @@ class Alumni extends Component {
             </div>
           </div>
         </div>
-        <Footer />
+        <KithFooter />
       </>
     );
   }

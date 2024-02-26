@@ -3,7 +3,7 @@
 }
 .club-commitee-upper-section {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,11 +12,11 @@
 }
 .club-commitee-upper-section a {
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .club-commitee-upper-section h1 {
-  font-size: 48px;
-  width: calc(100% - 240px);
+  font-size: 36px;
+  width: calc(100% - 300px);
   margin: auto;
   margin-top: 25px;
   text-align: center;
@@ -32,7 +32,7 @@
   margin: 150px auto;
 }
 .club-commitee-club-section h1 {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -40,7 +40,7 @@
 .club-commitee-club-section p {
   width: calc(100% - 360px);
   margin: auto;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -73,7 +73,8 @@
 }
 
 .club-commitee-culture-section div h1 {
-  font-size: 64px;
+  font-size: 48px;
+  margin-bottom: 30px;
 }
 .club-commitee-culture-section div p,
 ul li {
@@ -124,7 +125,7 @@ ul li {
   display: none;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .club-commitee-upper-section {
     height: 370px;
   }
@@ -133,7 +134,7 @@ ul li {
     margin-top: 100px;
   }
   .club-commitee-upper-section h1 {
-    width: calc(100% - 60px);
+    width: calc(100% - 200px);
     font-size: 16px;
     height: auto;
   }
@@ -142,7 +143,7 @@ ul li {
   }
 
   .club-commitee-club-section p {
-    width: calc(100% - 40px);
+    width: calc(100% - 100px);
     margin: 0px auto;
     font-size: 14px;
   }
@@ -152,16 +153,16 @@ ul li {
   }
 
   .club-commitee-culture-section {
-    height: 700px;
+    height: 850px;
     padding: 30px;
     flex-direction: column;
   }
 
   .club-commitee-culture-section img {
-    width: 100%;
+    width: 90%;
   }
   .club-commitee-culture-section div {
-    width: 100%;
+    width: 90%;
     margin-top: 50px;
   }
   .club-commitee-culture-section div h1 {
@@ -198,5 +199,17 @@ ul li {
   }
   .mobile-club-commitee-videos-section p {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .club-commitee-upper-section h1 {
+    width: calc(100% - 60px);
+  }
+  .club-commitee-club-section p {
+    width: calc(100% - 40px);
+  }
+  .club-commitee-culture-section {
+    height: 700px;
+    padding: 30px;
   }
 }

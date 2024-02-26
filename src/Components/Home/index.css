@@ -783,4 +783,11 @@
   .home-images-container {
     width: calc(100% - 32px);
   }
+  .design-img {
+    height: 90%;
+    width: 150px;
+  }
+  .under-cont {
+    height: 90%;
+  }
 }

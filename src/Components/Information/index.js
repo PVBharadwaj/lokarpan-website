@@ -1,6 +1,7 @@
 import { Component } from "react";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import KithNavbar from "../Navbar/KithNavbar/index";
+import KithInfoSubNavbar from "../Navbar/KithInfoSubNavbar/index";
+import KithFooter from "../KithFooter/index";
 import "./index.css";
 
 const questions = [
@@ -52,7 +53,8 @@ class Information extends Component {
   render() {
     return (
       <>
-        <Navbar />
+        <KithNavbar />
+        <KithInfoSubNavbar />
         <div className="information-container">
           <div className="information-upper-section">
             <div>
@@ -173,7 +175,7 @@ class Information extends Component {
             </ul>
           </div>
         </div>
-        <Footer />
+        <KithFooter />
       </>
     );
   }
