@@ -31,18 +31,13 @@
 }
 
 @media screen and (max-width: 836px) {
-  /* .education .click-dropdown.active {
+  .education .click-dropdown.active {
     position: absolute;
     padding: 20px 10px;
     top: 30px;
     right: -11px !important;
-<<<<<<< HEAD
     left: -97vw !important;
   }
-=======
-    left: -91vw !important;
-  } */
->>>>>>> fd8254823581ed61030de2fc8ece1b052b0b7582
   .mobile-item {
     display: block;
   }
