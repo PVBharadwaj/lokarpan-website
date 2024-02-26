@@ -2,10 +2,15 @@ import React from 'react'
 import "./OnlineEnrollment.css"
 import { Link } from 'react-router-dom'
 import KithCarousels from '../Carousals/KithCarousels/KithCarousels'
+import Navbar from '../Navbar/KithNavbar'
+import Footer from '../KithFooter'
+import KithAdmissionSubNavbar from '../Navbar/KithAdmissionSubNavbar'
 
 const OnlineEnrollment = () => {
   return (
     <>
+    <Navbar />
+    <KithAdmissionSubNavbar />
       <div className="enrollment-head enrollment-div">
         <h1>Welcome to our Admissions portal</h1>
         <p>A Registration of Interest allows you to submit general and contact information for a parent or guardian as well as the potential candidate’s general information. <span><a href='/'>Read more</a></span></p>
@@ -44,29 +49,10 @@ const OnlineEnrollment = () => {
       <div className="enrollment-div enrollment-admin">
         <h3>Admissions Contact</h3>
         <div className="admissions-img-list">
-            {/* <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-                <p>Name</p>
-            </div>
-            <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-                <p>Name</p>
-            </div>
-            <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-                <p>Name</p>
-            </div>
-            <div>
-                <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
-                <p>Name</p>
-            </div> */}
-
             <KithCarousels />
         </div>
       </div>
-      {/* <div className="enrollment-page">
-
-      </div> */}
+      <Footer/>
     </>
   )
 }

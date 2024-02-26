@@ -83,8 +83,8 @@ function App() {
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
-          <Route path="/enrollment" element={<OnlineEnrollment />}></Route>
-          <Route path="/how-to" element={<HowTo />}></Route>
+          <Route path="/kith/enrollment" element={<OnlineEnrollment />}></Route>
+          <Route path="/kith/how-to" element={<HowTo />}></Route>
           <Route path="/kith/overview" element={<Kith />}></Route>
           <Route path="/kith/admission" element={<Admission />}></Route>
           <Route path="/kith/life-at-school" element={<LifeAtSchool />}></Route>

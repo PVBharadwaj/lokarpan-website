@@ -2,8 +2,9 @@ import React from 'react'
 import "./HowTo.css"
 import { Link } from 'react-router-dom'
 import SegmentButton from '../Carousals/SegmentButton/SegmentButton';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/KithNavbar'
+import Footer from '../KithFooter'
+import KithAdmissionSubNavbar from '../Navbar/KithAdmissionSubNavbar';
 
 const HowTo = () => {
   const howtoFaqs = [
@@ -55,6 +56,7 @@ const HowTo = () => {
   return (
     <>
       <Navbar />
+      <KithAdmissionSubNavbar />
       <div className="howto-div">
             <h1>We are thrilled to extend a warm welcome to you as part of the Lokarpan family.</h1>
       </div>

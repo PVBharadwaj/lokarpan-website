@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./KithDonate.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/KithNavbar";
+import Footer from "../KithFooter";
 const KithDonate = () => {
   const [donationFrequency, setDonationFrequency] = useState("---");
   const [donationAmount, setDonationAmount] = useState("---");
@@ -54,6 +56,7 @@ const KithDonate = () => {
 
   return (
     <>
+      <Navbar />
       <div className="donate-head kith-donate">
           <h1>
             Through the Stronger Together campaign, our goal is to bridge the
@@ -499,6 +502,7 @@ const KithDonate = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

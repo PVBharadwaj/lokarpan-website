@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./LifeAtSchool.css"
+import Navbar from '../Navbar/KithNavbar'
+import Footer from '../KithFooter'
 
 const LifeAtSchool = () => {
   return (
     <>
+    <Navbar />
       <div className="life-at-school-head life-at-school-div">
         <h1>Campus and Culture</h1>
         <p>Welcome to a place where passion meets purpose, and where every individual is a valued contributor to our shared vision. Lokarpan's culture is one of inclusivity, collaboration, and a deep commitment to making a positive impact.</p>
@@ -49,6 +52,7 @@ const LifeAtSchool = () => {
             <li>Our community encourages open communication. If you ever need support, our team and fellow members are here to listen and assist.</li>
         </ul>
       </div>
+      <Footer />
     </>
   )
 }
