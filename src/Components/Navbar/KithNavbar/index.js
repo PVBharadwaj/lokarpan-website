@@ -70,7 +70,7 @@ const Navbar = () => {
             Admission
           </Link>
           {/* <IoIosArrowForward className="up" /> */}
-          <div
+          {/* <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
@@ -94,14 +94,14 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </li>
         <li className="navbar-item dropdown" onClick={toggleDropdown}>
           <Link to="/kith/life-at-school" onClick={handleNavlinkClick}>
             Life at School
           </Link>
           {/* <IoIosArrowForward className="up" /> */}
-          <div
+          {/* <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
@@ -130,7 +130,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </li>
 
         <li className="navbar-item dropdown" onClick={toggleDropdown}>
@@ -138,7 +138,7 @@ const Navbar = () => {
             Information
           </Link>
           {/* <IoIosArrowForward className="up" /> */}
-          <div
+          {/* <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
@@ -172,7 +172,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </li>
       </ul>
       <ul className="navbar-links navbar-icons">

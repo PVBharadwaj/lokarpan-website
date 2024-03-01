@@ -1,20 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
 
 .howto-div {
-    position: relative; 
-    padding: 105px 205px !important;
+  position: relative;
+  padding: 105px 205px !important;
 }
 
-.howto-div::before {   
-    content: "";
-    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK4byeSyN96D5nW3LKcc6sSXlP_eT_ZVp3DmuNM_TycWvxngPC');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
+.howto-div::before {
+  content: "";
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK4byeSyN96D5nW3LKcc6sSXlP_eT_ZVp3DmuNM_TycWvxngPC");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+}
+
+.how-to-upper-section {
+  height: 600px;
+  width: 100%;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709034629/image_279_1_scwiyv.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to-upper-section h1 {
+  font-size: 64px;
+  text-align: center;
+  width: calc(100% - 200px);
 }
 
 .howto-div h1 {
@@ -22,148 +39,361 @@
   font-size: 64px;
   font-weight: bolder;
   text-align: center;
-  font-family: 'Noto Serif Display', serif;
+  font-family: "Noto Serif Display", serif;
 }
 
-.howto-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 0px 123px;
+.howto-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 123px;
 }
 
-.howto-card{
-    width: 100%;
-    display: flex;
-    padding: 150px 0px;
-    gap: 80px;
+.howto-card {
+  width: 100%;
+  display: flex;
+  padding: 150px 0px;
+  gap: 80px;
 }
 
-.howto-card img{
-    width: 500px;
-    height: 350px;
+.howto-card img {
+  width: 500px;
+  height: 350px;
 }
 
-.howto-card > .text-div{
-    text-align: left;
+.howto-card > .text-div {
+  text-align: left;
 }
 
-.howto-card > .text-div > h3{
-    font-size: 64px;
-    font-family: 'Noto Serif Display', serif;
+.howto-card > .text-div > h3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Noto Serif Display", serif;
 }
 
-.howto-card > .text-div > p{
-    font-size: 24px;
+.howto-card > .text-div > p {
+  font-size: 24px;
 }
 
-.howto-faqs{
-    background-color: #3F86F0;
-    color: white;
-    display: flex;
-    gap: 64px;
-    flex-direction: column;
-    text-align: left;
-    padding: 100px 123px;
+.howto-faqs {
+  background-color: #3f86f0;
+  color: white;
+  display: flex;
+  gap: 64px;
+  flex-direction: column;
+  text-align: left;
+  padding: 100px 123px;
 }
 
-.howto-faqs .question{
-    color: white;
+.howto-faqs .question {
+  color: white;
 }
 
-.howto-faqs .question::after{
-    content: "";
-    height: 5px;
-    width: 5px;
-    border: 2px solid white;
-    /* border: 0px solid white; */
-    display: block;
-    position: absolute; 
-    border-left: none;
-    border-top: none;
-    margin: 0 6px 4px 10px;
-    cursor: pointer;
-    transform: translateY(-50%) rotate(45deg);
-    transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
-    /* transform: rotate(45deg);
+.howto-faqs .question::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  border: 2px solid white;
+  /* border: 0px solid white; */
+  display: block;
+  position: absolute;
+  border-left: none;
+  border-top: none;
+  margin: 0 6px 4px 10px;
+  cursor: pointer;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+  /* transform: rotate(45deg);
     transition: transform 1s; */
-    opacity: 0.5;
-    right: 20px;
-    top: 50%;
+  opacity: 0.5;
+  right: 20px;
+  top: 50%;
 }
 
-.howto-faqs > h1{
-    font-size: 64px;
-    font-family: 'Noto Serif Display', serif;
+.howto-faqs > h1 {
+  font-size: 64px;
+  font-family: "Noto Serif Display", serif;
 }
 
-.howto-apply{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 70px 123px;
+.howto-apply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 70px 123px;
 }
 
-.howto-apply > h1{
-    font-size: 40px;
-    padding: 20px 0px;
-    font-family: 'Noto Serif Display', serif;
+.howto-apply > h1 {
+  font-size: 40px;
+  padding: 20px 0px;
+  font-family: "Noto Serif Display", serif;
 }
 
-.border-black{
-    border: 1px solid black;
+.border-black {
+  border: 1px solid black;
 }
 
-.howto-faqs .each-question{
-    padding: 24px;
+.howto-faqs .each-question {
+  padding: 24px;
 }
 
-.howto-faqs .question{
-    font-size: 24px;
+.howto-faqs .question {
+  font-size: 24px;
+}
+
+.how-to-faq-section {
+  width: calc(100% - 300px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+.how-to-each-question-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 120px;
+  padding: 0;
+  border-bottom: 1px solid white;
+}
+.how-to-question-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.how-to-questions-section {
+  width: 100%;
+  background-color: #3f86f0;
+  color: white;
+  min-height: 600px;
+  height: auto;
+}
+
+.how-to-faqs-para-1 {
+  font-family: "Inter" sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.faqs-head1 {
+  font-family: "Inter" sans-serif;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+}
+.faqs-font64 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.faqs-para2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.space {
+  margin-bottom: 10px;
+}
+.how-to-questions-container-1 {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.how-to-head-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 60px auto;
+}
+.how-to-faqs-head {
+  font-size: 36px;
+}
+.how-to-faqs-para-1 {
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  margin: 0;
+  margin-right: 20px;
+  color: white;
+  position: relative;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.how-to-faqs-para-1::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  border: 2px solid white;
+  display: block;
+  border-left: none;
+  border-top: none;
+  margin: 0 6px 4px 10px;
+  cursor: pointer;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+  opacity: 0.5;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+}
+
+.how-to-question-1 {
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  margin: 0;
+  position: relative;
+  font-size: 15px;
+  padding-left: 0;
+  color: white;
+}
+
+.how-to-question-1::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  border: 2px solid white;
+  display: block;
+  border-left: none;
+  border-top: none;
+  margin: 0 6px 4px 10px;
+  cursor: pointer;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+  opacity: 0.5;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+
+.how-to-ans-sec-1 {
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.8s ease;
+  padding: 0 20px;
+  opacity: 0;
+}
+.how-to-ans-sec-1 > * {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.how-to-input-1 {
+  display: none;
+}
+
+.how-to-input-1:checked + label + div {
+  max-height: 200px;
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  padding-left: 10px;
+}
+.how-to-input-1:checked + label + div > * {
+  opacity: 1;
+}
+
+.how-to-input-1:checked + label::after {
+  transform: translate(0px, 3px) rotate(-135deg);
+}
+.how-to-faq-answer-1 {
+  font-size: 15px;
+}
+.how-to-apply-btn {
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: transparent;
+  color: black;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 748px) {
-    .howto-div {
-        padding: 75px 32px !important;
-    }
+  .how-to-upper-section h1 {
+    font-size: 32px;
+    width: calc(100% - 100px);
+  }
+  .howto-div {
+    padding: 75px 32px !important;
+  }
+  .how-to-question {
+    font-size: 14px;
+  }
+  .how-to-faq-answer {
+    font-size: 14px;
+  }
 
-    .howto-div > h1, 
-    .howto-page .text-div h3 {
-        font-size: 32px;
-        font-weight: bolder;
-    }
+  .howto-div > h1,
+  .howto-page .text-div h3 {
+    font-size: 32px;
+    font-weight: bolder;
+  }
 
-    .howto-page{
-        padding: 90px 15px;
-    }
+  .howto-page {
+    padding: 90px 50px;
+  }
 
-    .howto-card{
-        flex-direction: column;
-        padding: 80px 0px;
-        gap: 24px;
-    }
+  .howto-card {
+    flex-direction: column;
+    padding: 80px 0px;
+    gap: 24px;
+  }
 
-    .howto-card img{
-        width: 100%;
-        height: 200px;
-    }
+  .how-to-faqs-para-1 {
+    padding-left: 0;
+  }
+  .howto-card img {
+    width: 100%;
+    height: 400px;
+  }
 
-    .howto-faqs{
-        padding: 50px 15px;
-    }
+  .howto-faqs {
+    padding: 50px 15px;
+  }
 
-    .howto-faqs > h1{
-        font-size: 24px;
-    }
+  .howto-faqs > h1 {
+    font-size: 24px;
+  }
 
-    .howto-faqs .question{
-        font-size: 14px;
-    }
+  .howto-faqs .question {
+    font-size: 14px;
+  }
 
-    .howto-faqs .each-question{
-        padding: 14px;
-    }
+  .howto-faqs .each-question {
+    padding: 14px;
+  }
+  .how-to-faq-section {
+    width: calc(100% - 100px);
+  }
+  .how-to-faqs-head {
+    font-size: 24px;
+  }
+  .how-to-head-sec {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .how-to-questions-section {
+    min-height: 700px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .howto-page {
+    padding: 90px 15px;
+  }
 }
