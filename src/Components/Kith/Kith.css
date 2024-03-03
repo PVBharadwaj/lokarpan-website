@@ -278,7 +278,7 @@
 }
 
 .kith-marquee {
-    display: none;
+    display: none !important;
 }
 
 .kith-overview-div-img-list{
