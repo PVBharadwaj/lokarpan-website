@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
 
-.enrollment-head {
-  position: relative;
-  padding: 105px 250px !important;
-}
-
-.enrollment-head::before {
-  content: "";
-  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbwERVsz-90X27Ae27IvCZzbG9aFC8yz66s2yYq6yI5P1Yx8Nc");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.6;
-}
 .enrollment-upper-section {
   width: 100%;
   height: 600px;
