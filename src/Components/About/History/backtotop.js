@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faChevronUp} from '@fortawesome/free-solid-svg-icons';
 const ButtonContainer = styled.span`
   position: fixed;
   bottom: 32px;
@@ -13,16 +13,16 @@ const ButtonContainer = styled.span`
   z-index: 1000;
   cursor: pointer;
   animation: fadeIn 0.3s;
-
-  color: #3468c0;
-  font-size: 2rem;
+  
+  color:#3468C0;
+  font-size:2rem;
   border-radius: 4px;
   transition: opacity 0.4s, color ease-in-out 0.2s, background ease-in-out 0.2s;
   display: ${({ isScrollButtonVisible }) =>
     isScrollButtonVisible ? "flex" : "none"};
 
   &:hover {
-    color: #1d2b53;
+    color:#1D2B53;
   }
 `;
 

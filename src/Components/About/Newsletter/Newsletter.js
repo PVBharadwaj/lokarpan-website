@@ -1,5 +1,5 @@
 import React from 'react';
-import './Newsletter.css';
+import './newsletter.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCirclePlus,faNewspaper ,faCalendarDays,faComputer,faMicroscope} from '@fortawesome/free-solid-svg-icons';
 
@@ -63,7 +63,7 @@ const Newsletter = () => {
     <div className='newsbox-content'>Our flagship newsletter highlights
     the best of The New Works, including
      top stories, fiction, horror and podcasts.</div>
-     <button className='newsbox-tag'>Twce Weekly</button>
+     <button className='newsbox-tag'>Twice Weekly</button>
 
   
 

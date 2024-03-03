@@ -43,6 +43,9 @@ import CampusAndCulture from "./Components/CampusAndCulture";
 import SafetyAndWellBeing from "./Components/SafetyAndWellBeing";
 import ClubAndCommitee from "./Components/ClubAndCommitee";
 import Information from "./Components/Information";
+import History from "./Components/About/History/history";
+import Mission from "./Components/About/Mission/mission";
+import Newsletter from "./Components/About/Newsletter/newsletter"
 import "./styles.css";
 
 function App() {
@@ -55,6 +58,9 @@ function App() {
           <Route path="/about" element={<OurRole />}></Route>
           <Route path="/leadership" element={<Leadership />}></Route>
           <Route path="/career" element={<Career />}></Route>
+          <Route path="/history" element={<History />}></Route>
+          <Route path="/mission" element={<Mission />}></Route>
+          <Route path="/newsletter" element={<Newsletter />}></Route>
           <Route path="/board" element={<Board />}></Route>
           <Route path="/staff" element={<Staff />}></Route>
           <Route path="/educators" element={<Educators />}></Route>
