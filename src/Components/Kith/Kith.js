@@ -50,7 +50,7 @@ const Kith = () => {
           </div>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner2'>
-          <div>
+          <div className='mobile-only'>
             <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
             <Link to="/" className='kith-link'>Learn more about our interviews</Link> 
           </div>
@@ -106,7 +106,7 @@ const Kith = () => {
           </div>
         </div>
 
-        <Marquee className="enrollment-marquee">
+        <Marquee className="kith-marquee">
           <div>
             <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709463582/ebebeb_hofiqy.png" />
           </div>

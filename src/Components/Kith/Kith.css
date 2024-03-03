@@ -260,7 +260,9 @@
     transition: all 1s ease-in-out;
 }
 
-
+.mobile-only{
+    display: none;
+}
 
 .kith-overview-grid-inner4 p{
     color: white;
@@ -273,6 +275,10 @@
     color: black;
     transform: translateY(-10px);
     transition: all 1s ease-in-out;
+}
+
+.kith-marquee {
+    display: none;
 }
 
 .kith-overview-div-img-list{
@@ -377,9 +383,31 @@
         font-size: 16px;
         padding: 20px;
     }
+
+    .kith-marquee {
+        display: flex;
+        /* width: 100%; */
+    }
+
+    .mobile-only{
+        display: block;
+    }
+
+    .kith-marquee div {
+    height: 250px;
+    margin: 0px 20px;
+    }
+    .kitht-marquee div img {
+    height: 90%;
+    width: 85%;
+    }
  
     .kith-overview-div .give-card {
         padding: 0px;
+    }
+
+    .desktop{
+        display: none;
     }
     
     .kith-overview-last-div{
