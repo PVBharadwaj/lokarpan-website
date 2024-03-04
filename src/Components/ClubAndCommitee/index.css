@@ -3,7 +3,7 @@
 }
 .club-commitee-upper-section {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,11 +12,11 @@
 }
 .club-commitee-upper-section a {
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .club-commitee-upper-section h1 {
-  font-size: 48px;
-  width: calc(100% - 240px);
+  font-size: 36px;
+  width: calc(100% - 300px);
   margin: auto;
   margin-top: 25px;
   text-align: center;
@@ -32,7 +32,7 @@
   margin: 150px auto;
 }
 .club-commitee-club-section h1 {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -40,7 +40,7 @@
 .club-commitee-club-section p {
   width: calc(100% - 360px);
   margin: auto;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -73,7 +73,8 @@
 }
 
 .club-commitee-culture-section div h1 {
-  font-size: 64px;
+  font-size: 48px;
+  margin-bottom: 30px;
 }
 .club-commitee-culture-section div p,
 ul li {
@@ -118,4 +119,97 @@ ul li {
   font-size: 16px;
   margin-top: 44px;
   width: 100%;
+}
+
+.mobile-club-commitee-videos-section {
+  display: none;
+}
+
+@media screen and (max-width: 748px) {
+  .club-commitee-upper-section {
+    height: 370px;
+  }
+  .club-commitee-upper-section a {
+    font-size: 16px;
+    margin-top: 100px;
+  }
+  .club-commitee-upper-section h1 {
+    width: calc(100% - 200px);
+    font-size: 16px;
+    height: auto;
+  }
+  .club-commitee-club-section h1 {
+    font-size: 24px;
+  }
+
+  .club-commitee-club-section p {
+    width: calc(100% - 100px);
+    margin: 0px auto;
+    font-size: 14px;
+  }
+
+  .club-commitee-club-section {
+    margin: 20px auto;
+  }
+
+  .club-commitee-culture-section {
+    height: 850px;
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .club-commitee-culture-section img {
+    width: 90%;
+  }
+  .club-commitee-culture-section div {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .club-commitee-culture-section div h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .club-commitee-culture-section div p {
+    font-size: 14px;
+  }
+  .club-commitee-culture-section div ul li {
+    font-size: 14px;
+  }
+
+  .club-commitee-culture-section div ul {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .mobile-club-commitee-videos-section {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .club-commitee-videos-section {
+    display: none;
+  }
+  .mobile-each-video-item {
+    height: 100%;
+    width: 300px;
+    margin: 20px;
+  }
+  .mobile-club-commitee-videos-section p {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .club-commitee-upper-section h1 {
+    width: calc(100% - 60px);
+  }
+  .club-commitee-club-section p {
+    width: calc(100% - 40px);
+  }
+  .club-commitee-culture-section {
+    height: 700px;
+    padding: 30px;
+  }
 }

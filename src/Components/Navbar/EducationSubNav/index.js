@@ -1,10 +1,9 @@
 import { BsChevronDown } from "react-icons/bs";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 
 const EducationSubNav = () => {
-
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
@@ -14,17 +13,20 @@ const EducationSubNav = () => {
     <nav className="SecNavbar">
       <div className="navbar-logo">Education</div>
       <div className="navbar-rest">
-      <ul className="navbar-links">
+        <ul className="navbar-links">
           <li className="navbar-item desktop-only">
             <Link to="/approach">Approach</Link>
           </li>
           <li className="navbar-item desktop-only">
             <Link to="/digital-tool">Digital Tools</Link>
           </li>
-          <li className="navbar-item dropdown">
+          <li className="navbar-item dropdown education">
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
-              <BsChevronDown className="react-icon" />
+              <BsChevronDown
+                className="react-icon"
+                style={{ fontSize: "20px" }}
+              />
             </p>
             <div
               className={` navbar-links click-dropdown ${
@@ -32,14 +34,14 @@ const EducationSubNav = () => {
               }`}
             >
               <div className="dropdown-container">
-                <h4>Explore About</h4>
-                <ul>
-                <li className="navbar-item desktop-only">
-                  <Link to="/approach">Approach</Link>
-                </li>
-                <li className="navbar-item desktop-only">
-                  <Link to="/digital-tool">Digital Tools</Link>
-                </li>
+                <h4 className="mobile-heading">Explore About</h4>
+                <ul className="edu-subnav-list">
+                  <li className="navbar-item desktop-only">
+                    <Link to="/approach">Approach</Link>
+                  </li>
+                  <li className="navbar-item desktop-only">
+                    <Link to="/digital-tool">Digital Tools</Link>
+                  </li>
                   <li>
                     <Link to="/our-role">Our Role</Link>
                   </li>
@@ -64,7 +66,6 @@ const EducationSubNav = () => {
           </li>
         </ul>
       </div>
-        
     </nav>
   );
 };

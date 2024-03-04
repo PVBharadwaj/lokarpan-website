@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
 import EducationSubNav from "../Navbar/EducationSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import { SiApplepodcasts, SiGooglepodcasts } from "react-icons/si";
 
 import "./index.css";
@@ -45,12 +47,13 @@ class PodCasts extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <EducationSubNav />
 
         <div className="podcasts-container">
           <div className="podcasts-upper-section">
             <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705912565/Group_445_sfzg1n.svg"
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787270/Group_1603_ohioem.png"
               className="podcasts-img"
             />
             <h1 className="font64-podcasts">
@@ -95,15 +98,15 @@ class PodCasts extends Component {
               <p className="font24-podcasts space-blw">You might like</p>
               <div className="like-right-img-cont">
                 <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
                 />
                 <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
                 />
                 <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
                 />
               </div>
@@ -123,6 +126,7 @@ class PodCasts extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

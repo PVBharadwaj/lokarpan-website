@@ -46,3 +46,22 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.react-icon {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 836px) {
+
+  .dropdown-container .subnav-ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .navbar-item.desktop {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+}

@@ -75,7 +75,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 748px) {
   .health-full-img {
     height: 270px;
   }
@@ -101,12 +101,13 @@
     order: 2;
   }
   .health-lokarpan-head3 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 40px;
     margin-top: 20px;
   }
   .health-para {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
+    text-align: justify;
   }
 }

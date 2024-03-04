@@ -2,6 +2,8 @@ import { useState } from "react";
 import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Educators.css";
+import Navbar from "../../../Navbar/Navbar";
+import Footer from "../../../Footer/Footer";
 
 const EducatorsData = [
   {
@@ -89,10 +91,13 @@ const EducatorsData = [
 const Educators = () => {
   return (
     <>
+    <Navbar />
       <SecondaryNav />
       <div className="educators-page">
         <h2 className="title1">Core Faculty</h2>
-        <SearchBar />
+        <div className="lead-search">
+          <SearchBar />
+        </div>
         <div className="card-list">
           {EducatorsData.map((item, index) => (
             <Card key={index} item={item} />
@@ -100,6 +105,7 @@ const Educators = () => {
         </div>
         <div className="dummy"></div>
       </div>
+      <Footer />
     </>
   );
 };

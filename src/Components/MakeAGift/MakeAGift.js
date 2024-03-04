@@ -1,8 +1,11 @@
+import Footer from "../Footer/Footer";
 import GiftSubNav from "../Navbar/GiftSubNav/GiftSubNav";
+import Navbar from "../Navbar/Navbar";
 import "./MakeAGift.css";
 const MakeAGift = () => {
   return (
     <>
+    <Navbar />
       <GiftSubNav />
       <div className="ways-img">
         <img src="https://www.colorhexa.com/ebebeb.png" alt="" />
@@ -22,6 +25,7 @@ const MakeAGift = () => {
           Initiatives, at 617-495-9980
         </p>
       </div>
+      <Footer />
     </>
   );
 };

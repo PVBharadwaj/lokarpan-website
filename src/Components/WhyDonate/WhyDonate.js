@@ -1,12 +1,18 @@
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./WhyDonate.css";
+import { Link } from "react-router-dom";
+
+import { IoIosArrowForward } from "react-icons/io";
+import { RxFontSize } from "react-icons/rx";
 
 const WhyDonate = () => {
   return (
     <>
+      <Navbar />
       <SupportSubNav />
-      <div className="why-donate">
-        <div className="donate-first-div">
+      <div className="donate-first-div">
           <h1>Why Donate to Lokarpan?</h1>
           <p>
             We are facing our worst inequity ever. Millions of children in India
@@ -19,11 +25,12 @@ const WhyDonate = () => {
             children on a different life path.
           </p>
         </div>
+      <div className="why-donate">
         <div className="donate-card">
           <div>
             <img
               className="whydonate-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/Rectangle_1766_1_uufero.png"
               alt=""
             />
           </div>
@@ -53,7 +60,46 @@ const WhyDonate = () => {
           <div>
             <img
               className="whydonate-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628156/Rectangle_1766_hw9dzv.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="donate-card">
+          <div>
+            <img
+              className="whydonate-img"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/image_343_fj2hi1.png"
+              alt=""
+            />
+          </div>
+
+          <div className="donate-card-text">
+            <h1>Adding years to life and life to years</h1>
+            <p>
+              Immerse yourself in stories that will challenge your mind and
+              capture your heart. Explore new interests and stay on top of
+              what’s trending. Our global catalogue features leading voices on
+              the topics you care about — from the biggest names to independent
+              creators.
+            </p>
+          </div>
+        </div>
+        <div className="donate-card donate-second">
+          <div className="donate-card-text">
+            <h1>Adding years to life and life to years</h1>
+            <p>
+              Immerse yourself in stories that will challenge your mind and
+              capture your heart. Explore new interests and stay on top of
+              what’s trending. Our global catalogue features leading voices on
+              the topics you care about — from the biggest names to independent
+              creators.
+            </p>
+          </div>
+          <div>
+            <img
+              className="whydonate-img"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628225/image_343_1_esstfj.png"
               alt=""
             />
           </div>
@@ -65,14 +111,19 @@ const WhyDonate = () => {
           sector
         </h1>
         <div className="hyperlinks">
-          <a className="donate-hyperlink" href="/donate">
-            Donate Now
+        <div className="apply-btn orange">
+              <Link to="/donate" className="apply-btn-text-white body-btn">Donate</Link>
+          </div>
+          <div> 
+          <a className="donate-hyperlink" href="/faqs">
+            FAQ
+            <IoIosArrowForward style={{fontSize:"15px"}} />
           </a>
-          <a className="faq-hyperlink" href="/faqs">
-            FAQs
-          </a>
+          </div>
+
         </div>
       </div>
+      <Footer />
     </>
   );
 };

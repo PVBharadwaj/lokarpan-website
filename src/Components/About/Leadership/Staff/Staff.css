@@ -1,6 +1,20 @@
+.board-page,
+.fellows-page, 
+.educators-page, 
 .staff-page {
-  padding: 0px 123px;
-}
+    width: 100%;
+  }
+
+  .board-page h2, 
+  .educators-page h2,
+  .fellows-page h2,
+  .staff-page h2{
+    padding: 50px 123px 10px;
+  }
+
+  .lead-search{
+    width: 100%;
+  }
 
 .image {
   border: solid black;
@@ -14,7 +28,7 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin: 10px 0px;
+  margin: 30px 123px;
 }
 
 .card-lead {
@@ -37,7 +51,6 @@
   background-color: #ffffff;
   position: absolute;
   width: 185px;
-  /* height: fit-content; */
   display: block;
   z-index: 2;
 }
@@ -46,13 +59,17 @@
   opacity: 0.5;
   transition: opacity 0.5s ease-in-out;
 }
+  
+@media screen and (max-width: 748px) {
 
-@media only screen and (max-width: 805px) {
-  .staff-page {
-    padding: 10px 30px;
+  .board-page h2, 
+  .educators-page h2,
+  .fellows-page h2,
+  .staff-page h2 {
+    padding:  30px 10px;
   }
 
-  /* .card-lead {
-    width: calc(50% - 20px);
-  } */
+  .card-list {
+    margin: 30px;
+  }
 }

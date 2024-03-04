@@ -1,19 +1,18 @@
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import "./Moonshots.css";
-
+import { Link } from "react-router-dom";
 const Moonshots = () => {
   return (
     <>
-      <div className="fellowship-top">
-        <h1 className="impact-title">
-          We know the best answers often come from those closest to the problem.
-        </h1>
-      </div>
+      <Navbar />
+      <div className="moonshots-top"></div>
       <div className="fellowship-page">
         <div className="second-div">
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623658/100_2093_1_zr9bw1.png"
               alt="img1"
             />
             <h3 className="impact-title">We look for big ideas.</h3>
@@ -27,7 +26,7 @@ const Moonshots = () => {
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623659/IMG_3313_2_zapx1r.png"
               alt="img2"
             />
             <h3 className="impact-title">We ask communities what they need.</h3>
@@ -50,7 +49,7 @@ const Moonshots = () => {
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623659/DSC04890_1_xxtsrn.png"
               alt="img1"
             />
             <h3 className="impact-title">We look for big ideas.</h3>
@@ -64,7 +63,7 @@ const Moonshots = () => {
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://www.colorhexa.com/ebebeb.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623657/Rectangle_1875_akaqkc.png"
               alt="img2"
             />
             <h3 className="impact-title">We ask communities what they need.</h3>
@@ -77,16 +76,18 @@ const Moonshots = () => {
           </div>
         </div>
       </div>
-      <div className="opp">
+
+      <div className="opp moonshots-opp">
         <h3 className="opp-head fellow-data">OPPORTUNITIES</h3>
         <p className="opp-data impact-title">
           Through Google.org Impact challenges, we award nonprofits and social
           enterprises with support to help bring their ideas to life.
         </p>
-        <button className="apply" type="submit">
-          Apply
-        </button>
+        <div className="apply-btn white">
+          <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

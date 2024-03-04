@@ -1,11 +1,10 @@
 import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./index.css";
 import "./../Navbar.css";
 
 const SubNavbar = () => {
-
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
@@ -15,16 +14,16 @@ const SubNavbar = () => {
     <nav className="SecNavbar">
       <div className="navbar-logo">About</div>
       <div className="navbar-rest">
-      <ul className="navbar-links">
-          <li className="navbar-item desktop-only">
+        <ul className="navbar-links">
+          <li className="navbar-item desktop">
             <Link to="/staff">History</Link>
           </li>
-          <li className="navbar-item desktop-only">
+          <li className="navbar-item desktop">
             <Link to="/educators">Mission</Link>
           </li>
           <li className="navbar-item dropdown">
             <p onClick={toggleNavmenu}>
-              <span className="desktop-only">Browse All</span>
+              <span className="desktop">Browse All</span>
               <BsChevronDown className="react-icon" />
             </p>
             <div
@@ -34,13 +33,13 @@ const SubNavbar = () => {
             >
               <div className="dropdown-container">
                 <h4>Explore About</h4>
-                <ul>
-                <li className="navbar-item desktop-only">
-                  <Link to="/staff">History</Link>
-                </li>
-                <li className="navbar-item desktop-only">
-                  <Link to="/educators">Mission</Link>
-                </li>
+                <ul className="subnav-ul">
+                  <li className="navbar-item desktop">
+                    <Link to="/staff">History</Link>
+                  </li>
+                  <li className="navbar-item desktop">
+                    <Link to="/educators">Mission</Link>
+                  </li>
                   <li>
                     <Link to="/our-role">Our Role</Link>
                   </li>
@@ -65,7 +64,6 @@ const SubNavbar = () => {
           </li>
         </ul>
       </div>
-        
     </nav>
   );
 };

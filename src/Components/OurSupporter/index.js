@@ -1,13 +1,15 @@
 import { Component } from "react";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import "./index.css";
 
 class OurSupporter extends Component {
   render() {
-    const { isDropdownVisible } = this.props;
     return (
       <>
-        <SupportSubNav isDropdownVisible={isDropdownVisible} />
+        <Navbar />
+        <SupportSubNav />
 
         <div className="our-supporter-container">
           <div className="our-supporter-top-section">
@@ -63,7 +65,9 @@ class OurSupporter extends Component {
             </div>
           </div>
           <div className="in-support-section">
-            <h1 className="font48">In-Kind support</h1>
+            <h1 className="font64  black support-space-below">
+              In-Kind support
+            </h1>
             <div className="in-support-below-section">
               <p>CRS PACS DFID</p>
               <p>Create Fund TARA Akshar+ City Montessori School</p>
@@ -77,6 +81,7 @@ class OurSupporter extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

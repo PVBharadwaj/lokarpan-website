@@ -28,6 +28,10 @@
   height: 90%;
 } */
 
+.footer-container a {
+  line-height: 40px;
+}
+
 .footer-list h4 {
   font-size: 16px;
   margin-bottom: 16px;
@@ -109,7 +113,7 @@ li {
 .footer-hor-line {
   display: none;
 }
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 836px) {
   .footer-container {
     /* max-width: 450px; */
     padding: 10px 30px;

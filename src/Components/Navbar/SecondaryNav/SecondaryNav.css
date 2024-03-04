@@ -12,26 +12,13 @@
   top: 110px;
 }
 
-.apply-btn {
-  height: 24px;
-  width: 64px;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 100px;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-  justify-content: center;
-  align-items: center;
+.navbar-mainlink{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 
-.blue{
-  background-color: #3F86F0;
-  border: 0px;
-  color: #ffffff !important;
-}
-
-.lead-sec-nav{
+.lead-sec-nav {
   display: flex;
   gap: 24px;
 }
@@ -40,12 +27,11 @@
   display: none;
 }
 
-.react-icon{
-  color: #646A7B;
+.react-icon {
+  color: #646a7b;
 }
 
-
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 836px) {
   .SecNavbar {
     padding: 10px;
   }
@@ -54,7 +40,7 @@
     display: block;
   }
 
-  .lead-mobile-navbar-links{
+  .lead-mobile-navbar-links {
     gap: 8px;
   }
 
@@ -67,20 +53,34 @@
     left: 0px;
     right: 0px;
     box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.2);
-    transition: max-height 1s ease-in-out, opacity 1s ease-in-out,
-    visibility 0.3s ease;
+    /* transition: max-height 1s ease-in-out, opacity 1s ease-in-out,
+      visibility 0.3s ease; */
+      transition: max-height 0.7s ease-in-out;
   }
-  
+
   .click-dropdown ul {
     padding: 0px;
   }
-  
+
   .click-dropdown.active {
-    max-height: 900px;
+    max-height: 100vh;
     visibility: visible;
-    opacity: 1;
+    /* opacity: 1; */
     background-color: white;
-    transition: max-height 0.7s ease-in-out, visibility 0.7s ease-in-out,
-      opacity 0.7s ease-in-out;
+    transition: max-height 0.7s ease-in-out;
+  }
+  .apply-btn {
+    display: none;
+  }
+  .lead-sec-nav {
+    gap: 0;
+  }
+
+  .mobile-navbar-links .navbar-item a {
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #333333;
   }
 }

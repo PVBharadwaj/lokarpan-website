@@ -46,7 +46,7 @@ const VolunteerCarousel = () => {
       className="custom-arrow prev-arrow"
       style={{
         ...props.style,
-        bottom: "10%",
+        bottom: "5%",
         left: "17%",
         transform: "translateX(-50%)",
         zIndex: 1,
@@ -62,7 +62,7 @@ const VolunteerCarousel = () => {
       className="custom-arrow next-arrow"
       style={{
         ...props.style,
-        bottom: "10%",
+        bottom: "5%",
         left: "19%",
         transform: "translateX(50%)",
         zIndex: 1,
@@ -121,7 +121,7 @@ const VolunteerCarousel = () => {
       <div
         style={{
           padding: "10px",
-          top: "60%",
+          top: "70%",
           left: "-37%",
         }}
       >

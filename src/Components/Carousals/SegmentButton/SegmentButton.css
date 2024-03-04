@@ -34,7 +34,7 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 748px) {
     .segments{
         margin-top: 30px;
     }

@@ -1,152 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
 
 .academics-head {
-    position: relative; 
-    text-align: left !important;
-    align-items: flex-start !important;
-    padding: 175px 550px 175px 123px !important;
+  position: relative;
+  text-align: left !important;
+  align-items: flex-start !important;
+  padding: 175px 550px 175px 123px !important;
 }
 
-.academics-head::before { 
-    content: "";
-    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYGI8GyDS7u6j9MMxIyRAjGjX56lorApbFeItfHhCWDhqvrH1T');
-    background-size: cover;
-    background-repeat: no-repeat ;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 1;
+.academics-head::before {
+  content: "";
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYGI8GyDS7u6j9MMxIyRAjGjX56lorApbFeItfHhCWDhqvrH1T");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+}
+.academics-upper-section {
+  height: 600px;
+
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709281455/Rectangle_1812_2_x0edne.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+.academics-upper-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.academics-upper-section p {
+  font-size: 24px;
+  width: 500px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.academics-head h1,
+.academics-head p {
+  position: relative;
 }
 
-
-.academics-head h1, 
-.academics-head p{
-    position: relative;
+.academics-div h1 {
+  font-size: 62px;
+  font-family: "Noto Serif Display", serif;
 }
 
-.academics-div h1{
-    font-size: 62px;
-    font-family: 'Noto Serif Display', serif;
+.academics-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 150px;
 }
 
-.academics-div{
+.academics-head > p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.academics-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 80px 150px;
+}
+
+.academics-stats p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.academics-div .give-card img {
+  height: 100%;
+}
+
+.academics-div .give-card-text h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.academics-div .give-card-text p {
+  font-size: 20px;
+  padding: 4px 0px;
+}
+
+.academics-div .give-card-text .kith-link {
+  color: #3f86f0;
+}
+
+.academics-div-blue {
+  margin: 0px 150px;
+  padding: 130px 60px;
+  background-color: #3f86f0;
+}
+
+.academics-div-blue h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.academics-div-last {
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 748px) {
+  .academics-upper-section h1 {
+    margin-top: -30px;
+    font-size: 28px;
+  }
+  .academics-upper-section p {
+    width: 400px;
+    font-size: 14px;
+  }
+  .academics-head {
+    padding: 75px 32px !important;
+  }
+
+  .academics-div {
+    padding: 100px 0px;
+    gap: 16px;
+  }
+  .give-card {
+    padding: 40px 0;
+  }
+  .academics-div .give-card-text {
+    padding: 0 50px;
+  }
+
+  .academics-div > h1 {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .academics-div h3 {
+    font-size: 24px;
+  }
+
+  .academics-div > p {
+    font-size: 16px;
+  }
+
+  .academics-stats {
+    flex-direction: column;
+    gap: 42px;
+    padding: 50px 20px;
+  }
+
+  .admissions-img-list {
+    flex-direction: column;
+  }
+
+  .academics-div-last {
+    padding-top: 0px;
+  }
+
+  .academics-div-blue {
+    margin: 0px;
+    padding: 50px 32px;
+  }
+
+  .academics-div .give-card-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 150px;
-}
+    gap: 20px;
+  }
 
-
-.academics-head > p{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.academics-stats{
+  .academics-div .give-card-text div {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    padding: 80px 150px;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
-
-.academics-stats p{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.academics-div .give-card img{
-    height: 100%;
-}
-
-.academics-div .give-card-text h3{
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.academics-div .give-card-text p{
-    font-size: 20px;
-    padding: 4px 0px;
-}
-
-.academics-div .give-card-text .kith-link{
-    color: #3F86F0;
-}
-
-.academics-div-blue{
-    margin: 0px 150px;
-    padding: 130px 60px;
-    background-color: #3F86F0;
-}
-
-.academics-div-blue h3{
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    padding-bottom: 30px;
-}
-
-.academics-div-last{
-    padding-top: 0px;
-}
-
-@media only screen and (max-width: 805px) {
-    .academics-head{
-        padding: 75px 32px !important;
-    }
-
-    .academics-div{
-        padding: 100px 20px;
-        gap: 16px;
-    }
-
-    .academics-div > h1 {
-        font-size: 24px;
-        font-weight: bolder;
-    }
-    
-    .academics-div h3 {
-        font-size: 24px;
-    }
-    
-    .academics-div > p{
-        font-size: 16px;
-    }
-
-    .academics-stats{
-        flex-direction: column;
-        gap: 42px;
-        padding: 50px 20px;
-    }
-
-    .admissions-img-list{
-        flex-direction: column;
-    }
-
-    .academics-div-last{
-        padding-top: 0px;
-    }
-
-    .academics-div-blue{
-        margin: 0px;
-        padding: 50px 32px;
-    }
-
-    .academics-div .give-card-text{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .academics-div .give-card-text div{
-        
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+@media screen and (max-width: 440px) {
+  .academics-upper-section {
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+  .academics-upper-section h1 {
+    margin-top: 150px;
+  }
+  .academics-upper-section p {
+    width: 280px;
+  }
 }

@@ -1,3 +1,5 @@
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 import SecondaryNav from "../../Navbar/SecondaryNav/SecondaryNav";
 import "./Leadership.css";
 
@@ -27,31 +29,31 @@ const Leadership = () => {
 
   return (
     <>
+      <Navbar />
       <SecondaryNav />
       <div className="lead-page">
-        <h2 className="title1">Our Leadership</h2>
+        <h2 className="title1 lead-main-title">Our Leadership</h2>
         <div className="img-contain">
           {" "}
           <img
-            className="main-img"
-            src="https://www.webii.net/blog/wp-content/uploads/2019/12/making-websites-human-collage-1.jpg"
+            className="lead-img"
+            src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708890771/Frame_48097347_c30iq9.png"
             alt=""
           />
         </div>
-
-        <div className="desp">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nihil
-          quas nam voluptatibus fugiat natus sapiente quo repellat reiciendis
-          molestiae aperiam voluptatum enim at molestias doloremque vel neque
-          accusamus, consectetur et! Culpa eveniet repudiandae expedita sequi
-          eos harum deserunt, praesentium sint consequatur.
+        <div className="lead-rest">
+          <div className="desp">
+          Lokarpan is led globally by our managing partner; our elected board of directors, known as the Shareholders Council; a global leadership team known as the Acceleration Team; and the leaders of our offices and practices.
+          </div>
+          <div className="desp-cards">
+            {Desp.map((item, index) => (
+              <DespCard key={index} item={item} index={index} />
+            ))}
         </div>
-        <div className="desp-cards">
-          {Desp.map((item, index) => (
-            <DespCard key={index} item={item} index={index} />
-          ))}
+        <div className="dummy"></div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

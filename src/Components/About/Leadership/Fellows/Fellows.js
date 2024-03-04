@@ -2,6 +2,8 @@ import { useState } from "react";
 import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Fellows.css";
+import Navbar from "../../../Navbar/Navbar";
+import Footer from "../../../Footer/Footer";
 const FellowData = [
   {
     id: 1,
@@ -92,10 +94,13 @@ const Fellows = () => {
   }
   return (
     <>
+    <Navbar />
       <SecondaryNav />
       <div className="fellows-page">
         <h2 className="title1">Fellows</h2>
-        <SearchBar style={{ width: "100%" }} />
+        <div className="lead-search">
+          <SearchBar />
+        </div>
         <div className="year-pointer">
           <p className="year-pointer-btn" onClick={handleyear}>All</p>
           <p className="year-pointer-btn" onClick={handleyear}>2024</p>
@@ -112,6 +117,7 @@ const Fellows = () => {
         </div>
         <div className="dummy"></div>
       </div>
+    <Footer />
     </>
   );
 };

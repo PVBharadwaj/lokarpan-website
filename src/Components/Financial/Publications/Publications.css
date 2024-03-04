@@ -3,21 +3,59 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0px 123px;
+  padding: 140px 123px;
 }
 
 .public-top{
-  padding: 150px 80px;
+  margin: 0px;
+  padding: 0px 123px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 630px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.public-top::before {   
+  content: "";
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708923699/vigneshwar-rajkumar-Az2FQtHgAn0-unsplash_1_z8urcf.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+}
+
+.public-top h1 {
+position: relative;
+font-size: 64px;
+font-weight: bolder;
+text-align: center;
+color: #fff;
+}
+
+.public-top p {
+  position: relative;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  color: #fff;
+}
+
+.public-desp{
+  font-size: 24px;
 }
 
 .public-title{
   text-align: center;
   font-size: 48px;
   padding: 30px;
-}
-
-.public-desp{
-  font-size: 24px;
 }
 
 .public-archives{
@@ -60,7 +98,7 @@
   outline: none;
 }
 
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 748px) {
   .publication-page {
     padding: 10px 30px;
   }

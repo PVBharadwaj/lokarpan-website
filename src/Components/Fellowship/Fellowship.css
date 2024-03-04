@@ -1,3 +1,11 @@
+.fellowship-nav {
+  padding: 15px 123px;
+}
+
+.fellowship-nav h1{
+  font-size: 20px;
+}
+
 .fellowship-page {
   display: flex;
   flex-direction: column;
@@ -7,44 +15,55 @@
 }
 
 .fellowship-top {
+  position: relative; 
   width: 100%;
-  height: 512px;
-  background-image: url(https://images.unsplash.com/photo-1474314881477-04c4aac40a0e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw2NjU4OTB8fGVufDB8fHx8fA%3D%3D);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
+.fellowship-top::before { 
+  content: "";
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708612302/DSC03147_2_urfz2o.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+}
+
+.fellowship-top h1{
+  position: relative;
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  padding: 0px 100px;
+}
+
 .second-div {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 
 .sub-div {
   display: flex;
   flex-direction: column;
-  /* width: 465px; */
   text-align: left;
 }
 
 .second-div > .sub-div > .impact-title {
   padding: 12px 0px;
-  font-size: 36px;
-}
-
-.second-div > .sub-div > .impact-data {
   font-size: 28px;
 }
 
 .fellow-img {
   height: 298px;
-  /* width: 465px; */
 }
 
 .fellowship-top > .impact-title {
@@ -53,36 +72,39 @@
 }
 
 .third-div > .impact-title {
-  padding: 0px 150px 80px;
+  padding: 0px 80px 150px;
   font-size: 36px;
 }
 
 .fellow-data {
-  font-size: 16px;
+  font-size: 20px;
   padding: 20px 0px;
+  font-weight: 500;
 }
 
 .third-div {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 24px;
 }
 
 .impact-div {
   display: flex;
   justify-content: space-between;
-  gap: 25px;
+  gap: 30px;
   width: 100%;
 }
 
 .impact-img {
-  width: 355px;
+  width: calc((100% - 60px) / 3);
   height: 265px;
 }
 
 .impact-head {
   font-size: 24px;
-  padding: 40px 50px;
+  color: #181818;
+  font-weight: 500;
 }
 
 .impact-head,
@@ -94,51 +116,56 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 50px 0px;
+}
+
+.fourth-div{
+  padding: 140px 0px;
+  gap: 24px;
 }
 
 .fourth-div-data {
-  padding: 30px 130px;
+  padding: 0px 120px;
   font-size: 24px;
+  color: #333333;
 }
 
 .fourth-div > .impact-title {
-  font-size: 36px;
-  padding: 20px;
+  font-size: 28px;
 }
 
 .opp {
-  padding: 50px 150px;
-  margin-bottom: 150px;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(178, 228, 255),
-    rgb(212, 212, 212)
-  );
+  padding: 120px 150px;
+  margin-bottom: 100px;
+  background-color: #3F86F0;
+  color: white;
 }
 
 .opp-data {
-  padding: 50px 150px;
-  font-size: 36px;
+  padding: 50px;
+  font-size: 48px;
+  font-weight: bolder;
 }
 
 .opp-head {
   font-size: 20px;
   padding: 0px;
+  font-weight: 500;
 }
 
-.apply {
-  padding: 10px 50px;
-  background-color: white;
-  border: solid black;
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 805px) {
+@media screen and (max-width: 748px) {
+  .fellowship-nav {
+    padding: 15px 10px;
+  }
+  
   .fellowship-top > .impact-title {
     font-size: 20px;
-    padding: 10px 50px;
+    padding: 10px 10px;
     text-align: left;
+  }
+
+  .fellowship-top h1{
+    font-size: 24px;
+    padding: 0px 50px;
   }
 
   .fellowship-top {
@@ -146,12 +173,16 @@
     height: 296px;
   }
   .fellowship-page {
-    padding: 10px 30px;
+    padding: 10px 10px !important;
   }
   .second-div {
     flex-direction: column;
-    gap: 15px;
-    /* padding: 50px 0px; */
+    gap: 50px;
+  }
+
+  .second-div > .sub-div > .impact-title {
+    padding: 12px 0px;
+    font-size: 24px;
   }
   .second-div > .sub-div > .impact-data {
     font-size: 16px;
@@ -159,7 +190,7 @@
   .third-div > .impact-div {
     flex-direction: column;
   }
-  .third-div > .impact-div > .impact-head {
+  .third-div > .impact-head {
     font-size: 20px;
   }
   .third-div > .impact-title {
@@ -185,7 +216,7 @@
     padding: 10px 0px;
   }
   .opp-head {
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px 0px;
   }
   .opp-data {

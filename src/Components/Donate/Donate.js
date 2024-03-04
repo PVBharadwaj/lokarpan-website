@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Donate.css";
 import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 const Donate = () => {
   const [donationFrequency, setDonationFrequency] = useState("---");
   const [donationAmount, setDonationAmount] = useState("---");
@@ -54,9 +57,9 @@ const Donate = () => {
 
   return (
     <>
+    <Navbar />
       <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" link1="/donate" link2="/faqs"/>
-      <div className="donate-page">
-        <div className="donate-head">
+      <div className="donate-head">
           <h1>
             Through the Stronger Together campaign, our goal is to bridge the
             learning loss and strengthen our core program in Akanksha schools
@@ -80,7 +83,7 @@ const Donate = () => {
             </div>
           </div>
         </div>
-        <hr />
+      <div className="donate-page">
         <div className="donate-form">
           <form action="" method="get">
             <div className="donate-form-inner">
@@ -256,7 +259,7 @@ const Donate = () => {
                         alt=""
                       />
                       <span className="radio-label-with-img-text">
-                        Frontiers: HIV & <br /> Sickle Cell Disease
+                        Frontiers: HIV & Sickle Cell
                       </span>
                     </label>
                     <input
@@ -291,7 +294,7 @@ const Donate = () => {
                   </legend>
                   <div className="grid">
                     <label
-                      className="input-label names"
+                      className="input-label long"
                       htmlFor="form-donate-first-name"
                     >
                       First Name <br />
@@ -299,11 +302,10 @@ const Donate = () => {
                         type="text"
                         name="donate-form-first-name"
                         id="form-donate-first-name"
-                        placeholder="First Name"
                       />
                     </label>
                     <label
-                      className="input-label names"
+                      className="input-label long"
                       htmlFor="form-donate-last-name"
                     >
                       Last Name <br />
@@ -311,7 +313,6 @@ const Donate = () => {
                         type="text"
                         name="donate-form-last-name"
                         id="form-donate-last-name"
-                        placeholder="Last Name"
                       />
                     </label>
                     <label
@@ -323,7 +324,6 @@ const Donate = () => {
                         type="text"
                         name="donate-form-email"
                         id="form-donate-email"
-                        palceholder="Email Address"
                       />
                     </label>
                     <label
@@ -335,28 +335,6 @@ const Donate = () => {
                         type="text"
                         name="donate-form-country"
                         id="form-donate-country"
-                      />
-                    </label>
-                    <label
-                      className="input-label long"
-                      htmlFor="form-donate-mobile"
-                    >
-                      Mobile <br />
-                      <input
-                        type="text"
-                        name="donate-form-mobile"
-                        id="form-donate-mobile"
-                      />
-                    </label>
-                    <label
-                      className="input-label long"
-                      htmlFor="form-donate-pan"
-                    >
-                      PAN Number <br />
-                      <input
-                        type="text"
-                        name="donate-form-pan"
-                        id="form-donate-pan"
                       />
                     </label>
                   </div>
@@ -418,75 +396,103 @@ const Donate = () => {
                         placeholder="Pin-Code"
                       />
                     </label>
+                    <label
+                      className="input-label long"
+                      htmlFor="form-donate-mobile"
+                    >
+                      Mobile <br />
+                      <input
+                        type="text"
+                        name="donate-form-mobile"
+                        id="form-donate-mobile"
+                        placeholder="+xx xxxxxxxxxx"
+                      />
+                    </label>
+                    <label
+                      className="input-label long"
+                      htmlFor="form-donate-pan"
+                    >
+                      PAN Number <br />
+                      <input
+                        type="text"
+                        name="donate-form-pan"
+                        id="form-donate-pan"
+                        placeholder="000 000"
+                      />
+                    </label>
                   </div>
                 </fieldset>
               </div>
               <div className="donate-part">
                 <div className="page-marker">06/06</div>
-                <div className="donation-recap">
-                  <div className="donate-form-sec-title">
-                    <p className="recap">Donation Recap</p>
-                  </div>
-                  <hr />
-                  <div className="donate-recap-sections">
-                    <div className="donate-recap-section">
-                      <div>
-                        <p className="recap">Donation Type </p>
-                        <a href="#donate-section-1">Edit</a>
+                <fieldset>
+                  {/* <div className="donation-recap"> */}
+                    <div className="donate-form-sec-title">
+                      <p className="recap">Donation Recap</p>
+                    </div>
+                    <hr />
+                    <div className="donate-recap-sections">
+                      <div className="donate-recap-section">
+                        <div>
+                          <p className="recap">Donation Type </p>
+                          <a href="#donate-section-1">Edit</a>
+                        </div>
+                        <div>{donationFrequency}</div>
                       </div>
-                      <div>{donationFrequency}</div>
-                    </div>
-                    <div className="donate-recap-section">
-                      <div>
-                        <p className="recap">Donation Area</p>
-                        <a href="#donate-section-3">Edit</a>
+                      <div className="donate-recap-section">
+                        <div>
+                          <p className="recap">Donation Area</p>
+                          <a href="#donate-section-3">Edit</a>
+                        </div>
+                        <div>{donationArea}</div>
                       </div>
-                      <div>{donationArea}</div>
                     </div>
-                  </div>
-                  <hr />
-                  <div className="donate-recap-sections">
-                    <div className="donate-recap-section">
-                      <div>
-                        <p className="recap">Donation Amount</p>
-                        <a href="#donate-section-2">Edit</a>
+                    <hr />
+                    <div className="donate-recap-sections">
+                      <div className="donate-recap-section">
+                        <div>
+                          <p className="recap">Donation Amount</p>
+                          <a href="#donate-section-2">Edit</a>
+                        </div>
+                        <div>{`₹ ${donationAmount}`}</div>
                       </div>
-                      <div>{`₹ ${donationAmount}`}</div>
+                      <div className="donate-recap-section">
+                        <label htmlFor="form-3-percent">
+                          <input
+                            type="checkbox"
+                            onClick={handleProcessingFee}
+                            name=""
+                            id="form-3-percent"
+                          />
+                          Add 3% to cover the credit card processing fee
+                        </label>
+                        <label htmlFor="newsletter-subscription">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="newsletter-subscription"
+                          />
+                          Subscribe to our newsletter?
+                        </label>
+                      </div>
                     </div>
-                    <div className="donate-recap-section">
-                      <label htmlFor="form-3-percent">
-                        <input
-                          type="checkbox"
-                          onClick={handleProcessingFee}
-                          name=""
-                          id="form-3-percent"
-                        />
-                        Add 3% to cover the credit card processing fee
-                      </label>
-                      <label htmlFor="newsletter-subscription">
-                        <input
-                          type="checkbox"
-                          name=""
-                          id="newsletter-subscription"
-                        />
-                        Subscribe to our newsletter?
-                      </label>
+                    <hr />
+                    <div className="donate-recap-sections">
+                      <div className="donate-recap-section">
+                        <p className="recap">Credit Card Processing fee</p>
+                        <p>{`₹ ${processingFee}`}</p>
+                        <p className="recap">Total payment amount</p>
+                        <p>{`₹ ${totalAmount}`}</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr />
-                  <div className="donate-recap-sections">
-                    <div className="donate-recap-section">
-                      <p className="recap">Credit Card Processing fee</p>
-                      <p>{`₹ ${processingFee}`}</p>
-                      <p className="recap">Total payment amount</p>
-                      <p>{`₹ ${totalAmount}`}</p>
-                    </div>
-                  </div>
-                  <hr />
+                    <hr />
+                  {/* <div /> */}
+                </fieldset>
+                <div>
                   <div className="donate-submit-section">
-                    <button className="donate-btn" type="submit">
-                      Submit & Enter Payment Details
-                    </button>
+                    <div className="apply-btn transparent">
+                      <Link to="/donate" className="apply-btn-text-black body-btn">Submit & Enter Payment Details</Link>
+                    </div>
                     <p>
                       By submitting your information and making your gift, you
                       agree to the Lokarpan
@@ -498,6 +504,7 @@ const Donate = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

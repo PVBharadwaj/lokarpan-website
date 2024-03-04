@@ -2,6 +2,8 @@ import { useState } from "react";
 import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Board.css"
+import Navbar from "../../../Navbar/Navbar";
+import Footer from "../../../Footer/Footer";
 
 
 const BoardData = [
@@ -90,10 +92,13 @@ const BoardData = [
 const Board = () => {
   return (
     <>
+    <Navbar />
       <SecondaryNav />
       <div className="board-page">
       <h2 className="title1">Board</h2>
+      <div className="lead-search">
       <SearchBar />
+      </div>
       <div className="card-list">
         {BoardData.map((item, index) => (
           <Card key={index} item={item} />
@@ -101,6 +106,7 @@ const Board = () => {
       </div>
       <div className="dummy"></div>
       </div>
+      <Footer />
     </>
   );
 };

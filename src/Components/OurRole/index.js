@@ -3,22 +3,40 @@ import SubNavbar from "../Navbar/SubNavbar";
 import { IoMdClose, IoMdExpand } from "react-icons/io";
 import Popup from "reactjs-popup";
 import Slider from "react-slick";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 
 class OurRole extends Component {
+  constructor(props) {
+    super(props);
+    this.updatePopUpOpen = this.updatePopUpOpen.bind(this);
+  }
   state = { active: "education", showContainer: true, isPopUpOpen: false };
 
   onChangeActive = (ele) => {
     this.setState({ active: ele, showContainer: true });
   };
 
+  scrollBar = () => {
+    const { isPopUpOpen } = this.state;
+    if (isPopUpOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  };
+
   updatePopUpOpen = () => {
     console.log("Entered");
-    this.setState((prevState) => ({
-      isPopUpOpen: !prevState.isPopUpOpen,
-    }));
+    this.setState(
+      (prevState) => ({
+        isPopUpOpen: !prevState.isPopUpOpen,
+      }),
+      () => this.scrollBar()
+    );
   };
 
   onKeyDown = (event, close) => {
@@ -29,9 +47,7 @@ class OurRole extends Component {
 
   render() {
     const { active, showContainer, isPopUpOpen } = this.state;
-    const ourRoleContainer = isPopUpOpen
-      ? "our-role-container hidden-overflow"
-      : "our-role-container";
+
     const containerClass = `our-role-each-container ${
       showContainer ? "show" : ""
     }`;
@@ -48,6 +64,7 @@ class OurRole extends Component {
 
     return (
       <>
+        <Navbar />
         <SubNavbar />
         <div className="our-role-container">
           <div className="top-section">
@@ -126,16 +143,14 @@ class OurRole extends Component {
 
                       <Popup
                         trigger={
-                          <div
-                            className="expand-sec"
-                            onClick={this.updatePopUpOpen}
-                          >
+                          <div className="expand-sec">
                             <p>EXPAND TO LEARN MORE</p>
                             <IoMdExpand />
                           </div>
                         }
                         modal
-                        onClick={this.updatePopUpOpen}
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -243,6 +258,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -346,6 +363,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -438,7 +457,7 @@ class OurRole extends Component {
                     className="edu-img"
                     alt="Card 1"
                   />
-                  <div className="card-content">
+                  <div className="card-content" onClick={this.updatePopUpOpen}>
                     <h3>
                       Helping Youth Business International support underserved
                       small business-owners
@@ -446,16 +465,14 @@ class OurRole extends Component {
 
                     <Popup
                       trigger={
-                        <div
-                          className="expand-sec"
-                          onClick={this.updatePopUpOpen}
-                        >
+                        <div className="expand-sec">
                           <p>EXPAND TO LEARN MORE</p>
                           <IoMdExpand />
                         </div>
                       }
                       modal
-                      onClick={this.updatePopUpOpen}
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -561,6 +578,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -664,6 +683,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -773,6 +794,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -876,6 +899,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -981,6 +1006,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -1081,16 +1108,14 @@ class OurRole extends Component {
 
                     <Popup
                       trigger={
-                        <div
-                          className="expand-sec"
-                          onClick={this.updatePopUpOpen}
-                        >
+                        <div className="expand-sec">
                           <p>EXPAND TO LEARN MORE</p>
                           <IoMdExpand />
                         </div>
                       }
                       modal
-                      onClick={this.updatePopUpOpen}
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -1196,6 +1221,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -1299,6 +1326,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -1424,6 +1453,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -1530,6 +1561,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -1633,6 +1666,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -1733,16 +1768,14 @@ class OurRole extends Component {
 
                     <Popup
                       trigger={
-                        <div
-                          className="expand-sec"
-                          onClick={this.updatePopUpOpen}
-                        >
+                        <div className="expand-sec">
                           <p>EXPAND TO LEARN MORE</p>
                           <IoMdExpand />
                         </div>
                       }
                       modal
-                      onClick={this.updatePopUpOpen}
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -1848,6 +1881,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -1951,6 +1986,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -2060,6 +2097,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -2163,6 +2202,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -2268,6 +2309,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -2368,16 +2411,14 @@ class OurRole extends Component {
 
                     <Popup
                       trigger={
-                        <div
-                          className="expand-sec"
-                          onClick={this.updatePopUpOpen}
-                        >
+                        <div className="expand-sec">
                           <p>EXPAND TO LEARN MORE</p>
                           <IoMdExpand />
                         </div>
                       }
                       modal
-                      onClick={this.updatePopUpOpen}
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -2483,6 +2524,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -2586,6 +2629,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -2711,6 +2756,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -2816,6 +2863,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -2919,6 +2968,8 @@ class OurRole extends Component {
                           </div>
                         }
                         modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
                         onKeyDown={(event, close) => {
                           this.onKeyDown(event, close);
                         }}
@@ -3019,16 +3070,14 @@ class OurRole extends Component {
 
                     <Popup
                       trigger={
-                        <div
-                          className="expand-sec"
-                          onClick={this.updatePopUpOpen}
-                        >
+                        <div className="expand-sec">
                           <p>EXPAND TO LEARN MORE</p>
                           <IoMdExpand />
                         </div>
                       }
                       modal
-                      onClick={this.updatePopUpOpen}
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -3134,6 +3183,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -3237,6 +3288,8 @@ class OurRole extends Component {
                         </div>
                       }
                       modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
                       onKeyDown={(event, close) => {
                         this.onKeyDown(event, close);
                       }}
@@ -3323,18 +3376,19 @@ class OurRole extends Component {
             </div>
           )}
           <div className="donate-section">
-            <h1 className="lokarpan-head3">Give us your support</h1>
+            <h1 className="last-space">Give us your support</h1>
             <p className="our-role-font24">
               Lokarpan is a small nonprofit with a big dream. Join others
               helping to fight poverty, disease, school parity, and inequity for
               at risk communities.
-            </p> 
+            </p>
 
             <button type="button" className="our-role-apply-btn">
-              Donate Now
+              Donate
             </button>
           </div>
         </div>
+        <Footer />
       </>
     );
   }
