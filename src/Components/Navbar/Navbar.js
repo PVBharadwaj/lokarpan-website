@@ -218,12 +218,12 @@ const Navbar = () => {
             <div className="dropdown-container">
               <ul>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/designlist" onClick={toggleMenu}>
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/guideline" onClick={toggleMenu}>
                     Design Guidelines
                   </Link>
                 </li>
@@ -319,11 +319,6 @@ const Navbar = () => {
           <div
             className={`click-dropdown  ${isSearchmenuOpen ? "active" : ""}`}
           >
-            <RxCross2 
-              className="cross"
-              onClick={toggleSearchmenu}
-              style={{ fontSize: "20px" }}
-            />
             <NavSearchbar />
           </div>
         </li>

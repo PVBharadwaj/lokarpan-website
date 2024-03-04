@@ -10,6 +10,11 @@
     "@babel/eslint-parser": "^7.23.10",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "5.15.6",
     "@mui/material": "5.15.4",
     "@mui/x-data-grid": "latest",
@@ -24,7 +29,8 @@
     "react-slick": "latest",
     "react-stickynode": "4.1.1",
     "reactjs-popup": "2.0.6",
-    "slick-carousel": "latest"
+    "slick-carousel": "latest",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/react": "18.2.38",

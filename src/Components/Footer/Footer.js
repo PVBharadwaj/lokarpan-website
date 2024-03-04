@@ -65,16 +65,16 @@ const Footer = () => {
                 <a href="/">Our Role</a>
               </li>
               <li>
-                <a href="/">History</a>
+                <a href="/history">History</a>
               </li>
               <li>
-                <a href="/">Mission</a>
+                <a href="/mission">Mission</a>
               </li>
               <li>
-                <a href="/">Leadership</a>
+                <a href="/leadership">Leadership</a>
               </li>
               <li>
-                <a href="/">Careers</a>
+                <a href="/careers">Careers</a>
               </li>
               <li>
                 <a href="/">Financials</a>
@@ -102,7 +102,7 @@ const Footer = () => {
                 <a href="/">Get in Touch</a>
               </li>
               <li>
-                <a href="/">Newsletter</a>
+                <a href="/newsletter">Newsletter</a>
               </li>
             </ul>
             <hr className="footer-hor-line" />
