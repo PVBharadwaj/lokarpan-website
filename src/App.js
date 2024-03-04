@@ -48,9 +48,10 @@ import CampusAndCulture from "./Components/CampusAndCulture";
 import SafetyAndWellBeing from "./Components/SafetyAndWellBeing";
 import ClubAndCommitee from "./Components/ClubAndCommitee";
 import Information from "./Components/Information";
-
+import Carek from "./Components/Kith/KithComp/careerkith/career"
 import Alumni from "./Components/Alumni";
 import KithLeadership from "./Components/KithLeadership";
+import KithFaq from "./Components/Kith/KithComp/faqkith/faqk"
 import "./styles.css";
 
 function App() {
@@ -58,6 +59,8 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/lokarpan-website">
         <Routes>
+        <Route path="/kith/career" element={<Carek />}></Route>
+        <Route path="/kith/faqs" element={< KithFaq/>}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<OurRole />}></Route>
           <Route path="/leadership" element={<Leadership />}></Route>

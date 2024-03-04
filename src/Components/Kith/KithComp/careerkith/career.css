@@ -1,0 +1,592 @@
+.career-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .career-top-section {
+    height: 600px;
+    width: 100%;
+   background-color: #3F86F0;
+    text-align: center;
+    /* margin-top: 120px; */
+    margin-bottom: 87px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .career-top-section h1 {
+    color: white;
+    font-size: 64px;
+    width: calc(100% - 500px);
+    margin: auto;
+  }
+  
+  .ways-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #181818;
+    color: white;
+    width: 100%;
+    height: 80px;
+  }
+  .button {
+    height: 40px;
+    width: 175px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+  }
+  .text-section {
+    height: 140px;
+    width: 669px;
+    text-align: center;
+    margin: 137px auto;
+  }
+  .container {
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+  }
+  .our-fellowship-container {
+    width: 85%;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    height: 90%;
+    margin: auto;
+  }
+  .img {
+    height: 100%;
+    width: 45%;
+  }
+  .subscribe-btn {
+    height: 50px;
+    width: 187px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 20px;
+    border: 1px solid black;
+  }
+  .subscribe-btn1 {
+    height: 50px;
+    width: 187px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 20px;
+    border: 1px solid black;
+  }
+  .our-role-font24 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    width: 600px;
+  }
+  .next-step-section {
+    height: 220px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+  }
+  
+  .next-step-section p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  .our-role-apply-btn {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #ff9f0a;
+    border-radius: 30px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 500;
+  }
+  .lokarpan-head1 {
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .next-step-section a {
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  .btn {
+    margin-top: 0;
+    height: 60px;
+  }
+  
+  .our-role-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .our-role-container.show .our-role-each-container {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* .top-section {
+    height: 178px;
+    width: 833px;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 87px;
+  } */
+  
+  .menu-items {
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    display: flex;
+    height: 50px;
+    justify-content: left;
+    opacity: 1;
+    position: sticky;
+    top: 0px;
+    transition: all 0.5s ease-in-out 0s, top 300ms ease 0s;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .items {
+    align-items: center;
+    column-gap: 12px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0px auto;
+    overflow-x: auto;
+    position: relative;
+    top: 0px;
+    background: #f1f4f7;
+    border-radius: 35px;
+    margin: 0 auto;
+    max-width: calc(100% - 144px);
+    font-family: sans-serif;
+  }
+  
+  .element {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    justify-content: center;
+    line-height: 20px;
+    padding: 11px 20px;
+    text-align: left;
+    white-space: nowrap;
+    color: #979797;
+  }
+  
+  .element:hover {
+    border-color: rgb(203, 210, 217);
+  }
+  
+  .our-role-each-container {
+    height: auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .our-role-each-container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .our-role-each-container-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+  
+    margin-left: 0;
+  }
+  
+  .education-cards-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .cards-left-container {
+    margin: auto;
+  }
+  .cards-right-container {
+    row-gap: 40px;
+  }
+  .space {
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 300px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+  }
+  
+  .btn-active {
+    color: white;
+    background-color: #0f81e0;
+  }
+  
+  .card2 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .edu-img {
+    width: 100%;
+    height: 50%;
+    object-fit: fill;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    border: 1px solid #dadce0;
+    box-shadow: none;
+    transition: box-shadow 0.25s ease;
+    height: 50%;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card-content h3 {
+    padding: 18px 18px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+  .donate-section {
+    height: 600px;
+    width: 100%;
+    background-color: #181818;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 85px auto;
+  }
+  
+  .donate-section a {
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .popup-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    font-family: "Inter" sans-serif;
+  }
+  .popup-left-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+  }
+  .popup-right-container {
+    width: 50%;
+    height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  .popup-img {
+    width: 90%;
+    height: 45%;
+    margin-bottom: 20px;
+  }
+  .popup-content {
+    height: 60%;
+    width: 90%;
+  }
+  .popup-content p {
+    line-height: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+  .close-btn {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    justify-content: flex-end;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 10; /* Ensure the overlay is below the popup */
+    display: none; /* Initially hidden */
+  }
+  .popup-container {
+    border: 1px solid black;
+    width: 100%;
+    height: auto; /* Allow height to adjust based on content */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100; /* Ensure the popup is above the overlay */
+    font-family: sans-serif;
+  }
+  .popup-btn {
+    background-color: transparent;
+    border: none;
+    color: #0f81e0;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    height: 40px;
+  }
+  .expand-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+  }
+  .expand-sec p {
+    font-size: 14px;
+  }
+  .card-content:hover .expand-sec {
+    color: #0f81e0;
+  }
+  .card-content:hover {
+    box-shadow: 0px 2px 2px 0px rgba(86, 84, 84, 0.5);
+  }
+  .popup-font40 {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+  .hidden-overflow {
+    overflow: hidden;
+  }
+  .mobile-education-cards-container {
+    display: none;
+  }
+  .last-space {
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 748px) {
+    .top-section {
+      height: 277px;
+      width: 100%;
+      margin: auto;
+    }
+    .top-section h1 {
+      font-size: 28px;
+    }
+    .element {
+      font-size: 12px;
+      height: 40px;
+      line-height: 10px;
+      width: 90px;
+    }
+    .items {
+      column-gap: 10px;
+      max-width: calc(100% - 7px);
+    }
+    .menu-items {
+      height: 45px;
+      width: 98%;
+      margin-top: 60px;
+    }
+    .our-role-each-container {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 16px;
+    }
+    .our-role-each-container-content {
+      width: 95%;
+      align-items: center;
+      margin: auto;
+      order: 1;
+    }
+    .our-role-each-container-content h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .our-role-each-container-content p {
+      font-size: 20px;
+      text-align: center;
+    }
+    .education-cards-container {
+      display: none;
+    }
+    .mobile-education-cards-container {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      order: 2;
+    }
+    .card {
+      margin: 50px auto;
+    }
+    .popup-section {
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    .popup-left-container {
+      width: 90%;
+      margin: auto;
+      height: auto;
+    }
+    .popup-right-container {
+      width: 90%;
+      margin: auto;
+      overflow-y: visible;
+    }
+    .popup-content {
+      height: auto;
+      width: 100%;
+    }
+    .popup-content p {
+      line-height: 20px;
+      font-size: 16px;
+    }
+    .popup-font40 {
+      font-size: 24px;
+    }
+    .close-btn {
+      margin-top: 20px;
+      padding-right: 30px;
+    }
+    .popup-container {
+      height: 100vh;
+    }
+    .donate-section {
+      width: 100%;
+      margin: 150px auto;
+      height: 500px;
+    }
+    .donate-section .lokarpan-head3 {
+      font-size: 40px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .our-role-font24 {
+      font-size: 16px;
+      text-align: center;
+    }
+    .top-section {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .top-section h1 {
+      color: white;
+      font-size: 24px;
+      width: calc(100% - 100px);
+      margin: auto;
+    }
+    .last-space {
+      font-size: 36px;
+      text-align: center;
+    }
+    .our-role-font24 {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 392px) {
+    .items {
+      column-gap: 0px;
+      max-width: calc(100% - 0px);
+    }
+    .element {
+      font-size: 10px;
+      height: 40px;
+      line-height: 10px;
+      width: 70px;
+    }
+  }
+  
