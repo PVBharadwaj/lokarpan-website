@@ -36,7 +36,7 @@ const LifeAtSchool = () => {
         <div className="clubs-div">
           <div>
             <img
-              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDSwNnBsbNDG2FSUUD2HTk_RejUJyATq_Nlxg5sTGvNUk0nOVX"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446763/Rectangle_1810_qknn4q.png"
               alt=""
             />
             <div className="give-card-text">
@@ -58,7 +58,7 @@ const LifeAtSchool = () => {
           </div>
           <div>
             <img
-              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdU7P2_-BMwWXKHY20OolB7GYZqWIaTnVWVJ3EXQ0xaGK9bkMC"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446763/Rectangle_1811_k1elbd.png"
               alt=""
             />
             <div className="give-card-text">
@@ -82,7 +82,7 @@ const LifeAtSchool = () => {
       </div>
       <div className="life-at-school-div life-at-school-div-last">
         <h3>Our Campus</h3>
-        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1wH2ygpzyPXRHMe5AJEZTXQ0YHN0hMGIYX4bJU-vta4wCnTjP" />
+        <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446763/Rectangle_1804_jmnf5c.png" />
         <ul>
           <li>
             We have implemented comprehensive safety measures to protect your

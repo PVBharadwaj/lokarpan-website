@@ -50,12 +50,6 @@ const HowTo = () => {
     <>
       <Navbar />
       <KithAdmissionSubNavbar />
-      {/* <div className="howto-div">
-        <h1>
-          We are thrilled to extend a warm welcome to you as part of the
-          Lokarpan family.
-        </h1>
-      </div> */}
       <div className="how-to-upper-section">
         <h1>
           We are thrilled to extend a warm welcome to you as part of the
