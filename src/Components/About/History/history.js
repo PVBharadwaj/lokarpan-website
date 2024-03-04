@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import BackToTopButton from './backtotop';
 import Timelinemobile from './timelinemobile';
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 const History = () => {
   const scrollToYear = (year) => {
@@ -16,6 +18,8 @@ const History = () => {
   };
   
   return (
+    <>
+    <Navbar/>
     <div className="history-section-container">
       <div className='history-top_section'>
       <div className="history-left-side">
@@ -58,6 +62,8 @@ const History = () => {
      
     <BackToTopButton/>
     </div>
+    <Footer/>
+    </>
   );
 };
 

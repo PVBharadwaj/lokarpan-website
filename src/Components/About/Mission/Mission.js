@@ -2,7 +2,8 @@
 import './mission.css';
 import FAQ from "./faq";
 import React, { useState } from "react";
-
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 const Mission = () => {
   const [faqs, setFaqs] = useState([
     {
@@ -38,7 +39,8 @@ const Mission = () => {
     );
   };
   return (
-
+<div>
+  <Navbar/>
     <div className="mission-section-container">
       <section className='mission-1st-secction'>
         <div className='mission-head'>Our purpose, mission, and values</div>
@@ -158,6 +160,8 @@ const Mission = () => {
 </section>
       
       
+    </div>
+    <Footer/>
     </div>
   );
 };

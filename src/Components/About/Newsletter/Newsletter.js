@@ -2,11 +2,13 @@ import React from 'react';
 import './newsletter.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCirclePlus,faNewspaper ,faCalendarDays,faComputer,faMicroscope} from '@fortawesome/free-solid-svg-icons';
-
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 const Newsletter = () => {
     return (
         <div>
+          <Navbar />
             <section className='newsletter-section'>
                 <div className='newsletter-section-header'>Get the best for Lokarpan in your in-box.</div>
                 <div className='newsletter-section-subheader'>Select the newsletter you would like to recieve. Then, add your email to sign up.</div>
@@ -87,7 +89,7 @@ const Newsletter = () => {
     
     </div>
                 </section>   
-                
+                <Footer/>
                 
                 </div>
       )
