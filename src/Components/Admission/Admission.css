@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
 
-.admissions-head {
-  position: relative;
-  padding: 175px 250px !important;
-}
-
-/* .admissions-head::before { 
-    content: "";
-    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX48ORerEzHYrF7ER3ErbmLXT-zo7G6Q0OxaX4uZPgGrgSVCF');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
-} */
-
 .admissions-upper-section {
   background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709032199/image_278_lu8lql.png");
   height: 600px;

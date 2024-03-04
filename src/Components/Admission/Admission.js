@@ -9,12 +9,6 @@ const Admission = () => {
     <>
       <KithNavbar />
       <KithAdmissionSubNavbar />
-      {/* <div className="admissions-head admissions-div">
-        <h1>
-          We are thrilled to extend a warm welcome to you as part of the
-          Lokarpan family.
-        </h1>
-      </div> */}
       <div className="admissions-upper-section">
         <h1>
           We are thrilled to extend a warm welcome to you as part of the
@@ -25,7 +19,7 @@ const Admission = () => {
         <div className="give-card">
           <div>
             <img
-              src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLhki2-AaQbBTPXNpQ8Nhi_w5S_LukxX18mC0W4RYfhVJ2Wsqo"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/Rectangle_1766_atxqvs.png"
               alt=""
             />
           </div>
@@ -50,7 +44,7 @@ const Admission = () => {
           </div>
           <div>
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK7CRbAyNkdfS5HQvoBrrfnjHMhCUabPFOTvf1KB4YVCRNSGZJ"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_277_tw6uhk.png"
               alt=""
             />
           </div>
