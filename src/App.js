@@ -48,9 +48,7 @@ import CampusAndCulture from "./Components/CampusAndCulture";
 import SafetyAndWellBeing from "./Components/SafetyAndWellBeing";
 import ClubAndCommitee from "./Components/ClubAndCommitee";
 import Information from "./Components/Information";
-import History from "./Components/About/History/history";
-import Mission from "./Components/About/Mission/mission";
-import Newsletter from "./Components/About/Newsletter/newsletter"
+
 import Alumni from "./Components/Alumni";
 import KithLeadership from "./Components/KithLeadership";
 import "./styles.css";

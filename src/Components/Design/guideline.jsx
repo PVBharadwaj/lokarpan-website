@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './d_home.css';
 import Home from './sliderimage';
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 export default class d_home3 extends Component {
   render() {
    
     return (
       <div>
+        <Navbar/>
 {/* ------------------------------------------------------------- */}
 <section className='guideline_design'></section>
 {/* ------------------------------------------------------------- */}
@@ -44,7 +47,7 @@ export default class d_home3 extends Component {
 
 
 {/* ------------------------------------------------------------- */}
-
+<Footer/>
       </div>
     )
   }
