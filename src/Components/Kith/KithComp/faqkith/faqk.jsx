@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-
+import KithNavbar from "../../../Navbar/KithNavbar/index";
+import KithInfoSubNavbar from "../../../Navbar/KithInfoSubNavbar";
+import KithFooter from "../../../KithFooter/index";
 class faqk extends Component {
     render() {
         return (
             <div>
-                <section>Frequently Ask Question </section>
+                <KithNavbar/>
+                <KithInfoSubNavbar/>
+                                  <section>Frequently Ask Question </section>
                 <section>
                     <div>
                         <div>1. What is Lokarpan?</div>
@@ -63,6 +67,7 @@ class faqk extends Component {
                         </ul>
                     </div>
                 </section>
+                <KithFooter/>
             </div>
         );
     }

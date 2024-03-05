@@ -218,12 +218,12 @@ const Navbar = () => {
             <div className="dropdown-container">
               <ul>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/designlist" onClick={toggleMenu}>
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
+                  <Link to="/guideline" onClick={toggleMenu}>
                     Design Guidelines
                   </Link>
                 </li>
