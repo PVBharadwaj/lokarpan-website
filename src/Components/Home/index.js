@@ -162,7 +162,7 @@ class Home extends Component {
                     className="carousal-img"
                   />
                   <div className="link-cont">
-                    <button className="link">Home</button>
+                    <button className="home-link">Home</button>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ class Home extends Component {
                     className="carousal-img"
                   />
                   <div className="link-cont">
-                    <button className="link">Education</button>
+                    <button className="home-link">Education</button>
                   </div>
                 </div>
 
@@ -191,7 +191,7 @@ class Home extends Component {
                     className="carousal-img"
                   />
                   <div className="link-cont">
-                    <button className="link">Career</button>
+                    <button className="home-link">Career</button>
                   </div>
                 </div>
 
@@ -205,7 +205,7 @@ class Home extends Component {
                     className="carousal-img"
                   />
                   <div className="link-cont">
-                    <button className="link">Livelihood</button>
+                    <button className="home-link">Livelihood</button>
                   </div>
                 </div>
 

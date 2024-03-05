@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Fuse from "fuse.js";
 import "./NavSearchbar.css";
 import { CiSearch } from "react-icons/ci";
-import { RxCross1 } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 
 const items = [
   {
@@ -133,36 +133,35 @@ const NavSearchbar = () => {
           }}
           onChange={handleSearchChange}
         />
-        {/* <RxCross1 className="nav-search-exit"/> */}
       </div>
       <div className="search-quick-links">
-        {(queryText === "") ? (
-            <div>
-              <h4>Quick Links</h4>
-              <ul className="quick-links">
-                <li>
-                  <a href="/history">History</a>
-                </li>
-                <li>
-                  <a href="/moonshots">Careers</a>
-                </li>
-                <li>
-                  <a href="/our-role">Blog</a>
-                </li>
-              </ul>
-            </div>
-          ) : 
-          ((searchResults.length === 0) ? "No results found" : (
-                searchResults.map((result) => (
-                  <ul>
-                    <li key={result.item.id}>
-                      {" "}
-                      <a href={result.item.link}>{result.item.name}</a>
-                    </li>
-                  </ul>
-                ))
-            ))
-        }
+        {queryText === "" ? (
+          <div>
+            <h4>Quick Links</h4>
+            <ul className="quick-links">
+              <li>
+                <a href="/history">History</a>
+              </li>
+              <li>
+                <a href="/moonshots">Careers</a>
+              </li>
+              <li>
+                <a href="/our-role">Blog</a>
+              </li>
+            </ul>
+          </div>
+        ) : searchResults.length === 0 ? (
+          "No results found"
+        ) : (
+          searchResults.map((result) => (
+            <ul>
+              <li key={result.item.id}>
+                {" "}
+                <a href={result.item.link}>{result.item.name}</a>
+              </li>
+            </ul>
+          ))
+        )}
       </div>
     </div>
   );

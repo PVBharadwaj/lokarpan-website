@@ -230,7 +230,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 96%;
   height: 100%;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease; /* Add transition for the background */
@@ -240,14 +240,14 @@
   height: 280px;
   margin-right: 20px;
 }
-.link {
+.home-link {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   height: 40px;
   width: 180px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
   text-align: center;
   opacity: 0;
@@ -263,7 +263,7 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.carousal:hover .link {
+.carousal:hover .home-link {
   opacity: 1;
 }
 
