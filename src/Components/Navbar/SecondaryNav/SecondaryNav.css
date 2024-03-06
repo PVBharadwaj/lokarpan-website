@@ -1,11 +1,16 @@
 .SecNavbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   background-color: #ffffff;
   background-color: white;
   color: #424242;
-  padding: 10px 123px;
+  padding: 10px 123px 0px;
+  height: 52px;
+}
+
+.leadership-nav > .navbar-links{
+  align-items: center;
 }
 
 .SecNavbar .dropdown-content {
@@ -31,14 +36,19 @@
   color: #646a7b;
 }
 
+.lead-mobile-navbar-links > li{
+  display: flex;
+}
+
 @media screen and (max-width: 836px) {
   .SecNavbar {
     padding: 10px;
   }
 
   .mobile-view-dropdown {
-    display: block;
-  }
+    display: flex;
+    align-items: center;
+}
 
   .lead-mobile-navbar-links {
     gap: 8px;

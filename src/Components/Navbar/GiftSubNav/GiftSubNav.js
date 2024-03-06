@@ -8,12 +8,19 @@ const GiftSubNav = () => {
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
+
+  const closeBrowseMenu = () => {
+    setNavmenuOpen(false);
+   };
+
   return (
-    <nav className="SecNavbar">
+    <nav className="SecNavbar support-nav">
       <div className="navbar-logo">Ways to Give</div>
-      <div className="navbar-rest">
         <ul className="navbar-links">
-          <li className="navbar-item dropdown">
+          <li 
+            className="navbar-item sup-nav-browse dropdown"
+            onMouseLeave={closeBrowseMenu}  
+          >
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
               <BsChevronDown className="react-icon"/>
@@ -52,7 +59,6 @@ const GiftSubNav = () => {
               <Link to="/donate" className="apply-btn-text-white navbar-btn">Donate</Link>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };

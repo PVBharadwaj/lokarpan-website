@@ -9,6 +9,10 @@ const EducationSubNav = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
 
+  const closeBrowseMenu = () => {
+    setNavmenuOpen(false);
+   }
+
   return (
     <nav className="SecNavbar">
       <div className="navbar-logo">Education</div>
@@ -20,7 +24,10 @@ const EducationSubNav = () => {
           <li className="navbar-item desktop-only">
             <Link to="/digital-tool">Digital Tools</Link>
           </li>
-          <li className="navbar-item dropdown education">
+          <li 
+            className="navbar-item dropdown education"
+            onMouseLeave={closeBrowseMenu}
+          >
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
               <BsChevronDown
@@ -36,12 +43,6 @@ const EducationSubNav = () => {
               <div className="dropdown-container">
                 <h4 className="mobile-heading">Explore About</h4>
                 <ul className="edu-subnav-list">
-                  <li className="navbar-item desktop-only">
-                    <Link to="/approach">Approach</Link>
-                  </li>
-                  <li className="navbar-item desktop-only">
-                    <Link to="/digital-tool">Digital Tools</Link>
-                  </li>
                   <li>
                     <Link to="/our-role">Our Role</Link>
                   </li>

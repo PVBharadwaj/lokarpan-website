@@ -1,4 +1,4 @@
-.nav-searchbar {
+/* .nav-searchbar {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -63,7 +63,7 @@
 
 .search-quick-links ul li,
 .search-quick-links ul li a {
-  /* display: flex;
-    flex-direction: column; */
+  display: flex;
+    flex-direction: column;
   padding: 0px;
-}
+} */

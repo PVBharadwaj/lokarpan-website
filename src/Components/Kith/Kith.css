@@ -101,6 +101,11 @@
     grid-template-rows: repeat(5, 1fr);
 }
 
+.grid-head{
+    padding: 40px 0px;
+    font-size: 20px;
+}
+
 .overview-grid-inner{
     width: 100%;
     height: 100%;
@@ -285,6 +290,11 @@
     display: flex;
     gap: 20px;
     padding: 70px;
+}
+
+.kith-overview-div-img-list img{
+    width: 300px;
+    height: 450px;
 }
 
 .kith-overview-last-div{
