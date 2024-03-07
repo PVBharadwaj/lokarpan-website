@@ -283,7 +283,7 @@
 }
 
 .kith-marquee {
-    display: none;
+    display: none !important;
 }
 
 .kith-overview-div-img-list{
@@ -395,8 +395,7 @@
     }
 
     .kith-marquee {
-        display: flex;
-        /* width: 100%; */
+        display: flex !important;
     }
 
     .mobile-only{
