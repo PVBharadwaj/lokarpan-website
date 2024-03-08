@@ -18,6 +18,20 @@
   height: 835px;
 }
 
+.background-grad::before {
+  background: radial-gradient(circle, #EC8585, #A1EE64, #30FFDA);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 980px;
+  bottom: -2000px;
+  right: 0;
+  left: 0;
+  opacity: .25;
+  transition: all .4s ease-in-out;
+  z-index: -1;
+}
+
 .desp {
   margin: 150px 50px;
   text-align: center;
@@ -55,7 +69,7 @@
 
 .dummy {
   width: 100%;
-  height: 180px;
+  height: 210px;
 }
 
 @media only screen and (max-width: 748px) {
@@ -94,6 +108,6 @@
   }
 
   .dummy{
-    height: 80px
+    height: 100px
   }
 }

@@ -12,7 +12,7 @@ import Fellowship from "./Components/Fellowship/Fellowship";
 import Health from "./Components/Health";
 import Financials from "./Components/Financial/Financial";
 import Publications from "./Components/Financial/Publications/Publications";
-// import History from "./Components/About/History/history";
+import History from "./Components/About/History/history";
 import Faqs from "./Components/Faqs";
 import Subscribebtn from "./Components/SubscribeButton/Subscribebtn";
 import Application from "./Components/Application/Application";
@@ -30,8 +30,8 @@ import BeingAVolunteer from "./Components/BeingAVolunteer/BeingAVolunteer";
 import PodCasts from "./Components/Podcasts";
 import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
-// import Mission from "./Components/About/Mission/Mission";
-// import Newsletter from "./Components/About/Newsletter/Newsletter";
+import Mission from "./Components/About/Mission/Mission";
+import Newsletter from "./Components/About/Newsletter/Newsletter";
 import DesignPage from "./Components/Design/d_home";
 import IndiDesignpage from "./Components/Design/d_home2";
 import DesignList from "./Components/Design/d_project";
@@ -76,9 +76,9 @@ function App() {
           <Route path="/faqs" element={<Faqs />}></Route>
           <Route path="/publications" element={<Publications />}></Route>
           <Route path="/application" element={<Application />}></Route>
-          {/* <Route path="/newsletter" element={<Newsletter />}></Route> */}
-          {/* <Route path="/history" element={<History />}></Route>
-          <Route path="/mission" element={<Mission />}></Route> */}
+          <Route path="/newsletter" element={<Newsletter />}></Route>
+          <Route path="/history" element={<History />}></Route>
+          <Route path="/mission" element={<Mission />}></Route>
           <Route path="/design" element={<DesignPage />}></Route>
           <Route path="/designlist" element={<DesignList />}></Route>
           <Route path="/designindividual" element={<IndiDesignpage />}></Route>
