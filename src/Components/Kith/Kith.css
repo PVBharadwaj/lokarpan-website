@@ -70,11 +70,12 @@
 
 .kith-overview-div > .give-card > div{
     width: 100%;
-    height: 300px;
+    min-height: 300px;
+    display: flex;
 }
 
 .overview-img-div{
-    padding: 100px 150px;
+    padding: 100px 0px;
 }
 
 .kith-overview-img-list{
@@ -83,6 +84,15 @@
     gap: 20px;
     width: 100%;
 }
+
+/* .give-card-img-1{
+    background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_275_r2spqz.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+    min-height: 100%;
+} */
 
 .kith-overview-img-list > div {
     width: 100%;
@@ -283,7 +293,7 @@
 }
 
 .kith-marquee {
-    display: none;
+    display: none !important;
 }
 
 .kith-overview-div-img-list{
@@ -293,7 +303,7 @@
 }
 
 .kith-overview-div-img-list img{
-    width: 300px;
+    width: 100%;
     height: 450px;
 }
 
@@ -346,6 +356,11 @@
         font-size: 16px;
     }
 
+    .kith-overview-div > .give-card > div{
+        width: 100%;
+        min-height: unset;
+    }
+
     .kith-overview-div > p {
         font-size: 16px;
     }
@@ -395,7 +410,7 @@
     }
 
     .kith-marquee {
-        display: flex;
+        display: flex !important;
         /* width: 100%; */
     }
 
@@ -434,4 +449,8 @@
         width: 80px;
         height: 50px;
     }
+}
+
+@media only screen and (max-width: 1170px) {
+    
 }
