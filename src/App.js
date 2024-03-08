@@ -12,7 +12,7 @@ import Fellowship from "./Components/Fellowship/Fellowship";
 import Health from "./Components/Health";
 import Financials from "./Components/Financial/Financial";
 import Publications from "./Components/Financial/Publications/Publications";
-import History from "./Components/About/History/history";
+// import History from "./Components/About/History/history";
 import Faqs from "./Components/Faqs";
 import Subscribebtn from "./Components/SubscribeButton/Subscribebtn";
 import Application from "./Components/Application/Application";
@@ -30,12 +30,12 @@ import BeingAVolunteer from "./Components/BeingAVolunteer/BeingAVolunteer";
 import PodCasts from "./Components/Podcasts";
 import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
-import Mission from "./Components/About/Mission/mission";
-import Newsletter from "./Components/About/Newsletter/newsletter"
-import DesignPage from "./Components/Design/d_home"
-import IndiDesignpage from "./Components/Design/d_home2"
-import DesignList from "./Components/Design/d_project"
-import Guideline from "./Components/Design/guideline"
+// import Mission from "./Components/About/Mission/Mission";
+// import Newsletter from "./Components/About/Newsletter/Newsletter";
+import DesignPage from "./Components/Design/d_home";
+import IndiDesignpage from "./Components/Design/d_home2";
+import DesignList from "./Components/Design/d_project";
+import Guideline from "./Components/Design/guideline";
 import Education from "./Components/Education";
 import OnlineEnrollment from "./Components/OnlineEnrollment/OnlineEnrollment";
 import HowTo from "./Components/HowTo/HowTo";
@@ -51,7 +51,7 @@ import Information from "./Components/Information";
 import Carek from "./Components/Kith/KithComp/careerkith/careerk"
 import Alumni from "./Components/Alumni";
 import KithLeadership from "./Components/KithLeadership";
-import KithFaq from "./Components/Kith/KithComp/faqkith/faqk"
+import KithFaq from "./Components/Kith/KithComp/faqkith/faqk";
 import "./styles.css";
 
 function App() {
@@ -59,15 +59,12 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/lokarpan-website">
         <Routes>
-        <Route path="/kith/career" element={<Carek />}></Route>
-        <Route path="/kith/faqs" element={< KithFaq/>}></Route>
+          <Route path="/kith/career" element={<Carek />}></Route>
+          <Route path="/kith/faqs" element={<KithFaq />}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<OurRole />}></Route>
           <Route path="/leadership" element={<Leadership />}></Route>
           <Route path="/career" element={<Career />}></Route>
-          <Route path="/history" element={<History />}></Route>
-          <Route path="/mission" element={<Mission />}></Route>
-          <Route path="/newsletter" element={<Newsletter />}></Route>
           <Route path="/board" element={<Board />}></Route>
           <Route path="/staff" element={<Staff />}></Route>
           <Route path="/educators" element={<Educators />}></Route>
@@ -79,16 +76,14 @@ function App() {
           <Route path="/faqs" element={<Faqs />}></Route>
           <Route path="/publications" element={<Publications />}></Route>
           <Route path="/application" element={<Application />}></Route>
-          <Route path="/newsletter" element={<Newsletter />}></Route>
-          <Route path="/history" element={<History />}></Route>
-          <Route path="/mission" element={<Mission />}></Route>
-          <Route path="/design" element={<DesignPage/>}></Route>
-          <Route path="/designlist" element={<DesignList/>}></Route>
-          <Route path="/designindividual" element={<IndiDesignpage/>}></Route>
-          <Route path="/guideline" element={<Guideline/>}></Route>
+          {/* <Route path="/newsletter" element={<Newsletter />}></Route> */}
+          {/* <Route path="/history" element={<History />}></Route>
+          <Route path="/mission" element={<Mission />}></Route> */}
+          <Route path="/design" element={<DesignPage />}></Route>
+          <Route path="/designlist" element={<DesignList />}></Route>
+          <Route path="/designindividual" element={<IndiDesignpage />}></Route>
+          <Route path="/guideline" element={<Guideline />}></Route>
 
-
-          
           <Route path="/approach" element={<Approach />}></Route>
           <Route path="/digital-tool" element={<DigitalTool />}></Route>
           <Route path="/impact" element={<Impact />}></Route>

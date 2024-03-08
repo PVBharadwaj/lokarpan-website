@@ -20,7 +20,7 @@ const Kith = () => {
       </div>
       <div className="kith-overview-div kith-overview-third-div">
         <div className="give-card">
-          <div>
+          <div className='give-card-img-1'>
             <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_275_r2spqz.png" alt="" />
           </div>
           <div className="give-card-text">
@@ -37,7 +37,7 @@ const Kith = () => {
             We are proud to introduce the talented and dedicated individuals who make up our esteemed faculty at Lokarpan Non-Profit Organization. Our faculty members bring a wealth of experience, expertise, and a shared commitment to our mission
             </p>
           </div>
-          <div>
+          <div className='give-card-img-2'>
             <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_276_mfxaup.png" alt="" />
           </div>
         </div>

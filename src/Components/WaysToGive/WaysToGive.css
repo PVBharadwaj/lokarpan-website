@@ -32,14 +32,15 @@
 }
 
 .give-card img {
-  width: 480px;
-  height: 310px;
+  width: 100%;
+  height: auto;
 }
 
 .give-card-text {
   display: flex;
   flex-direction: column;
   text-align: left;
+  justify-content: center;
 }
 
 .give-card-text h1 {
@@ -86,6 +87,7 @@
 
   .give-card-text {
     padding: 0px;
+    justify-content: flex-start;
   }
 
   .give-card-text h1 {

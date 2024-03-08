@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import SubNavbar from "../Navbar/SubNavbar";
 import { IoMdClose, IoMdExpand } from "react-icons/io";
 import Popup from "reactjs-popup";
@@ -13,6 +13,10 @@ class OurRole extends Component {
   constructor(props) {
     super(props);
     this.updatePopUpOpen = this.updatePopUpOpen.bind(this);
+    this.containerRef = React.createRef();
+    this.startX = null;
+    this.startY = null;
+    this.isMoving = false;
   }
   state = { active: "education", showContainer: true, isPopUpOpen: false };
 
@@ -158,15 +162,14 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
@@ -185,12 +188,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p className="popup-font20">
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -202,19 +205,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p className="popup-font20">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p className="popup-font20">
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -267,19 +258,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -292,12 +284,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -309,19 +301,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -372,19 +352,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -397,12 +378,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -414,19 +395,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -480,15 +449,14 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
@@ -506,12 +474,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -523,19 +491,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p className="popup-font20">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -587,19 +543,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -611,12 +568,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -628,19 +585,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -692,19 +637,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -716,12 +662,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -733,19 +679,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -803,19 +737,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -828,12 +763,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -845,19 +780,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -908,19 +831,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -933,12 +857,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -950,19 +874,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -985,7 +897,7 @@ class OurRole extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="cards-left-container">
+                <div className="cards-left-container space-left">
                   <div className="card">
                     <img
                       src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
@@ -997,7 +909,6 @@ class OurRole extends Component {
                         Helping Youth Business International support underserved
                         small business-owners
                       </h3>
-
                       <Popup
                         trigger={
                           <div className="expand-sec">
@@ -1015,19 +926,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -1040,12 +952,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1057,19 +969,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1123,15 +1023,14 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
@@ -1149,12 +1048,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1166,19 +1065,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p className="popup-font20">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1230,19 +1117,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -1254,12 +1142,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1271,19 +1159,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1335,19 +1211,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -1359,12 +1236,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1376,19 +1253,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1444,7 +1309,6 @@ class OurRole extends Component {
                         Helping Youth Business International support underserved
                         small business-owners
                       </h3>
-
                       <Popup
                         trigger={
                           <div className="expand-sec">
@@ -1462,19 +1326,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -1487,12 +1352,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1504,20 +1369,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1570,19 +1422,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -1595,12 +1448,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1612,19 +1465,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1657,7 +1498,6 @@ class OurRole extends Component {
                         Helping Youth Business International support underserved
                         small business-owners
                       </h3>
-
                       <Popup
                         trigger={
                           <div className="expand-sec">
@@ -1675,19 +1515,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -1700,12 +1541,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1717,19 +1558,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -1783,15 +1612,14 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
@@ -1809,12 +1637,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1826,19 +1654,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p className="popup-font20">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1890,19 +1706,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -1914,12 +1731,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1931,19 +1748,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -1995,19 +1800,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -2019,12 +1825,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2036,19 +1842,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2106,19 +1900,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -2131,12 +1926,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2148,19 +1943,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2211,19 +1994,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -2236,12 +2020,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2253,19 +2037,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2288,7 +2060,7 @@ class OurRole extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="cards-left-container">
+                <div className="cards-left-container space-left">
                   <div className="card">
                     <img
                       src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
@@ -2318,19 +2090,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -2343,12 +2116,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2360,19 +2133,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2408,7 +2169,6 @@ class OurRole extends Component {
                       Helping Youth Business International support underserved
                       small business-owners
                     </h3>
-
                     <Popup
                       trigger={
                         <div className="expand-sec">
@@ -2426,15 +2186,14 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
@@ -2452,12 +2211,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2469,19 +2228,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p className="popup-font20">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2533,19 +2280,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -2557,12 +2305,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2574,19 +2322,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2638,19 +2374,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -2662,12 +2399,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2679,19 +2416,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -2765,19 +2490,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -2790,12 +2516,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2807,19 +2533,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2872,19 +2586,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -2897,12 +2612,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2914,19 +2629,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -2977,19 +2680,20 @@ class OurRole extends Component {
                         {(close) => (
                           <>
                             <div className="popup-container">
-                              <div className="close-btn">
+                              <button className="close-btn">
                                 <IoMdClose
                                   style={{
                                     fontSize: "30px",
-                                    textAlign: "right",
                                   }}
                                   onClick={() => close()}
                                 />
-                              </div>
+                              </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                  <p>
+                                  <h3 className="popup-font40">
+                                    PROVIDING ACCESS TO CAPITAL
+                                  </h3>
+                                  <p className="popup-font20">
                                     To help address financial barriers for
                                     people and communities underserved by
                                     mainstream financial institutions,
@@ -3002,12 +2706,12 @@ class OurRole extends Component {
                                 </div>
                                 <div className="popup-right-container">
                                   <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                     alt="popup-img"
                                     className="popup-img"
                                   />
                                   <div className="popup-content">
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -3019,19 +2723,7 @@ class OurRole extends Component {
                                       people in need and research the impact of
                                       GiveDirectly’s innovative approach.
                                     </p>
-                                    <p>
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p>
+                                    <p className="popup-font16">
                                       GiveDirectly empowers marginalized
                                       communities and those affected by
                                       disasters like COVID-19 through direct
@@ -3067,7 +2759,6 @@ class OurRole extends Component {
                       Helping Youth Business International support underserved
                       small business-owners
                     </h3>
-
                     <Popup
                       trigger={
                         <div className="expand-sec">
@@ -3085,15 +2776,14 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
@@ -3111,12 +2801,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -3128,19 +2818,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p className="popup-font20">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p className="popup-font20">
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -3192,19 +2870,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -3216,12 +2895,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -3233,19 +2912,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -3297,19 +2964,20 @@ class OurRole extends Component {
                       {(close) => (
                         <>
                           <div className="popup-container">
-                            <div className="close-btn">
+                            <button className="close-btn">
                               <IoMdClose
                                 style={{
                                   fontSize: "30px",
-                                  textAlign: "right",
                                 }}
                                 onClick={() => close()}
                               />
-                            </div>
+                            </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3>PROVIDING ACCESS TO CAPITAL</h3>
-                                <p>
+                                <h3 className="popup-font40">
+                                  PROVIDING ACCESS TO CAPITAL
+                                </h3>
+                                <p className="popup-font20">
                                   To help address financial barriers for people
                                   and communities underserved by mainstream
                                   financial institutions, Google.org supports
@@ -3321,12 +2989,12 @@ class OurRole extends Component {
                               </div>
                               <div className="popup-right-container">
                                 <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
                                   className="popup-img"
                                 />
                                 <div className="popup-content">
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
@@ -3338,19 +3006,7 @@ class OurRole extends Component {
                                     impact of GiveDirectly’s innovative
                                     approach.
                                   </p>
-                                  <p>
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p>
+                                  <p className="popup-font16">
                                     GiveDirectly empowers marginalized
                                     communities and those affected by disasters
                                     like COVID-19 through direct cash transfers,
