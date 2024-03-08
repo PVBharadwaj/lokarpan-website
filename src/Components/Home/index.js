@@ -47,7 +47,7 @@ class Home extends Component {
               <FaArrowRight style={{ color: "#3F86F0" }} className="arrow" />
             </p>
           </div>
-          <div className="home-top-container">
+          <div className="home-top-container1">
             <p className="home-head1">The Mission</p>
             <h1 className="home-upper-section-head3">
               Commitment beyond conventional boundaries
@@ -84,7 +84,7 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>Understanding our approach to Rural Design Principles</h3>
-                <button className="read-btn">Read Now</button>
+                <button className="read-btn1">Read Now</button>
               </div>
             </div>
             <div className="row-element">
@@ -94,7 +94,7 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>How do we solve the education crisis?</h3>
-                <button className="read-btn">Read Now</button>
+                <button className="read-btn1">Read Now</button>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ class Home extends Component {
             <p className="lokarpan-head4 center">
               Join hands with us, and let's weave stories of change together.
             </p>
-            <button className="get-in-touch-btn">Apply</button>
+            <button className="get-in-touch-btn1">Apply</button>
           </div>
           <div className="lokarpan-container">
             <p className="lokarpan-head5">Our Programs</p>
@@ -143,38 +143,23 @@ class Home extends Component {
               aimed at social justice, economic growth and self-reliance
             </p>
           </div>
-          <div className="carousal-container">
-            <div className="arrows-cont">
-              <button className="button" onClick={this.handlePauseClick}>
+          <div className="carousal-container1">
+            <div className="arrows-cont1">
+              <button className="button1" onClick={this.handlePauseClick}>
                 {!isPaused ? (
-                  <PiPauseCircleThin className="carousal-icon" />
+                  <PiPauseCircleThin className="carousal-icon1" />
                 ) : (
-                  <PiPlayCircleThin className="carousal-icon" />
+                  <PiPlayCircleThin className="carousal-icon1" />
                 )}
               </button>
             </div>
             <Marquee play={!isPaused} className="marquee">
-              <div className="each-carousal">
-                <div className="carousal">
+              <div className="each-carousal1">
+                <div className="carousal1">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709612877/Rectangle_1930_avwuhk.png"
                     alt="Slide 1"
-                    className="carousal-img"
-                  />
-                  <div className="link-cont">
-                    <button className="home-link">Home</button>
-                  </div>
-                </div>
-
-                <p className="lokarpan-para2">Home</p>
-              </div>
-
-              <div className="each-carousal">
-                <div className="carousal">
-                  <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
-                    alt="Slide 1"
-                    className="carousal-img"
+                    className="carousal-img1"
                   />
                   <div className="link-cont">
                     <button className="home-link">Education</button>
@@ -183,26 +168,40 @@ class Home extends Component {
 
                 <p className="lokarpan-para2">Education</p>
               </div>
-              <div className="each-carousal">
-                <div className="carousal">
+              <div className="each-carousal1">
+                <div className="carousal1">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709612862/image_310_xda1ln.png"
                     alt="Slide 1"
-                    className="carousal-img"
+                    className="carousal-img1"
                   />
                   <div className="link-cont">
-                    <button className="home-link">Career</button>
+                    <button className="home-link">Environment</button>
                   </div>
                 </div>
 
-                <p className="lokarpan-para2">Career</p>
+                <p className="lokarpan-para2">Environemnt</p>
               </div>
-              <div className="each-carousal">
-                <div className="carousal">
+              <div className="each-carousal1">
+                <div className="carousal1">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709612870/image_311_ezc53r.png"
                     alt="Slide 1"
-                    className="carousal-img"
+                    className="carousal-img1"
+                  />
+                  <div className="link-cont">
+                    <button className="home-link">Health</button>
+                  </div>
+                </div>
+
+                <p className="lokarpan-para2">Health</p>
+              </div>
+              <div className="each-carousal1">
+                <div className="carousal1">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709612885/image_309_h7scgq.png"
+                    alt="Slide 1"
+                    className="carousal-img1"
                   />
                   <div className="link-cont">
                     <button className="home-link">Livelihood</button>
@@ -213,13 +212,22 @@ class Home extends Component {
               </div>
             </Marquee>
           </div>
-          <div className="app-container-m">
-            <div className="wrapper-m">
-              <h1 className="text-m">Our Supporters</h1>
-              <h1 className="note-m">Follow the leaders</h1>
-              <div className="marquee-m">
+          <div className="mobile-arrows-cont">
+            <button className="button1" onClick={this.handlePauseClick}>
+              {!isPaused ? (
+                <PiPauseCircleThin className="carousal-icon1" />
+              ) : (
+                <PiPlayCircleThin className="carousal-icon1" />
+              )}
+            </button>
+          </div>
+          <div className="app-container-m1">
+            <div className="wrapper-m1">
+              <h1 className="text-m1">Our Supporters</h1>
+              <h1 className="note-m1">Follow the leaders</h1>
+              <div className="marquee-m1">
                 <div
-                  className="marquee-group-m"
+                  className="marquee-group-m1"
                   style={{
                     animationPlayState: isAnimationPaused
                       ? "paused"
@@ -227,13 +235,13 @@ class Home extends Component {
                   }}
                 >
                   {row1.map((each) => (
-                    <div className="image-group-m">
-                      <img src={each} className="image-m" />
+                    <div className="image-group-m1">
+                      <img src={each} className="image-m1" />
                     </div>
                   ))}
                 </div>
                 <div
-                  className="marquee-group-m"
+                  className="marquee-group-m1"
                   style={{
                     animationPlayState: isAnimationPaused
                       ? "paused"
@@ -241,15 +249,15 @@ class Home extends Component {
                   }}
                 >
                   {row1.map((each) => (
-                    <div className="image-group-m">
-                      <img src={each} className="image-m" />
+                    <div className="image-group-m1">
+                      <img src={each} className="image-m1" />
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="marquee-m">
+              <div className="marquee-m1">
                 <div
-                  className="marquee-group2-m"
+                  className="marquee-group2-m1"
                   style={{
                     animationPlayState: isAnimationPaused
                       ? "paused"
@@ -257,13 +265,13 @@ class Home extends Component {
                   }}
                 >
                   {row2.map((each) => (
-                    <div className="image-group-m">
-                      <img src={each} className="image-m" />
+                    <div className="image-group-m1">
+                      <img src={each} className="image-m1" />
                     </div>
                   ))}
                 </div>
                 <div
-                  className="marquee-group2-m"
+                  className="marquee-group2-m1"
                   style={{
                     animationPlayState: isAnimationPaused
                       ? "paused"
@@ -271,14 +279,14 @@ class Home extends Component {
                   }}
                 >
                   {row2.map((each) => (
-                    <div className="image-group-m">
-                      <img src={each} className="image-m" />
+                    <div className="image-group-m1">
+                      <img src={each} className="image-m1" />
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-            <button onClick={this.toggleAnimation} className="animation-btn-m">
+            <button onClick={this.toggleAnimation} className="animation-btn-m1">
               {!isAnimationPaused ? (
                 <PiPauseCircleThin
                   className="play-pause-icon"
@@ -304,7 +312,7 @@ class Home extends Component {
               person a fair chance to suceed in life.
             </p>
             <a href="#">Learn More</a>
-            <button type="button" className="home-donate-btn">
+            <button type="button" className="home-donate-btn1">
               Donate
             </button>
           </div>
