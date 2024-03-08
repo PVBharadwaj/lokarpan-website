@@ -195,8 +195,6 @@
     padding: 30px 0px;
 }
 
-
-
 .kith-overview-grid-inner1:hover,
 .kith-overview-grid-inner2:hover,
 .kith-overview-grid-inner3:hover,
@@ -236,6 +234,20 @@
 .kith-overview-grid-inner7 .kith-link{
     color: #fff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 1s ease-in-out;
+    
+}
+
+.kith-overview-grid-inner7 .kith-link:hover{
+    gap: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.kith-overview-grid-inner7 .kith-link:hover + .kith-overview-grid-inner7 div p{
+    color: black;
 }
 
 .kith-overview-grid-inner1 div{

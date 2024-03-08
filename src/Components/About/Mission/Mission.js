@@ -1,5 +1,5 @@
 
-import './mission.css';
+import './Mission.css';
 import FAQ from "./faq";
 import React, { useState } from "react";
 import Footer from "../../Footer/Footer";

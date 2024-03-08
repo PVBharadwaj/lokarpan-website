@@ -30,8 +30,8 @@ import BeingAVolunteer from "./Components/BeingAVolunteer/BeingAVolunteer";
 import PodCasts from "./Components/Podcasts";
 import ContactUs from "./Components/ContactUs";
 import OurSupporter from "./Components/OurSupporter";
-import Mission from "./Components/About/Mission/mission";
-import Newsletter from "./Components/About/Newsletter/newsletter"
+import Mission from "./Components/About/Mission/Mission";
+import Newsletter from "./Components/About/Newsletter/Newsletter"
 import DesignPage from "./Components/Design/d_home"
 import IndiDesignpage from "./Components/Design/d_home2"
 import DesignList from "./Components/Design/d_project"

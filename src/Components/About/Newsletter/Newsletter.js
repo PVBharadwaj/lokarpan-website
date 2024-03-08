@@ -1,5 +1,5 @@
 import React from 'react';
-import './newsletter.css';
+import './Newsletter.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCirclePlus,faNewspaper ,faCalendarDays,faComputer,faMicroscope} from '@fortawesome/free-solid-svg-icons';
 import Footer from "../../Footer/Footer";
