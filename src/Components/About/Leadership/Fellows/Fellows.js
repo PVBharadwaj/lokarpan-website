@@ -85,6 +85,36 @@ const FellowData = [
     hyperlink1: <i class="bi bi-facebook"></i>,
     hyperlink2: <i class="bi bi-house-door"></i>,
   },
+  {
+    id: 9,
+    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+    name: "people",
+    position: "Classroom Educator",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+    hyperlink1: <i class="bi bi-facebook"></i>,
+    hyperlink2: <i class="bi bi-house-door"></i>,
+  },
+  {
+    id: 10,
+    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+    name: "member",
+    position: "Classroom Educator",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+    hyperlink1: <i class="bi bi-facebook"></i>,
+    hyperlink2: <i class="bi bi-house-door"></i>,
+  },
+  {
+    id: 11,
+    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+    name: "item",
+    position: "Classroom Educator",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+    hyperlink1: <i class="bi bi-facebook"></i>,
+    hyperlink2: <i class="bi bi-house-door"></i>,
+  },
 ];
 
 const Fellows = () => {

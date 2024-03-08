@@ -17,6 +17,13 @@ const Navbar = () => {
   setSearchmenuOpen(false);
  }
 
+ document.addEventListener('keydown', function(event) {
+  // Check if the pressed key is the Escape key
+  if (event.key === 'Escape') {
+      setSearchmenuOpen(false);
+  }
+})
+
 
   const toggleSearchmenu = () => {
     setSearchmenuOpen(!isSearchmenuOpen);
@@ -63,12 +70,12 @@ const Navbar = () => {
           onClick={toggleMenu}
           style={{ fontSize: "20px" }}
         />
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/" onClick={toggleMenu}>
             Home
           </Link>
         </li>
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/about" onClick={handleNavlinkClick}>
             About
           </Link>
@@ -142,7 +149,7 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/approach" onClick={handleNavlinkClick}>
             Education
           </Link>
@@ -200,17 +207,17 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/fellowship" onClick={toggleMenu}>
             Fellowship
           </Link>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/kith/overview" onClick={toggleMenu}>
             Kith
           </Link>
         </li>
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/design" onClick={handleNavlinkClick}>
             Design
           </Link>
@@ -222,6 +229,7 @@ const Navbar = () => {
           >
             <div className="dropdown-container">
               <ul>
+              <h4>Explore Design</h4>
                 <li>
                   <Link to="/designlist" onClick={toggleMenu}>
                     Projects
@@ -241,22 +249,22 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/health" onClick={toggleMenu}>
             Health
           </Link>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/environment" onClick={toggleMenu}>
             Environment
           </Link>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/livelihood" onClick={toggleMenu}>
             Livelihood
           </Link>
         </li>
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/ways-to-give" onClick={handleNavlinkClick}>
             Support
           </Link>

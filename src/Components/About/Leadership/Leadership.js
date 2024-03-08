@@ -31,7 +31,7 @@ const Leadership = () => {
     <>
       <Navbar />
       <SecondaryNav />
-      <div className="lead-page">
+      <div className="lead-page background-grad">
         <h2 className="title1 lead-main-title">Our Leadership</h2>
         <div className="img-contain">
           {" "}
@@ -49,7 +49,7 @@ const Leadership = () => {
             {Desp.map((item, index) => (
               <DespCard key={index} item={item} index={index} />
             ))}
-        </div>
+          </div>
         <div className="dummy"></div>
         </div>
       </div>

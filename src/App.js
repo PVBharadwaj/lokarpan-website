@@ -12,7 +12,9 @@ import Fellowship from "./Components/Fellowship/Fellowship";
 import Health from "./Components/Health";
 import Financials from "./Components/Financial/Financial";
 import Publications from "./Components/Financial/Publications/Publications";
+
 import History from "./Components/About/History/History";
+
 import Faqs from "./Components/Faqs";
 import Subscribebtn from "./Components/SubscribeButton/Subscribebtn";
 import Application from "./Components/Application/Application";
@@ -76,10 +78,12 @@ function App() {
           <Route path="/faqs" element={<Faqs />}></Route>
           <Route path="/publications" element={<Publications />}></Route>
           <Route path="/application" element={<Application />}></Route>
-      
+
+
           <Route path="/newsletter" element={<Newsletter />}></Route>
           <Route path="/mission" element={<Mission />}></Route>
           <Route path="/history" element={<History />}></Route>
+
           <Route path="/design" element={<DesignPage />}></Route>
           <Route path="/designlist" element={<DesignList />}></Route>
           <Route path="/designindividual" element={<IndiDesignpage />}></Route>
