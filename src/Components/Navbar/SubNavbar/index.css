@@ -1,4 +1,4 @@
-.sub-nav {
+/* .sub-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +7,7 @@
   height: 66px;
   width: calc(100% - 356px);
   margin: 0 auto;
-}
+} */
 .nav-container-sub {
   position: sticky;
   top: 0;
@@ -16,9 +16,14 @@
   z-index: 120;
 }
 .nav-link {
-  font-size: 14px; /* Set your desired font size here */
-  text-decoration: none; /* Remove the default underline for all links */
-  color: black; /* Set the default color for links */
+  font-size: 14px; 
+  text-decoration: none;
+  color: black; 
+}
+
+
+.navbar-rest{
+  display: flex;
 }
 
 .nav-link.active {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Subscribebtn.css";
+import { Link } from "react-router-dom";
 const Subscribebtn = () => {
   const [popupVisible, setPopup] = useState(false);
 
@@ -27,7 +28,7 @@ const Subscribebtn = () => {
         <div className="popup-back"></div>
         <div className="popup-in">
           <div className="pop">
-            <h2>Subscribe</h2>
+            <h2>Sunday Snippets</h2>
             <i
               onClick={() => {
                 setPopup(false);
@@ -45,6 +46,9 @@ const Subscribebtn = () => {
             <form action="">
               <input type="text" placeholder="Email address" />
               <button type="submit">Subscribe</button>
+              {/* <div className="apply-btn blue">
+                <Link to="/" className="apply-btn-text-white body-btn">Apply</Link>
+              </div> */}
             </form>
             <p>We respect your privacy. Unsubscribe at any time.</p>
           </div>

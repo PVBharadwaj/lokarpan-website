@@ -9,7 +9,7 @@ const SecondaryNav = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
   return (
-    <nav className="SecNavbar">
+    <nav className="SecNavbar leadership-nav">
       <div className="navbar-logo">
         <Link className="navbar-mainlink" to="/leadership">Leadership</Link>
       </div>

@@ -42,6 +42,7 @@ const Kith = () => {
           </div>
         </div>
       </div>
+      <div className="kith-overview-div grid-head desktop">NEW AT LOKARPAN BLOG</div>
       <div className="kith-overview-div kith-overview-grid">
         <div className='overview-grid-inner kith-overview-grid-inner1'>
           <div>

@@ -25,3 +25,9 @@
 #btn-off {
   display: none;
 }
+
+@media screen and (max-width: 748px) {
+  .years-row * {
+    padding: 0px 10px;
+  }
+}

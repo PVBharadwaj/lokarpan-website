@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import NavSearchbar from "../NavSearchbar/NavSearchbar";
@@ -11,7 +11,12 @@ import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [isSearchmenuOpen, setSearchmenuOpen] = useState(null);
+  const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
+
+ const closeSearchMenu = () => {
+  setSearchmenuOpen(false);
+ }
+
 
   const toggleSearchmenu = () => {
     setSearchmenuOpen(!isSearchmenuOpen);
@@ -310,28 +315,31 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className="navbar-links navbar-icons">
-        <li className="navbar-item dropdown nav-search">
+        <li 
+          className="navbar-item dropdown navbar-icon nav-search"
+          onMouseLeave={closeSearchMenu}
+        >
           <FiSearch
-            style={{ color: "#6B7280" }}
+            style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
             onClick={toggleSearchmenu}
           />
           <div
-            className={`click-dropdown  ${isSearchmenuOpen ? "active" : ""}`}
+            className={`click-dropdown click-dropdown-search  ${isSearchmenuOpen ? "active" : ""}`}
           >
             <NavSearchbar />
           </div>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item navbar-icon">
           <IoPersonOutline
             className="navbar-icon-inner"
-            style={{ color: "#6B7280" }}
+            style={{ color: "#6B7280", height: "100%" }}
           />
         </li>
         <li className="navbar-item">
           <RxHamburgerMenu
             className="hamburger navbar-icon-inner"
-            style={{ color: "#6B7280" }}
+            style={{ color: "#6B7280", height: "100%" }}
             onClick={toggleMenu}
           />
         </li>

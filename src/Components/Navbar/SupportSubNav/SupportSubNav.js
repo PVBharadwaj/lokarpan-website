@@ -8,11 +8,19 @@ const SupportSubNav = () => {
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
+
+  const closeBrowseMenu = () => {
+    setNavmenuOpen(false);
+   };
+
   return (
-    <nav className="SecNavbar">
+    <nav className="SecNavbar support-nav">
       <div className="navbar-logo">Support</div>
       <ul className="navbar-links">
-        <li className="navbar-item dropdown">
+        <li 
+          className="navbar-item sup-nav-browse dropdown"
+          onMouseLeave={closeBrowseMenu}
+        >
           <p  className="desktop-only" onClick={toggleNavmenu}>
             <span>Browse All</span>
             <BsChevronDown className="react-icon" />
