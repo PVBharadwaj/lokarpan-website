@@ -48,7 +48,7 @@ import CampusAndCulture from "./Components/CampusAndCulture";
 import SafetyAndWellBeing from "./Components/SafetyAndWellBeing";
 import ClubAndCommitee from "./Components/ClubAndCommitee";
 import Information from "./Components/Information";
-import Carek from "./Components/Kith/KithComp/careerkith/career"
+import Carek from "./Components/Kith/KithComp/careerkith/careerk"
 import Alumni from "./Components/Alumni";
 import KithLeadership from "./Components/KithLeadership";
 import KithFaq from "./Components/Kith/KithComp/faqkith/faqk"
