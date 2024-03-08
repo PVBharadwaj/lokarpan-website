@@ -1,0 +1,154 @@
+
+
+.container_fs {
+  width: 75%;
+  margin: 4rem auto ;
+}
+
+.cards-container_f {
+    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three columns in each row */
+  gap: 5px; /* Adjust the gap between images as needed */
+
+  border-radius: 6px;
+  color: #333;
+  
+  
+ 
+  
+  position: relative;
+}
+
+.cards-container_fs::-webkit-scrollbar {
+  display: none;
+}
+
+.card_fs {
+    height: 300px;
+ 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  
+}
+
+.card_fs img {
+  width: 100%;
+height: 75%;
+}
+
+
+.card-content_fs {
+ 
+  font-size: 1rem;
+  font-weight: 750;
+}
+.card-content_fs1{
+    padding: .5rem 5px 0 5px;
+}
+.project_listfs{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in each row */
+  gap: 16px; /* Adjust the gap between images as needed */
+
+}
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 6rem auto;
+  }
+  
+  .label {
+    font-size: .625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +1.3px;
+    margin-bottom: 1rem;
+  }
+  
+  .searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  #searchQuerySubmit:hover {
+    cursor: pointer;
+  }
+  .searchposition{
+    
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .fs_serachbar{
+    width: 200px;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+@media screen and (max-width: 625px) {
+  .container_fs {
+    width: 100%;
+  }
+  .project_listfs{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Three columns in each row */
+   gap: 16px; /* Adjust the gap between images as needed */
+ 
+ }
+ .cards-container_fs {
+    
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Three columns in each row */
+  gap: 5px; /* Adjust the gap between images as needed */
+
+  border-radius: 6px;
+  color: #333;
+  
+  
+ 
+  
+  position: relative;
+}
+
+
+  .cards-container_fs {
+    padding: 0.5rem;
+  }
+
+  .card_fs {
+    margin: 0.5rem;
+  }
+  .project_listfs{
+    display: grid;
+   grid-template-columns: repeat(1, 1fr); /* Three columns in each row */
+   gap: 16px; /* Adjust the gap between images as needed */
+ 
+ }
+}
