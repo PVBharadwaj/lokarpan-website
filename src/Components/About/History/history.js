@@ -20,6 +20,12 @@ const History = () => {
   return (
     <>
     <Navbar/>
+    <div className="history-left-side-mobile">
+
+<div className='history-lsh1-mobile'>History</div>
+<div className='history-lsh2-mobile'> <div className='history-lsh21-mobile'>of our </div> Firm</div>
+
+</div>
     <div className="history-section-container">
       <div className='history-top_section'>
       <div className="history-left-side">
@@ -39,12 +45,7 @@ const History = () => {
       </div>
       </div>
       {/* ------------------------- */}
-      <div className="history-left-side-mobile">
-
-        <div className='history-lsh1-mobile'>History</div>
-        <div className='history-lsh2-mobile'> <div className='history-lsh21-mobile'>of our </div> Firm</div>
-       
-      </div>
+      
       {/* -------------------- */}
       <div className="history-jumto">Jump to :</div>
 
