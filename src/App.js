@@ -13,7 +13,7 @@ import Health from "./Components/Health";
 import Financials from "./Components/Financial/Financial";
 import Publications from "./Components/Financial/Publications/Publications";
 
-import History from "./Components/About/History/History";
+import History from "./Components/About/History/history";
 
 import Faqs from "./Components/Faqs";
 import Subscribebtn from "./Components/SubscribeButton/Subscribebtn";
