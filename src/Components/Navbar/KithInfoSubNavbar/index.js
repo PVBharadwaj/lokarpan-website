@@ -8,13 +8,21 @@ const KithInfoSubNavbar = () => {
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
+
+  const closeBrowseMenu = () => {
+    setNavmenuOpen(false);
+  };
+
   return (
-    <nav className="SecNavbar">
+    <nav className="SecNavbar support-nav">
       <div className="navbar-logo">Information</div>
       <ul className="navbar-links">
-        <li className="navbar-item dropdown">
-          <p onClick={toggleNavmenu}>
-            <span className="desktop-only">Browse All</span>
+        <li
+          className="navbar-item sup-nav-browse dropdown"
+          onMouseLeave={closeBrowseMenu}
+        >
+          <p  className="desktop-only" onClick={toggleNavmenu}>
+            <span>Browse All</span>
             <BsChevronDown className="react-icon" />
           </p>
           <div
@@ -24,6 +32,7 @@ const KithInfoSubNavbar = () => {
           >
             <div className="dropdown-container">
               <ul className="support-subnav-list">
+                <h4 className="mobile-heading">Explore Information</h4>
                 <li>
                   <Link to="/kith/leadership">Leadership</Link>
                 </li>
@@ -46,6 +55,11 @@ const KithInfoSubNavbar = () => {
           </Link>
         </li>
       </ul>
+      <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
+        <p>
+          <BsChevronDown className="react-icon"/>
+        </p>
+      </div>
     </nav>
   );
 };

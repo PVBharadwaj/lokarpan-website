@@ -5,6 +5,7 @@ import KithCarousels from '../Carousals/KithCarousels/KithCarousels'
 import Navbar from '../Navbar/KithNavbar'
 import Footer from '../KithFooter'
 import Marquee from "react-fast-marquee";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const Kith = () => {
@@ -42,7 +43,7 @@ const Kith = () => {
           </div>
         </div>
       </div>
-      <div className="kith-overview-div grid-head desktop">NEW AT LOKARPAN BLOG</div>
+      <div className="kith-overview-div grid-head">NEW AT LOKARPAN BLOG</div>
       <div className="kith-overview-div kith-overview-grid">
         <div className='overview-grid-inner kith-overview-grid-inner1'>
           <div>
@@ -80,7 +81,7 @@ const Kith = () => {
         <div className='overview-grid-inner kith-overview-grid-inner7'>
           <div>
             <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
-            <div><Link to="/" className='kith-link'>Read more on our blog</Link> </div>
+            <div><Link to="/" className='kith-link'>Read more on our blog <FaArrowRightLong/></Link> </div>
           </div>
         </div>
 
