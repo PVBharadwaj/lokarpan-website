@@ -11,9 +11,9 @@ const Footer = () => {
   const year = today.getFullYear();
   const [openStates, setOpenStates] = useState({
     about: false,
-    contact: false,
-    social: false,
-    contribute: false,
+    contactUs: false,
+    admissions: false,
+    helpfulLinks: false,
   });
 
   const toggleList = (listName) => {
@@ -88,17 +88,19 @@ const Footer = () => {
           <div className="footer-list">
             <div
               className="footer-list-title"
-              onClick={() => toggleList("contact")}
+              onClick={() => toggleList("admissions")}
             >
               <h4>Admissions</h4>
               <FaAngleDown
-                className={`footerArrow ${openStates.contact ? "active" : ""}`}
+                className={`footerArrow ${
+                  openStates.admissions ? "active" : ""
+                }`}
               />
             </div>
 
             <ul
               className={`footer-list-items ${
-                openStates.contact ? "open" : ""
+                openStates.admissions ? "open" : ""
               }`}
             >
               <li>
@@ -116,15 +118,19 @@ const Footer = () => {
           <div className="footer-list">
             <div
               className="footer-list-title"
-              onClick={() => toggleList("social")}
+              onClick={() => toggleList("helpfulLinks")}
             >
               <h4>Helpful Links</h4>
               <FaAngleDown
-                className={`footerArrow ${openStates.social ? "active" : ""}`}
+                className={`footerArrow ${
+                  openStates.helpfulLinks ? "active" : ""
+                }`}
               />
             </div>
             <ul
-              className={`footer-list-items ${openStates.social ? "open" : ""}`}
+              className={`footer-list-items ${
+                openStates.helpfulLinks ? "open" : ""
+              }`}
             >
               <li>
                 <a href="/">Donate</a>
@@ -144,6 +150,38 @@ const Footer = () => {
             </ul>
             <hr className="footer-hor-line" />
           </div>
+          <div className="footer-list kith-footer-mobile">
+            <div
+              className="footer-list-title"
+              onClick={() => toggleList("contactUs")}
+            >
+              <h4>Contact Us</h4>
+              <FaAngleDown
+                className={`footerArrow ${
+                  openStates.contactUs ? "active" : ""
+                }`}
+              />
+            </div>
+            <ul
+              className={`footer-list-items ${
+                openStates.contactUs ? "open" : ""
+              }`}
+            >
+              <li>
+                <div className="address-mobile">
+                  <p>Lokarpan HQ</p>
+                  <p>V&P Malhausi</p>
+                  <p>Auariya, U.P</p>
+                  <p>206255</p>
+                  <p>India</p>
+                  <p>Tel:91-00 0000 0000</p>
+                  <p>Tel:91-00 0000 0000</p>
+                </div>
+              </li>
+            </ul>
+            <hr className="footer-hor-line" />
+          </div>
+
           {/* <div className="footer-list">
             <div
               className="footer-list-title"

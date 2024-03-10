@@ -76,46 +76,24 @@ class ClubAndCommitee extends Component {
                 url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 controls={true}
                 width="100%"
-                height="60%"
+                height="100%"
               />
-              <p className="vedio-below-text">
-                What is one myth you would like to bust about McKinsey?
-              </p>
             </div>
             <div className="club-commitee-each-video-item">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 controls={true}
                 width="100%"
-                height="60%"
-                className="video-space-above"
+                height="100%"
               />
-              <p className="vedio-below-text">
-                What is one myth you would like to bust about McKinsey?
-              </p>
             </div>
             <div className="club-commitee-each-video-item">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 controls={true}
                 width="100%"
-                height="60%"
+                height="100%"
               />
-              <p className="vedio-below-text">
-                What is one myth you would like to bust about McKinsey?
-              </p>
-            </div>
-            <div className="club-commitee-each-video-item">
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                controls={true}
-                width="100%"
-                height="60%"
-                className="video-space-above"
-              />
-              <p className="vedio-below-text">
-                What is one myth you would like to bust about McKinsey?
-              </p>
             </div>
           </div>
           <div className="mobile-club-commitee-videos-section">

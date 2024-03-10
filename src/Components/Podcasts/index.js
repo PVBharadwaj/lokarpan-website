@@ -69,7 +69,7 @@ class PodCasts extends Component {
             <p className="font25-podcasts">Subscribe on</p>
             <div className="podcasts-icon-cont">
               <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705863902/Group_1616_osia6s.svg" />
-              <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705863924/Vector_1_iundj6.svg" />
+              <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710060477/Group_1617_1_embkes.png" />
               <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705863983/Capa_1_irtwa4.svg" />
               <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1705863949/Google_Podcasts_dadavu.svg" />
             </div>

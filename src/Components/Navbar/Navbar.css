@@ -86,6 +86,10 @@
 .dropdown-content h4 {
   font-size: 14px;
   padding: 10px 0px;
+  font-weight: 500;
+}
+.explore-head {
+  font-size: 14px !important;
 }
 
 .dropdown li {
@@ -94,7 +98,7 @@
 }
 
 .quick-links li {
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px;
 }
 

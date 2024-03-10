@@ -114,6 +114,9 @@ li {
 .footer-hor-line {
   display: none;
 }
+.kith-footer-mobile {
+  display: none;
+}
 .address p {
   color: #646a7b;
   font-size: 14px;
@@ -122,6 +125,18 @@ li {
 }
 
 @media only screen and (max-width: 836px) {
+  .address {
+    display: none;
+  }
+  .address-mobile p {
+    color: #646a7b;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 7px 0;
+  }
+  .kith-footer-mobile {
+    display: block;
+  }
   .footer-container {
     /* max-width: 450px; */
     padding: 10px 30px;
