@@ -213,7 +213,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item mobile-padding-left">
-          <Link to="/kith/overview" onClick={toggleMenu}>
+          <Link to="/kith/overview" target="_blank" onClick={toggleMenu}>
             Kith
           </Link>
         </li>

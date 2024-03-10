@@ -14,7 +14,7 @@ class Approach extends Component {
         <EducationSubNav />
 
         <div className="approach-container">
-          <div className="health-full-img">
+          <div className="health-full-img edu-head-img">
             <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
               alt="health-img"

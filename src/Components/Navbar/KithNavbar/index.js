@@ -13,7 +13,18 @@ import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [isSearchmenuOpen, setSearchmenuOpen] = useState(null);
+  const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
+
+ const closeSearchMenu = () => {
+  setSearchmenuOpen(false);
+ }
+
+ document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+      setSearchmenuOpen(false);
+  }
+})
+
 
   const toggleSearchmenu = () => {
     setSearchmenuOpen(!isSearchmenuOpen);
@@ -47,30 +58,36 @@ const Navbar = () => {
           className="lokarpan-logo"
         />
       </div>
+      {/* <div class="back" onClick={handleBackClick}>
+        <IoIosArrowBack
+          style={{ fontSize: "20px" }}
+          className={activeDropdown !== null ? "down active" : "down"}
+        />
+      </div> */}
+
+      <ul className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
       <div class="back" onClick={handleBackClick}>
         <IoIosArrowBack
           style={{ fontSize: "20px" }}
           className={activeDropdown !== null ? "down active" : "down"}
         />
       </div>
-
-      <ul className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
         <RxCross2
           className="cross"
           onClick={toggleMenu}
           style={{ fontSize: "20px" }}
         />
-        <li className="navbar-item">
+        <li className="navbar-item mobile-padding-left">
           <Link to="/kith/overview" onClick={toggleMenu}>
             overview
           </Link>
         </li>
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/kith/admission" onClick={handleNavlinkClick}>
             Admission
           </Link>
           {/* <IoIosArrowForward className="up" /> */}
-          {/* <div
+          <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
@@ -94,14 +111,14 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </li>
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/kith/life-at-school" onClick={handleNavlinkClick}>
             Life at School
           </Link>
           {/* <IoIosArrowForward className="up" /> */}
-          {/* <div
+          <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
@@ -130,15 +147,14 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </li>
-
-        <li className="navbar-item dropdown" onClick={toggleDropdown}>
+        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
           <Link to="/kith/information" onClick={handleNavlinkClick}>
             Information
           </Link>
           {/* <IoIosArrowForward className="up" /> */}
-          {/* <div
+          <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
@@ -172,32 +188,35 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </li>
       </ul>
       <ul className="navbar-links navbar-icons">
-        <li className="navbar-item dropdown nav-search">
+        <li 
+          className="navbar-item dropdown navbar-icon nav-search"
+          onMouseLeave={closeSearchMenu}
+        >
           <FiSearch
-            style={{ color: "#6B7280" }}
+            style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
             onClick={toggleSearchmenu}
           />
           <div
-            className={`click-dropdown  ${isSearchmenuOpen ? "active" : ""}`}
+            className={`click-dropdown click-dropdown-search  ${isSearchmenuOpen ? "active" : ""}`}
           >
             <NavSearchbar />
           </div>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item navbar-icon">
           <IoPersonOutline
             className="navbar-icon-inner"
-            style={{ color: "#6B7280" }}
+            style={{ color: "#6B7280", height: "100%" }}
           />
         </li>
         <li className="navbar-item">
           <RxHamburgerMenu
             className="hamburger navbar-icon-inner"
-            style={{ color: "#6B7280" }}
+            style={{ color: "#6B7280", height: "100%" }}
             onClick={toggleMenu}
           />
         </li>

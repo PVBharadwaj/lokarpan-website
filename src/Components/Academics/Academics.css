@@ -2,7 +2,6 @@
 
 .academics-upper-section {
   height: 600px;
-
   background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709281455/Rectangle_1812_2_x0edne.png");
   background-position: center;
   background-size: cover;
@@ -11,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 50px;
+  padding-left: 123px;
 }
 .academics-upper-section h1 {
   font-size: 48px;

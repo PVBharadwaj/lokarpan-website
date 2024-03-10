@@ -7,6 +7,7 @@ import BackToTopButton from './backtotop';
 import Timelinemobile from './timelinemobile';
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+import SubNavbar from '../../Navbar/SubNavbar';
 
 const History = () => {
   const scrollToYear = (year) => {
@@ -20,6 +21,7 @@ const History = () => {
   return (
     <>
     <Navbar/>
+        <SubNavbar />
     <div className="history-left-side-mobile">
 
 <div className='history-lsh1-mobile'>History</div>
