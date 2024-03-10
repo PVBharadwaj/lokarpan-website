@@ -90,8 +90,8 @@ ul li {
   list-style-type: disc;
 }
 .club-commitee-videos-section {
-  height: 350px;
-  width: calc(100% - 300px);
+  height: 450px;
+  width: calc(100% - 200px);
   margin: 120px auto;
   display: flex;
   flex-direction: row;
@@ -104,13 +104,13 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  width: 25%;
-  margin: 30px 20px;
+  width: 33%;
+  margin: 30px 10px;
   margin-top: 0;
 }
 .video {
-  height: 80%;
-  width: 22%;
+  height: 90%;
+  width: 35%;
 }
 .video-space-above {
   margin-top: 30px;

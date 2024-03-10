@@ -13,17 +13,16 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
 
- const closeSearchMenu = () => {
-  setSearchmenuOpen(false);
- }
+  const closeSearchMenu = () => {
+    setSearchmenuOpen(false);
+  };
 
- document.addEventListener('keydown', function(event) {
-  // Check if the pressed key is the Escape key
-  if (event.key === 'Escape') {
+  document.addEventListener("keydown", function (event) {
+    // Check if the pressed key is the Escape key
+    if (event.key === "Escape") {
       setSearchmenuOpen(false);
-  }
-})
-
+    }
+  });
 
   const toggleSearchmenu = () => {
     setSearchmenuOpen(!isSearchmenuOpen);
@@ -75,7 +74,10 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/about" onClick={handleNavlinkClick}>
             About
           </Link>
@@ -86,8 +88,12 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <h4>Explore About</h4>
               <ul>
+                <li className="explore-head">
+                  <Link to="/our-role" onClick={toggleMenu}>
+                    Explore About
+                  </Link>
+                </li>
                 <li>
                   <Link to="/our-role" onClick={toggleMenu}>
                     Our Role
@@ -149,7 +155,10 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/approach" onClick={handleNavlinkClick}>
             Education
           </Link>
@@ -217,7 +226,10 @@ const Navbar = () => {
             Kith
           </Link>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/design" onClick={handleNavlinkClick}>
             Design
           </Link>
@@ -229,7 +241,7 @@ const Navbar = () => {
           >
             <div className="dropdown-container">
               <ul>
-              <h4>Explore Design</h4>
+                <h4>Explore Design</h4>
                 <li>
                   <Link to="/designlist" onClick={toggleMenu}>
                     Projects
@@ -264,7 +276,10 @@ const Navbar = () => {
             Livelihood
           </Link>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/ways-to-give" onClick={handleNavlinkClick}>
             Support
           </Link>
@@ -323,7 +338,7 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className="navbar-links navbar-icons">
-        <li 
+        <li
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
@@ -333,7 +348,9 @@ const Navbar = () => {
             onClick={toggleSearchmenu}
           />
           <div
-            className={`click-dropdown click-dropdown-search  ${isSearchmenuOpen ? "active" : ""}`}
+            className={`click-dropdown click-dropdown-search  ${
+              isSearchmenuOpen ? "active" : ""
+            }`}
           >
             <NavSearchbar />
           </div>

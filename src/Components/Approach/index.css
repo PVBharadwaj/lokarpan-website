@@ -274,6 +274,9 @@
 .mobile-health-full-img {
   display: none;
 }
+.no-space-above {
+  margin-top: 0 !important;
+}
 
 @media screen and (max-width: 748px) {
   .health-full-img {
