@@ -20,27 +20,24 @@ const Kith = () => {
           <p>These are just a few of the dedicated individuals who form the backbone of Lokarpan. Each member of our faculty plays a crucial role in driving our initiatives forward and making a positive impact in the communities we serve.</p>
       </div>
       <div className="kith-overview-div kith-overview-third-div">
-        <div className="give-card">
-          <div className='give-card-img-1'>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_275_r2spqz.png" alt="" />
-          </div>
-          <div className="give-card-text">
+        <div className="kith-overview-card">
+          <div className='kith-overview-card-img kith-overview-card-img-1'></div>
+          <div className="kith-overview-card-text">
             <h3>Who we are?</h3>
             <p>
             As you embark on this journey with us, your commitment and enthusiasm are integral to our success. Lokarpan is built on the principles of transparency, inclusivity, and empowerment.
             </p>
           </div>
         </div>
-        <div className="give-card give-card-reverse">
-          <div className="give-card-text">
+        <div className="kith-overview-card kith-overview-card-reverse">
+          <div className="kith-overview-card-text">
             <h3>Our faculty</h3>
             <p>
-            We are proud to introduce the talented and dedicated individuals who make up our esteemed faculty at Lokarpan Non-Profit Organization. Our faculty members bring a wealth of experience, expertise, and a shared commitment to our mission
+            We are proud to introduce the talented and dedicated individuals who make up our esteemed faculty at Lokarpan Non-Profit Organization. Our faculty members bring a wealth of experience, expertise, and a shared commitment to our mission 
+            <br/> Shunyuan  Zhang, The professor, Lokarpan
             </p>
           </div>
-          <div className='give-card-img-2'>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_276_mfxaup.png" alt="" />
-          </div>
+          <div className='kith-overview-card-img kith-overview-card-img-2'></div>
         </div>
       </div>
       <div className="kith-overview-div grid-head">NEW AT LOKARPAN BLOG</div>

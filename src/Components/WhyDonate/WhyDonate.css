@@ -3,22 +3,22 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0px 123px;
+  padding: 100px 123px;
 }
 
-.whydonate-img {
+/* .whydonate-img {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   overflow: hidden;
   margin-top: 28px;
-}
-
+} */
+/* 
 .whydonate-img img {
   width: 1060px;
   height: 388px;
-}
+} */
 
 .donate-first-div {
   padding: 150px 220px;
@@ -47,16 +47,35 @@
 .donate-card {
   display: flex;
   gap: 50px;
-  padding: 50px 0px !important;
+  padding: 75px 0px;
 }
 
-.donate-card > div{
+/* .donate-card > div{
   width: calc((100% - 60px) / 2);
+} */
+
+.donate-card-img {
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.donate-card img {
-  width: 100%;
-  height: 310px;
+.donate-card-img-1{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/Rectangle_1766_1_uufero.png');
+}
+
+.donate-card-img-2{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628156/Rectangle_1766_hw9dzv.png');
+}
+
+.donate-card-img-3{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/image_343_fj2hi1.png');
+}
+
+.donate-card-img-4{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628225/image_343_1_esstfj.png');
 }
 
 .donate-card-text {
@@ -80,15 +99,17 @@
   align-items: center;
   text-align: center;
   margin: 90px 0px;
-  padding: 90px 0px;
-  height: 302px;
+  padding: 70px 0px;
+  min-height: 302px;
   color: white;
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/image_343_2_up9vbz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .whydonate-opp h1 {
   font-size: 40px;
-  padding: 0px 350px;
+  padding: 0px 300px;
 }
 
 .hyperlinks {
@@ -145,10 +166,15 @@
     gap: 24px;
   }
 
-  .donate-card > div > img {
+  .donate-card-img {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  /* .donate-card > div > img {
     width: 100%;
     height: 239px;
-  }
+  } */
   .donate-card-text h1 {
     font-size: 28px;
     padding: 0px 0px !important;
@@ -169,5 +195,19 @@
   }
   .hyperlinks{
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 1000px){
+  .donate-first-div{
+    padding: 150px;
+  }
+
+  .why-donate {
+    padding: 110px 50px;
+  }
+
+  .whydonate-opp h1 {
+    padding: 0px 75px;
   }
 }

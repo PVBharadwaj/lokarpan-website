@@ -27,14 +27,8 @@ const WhyDonate = () => {
         </div>
       <div className="why-donate">
         <div className="donate-card">
-          <div>
-            <img
-              className="whydonate-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/Rectangle_1766_1_uufero.png"
-              alt=""
-            />
+          <div className="donate-card-img donate-card-img-1">
           </div>
-
           <div className="donate-card-text">
             <h1>Adding years to life and life to years</h1>
             <p>
@@ -57,21 +51,11 @@ const WhyDonate = () => {
               creators.
             </p>
           </div>
-          <div>
-            <img
-              className="whydonate-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628156/Rectangle_1766_hw9dzv.png"
-              alt=""
-            />
+          <div className="donate-card-img donate-card-img-2">
           </div>
         </div>
         <div className="donate-card">
-          <div>
-            <img
-              className="whydonate-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/image_343_fj2hi1.png"
-              alt=""
-            />
+          <div className="donate-card-img donate-card-img-3">
           </div>
 
           <div className="donate-card-text">
@@ -96,12 +80,7 @@ const WhyDonate = () => {
               creators.
             </p>
           </div>
-          <div>
-            <img
-              className="whydonate-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628225/image_343_1_esstfj.png"
-              alt=""
-            />
+          <div className="donate-card-img donate-card-img-4">
           </div>
         </div>
       </div>

@@ -60,27 +60,56 @@
   font-weight: bold;
 }
 
-.academics-div .give-card img {
-  height: 100%;
+.academics-card {
+  display: flex;
+  gap: 30px;
+  padding: 75px 0px;
 }
 
-.academics-div .give-card-text h3 {
+.academics-card-img {
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.academics-card-img-1{
+  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709277369/Rectangle_1922_ygjslo.png');
+}
+
+.academics-card-img-2{
+  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709277385/Rectangle_1924_qhodkb.png');
+}
+
+.academics-card-img-3{
+  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709281412/Rectangle_1925_ue0lq3.png');
+}
+
+.academics-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+}
+
+.academics-card-text h3 {
   font-size: 32px;
   font-weight: bold;
   margin-top: 20px;
 }
 
-.academics-div .give-card-text p {
+.academics-card-text p {
   font-size: 20px;
   padding: 4px 0px;
 }
 
-.academics-div .give-card-text .kith-link {
+.academics-card-text .kith-link {
   color: #3f86f0;
 }
 
 .academics-div-blue {
-  margin: 0px 150px;
   padding: 130px 60px;
   background-color: #3f86f0;
 }
@@ -97,6 +126,9 @@
 }
 
 @media screen and (max-width: 748px) {
+  .academics-upper-section{
+    padding-left: 50px;
+  }
   .academics-upper-section h1 {
     margin-top: -30px;
     font-size: 28px;
@@ -113,11 +145,28 @@
     padding: 100px 0px;
     gap: 16px;
   }
-  .give-card {
+  .academics-card {
     padding: 40px 0;
   }
-  .academics-div .give-card-text {
-    padding: 0 50px;
+
+  .academics-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 0px;
+  }
+
+  .academics-card-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .academics-card-img {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .academics-card-text {
+    padding: 0px;
+    justify-content: flex-start;
   }
 
   .academics-div > h1 {
@@ -152,27 +201,34 @@
     padding: 50px 32px;
   }
 
-  .academics-div .give-card-text {
+  .academics-card-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
   }
 
-  .academics-div .give-card-text div {
+  .academics-card-text div {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 10px 20px;
   }
 }
 @media screen and (max-width: 440px) {
   .academics-upper-section {
     justify-content: flex-start;
-    padding-left: 40px;
+    padding-left: 20px;
   }
   .academics-upper-section h1 {
     margin-top: 150px;
   }
   .academics-upper-section p {
-    width: 280px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 1050px){
+  .academics-div {
+    padding: 100px 50px;
   }
 }

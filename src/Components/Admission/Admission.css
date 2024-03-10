@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .admissions-upper-section h1 {
@@ -31,7 +32,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 150px;
+  padding: 0px 150px 150px;
 }
 
 .admissions-div > p {
@@ -39,18 +40,44 @@
   font-weight: bold;
 }
 
-.admissions-div > .give-card h3 {
+.admission-card {
+  display: flex;
+  gap: 30px;
+  padding: 75px 0px;
+  min-height: 350px;
+}
+
+.admission-card-img {
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.admission-card-img-1{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/Rectangle_1766_atxqvs.png');
+}
+
+.admission-card-img-2{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_277_tw6uhk.png');
+}
+
+.admission-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.admission-card-text h3 {
   font-size: 50px;
   font-family: "Noto Serif Display", serif;
 }
 
-.admissions-div > .give-card p {
+.admission-card-text p {
   font-size: 24px;
-}
-
-.admissions-div > .give-card > div {
-  width: 500px;
-  height: 300px;
 }
 
 .admissions-grid {
@@ -71,11 +98,14 @@
 .admission-grid-inner1 {
   grid-row: span 4;
   grid-column: span 5;
-  padding: 20px;
+  padding: 0px 20px;
+  background-color: #f5f5f5;
+  color: black;
 }
 
 .admission-grid-inner1 > h3 {
   font-size: 64px;
+  margin-top: 60px;
   font-family: "Noto Serif Display", serif;
 }
 
@@ -98,7 +128,7 @@
 }
 
 .admission-grid-inner2 p {
-  transform-origin: 252px 220px;
+  transform-origin: 252px 240px;
   position: absolute;
   transform: rotate(-90deg);
 }
@@ -178,7 +208,36 @@
     font-size: 16px;
   }
 
-  .admissions-div > .give-card > div {
+  .admission-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 0px;
+  }
+
+  .admission-card-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .admission-card-img {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .admission-card-text {
+    padding: 0px;
+    justify-content: flex-start;
+  }
+
+  .admission-card-text h3{
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .admission-card-text p{
+    font-size: 16px;
+  }
+
+  .admission-card-text div {
     width: 100%;
     height: 300px;
   }
@@ -230,7 +289,7 @@
   }
 
   .admission-grid-inner2 p {
-    transform-origin: 252px 220px;
+    transform-origin: 240px 220px;
   }
 
   .admission-grid-inner3 {
@@ -253,7 +312,7 @@
     grid-column: span 4;
   }
 
-  .admissions-div > .give-card h3 {
+  .admissions-div > .admission-card h3 {
     font-size: 24px;
   }
 }
@@ -263,9 +322,15 @@
     width: calc(100% - 32px);
   }
   .admissions-div {
-    padding: 100px 20px;
+    padding: 50px 20px;
   }
   .mobile-admissions-faculty-content p {
     width: calc(100% - 40px);
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 1000px){
+  .admissions-div {
+    padding: 90px 55px;
   }
 }

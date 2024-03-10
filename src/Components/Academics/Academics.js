@@ -15,7 +15,7 @@ const Academics = () => {
         <h1>Academics</h1>
         <p>
           Stanford students create and apply knowledge by thinking and doing,
-          preparing for leadership in a rapidly changing world.
+          preparing for leadership in a rapidly changing world.
         </p>
       </div>
       <div className="academics-stats">
@@ -34,14 +34,14 @@ const Academics = () => {
       </div>
       <div className="academics-div">
         <h1>Undergraduate Studies</h1>
-        <div className="give-card">
-          <div>
-            <img
+        <div className="academics-card">
+          <div className="academics-card-img academics-card-img-1">
+            {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709277369/Rectangle_1922_ygjslo.png"
               alt=""
-            />
+            /> */}
           </div>
-          <div className="give-card-text">
+          <div className="academics-card-text">
             <div>
               <h3>Undergraduate Education</h3>
               <p>
@@ -87,8 +87,8 @@ const Academics = () => {
       </div>
       <div className="academics-div">
         <h1>Graduate Studies</h1>
-        <div className="give-card give-card-reverse">
-          <div className="give-card-text">
+        <div className="academics-card academics-card-reverse">
+          <div className="academics-card-text">
             <div>
               <h3>Office of the Vice Provost for Graduate Education</h3>
               <p>
@@ -113,24 +113,24 @@ const Academics = () => {
               </Link>
             </div>
           </div>
-          <div>
-            <img
+          <div className="academics-card-img academics-card-img-2">
+            {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709277385/Rectangle_1924_qhodkb.png"
               alt=""
-            />
+            /> */}
           </div>
         </div>
       </div>
       <div className="academics-div academics-div-last">
         <h1>Life-long learning</h1>
-        <div className="give-card">
-          <div>
-            <img
+        <div className="academics-card">
+          <div className="academics-card-img academics-card-img-3">
+            {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709281412/Rectangle_1925_ue0lq3.png"
               alt=""
-            />
+            /> */}
           </div>
-          <div className="give-card-text">
+          <div className="academics-card-text">
             <div>
               <h3>Undergraduate Education</h3>
               <p>

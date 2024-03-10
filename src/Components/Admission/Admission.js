@@ -16,14 +16,9 @@ const Admission = () => {
         </h1>
       </div>
       <div className="admissions-div">
-        <div className="give-card">
-          <div>
-            <img
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/Rectangle_1766_atxqvs.png"
-              alt=""
-            />
-          </div>
-          <div className="give-card-text">
+        <div className="admission-card">
+          <div className="admission-card-img admission-card-img-1"></div>
+          <div className="admission-card-text">
             <h3>Who we are?</h3>
             <p>
               As you embark on this journey with us, your commitment and
@@ -32,8 +27,8 @@ const Admission = () => {
             </p>
           </div>
         </div>
-        <div className="give-card give-card-reverse">
-          <div className="give-card-text">
+        <div className="admission-card admission-card-reverse">
+          <div className="admission-card-text">
             <h3>Our faculty</h3>
             <p>
               We are proud to introduce the talented and dedicated individuals
@@ -42,12 +37,7 @@ const Admission = () => {
               expertise, and a shared commitment to our mission
             </p>
           </div>
-          <div>
-            <img
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_277_tw6uhk.png"
-              alt=""
-            />
-          </div>
+          <div className="admission-card-img admission-card-img-2"></div>
         </div>
       </div>
       <div className="admissions-div">

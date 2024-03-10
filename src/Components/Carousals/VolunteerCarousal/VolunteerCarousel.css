@@ -72,6 +72,12 @@
   font-weight: 500;
 }
 
+.carousel-inner h2,
+.carousel-inner h3, 
+.carousel-inner p{
+  padding-right: 20px;
+}
+
 .img-carousel {
   width: 50px !important;
   height: 50px;
@@ -140,6 +146,7 @@
   .volunteer-carousel-main {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    height: 970px;
   }  
 
   .remove-inline-block {
@@ -172,12 +179,12 @@
   }
 
   .prev-arrow {
-    bottom: 36% !important; 
+    bottom: 50% !important; 
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 36% !important; 
+    bottom: 50% !important; 
     left: 50% !important;
   }
   
@@ -197,6 +204,11 @@
   
   .carousel-inner p {
     font-size: 16px;
+  }  
+
+  .carousel-inner h2,
+  .carousel-inner h3, 
+  .carousel-inner p{
+    padding-left: 20px;
   }
-  
 }

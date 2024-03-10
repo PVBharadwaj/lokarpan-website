@@ -13,9 +13,7 @@ const WaysToGive = () => {
       </div>
       <div className="ways-page">
         <div className="give-card">
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635200/image_341_ym6hdk.png" alt="" />
-          </div>
+          <div className="give-card-img give-card-img-1"></div>
           <div className="give-card-text">
             <h1>Make a Gift</h1>
             <p>
@@ -40,14 +38,10 @@ const WaysToGive = () => {
             <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
             <Link className="give-card-link" to="/">Free Membership</Link>
           </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_340_ufii5c.png" alt="" />
-          </div>
+          <div className="give-card-img give-card-img-2"></div>
         </div>
         <div className="give-card">
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_344_fiaeft.png" alt="" />
-          </div>
+          <div className="give-card-img give-card-img-3"></div>
           <div className="give-card-text">
             <h1>Fellows</h1>
             <p>
@@ -72,9 +66,7 @@ const WaysToGive = () => {
             <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
             <Link className="give-card-link" to="/">Free Membership</Link>
           </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635217/image_342_seejwv.png" alt="" />
-          </div>
+          <div className="give-card-img give-card-img-4"></div>
         </div>
       </div>
       <Footer />

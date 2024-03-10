@@ -5,13 +5,24 @@ import { IoIosCloseCircle } from "react-icons/io";
 
 const FlipCard = () => {
   const [isFlipped, setFlipped] = useState(false);
-
+  const [isFlipOpen, setFlipOpen] = useState(false);
+  const screenWidth = window.innerWidth;
   const handleClickin = () => {
-    setFlipped(true);
+    if(screenWidth > 748){
+      setFlipped(true);
+    }
+    else {
+      setFlipOpen(true);
+    }
   };
 
   const handleClickout = () => {
-    setFlipped(false);
+    if(screenWidth > 748){
+      setFlipped(false);
+    }
+    else {
+      setFlipOpen(false);
+    }
   };
 
   return (
@@ -49,6 +60,22 @@ const FlipCard = () => {
           </div>
         </div>
       </div>
+      <div className={`flip-not-open ${isFlipOpen ? "flipopened" : ""}`}>  
+            {/* <div className="right-align"> */}
+            <div className="flip-back">
+              <IoIosCloseCircle className="size-80" onClick={handleClickout} />
+            </div>
+            <div>
+              <h1>Donars</h1>
+              <p>
+                A gift to the Harvard Art Museums’ Annual Appeal provides
+                crucial support for daily operations while also ensuring that
+                the museums will thrive for future generations. Annual support
+                from donors helps the museums lead the field in advancing museum
+                practice and the study and appreciation of the visual arts.
+              </p>
+            </div>
+        </div>
     </>
   );
 };

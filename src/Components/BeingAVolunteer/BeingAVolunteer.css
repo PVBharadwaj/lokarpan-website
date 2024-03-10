@@ -33,7 +33,7 @@
 
 .donate-card {
   display: flex;
-  padding: 30px 90px;
+  /* padding: 30px 90px; */
 }
 
 .donate-card-text {
@@ -81,6 +81,7 @@
   .volunteer-first-div p {
     font-size: 16px;
     padding: 10px 0px;
+    font-weight: bolder;
   }
 
   .opp h1 {
@@ -88,11 +89,11 @@
   }
 
   .being-a-volunteer-second {
-    padding: 100px 10px;
+    padding: 50px 0px;
 }
 
 .volunter-opp{
-  padding: 100px 0px;
+  padding: 10px 0px;
 }
 
 .volunter-opp h1{
@@ -100,4 +101,15 @@
   padding: 20px;
   color: #181818;
 }
+}
+
+
+@media screen and (min-width: 748px) and (max-width: 1000px){
+  .volunteer-first-div {
+    padding: 80px 0px;
+  }
+
+  .being-a-volunteer-second {
+    padding: 150px 50px;
+  }
 }

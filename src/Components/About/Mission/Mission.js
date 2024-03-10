@@ -3,6 +3,7 @@ import FAQ from "./faq";
 import React, { useState } from "react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
+import SubNavbar from "../../Navbar/SubNavbar";
 const Mission = () => {
   const [faqs, setFaqs] = useState([
     {
@@ -41,6 +42,7 @@ const Mission = () => {
   return (
     <div>
       <Navbar />
+      <SubNavbar />
       <div className="mission-section-container">
         <section className="mission-1st-secction">
           <div className="mission-head">Our purpose, mission, and values</div>

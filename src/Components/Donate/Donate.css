@@ -17,13 +17,14 @@
 .citizen-dropdown {
   padding: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  overflow: hidden;
 }
 
 .citizen-dropdown-inner {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 570px;
   padding: 0;
 }
 
@@ -237,7 +238,7 @@ input:checked + .radio-label-with-img {
 /* font-sizes, padding, borders and margins */
 
 .donate-head h1{
-  font-size: 64px;
+  font-size: 48px;
 }
 
 
@@ -329,13 +330,13 @@ input:checked + .radio-label-with-img {
   }
 
   .donate-head{
-    padding: 50px 30px;
+    padding: 50px 20px;
     background-color: #fff;
   }
 
   .donate-head h1 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     color: #333333;
   }
   
@@ -343,6 +344,10 @@ input:checked + .radio-label-with-img {
   .recap {
     font-size: 16px !important;
     color: #000;
+  }
+
+  .citizen-dropdown-inner {
+    width: 400px;
   }
   
   .donate-part {

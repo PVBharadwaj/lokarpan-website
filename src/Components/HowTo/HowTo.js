@@ -58,8 +58,9 @@ const HowTo = () => {
       </div>
       <div className="howto-page">
         <div className="howto-card">
-          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXf_v9HN0mLlUntyj1dgMwC7buO0yVfOxnml4yhTKr3lut_kUO" />
-          <div className="text-div">
+          <div className="howto-card-img"></div>
+          {/* <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXf_v9HN0mLlUntyj1dgMwC7buO0yVfOxnml4yhTKr3lut_kUO" /> */}
+          <div className="howto-card-text">
             <h3>How to?</h3>
             <p>
               As you embark on this journey with us, your commitment and
@@ -73,7 +74,7 @@ const HowTo = () => {
       <div className="how-to-questions-section">
         <div className="how-to-faq-section">
           <div className="how-to-head-sec">
-            <h1 className="how-to-faqs-head">frequently asked Questions</h1>
+            <h1 className="how-to-faqs-head">Frequently asked Questions</h1>
             <p className="how-to-faqs-para-1">Show All</p>
           </div>
 

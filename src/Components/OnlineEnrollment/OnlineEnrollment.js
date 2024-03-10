@@ -33,15 +33,10 @@ const OnlineEnrollment = () => {
           Applications to Kith are submitted online via the Common Application. 
         </p>
       </div>
-      <div className="enrollment-form enrollment-div">
-        <div className="give-card">
-          <div>
-            <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709053253/Rectangle_1766_3_g9jpwi.png"
-              alt=""
-            />
-          </div>
-          <div className="give-card-text">
+      <div className="enrollment-form enrollment-card-div enrollment-div">
+        <div className="enrollment-card">
+          <div className="enrollment-card-img enrollment-card-img-1"></div>
+          <div className="enrollment-card-text">
             <h3>Application Form</h3>
             <p className="white-txt">
               A Registration of Interest allows you to submit general and
@@ -53,8 +48,8 @@ const OnlineEnrollment = () => {
             </Link>
           </div>
         </div>
-        <div className="give-card give-card-reverse">
-          <div className="give-card-text">
+        <div className="enrollment-card enrollment-card-reverse">
+          <div className="enrollment-card-text">
             <h3>Registration of Interest</h3>
             <p className="white-txt">
               A Registration of Interest allows you to submit general and
@@ -65,12 +60,7 @@ const OnlineEnrollment = () => {
               Submit ROI
             </Link>
           </div>
-          <div>
-            <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709053246/Rectangle_1767_xenonw.png"
-              alt=""
-            />
-          </div>
+          <div className="enrollment-card-img enrollment-card-img-2"></div>
         </div>
       </div>
       <div className="enrollment-cards-mobile">
@@ -102,7 +92,7 @@ const OnlineEnrollment = () => {
         {/* <div className="admissions-img-list">
           <KithCarousels />
         </div> */}
-        <div className="enrollment-imgs-list desktop">
+        <div className="enrollment-imgs-list enrollment-desktop">
           <div>
             <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709263933/Rectangle_1833_4_mwlc6g.png" />
             <p>Berlina</p>

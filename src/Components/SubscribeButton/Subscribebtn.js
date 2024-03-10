@@ -54,7 +54,7 @@ const Subscribebtn = () => {
           </div>
         </div>
       </div>
-      <button type="submit" className="subscribe-btn">
+      <button type="submit" className="subscribe-btn main-subscribe-btn">
         Press{" "}
         <span>
           <img

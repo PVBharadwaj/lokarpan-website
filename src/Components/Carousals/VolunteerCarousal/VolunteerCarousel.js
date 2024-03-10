@@ -78,11 +78,11 @@ const VolunteerCarousel = () => {
     setActiveSlide(index);
   };
 
-  const [showDots, setShowDots] = useState(window.innerWidth > 768);
+  const [showDots, setShowDots] = useState(window.innerWidth > 1170);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowDots(window.innerWidth > 768);
+      setShowDots(window.innerWidth > 1170);
     };
 
     window.addEventListener("resize", handleResize);
@@ -153,15 +153,12 @@ const VolunteerCarousel = () => {
                       key={index}
                       className="main-img"
                       style={{
-                        padding: "20px",
+                        // padding: "20px",
                       }}
                     >
                       <img src={item.img} alt="" />
                     </div>
                   </div>
-                  {/* <div className="carousel-container3">
-                    <span >0{activeSlide + 1}/05</span>
-                  </div> */}
                 </div>
               ))}
             </Slider>

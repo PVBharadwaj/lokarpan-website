@@ -5,7 +5,7 @@
   justify-content: space-between;
   background-color: white;
   color: black;
-  height: 44px;
+  min-height: 44px;
   padding: 10px 123px 0px;
   z-index: 100;
 }
@@ -21,7 +21,7 @@
   list-style-type: none;
   align-items: stretch;
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 .navbar-links li a,

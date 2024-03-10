@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 150px 123px;
+  padding: 100px 123px;
 }
 
 .ways-top {
@@ -28,12 +28,31 @@
 .give-card {
   display: flex;
   gap: 30px;
-  padding: 50px 0px;
+  padding: 75px 0px;
 }
 
-.give-card img {
+.give-card-img {
   width: 100%;
   height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.give-card-img-1{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635200/image_341_ym6hdk.png');
+}
+
+.give-card-img-2{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_340_ufii5c.png');
+}
+
+.give-card-img-3{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_344_fiaeft.png');
+}
+
+.give-card-img-4{
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635217/image_342_seejwv.png');
 }
 
 .give-card-text {
@@ -41,6 +60,7 @@
   flex-direction: column;
   text-align: left;
   justify-content: center;
+  width: 100%;
 }
 
 .give-card-text h1 {
@@ -80,9 +100,9 @@
     flex-direction: column-reverse;
   }
 
-  .give-card img {
+  .give-card-img {
     width: 100%;
-    height: 310px;
+    min-height: 250px;
   }
 
   .give-card-text {
@@ -104,4 +124,10 @@
   text-decoration: underline;
   color: #3F86F0;
 }
+}
+
+@media screen and (min-width: 748px) and (max-width: 1000px){
+  .ways-page {
+    padding: 110px 50px;
+  }
 }
