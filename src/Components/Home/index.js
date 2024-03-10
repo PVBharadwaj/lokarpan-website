@@ -212,15 +212,18 @@ class Home extends Component {
               </div>
             </Marquee>
           </div>
-          <div className="mobile-arrows-cont">
-            <button className="button1" onClick={this.handlePauseClick}>
-              {!isPaused ? (
-                <PiPauseCircleThin className="carousal-icon1" />
-              ) : (
-                <PiPlayCircleThin className="carousal-icon1" />
-              )}
-            </button>
-          </div>
+
+          <button
+            className="button1 mobile-home"
+            onClick={this.handlePauseClick}
+          >
+            {!isPaused ? (
+              <PiPauseCircleThin className="carousal-icon1" />
+            ) : (
+              <PiPlayCircleThin className="carousal-icon1" />
+            )}
+          </button>
+
           <div className="app-container-m1">
             <div className="wrapper-m1">
               <h1 className="text-m1">Our Supporters</h1>

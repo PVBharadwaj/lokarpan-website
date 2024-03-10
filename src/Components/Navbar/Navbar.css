@@ -6,7 +6,7 @@
   background-color: white;
   color: black;
   height: 44px;
-  padding: 10px 123px 0px ;
+  padding: 10px 123px 0px;
   z-index: 100;
 }
 
@@ -70,7 +70,7 @@
   line-height: 40px;
 }
 
-.navbar-item{
+.navbar-item {
   display: flex;
   align-items: center;
 }
@@ -113,7 +113,7 @@
   padding: 0px !important;
 }
 
-.navbar-icon{
+.navbar-icon {
   display: flex;
 }
 
@@ -150,7 +150,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    bottom: 0; 
+    bottom: 0;
     padding-top: 75px;
     padding-left: 10px;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: space-between;
   }
 
-  .mobile-padding-left{
+  .mobile-padding-left {
     padding-left: 20px;
   }
 
@@ -243,21 +243,24 @@
   }
   .navbar-links li a {
     font-size: 32px;
-    /* margin-left: 50px; */
+    margin-left: 50px;
     color: #181818;
     font-weight: bold;
   }
   .dropdown-content h4 {
     font-size: 28px;
-    margin-left: 20px;
+    margin-left: 50px;
     padding: 0px;
   }
   .quicklinks-heading {
     font-size: 20px !important;
     margin-top: 30px;
     margin-bottom: 10px;
+    font-size: 20px !important;
+    margin-top: 50px;
     font-weight: 400;
     color: #333333;
+    padding-bottom: 0 !important;
   }
   .dropdown-container .quick-links li a {
     font-size: 20px;
@@ -269,7 +272,7 @@
     width: auto;
   }
 
-  .click-dropdown-search{
+  .click-dropdown-search {
     top: 0px !important;
     padding: 55px 10px !important;
   }
