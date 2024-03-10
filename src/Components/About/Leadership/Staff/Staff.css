@@ -27,12 +27,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: space-between;
   margin: 30px 123px;
 }
 
 .card-lead {
-  width: 180px;
+  width: 190px;
 }
 
 .card-lead p {
@@ -43,6 +43,10 @@
   padding: 10px;
 }
 
+.profile-name, .profile-position{
+  padding-bottom: 10px;
+}
+
 .off {
   display: none;
 }
@@ -50,8 +54,9 @@
 .on {
   background-color: #ffffff;
   position: absolute;
-  width: 185px;
+  width: 196px;
   display: block;
+  padding: 10px 0px;
   z-index: 2;
 }
 
@@ -60,7 +65,7 @@
   transition: opacity 0.5s ease-in-out;
 }
   
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 836px) {
 
   .board-page h2, 
   .educators-page h2,
@@ -71,5 +76,6 @@
 
   .card-list {
     margin: 30px;
+    justify-content: center;
   }
 }

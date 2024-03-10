@@ -14,7 +14,7 @@
   outline: none;
 }
 
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 836px) {
   .form-control{
     padding: 5px 10px;
     width: calc(100% - 20px);
