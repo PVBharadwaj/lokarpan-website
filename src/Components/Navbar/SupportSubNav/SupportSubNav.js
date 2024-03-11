@@ -15,7 +15,9 @@ const SupportSubNav = () => {
 
   return (
     <nav className="SecNavbar support-nav">
-      <div className="navbar-logo">Support</div>
+      <div className="navbar-logo">
+        <Link className="navbar-mainlink" to="/why-donate">Support</Link>
+      </div>
       <ul className="navbar-links">
         <li 
           className="navbar-item sup-nav-browse dropdown"
@@ -52,17 +54,22 @@ const SupportSubNav = () => {
             </div>
           </div>
         </li>
+        <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
+        <p>
+          <BsChevronDown className="react-icon"/>
+        </p>
+      </div>
         <li className="navbar-item apply-btn orange">
           <Link to="/donate" className="apply-btn-text-white navbar-btn">
             Donate
           </Link>
         </li>
       </ul>
-      <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
+      {/* <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
           <BsChevronDown className="react-icon"/>
         </p>
-      </div>
+      </div> */}
     </nav>
   );
 };

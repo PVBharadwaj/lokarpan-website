@@ -55,6 +55,7 @@
   height: 24px;
   display: flex;
   align-items: center;
+  margin-left: 0px !important;
 }
 
 .apply-btn-text-black{

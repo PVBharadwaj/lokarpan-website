@@ -48,7 +48,7 @@
   .mobile-view-dropdown {
     display: flex;
     align-items: center;
-}
+  }
 
   .lead-mobile-navbar-links {
     gap: 8px;
