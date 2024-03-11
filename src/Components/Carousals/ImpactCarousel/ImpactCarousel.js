@@ -38,7 +38,8 @@ const ImpactCarousel = () => {
   const CustomPrevArrow = (props) => (
     <div
       {...props}
-      className="custom-arrow prev-arrow"
+      // className="custom-arrow impact-prev-arrow prev-arrow"
+      className="custom-arrow impact-prev-arrow"
       style={{
         ...props.style,
         bottom: "-55px",
@@ -54,7 +55,8 @@ const ImpactCarousel = () => {
   const CustomNextArrow = (props) => (
     <div
       {...props}
-      className="custom-arrow next-arrow"
+      // className="custom-arrow impact-next-arrow next-arrow"
+      className="custom-arrow impact-next-arrow"
       style={{
         ...props.style,
         bottom: "-55px",

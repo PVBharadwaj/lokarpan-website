@@ -45,7 +45,7 @@ const AppCarousal = () => {
   const CustomPrevArrow = (props) => (
     <div
       {...props}
-      className="custom-arrow prev-arrow"
+      className="custom-arrow app-prev-arrow"
       style={{
         ...props.style,
         bottom: "-55px",
@@ -61,7 +61,7 @@ const AppCarousal = () => {
   const CustomNextArrow = (props) => (
     <div
       {...props}
-      className="custom-arrow next-arrow"
+      className="custom-arrow app-next-arrow"
       style={{
         ...props.style,
         bottom: "-55px",
@@ -84,8 +84,12 @@ const AppCarousal = () => {
     nextArrow: <CustomNextArrow />,
   };
 
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 500) {
     settings.slidesToShow = 1;
+  } else if (window.innerWidth > 500 && window.innerWidth <= 700) {
+    settings.slidesToShow = 2;
+  } else if (window.innerWidth > 700 && window.innerWidth <= 950) {
+    settings.slidesToShow = 3;
   } else {
     settings.slidesToShow = 4;
   }

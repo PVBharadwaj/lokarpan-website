@@ -45,4 +45,9 @@
     width: 190px !important;
     height: 190px;
   }
+
+  .impact-next-arrow,
+  .impact-prev-arrow{
+    bottom: -55px !important;
+  }
 }

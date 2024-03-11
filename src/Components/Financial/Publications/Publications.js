@@ -9,7 +9,7 @@ const Columns = [
   {
     field: "id",
     headerName: "ID",
-    // width: 250,
+    width: 250,
     flex: 1,
     headerAlign: "center",
     align: "center",
@@ -17,7 +17,7 @@ const Columns = [
   {
     field: "code",
     headerName: "Code",
-    // width: 250,
+    width: 250,
     flex: 1,
     headerAlign: "center",
     align: "center",
@@ -25,7 +25,7 @@ const Columns = [
   {
     field: "description",
     headerName: "Description",
-    // width: 250, 
+    width: 250, 
     flex: 1,
     headerAlign: "center",
     align: "center",
@@ -33,7 +33,7 @@ const Columns = [
   {
     field: "date",
     headerName: "Date",
-    // width: 250, 
+    width: 250, 
     flex: 1,
     headerAlign: "center",
     align: "center",
@@ -41,7 +41,7 @@ const Columns = [
   {
     field: "file",
     headerName: "File",
-    // width: 250,
+    width: 250,
     flex: 1,
     headerAlign: "center",
     align: "center",

@@ -13,7 +13,13 @@
 
 .application-img {
   width: 100%;
-  height: 400px;
+  height: auto;
+  max-width: 950px;
+  min-height: 400px;
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title2 {
@@ -33,16 +39,23 @@
   padding: 60px 50px;
 }
 
+.app-div-bottom{
+  padding: 60px 0px;
+}
+
 .browse {
   display: flex;
   justify-content: center;
-  margin: 60px;
+  margin: 60px 0px;
+  width: 100%;
+  min-height: 350px;
+  gap: 20px;
 }
 
 .browse-text {
-  width: 480px;
+  width: 100%;
   height: auto;
-  padding: 30px;
+  /* padding: 30px; */
   text-align: left;
 }
 
@@ -54,8 +67,17 @@
 }
 
 .browse-img {
-  width: 515px;
-  height: 352px;
+  width: 100%;
+  height: auto;
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708625144/Rectangle_1889_z8esn3.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.browse-img img {
+  width: 100%;
+  height: auto;
 }
 
 .application-para1,
@@ -77,8 +99,9 @@
 .app-card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px 0px;
+  gap: 20px;
 }
 
 .plan {
@@ -147,8 +170,8 @@
   }
 
   .application-img {
-    width: 390px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   .application-para1 {
     font-size: 16px;
@@ -187,5 +210,6 @@
 
   .browse-img {
     width: 100%;
+    min-height: 350px;
   }
 }

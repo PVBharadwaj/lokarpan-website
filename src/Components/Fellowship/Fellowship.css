@@ -33,7 +33,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .fellowship-top h1{
@@ -63,7 +63,9 @@
 }
 
 .fellow-img {
-  height: 298px;
+  width: 100%;
+  height: auto;
+  max-height: 360px;
 }
 
 .fellowship-top > .impact-title {
@@ -119,7 +121,7 @@
 }
 
 .fourth-div{
-  padding: 140px 0px;
+  padding: 140px 0px 70px;
   gap: 24px;
 }
 
@@ -154,12 +156,12 @@
 
 @media screen and (max-width: 748px) {
   .fellowship-nav {
-    padding: 15px 10px;
+    padding: 15px 20px;
   }
   
   .fellowship-top > .impact-title {
     font-size: 20px;
-    padding: 10px 10px;
+    padding: 10px 20px;
     text-align: left;
   }
 
@@ -173,7 +175,7 @@
     height: 296px;
   }
   .fellowship-page {
-    padding: 10px 10px !important;
+    padding: 10px 20px !important;
   }
   .second-div {
     flex-direction: column;

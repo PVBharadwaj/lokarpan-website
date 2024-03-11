@@ -145,7 +145,7 @@
 
 @media screen and (max-width: 836px) {
   .navbar {
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   .navbar-menu {
@@ -247,7 +247,7 @@
   }
   .navbar-links li a {
     font-size: 32px;
-    margin-left: 50px;
+    margin-left: 30px;
     color: #181818;
     font-weight: bold;
   }

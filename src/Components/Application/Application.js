@@ -39,11 +39,12 @@ const Application = () => {
       <div className="app-page">
         <div className="app-div">
           <h1 className="app-title title2">Work as one. or one thousand.</h1>
-          <img
+          <div className="application-img"></div>
+          {/* <img
             className="application-img"
             src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png"
             alt=""
-          />
+          /> */}
           <p className="application-para1">
           Immerse yourself in stories that will challenge your mind and capture your heart. Explore new interests and stay on top of what’s trending. Our global catalogue features leading voices on the topics you care about — from the biggest names to independent creators.
           </p>
@@ -64,7 +65,7 @@ const Application = () => {
         <div className="app-page"><h1 className="title2">Heading</h1></div>
         <AppCarousel />
       <div className="app-page">
-        <div className="app-div">
+        <div className="app-div app-div-bottom">
           <div className="plan">
             <h1 className="app-title title3">Lokarpan</h1>
             <div className="choose-plan">
@@ -89,11 +90,7 @@ const Application = () => {
                 <Link to="/" className="apply-btn-text-black body-btn">Learn more</Link>
               </div>
             </div>
-            <img
-              className="browse-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708625144/Rectangle_1889_z8esn3.png"
-              alt=""
-            />
+            <div className="browse-img"></div>
           </div>
         </div>
       </div>

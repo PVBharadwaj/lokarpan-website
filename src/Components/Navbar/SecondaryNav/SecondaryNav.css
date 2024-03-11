@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 836px) {
   .SecNavbar {
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   .mobile-view-dropdown {
