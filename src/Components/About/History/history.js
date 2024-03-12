@@ -28,8 +28,7 @@ const History = () => {
 <div className='history-lsh2-mobile'> <div className='history-lsh21-mobile'>of our </div> Firm</div>
 
 </div>
-    <div className="history-section-container">
-      <div className='history-top_section'>
+<div className='history-top_section'>
       <div className="history-left-side">
 
         <div className='history-lsh1'>History</div>
@@ -46,6 +45,8 @@ const History = () => {
       build workforces that will thrive for this generation and the next.</p>
       </div>
       </div>
+    <div className="history-section-container">
+      
       {/* ------------------------- */}
       
       {/* -------------------- */}

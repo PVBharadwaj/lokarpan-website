@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './d_home.css';
 import Home from './sliderimage';
 import Navbar from "../Navbar/Navbar";
+import SubnavBar from "./DesignSubNavbar/index";
 import Footer from "../Footer/Footer";
 export default class d_home3 extends Component {
   render() {
@@ -9,6 +10,7 @@ export default class d_home3 extends Component {
     return (
       <div>
         <Navbar/>
+        <SubnavBar/>
 {/* ------------------------------------------------------------- */}
 <section className='guideline_design'></section>
 {/* ------------------------------------------------------------- */}

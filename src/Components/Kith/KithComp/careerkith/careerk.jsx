@@ -74,11 +74,11 @@ class OurRole extends Component {
             We are thrilled to extend a warm welcome to you as part of the Lokarpan family.
             </h1>
           </div>
-          <div className="menu-items">
-            <div className="items">
+          <div className="menu-items2">
+            <div className="items2">
               <div
                 className={
-                  active === "administration" ? "element btn-active" : "element"
+                  active === "administration" ? "element2 btn2-active" : "element2"
                 }
                 onClick={() => this.onChangeActive("administration")}
               >
@@ -86,7 +86,7 @@ class OurRole extends Component {
               </div>
               <div
                 className={
-                  active === "faculty" ? "element btn-active" : "element"
+                  active === "faculty" ? "element2 btn2-active" : "element2"
                 }
                 onClick={() => this.onChangeActive("faculty")}
               >
@@ -94,7 +94,7 @@ class OurRole extends Component {
               </div>
               <div
                 className={
-                  active === "fellowship" ? "element btn-active" : "element"
+                  active === "fellowship" ? "element2 btn2-active" : "element2"
                 }
                 onClick={() => this.onChangeActive("fellowship")}
               >

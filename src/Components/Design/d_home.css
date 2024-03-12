@@ -4,18 +4,18 @@
     padding: 10% 25% 5% 25%;
 }
 .d_home_hero_head1{
-    font-size: 55px;
-    font-weight: 550;
+    font-size: 64px;
+    font-weight: bold;
 }
 .d_home_hero_head2{
-    font-size: 55px;
-    font-weight: 550;
+    font-size: 64px;
+    font-weight: bold;
 
 }
 .d_home_hero_content{
-    padding: 1.5rem 15%;
-    font-size: 18px;
-    font-weight: 530;
+    padding: 1.5rem 1rem;
+    font-size: 28px;
+    font-weight: bold;
 }
 .d_home_section1{
     display: flex;

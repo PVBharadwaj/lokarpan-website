@@ -5,7 +5,7 @@
   text-align: center;
 }
   .timeline-left-section {
-    margin-left: 124px;
+   
    padding: 5rem 0;
     border-right: 1px solid #000;
    
@@ -15,8 +15,8 @@
   .timeline-left-image{
     margin-right: 1rem;
     background-color: #000;
-     width: 344px;
-   height: 214px;
+    width: 521px;
+    height: 343px;
    }
   .timeline-right-section {
    display: flex;
@@ -26,11 +26,11 @@
 
 
 .timeline-right-section-heading{
-  font-size: 20px;
-  font-weight: 650;
+  font-size: 28px;
+  font-weight: 600;
 }
 .timeline-right-section-content{
-  font-size: 14px;
+  font-size: 20px;
   padding-top: 1.5rem;  
 }
 .timeline-rs-text{
