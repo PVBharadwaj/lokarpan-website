@@ -20,10 +20,10 @@ const SubNavbar = () => {
       <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item desktop">
-            <Link to="/staff">History</Link>
+            <Link to="/history">History</Link>
           </li>
           <li className="navbar-item desktop">
-            <Link to="/educators">Mission</Link>
+            <Link to="/mission">Mission</Link>
           </li>
           <li 
             className="navbar-item dropdown"
@@ -48,7 +48,7 @@ const SubNavbar = () => {
                     <Link to="/history">History</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Mission</Link>
+                    <Link to="/mission">Mission</Link>
                   </li>
                   <li>
                     <Link to="/leadership">Leadership</Link>
