@@ -2,7 +2,8 @@ import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./index.css";
-import "./../Navbar.css";
+import "../.././Navbar/Navbar.css";
+
 
 const SubNavbar = () => {
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
@@ -16,14 +17,14 @@ const SubNavbar = () => {
 
   return (
     <nav className="SecNavbar">
-      <div className="navbar-logo">About</div>
+      <div className="navbar-logo">Design</div>
       <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item desktop">
-            <Link to="/history">History</Link>
+            <Link to="/designlist">Projects</Link>
           </li>
           <li className="navbar-item desktop">
-            <Link to="/mission">Mission</Link>
+            <Link to="/guideline">Design Guidelines</Link>
           </li>
           <li 
             className="navbar-item dropdown"
@@ -39,26 +40,21 @@ const SubNavbar = () => {
               }`}
             >
               <div className="dropdown-container">
-                <h4>Explore About</h4>
+                <h4>Explore Design</h4>
                 <ul className="subnav-ul">
                   <li>
-                    <Link to="/our-role">Our Role</Link>
+                    <Link to="/design">Overview</Link>
                   </li>
                   <li>
-                    <Link to="/history">History</Link>
+                    <Link to="/designlist">Projects</Link>
                   </li>
                   <li>
-                    <Link to="/mission">Mission</Link>
+                    <Link to="/guideline">Design Guidelines</Link>
                   </li>
                   <li>
-                    <Link to="/leadership">Leadership</Link>
+                    <Link to="/resources">Resources</Link>
                   </li>
-                  <li>
-                    <Link to="/career">Careers</Link>
-                  </li>
-                  <li>
-                    <Link to="/financials">Financial</Link>
-                  </li>
+                  
                 </ul>
               </div>
             </div>

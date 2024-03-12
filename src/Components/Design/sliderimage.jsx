@@ -39,12 +39,10 @@ class Home extends Component {
                   alt="Slide 1"
                   className="carousal-img-deg"
                 />
-                <div className="link-cont-deg">
-                  <button className="link-deg">Home</button>
-                </div>
+               
               </div>
 
-              <p className="lokarpan-para2-deg">Home</p>
+             
             </div>
 
             <div className="each-carousal-deg">
@@ -54,12 +52,10 @@ class Home extends Component {
                   alt="Slide 1"
                   className="carousal-img-deg"
                 />
-                <div className="link-cont-deg">
-                  <button className="link-deg">Education</button>
-                </div>
+               
               </div>
 
-              <p className="lokarpan-para2-deg">Education</p>
+             
             </div>
             <div className="each-carousal-deg">
               <div className="carousal-deg">
@@ -68,12 +64,10 @@ class Home extends Component {
                   alt="Slide 1"
                   className="carousal-img-deg"
                 />
-                <div className="link-cont-deg">
-                  <button className="link-deg">Career</button>
-                </div>
+                
               </div>
 
-              <p className="lokarpan-para2-deg">Career</p>
+              
             </div>
             <div className="each-carousal-deg">
               <div className="carousal">
@@ -82,12 +76,10 @@ class Home extends Component {
                   alt="Slide 1"
                   className="carousal-img-deg"
                 />
-                <div className="link-cont-deg">
-                  <button className="link-deg">Livelihood</button>
-                </div>
+                
               </div>
 
-              <p className="lokarpan-para2-deg">Livelihood</p>
+              
             </div>
           </Marquee>
         </div>

@@ -7,21 +7,21 @@
     padding: 4rem 20%;
 }
 .mission-head{
-    font-size: 30px;
-    font-weight: 650;
+    font-size: 48px;
+    font-weight: bold;
 
 }
 .mission-content1{
-   font-size: 15px;
-   font-weight: 500;
+   font-size: 28px;
+   font-weight: bold;
    
    padding-top: 3rem;
  
    
 }
 .mission-content2{
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: bold;
     padding-top: 1rem;
 }
 .our-purpose{
@@ -55,8 +55,8 @@ padding-bottom: 1.5rem;
     padding-left: 20%;
 }
 .image-cont .h1{
-    font-size: 30px;
-    font-weight: 650;
+    font-size: 44px;
+    font-weight: bold;
     text-align: left;
   
     width: 80%;
@@ -73,7 +73,7 @@ padding-left:3rem ;
 
 .purpose-cont{
     padding-left: 3rem;
-font-size: 15px;
+font-size: 20px;
   font-weight: 500;
     text-align: left;
     width: 80%;
@@ -115,18 +115,18 @@ font-size: 15px;
     color: #fff;
     background-color: #032437;
     text-align: left;
-    font-weight: 500;
+  
     
 
 }
 .our-mission-text-heading{
     padding-bottom:1rem;
-    font-weight: 650;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 44px;
     width: 50%;
 }
 .our-mission-text-content{
-    font-size: 15px;
+    font-size: 20px;
     width: 85%;
 
 }
@@ -136,28 +136,29 @@ font-size: 15px;
 .our-mission-text-button button{
     font-size: 15px;
     font-weight: 500;
-    padding: .5rem 1rem;
+    width: 150px;
+    height:40px ;
 
-border-radius: 5px;
+border-radius: 100px;
 border: none;
 }
 .our-vision{
     padding: 4rem 25% 10% 25%;
 }
 .our-vision-head{
-    font-size: 40px;
-    font-weight: 650;
+    font-size: 44px;
+    font-weight: bold;
 
 }
 .our-vision-subhead{
     padding: 2rem;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 550;
 
 }
 .our-vision-text{
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 20px;
+    
     padding: 0 3rem;
 
 }
@@ -167,20 +168,22 @@ border: none;
 .our-vision-button button{
     border: 1px solid #646A7B;
    font-size: 15px;
-   padding: .5rem 1rem;
+   
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: 100px;
+    width: 150px;
+    height:40px ;
 }
 .our-mission-mobile{
    margin:2rem 20% ;
-    height: 300px;
+    height: 500px;
     background-color: #032437;
     border-radius:  20px; 
     display: flex;
    
 }
 .our-mission-mobile-image{
-    height: 300px;
+    height: 500px;
     width: 50%;
     border-radius:  20px 0 0 20px; 
     background-color: #000;

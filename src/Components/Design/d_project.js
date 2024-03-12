@@ -4,6 +4,7 @@ import './d_project.css';
 import Fuse from 'fuse.js';
 import cardsData from './cardsData.json';
 import Cardcon from './imagecard';
+import SubnavBar from "./DesignSubNavbar/index";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 const D_project = () => {
@@ -24,6 +25,7 @@ const D_project = () => {
   return (
     <div>
       <Navbar/>
+      <SubnavBar/>
       {/* ------------------------------------------------------------- */}
       <section className='d_home_hero'>
         <div className='d_home_hero_head1'>Meet the A-list of </div>

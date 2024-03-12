@@ -3,7 +3,7 @@ import './d_home.css';
 import './d_home2.css';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-
+import SubnavBar from "./DesignSubNavbar/index";
 export default class d_home extends Component {
   render() {
   
@@ -11,6 +11,7 @@ export default class d_home extends Component {
     return (
       <div>
         <Navbar/>
+        <SubnavBar/>
                           
 {/* ------------------------------------------------------------- */}
 <section className='d_home_section2' >
