@@ -24,7 +24,7 @@
   display: block;
   position: absolute;
   top: 980px;
-  bottom: -2000px;
+  bottom: -1530px;
   right: 0;
   left: 0;
   opacity: .25;
@@ -114,5 +114,12 @@
 
   .dummy{
     height: 100px
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 900px){
+  .background-grad::before {
+    top: 900px;
+    bottom: -1800px;
   }
 }
