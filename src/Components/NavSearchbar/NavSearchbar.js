@@ -104,7 +104,6 @@ const NavSearchbar = (isSearchmenuOpen={isSearchmenuOpen}) => {
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
-  // const [typingActivated, setTypingActivated] = useState(false);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {

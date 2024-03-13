@@ -150,8 +150,8 @@
 
 .dummy-search {
   position: absolute;
-  left: -30px;
-  right: -18px;
+  left: 0px;
+  right: 0px;
   top: 0px;
   bottom: 0px;
   z-index: -1;

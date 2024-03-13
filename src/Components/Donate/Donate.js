@@ -12,6 +12,8 @@ const Donate = () => {
   const [dropdownState, setDropdown] = useState(false);
   const [pan, setPAN] = useState('');
   const [error, setError] = useState('');
+  const [customAmount, setCustomAmount] = useState('');
+  const [selectedAmount, setSelectedAmount] = useState(null);
 
   // For PAN validation
   const validatePAN = () => {
@@ -73,6 +75,20 @@ const Donate = () => {
     const newAmount = event.target.value;
     setDonationAmount(newAmount);
     setProcessingFee(0);
+    setSelectedAmount(event.target.value);
+    setCustomAmount('');
+  };
+
+  const handleCustomAmountChange = (event) => {
+    const check = document.getElementById("form-3-percent");
+    if (check.checked) {
+      check.checked = false;
+    }
+    const newAmount = event.target.value;
+    setDonationAmount(newAmount);
+    setProcessingFee(0);
+    setSelectedAmount(null); // Clear the selected radio button when the custom amount is entered
+    setCustomAmount(event.target.value);
   };
 
   const handleAreaChange = (event) => {
@@ -186,6 +202,7 @@ const Donate = () => {
                       id="form-donate-amount-10"
                       className="radio-hidden"
                       value={10}
+                      checked={selectedAmount === '10'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -199,7 +216,7 @@ const Donate = () => {
                       name="form-donate-amount"
                       id="form-donate-amount-25"
                       className="radio-hidden"
-                      value={25}
+                      value={25}checked={selectedAmount === '25'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -214,6 +231,7 @@ const Donate = () => {
                       id="form-donate-amount-50"
                       className="radio-hidden"
                       value={50}
+                      checked={selectedAmount === '50'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -228,6 +246,7 @@ const Donate = () => {
                       id="form-donate-amount-100"
                       className="radio-hidden"
                       value={100}
+                      checked={selectedAmount === '100'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -242,6 +261,7 @@ const Donate = () => {
                       id="form-donate-amount-500"
                       className="radio-hidden"
                       value={500}
+                      checked={selectedAmount === '500'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -255,9 +275,10 @@ const Donate = () => {
                       placeholder="Enter Amount"
                       type="text"
                       name="form-donate-amount"
-                      // value={''}
+                      value={customAmount}
                       id="form-donate-amount-custom"
-                      onChange={handleAmountChange}
+                      // onChange={handleAmountChange}
+                      onChange={handleCustomAmountChange}
                     />
                   </div>
                 </fieldset>
@@ -492,7 +513,6 @@ const Donate = () => {
               <div className="donate-part">
                 <div className="page-marker">06/06</div>
                 <fieldset>
-                  {/* <div className="donation-recap"> */}
                     <div className="donate-form-sec-title">
                       <p className="recap">Donation Recap</p>
                     </div>
@@ -552,7 +572,6 @@ const Donate = () => {
                       </div>
                     </div>
                     <hr />
-                  {/* <div /> */}
                 </fieldset>
                 <div>
                   <div className="donate-submit-section">
