@@ -100,7 +100,7 @@ const fuseOptions = {
   includeScore: true,
 };
 
-const NavSearchbar = (isSearchmenuOpen={isSearchmenuOpen}) => {
+const NavSearchbar = (isSearchmenuOpen = { isSearchmenuOpen }) => {
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
@@ -108,7 +108,7 @@ const NavSearchbar = (isSearchmenuOpen={isSearchmenuOpen}) => {
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-      setqueryText("")
+      setqueryText("");
     }
   });
 
@@ -129,13 +129,18 @@ const NavSearchbar = (isSearchmenuOpen={isSearchmenuOpen}) => {
       <div className="nav-form">
         <CiSearch className="react-icon size-80" />
         {isSearchmenuOpen && (
-           <input
-           className="nav-form-control text-input"
-           type="text"
-           placeholder="Search..."
-           value={queryText}
-           onChange={handleSearchChange}
-         />
+          <input
+            className="nav-form-control text-input"
+            type="text"
+            placeholder="Search..."
+            value={queryText}
+            onChange={handleSearchChange}
+            ref={(input) => {
+              if (input) {
+                input.focus();
+              }
+            }}
+          />
         )}
       </div>
       <div className="search-quick-links">
