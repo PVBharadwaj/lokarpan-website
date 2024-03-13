@@ -24,7 +24,7 @@
   display: block;
   position: absolute;
   top: 980px;
-  bottom: -1530px;
+  bottom: -2000px;
   right: 0;
   left: 0;
   opacity: .25;
@@ -120,6 +120,6 @@
 @media screen and (min-width: 748px) and (max-width: 900px){
   .background-grad::before {
     top: 900px;
-    bottom: -1800px;
+    bottom: -3000px;
   }
 }

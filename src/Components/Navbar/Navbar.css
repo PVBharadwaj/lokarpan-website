@@ -22,6 +22,7 @@
   align-items: stretch;
   display: flex;
   gap: 20px;
+  padding-left: 0px;
 }
 
 .navbar-links li a,
@@ -136,11 +137,24 @@
   justify-content: center;
 }
 
+.back, .hamburger-item{
+  position: absolute;
+}
+
 .hamburger,
 .down,
 .cross {
   display: none;
   cursor: pointer;
+}
+
+.dummy-search {
+  position: absolute;
+  left: -30px;
+  right: -18px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -1;
 }
 
 @media screen and (max-width: 836px) {
@@ -232,6 +246,10 @@
     opacity: 1;
     display: block;
     z-index: 101;
+  }
+
+  .hamburger-item{
+    position: relative !important;
   }
 
   .hamburger {

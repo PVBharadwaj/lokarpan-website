@@ -2,18 +2,13 @@ import { useState } from "react";
 import "./Searchbar.css";
 
 const SearchBar = () => {
-  const [Typing, setSearchState] = useState(false);
   return (
     <div>
       <div className="search-bar">
         <input
-          className="form-control"
-          id={Typing ? "searchInput" : ""}
+          className="form-control text-input"
           type="text"
           placeholder="Search by name or position"
-          onMouseDown={() => {
-            setSearchState(true);
-          }}
           onKeyUp={() => {
             UserSearch();
           }}

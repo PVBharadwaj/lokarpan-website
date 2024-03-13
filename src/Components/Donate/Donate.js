@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Donate.css";
 import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 import Navbar from "../Navbar/Navbar";
@@ -10,6 +10,56 @@ const Donate = () => {
   const [donationArea, setDonationArea] = useState("---");
   const [processingFee, setProcessingFee] = useState("---");
   const [dropdownState, setDropdown] = useState(false);
+  const [pan, setPAN] = useState('');
+  const [error, setError] = useState('');
+
+  // For PAN validation
+  const validatePAN = () => {
+      if (pan === '') {
+        setError('');
+        return;
+      }
+      const alphanumericRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
+      if (!alphanumericRegex.test(pan)) {
+          setError("Please enter valid PAN number.");
+      } else {
+          setError('');
+      }
+  };
+
+  // For country dropdown list
+  useEffect(() => {
+    const selectCountry = document.getElementById('form-donate-country');
+    const countries = [
+        "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
+        "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+        "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia",
+        "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica",
+        "Croatia", "Cuba", "Cyprus", "Czech Republic", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica",
+        "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
+        "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala",
+        "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland",
+        "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kuwait", "Kyrgyzstan",
+        "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi",
+        "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova",
+        "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands",
+        "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau",
+        "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania",
+        "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino",
+        "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
+        "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "Sudan",
+        "Suriname", "Sweden", "Switzerland", "Syria", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago",
+        "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom",
+        "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+    ];
+
+    countries.forEach(country => {
+        const option = document.createElement('option');
+        option.text = country;
+        option.value = country;
+        selectCountry.add(option);
+    });
+  }, []);
 
   const handleFrequencyChange = (event) => {
     setDonationFrequency(event.target.value);
@@ -51,9 +101,7 @@ const Donate = () => {
   const donateAmount = parseFloat(donamt.donationAmount);
   const processFee = parseFloat(profee.processingFee);
 
-  const totalAmount = isNaN(donateAmount + processFee)
-    ? 0
-    : donateAmount + processFee;
+  const totalAmount = isNaN(donateAmount + processFee) ? 0  : donateAmount + processFee;
 
   return (
     <>
@@ -203,11 +251,12 @@ const Donate = () => {
                       ₹500
                     </label>
                     <input
-                      className="labelless-input radio-label amount"
+                      className="labelless-input text-input radio-label amount"
                       placeholder="Enter Amount"
                       type="text"
-                      name=""
-                      id="form-donate-amount-costum"
+                      name="form-donate-amount"
+                      // value={''}
+                      id="form-donate-amount-custom"
                       onChange={handleAmountChange}
                     />
                   </div>
@@ -299,6 +348,7 @@ const Donate = () => {
                     >
                       First Name <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-first-name"
                         id="form-donate-first-name"
@@ -310,6 +360,7 @@ const Donate = () => {
                     >
                       Last Name <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-last-name"
                         id="form-donate-last-name"
@@ -321,6 +372,7 @@ const Donate = () => {
                     >
                       Email Address <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-email"
                         id="form-donate-email"
@@ -331,11 +383,14 @@ const Donate = () => {
                       htmlFor="form-donate-country"
                     >
                       Country of Residence <br />
-                      <input
+                      {/* <input
                         type="text"
                         name="donate-form-country"
                         id="form-donate-country"
-                      />
+                      /> */}
+                      <select id="form-donate-country" name="donate-form-country">
+                        <option value="">Select Country</option>
+                      </select>
                     </label>
                   </div>
                 </fieldset>
@@ -353,6 +408,7 @@ const Donate = () => {
                     >
                       State <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-state"
                         id="form-donate-state"
@@ -365,6 +421,7 @@ const Donate = () => {
                     >
                       City/Town <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-city"
                         id="form-donate-city"
@@ -377,6 +434,7 @@ const Donate = () => {
                     >
                       Address <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-address"
                         id="form-donate-address"
@@ -390,6 +448,7 @@ const Donate = () => {
                       Postal/ Zip Code
                       <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-pin"
                         id="form-donate-pin"
@@ -402,6 +461,7 @@ const Donate = () => {
                     >
                       Mobile <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-mobile"
                         id="form-donate-mobile"
@@ -414,11 +474,17 @@ const Donate = () => {
                     >
                       PAN Number <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-pan"
                         id="form-donate-pan"
-                        placeholder="000 000"
+                        value={pan}
+                        placeholder="000 000 0000"
+                        onChange={(e) => setPAN(e.target.value)}
+                        onBlur={validatePAN}
+                        // maxLength={10}
                       />
+                      <div style={{ position: 'absolute', color: 'red', paddingLeft: '10px', fontSize: '16px' }}>{error}</div>
                     </label>
                   </div>
                 </fieldset>

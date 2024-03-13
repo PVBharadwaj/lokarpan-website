@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import NavSearchbar from "../NavSearchbar/NavSearchbar";
@@ -18,7 +18,6 @@ const Navbar = () => {
   };
 
   document.addEventListener("keydown", function (event) {
-    // Check if the pressed key is the Escape key
     if (event.key === "Escape") {
       setSearchmenuOpen(false);
     }
@@ -342,6 +341,9 @@ const Navbar = () => {
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
+          <div 
+            className="dummy-search"
+          ></div>
           <FiSearch
             style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
@@ -352,7 +354,7 @@ const Navbar = () => {
               isSearchmenuOpen ? "active" : ""
             }`}
           >
-            <NavSearchbar />
+            <NavSearchbar isSearchmenuOpen={isSearchmenuOpen}/>
           </div>
         </li>
         <li className="navbar-item navbar-icon">
@@ -361,7 +363,7 @@ const Navbar = () => {
             style={{ color: "#6B7280", height: "100%" }}
           />
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item hamburger-item">
           <RxHamburgerMenu
             className="hamburger navbar-icon-inner"
             style={{ color: "#6B7280", height: "100%" }}

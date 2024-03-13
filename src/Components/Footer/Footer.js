@@ -5,6 +5,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const today = new Date();
@@ -33,18 +34,18 @@ const Footer = () => {
               className="lokarpan-logo"
             />
             <div className="icons-container icons-list">
-              <a href="">
+              <Link to='/'>
                 <FaFacebook className="footer-icon" />
-              </a>
-              <a href="">
+              </Link>
+              <Link to='/'>
                 <FaInstagramSquare className="footer-icon" />
-              </a>
-              <a href="">
+              </Link>
+              <Link to='/'>
                 <FaLinkedin className="footer-icon" />
-              </a>
-              <a href="">
+              </Link>
+              <Link to='/'>
                 <FaMedium className="footer-icon" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="footer-list">
@@ -62,22 +63,22 @@ const Footer = () => {
               className={`footer-list-items ${openStates.about ? "open" : ""}`}
             >
               <li>
-                <a href="/">Our Role</a>
+                <Link to='/'>Our Role</Link>
               </li>
               <li>
-                <a href="/history">History</a>
+                <Link to='/history'>History</Link>
               </li>
               <li>
-                <a href="/mission">Mission</a>
+                <Link to="/mission">Mission</Link>
               </li>
               <li>
-                <a href="/leadership">Leadership</a>
+                <Link to="/leadership">Leadership</Link>
               </li>
               <li>
-                <a href="/careers">Careers</a>
+                <Link to="/careers">Careers</Link>
               </li>
               <li>
-                <a href="/">Financials</a>
+                <Link to="/financials">Financials</Link>
               </li>
             </ul>
             <hr className="footer-hor-line" />
@@ -99,10 +100,10 @@ const Footer = () => {
               }`}
             >
               <li>
-                <a href="/">Get in Touch</a>
+                <Link to="/">Get in Touch</Link>
               </li>
               <li>
-                <a href="/newsletter">Newsletter</a>
+                <Link to="/newsletter">Newsletter</Link>
               </li>
             </ul>
             <hr className="footer-hor-line" />
@@ -121,10 +122,10 @@ const Footer = () => {
               className={`footer-list-items ${openStates.social ? "open" : ""}`}
             >
               <li>
-                <a href="/">Facebook</a>
+                <Link to="/">Facebook</Link>
               </li>
               <li>
-                <a href="/">Blog</a>
+                <Link to="/">Blog</Link>
               </li>
             </ul>
             <hr className="footer-hor-line" />
@@ -147,13 +148,13 @@ const Footer = () => {
               }`}
             >
               <li>
-                <a href="/">Donate</a>
+                <Link to="/donate">Donate</Link>
               </li>
               <li>
-                <a href="/">Volunteer</a>
+                <Link to="/being-a-volunteer">Volunteer</Link>
               </li>
               <li>
-                <a href="/">Our Supporters</a>
+                <Link to="/">Our Supporters</Link>
               </li>
             </ul>
             <hr className="footer-hor-line" />
@@ -164,13 +165,13 @@ const Footer = () => {
           <div className="policy-text">
             <span>Copyright @ {year} Lokarpan Inc. All right reserved.</span>
             <span className="desktop-footer-last-sec">
-              <a href="/">Privacy Policy</a>
+              <Link to="/">Privacy Policy</Link>
             </span>
             <span className="desktop-footer-last-sec">
-              <a href="/">Terms of Use</a>
+              <Link to="/">Terms of Use</Link>
             </span>
             <span className="mobile-footer-last-sec">
-              <a href="/">Privacy Policy</a> | <a href="/">Terms of Use</a>
+              <Link to="/">Privacy Policy</Link> | <Link to="/">Terms of Use</Link>
             </span>
           </div>
         </div>

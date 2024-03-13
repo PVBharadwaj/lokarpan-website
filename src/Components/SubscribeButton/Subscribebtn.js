@@ -6,21 +6,24 @@ const Subscribebtn = () => {
 
   useEffect(() => {
     const handleKeyPress = (event) => {
-      const searchInput = document.getElementById("searchInput");
-      if (document.activeElement !== searchInput) {
+      const activeElement = document.activeElement;
+      const InputText = document.getElementsByClassName("text-input");
+      const TextInput = Array.from(InputText);
+      const activeElementNotInArray = !TextInput.some(element => element === activeElement);
+      
+      if (activeElementNotInArray) {
         if (event.key === "s" || event.key === "S") {
           setPopup(true);
         } else if (event.which == 27) {
           setPopup(false);
         }
       }
-    };
-    window.addEventListener("keydown", handleKeyPress);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  }, []);
+      };   
+      window.addEventListener("keydown", handleKeyPress);
+      return () => {
+        window.removeEventListener("keydown", handleKeyPress);
+      };
+    }, []);
 
   return (
     <div className="subscribe-container">
@@ -46,9 +49,6 @@ const Subscribebtn = () => {
             <form action="">
               <input type="text" placeholder="Email address" />
               <button type="submit">Subscribe</button>
-              {/* <div className="apply-btn blue">
-                <Link to="/" className="apply-btn-text-white body-btn">Apply</Link>
-              </div> */}
             </form>
             <p>We respect your privacy. Unsubscribe at any time.</p>
           </div>

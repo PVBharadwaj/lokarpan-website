@@ -162,7 +162,7 @@ input:checked + .radio-label {
   grid-column: span 4;
 }
 
-#form-donate-amount-costum {
+#form-donate-amount-custom {
   border: none;
   border-radius: 0px;
   border-bottom: 2px solid #1e1e1e;
@@ -186,14 +186,20 @@ input:checked + .radio-label-with-img {
   border-top-left-radius: 12px;
 }
 
-.input-label input {
+.input-label input,
+.input-label select{
   margin: 0;
-  padding: 8px 15px;
-  margin: 8px 0px;
-  line-height: 24px;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  /* line-height: 24px; */
   border: 2px solid #1e1e1e;
   border-radius: 36px;
   width: calc(100% - 30px);
+}
+
+.input-label select{
+  width: 100%;
+  appearance: none;
 }
 
 .donate-recap-section {
@@ -372,10 +378,6 @@ input:checked + .radio-label-with-img {
     font-size: 12px;
   }
   
-  .labelless-input {
-    font-size: 16px;
-  }
-
   .input-label {
     font-size: 16px;
     padding: 10px 40px 10px 0px;

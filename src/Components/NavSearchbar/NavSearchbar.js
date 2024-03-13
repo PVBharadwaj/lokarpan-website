@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Fuse from "fuse.js";
 import "./NavSearchbar.css";
 import { CiSearch } from "react-icons/ci";
-import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -100,11 +100,17 @@ const fuseOptions = {
   includeScore: true,
 };
 
-const NavSearchbar = () => {
+const NavSearchbar = (isSearchmenuOpen={isSearchmenuOpen}) => {
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [Typing, setSearchState] = useState(false);
   const [searchState, setSearchLength] = useState(false);
+  // const [typingActivated, setTypingActivated] = useState(false);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      setqueryText("")
+    }
+  });
 
   const handleSearchChange = (e) => {
     const { value } = e.target;
@@ -122,17 +128,15 @@ const NavSearchbar = () => {
     <div className="nav-searchbar">
       <div className="nav-form">
         <CiSearch className="react-icon size-80" />
-        <input
-          className="nav-form-control"
-          type="text"
-          id={Typing ? "searchInput" : ""}
-          placeholder="Search..."
-          value={queryText}
-          onMouseDown={() => {
-            setSearchState(true);
-          }}
-          onChange={handleSearchChange}
-        />
+        {isSearchmenuOpen && (
+           <input
+           className="nav-form-control text-input"
+           type="text"
+           placeholder="Search..."
+           value={queryText}
+           onChange={handleSearchChange}
+         />
+        )}
       </div>
       <div className="search-quick-links">
         {queryText === "" ? (
@@ -140,13 +144,13 @@ const NavSearchbar = () => {
             <h4>Quick Links</h4>
             <ul className="quick-links">
               <li>
-                <a href="/history">History</a>
+                <Link to="/history">History</Link>
               </li>
               <li>
-                <a href="/moonshots">Careers</a>
+                <Link to="/moonshots">Careers</Link>
               </li>
               <li>
-                <a href="/our-role">Blog</a>
+                <Link to="/our-role">Blog</Link>
               </li>
             </ul>
           </div>
