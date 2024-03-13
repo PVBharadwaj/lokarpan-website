@@ -87,7 +87,7 @@ const Donate = () => {
     const newAmount = event.target.value;
     setDonationAmount(newAmount);
     setProcessingFee(0);
-    setSelectedAmount(null); // Clear the selected radio button when the custom amount is entered
+    setSelectedAmount(null);
     setCustomAmount(event.target.value);
   };
 

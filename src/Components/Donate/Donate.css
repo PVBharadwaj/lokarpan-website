@@ -180,7 +180,7 @@ input:checked + .radio-label-with-img {
 }
 
 .radio-label-with-img-img {
-  width: inherit;
+  width: 100%;
   height: 150px;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -330,7 +330,13 @@ input:checked + .radio-label-with-img {
   margin: 32px 0px;
 }
 
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 450px) {
+  .radio-label-with-img{
+    grid-column: span 6 !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
   .donate-page{
     padding: 50px 30px;
   }
@@ -479,6 +485,25 @@ input:checked + .radio-label-with-img {
     position: absolute;
     right: 225px;
     top: 50%;
+  } 
+}
+
+@media screen and (min-width: 780px) and (max-width: 870px){
+  .donate-page{
+    padding: 120px 30px;
   }
-  
+
+  .donate-form form{
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 870px) and (max-width: 1050px){
+  .donate-page{
+    padding: 120px 50px;
+  }
+
+  .donate-form form{
+    width: 85%;
+  }
 }
