@@ -16,13 +16,12 @@
   z-index: 120;
 }
 .nav-link {
-  font-size: 14px; 
+  font-size: 14px;
   text-decoration: none;
-  color: black; 
+  color: black;
 }
 
-
-.navbar-rest{
+.navbar-rest {
   display: flex;
 }
 
@@ -55,14 +54,28 @@
 .react-icon {
   margin-left: 5px;
 }
+.link {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.sub-heading {
+  font-size: 14px;
+}
+.subnav-ul li {
+  height: 20px;
+}
 
 @media screen and (max-width: 836px) {
-
   .dropdown-container .subnav-ul li a {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     color: #333333;
   }
+  .sub-heading {
+    display: none;
+  }
+
   .navbar-item.desktop {
     display: none;
   }

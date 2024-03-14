@@ -8,16 +8,20 @@ const KithLifeAtSchoolSubNavbar = () => {
   const toggleNavmenu = () => {
     setNavmenuOpen(!isNavmenuOpen);
   };
-  
+
   const closeBrowseMenu = () => {
     setNavmenuOpen(false);
   };
 
   return (
     <nav className="SecNavbar support-nav">
-      <div className="navbar-logo">Life At School</div>
+      <div className="navbar-logo">
+        <Link to="/kith/life-at-school" className="link">
+          Life At School
+        </Link>
+      </div>
       <ul className="navbar-links">
-        <li 
+        <li
           className="navbar-item sup-nav-browse dropdown"
           onMouseLeave={closeBrowseMenu}
         >
@@ -32,7 +36,7 @@ const KithLifeAtSchoolSubNavbar = () => {
           >
             <div className="dropdown-container">
               <ul className="support-subnav-list">
-                <h4 className="mobile-heading">Explore Life at School</h4>
+                <h1 className="sub-heading">Explore Life At School</h1>
                 <li>
                   <Link to="/kith/campus-and-culture">Campus & Culture</Link>
                 </li>
@@ -56,7 +60,7 @@ const KithLifeAtSchoolSubNavbar = () => {
       </ul>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          <BsChevronDown className="react-icon"/>
+          <BsChevronDown className="react-icon" />
         </p>
       </div>
     </nav>
