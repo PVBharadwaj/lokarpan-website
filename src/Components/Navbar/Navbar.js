@@ -290,6 +290,11 @@ const Navbar = () => {
             <div className="dropdown-container">
               <h1 className="nav-heading">Explore Education</h1>
               <ul className="list-item-container">
+                <li className="mobile-explore">
+                  <Link to="/approach" onClick={toggleMenu}>
+                    Explore Education
+                  </Link>
+                </li>
                 <li>
                   <Link to="/approach" onClick={toggleMenu}>
                     Approach
@@ -361,6 +366,11 @@ const Navbar = () => {
             <div className="dropdown-container">
               <h1 className="nav-heading">Explore Design</h1>
               <ul className="list-item-container">
+                <li className="mobile-explore">
+                  <Link to="/designlist" onClick={toggleMenu}>
+                    Explore Design
+                  </Link>
+                </li>
                 <li>
                   <Link to="/designlist" onClick={toggleMenu}>
                     Projects
@@ -411,6 +421,11 @@ const Navbar = () => {
             <div className="dropdown-container">
               <h1 className="nav-heading">Explore Donate</h1>
               <ul className="list-item-container">
+                <li className="mobile-explore">
+                  <Link to="/why-donate" onClick={toggleMenu}>
+                    Explore Donate
+                  </Link>
+                </li>
                 <li>
                   <Link to="/why-donate" onClick={toggleMenu}>
                     Why Donate
