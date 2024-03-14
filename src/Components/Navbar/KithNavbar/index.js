@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import NavSearchbar from "../../NavSearchbar/NavSearchbar";
 import { CiSearch } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
