@@ -140,7 +140,7 @@ const Donate = () => {
               <label htmlFor="donate-hyperlink" className="drop-content">
                 Non-Indian Citizens
               </label>
-              <div className="ans-sec">
+              <div className="ans-sec donate-ans-sec">
                 <p className="answer">test text</p>
                 <p className="answer">test text</p>
               </div>
@@ -273,7 +273,7 @@ const Donate = () => {
                     <input
                       className="labelless-input text-input radio-label amount"
                       placeholder="Enter Amount"
-                      type="text"
+                      type="number"
                       name="form-donate-amount"
                       value={customAmount}
                       id="form-donate-amount-custom"
