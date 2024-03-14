@@ -11,19 +11,21 @@ const SupportSubNav = () => {
 
   const closeBrowseMenu = () => {
     setNavmenuOpen(false);
-   };
+  };
 
   return (
     <nav className="SecNavbar support-nav">
       <div className="navbar-logo">
-        <Link className="navbar-mainlink" to="/why-donate">Support</Link>
+        <Link className="navbar-mainlink" to="/why-donate">
+          Support
+        </Link>
       </div>
       <ul className="navbar-links">
-        <li 
+        <li
           className="navbar-item sup-nav-browse dropdown"
           onMouseLeave={closeBrowseMenu}
         >
-          <p  className="desktop-only" onClick={toggleNavmenu}>
+          <p className="desktop-only" onClick={toggleNavmenu}>
             <span>Browse All</span>
             <BsChevronDown className="react-icon" />
           </p>
@@ -34,7 +36,7 @@ const SupportSubNav = () => {
           >
             <div className="dropdown-container">
               <ul className="support-subnav-list">
-              <h4 className="mobile-heading">Explore Support</h4>
+                <h1 className="sub-heading">Explore Support</h1>
                 <li>
                   <Link to="/why-donate">Why Donate</Link>
                 </li>
@@ -55,10 +57,10 @@ const SupportSubNav = () => {
           </div>
         </li>
         <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
-        <p>
-          <BsChevronDown className="react-icon"/>
-        </p>
-      </div>
+          <p>
+            <BsChevronDown className="react-icon" />
+          </p>
+        </div>
         <li className="navbar-item apply-btn orange">
           <Link to="/donate" className="apply-btn-text-white navbar-btn">
             Donate

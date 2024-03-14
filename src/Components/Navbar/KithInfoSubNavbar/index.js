@@ -15,13 +15,17 @@ const KithInfoSubNavbar = () => {
 
   return (
     <nav className="SecNavbar support-nav">
-      <div className="navbar-logo">Information</div>
+      <div className="navbar-logo">
+        <Link to="/kith/information" className="link">
+          Information
+        </Link>
+      </div>
       <ul className="navbar-links">
         <li
           className="navbar-item sup-nav-browse dropdown"
           onMouseLeave={closeBrowseMenu}
         >
-          <p  className="desktop-only" onClick={toggleNavmenu}>
+          <p className="desktop-only" onClick={toggleNavmenu}>
             <span>Browse All</span>
             <BsChevronDown className="react-icon" />
           </p>
@@ -32,7 +36,7 @@ const KithInfoSubNavbar = () => {
           >
             <div className="dropdown-container">
               <ul className="support-subnav-list">
-                <h4 className="mobile-heading">Explore Information</h4>
+                <h1 className="sub-heading">Explore Information</h1>
                 <li>
                   <Link to="/kith/leadership">Leadership</Link>
                 </li>
@@ -57,7 +61,7 @@ const KithInfoSubNavbar = () => {
       </ul>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          <BsChevronDown className="react-icon"/>
+          <BsChevronDown className="react-icon" />
         </p>
       </div>
     </nav>

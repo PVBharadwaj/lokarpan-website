@@ -11,11 +11,15 @@ const EducationSubNav = () => {
 
   const closeBrowseMenu = () => {
     setNavmenuOpen(false);
-   }
+  };
 
   return (
     <nav className="SecNavbar">
-      <div className="navbar-logo">Education</div>
+      <div className="navbar-logo">
+        <Link to="/education" className="link-edu">
+          Education
+        </Link>
+      </div>
       <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item desktop-only">
@@ -24,7 +28,7 @@ const EducationSubNav = () => {
           <li className="navbar-item desktop-only">
             <Link to="/digital-tool">Digital Tools</Link>
           </li>
-          <li 
+          <li
             className="navbar-item dropdown education"
             onMouseLeave={closeBrowseMenu}
           >
@@ -41,25 +45,19 @@ const EducationSubNav = () => {
               }`}
             >
               <div className="dropdown-container">
-                <h4 className="mobile-heading">Explore About</h4>
+                <h1 className="sub-heading-edu">Explore Education</h1>
                 <ul className="edu-subnav-list">
                   <li>
-                    <Link to="/our-role">Our Role</Link>
+                    <Link to="/approach">Approach</Link>
                   </li>
                   <li>
-                    <Link to="/history">History</Link>
+                    <Link to="/digital-tools">Digital Tools</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Mission</Link>
+                    <Link to="/application">Application</Link>
                   </li>
                   <li>
-                    <Link to="/leadership">Leadership</Link>
-                  </li>
-                  <li>
-                    <Link to="/career">Careers</Link>
-                  </li>
-                  <li>
-                    <Link to="/financials">Financial</Link>
+                    <Link to="/podcasts">Podcast</Link>
                   </li>
                 </ul>
               </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import NavSearchbar from "../KithNavSearchbar/index";
+import NavSearchbar from "../../NavSearchbar/NavSearchbar";
 import { CiSearch } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
@@ -15,16 +15,15 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
 
- const closeSearchMenu = () => {
-  setSearchmenuOpen(false);
- }
+  const closeSearchMenu = () => {
+    setSearchmenuOpen(false);
+  };
 
- document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
       setSearchmenuOpen(false);
-  }
-})
-
+    }
+  });
 
   const toggleSearchmenu = () => {
     setSearchmenuOpen(!isSearchmenuOpen);
@@ -66,12 +65,12 @@ const Navbar = () => {
       </div> */}
 
       <ul className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
-      <div class="back" onClick={handleBackClick}>
-        <IoIosArrowBack
-          style={{ fontSize: "20px" }}
-          className={activeDropdown !== null ? "down active" : "down"}
-        />
-      </div>
+        <div class="back" onClick={handleBackClick}>
+          <IoIosArrowBack
+            style={{ fontSize: "20px" }}
+            className={activeDropdown !== null ? "down active" : "down"}
+          />
+        </div>
         <RxCross2
           className="cross"
           onClick={toggleMenu}
@@ -82,7 +81,10 @@ const Navbar = () => {
             Overview
           </Link>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/kith/admission" onClick={handleNavlinkClick}>
             Admission
           </Link>
@@ -93,7 +95,7 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <ul>
+              <ul className="list-item-container">
                 <li>
                   <Link to="/kith/how-to" onClick={toggleMenu}>
                     How to ?
@@ -113,7 +115,10 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/kith/life-at-school" onClick={handleNavlinkClick}>
             Life at School
           </Link>
@@ -124,7 +129,7 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <ul>
+              <ul className="list-item-container">
                 <li>
                   <Link to="/kith/campus-and-culture" onClick={toggleMenu}>
                     Campus & Culture
@@ -149,7 +154,10 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item mobile-padding-left dropdown" onClick={toggleDropdown}>
+        <li
+          className="navbar-item mobile-padding-left dropdown"
+          onClick={toggleDropdown}
+        >
           <Link to="/kith/information" onClick={handleNavlinkClick}>
             Information
           </Link>
@@ -160,7 +168,7 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <ul>
+              <ul className="list-item-container">
                 <li>
                   <Link to="/kith/leadership" onClick={toggleMenu}>
                     Leadership
@@ -192,7 +200,7 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className="navbar-links navbar-icons">
-        <li 
+        <li
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
@@ -202,7 +210,9 @@ const Navbar = () => {
             onClick={toggleSearchmenu}
           />
           <div
-            className={`click-dropdown click-dropdown-search  ${isSearchmenuOpen ? "active" : ""}`}
+            className={`click-dropdown click-dropdown-search  ${
+              isSearchmenuOpen ? "active" : ""
+            }`}
           >
             <NavSearchbar />
           </div>

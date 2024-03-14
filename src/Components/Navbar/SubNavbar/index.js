@@ -12,11 +12,15 @@ const SubNavbar = () => {
 
   const closeBrowseMenu = () => {
     setNavmenuOpen(false);
-   }
+  };
 
   return (
     <nav className="SecNavbar">
-      <div className="navbar-logo">About</div>
+      <div className="navbar-logo">
+        <Link to="/about" className="link">
+          About
+        </Link>
+      </div>
       <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item desktop">
@@ -25,10 +29,7 @@ const SubNavbar = () => {
           <li className="navbar-item desktop">
             <Link to="/mission">Mission</Link>
           </li>
-          <li 
-            className="navbar-item dropdown"
-            onMouseLeave={closeBrowseMenu}
-          >
+          <li className="navbar-item dropdown" onMouseLeave={closeBrowseMenu}>
             <p onClick={toggleNavmenu}>
               <span className="desktop">Browse All</span>
               <BsChevronDown className="react-icon" />
@@ -39,7 +40,7 @@ const SubNavbar = () => {
               }`}
             >
               <div className="dropdown-container">
-                <h4>Explore About</h4>
+                <h1 className="sub-heading">Explore About</h1>
                 <ul className="subnav-ul">
                   <li>
                     <Link to="/our-role">Our Role</Link>

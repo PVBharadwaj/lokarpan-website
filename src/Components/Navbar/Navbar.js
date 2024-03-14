@@ -87,9 +87,11 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <ul>
-                <li className="explore-head">
-                  <Link to="/our-role" onClick={toggleMenu}>
+              <h1 className="nav-heading">Explore About</h1>
+
+              <ul className="list-item-container">
+                <li className="mobile-explore">
+                  <Link to="/about" onClick={toggleMenu}>
                     Explore About
                   </Link>
                 </li>
@@ -126,7 +128,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown-container">
-              <h4 className="quicklinks-heading">Quick Links</h4>
+              <h1 className="quicklinks-heading">Quick Links</h1>
               <ul className="quick-links">
                 <li>
                   <Link to="/alumni" onClick={toggleMenu}>
@@ -168,8 +170,8 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <h4>Explore Education</h4>
-              <ul>
+              <h1 className="nav-heading">Explore Education</h1>
+              <ul className="list-item-container">
                 <li>
                   <Link to="/approach" onClick={toggleMenu}>
                     Approach
@@ -193,7 +195,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown-container">
-              <h4 className="quicklinks-heading">Quick Links</h4>
+              <h1 className="quicklinks-heading">Quick Links</h1>
               <ul className="quick-links">
                 <li>
                   <Link to="/impact" onClick={toggleMenu}>
@@ -239,8 +241,8 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <ul>
-                <h4>Explore Design</h4>
+              <h1 className="nav-heading">Explore Design</h1>
+              <ul className="list-item-container">
                 <li>
                   <Link to="/designlist" onClick={toggleMenu}>
                     Projects
@@ -289,8 +291,8 @@ const Navbar = () => {
             }`}
           >
             <div className="dropdown-container">
-              <h4>Explore Support</h4>
-              <ul>
+              <h1 className="nav-heading">Explore Donate</h1>
+              <ul className="list-item-container">
                 <li>
                   <Link to="/why-donate" onClick={toggleMenu}>
                     Why Donate
@@ -319,7 +321,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown-container">
-              <h4 className="quicklinks-heading">Quick Links</h4>
+              <h1 className="quicklinks-heading">Quick Links</h1>
               <ul className="quick-links">
                 <li>
                   <Link to="/financials" onClick={toggleMenu}>
@@ -341,9 +343,7 @@ const Navbar = () => {
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
-          <div 
-            className="dummy-search"
-          ></div>
+          <div className="dummy-search"></div>
           <FiSearch
             style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
@@ -354,7 +354,7 @@ const Navbar = () => {
               isSearchmenuOpen ? "active" : ""
             }`}
           >
-            <NavSearchbar isSearchmenuOpen={isSearchmenuOpen}/>
+            <NavSearchbar isSearchmenuOpen={isSearchmenuOpen} />
           </div>
         </li>
         <li className="navbar-item navbar-icon">
