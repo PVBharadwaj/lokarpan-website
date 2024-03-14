@@ -168,6 +168,10 @@ input:checked + .radio-label {
   border-bottom: 2px solid #1e1e1e;
 }
 
+#form-donate-amount-custom:focus {
+  outline: none;
+}
+
 input:checked + .radio-label-with-img {
   border: 2px solid black;
 }

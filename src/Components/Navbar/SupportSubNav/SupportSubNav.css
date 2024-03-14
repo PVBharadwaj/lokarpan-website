@@ -12,6 +12,7 @@
   max-height: 0px;
   background-color: white;
   visibility: hidden;
+  overflow: hidden;
   /* opacity: 0;  */
   transition: max-height 0.7s ease-in, opacity 0.7s ease-in, visibility 0s linear 0.7s;
 }
@@ -50,6 +51,7 @@
     opacity: 1;
     right: 0 !important;
     left: 0 !important;
+    z-index: 100;
   }
 
   /* .navbar-item.apply-btn.orange {

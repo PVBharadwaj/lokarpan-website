@@ -273,7 +273,7 @@ const Donate = () => {
                     <input
                       className="labelless-input text-input radio-label amount"
                       placeholder="Enter Amount"
-                      type="text"
+                      type="number"
                       name="form-donate-amount"
                       value={customAmount}
                       id="form-donate-amount-custom"
