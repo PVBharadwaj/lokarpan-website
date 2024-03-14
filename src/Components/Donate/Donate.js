@@ -140,7 +140,7 @@ const Donate = () => {
               <label htmlFor="donate-hyperlink" className="drop-content">
                 Non-Indian Citizens
               </label>
-              <div className="ans-sec">
+              <div className="ans-sec donate-ans-sec">
                 <p className="answer">test text</p>
                 <p className="answer">test text</p>
               </div>

@@ -4,10 +4,6 @@
     font-family: 'Noto Serif Display', serif;
 }
 
-.kith-donate-page{
-    padding-top: 130px;
-}
-
 @media screen and (max-width: 748px) {
     .kith-donate{
         padding: 75px 32px;

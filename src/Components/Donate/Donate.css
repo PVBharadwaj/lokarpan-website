@@ -19,6 +19,8 @@
   width: 100%;
   text-align: left;
   overflow: hidden;
+  height: 110px;
+  position: relative;
 }
 
 .citizen-dropdown-inner {
@@ -63,6 +65,10 @@
   transition: all 0.8s ease;
   padding: 20px 0px;
   opacity: 0;
+}
+.donate-ans-sec{
+  position: absolute;
+  top: 30px;
 }
 .answer {
   font-size: 20px;

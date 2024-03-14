@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./KithDonate.css";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/KithNavbar";
@@ -9,6 +9,58 @@ const KithDonate = () => {
   const [donationArea, setDonationArea] = useState("---");
   const [processingFee, setProcessingFee] = useState("---");
   const [dropdownState, setDropdown] = useState(false);
+  const [pan, setPAN] = useState('');
+  const [error, setError] = useState('');
+  const [customAmount, setCustomAmount] = useState('');
+  const [selectedAmount, setSelectedAmount] = useState(null);
+
+  // For PAN validation
+  const validatePAN = () => {
+      if (pan === '') {
+        setError('');
+        return;
+      }
+      const alphanumericRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
+      if (!alphanumericRegex.test(pan)) {
+          setError("Please enter valid PAN number.");
+      } else {
+          setError('');
+      }
+  };
+
+  // For country dropdown list
+  useEffect(() => {
+    const selectCountry = document.getElementById('form-donate-country');
+    const countries = [
+        "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
+        "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+        "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia",
+        "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica",
+        "Croatia", "Cuba", "Cyprus", "Czech Republic", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica",
+        "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
+        "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala",
+        "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland",
+        "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kuwait", "Kyrgyzstan",
+        "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi",
+        "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova",
+        "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands",
+        "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau",
+        "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania",
+        "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino",
+        "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
+        "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "Sudan",
+        "Suriname", "Sweden", "Switzerland", "Syria", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago",
+        "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom",
+        "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+    ];
+
+    countries.forEach(country => {
+        const option = document.createElement('option');
+        option.text = country;
+        option.value = country;
+        selectCountry.add(option);
+    });
+  }, []);
 
   const handleFrequencyChange = (event) => {
     setDonationFrequency(event.target.value);
@@ -22,6 +74,20 @@ const KithDonate = () => {
     const newAmount = event.target.value;
     setDonationAmount(newAmount);
     setProcessingFee(0);
+    setSelectedAmount(event.target.value);
+    setCustomAmount('');
+  };
+
+  const handleCustomAmountChange = (event) => {
+    const check = document.getElementById("form-3-percent");
+    if (check.checked) {
+      check.checked = false;
+    }
+    const newAmount = event.target.value;
+    setDonationAmount(newAmount);
+    setProcessingFee(0);
+    setSelectedAmount(null);
+    setCustomAmount(event.target.value);
   };
 
   const handleAreaChange = (event) => {
@@ -50,13 +116,11 @@ const KithDonate = () => {
   const donateAmount = parseFloat(donamt.donationAmount);
   const processFee = parseFloat(profee.processingFee);
 
-  const totalAmount = isNaN(donateAmount + processFee)
-    ? 0
-    : donateAmount + processFee;
+  const totalAmount = isNaN(donateAmount + processFee) ? 0  : donateAmount + processFee;
 
   return (
     <>
-      <Navbar />
+    <Navbar />
       <div className="donate-head kith-donate">
           <h1>
             Through the Stronger Together campaign, our goal is to bridge the
@@ -74,7 +138,7 @@ const KithDonate = () => {
               <label htmlFor="donate-hyperlink" className="drop-content">
                 Non-Indian Citizens
               </label>
-              <div className="ans-sec">
+              <div className="ans-sec donate-ans-sec">
                 <p className="answer">test text</p>
                 <p className="answer">test text</p>
               </div>
@@ -136,6 +200,7 @@ const KithDonate = () => {
                       id="form-donate-amount-10"
                       className="radio-hidden"
                       value={10}
+                      checked={selectedAmount === '10'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -149,7 +214,7 @@ const KithDonate = () => {
                       name="form-donate-amount"
                       id="form-donate-amount-25"
                       className="radio-hidden"
-                      value={25}
+                      value={25}checked={selectedAmount === '25'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -164,6 +229,7 @@ const KithDonate = () => {
                       id="form-donate-amount-50"
                       className="radio-hidden"
                       value={50}
+                      checked={selectedAmount === '50'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -178,6 +244,7 @@ const KithDonate = () => {
                       id="form-donate-amount-100"
                       className="radio-hidden"
                       value={100}
+                      checked={selectedAmount === '100'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -192,6 +259,7 @@ const KithDonate = () => {
                       id="form-donate-amount-500"
                       className="radio-hidden"
                       value={500}
+                      checked={selectedAmount === '500'}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -201,12 +269,13 @@ const KithDonate = () => {
                       ₹500
                     </label>
                     <input
-                      className="labelless-input radio-label amount"
+                      className="labelless-input text-input radio-label amount"
                       placeholder="Enter Amount"
-                      type="text"
-                      name=""
-                      id="form-donate-amount-costum"
-                      onChange={handleAmountChange}
+                      type="number"
+                      name="form-donate-amount"
+                      value={customAmount}
+                      id="form-donate-amount-custom"
+                      onChange={handleCustomAmountChange}
                     />
                   </div>
                 </fieldset>
@@ -297,6 +366,7 @@ const KithDonate = () => {
                     >
                       First Name <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-first-name"
                         id="form-donate-first-name"
@@ -308,6 +378,7 @@ const KithDonate = () => {
                     >
                       Last Name <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-last-name"
                         id="form-donate-last-name"
@@ -319,6 +390,7 @@ const KithDonate = () => {
                     >
                       Email Address <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-email"
                         id="form-donate-email"
@@ -329,11 +401,14 @@ const KithDonate = () => {
                       htmlFor="form-donate-country"
                     >
                       Country of Residence <br />
-                      <input
+                      {/* <input
                         type="text"
                         name="donate-form-country"
                         id="form-donate-country"
-                      />
+                      /> */}
+                      <select id="form-donate-country" name="donate-form-country">
+                        <option value="">Select Country</option>
+                      </select>
                     </label>
                   </div>
                 </fieldset>
@@ -351,6 +426,7 @@ const KithDonate = () => {
                     >
                       State <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-state"
                         id="form-donate-state"
@@ -363,6 +439,7 @@ const KithDonate = () => {
                     >
                       City/Town <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-city"
                         id="form-donate-city"
@@ -375,6 +452,7 @@ const KithDonate = () => {
                     >
                       Address <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-address"
                         id="form-donate-address"
@@ -388,6 +466,7 @@ const KithDonate = () => {
                       Postal/ Zip Code
                       <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-pin"
                         id="form-donate-pin"
@@ -400,6 +479,7 @@ const KithDonate = () => {
                     >
                       Mobile <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-mobile"
                         id="form-donate-mobile"
@@ -412,11 +492,17 @@ const KithDonate = () => {
                     >
                       PAN Number <br />
                       <input
+                        className="text-input"
                         type="text"
                         name="donate-form-pan"
                         id="form-donate-pan"
-                        placeholder="000 000"
+                        value={pan}
+                        placeholder="000 000 0000"
+                        onChange={(e) => setPAN(e.target.value)}
+                        onBlur={validatePAN}
+                        // maxLength={10}
                       />
+                      <div style={{ position: 'absolute', color: 'red', paddingLeft: '10px', fontSize: '16px' }}>{error}</div>
                     </label>
                   </div>
                 </fieldset>
@@ -424,7 +510,6 @@ const KithDonate = () => {
               <div className="donate-part">
                 <div className="page-marker">06/06</div>
                 <fieldset>
-                  {/* <div className="donation-recap"> */}
                     <div className="donate-form-sec-title">
                       <p className="recap">Donation Recap</p>
                     </div>
@@ -484,7 +569,6 @@ const KithDonate = () => {
                       </div>
                     </div>
                     <hr />
-                  {/* <div /> */}
                 </fieldset>
                 <div>
                   <div className="donate-submit-section">
