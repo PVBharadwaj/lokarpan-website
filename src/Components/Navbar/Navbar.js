@@ -110,6 +110,9 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
+  const [queryText, setqueryText] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchState, setSearchLength] = useState(false);
 
   const closeSearchMenu = () => {
     setSearchmenuOpen(false);
@@ -149,10 +152,6 @@ const Navbar = () => {
   const handleBackClick = () => {
     setActiveDropdown(null);
   };
-
-  const [queryText, setqueryText] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-  const [searchState, setSearchLength] = useState(false);
 
   const handleSearchChange = (e) => {
     const { value } = e.target;
@@ -481,7 +480,6 @@ const Navbar = () => {
               />
               <div className="nav-form">
                 <CiSearch className="react-icon size-80" />
-                {/* {isSearchmenuOpen && ( */}
                   <input
                     className="nav-form-control text-input"
                     type="text"
@@ -494,7 +492,6 @@ const Navbar = () => {
                       }
                     }}
                   />
-                {/* )} */}
               </div>
               <div className="search-quick-links">
                 {queryText === "" ? (
@@ -526,7 +523,6 @@ const Navbar = () => {
                 )}
               </div>
             </div>
-            <NavSearchbar isSearchmenuOpen={isSearchmenuOpen} />
           </div>
         </li>
         <li className="navbar-item navbar-icon">

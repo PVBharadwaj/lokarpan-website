@@ -111,7 +111,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
-  // for navSearchBar
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
