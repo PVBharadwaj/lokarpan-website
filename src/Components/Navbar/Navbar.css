@@ -8,6 +8,7 @@
   min-height: 44px;
   padding: 10px 123px 0px;
   z-index: 100;
+  gap: 20px;
 }
 
 .navbar-logo {

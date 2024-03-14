@@ -34,8 +34,7 @@ const Kith = () => {
             <h3>Our faculty</h3>
             <p>
             We are proud to introduce the talented and dedicated individuals who make up our esteemed faculty at Lokarpan Non-Profit Organization. Our faculty members bring a wealth of experience, expertise, and a shared commitment to our mission 
-            <br/> Shunyuan  Zhang, The professor, Lokarpan
-            </p>
+            </p> <span className='our-role-faculty'>Shunyuan  Zhang, The professor, Lokarpan</span>
           </div>
           <div className='kith-overview-card-img kith-overview-card-img-2'></div>
         </div>

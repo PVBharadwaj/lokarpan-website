@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HowTo.css";
 import { Link } from "react-router-dom";
 import SegmentButton from "../Carousals/SegmentButton/SegmentButton";
@@ -46,6 +46,23 @@ const HowTo = () => {
     },
   ];
 
+  const [showAll, setShowAll] = useState(false);
+
+  const [checkboxes, setCheckboxes] = useState(
+    howtoFaqs.reduce((acc, curr) => {
+      acc[curr.id] = false;
+      return acc;
+    }, {})
+  );
+
+  const handleCheckboxChange = (id) => {
+    setCheckboxes({
+      // ...checkboxes,  //  Spread operator to keep the previous change
+      [id]: !checkboxes[id]
+    });
+  };
+
+
   return (
     <>
       <Navbar />
@@ -59,7 +76,6 @@ const HowTo = () => {
       <div className="howto-page">
         <div className="howto-card">
           <div className="howto-card-img"></div>
-          {/* <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXf_v9HN0mLlUntyj1dgMwC7buO0yVfOxnml4yhTKr3lut_kUO" /> */}
           <div className="howto-card-text">
             <h3>How to?</h3>
             <p>
@@ -75,7 +91,7 @@ const HowTo = () => {
         <div className="how-to-faq-section">
           <div className="how-to-head-sec">
             <h1 className="how-to-faqs-head">Frequently asked Questions</h1>
-            <p className="how-to-faqs-para-1">Show All</p>
+            <p className="how-to-faqs-para-1" onClick={() => setShowAll(!showAll)}>Show All</p>
           </div>
 
           <ul className="how-to-questions-container-1">
@@ -85,6 +101,8 @@ const HowTo = () => {
                   type="checkbox"
                   id={each.id}
                   name={each.id}
+                  checked={showAll || checkboxes[each.id]}
+                  onChange={() => handleCheckboxChange(each.id)}
                   className="how-to-input-1"
                 />
                 <label htmlFor={each.id} className="how-to-question-1">

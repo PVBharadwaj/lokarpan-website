@@ -100,13 +100,13 @@
     color: #333333;
     font-weight: 500;
   }
-  
-  /* .kith-overview-card-link {
-    font-size: 20px;
-    padding: 6px 0px;
-    text-decoration: underline;
+ 
+.our-role-faculty{
     color: #3F86F0;
-  } */
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: 500;
+}
 
 .kith-overview-card-text h3{
     font-size: 50px;
@@ -116,12 +116,6 @@
 .kith-overview-card-text p{
     font-size: 24px;
 }
-
-/* .kith-overview-div > .give-card > div{
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-} */
 
 .overview-img-div{
     padding: 100px 0px;
