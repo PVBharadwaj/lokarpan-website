@@ -101,7 +101,7 @@
 }
 
 .quick-links li a {
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px;
 }
 
@@ -162,16 +162,16 @@
 
 .dropdown-container .list-item-container li a {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .quicklinks-heading {
-  font-size: 14px;
+  font-size: 12px;
   margin: 15px 0;
   color: #333333;
   font-weight: 400;
 }
 .nav-heading {
-  font-size: 14px;
+  font-size: 12px;
   margin: 15px 0;
   color: #333333;
   font-weight: 400;
@@ -336,7 +336,6 @@
 
 /* CSS for navSearchBar starts */
 
-
 .nav-searchbar {
   display: flex;
   width: 100%;
@@ -410,7 +409,7 @@
   .nav-searchbar {
     height: 100vh;
   }
-  
+
   .nav-form-control {
     font-size: 20px;
     width: auto;
@@ -424,6 +423,5 @@
     font-weight: 500;
   }
 }
-
 
 /* CSS for navSearchBar ends */
