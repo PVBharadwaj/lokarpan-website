@@ -23,7 +23,9 @@ const GiftSubNav = () => {
           >
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
-              <BsChevronDown className="react-icon"/>
+              <BsChevronDown 
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            />
             </p>
             <div
               className={` navbar-links click-dropdown ${

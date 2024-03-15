@@ -34,32 +34,34 @@ const EducationSubNav = () => {
           >
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
-              <BsChevronDown
-                className="react-icon"
-                style={{ fontSize: "20px" }}
-              />
+            <BsChevronDown 
+              style={{ fontSize: "20px" }}
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            />
             </p>
             <div
               className={` navbar-links click-dropdown ${
                 isNavmenuOpen ? "active" : ""
               }`}
             >
-              <div className="dropdown-container">
-                <h1 className="sub-heading-edu">Explore Education</h1>
-                <ul className="edu-subnav-list">
-                  <li>
-                    <Link to="/approach">Approach</Link>
-                  </li>
-                  <li>
-                    <Link to="/digital-tools">Digital Tools</Link>
-                  </li>
-                  <li>
-                    <Link to="/application">Application</Link>
-                  </li>
-                  <li>
-                    <Link to="/podcasts">Podcast</Link>
-                  </li>
-                </ul>
+              <div className="click-dropdown-inner">
+                <div className="dropdown-container">
+                  <h1 className="sub-heading-edu">Explore Education</h1>
+                  <ul className="edu-subnav-list">
+                    <li>
+                      <Link to="/approach">Approach</Link>
+                    </li>
+                    <li>
+                      <Link to="/digital-tools">Digital Tools</Link>
+                    </li>
+                    <li>
+                      <Link to="/application">Application</Link>
+                    </li>
+                    <li>
+                      <Link to="/podcasts">Podcast</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </li>

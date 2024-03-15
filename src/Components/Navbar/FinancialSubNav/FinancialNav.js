@@ -13,7 +13,9 @@ const FinancialNav = (props) => {
       <div className="navbar-logo">{props.navbarTitle}</div>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          <BsChevronDown className="react-icon"/>
+        <BsChevronDown 
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            />
         </p>
       </div>
       <ul className={` navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>

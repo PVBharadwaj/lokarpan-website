@@ -1,5 +1,5 @@
 .flip-card {
-  width: 100%;
+  width: 970px;
   height: 500px;
   perspective: 1000px;
   margin: 30px 0px 250px;
@@ -71,8 +71,8 @@
 
 .right-align {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: -38px;
+  right: -38px;
   justify-content: flex-end;
 }
 
@@ -92,10 +92,20 @@
 }
 
 @media screen and (max-width: 748px) {
+  .flip-card{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 748px) {
   .flip-card-front div,
   .flip-card-back div {
     flex-direction: column;
     text-align: left;
+  }
+
+  .flip-card{
+    width: 300px;
   }
 
   .flip-card-inner h1 {
@@ -144,5 +154,17 @@
 
   .flipopened > div > h1{
     padding: 30px 0px;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 1000px){
+  /* .flip-card-front div,
+  .flip-card-back div {
+    flex-direction: column;
+    text-align: left;
+  } */
+
+  .flip-card{
+    width: 700px;
   }
 }

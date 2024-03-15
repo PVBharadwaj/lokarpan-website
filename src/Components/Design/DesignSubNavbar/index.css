@@ -66,7 +66,8 @@
   height: 20px;
 }
 
-@media screen and (max-width: 836px) {
+/* @media screen and (max-width: 836px) { */
+  @media screen and (max-width: 922px) {
   .dropdown-container .subnav-ul li a {
     font-size: 14px;
     font-weight: 500;

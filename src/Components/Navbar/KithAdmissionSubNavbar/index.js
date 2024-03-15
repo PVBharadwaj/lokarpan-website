@@ -27,7 +27,9 @@ const KithAdmissionSubNavbar = () => {
         >
           <p className="desktop-only" onClick={toggleNavmenu}>
             <span>Browse All</span>
-            <BsChevronDown className="react-icon" />
+            <BsChevronDown 
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            />
           </p>
           <div
             className={` navbar-links click-dropdown ${
@@ -58,7 +60,9 @@ const KithAdmissionSubNavbar = () => {
       </ul>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
-          <BsChevronDown className="react-icon" />
+        <BsChevronDown 
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            />
         </p>
       </div>
     </nav>

@@ -27,38 +27,44 @@ const SupportSubNav = () => {
         >
           <p className="desktop-only" onClick={toggleNavmenu}>
             <span>Browse All</span>
-            <BsChevronDown className="react-icon" />
+            <BsChevronDown 
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            />
           </p>
           <div
             className={` navbar-links click-dropdown ${
               isNavmenuOpen ? "active" : ""
             }`}
           >
-            <div className="dropdown-container">
-              <ul className="support-subnav-list">
-                <h1 className="sub-heading">Explore Support</h1>
-                <li>
-                  <Link to="/why-donate">Why Donate</Link>
-                </li>
-                <li>
-                  <Link to="/being-a-volunteer">Being a Volunteer</Link>
-                </li>
-                <li>
-                  <Link to="/our-role">Our Supporters</Link>
-                </li>
-                <li>
-                  <Link to="/ways-to-give">Ways to Give</Link>
-                </li>
-                <li>
-                  <Link to="/donate">Donate Now</Link>
-                </li>
-              </ul>
+            <div className="click-dropdown-inner">
+              <div className="dropdown-container">
+                <ul className="support-subnav-list">
+                  <h1 className="sub-heading">Explore Support</h1>
+                  <li>
+                    <Link to="/why-donate">Why Donate</Link>
+                  </li>
+                  <li>
+                    <Link to="/being-a-volunteer">Being a Volunteer</Link>
+                  </li>
+                  <li>
+                    <Link to="/our-role">Our Supporters</Link>
+                  </li>
+                  <li>
+                    <Link to="/ways-to-give">Ways to Give</Link>
+                  </li>
+                  <li>
+                    <Link to="/donate">Donate Now</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </li>
         <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
           <p>
-            <BsChevronDown className="react-icon" />
+          <BsChevronDown 
+            className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+          />
           </p>
         </div>
         <li className="navbar-item apply-btn orange">

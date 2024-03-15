@@ -39,7 +39,8 @@
 .donate-card-text {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: justify;
+  width: 100%;
 }
 
 .donate-card-text h1 {

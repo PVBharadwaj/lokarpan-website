@@ -52,7 +52,7 @@ class Livelihood extends Component {
                 className="health-cont-img"
               />
             </div>
-            {/* <div className="health-each-container">
+            <div className="health-each-container">
               <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
@@ -70,7 +70,7 @@ class Livelihood extends Component {
                   independent creators.
                 </p>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="health-full-img space-below">
             <img

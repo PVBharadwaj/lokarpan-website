@@ -16,7 +16,9 @@ const SecondaryNav = () => {
       <ul className="navbar-links lead-mobile-navbar-links">
         <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
           <p>
-            <BsChevronDown className="react-icon"/>
+          <BsChevronDown 
+              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+          />
           </p>
         </div>
         <li>

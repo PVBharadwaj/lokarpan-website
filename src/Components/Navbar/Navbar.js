@@ -166,7 +166,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="global-nav">
+      <div className="navbar">
       <div className="navbar-logo">
         <img
           src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707625023/Frame_48098098_rag4wi.svg"
@@ -204,73 +205,75 @@ const Navbar = () => {
               activeDropdown !== null ? "active" : ""
             }`}
           >
-            <div className="dropdown-container">
-              <h1 className="nav-heading">Explore About</h1>
+            <div className="dropdown-content-inner">
+              <div className="dropdown-container">
+                <h1 className="nav-heading">Explore About</h1>
 
-              <ul className="list-item-container">
-                <li className="mobile-explore">
-                  <Link to="/about" onClick={toggleMenu}>
-                    Explore About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
-                    Our Role
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/history" onClick={toggleMenu}>
-                    History
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/mission" onClick={toggleMenu}>
-                    Mission
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/leadership" onClick={toggleMenu}>
-                    Leadership
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/career" onClick={toggleMenu}>
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/financials" onClick={toggleMenu}>
-                    Financial
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="dropdown-container">
-              <h1 className="quicklinks-heading">Quick Links</h1>
-              <ul className="quick-links">
-                <li>
-                  <Link to="/alumni" onClick={toggleMenu}>
-                    Alumni
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact-us" onClick={toggleMenu}>
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
-                    {/*  need to update to in Link  */}
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/leadership" onClick={toggleMenu}>
-                    {/*  need to update to in Link  */}
-                    Subscribe
-                  </Link>
-                </li>
-              </ul>
+                <ul className="list-item-container">
+                  <li className="mobile-explore">
+                    <Link to="/about" onClick={toggleMenu}>
+                      Explore About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/our-role" onClick={toggleMenu}>
+                      Our Role
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/history" onClick={toggleMenu}>
+                      History
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/mission" onClick={toggleMenu}>
+                      Mission
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/leadership" onClick={toggleMenu}>
+                      Leadership
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/career" onClick={toggleMenu}>
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/financials" onClick={toggleMenu}>
+                      Financials
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="dropdown-container">
+                <h1 className="quicklinks-heading">Quick Links</h1>
+                <ul className="quick-links">
+                  <li>
+                    <Link to="/alumni" onClick={toggleMenu}>
+                      Alumni
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact-us" onClick={toggleMenu}>
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/our-role" onClick={toggleMenu}>
+                      {/*  need to update to in Link  */}
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/leadership" onClick={toggleMenu}>
+                      {/*  need to update to in Link  */}
+                      Subscribe
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </li>
@@ -281,62 +284,63 @@ const Navbar = () => {
           <Link to="/approach" onClick={handleNavlinkClick}>
             Education
           </Link>
-          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
           >
-            <div className="dropdown-container">
-              <h1 className="nav-heading">Explore Education</h1>
-              <ul className="list-item-container">
-                <li className="mobile-explore">
-                  <Link to="/approach" onClick={toggleMenu}>
-                    Explore Education
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/approach" onClick={toggleMenu}>
-                    Approach
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/digital-tool" onClick={toggleMenu}>
-                    Digital Tools
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/application" onClick={toggleMenu}>
-                    Application
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/podcasts" onClick={toggleMenu}>
-                    Podcast
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="dropdown-container">
-              <h1 className="quicklinks-heading">Quick Links</h1>
-              <ul className="quick-links">
-                <li>
-                  <Link to="/impact" onClick={toggleMenu}>
-                    Impact
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/moonshots" onClick={toggleMenu}>
-                    Moonshots
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
-                    {/*  need to update to in Link  */}
-                    Volunteer
-                  </Link>
-                </li>
-              </ul>
+            <div className="dropdown-content-inner">
+              <div className="dropdown-container">
+                <h1 className="nav-heading">Explore Education</h1>
+                <ul className="list-item-container">
+                  <li className="mobile-explore">
+                    <Link to="/approach" onClick={toggleMenu}>
+                      Explore Education
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/approach" onClick={toggleMenu}>
+                      Approach
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/digital-tool" onClick={toggleMenu}>
+                      Digital Tools
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/application" onClick={toggleMenu}>
+                      Application
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/podcasts" onClick={toggleMenu}>
+                      Podcast
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="dropdown-container">
+                <h1 className="quicklinks-heading">Quick Links</h1>
+                <ul className="quick-links">
+                  <li>
+                    <Link to="/impact" onClick={toggleMenu}>
+                      Impact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/moonshots" onClick={toggleMenu}>
+                      Moonshots
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/our-role" onClick={toggleMenu}>
+                      {/*  need to update to in Link  */}
+                      Volunteer
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </li>
@@ -357,36 +361,37 @@ const Navbar = () => {
           <Link to="/design" onClick={handleNavlinkClick}>
             Design
           </Link>
-          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
           >
-            <div className="dropdown-container">
-              <h1 className="nav-heading">Explore Design</h1>
-              <ul className="list-item-container">
-                <li className="mobile-explore">
-                  <Link to="/designlist" onClick={toggleMenu}>
-                    Explore Design
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/designlist" onClick={toggleMenu}>
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/guideline" onClick={toggleMenu}>
-                    Design Guidelines
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/our-role" onClick={toggleMenu}>
-                    Resources
-                  </Link>
-                </li>
-              </ul>
+            <div className="dropdown-content-inner">
+              <div className="dropdown-container">
+                <h1 className="nav-heading">Explore Design</h1>
+                <ul className="list-item-container">
+                  <li className="mobile-explore">
+                    <Link to="/designlist" onClick={toggleMenu}>
+                      Explore Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/designlist" onClick={toggleMenu}>
+                      Projects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/guideline" onClick={toggleMenu}>
+                      Design Guidelines
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/our-role" onClick={toggleMenu}>
+                      Resources
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </li>
@@ -412,61 +417,62 @@ const Navbar = () => {
           <Link to="/ways-to-give" onClick={handleNavlinkClick}>
             Support
           </Link>
-          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
             }`}
           >
-            <div className="dropdown-container">
-              <h1 className="nav-heading">Explore Donate</h1>
-              <ul className="list-item-container">
-                <li className="mobile-explore">
-                  <Link to="/why-donate" onClick={toggleMenu}>
-                    Explore Donate
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/why-donate" onClick={toggleMenu}>
-                    Why Donate
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/being-a-volunteer" onClick={toggleMenu}>
-                    Being a Volunteer
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/our-supporter" onClick={toggleMenu}>
-                    Our Supporters
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/ways-to-give" onClick={toggleMenu}>
-                    Ways to Give
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/donate" onClick={toggleMenu}>
-                    Donate Now
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="dropdown-container">
-              <h1 className="quicklinks-heading">Quick Links</h1>
-              <ul className="quick-links">
-                <li>
-                  <Link to="/financials" onClick={toggleMenu}>
-                    Financials
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/fellowship" onClick={toggleMenu}>
-                    Apply for Fellowship
-                  </Link>
-                </li>
-              </ul>
+            <div className="dropdown-content-inner">
+              <div className="dropdown-container">
+                <h1 className="nav-heading">Explore Donate</h1>
+                <ul className="list-item-container">
+                  <li className="mobile-explore">
+                    <Link to="/why-donate" onClick={toggleMenu}>
+                      Explore Donate
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/why-donate" onClick={toggleMenu}>
+                      Why Donate
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/being-a-volunteer" onClick={toggleMenu}>
+                      Being a Volunteer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/our-supporter" onClick={toggleMenu}>
+                      Our Supporters
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/ways-to-give" onClick={toggleMenu}>
+                      Ways to Give
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/donate" onClick={toggleMenu}>
+                      Donate Now
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="dropdown-container">
+                <h1 className="quicklinks-heading">Quick Links</h1>
+                <ul className="quick-links">
+                  <li>
+                    <Link to="/financials" onClick={toggleMenu}>
+                      Financials
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/fellowship" onClick={toggleMenu}>
+                      Apply for Fellowship
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </li>
@@ -487,57 +493,60 @@ const Navbar = () => {
               isSearchmenuOpen ? "active" : ""
             }`}
           >
-            <div className="nav-searchbar">
-              <RxCross2
-                className="cross"
-                onClick={closeSearchMenu}
-                style={{ fontSize: "20px" }}
-              />
-              <div className="nav-form">
-                <CiSearch className="react-icon size-80" />
-                  <input
-                    className="nav-form-control text-input"
-                    type="text"
-                    placeholder="Search..."
-                    value={queryText}
-                    onChange={handleSearchChange}
-                    ref={(input) => {
-                      if (input) {
-                        input.focus();
-                      }
-                    }}
-                  />
-              </div>
-              <div className="search-quick-links">
-                {queryText === "" ? (
-                  <div>
-                    <h4>Quick Links</h4>
-                    <ul className="quick-links">
-                      <li>
-                        <Link to="/history">History</Link>
-                      </li>
-                      <li>
-                        <Link to="/moonshots">Careers</Link>
-                      </li>
-                      <li>
-                        <Link to="/our-role">Blog</Link>
-                      </li>
-                    </ul>
-                  </div>
-                ) : searchResults.length === 0 ? (
-                  "No results found"
-                ) : (
-                  searchResults.map((result) => (
-                    <ul>
-                      <li key={result.item.id}>
-                        {" "}
-                        <a href={result.item.link}>{result.item.name}</a>
-                      </li>
-                    </ul>
-                  ))
-                )}
+            <div className="click-dropdown-inner">
+              <div className="nav-searchbar">
+                <RxCross2
+                  className="cross"
+                  onClick={closeSearchMenu}
+                  style={{ fontSize: "20px" }}
+                />
+                <div className="nav-form">
+                  <CiSearch className="react-icon size-80" />
+                    <input
+                      className="nav-form-control text-input"
+                      type="text"
+                      placeholder="Search..."
+                      value={queryText}
+                      onChange={handleSearchChange}
+                      ref={(input) => {
+                        if (input) {
+                          input.focus();
+                        }
+                      }}
+                    />
+                </div>
+                <div className="search-quick-links">
+                  {queryText === "" ? (
+                    <div>
+                      <h4>Quick Links</h4>
+                      <ul className="quick-links">
+                        <li>
+                          <Link to="/history">History</Link>
+                        </li>
+                        <li>
+                          <Link to="/moonshots">Careers</Link>
+                        </li>
+                        <li>
+                          <Link to="/our-role">Blog</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  ) : searchResults.length === 0 ? (
+                    "No results found"
+                  ) : (
+                    searchResults.map((result) => (
+                      <ul>
+                        <li key={result.item.id}>
+                          {" "}
+                          <a href={result.item.link}>{result.item.name}</a>
+                        </li>
+                      </ul>
+                    ))
+                  )}
+                </div>
               </div>
             </div>
+
           </div>
         </li>
         <li className="navbar-item navbar-icon">
@@ -554,6 +563,7 @@ const Navbar = () => {
           />
         </li>
       </ul>
+      </div>
     </nav>
   );
 };

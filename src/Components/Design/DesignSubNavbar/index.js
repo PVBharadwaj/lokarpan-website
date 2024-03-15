@@ -39,23 +39,26 @@ const SubNavbar = () => {
                 isNavmenuOpen ? "active" : ""
               }`}
             >
-              <div className="dropdown-container">
-                <h1 className="sub-heading">Explore Design</h1>
-                <ul className="subnav-ul">
-                  <li>
-                    <Link to="/design">Overview</Link>
-                  </li>
-                  <li>
-                    <Link to="/designlist">Projects</Link>
-                  </li>
-                  <li>
-                    <Link to="/guideline">Design Guidelines</Link>
-                  </li>
-                  <li>
-                    <Link to="/resources">Resources</Link>
-                  </li>
-                </ul>
+              <div className="click-dropdown-inner">
+                <div className="dropdown-container">
+                  <h1 className="sub-heading">Explore Design</h1>
+                  <ul className="subnav-ul">
+                    <li>
+                      <Link to="/design">Overview</Link>
+                    </li>
+                    <li>
+                      <Link to="/designlist">Projects</Link>
+                    </li>
+                    <li>
+                      <Link to="/guideline">Design Guidelines</Link>
+                    </li>
+                    <li>
+                      <Link to="/resources">Resources</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
             </div>
           </li>
         </ul>
