@@ -126,9 +126,15 @@ class OurRole extends Component {
               <div className="our-role-each-container-content">
                 <h1>Education</h1>
                 <p>
-                  We support digital skills training for job seekers, equitable
-                  access to capital, and small and medium businesses—
-                  particularly in underrepresented communities.
+                  Lokarpan is dedicated to bridging gaps in the education system
+                  through innovative, technology-assisted solutions for learners
+                  of all ages. Our mission? To elevate India's representation in
+                  the PISA rankings by 2027, benefiting over 100,000
+                  individuals. With a diverse team of instructors, we actively
+                  engage with students in schools and communities, focusing on
+                  creating enhanced teaching tools, expanding skill development,
+                  and integrating technology to deliver the very best
+                  educational standards across rural India.
                 </p>
               </div>
               <div className="education-cards-container ">
@@ -141,8 +147,10 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        At Lokarpan's learning centre, we're dedicated to
+                        creating a specially designed curriculum that targets
+                        learning gaps in children. With our digital classrooms,
+                        learning becomes engaging and memorable. Learn more.
                       </h3>
 
                       <Popup
@@ -237,8 +245,11 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Bridging the education gap, Lokarpan offers a digital
+                        content library focusing on English and STEM subjects,
+                        empowering young learners. Immerse in our captivating
+                        audio podcasts, where children can explore and practise
+                        new realms of knowledge.
                       </h3>
 
                       <Popup
@@ -331,8 +342,10 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Join Lokarpan's passionate team committed to making a
+                        real impact. Our dedicated Fellows volunteer in
+                        classrooms and support various departments, uniting to
+                        shape a brighter future for rural education
                       </h3>
 
                       <Popup
@@ -428,8 +441,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content" onClick={this.updatePopUpOpen}>
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      At Lokarpan's learning centre, we're dedicated to creating
+                      a specially designed curriculum that targets learning gaps
+                      in children. With our digital classrooms, learning becomes
+                      engaging and memorable.
                     </h3>
 
                     <Popup
@@ -522,8 +537,11 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Bridging the education gap, Lokarpan offers a digital
+                      content library focusing on English and STEM subjects,
+                      empowering young learners. Immerse in our captivating
+                      audio podcasts, where children can explore and practise
+                      new realms of knowledge.
                     </h3>
 
                     <Popup
@@ -616,8 +634,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Join Lokarpan's passionate team committed to making a real
+                      impact. Our dedicated Fellows volunteer in classrooms and
+                      support various departments, uniting to shape a brighter
+                      future for rural education
                     </h3>
 
                     <Popup
@@ -716,8 +736,9 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        With a focus on reducing infant and maternal mortality
+                        rates, Lokarpan prioritises providing essential midwife
+                        support and valuable educational resources for families.
                       </h3>
 
                       <Popup
@@ -810,8 +831,12 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Lokarpan's Vaccination program is designed to protect
+                        communities against eight life-threatening diseases. We
+                        work diligently to complete vaccination schedules for
+                        children, following government guidelines. Our focus
+                        includes preventing diseases such as malaria and polio
+                        to safeguard community health
                       </h3>
 
                       <Popup
@@ -906,8 +931,12 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Ensuring adequate nutrition for children is a key focus
+                        of our Nutrition initiatives. We monitor health
+                        indicators closely to address any nutritional gaps and
+                        implement programs that supply food to schools and
+                        homes, combating malnutrition and promoting healthy
+                        growth
                       </h3>
                       <Popup
                         trigger={
@@ -1002,8 +1031,9 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      With a focus on reducing infant and maternal mortality
+                      rates, Lokarpan prioritises providing essential midwife
+                      support and valuable educational resources for families.
                     </h3>
 
                     <Popup
@@ -1096,8 +1126,12 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Lokarpan's Vaccination program is designed to protect
+                      communities against eight life-threatening diseases. We
+                      work diligently to complete vaccination schedules for
+                      children, following government guidelines. Our focus
+                      includes preventing diseases such as malaria and polio to
+                      safeguard community health.
                     </h3>
 
                     <Popup
@@ -1190,8 +1224,11 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Ensuring adequate nutrition for children is a key focus of
+                      our Nutrition initiatives. We monitor health indicators
+                      closely to address any nutritional gaps and implement
+                      programs that supply food to schools and homes, combating
+                      malnutrition and promoting healthy growth
                     </h3>
 
                     <Popup
@@ -1279,9 +1316,12 @@ class OurRole extends Component {
               <div className="our-role-each-container-content">
                 <h1>Health</h1>
                 <p>
-                  We support digital skills training for job seekers, equitable
-                  access to capital, and small and medium businesses—
-                  particularly in underrepresented communities.
+                  Lokarpan is committed to advancing community health through a
+                  range of impactful initiatives. Our goal is to reduce infant
+                  and mother mortality rates, ensuring a safe and healthy start
+                  for families. With a focus on providing midwife support,
+                  essential nutrition, and educational resources, we strive to
+                  empower mothers and children alike.
                 </p>
               </div>
             </div>
@@ -1291,9 +1331,12 @@ class OurRole extends Component {
               <div className="our-role-each-container-content">
                 <h1>Liveliood</h1>
                 <p>
-                  We support digital skills training for job seekers, equitable
-                  access to capital, and small and medium businesses—
-                  particularly in underrepresented communities.
+                  Lokarpan is committed to alleviating poverty in rural India.
+                  Through tailored skill development programs, microfinance
+                  initiatives, and entrepreneurship support, we empower
+                  individuals to improve economic conditions and enhance social
+                  mobility. Our goal is to foster stronger, more self-reliant
+                  communities.
                 </p>
               </div>
               <div className="education-cards-container">
@@ -1306,8 +1349,10 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Lokarpan empowers individuals through tailored skill
+                        development programs, fostering entrepreneurship and
+                        self-reliance. Our initiatives enhance employability,
+                        creating sustainable livelihoods for community growth
                       </h3>
                       <Popup
                         trigger={
@@ -1401,8 +1446,9 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Empowering individuals through financial inclusion,
+                        Lokarpan offers small loans and financial services to
+                        low-income individuals and budding entrepreneurs
                       </h3>
 
                       <Popup
@@ -1591,8 +1637,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Lokarpan empowers individuals through tailored skill
+                      development programs, fostering entrepreneurship and
+                      self-reliance. Our initiatives enhance employability,
+                      creating sustainable livelihoods for community growth
                     </h3>
 
                     <Popup
@@ -1685,8 +1733,9 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Empowering individuals through financial inclusion,
+                      Lokarpan offers small loans and financial services to
+                      low-income individuals and budding entrepreneurs
                     </h3>
 
                     <Popup
@@ -1879,8 +1928,10 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Lokarpan’s learning centre heavily invests in creating a
+                        specially designed curriculum that aims to address
+                        learning gaps in children. With digital classrooms,
+                        we’re making learning more fun and memorable
                       </h3>
 
                       <Popup
@@ -1973,8 +2024,11 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        We are bridging the education gap with a digital content
+                        library for English and STEM subjects, empowering young
+                        learners. Dive into our engaging audio podcasts, where
+                        children can practise and explore new worlds of
+                        knowledge.
                       </h3>
 
                       <Popup
@@ -2069,8 +2123,10 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        We've gathered a passionate group committed to making a
+                        difference. Our Fellows volunteer in classrooms and
+                        support various departments, uniting to build a brighter
+                        future for rural education
                       </h3>
 
                       <Popup
@@ -2166,8 +2222,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Lokarpan’s learning centre heavily invests in creating a
+                      specially designed curriculum that aims to address
+                      learning gaps in children. With digital classrooms, we’re
+                      making learning more fun and memorable.
                     </h3>
                     <Popup
                       trigger={
@@ -2259,8 +2317,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      We are bridging the education gap with a digital content
+                      library for English and STEM subjects, empowering young
+                      learners. Dive into our engaging audio podcasts, where
+                      children can practise and explore new worlds of knowledge.
                     </h3>
 
                     <Popup
@@ -2353,8 +2413,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      We've gathered a passionate group committed to making a
+                      difference. Our Fellows volunteer in classrooms and
+                      support various departments, uniting to build a brighter
+                      future for rural education
                     </h3>
 
                     <Popup
@@ -2442,9 +2504,14 @@ class OurRole extends Component {
               <div className="our-role-each-container-content">
                 <h1>Design</h1>
                 <p>
-                  We support digital skills training for job seekers, equitable
-                  access to capital, and small and medium businesses—
-                  particularly in underrepresented communities.
+                  Our initiatives in design reflect our dedication to
+                  transforming education in rural India. With a focus on
+                  project-based learning, online resources, and cutting-edge
+                  labs, Lokarpan seeks to bridge the gap in educational
+                  infrastructure. We believe that by prioritising children's
+                  perspectives in design, we can foster environments that
+                  empower young learners, enabling them to shape the spaces they
+                  inhabit.
                 </p>
               </div>
             </div>
@@ -2454,9 +2521,17 @@ class OurRole extends Component {
               <div className="our-role-each-container-content">
                 <h1>Environment</h1>
                 <p>
-                  We support digital skills training for job seekers, equitable
-                  access to capital, and small and medium businesses—
-                  particularly in underrepresented communities.
+                  Lokarpan addresses gaps in education systems with innovative,
+                  technology-assisted solutions that span the age spectrum. Our
+                  goal? To showcase excellence by representing India in the PISA
+                  rankings by 2027 with over 100k beneficiaries. We work
+                  directly and through government systems to reach thousands of
+                  children and school dropouts each year. Our instructors engage
+                  with children either in schools or within the community. We
+                  are working to create better teaching tools, scale up skill
+                  development and integrate technology to aid teachers in
+                  delivering the very best educational standards across rural
+                  India.
                 </p>
               </div>
               <div className="education-cards-container">
@@ -2469,8 +2544,11 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        Lokarpan’s learning centre heavily invests in creating a
+                        specially designed curriculum that aims to address
+                        learning gaps in children. With digital classrooms,
+                        we’re making learning more fun and memorable. 1 lakh
+                        trees planted
                       </h3>
 
                       <Popup
@@ -2565,8 +2643,11 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        We are bridging the education gap with a digital content
+                        library for English and STEM subjects, empowering young
+                        learners. Dive into our engaging audio podcasts, where
+                        children can practise and explore new worlds of
+                        knowledge. Identification survey, building heatmaps
                       </h3>
 
                       <Popup
@@ -2659,8 +2740,10 @@ class OurRole extends Component {
                     />
                     <div className="card-content">
                       <h3>
-                        Helping Youth Business International support underserved
-                        small business-owners
+                        We've gathered a passionate group committed to making a
+                        difference. Our Fellows volunteer in classrooms and
+                        support various departments, uniting to build a brighter
+                        future for rural education
                       </h3>
 
                       <Popup
@@ -2756,8 +2839,11 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      Lokarpan’s learning centre heavily invests in creating a
+                      specially designed curriculum that aims to address
+                      learning gaps in children. With digital classrooms, we’re
+                      making learning more fun and memorable. 1 lakh trees
+                      planted
                     </h3>
                     <Popup
                       trigger={
@@ -2849,8 +2935,11 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      We are bridging the education gap with a digital content
+                      library for English and STEM subjects, empowering young
+                      learners. Dive into our engaging audio podcasts, where
+                      children can practise and explore new worlds of knowledge.
+                      Identification survey, building heatmaps.
                     </h3>
 
                     <Popup
@@ -2943,8 +3032,10 @@ class OurRole extends Component {
                   />
                   <div className="card-content">
                     <h3>
-                      Helping Youth Business International support underserved
-                      small business-owners
+                      We've gathered a passionate group committed to making a
+                      difference. Our Fellows volunteer in classrooms and
+                      support various departments, uniting to build a brighter
+                      future for rural education
                     </h3>
 
                     <Popup
