@@ -73,11 +73,6 @@ const SupportSubNav = () => {
           </Link>
         </li>
       </ul>
-      {/* <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
-        <p>
-          <BsChevronDown className="react-icon"/>
-        </p>
-      </div> */}
     </nav>
   );
 };

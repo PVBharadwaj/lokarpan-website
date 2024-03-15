@@ -36,30 +36,26 @@ const KithLifeAtSchoolSubNavbar = () => {
               isNavmenuOpen ? "active" : ""
             }`}
           >
-            <div className="dropdown-container">
-              <ul className="support-subnav-list">
-                <h1 className="sub-heading">Explore Life At School</h1>
-                <li>
-                  <Link to="/kith/campus-and-culture">Campus & Culture</Link>
-                </li>
-                <li>
-                  <Link to="/kith/club-and-commitee">Committee & Club</Link>
-                </li>
-                <li>
-                  <Link to="/kith/safety-and-wellbeing">
-                    Safety & WellBeing
-                  </Link>
-                </li>
-              </ul>
+            <div className="click-dropdown-inner">
+              <div className="dropdown-container">
+                <ul className="support-subnav-list">
+                  <h1 className="sub-heading">Explore Life At School</h1>
+                  <li>
+                    <Link to="/kith/campus-and-culture">Campus & Culture</Link>
+                  </li>
+                  <li>
+                    <Link to="/kith/club-and-commitee">Committee & Club</Link>
+                  </li>
+                  <li>
+                    <Link to="/kith/safety-and-wellbeing">
+                      Safety & WellBeing
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </li>
-        <li className="navbar-item apply-btn orange">
-          <Link to="/donate" className="apply-btn-text-white navbar-btn">
-            Donate
-          </Link>
-        </li>
-      </ul>
       <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
         <p>
         <BsChevronDown 
@@ -67,6 +63,12 @@ const KithLifeAtSchoolSubNavbar = () => {
             />
         </p>
       </div>
+        <li className="navbar-item apply-btn orange">
+          <Link to="/donate" className="apply-btn-text-white navbar-btn">
+            Donate
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };
