@@ -6,8 +6,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
-import Fuse from "fuse.js";
 import { CiSearch } from "react-icons/ci";
+import Fuse from "fuse.js";
 
 
 const items = [
@@ -139,7 +139,7 @@ const Navbar = () => {
   };
 
   const handleNavlinkClick = (e) => {
-    if (window.innerWidth <= 805) {
+    if (window.innerWidth <= 922) {
       e.preventDefault();
       toggleDropdown();
     }
@@ -216,7 +216,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/our-role" onClick={toggleMenu}>
+                    <Link to="/about" onClick={toggleMenu}>
                       Our Role
                     </Link>
                   </li>
@@ -482,7 +482,7 @@ const Navbar = () => {
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
-          <div className="dummy-search"></div>
+          {/* <div className="dummy-search"></div> */}
           <FiSearch
             style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
@@ -534,19 +534,20 @@ const Navbar = () => {
                   ) : searchResults.length === 0 ? (
                     "No results found"
                   ) : (
-                    searchResults.map((result) => (
+                    <>
+                      <h4>Suggested Links</h4>
                       <ul>
-                        <li key={result.item.id}>
-                          {" "}
-                          <a href={result.item.link}>{result.item.name}</a>
-                        </li>
+                        {searchResults.map((result) => (
+                          <li key={result.item.id}>
+                            <a href={result.item.link}>{result.item.name}</a>
+                          </li>
+                        ))}
                       </ul>
-                    ))
+                    </>
                   )}
                 </div>
               </div>
             </div>
-
           </div>
         </li>
         <li className="navbar-item navbar-icon">
