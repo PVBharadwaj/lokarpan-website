@@ -233,7 +233,7 @@
     padding-inline-end: max(20px, var(--navbar-padding));
   }
   .mobile-explore {
-    display: block;
+    display: none;
   }
 
   .navbar-menu {

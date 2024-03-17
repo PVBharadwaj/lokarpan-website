@@ -320,7 +320,7 @@ const Navbar = () => {
             className="navbar-item dropdown navbar-icon nav-search"
             onMouseLeave={closeSearchMenu}
           >
-            <div className="dummy-search"></div>
+            {/* <div className="dummy-search"></div> */}
             <FiSearch
               style={{ color: "#6B7280", height: "100%" }}
               className="navbar-icon-inner"
@@ -392,7 +392,7 @@ const Navbar = () => {
               style={{ color: "#6B7280", height: "100%" }}
             />
           </li>
-          <li className="navbar-item">
+          <li className="navbar-item hamburger-item">
             <RxHamburgerMenu
               className="hamburger navbar-icon-inner"
               style={{ color: "#6B7280", height: "100%" }}

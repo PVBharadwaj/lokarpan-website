@@ -35,7 +35,6 @@ const EducationSubNav = () => {
             <p onClick={toggleNavmenu}>
               <span className="desktop-only">Browse All</span>
             <BsChevronDown 
-              style={{ fontSize: "20px" }}
               className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
             />
             </p>
