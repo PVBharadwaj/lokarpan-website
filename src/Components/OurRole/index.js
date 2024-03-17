@@ -556,16 +556,11 @@ class OurRole extends Component {
                   <div className="card-content">
                     <h4>Podcasts and Digital Content</h4>
                     <h3>
-                      Lokarpan is dedicated to bridging gaps in the education
-                      system through innovative, technology-assisted solutions
-                      for learners of all ages. Our mission? To elevate India's
-                      representation in the PISA rankings by 2027, benefiting
-                      over 100,000 individuals. With a diverse team of
-                      instructors, we actively engage with students in schools
-                      and communities, focusing on creating enhanced teaching
-                      tools, expanding skill development, and integrating
-                      technology to deliver the very best educational standards
-                      across rural India..
+                      Bridging the education gap, Lokarpan offers a digital
+                      content library focusing on English and STEM subjects,
+                      empowering young learners. Immerse in our captivating
+                      audio podcasts, where children can explore and practise
+                      new realms of knowledge.
                     </h3>
 
                     <Popup
