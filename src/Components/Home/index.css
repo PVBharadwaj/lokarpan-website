@@ -432,8 +432,8 @@
 }
 
 .app-container-m1 {
-  width: 1020px;
-  height: 460px;
+  width: 980px;
+  height: 500px;
   background-color: #3f86f0;
   border-radius: 32px;
   color: #000000;
@@ -562,6 +562,13 @@
 .mobile-home {
   display: none;
 }
+@media only screen and (max-width: 1010px) {
+  .app-container-m1 {
+    width: 692px;
+    height: 400px;
+  }
+}
+
 @media only screen and (max-width: 748px) {
   .mobile-home {
     display: flex;
@@ -724,8 +731,8 @@
     font-size: 16px;
   }
   .app-container-m1 {
-    width: calc(100% - 100px) !important;
-    height: 350px;
+    width: 325px !important;
+    height: 320px;
     border-radius: 16px;
     margin-top: 80px;
   }
@@ -796,8 +803,8 @@
     width: auto;
   }
   .play-pause-icon {
-    font-size: 20px;
-    stroke-width: 3 !important;
+    font-size: 33px;
+    /* stroke-width: 3 !important; */
   }
   .carousal-container1 {
     height: 240px;

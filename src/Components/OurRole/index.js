@@ -146,6 +146,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Kith n Kin</h4>
                       <h3>
                         At Lokarpan's learning centre, we're dedicated to
                         creating a specially designed curriculum that targets
@@ -180,18 +181,21 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
-                                  </h3>
+                                  <h3 className="popup-font40">Kith n Kin</h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is dedicated to bridging gaps in
+                                    the education system through innovative,
+                                    technology-assisted solutions for learners
+                                    of all ages. Our mission? To elevate India's
+                                    representation in the PISA rankings by 2027,
+                                    benefiting over 100,000 individuals. With a
+                                    diverse team of instructors, we actively
+                                    engage with students in schools and
+                                    communities, focusing on creating enhanced
+                                    teaching tools, expanding skill development,
+                                    and integrating technology to deliver the
+                                    very best educational standards across rural
+                                    India.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -244,6 +248,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4> Podcasts and Digital Content</h4>
                       <h3>
                         Bridging the education gap, Lokarpan offers a digital
                         content library focusing on English and STEM subjects,
@@ -280,17 +285,22 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    PODCASTS AND DIGITAL CONTENT
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is dedicated to bridging gaps in
+                                    the education system through innovative,
+                                    technology-assisted solutions for learners
+                                    of all ages. Our mission? To elevate India's
+                                    representation in the PISA rankings by 2027,
+                                    benefiting over 100,000 individuals. With a
+                                    diverse team of instructors, we actively
+                                    engage with students in schools and
+                                    communities, focusing on creating enhanced
+                                    teaching tools, expanding skill development,
+                                    and integrating technology to deliver the
+                                    very best educational standards across rural
+                                    India.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -341,6 +351,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Fellowship</h4>
                       <h3>
                         Join Lokarpan's passionate team committed to making a
                         real impact. Our dedicated Fellows volunteer in
@@ -375,18 +386,21 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
-                                  </h3>
+                                  <h3 className="popup-font40">FELLOWSHIP</h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is dedicated to bridging gaps in
+                                    the education system through innovative,
+                                    technology-assisted solutions for learners
+                                    of all ages. Our mission? To elevate India's
+                                    representation in the PISA rankings by 2027,
+                                    benefiting over 100,000 individuals. With a
+                                    diverse team of instructors, we actively
+                                    engage with students in schools and
+                                    communities, focusing on creating enhanced
+                                    teaching tools, expanding skill development,
+                                    and integrating technology to deliver the
+                                    very best educational standards across rural
+                                    India.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -440,6 +454,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content" onClick={this.updatePopUpOpen}>
+                    <h4>Kith n Kin</h4>
                     <h3>
                       At Lokarpan's learning centre, we're dedicated to creating
                       a specially designed curriculum that targets learning gaps
@@ -474,17 +489,20 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">KITH N KITH</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is dedicated to bridging gaps in the
+                                  education system through innovative,
+                                  technology-assisted solutions for learners of
+                                  all ages. Our mission? To elevate India's
+                                  representation in the PISA rankings by 2027,
+                                  benefiting over 100,000 individuals. With a
+                                  diverse team of instructors, we actively
+                                  engage with students in schools and
+                                  communities, focusing on creating enhanced
+                                  teaching tools, expanding skill development,
+                                  and integrating technology to deliver the very
+                                  best educational standards across rural India.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -536,6 +554,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Podcasts and Digital Content</h4>
                     <h3>
                       Bridging the education gap, Lokarpan offers a digital
                       content library focusing on English and STEM subjects,
@@ -572,16 +591,21 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  PODCASTS AND DIGITAL CONTENT
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is dedicated to bridging gaps in the
+                                  education system through innovative,
+                                  technology-assisted solutions for learners of
+                                  all ages. Our mission? To elevate India's
+                                  representation in the PISA rankings by 2027,
+                                  benefiting over 100,000 individuals. With a
+                                  diverse team of instructors, we actively
+                                  engage with students in schools and
+                                  communities, focusing on creating enhanced
+                                  teaching tools, expanding skill development,
+                                  and integrating technology to deliver the very
+                                  best educational standards across rural India.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -633,6 +657,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Fellowship</h4>
                     <h3>
                       Join Lokarpan's passionate team committed to making a real
                       impact. Our dedicated Fellows volunteer in classrooms and
@@ -667,17 +692,20 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">FELLOWSHIP</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is dedicated to bridging gaps in the
+                                  education system through innovative,
+                                  technology-assisted solutions for learners of
+                                  all ages. Our mission? To elevate India's
+                                  representation in the PISA rankings by 2027,
+                                  benefiting over 100,000 individuals. With a
+                                  diverse team of instructors, we actively
+                                  engage with students in schools and
+                                  communities, focusing on creating enhanced
+                                  teaching tools, expanding skill development,
+                                  and integrating technology to deliver the very
+                                  best educational standards across rural India.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -735,6 +763,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Maternal and Child Health</h4>
                       <h3>
                         With a focus on reducing infant and maternal mortality
                         rates, Lokarpan prioritises providing essential midwife
@@ -769,17 +798,18 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    MATERNAL AND CHILD HEALTH
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is committed to advancing community
+                                    health through a range of impactful
+                                    initiatives. Our goal is to reduce infant
+                                    and mother mortality rates, ensuring a safe
+                                    and healthy start for families. With a focus
+                                    on providing midwife support, essential
+                                    nutrition, and educational resources, we
+                                    strive to empower mothers and children
+                                    alike.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -830,6 +860,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Vaccination</h4>
                       <h3>
                         Lokarpan's Vaccination program is designed to protect
                         communities against eight life-threatening diseases. We
@@ -866,18 +897,17 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
-                                  </h3>
+                                  <h3 className="popup-font40">vACCINATION</h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is committed to advancing community
+                                    health through a range of impactful
+                                    initiatives. Our goal is to reduce infant
+                                    and mother mortality rates, ensuring a safe
+                                    and healthy start for families. With a focus
+                                    on providing midwife support, essential
+                                    nutrition, and educational resources, we
+                                    strive to empower mothers and children
+                                    alike.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -930,6 +960,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Nutrition</h4>
                       <h3>
                         Ensuring adequate nutrition for children is a key focus
                         of our Nutrition initiatives. We monitor health
@@ -965,18 +996,17 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
-                                  </h3>
+                                  <h3 className="popup-font40">NUTRITION</h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is committed to advancing community
+                                    health through a range of impactful
+                                    initiatives. Our goal is to reduce infant
+                                    and mother mortality rates, ensuring a safe
+                                    and healthy start for families. With a focus
+                                    on providing midwife support, essential
+                                    nutrition, and educational resources, we
+                                    strive to empower mothers and children
+                                    alike.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -1030,6 +1060,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Maternal and Child Health</h4>
                     <h3>
                       With a focus on reducing infant and maternal mortality
                       rates, Lokarpan prioritises providing essential midwife
@@ -1064,16 +1095,17 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  MATERNAL AND CHILD HEALTH
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is committed to advancing community
+                                  health through a range of impactful
+                                  initiatives. Our goal is to reduce infant and
+                                  mother mortality rates, ensuring a safe and
+                                  healthy start for families. With a focus on
+                                  providing midwife support, essential
+                                  nutrition, and educational resources, we
+                                  strive to empower mothers and children alike
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1125,6 +1157,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Vaccination</h4>
                     <h3>
                       Lokarpan's Vaccination program is designed to protect
                       communities against eight life-threatening diseases. We
@@ -1161,17 +1194,16 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">VACCINATION</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is committed to advancing community
+                                  health through a range of impactful
+                                  initiatives. Our goal is to reduce infant and
+                                  mother mortality rates, ensuring a safe and
+                                  healthy start for families. With a focus on
+                                  providing midwife support, essential
+                                  nutrition, and educational resources, we
+                                  strive to empower mothers and children alike
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1223,6 +1255,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4> Nutrition</h4>
                     <h3>
                       Ensuring adequate nutrition for children is a key focus of
                       our Nutrition initiatives. We monitor health indicators
@@ -1258,17 +1291,16 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">NUTRITION</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is committed to advancing community
+                                  health through a range of impactful
+                                  initiatives. Our goal is to reduce infant and
+                                  mother mortality rates, ensuring a safe and
+                                  healthy start for families. With a focus on
+                                  providing midwife support, essential
+                                  nutrition, and educational resources, we
+                                  strive to empower mothers and children alike.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1348,6 +1380,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Skill Development</h4>
                       <h3>
                         Lokarpan empowers individuals through tailored skill
                         development programs, fostering entrepreneurship and
@@ -1382,17 +1415,17 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    SKILL DEVELOPMENT
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is committed to alleviating poverty
+                                    in rural India. Through tailored skill
+                                    development programs, microfinance
+                                    initiatives, and entrepreneurship support,
+                                    we empower individuals to improve economic
+                                    conditions and enhance social mobility. Our
+                                    goal is to foster stronger, more
+                                    self-reliant communities
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -1445,6 +1478,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Microfinance</h4>
                       <h3>
                         Empowering individuals through financial inclusion,
                         Lokarpan offers small loans and financial services to
@@ -1478,18 +1512,16 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
-                                  </h3>
+                                  <h3 className="popup-font40">MICROFINANCE</h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is committed to alleviating poverty
+                                    in rural India. Through tailored skill
+                                    development programs, microfinance
+                                    initiatives, and entrepreneurship support,
+                                    we empower individuals to improve economic
+                                    conditions and enhance social mobility. Our
+                                    goal is to foster stronger, more
+                                    self-reliant communities.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -1636,6 +1668,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Skill Development</h4>
                     <h3>
                       Lokarpan empowers individuals through tailored skill
                       development programs, fostering entrepreneurship and
@@ -1671,16 +1704,17 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  SKILL DEVELOPMENT
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is committed to alleviating poverty
+                                  in rural India. Through tailored skill
+                                  development programs, microfinance
+                                  initiatives, and entrepreneurship support, we
+                                  empower individuals to improve economic
+                                  conditions and enhance social mobility. Our
+                                  goal is to foster stronger, more self-reliant
+                                  communities.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1732,6 +1766,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Microfinance</h4>
                     <h3>
                       Empowering individuals through financial inclusion,
                       Lokarpan offers small loans and financial services to
@@ -1765,17 +1800,16 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">MICROFINANCE</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is committed to alleviating poverty
+                                  in rural India. Through tailored skill
+                                  development programs, microfinance
+                                  initiatives, and entrepreneurship support, we
+                                  empower individuals to improve economic
+                                  conditions and enhance social mobility. Our
+                                  goal is to foster stronger, more self-reliant
+                                  communities.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1927,11 +1961,11 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Design Fellowship</h4>
                       <h3>
-                        Lokarpan’s learning centre heavily invests in creating a
-                        specially designed curriculum that aims to address
-                        learning gaps in children. With digital classrooms,
-                        we’re making learning more fun and memorable
+                        Drawing insights from challenges in rural educational
+                        infrastructure, we invite experts to join us in
+                        designing the ideal school for our communities
                       </h3>
 
                       <Popup
@@ -1962,17 +1996,19 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    DESIGN FELLOWSHIP
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Our initiatives in design reflect our
+                                    dedication to transforming education in
+                                    rural India. With a focus on project-based
+                                    learning, online resources, and cutting-edge
+                                    labs, Lokarpan seeks to bridge the gap in
+                                    educational infrastructure. We believe that
+                                    by prioritising children's perspectives in
+                                    design, we can foster environments that
+                                    empower young learners, enabling them to
+                                    shape the spaces they inhabit
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -2023,12 +2059,13 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Reading Rooms</h4>
                       <h3>
-                        We are bridging the education gap with a digital content
-                        library for English and STEM subjects, empowering young
-                        learners. Dive into our engaging audio podcasts, where
-                        children can practise and explore new worlds of
-                        knowledge.
+                        Dedicated to cultivating a passion for reading in rural
+                        India, our reading room offers a diverse collection of
+                        books, power outlets, and digital workstations for young
+                        learners. This initiative aims to create an inviting
+                        space that sparks curiosity and exploration.
                       </h3>
 
                       <Popup
@@ -2059,17 +2096,19 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    READING ROOMS
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Our initiatives in design reflect our
+                                    dedication to transforming education in
+                                    rural India. With a focus on project-based
+                                    learning, online resources, and cutting-edge
+                                    labs, Lokarpan seeks to bridge the gap in
+                                    educational infrastructure. We believe that
+                                    by prioritising children's perspectives in
+                                    design, we can foster environments that
+                                    empower young learners, enabling them to
+                                    shape the spaces they inhabit.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -2122,11 +2161,12 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Sanitation</h4>
                       <h3>
-                        We've gathered a passionate group committed to making a
-                        difference. Our Fellows volunteer in classrooms and
-                        support various departments, uniting to build a brighter
-                        future for rural education
+                        Lokarpan is constructing child-friendly, functional
+                        bathroom stalls tailored for school environments. Our
+                        aim is to ensure a safe, comfortable, and
+                        age-appropriate restroom experience for children.
                       </h3>
 
                       <Popup
@@ -2156,18 +2196,18 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
-                                  </h3>
+                                  <h3 className="popup-font40">SANITATION</h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Our initiatives in design reflect our
+                                    dedication to transforming education in
+                                    rural India. With a focus on project-based
+                                    learning, online resources, and cutting-edge
+                                    labs, Lokarpan seeks to bridge the gap in
+                                    educational infrastructure. We believe that
+                                    by prioritising children's perspectives in
+                                    design, we can foster environments that
+                                    empower young learners, enabling them to
+                                    shape the spaces they inhabit.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -2221,11 +2261,11 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Design Fellowship</h4>
                     <h3>
-                      Lokarpan’s learning centre heavily invests in creating a
-                      specially designed curriculum that aims to address
-                      learning gaps in children. With digital classrooms, we’re
-                      making learning more fun and memorable.
+                      Drawing insights from challenges in rural educational
+                      infrastructure, we invite experts to join us in designing
+                      the ideal school for our communities.
                     </h3>
                     <Popup
                       trigger={
@@ -2255,16 +2295,19 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  DESIGN FELLOWSHIP
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Our initiatives in design reflect our
+                                  dedication to transforming education in rural
+                                  India. With a focus on project-based learning,
+                                  online resources, and cutting-edge labs,
+                                  Lokarpan seeks to bridge the gap in
+                                  educational infrastructure. We believe that by
+                                  prioritising children's perspectives in
+                                  design, we can foster environments that
+                                  empower young learners, enabling them to shape
+                                  the spaces they inhabit.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -2316,11 +2359,13 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Reading Rooms</h4>
                     <h3>
-                      We are bridging the education gap with a digital content
-                      library for English and STEM subjects, empowering young
-                      learners. Dive into our engaging audio podcasts, where
-                      children can practise and explore new worlds of knowledge.
+                      Dedicated to cultivating a passion for reading in rural
+                      India, our reading room offers a diverse collection of
+                      books, power outlets, and digital workstations for young
+                      learners. This initiative aims to create an inviting space
+                      that sparks curiosity and exploration.
                     </h3>
 
                     <Popup
@@ -2350,17 +2395,18 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">READING ROOMS</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Our initiatives in design reflect our
+                                  dedication to transforming education in rural
+                                  India. With a focus on project-based learning,
+                                  online resources, and cutting-edge labs,
+                                  Lokarpan seeks to bridge the gap in
+                                  educational infrastructure. We believe that by
+                                  prioritising children's perspectives in
+                                  design, we can foster environments that
+                                  empower young learners, enabling them to shape
+                                  the spaces they inhabit.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -2412,11 +2458,12 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>Sanitation</h4>
                     <h3>
-                      We've gathered a passionate group committed to making a
-                      difference. Our Fellows volunteer in classrooms and
-                      support various departments, uniting to build a brighter
-                      future for rural education
+                      Lokarpan is constructing child-friendly, functional
+                      bathroom stalls tailored for school environments. Our aim
+                      is to ensure a safe, comfortable, and age-appropriate
+                      restroom experience for children.
                     </h3>
 
                     <Popup
@@ -2446,17 +2493,18 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
-                                </h3>
+                                <h3 className="popup-font40">SANITATION</h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Our initiatives in design reflect our
+                                  dedication to transforming education in rural
+                                  India. With a focus on project-based learning,
+                                  online resources, and cutting-edge labs,
+                                  Lokarpan seeks to bridge the gap in
+                                  educational infrastructure. We believe that by
+                                  prioritising children's perspectives in
+                                  design, we can foster environments that
+                                  empower young learners, enabling them to shape
+                                  the spaces they inhabit.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -2521,17 +2569,13 @@ class OurRole extends Component {
               <div className="our-role-each-container-content">
                 <h1>Environment</h1>
                 <p>
-                  Lokarpan addresses gaps in education systems with innovative,
-                  technology-assisted solutions that span the age spectrum. Our
-                  goal? To showcase excellence by representing India in the PISA
-                  rankings by 2027 with over 100k beneficiaries. We work
-                  directly and through government systems to reach thousands of
-                  children and school dropouts each year. Our instructors engage
-                  with children either in schools or within the community. We
-                  are working to create better teaching tools, scale up skill
-                  development and integrate technology to aid teachers in
-                  delivering the very best educational standards across rural
-                  India.
+                  Lokarpan is dedicated to environmental stewardship in rural
+                  India, with initiatives ranging from tracking heavy metals in
+                  water to conserving exotic bird populations. We also focus on
+                  preserving village ponds, building solar capacity, and
+                  educating communities on conservation. Through these efforts,
+                  we strive for a greener, more sustainable future for all,
+                  safeguarding both people and the environment.
                 </p>
               </div>
               <div className="education-cards-container">
@@ -2543,12 +2587,13 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>Tree Plantations</h4>
                       <h3>
-                        Lokarpan’s learning centre heavily invests in creating a
-                        specially designed curriculum that aims to address
-                        learning gaps in children. With digital classrooms,
-                        we’re making learning more fun and memorable. 1 lakh
-                        trees planted
+                        Lokarpan has planted 1 lakh trees to date, contributing
+                        significantly to reforestation efforts. Our ongoing tree
+                        plantation initiatives aim to enhance green cover,
+                        combat climate change, and promote a healthier
+                        environment for generations to come.
                       </h3>
 
                       <Popup
@@ -2579,17 +2624,19 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    TREE PLANTATIONS
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is dedicated to environmental
+                                    stewardship in rural India, with initiatives
+                                    ranging from tracking heavy metals in water
+                                    to conserving exotic bird populations. We
+                                    also focus on preserving village ponds,
+                                    building solar capacity, and educating
+                                    communities on conservation. Through these
+                                    efforts, we strive for a greener, more
+                                    sustainable future for all, safeguarding
+                                    both people and the environment.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -2642,12 +2689,12 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4> Annual Migratory Bird Survey</h4>
                       <h3>
-                        We are bridging the education gap with a digital content
-                        library for English and STEM subjects, empowering young
-                        learners. Dive into our engaging audio podcasts, where
-                        children can practise and explore new worlds of
-                        knowledge. Identification survey, building heatmaps
+                        Lokarpan tracks migratory birds across districts to
+                        monitor and conserve exotic bird populations. Through
+                        this effort, we aim to understand crucial migration
+                        routes and safeguard biodiversity in our regions.
                       </h3>
 
                       <Popup
@@ -2678,17 +2725,19 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    ANNUAL MIGRATORY BIRD SURVEY
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is dedicated to environmental
+                                    stewardship in rural India, with initiatives
+                                    ranging from tracking heavy metals in water
+                                    to conserving exotic bird populations. We
+                                    also focus on preserving village ponds,
+                                    building solar capacity, and educating
+                                    communities on conservation. Through these
+                                    efforts, we strive for a greener, more
+                                    sustainable future for all, safeguarding
+                                    both people and the environment.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -2739,11 +2788,15 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
+                      <h4>
+                        Water Quality Assessment and Freshwater Availability
+                      </h4>
                       <h3>
-                        We've gathered a passionate group committed to making a
-                        difference. Our Fellows volunteer in classrooms and
-                        support various departments, uniting to build a brighter
-                        future for rural education
+                        Lokarpan conducts water quality assessments and monitors
+                        freshwater availability to ensure the health of local
+                        ecosystems. We strive to protect natural resources,
+                        promote conservation practices, and support sustainable
+                        development in our communities.
                       </h3>
 
                       <Popup
@@ -2774,17 +2827,20 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PROVIDING ACCESS TO CAPITAL
+                                    WATER QUALITY ASSESSMENT AND FRESHWATER
+                                    AVAILABILITY
                                   </h3>
                                   <p className="popup-font20">
-                                    To help address financial barriers for
-                                    people and communities underserved by
-                                    mainstream financial institutions,
-                                    Google.org supports affordable lending
-                                    solutions for small business owners, Income
-                                    Sharing Agreements (ISAs) for students and
-                                    direct cash transfers for low-income
-                                    families.
+                                    Lokarpan is dedicated to environmental
+                                    stewardship in rural India, with initiatives
+                                    ranging from tracking heavy metals in water
+                                    to conserving exotic bird populations. We
+                                    also focus on preserving village ponds,
+                                    building solar capacity, and educating
+                                    communities on conservation. Through these
+                                    efforts, we strive for a greener, more
+                                    sustainable future for all, safeguarding
+                                    both people and the environment.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -2838,12 +2894,13 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4> Tree Plantations</h4>
                     <h3>
-                      Lokarpan’s learning centre heavily invests in creating a
-                      specially designed curriculum that aims to address
-                      learning gaps in children. With digital classrooms, we’re
-                      making learning more fun and memorable. 1 lakh trees
-                      planted
+                      Lokarpan has planted 1 lakh trees to date, contributing
+                      significantly to reforestation efforts. Our ongoing tree
+                      plantation initiatives aim to enhance green cover, combat
+                      climate change, and promote a healthier environment for
+                      generations to come.
                     </h3>
                     <Popup
                       trigger={
@@ -2873,16 +2930,19 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  TREE PLANTATIONS
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is dedicated to environmental
+                                  stewardship in rural India, with initiatives
+                                  ranging from tracking heavy metals in water to
+                                  conserving exotic bird populations. We also
+                                  focus on preserving village ponds, building
+                                  solar capacity, and educating communities on
+                                  conservation. Through these efforts, we strive
+                                  for a greener, more sustainable future for
+                                  all, safeguarding both people and the
+                                  environment.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -2934,12 +2994,12 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4> Annual Migratory Bird Survey </h4>
                     <h3>
-                      We are bridging the education gap with a digital content
-                      library for English and STEM subjects, empowering young
-                      learners. Dive into our engaging audio podcasts, where
-                      children can practise and explore new worlds of knowledge.
-                      Identification survey, building heatmaps.
+                      Lokarpan tracks migratory birds across districts to
+                      monitor and conserve exotic bird populations. Through this
+                      effort, we aim to understand crucial migration routes and
+                      safeguard biodiversity in our regions.
                     </h3>
 
                     <Popup
@@ -2970,16 +3030,19 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  ANNUAL MIGRATORY BIRD SURVEY
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is dedicated to environmental
+                                  stewardship in rural India, with initiatives
+                                  ranging from tracking heavy metals in water to
+                                  conserving exotic bird populations. We also
+                                  focus on preserving village ponds, building
+                                  solar capacity, and educating communities on
+                                  conservation. Through these efforts, we strive
+                                  for a greener, more sustainable future for
+                                  all, safeguarding both people and the
+                                  environment.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -3031,11 +3094,15 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
+                    <h4>
+                      Water Quality Assessment and Freshwater Availability
+                    </h4>
                     <h3>
-                      We've gathered a passionate group committed to making a
-                      difference. Our Fellows volunteer in classrooms and
-                      support various departments, uniting to build a brighter
-                      future for rural education
+                      Lokarpan conducts water quality assessments and monitors
+                      freshwater availability to ensure the health of local
+                      ecosystems. We strive to protect natural resources,
+                      promote conservation practices, and support sustainable
+                      development in our communities.
                     </h3>
 
                     <Popup
@@ -3066,16 +3133,20 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PROVIDING ACCESS TO CAPITAL
+                                  WATER QUALITY ASSESSMENT AND FRESHWATER
+                                  AVAILABILITY
                                 </h3>
                                 <p className="popup-font20">
-                                  To help address financial barriers for people
-                                  and communities underserved by mainstream
-                                  financial institutions, Google.org supports
-                                  affordable lending solutions for small
-                                  business owners, Income Sharing Agreements
-                                  (ISAs) for students and direct cash transfers
-                                  for low-income families.
+                                  Lokarpan is dedicated to environmental
+                                  stewardship in rural India, with initiatives
+                                  ranging from tracking heavy metals in water to
+                                  conserving exotic bird populations. We also
+                                  focus on preserving village ponds, building
+                                  solar capacity, and educating communities on
+                                  conservation. Through these efforts, we strive
+                                  for a greener, more sustainable future for
+                                  all, safeguarding both people and the
+                                  environment.
                                 </p>
                               </div>
                               <div className="popup-right-container">
