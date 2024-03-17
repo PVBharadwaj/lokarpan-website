@@ -317,6 +317,15 @@
   font-weight: 300;
   line-height: 16px;
   margin-top: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.card-content h4 {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 .donate-section {
   height: 600px;

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import SearchBar from "../Searchbar/Searchbar";
+import KithSearchBar from "../KithSearchBar/index";
 import KithNavbar from "../Navbar/KithNavbar/index";
 import KithInfoSubNavbar from "../Navbar/KithInfoSubNavbar";
 import KithFooter from "../KithFooter/index";
@@ -68,7 +68,7 @@ class KithLeadership extends Component {
           </ul>
           <div className="kith-leadership-images-container">
             <h1 className="kith-font48">Board</h1>
-            <SearchBar />
+            <KithSearchBar />
             <ul className="images-list">
               {imagesList.map((each) => (
                 <li>
