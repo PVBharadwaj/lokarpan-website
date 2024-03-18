@@ -487,7 +487,7 @@
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 100%;
+  /* width: 100%; */
   animation: scroll 30s linear infinite;
 }
 .image-group-m1 {
@@ -508,7 +508,7 @@
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 100%;
+  /* width: 100%; */
   animation: scroll 30s linear infinite;
   animation-direction: reverse;
   animation-delay: -3s;
@@ -562,10 +562,14 @@
 .mobile-home {
   display: none;
 }
+
 @media only screen and (max-width: 1010px) {
   .app-container-m1 {
     width: 692px;
-    height: 400px;
+    height: 420px;
+  }
+  .text-m1 {
+    margin-top: 50px;
   }
 }
 
@@ -741,6 +745,7 @@
     font-weight: 500;
     /* margin-bottom: 10px; */
     color: #a6d4ff;
+    margin-top: 10px;
   }
   .note-m1 {
     font-size: 24px;
