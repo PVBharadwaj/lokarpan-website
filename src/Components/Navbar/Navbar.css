@@ -124,6 +124,7 @@
 .quick-links li a {
   font-size: 12px;
   padding: 5px;
+  font-weight: 600;
 }
 
 .dropdown-content ul {
@@ -189,7 +190,7 @@
 
 .dropdown-container .list-item-container li a {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .quicklinks-heading {
   font-size: 12px;

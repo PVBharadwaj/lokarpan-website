@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import { PiPauseCircleThin, PiPlayCircleThin } from "react-icons/pi";
 import { FaArrowRight } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
@@ -84,7 +85,9 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>Understanding our approach to Rural Design Principles</h3>
-                <button className="read-btn1">Read Now</button>
+                <Link to="/guideline">
+                  <button className="read-btn1">Read Now</button>
+                </Link>
               </div>
             </div>
             <div className="row-element">
@@ -94,7 +97,11 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>How do we solve the education crisis?</h3>
-                <button className="read-btn1">Read Now</button>
+                <Link to="/approach">
+                  <button className="read-btn1 home-space-above">
+                    Read Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

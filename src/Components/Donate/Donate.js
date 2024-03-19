@@ -10,56 +10,231 @@ const Donate = () => {
   const [donationArea, setDonationArea] = useState("---");
   const [processingFee, setProcessingFee] = useState("---");
   const [dropdownState, setDropdown] = useState(false);
-  const [pan, setPAN] = useState('');
-  const [error, setError] = useState('');
-  const [customAmount, setCustomAmount] = useState('');
+  const [pan, setPAN] = useState("");
+  const [error, setError] = useState("");
+  const [customAmount, setCustomAmount] = useState("");
   const [selectedAmount, setSelectedAmount] = useState(null);
 
   // For PAN validation
   const validatePAN = () => {
-      if (pan === '') {
-        setError('');
-        return;
-      }
-      const alphanumericRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
-      if (!alphanumericRegex.test(pan)) {
-          setError("Please enter valid PAN number.");
-      } else {
-          setError('');
-      }
+    if (pan === "") {
+      setError("");
+      return;
+    }
+    const alphanumericRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
+    if (!alphanumericRegex.test(pan)) {
+      setError("Please enter valid PAN number.");
+    } else {
+      setError("");
+    }
   };
 
   // For country dropdown list
   useEffect(() => {
-    const selectCountry = document.getElementById('form-donate-country');
+    const selectCountry = document.getElementById("form-donate-country");
     const countries = [
-        "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
-        "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
-        "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia",
-        "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica",
-        "Croatia", "Cuba", "Cyprus", "Czech Republic", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica",
-        "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
-        "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala",
-        "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland",
-        "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kuwait", "Kyrgyzstan",
-        "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi",
-        "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova",
-        "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands",
-        "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau",
-        "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania",
-        "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino",
-        "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
-        "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "Sudan",
-        "Suriname", "Sweden", "Switzerland", "Syria", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago",
-        "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom",
-        "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+      "Afghanistan",
+      "Albania",
+      "Algeria",
+      "Andorra",
+      "Angola",
+      "Antigua and Barbuda",
+      "Argentina",
+      "Armenia",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Bahamas",
+      "Bahrain",
+      "Bangladesh",
+      "Barbados",
+      "Belarus",
+      "Belgium",
+      "Belize",
+      "Benin",
+      "Bhutan",
+      "Bolivia",
+      "Bosnia and Herzegovina",
+      "Botswana",
+      "Brazil",
+      "Brunei",
+      "Bulgaria",
+      "Burkina Faso",
+      "Burundi",
+      "Cabo Verde",
+      "Cambodia",
+      "Cameroon",
+      "Canada",
+      "Central African Republic",
+      "Chad",
+      "Chile",
+      "China",
+      "Colombia",
+      "Comoros",
+      "Congo",
+      "Costa Rica",
+      "Croatia",
+      "Cuba",
+      "Cyprus",
+      "Czech Republic",
+      "Democratic Republic of the Congo",
+      "Denmark",
+      "Djibouti",
+      "Dominica",
+      "Dominican Republic",
+      "East Timor",
+      "Ecuador",
+      "Egypt",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Eritrea",
+      "Estonia",
+      "Eswatini",
+      "Ethiopia",
+      "Fiji",
+      "Finland",
+      "France",
+      "Gabon",
+      "Gambia",
+      "Georgia",
+      "Germany",
+      "Ghana",
+      "Greece",
+      "Grenada",
+      "Guatemala",
+      "Guinea",
+      "Guinea-Bissau",
+      "Guyana",
+      "Haiti",
+      "Honduras",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Ivory Coast",
+      "Jamaica",
+      "Japan",
+      "Jordan",
+      "Kazakhstan",
+      "Kenya",
+      "Kiribati",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Laos",
+      "Latvia",
+      "Lebanon",
+      "Lesotho",
+      "Liberia",
+      "Libya",
+      "Liechtenstein",
+      "Lithuania",
+      "Luxembourg",
+      "Madagascar",
+      "Malawi",
+      "Malaysia",
+      "Maldives",
+      "Mali",
+      "Malta",
+      "Marshall Islands",
+      "Mauritania",
+      "Mauritius",
+      "Mexico",
+      "Micronesia",
+      "Moldova",
+      "Monaco",
+      "Mongolia",
+      "Montenegro",
+      "Morocco",
+      "Mozambique",
+      "Myanmar",
+      "Namibia",
+      "Nauru",
+      "Nepal",
+      "Netherlands",
+      "New Zealand",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "North Korea",
+      "North Macedonia",
+      "Norway",
+      "Oman",
+      "Pakistan",
+      "Palau",
+      "Palestine",
+      "Panama",
+      "Papua New Guinea",
+      "Paraguay",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Qatar",
+      "Romania",
+      "Russia",
+      "Rwanda",
+      "Saint Kitts and Nevis",
+      "Saint Lucia",
+      "Saint Vincent and the Grenadines",
+      "Samoa",
+      "San Marino",
+      "Sao Tome and Principe",
+      "Saudi Arabia",
+      "Senegal",
+      "Serbia",
+      "Seychelles",
+      "Sierra Leone",
+      "Singapore",
+      "Slovakia",
+      "Slovenia",
+      "Solomon Islands",
+      "Somalia",
+      "South Africa",
+      "South Korea",
+      "South Sudan",
+      "Spain",
+      "Sri Lanka",
+      "Sudan",
+      "Suriname",
+      "Sweden",
+      "Switzerland",
+      "Syria",
+      "Tajikistan",
+      "Tanzania",
+      "Thailand",
+      "Togo",
+      "Tonga",
+      "Trinidad and Tobago",
+      "Tunisia",
+      "Turkey",
+      "Turkmenistan",
+      "Tuvalu",
+      "Uganda",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States",
+      "Uruguay",
+      "Uzbekistan",
+      "Vanuatu",
+      "Vatican City",
+      "Venezuela",
+      "Vietnam",
+      "Yemen",
+      "Zambia",
+      "Zimbabwe",
     ];
 
-    countries.forEach(country => {
-        const option = document.createElement('option');
-        option.text = country;
-        option.value = country;
-        selectCountry.add(option);
+    countries.forEach((country) => {
+      const option = document.createElement("option");
+      option.text = country;
+      option.value = country;
+      selectCountry.add(option);
     });
   }, []);
 
@@ -76,7 +251,7 @@ const Donate = () => {
     setDonationAmount(newAmount);
     setProcessingFee(0);
     setSelectedAmount(event.target.value);
-    setCustomAmount('');
+    setCustomAmount("");
   };
 
   const handleCustomAmountChange = (event) => {
@@ -117,36 +292,44 @@ const Donate = () => {
   const donateAmount = parseFloat(donamt.donationAmount);
   const processFee = parseFloat(profee.processingFee);
 
-  const totalAmount = isNaN(donateAmount + processFee) ? 0  : donateAmount + processFee;
+  const totalAmount = isNaN(donateAmount + processFee)
+    ? 0
+    : donateAmount + processFee;
 
   return (
     <>
-    <Navbar />
-      <FinancialNav navbarTitle="Donate" navitem1="Donate" navitem2="FAQ" link1="/donate" link2="/faqs"/>
+      <Navbar />
+      <FinancialNav
+        navbarTitle="Donate"
+        navitem1="Donate"
+        navitem2="FAQ"
+        link1="/donate"
+        link2="/faqs"
+      />
       <div className="donate-head">
-          <h1>
-            Through the Stronger Together campaign, our goal is to bridge the
-            learning loss and strengthen our core program in Akanksha schools
-            and communities.
-          </h1>
-          <div className="citizen-dropdown">
-            <div className="citizen-dropdown-inner">
-              <input
-                type="checkbox"
-                id="donate-hyperlink"
-                name="donate-hyperlink"
-                className="input"
-              />
-              <label htmlFor="donate-hyperlink" className="drop-content">
-                Non-Indian Citizens
-              </label>
-              <div className="ans-sec donate-ans-sec">
-                <p className="answer">test text</p>
-                <p className="answer">test text</p>
-              </div>
+        <h1>
+          Through the Stronger Together campaign, our goal is to bridge the
+          learning loss and strengthen our core program in Akanksha schools and
+          communities.
+        </h1>
+        <div className="citizen-dropdown">
+          <div className="citizen-dropdown-inner">
+            <input
+              type="checkbox"
+              id="donate-hyperlink"
+              name="donate-hyperlink"
+              className="input-d"
+            />
+            <label htmlFor="donate-hyperlink" className="drop-content">
+              Non-Indian Citizens
+            </label>
+            <div className="ans-sec donate-ans-sec">
+              <p className="answer">test text</p>
+              <p className="answer">test text</p>
             </div>
           </div>
         </div>
+      </div>
       <div className="donate-page">
         <div className="donate-form">
           <form action="" method="get">
@@ -202,7 +385,7 @@ const Donate = () => {
                       id="form-donate-amount-10"
                       className="radio-hidden"
                       value={10}
-                      checked={selectedAmount === '10'}
+                      checked={selectedAmount === "10"}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -216,7 +399,8 @@ const Donate = () => {
                       name="form-donate-amount"
                       id="form-donate-amount-25"
                       className="radio-hidden"
-                      value={25}checked={selectedAmount === '25'}
+                      value={25}
+                      checked={selectedAmount === "25"}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -231,7 +415,7 @@ const Donate = () => {
                       id="form-donate-amount-50"
                       className="radio-hidden"
                       value={50}
-                      checked={selectedAmount === '50'}
+                      checked={selectedAmount === "50"}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -246,7 +430,7 @@ const Donate = () => {
                       id="form-donate-amount-100"
                       className="radio-hidden"
                       value={100}
-                      checked={selectedAmount === '100'}
+                      checked={selectedAmount === "100"}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -261,7 +445,7 @@ const Donate = () => {
                       id="form-donate-amount-500"
                       className="radio-hidden"
                       value={500}
-                      checked={selectedAmount === '500'}
+                      checked={selectedAmount === "500"}
                       onClick={handleAmountChange}
                     />
                     <label
@@ -409,7 +593,10 @@ const Donate = () => {
                         name="donate-form-country"
                         id="form-donate-country"
                       /> */}
-                      <select id="form-donate-country" name="donate-form-country">
+                      <select
+                        id="form-donate-country"
+                        name="donate-form-country"
+                      >
                         <option value="">Select Country</option>
                       </select>
                     </label>
@@ -505,7 +692,16 @@ const Donate = () => {
                         onBlur={validatePAN}
                         // maxLength={10}
                       />
-                      <div style={{ position: 'absolute', color: 'red', paddingLeft: '10px', fontSize: '16px' }}>{error}</div>
+                      <div
+                        style={{
+                          position: "absolute",
+                          color: "red",
+                          paddingLeft: "10px",
+                          fontSize: "16px",
+                        }}
+                      >
+                        {error}
+                      </div>
                     </label>
                   </div>
                 </fieldset>
@@ -513,70 +709,75 @@ const Donate = () => {
               <div className="donate-part">
                 <div className="page-marker">06/06</div>
                 <fieldset>
-                    <div className="donate-form-sec-title">
-                      <p className="recap">Donation Recap</p>
+                  <div className="donate-form-sec-title">
+                    <p className="recap">Donation Recap</p>
+                  </div>
+                  <hr />
+                  <div className="donate-recap-sections">
+                    <div className="donate-recap-section">
+                      <div>
+                        <p className="recap">Donation Type </p>
+                        <a href="#donate-section-1">Edit</a>
+                      </div>
+                      <div>{donationFrequency}</div>
                     </div>
-                    <hr />
-                    <div className="donate-recap-sections">
-                      <div className="donate-recap-section">
-                        <div>
-                          <p className="recap">Donation Type </p>
-                          <a href="#donate-section-1">Edit</a>
-                        </div>
-                        <div>{donationFrequency}</div>
+                    <div className="donate-recap-section">
+                      <div>
+                        <p className="recap">Donation Area</p>
+                        <a href="#donate-section-3">Edit</a>
                       </div>
-                      <div className="donate-recap-section">
-                        <div>
-                          <p className="recap">Donation Area</p>
-                          <a href="#donate-section-3">Edit</a>
-                        </div>
-                        <div>{donationArea}</div>
-                      </div>
+                      <div>{donationArea}</div>
                     </div>
-                    <hr />
-                    <div className="donate-recap-sections">
-                      <div className="donate-recap-section">
-                        <div>
-                          <p className="recap">Donation Amount</p>
-                          <a href="#donate-section-2">Edit</a>
-                        </div>
-                        <div>{`₹ ${donationAmount}`}</div>
+                  </div>
+                  <hr />
+                  <div className="donate-recap-sections">
+                    <div className="donate-recap-section">
+                      <div>
+                        <p className="recap">Donation Amount</p>
+                        <a href="#donate-section-2">Edit</a>
                       </div>
-                      <div className="donate-recap-section">
-                        <label htmlFor="form-3-percent">
-                          <input
-                            type="checkbox"
-                            onClick={handleProcessingFee}
-                            name=""
-                            id="form-3-percent"
-                          />
-                          Add 3% to cover the credit card processing fee
-                        </label>
-                        <label htmlFor="newsletter-subscription">
-                          <input
-                            type="checkbox"
-                            name=""
-                            id="newsletter-subscription"
-                          />
-                          Subscribe to our newsletter?
-                        </label>
-                      </div>
+                      <div>{`₹ ${donationAmount}`}</div>
                     </div>
-                    <hr />
-                    <div className="donate-recap-sections">
-                      <div className="donate-recap-section">
-                        <p className="recap">Credit Card Processing fee</p>
-                        <p>{`₹ ${processingFee}`}</p>
-                        <p className="recap">Total payment amount</p>
-                        <p>{`₹ ${totalAmount}`}</p>
-                      </div>
+                    <div className="donate-recap-section">
+                      <label htmlFor="form-3-percent">
+                        <input
+                          type="checkbox"
+                          onClick={handleProcessingFee}
+                          name=""
+                          id="form-3-percent"
+                        />
+                        Add 3% to cover the credit card processing fee
+                      </label>
+                      <label htmlFor="newsletter-subscription">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="newsletter-subscription"
+                        />
+                        Subscribe to our newsletter?
+                      </label>
                     </div>
-                    <hr />
+                  </div>
+                  <hr />
+                  <div className="donate-recap-sections">
+                    <div className="donate-recap-section">
+                      <p className="recap">Credit Card Processing fee</p>
+                      <p>{`₹ ${processingFee}`}</p>
+                      <p className="recap">Total payment amount</p>
+                      <p>{`₹ ${totalAmount}`}</p>
+                    </div>
+                  </div>
+                  <hr />
                 </fieldset>
                 <div>
                   <div className="donate-submit-section">
                     <div className="apply-btn transparent">
-                      <Link to="/donate" className="apply-btn-text-black body-btn">Submit & Enter Payment Details</Link>
+                      <Link
+                        to="/donate"
+                        className="apply-btn-text-black body-btn"
+                      >
+                        Submit & Enter Payment Details
+                      </Link>
                     </div>
                     <p>
                       By submitting your information and making your gift, you
