@@ -1,4 +1,5 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -25,6 +26,7 @@ const Footer = () => {
 
   return (
     <div className="footer-container footer-mobile">
+      <hr className="hor-line4" />
       <div className="footer-container-inner">
         <div className="content">
           <div className="footer-list">
@@ -36,12 +38,18 @@ const Footer = () => {
               <a href="">
                 <FaFacebook className="footer-icon" />
               </a>
-              <a href="">
-                <FaInstagramSquare className="footer-icon" />
-              </a>
-              <a href="">
-                <FaLinkedin className="footer-icon" />
-              </a>
+              <Link to="/">
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710866199/instagram-with-circle-svgrepo-com_whdr2l.svg"
+                  className="footer-icon1"
+                />
+              </Link>
+              <Link to="/">
+                <img
+                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710866191/linkedin-round-svgrepo-com_nnnkkd.svg"
+                  className="footer-icon1"
+                />
+              </Link>
               <a href="">
                 <FaMedium className="footer-icon" />
               </a>
@@ -56,6 +64,7 @@ const Footer = () => {
               <p>Tel:91-00 0000 0000</p>
             </div>
           </div>
+          <hr className="hor-line3" />
           <div className="footer-list">
             <div
               className="footer-list-title"

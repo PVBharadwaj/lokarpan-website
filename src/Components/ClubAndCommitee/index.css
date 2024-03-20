@@ -20,6 +20,7 @@
   margin: auto;
   margin-top: 25px;
   text-align: center;
+  max-width: 1100px;
 }
 
 .club-commitee-club-section {
@@ -42,6 +43,7 @@
   margin: auto;
   font-size: 28px;
   text-align: center;
+  max-width: 1100px;
 }
 
 .club-commitee-culture-section {

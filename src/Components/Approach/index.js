@@ -16,7 +16,7 @@ class Approach extends Component {
         <div className="approach-container">
           <div className="health-full-img no-space-above">
             <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768925/image_314_vscall.png"
               alt="health-img"
             />
           </div>
@@ -25,62 +25,58 @@ class Approach extends Component {
             <div className="health-each-container">
               <div className="health-content-section content-left">
                 <h1 className="health-lokarpan-head3">
-                  What does it take to create sustainable and inclusive growth?
+                  Discover how we are shaping the learning environment
                 </h1>
                 <p className="health-para">
-                  It takes a lot. Dedication and passion. Boldness and
-                  curiosity. Hard skills and soft skills. Some you are born
-                  with, and others can be learned through experience or taught.
-                  But one thing is certain: Creating impact takes exceptional
-                  people who are driven and eager to learn.
+                  Lokarpan's Learning Centre harnesses innovative technology and
+                  tailored curriculums, empowering children and youth to take
+                  control of their education.
                 </p>
                 <a href="#" className="approach-anchor">
-                  Read About Our Culture
+                  Read more about our learing centers
                 </a>
               </div>
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768785/nehal-patel-aho7nVdauuc-unsplash_1_azf35q.png"
                 alt="learn-img"
                 className="health-cont-img"
               />
             </div>
             <div className="health-each-container">
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768741/Rectangle_1764_1_mwljyp.png"
                 alt="learn-img"
                 className="health-cont-img"
               />
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
-                  Exceptional can come from anywhere
+                  Dive into our Digital Content Hub
                 </h1>
                 <p className="health-para">
-                  At McKinsey, we hire people, not degrees. There is no set
-                  definition for what exceptional looks like, and we know it can
-                  come from anywhere. We believe in your potential, regardless
-                  of your pedigree.
+                  With an extensive library, centred on English and STEM
+                  subjects, and captivating audio podcasts, our digital content
+                  hub offers a world of exploration and skill-building.
                 </p>
                 <a href="#" className="approach-anchor">
-                  Learn more about our interviews
+                  Learn more about our digital resources
                 </a>
               </div>
             </div>
             <div className="health-each-container">
               <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Our Leadership</h1>
+                <h1 className="health-lokarpan-head3">Get Involved </h1>
                 <p className="health-para">
-                  Impact at the firm looks different every day, and that vision
-                  is changing every year along with the world around us. One day
-                  you could design a product for your client, and the next you
-                  could create a five-year growth strategy. The variety of work
-                  is endless.
+                  Be a part of Lokarpan's dedicated team, driven by a common
+                  goal of creating a tangible impact. Our enthusiastic Fellows
+                  actively engage in classrooms, coming together to shape a
+                  brighter tomorrow for rural education.
                 </p>
                 <a href="#" className="approach-anchor">
-                  See more about our Leadership
+                  Find out more in our careers page
                 </a>
               </div>
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768715/IMG_3648_1_lr2rgu.png"
                 alt="learn-img"
                 className="health-cont-img"
               />
@@ -89,7 +85,7 @@ class Approach extends Component {
 
           <div className="health-full-img">
             <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
+              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768797/divyanshi-verma-pxw2e3wnlgM-unsplash_1_1_jkzbvd.png"
               alt="health-img"
             />
           </div>

@@ -18,11 +18,10 @@ class Career extends Component {
             <h1 className="head2">Join Us!</h1>
             <h3 className="head1">You’ve come to the right place</h3>
             <p className="career-para1">
-              Are you seeking an exciting role that will challenge and inspire
-              you? Are you looking for guidance on our interview process? Or do
-              you want to learn more about what consulting is and what it’s like
-              working at Lokarpan? Whatever the reason, you’ve come to the right
-              place.
+              What does it take to create sustainable and inclusive growth? At
+              Lokarpan, it takes passion, dedication, and a commitment to
+              driving positive change. We believe in the power of exceptional
+              individuals who are eager to learn, grow, and make a real impact.
             </p>
             <div className="linked-in-section">
               <FaLinkedin style={{ fontSize: "28px", color: "#ffffff" }} />
@@ -34,11 +33,10 @@ class Career extends Component {
             <h1 className="mobile-head2">Join Us!</h1>
             <h3 className="mobile-head1">You’ve come to the right place</h3>
             <p className="mobile-career-para1">
-              Are you seeking an exciting role that will challenge and inspire
-              you? Are you looking for guidance on our interview process? Or do
-              you want to learn more about what consulting is and what it’s like
-              working at Lokarpan? Whatever the reason, you’ve come to the right
-              place.
+              What does it take to create sustainable and inclusive growth? At
+              Lokarpan, it takes passion, dedication, and a commitment to
+              driving positive change. We believe in the power of exceptional
+              individuals who are eager to learn, grow, and make a real impact.
             </p>
             <div className="linked-in-section">
               <FaLinkedin style={{ fontSize: "28px" }} />
@@ -48,22 +46,22 @@ class Career extends Component {
           <div className="health-container-section">
             <div className="health-each-container">
               <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">
-                  What does it take to create sustainable and inclusive growth?
-                </h1>
+                <h1 className="health-lokarpan-head3">Volunteer with us</h1>
                 <p className="health-para">
-                  It takes a lot. Dedication and passion. Boldness and
-                  curiosity. Hard skills and soft skills. Some you are born
-                  with, and others can be learned through experience or taught.
-                  But one thing is certain: Creating impact takes exceptional
-                  people who are driven and eager to learn.
+                  The journey to eradicate educational inequity is a
+                  collaborative one, and we welcome passionate individuals to
+                  join us. If you have a few hours to spare each week and share
+                  our vision, consider volunteering with our Fellows in
+                  classrooms or supporting various departments on staff. Your
+                  contribution can make a meaningful difference in the lives of
+                  rural learners.
                 </p>
-                <a href="#" className="career-anchor">
+                {/* <a href="#" className="career-anchor">
                   Read about our culture
-                </a>
+                </a> */}
               </div>
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771181/Rectangle_1763_2_jukbok.png"
                 alt="learn-img"
                 className="health-cont-img"
               />
@@ -79,56 +77,59 @@ class Career extends Component {
                   Exceptional can come from anywhere
                 </h1>
                 <p className="health-para">
-                  At McKinsey, we hire people, not degrees. There is no set
-                  definition for what exceptional looks like, and we know it can
-                  come from anywhere. We believe in your potential, regardless
-                  of your pedigree.
+                  We value people over credentials. Lokarpan is a place where
+                  your potential is recognised, regardless of your background.
+                  We embrace diversity and welcome individuals with a range of
+                  skills and experiences.
                 </p>
-                <a href="#" className="career-anchor">
+                {/* <a href="#" className="career-anchor">
                   Read about our culture
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="health-each-container">
               <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Our Leadership</h1>
+                <h1 className="health-lokarpan-head3">
+                  Drive Impact through Meaningful Projects
+                </h1>
                 <p className="health-para">
-                  Impact at the firm looks different every day, and that vision
-                  is changing every year along with the world around us. One day
-                  you could design a product for your client, and the next you
-                  could create a five-year growth strategy. The variety of work
-                  is endless.
+                  Every day at Lokarpan brings new challenges and opportunities
+                  for growth. As a member of our team, you'll have the chance to
+                  tackle diverse projects that make a difference in rural
+                  communities. Whether designing sustainable solutions,
+                  developing educational programs, or leading health
+                  initiatives, your work will have a lasting impact.
                 </p>
-                <a href="#" className="career-anchor">
+                {/* <a href="#" className="career-anchor">
                   Read about our culture
-                </a>
+                </a> */}
               </div>
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771208/image_189_1_q8vzgr.png"
                 alt="learn-img"
                 className="health-cont-img"
               />
             </div>
             <div className="health-each-container">
               <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
+                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771178/image_190_2_zge0vl.png"
                 alt="learn-img"
                 className="health-cont-img"
               />
               <div className="health-content-section content-right">
-                <h1 className="health-lokarpan-head3">
-                  We know you have questions and we really like the tough ones.
-                </h1>
+                <h1 className="health-lokarpan-head3">Our Culture</h1>
                 <p className="health-para">
-                  Immerse yourself in stories that will challenge your mind and
-                  capture your heart. Explore new interests and stay on top of
-                  what’s trending. Our global catalogue features leading voices
-                  on the topics you care about — from the biggest names to
-                  independent creators.
+                  At Lokarpan, we foster innovation and collaboration,
+                  empowering every team member to make a difference in rural
+                  communities. Our mission is to uplift lives through impactful
+                  solutions in health, education, income generation, and
+                  veterinary care. We're an equal opportunity employer,
+                  committed to diversity and inclusion across all our
+                  endeavours.
                 </p>
-                <a href="#" className="career-anchor">
+                {/* <a href="#" className="career-anchor">
                   Read about our culture
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -149,6 +150,18 @@ class Career extends Component {
               Apply
             </button>
           </div>
+        </div>
+        <div className="footer-content">
+          <p>
+            At Lokarpan, we uphold the highest standards of ethical employment
+            practices. Our unwavering commitment lies in establishing a work
+            environment that genuinely respects and safeguards the rights and
+            well-being of all individuals engaged in our operations. We maintain
+            zero tolerance for forced labour, child labour, and discrimination,
+            striving for a safe, equitable workplace. As an equal opportunity
+            employer, we embrace diversity and do not discriminate based on any
+            factors.
+          </p>
         </div>
         <Footer />
       </>
