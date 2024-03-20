@@ -29,6 +29,7 @@
   display: flex;
   gap: 30px;
   padding: 75px 0px;
+  max-width: 1100px;
 }
 
 .give-card-img {
@@ -102,7 +103,7 @@
 
   .give-card-img {
     width: 100%;
-    min-height: 250px;
+    min-height: 375px;
   }
 
   .give-card-text {

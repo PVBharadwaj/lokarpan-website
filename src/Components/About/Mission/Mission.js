@@ -45,26 +45,27 @@ const Mission = () => {
       <SubNavbar />
       <div className="mission-section-container">
         <section className="mission-1st-secction">
-          <div className="mission-head">Our purpose, mission, and values</div>
-
-          <div className="mission-content1">
-            To help our clients make distinctive, lasting, and substantial
-            improvements in their performance and to build a great firm that
-            attracts, develops, excites, and retains exceptional people.
-          </div>
-          <div className="mission-content2">
-            We are a values-driven organization. Our values reflect the thinking
-            of our founder, James O. McKinsey, and Marvin Bower, managing
-            director from 1950 to 1967, who was a major force in shaping the
-            firm. Our values have been updated in small ways to reflect the
-            changing times. They inform both our long-term strategy as a firm
-            and the way we serve our clients on a daily basis. We put aside one
-            day a year to reflect as a group on what our values mean to both our
-            work and our lives.
+          <div className="mission-1st-section-inner"> 
+            <div className="mission-head">Our purpose, mission, and values</div>
+            <div className="mission-content1">
+              To help our clients make distinctive, lasting, and substantial
+              improvements in their performance and to build a great firm that
+              attracts, develops, excites, and retains exceptional people.
+            </div>
+            <div className="mission-content2">
+              We are a values-driven organization. Our values reflect the thinking
+              of our founder, James O. McKinsey, and Marvin Bower, managing
+              director from 1950 to 1967, who was a major force in shaping the
+              firm. Our values have been updated in small ways to reflect the
+              changing times. They inform both our long-term strategy as a firm
+              and the way we serve our clients on a daily basis. We put aside one
+              day a year to reflect as a group on what our values mean to both our
+              work and our lives.
+            </div>
           </div>
         </section>
         <section className="our-purpose">
-          <div className="image-cont">
+          {/* <div className="image-cont">
             <div className="h1">Our purpose</div>
             <div className="purpose-cont">
             We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
@@ -73,15 +74,24 @@ const Mission = () => {
 
           <div className="image-purpose">
             <div className="imgg"></div>
+          </div> */}
+          <div className="give-card give-card-reverse">
+            <div className="give-card-text">
+              <h1>Our purpose</h1>
+              <p>
+              We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
+              </p>
+            </div>
+            <div className="give-card-img give-card-img-1"></div>
           </div>
         </section>
-        <section className="our-purpose-mobile">
+        {/* <section className="our-purpose-mobile">
           <div className="our-purpose1-image"></div>
           <div className="our-purpose-mobile-h1">Our purpose</div>
           <div className="our-purpose-mobile-cont">
           We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
           </div>
-        </section>
+        </section> */}
         <section className="our-mission-mobile">
           <div className="our-mission-mobile-image"></div>
           <div className="our-mission-text">
@@ -96,7 +106,7 @@ const Mission = () => {
         </section>
 
         <section className="our-purpose">
-          <div className="image-cont">
+          {/* <div className="image-cont">
             <div className="h1">Our Principles</div>
             <div className="purpose-cont">
               They embody what we stand for and guide our approach to how we
@@ -116,9 +126,29 @@ const Mission = () => {
 
           <div className="image-purpose">
             <div className="imgg"></div>
+          </div> */}
+          <div className="give-card give-card-reverse">
+            <div className="give-card-text">
+              <h1>Our Principles</h1>
+              <p>
+                They embody what we stand for and guide our approach to how we
+                build technology for people and their relationships.
+              </p>
+              <div className="faqs">
+              {faqs.map((faq, index) => (
+                <FAQ
+                  faq={faq}
+                  index={index}
+                  key={index}
+                  toggleFAQ={toggleFAQ}
+                />
+              ))}
+            </div>
+            </div>
+            <div className="give-card-img give-card-img-1"></div>
           </div>
         </section>
-        <section className="our-purpose1">
+        {/* <section className="our-purpose1">
           <div className="our-purpose1-image"></div>
 
           <div className="image-cont1">
@@ -138,7 +168,7 @@ const Mission = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="our-vision">
           <div className="our-vision-head">Our Values</div>
           <div className="our-vision-subhead">

@@ -18,7 +18,7 @@
     "@mui/icons-material": "5.15.6",
     "@mui/material": "5.15.4",
     "@mui/x-data-grid": "latest",
-    "axios": "^1.6.7",
+    "axios": "^1.6.8",
     "fuse.js": "7.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

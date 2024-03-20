@@ -12,6 +12,17 @@
   color: white;
 }
 
+.volunteer-first-div,
+.volunter-opp h1
+{
+  margin: var(--navbar-margin);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
+}
+
 .volunteer-first-div {
   padding: 80px;
 }

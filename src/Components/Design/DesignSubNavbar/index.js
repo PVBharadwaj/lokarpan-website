@@ -32,7 +32,9 @@ const SubNavbar = () => {
           <li className="navbar-item dropdown" onMouseLeave={closeBrowseMenu}>
             <p onClick={toggleNavmenu}>
               <span className="desktop">Browse All</span>
-              <BsChevronDown className="react-icon" />
+              <BsChevronDown 
+                className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+              />
             </p>
             <div
               className={` navbar-links click-dropdown ${

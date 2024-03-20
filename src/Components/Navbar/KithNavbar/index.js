@@ -7,6 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
+import { IoExitOutline } from "react-icons/io5";
 import Fuse from "fuse.js";
 
 
@@ -391,6 +392,14 @@ const Navbar = () => {
               className="navbar-icon-inner"
               style={{ color: "#6B7280", height: "100%" }}
             />
+          </li>
+          <li className="navbar-item navbar-icon">
+            <Link to={'/'} className="kith-back-to-main">
+              <IoExitOutline
+                className="navbar-icon-inner"
+                style={{ color: "#6B7280", height: "100%" }}
+              />
+            </Link>
           </li>
           <li className="navbar-item hamburger-item">
             <RxHamburgerMenu
