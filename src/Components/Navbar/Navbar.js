@@ -8,6 +8,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import Fuse from "fuse.js";
+// import * as React from 'react';
+// import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
 const items = [
@@ -113,6 +117,15 @@ const Navbar = () => {
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const closeSearchMenu = () => {
     setSearchmenuOpen(false);
@@ -550,12 +563,41 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item navbar-icon">
+        <li className="navbar-item dropdown navbar-icon">
+          <IoPersonOutline
+            className="navbar-icon-inner"
+            style={{ color: "#6B7280", height: "100%" }}
+            id="basic-button"
+            aria-controls={open ? 'basic-menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}
+          />
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              'aria-labelledby': 'basic-button',
+            }}
+          >
+            <MenuItem onClick={handleClose}>
+              <span><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
+              Staff
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <span><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
+              Student
+            </MenuItem> 
+          </Menu>
+        </li>
+        {/* <li className="navbar-item navbar-icon">
           <IoPersonOutline
             className="navbar-icon-inner"
             style={{ color: "#6B7280", height: "100%" }}
           />
-        </li>
+        </li> */}
         <li className="navbar-item hamburger-item">
           <RxHamburgerMenu
             className="hamburger navbar-icon-inner"

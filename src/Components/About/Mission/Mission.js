@@ -48,11 +48,9 @@ const Mission = () => {
           <div className="mission-1st-section-inner"> 
             <div className="mission-head">Our purpose, mission, and values</div>
             <div className="mission-content1">
-              To help our clients make distinctive, lasting, and substantial
-              improvements in their performance and to build a great firm that
-              attracts, develops, excites, and retains exceptional people.
+            At Lokarpan, our mission is to empower rural communities through innovative and sustainable solutions. Since 1996, we have been dedicated to improving the social and economic conditions of those living in stress. 
             </div>
-            <div className="mission-content2">
+            {/* <div className="mission-content2">
               We are a values-driven organization. Our values reflect the thinking
               of our founder, James O. McKinsey, and Marvin Bower, managing
               director from 1950 to 1967, who was a major force in shaping the
@@ -61,7 +59,7 @@ const Mission = () => {
               and the way we serve our clients on a daily basis. We put aside one
               day a year to reflect as a group on what our values mean to both our
               work and our lives.
-            </div>
+            </div> */}
           </div>
         </section>
         <section className="our-purpose">
@@ -171,9 +169,9 @@ const Mission = () => {
         </section> */}
         <section className="our-vision">
           <div className="our-vision-head">Our Values</div>
-          <div className="our-vision-subhead">
+          {/* <div className="our-vision-subhead">
             Adhere to the highest professional standards
-          </div>
+          </div> */}
           <div className="our-vision-text">
             Lokarpan values education as a transformative tool. We have impacted over 14,000 children through our education programs, focusing on curriculum advancement and infrastructure development. Our commitment extends to training teachers and developing interactive, engaging learning tools to ensure every child reaches their full potential.
           </div>
