@@ -1,13 +1,13 @@
 .faqs {
     width: 90%;
    text-align: left;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     
   
   }
   
   .faqs .faq {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
     padding: 15px 0;
     background: #fff;
     border-top: 1px solid #979797 ;

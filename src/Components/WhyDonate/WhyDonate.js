@@ -90,16 +90,17 @@ const WhyDonate = () => {
           sector
         </h1>
         <div className="hyperlinks">
-        <div className="apply-btn orange">
-              <Link to="/donate" className="apply-btn-text-white body-btn">Donate</Link>
+          <div className="apply-btn orange">
+            <div>
+            <Link to="/donate" className="apply-btn-text-white body-btn">Donate</Link>
+            </div>
           </div>
           <div> 
-          <a className="donate-hyperlink" href="/faqs">
-            FAQ
-            <IoIosArrowForward style={{fontSize:"15px"}} />
-          </a>
+            <a className="donate-hyperlink" href="/faqs">
+              FAQ
+              <IoIosArrowForward style={{fontSize:"15px"}} />
+            </a>
           </div>
-
         </div>
       </div>
       <Footer />
