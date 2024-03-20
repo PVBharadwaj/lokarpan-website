@@ -132,7 +132,7 @@ li {
 .hor-line4 {
   max-width: 1100px;
   width: 80%;
-  border: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
   display: block;
   margin: 0 auto;
   background-color: #f5f5f5;
@@ -147,7 +147,7 @@ li {
   }
   .hor-line3 {
     width: 100%;
-    border: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -254,7 +254,7 @@ li {
   }
   .footer-hor-line {
     display: block;
-    border: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
     width: 100%;
     margin: 10px 0;
   }
