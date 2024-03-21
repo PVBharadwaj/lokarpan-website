@@ -40,7 +40,7 @@ const FlipCard = () => {
               />
             </div>
             <div className="right-align">
-              <FaCirclePlus className="size-80" onClick={handleClickin} />
+              <FaCirclePlus className="size-100" onClick={handleClickin} />
             </div>
           </div>
           <div className="flip-card-back">
@@ -55,7 +55,7 @@ const FlipCard = () => {
               </p>
             </div>
             <div className="right-align">
-              <IoIosCloseCircle className="size-80" onClick={handleClickout} />
+              <IoIosCloseCircle className="size-100" onClick={handleClickout} />
             </div>
           </div>
         </div>
