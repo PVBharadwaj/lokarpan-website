@@ -10,6 +10,7 @@ class Environment extends Component {
     return (
       <>
         <Navbar />
+        <div className="fellowship-nav"><h1>Environment</h1></div>
         <div className="health-container">
           {/* <div className="health-full-img"> */}
           <div className="health-full-img-text">

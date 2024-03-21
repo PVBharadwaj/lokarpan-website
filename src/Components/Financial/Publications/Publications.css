@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 140px 123px;
+  padding-top: 100px !important;
 }
 
 .public-top{

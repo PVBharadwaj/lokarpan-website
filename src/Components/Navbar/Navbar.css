@@ -256,6 +256,7 @@
     z-index: 100;
     visibility: visible;
     opacity: 1;
+    overflow: scroll;
   }
 
   .navbar-menu.active {

@@ -8,6 +8,7 @@ class Health extends Component {
     return (
       <>
         <Navbar />
+        <div className="fellowship-nav"><h1>Health</h1></div>
         <div className="health-container">
           <div className="health-full-img">
             <img

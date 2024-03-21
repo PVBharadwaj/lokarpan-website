@@ -1,5 +1,8 @@
 .fellowship-nav {
-  padding: 15px 0px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  /* padding: 15px 0px; */
 }
 
 .fellowship-nav h1{

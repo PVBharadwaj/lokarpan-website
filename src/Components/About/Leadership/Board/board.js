@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SecondaryNav from "../../../Navbar/SecondaryNav/SecondaryNav";
 import SearchBar from "../../../Searchbar/Searchbar";
 import "./Board.css"
+import axios from "axios";
 import Navbar from "../../../Navbar/Navbar";
 import Footer from "../../../Footer/Footer";
 
@@ -120,6 +121,23 @@ const BoardData = [
 ];
 
 const Board = () => {
+
+
+  // const [BoardData, setBoardData] = useState([]);
+
+  // useEffect(() => {
+  //   axios.get('http://127.0.0.1:8000/api/board/')
+  //     .then(response => {
+  //       setBoardData(response.data);
+  //       alert("success");
+  //     })
+  //     .catch(error => {
+  //       alert("error");
+  //       console.error('Error fetching Board data:', error);
+  //     });
+  // }, []);
+
+
   return (
     <>
     <Navbar />
