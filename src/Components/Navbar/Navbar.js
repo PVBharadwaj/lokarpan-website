@@ -113,27 +113,17 @@ const fuseOptions = {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeIconDropdown, setActiveIconDropdown] = useState(null)
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
+  const [isProfilemenuOpen, setProfilemenuOpen] = useState(false);
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const closeSearchMenu = () => {
-    setSearchmenuOpen(false);
-  };
-
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       setSearchmenuOpen(false);
+      setProfilemenuOpen(false);
     }
   });
 
@@ -144,6 +134,22 @@ const Navbar = () => {
       setSearchmenuOpen(true)
       setqueryText("");
     }
+  };
+
+  const OpenProfilemenu = () => {
+    if(isProfilemenuOpen) {
+      setProfilemenuOpen(false)
+    } else {
+      setProfilemenuOpen(true)
+    }
+  };
+
+  const closeSearchMenu = () => {
+    setSearchmenuOpen(false);
+  };
+
+  const closeProfileMenu = () => {
+    setProfilemenuOpen(false);
   };
 
   const toggleMenu = () => {
@@ -161,6 +167,10 @@ const Navbar = () => {
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
+
+  // const toggleIconDropdown = (index) => {
+  //   setActiveIconDropdown(activeIconDropdown === index ? null : index)
+  // }
 
   const handleBackClick = () => {
     setActiveDropdown(null);
@@ -212,7 +222,6 @@ const Navbar = () => {
           <Link to="/about" onClick={handleNavlinkClick}>
             About
           </Link>
-          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
@@ -563,41 +572,42 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item dropdown navbar-icon">
+        <li 
+          className="navbar-item dropdown navbar-icon nav-search"
+          onMouseLeave={closeProfileMenu}
+        >
           <IoPersonOutline
             className="navbar-icon-inner"
             style={{ color: "#6B7280", height: "100%" }}
-            id="basic-button"
-            aria-controls={open ? 'basic-menu' : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-            onClick={handleClick}
+            onClick={OpenProfilemenu}
           />
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              'aria-labelledby': 'basic-button',
-            }}
+          <div 
+            className={`click-dropdown click-dropdown-search  ${
+            isProfilemenuOpen ? "active" : ""
+            }`}
           >
-            <MenuItem onClick={handleClose}>
-              <span><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
-              Staff
-            </MenuItem>
-            <MenuItem onClick={handleClose}>
-              <span><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
-              Student
-            </MenuItem> 
-          </Menu>
+            <div className="click-dropdown-inner nav-profile-click-dropdown">
+              <RxCross2
+                className="cross"
+                onClick={closeProfileMenu}
+                style={{ fontSize: "20px" }}
+              />
+              <div className="nav-profile">
+                <h1 className="nav-profile-heading">LOKARPAN</h1>
+                <div className="nav-profile-inner">
+                  <div className="nav-profile-inner-in">
+                    <span className=" nav-profile-in-left"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
+                    Staff
+                  </div>
+                  <div className="nav-profile-inner-in">
+                    <span className="nav-profile-in-right"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
+                    Student
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
-        {/* <li className="navbar-item navbar-icon">
-          <IoPersonOutline
-            className="navbar-icon-inner"
-            style={{ color: "#6B7280", height: "100%" }}
-          />
-        </li> */}
         <li className="navbar-item hamburger-item">
           <RxHamburgerMenu
             className="hamburger navbar-icon-inner"

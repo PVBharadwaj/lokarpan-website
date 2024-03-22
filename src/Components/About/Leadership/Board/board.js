@@ -7,135 +7,135 @@ import Navbar from "../../../Navbar/Navbar";
 import Footer from "../../../Footer/Footer";
 
 
-const BoardData = [
-  {
-    id: 1,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "Dummy",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 2,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "test",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 3,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "example",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 4,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "person",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 5,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "pupil",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 6,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "people",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 7,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "member",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 8,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "item",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 9,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "people",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 10,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "member",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 11,
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "item",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-];
+// const BoardData = [
+//   {
+//     id: 1,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "Dummy",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 2,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "test",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 3,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "example",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 4,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "person",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 5,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "pupil",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 6,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "people",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 7,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "member",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 8,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "item",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 9,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "people",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 10,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "member",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 11,
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "item",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+// ];
 
 const Board = () => {
 
 
-  // const [BoardData, setBoardData] = useState([]);
+  const [BoardData, setBoardData] = useState([]);
 
-  // useEffect(() => {
-  //   axios.get('http://127.0.0.1:8000/api/board/')
-  //     .then(response => {
-  //       setBoardData(response.data);
-  //       alert("success");
-  //     })
-  //     .catch(error => {
-  //       alert("error");
-  //       console.error('Error fetching Board data:', error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/board/')
+      .then(response => {
+        setBoardData(response.data);
+        alert("success");
+      })
+      .catch(error => {
+        alert("error");
+        console.error('Error fetching Board data:', error);
+      });
+  }, []);
 
 
   return (

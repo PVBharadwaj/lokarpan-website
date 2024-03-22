@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FinancialNav from "../../Navbar/FinancialSubNav/FinancialNav";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Publications.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import axios from "axios";
+import { debounce } from "lodash";
 
 const Columns = [
   {field: "id", headerName: "ID", width: 250, headerAlign: "center", align: "center",},
@@ -93,24 +94,27 @@ const Rows = [
   },
 ];
 
-
-
-
-
-
 const handleDownload = (id) => {
   alert(`Downloading file for ID: ${id}`);
 };
 
 
 const Publications = () => {
-  const [Typing, setSearchState] = useState(false);
-  const customHeader = {
-    backgroundColor: "lightblue",
-    fontSize: "16px",
-    fontWeight: "bold",
-  };
+  // const customHeader = {
+  //   backgroundColor: "lightblue",
+  //   fontSize: "16px",
+  //   fontWeight: "bold",
+  // };
 
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredRows = Rows.filter(
+    (row) => row.reporttitle1.toLowerCase().includes(searchQuery.toLowerCase()) || row.addedDate.toLowerCase().includes(searchQuery.toLowerCase()) || row.year.toLowerCase().includes(searchQuery.toLowerCase()) 
+  );
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
   // const [Rows, setReportData] = useState([]);
 
   // useEffect(() => {
@@ -124,7 +128,6 @@ const Publications = () => {
   //       console.error('Error fetching Annual Report data:', error);
   //     });
   // }, []);
-
 
 
   return (
@@ -152,42 +155,28 @@ const Publications = () => {
         <div className="column">
           <div className="row">
             <div className="col-sm-6">
-              <label htmlFor="">
-                Show{" "}
-                <select className="publication-form-control" name="" id="">
-                  <option value="10">10</option>
-                  <option value="25">25</option>
-                  <option value="50">50</option>
-                  <option value="100">100</option>
-                </select>{" "}
-                Entries
-              </label>
-            </div>
-            <div className="col-sm-6">
               <div>
                 <label htmlFor="">
-                  Search:{" "}
+                  {/* Search:{" "} */}
                   <input
                     type="search"
-                    id={Typing ? "searchInput" : ""}
-                    className="publication-form-control"
-                    onKeyUp={() => {
-                      setSearchState(true);
-                    }}
+                    className="publication-form-control text-input"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={handleSearchChange}
                   />
                 </label>
               </div>
             </div>
           </div>
           <div className="responsive-data-grid">
-              <DataGrid
-              className="row"
-              rows={Rows}
+            <DataGrid
+              rows={filteredRows}
               columns={Columns.filter((column) => column.field !== "id")}
               pageSize={5}
               rowSpacingType={"margin"}
               rowsPerPageOptions={[5, 10, 25, 50, 100]}
-              headerClassName={customHeader}
+              // headerClassName={customHeader}
               sx={{
                 borderColor: "#fff",
                 "& .MuiDataGrid-cell:hover": {
@@ -196,7 +185,6 @@ const Publications = () => {
               }}
             />
           </div>
-
         </div>
       </div>
       <Footer />

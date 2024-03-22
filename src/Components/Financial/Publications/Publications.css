@@ -96,18 +96,18 @@ color: #fff;
 }
 
 .publication-form-control {
-  padding: 6px 12px;
-  font-size: 14px;
+  padding:12px;
+  font-size: 20px;
   color: #555;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 50px;
 }
 
 .publication-form-control:focus {
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 7px rgba(0, 123, 255, 0.5);
+  border: solid black 1px;
+  border-radius: 50px;
+  /* box-shadow: 0 0 7px rgba(0, 123, 255, 0.5); */
   outline: none;
 }
 

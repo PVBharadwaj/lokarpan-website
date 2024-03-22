@@ -2,7 +2,6 @@
   height: 62px;
   display: flex;
   align-items: center;
-  /* padding: 15px 0px; */
 }
 
 .fellowship-nav h1{
@@ -172,10 +171,6 @@
 }
 
 @media screen and (max-width: 748px) {
-  .fellowship-nav {
-    padding: 15px 20px;
-  }
-  
   .fellowship-top > .impact-title {
     font-size: 20px;
     padding: 10px 20px;
