@@ -1,26 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
 
-.kith-overview-head {
-    position: relative; 
-    padding: 200px;
-}
-
-.kith-overview-head::before { 
-    content: "";
+.kith-overview-head { 
     background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_274_lwa7he.png');
     background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.9;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
 }
 
 .kith-overview-head h1, 
 .kith-overview-head p {
     color: white;
-    position: relative;
 }
 
 .kith-overview-div > p,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { CiSearch } from "react-icons/ci";
@@ -110,29 +110,62 @@ const fuseOptions = {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeIconDropdown, setActiveIconDropdown] = useState(null)
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
+  const [isProfilemenuOpen, setProfilemenuOpen] = useState(false);
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
+  const timeoutRef = useRef(null);
 
-  const OpenSearchmenu = () => {
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      setSearchmenuOpen(false);
+      setProfilemenuOpen(false);
+    }
+  });
+
+  const ToggleSearchmenu = () => {
     if(isSearchmenuOpen) {
       setSearchmenuOpen(false)
     } else {
+      clearTimeout(timeoutRef.current);
       setSearchmenuOpen(true)
       setqueryText("");
     }
   };
 
-  const closeSearchMenu = () => {
-    setSearchmenuOpen(false);
-  }
+  const OpenSearchmenu = () => {
+    clearTimeout(timeoutRef.current);
+    setSearchmenuOpen(true)
+    setqueryText("");
+  };
 
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        setSearchmenuOpen(false);
+  const ToggleProfilemenu = () => {
+    if(isProfilemenuOpen) {
+      setProfilemenuOpen(false)
+    } else {
+      clearTimeout(timeoutRef.current);
+      setProfilemenuOpen(true)
     }
-  })
+  };
+
+  const OpenProfilemenu = () => {
+    clearTimeout(timeoutRef.current);
+    setProfilemenuOpen(true)
+  };
+
+  const closeSearchMenu = () => {
+    timeoutRef.current = setTimeout(() => {
+      setSearchmenuOpen(false);
+    }, 500); 
+  };
+
+  const closeProfileMenu = () => {
+    timeoutRef.current = setTimeout(() => {
+      setProfilemenuOpen(false);
+    }, 500);
+  };
 
   const toggleMenu = () => {
     setActiveDropdown(null);
@@ -140,7 +173,7 @@ const Navbar = () => {
   };
 
   const handleNavlinkClick = (e) => {
-    if (window.innerWidth <= 805) {
+    if (window.innerWidth <= 922) {
       e.preventDefault();
       toggleDropdown();
     }
@@ -321,78 +354,111 @@ const Navbar = () => {
             className="navbar-item dropdown navbar-icon nav-search"
             onMouseLeave={closeSearchMenu}
           >
-            {/* <div className="dummy-search"></div> */}
             <FiSearch
               style={{ color: "#6B7280", height: "100%" }}
               className="navbar-icon-inner"
-              onClick={OpenSearchmenu}
+              onClick={ToggleSearchmenu}
             />
-            <div
-              className={`click-dropdown click-dropdown-search  ${
-                isSearchmenuOpen ? "active" : ""
-              }`}
-            >
-              <div className="click-dropdown-inner">
-                <div className="nav-searchbar">
-                  <RxCross2
-                    className="cross"
-                    onClick={closeSearchMenu}
-                    style={{ fontSize: "20px" }}
-                  />
-                  <div className="nav-form">
-                    <CiSearch className="react-icon size-80" />
-                      <input
-                        className="nav-form-control text-input"
-                        type="text"
-                        placeholder="Search..."
-                        value={queryText}
-                        onChange={handleSearchChange}
-                        ref={(input) => {
-                          if (input) {
-                            input.focus();
-                          }
-                        }}
-                      />
-                  </div>
-                  <div className="search-quick-links">
-                    {queryText === "" ? (
-                      <div>
-                        <h4>Quick Links</h4>
-                        <ul className="quick-links">
-                          <li>
-                            <Link to="/history">History</Link>
-                          </li>
-                          <li>
-                            <Link to="/moonshots">Careers</Link>
-                          </li>
-                          <li>
-                            <Link to="/our-role">Blog</Link>
-                          </li>
-                        </ul>
-                      </div>
-                    ) : searchResults.length === 0 ? (
-                      "No results found"
-                    ) : (
-                      searchResults.map((result) => (
-                        <ul>
+          <div
+            className={`click-dropdown click-dropdown-search  ${
+              isSearchmenuOpen ? "active" : ""
+            }`}
+            onMouseEnter={OpenSearchmenu}
+          >
+            <div className="click-dropdown-inner">
+              <div className="nav-searchbar">
+                <RxCross2
+                  className="cross"
+                  onClick={closeSearchMenu}
+                  style={{ fontSize: "20px" }}
+                />
+                <div className="nav-form">
+                  <CiSearch className="react-icon size-80" />
+                    <input
+                      className="nav-form-control text-input"
+                      type="text"
+                      placeholder="Search..."
+                      value={queryText}
+                      onChange={handleSearchChange}
+                      ref={(input) => {
+                        if (input) {
+                          input.focus();
+                        }
+                      }}
+                    />
+                </div>
+                <div className="search-quick-links">
+                  {queryText === "" ? (
+                    <div>
+                      <h4>Quick Links</h4>
+                      <ul className="quick-links">
+                        <li>
+                          <Link to="/history">History</Link>
+                        </li>
+                        <li>
+                          <Link to="/moonshots">Careers</Link>
+                        </li>
+                        <li>
+                          <Link to="/our-role">Blog</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  ) : searchResults.length === 0 ? (
+                    "No results found"
+                  ) : (
+                    <>
+                      <h4>Suggested Links</h4>
+                      <ul>
+                        {searchResults.map((result) => (
                           <li key={result.item.id}>
-                            {" "}
                             <a href={result.item.link}>{result.item.name}</a>
                           </li>
-                        </ul>
-                      ))
-                    )}
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          </li>
+          <li 
+          className="navbar-item dropdown navbar-icon nav-search"
+          onMouseLeave={closeProfileMenu}
+        >
+          <IoPersonOutline
+            className="navbar-icon-inner"
+            style={{ color: "#6B7280", height: "100%" }}
+            onClick={ToggleProfilemenu}
+          />
+          <div 
+            className={`click-dropdown click-dropdown-search  ${
+            isProfilemenuOpen ? "active" : ""
+            }`}
+            onMouseEnter={OpenProfilemenu}
+          >
+            <div className="click-dropdown-inner nav-profile-click-dropdown">
+              <RxCross2
+                className="cross"
+                onClick={closeProfileMenu}
+                style={{ fontSize: "20px" }}
+              />
+              <div className="nav-profile">
+                <h1 className="nav-profile-heading">LOKARPAN</h1>
+                <div className="nav-profile-inner">
+                  <div className="nav-profile-inner-in">
+                    <span className=" nav-profile-in-left"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
+                    Staff
+                  </div>
+                  <div className="nav-profile-inner-in">
+                    <span className="nav-profile-in-right"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
+                    Student
                   </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li className="navbar-item navbar-icon">
-            <IoPersonOutline
-              className="navbar-icon-inner"
-              style={{ color: "#6B7280", height: "100%" }}
-            />
-          </li>
+          </div>
+        </li>
           <li className="navbar-item navbar-icon">
             <Link to={'/'} className="kith-back-to-main">
               <IoExitOutline

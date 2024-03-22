@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FiSearch } from "react-icons/fi";
@@ -8,11 +8,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import Fuse from "fuse.js";
-// import * as React from 'react';
-// import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-
 
 const items = [
   {
@@ -119,6 +114,7 @@ const Navbar = () => {
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
+  const timeoutRef = useRef(null);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -127,29 +123,46 @@ const Navbar = () => {
     }
   });
 
-  const OpenSearchmenu = () => {
+  const ToggleSearchmenu = () => {
     if(isSearchmenuOpen) {
       setSearchmenuOpen(false)
     } else {
+      clearTimeout(timeoutRef.current);
       setSearchmenuOpen(true)
       setqueryText("");
     }
   };
 
-  const OpenProfilemenu = () => {
+  const OpenSearchmenu = () => {
+    clearTimeout(timeoutRef.current);
+    setSearchmenuOpen(true)
+    setqueryText("");
+  };
+
+  const ToggleProfilemenu = () => {
     if(isProfilemenuOpen) {
       setProfilemenuOpen(false)
     } else {
+      clearTimeout(timeoutRef.current);
       setProfilemenuOpen(true)
     }
   };
 
+  const OpenProfilemenu = () => {
+    clearTimeout(timeoutRef.current);
+    setProfilemenuOpen(true)
+  };
+
   const closeSearchMenu = () => {
-    setSearchmenuOpen(false);
+    timeoutRef.current = setTimeout(() => {
+      setSearchmenuOpen(false);
+    }, 500); 
   };
 
   const closeProfileMenu = () => {
-    setProfilemenuOpen(false);
+    timeoutRef.current = setTimeout(() => {
+      setProfilemenuOpen(false);
+    }, 500);
   };
 
   const toggleMenu = () => {
@@ -167,10 +180,6 @@ const Navbar = () => {
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
-
-  // const toggleIconDropdown = (index) => {
-  //   setActiveIconDropdown(activeIconDropdown === index ? null : index)
-  // }
 
   const handleBackClick = () => {
     setActiveDropdown(null);
@@ -504,16 +513,16 @@ const Navbar = () => {
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
-          {/* <div className="dummy-search"></div> */}
           <FiSearch
             style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
-            onClick={OpenSearchmenu}
+            onClick={ToggleSearchmenu}
           />
           <div
             className={`click-dropdown click-dropdown-search  ${
               isSearchmenuOpen ? "active" : ""
             }`}
+            onMouseEnter={OpenSearchmenu}
           >
             <div className="click-dropdown-inner">
               <div className="nav-searchbar">
@@ -579,12 +588,13 @@ const Navbar = () => {
           <IoPersonOutline
             className="navbar-icon-inner"
             style={{ color: "#6B7280", height: "100%" }}
-            onClick={OpenProfilemenu}
+            onClick={ToggleProfilemenu}
           />
           <div 
             className={`click-dropdown click-dropdown-search  ${
             isProfilemenuOpen ? "active" : ""
             }`}
+            onMouseEnter={OpenProfilemenu}
           >
             <div className="click-dropdown-inner nav-profile-click-dropdown">
               <RxCross2

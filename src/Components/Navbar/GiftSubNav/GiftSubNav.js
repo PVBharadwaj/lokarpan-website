@@ -1,17 +1,31 @@
 import { BsChevronDown } from "react-icons/bs";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./GiftSubNav.css";
 
 const GiftSubNav = () => {
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
+  const timeoutRef = useRef(null);
+
   const toggleNavmenu = () => {
-    setNavmenuOpen(!isNavmenuOpen);
+    if(isNavmenuOpen) {
+      setNavmenuOpen(false)
+    } else {
+      clearTimeout(timeoutRef.current);
+      setNavmenuOpen(true)
+    }
+  };
+
+  const OpenNavmenu = () => {
+    clearTimeout(timeoutRef.current);
+    setNavmenuOpen(true);
   };
 
   const closeBrowseMenu = () => {
-    setNavmenuOpen(false);
-   };
+    timeoutRef.current = setTimeout(() => {
+      setNavmenuOpen(false);
+    }, 500); 
+  };
 
   return (
     <nav className="SecNavbar support-nav">
@@ -19,9 +33,10 @@ const GiftSubNav = () => {
         <ul className="navbar-links">
           <li 
             className="navbar-item sup-nav-browse dropdown"
+            onClick={toggleNavmenu}
             onMouseLeave={closeBrowseMenu}  
           >
-            <p onClick={toggleNavmenu}>
+            <p>
               <span className="desktop-only">Browse All</span>
               <BsChevronDown 
               className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
@@ -31,29 +46,32 @@ const GiftSubNav = () => {
               className={` navbar-links click-dropdown ${
                 isNavmenuOpen ? "active" : ""
               }`}
+              onMouseEnter={OpenNavmenu}
             >
-              <div className="dropdown-container">
-                <ul>
-                  <h4 className="gift-nav-head">Explore Make a Gift</h4>
-                  <li>
-                    <Link className="gift-nav-item" to="/why-donate">Annual Fund</Link>
-                  </li>
-                  <li>
-                    <Link className="gift-nav-item" to="/being-a-volunteer">Work of Art</Link>
-                  </li>
-                  <li>
-                    <Link className="gift-nav-item" to="/our-role">Endowment Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="gift-nav-item" to="/ways-to-give">Planned giving</Link>
-                  </li>
-                  <li>
-                    <Link className="gift-nav-item" to="/donate">Other ways to give</Link>
-                  </li>
-                  <li>
-                    <Link className="gift-nav-item" to="/donate">Expanding Vision</Link>
-                  </li>
-                </ul>
+              <div className="click-dropdown-inner">
+                <div className="dropdown-container">
+                  <ul>
+                    <h4 className="gift-nav-head">Explore Make a Gift</h4>
+                    <li>
+                      <Link className="gift-nav-item" to="/why-donate">Annual Fund</Link>
+                    </li>
+                    <li>
+                      <Link className="gift-nav-item" to="/being-a-volunteer">Work of Art</Link>
+                    </li>
+                    <li>
+                      <Link className="gift-nav-item" to="/our-role">Endowment Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="gift-nav-item" to="/ways-to-give">Planned giving</Link>
+                    </li>
+                    <li>
+                      <Link className="gift-nav-item" to="/donate">Other ways to give</Link>
+                    </li>
+                    <li>
+                      <Link className="gift-nav-item" to="/donate">Expanding Vision</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </li>
