@@ -533,3 +533,9 @@
 }
 
 /* CSS for navSearchBar ends */
+
+@media (orientation: landscape) {
+  .navbar-menu {
+    bottom: 0px;
+  }
+}
