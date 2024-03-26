@@ -1,16 +1,30 @@
 import { BsChevronDown } from "react-icons/bs";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 
 const KithLifeAtSchoolSubNavbar = () => {
   const [isNavmenuOpen, setNavmenuOpen] = useState(null);
+  const timeoutRef = useRef(null);
+
   const toggleNavmenu = () => {
-    setNavmenuOpen(!isNavmenuOpen);
+    if(isNavmenuOpen) {
+      setNavmenuOpen(false)
+    } else {
+      clearTimeout(timeoutRef.current);
+      setNavmenuOpen(true)
+    }
+  };
+
+  const OpenNavmenu = () => {
+    clearTimeout(timeoutRef.current);
+    setNavmenuOpen(true);
   };
 
   const closeBrowseMenu = () => {
-    setNavmenuOpen(false);
+    timeoutRef.current = setTimeout(() => {
+      setNavmenuOpen(false);
+    }, 500); 
   };
 
   return (
@@ -24,8 +38,9 @@ const KithLifeAtSchoolSubNavbar = () => {
         <li
           className="navbar-item sup-nav-browse dropdown"
           onMouseLeave={closeBrowseMenu}
+          onClick={toggleNavmenu}
         >
-          <p className="desktop-only" onClick={toggleNavmenu}>
+          <p className="desktop-only">
             <span>Browse All</span>
             <BsChevronDown 
               className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
@@ -35,6 +50,7 @@ const KithLifeAtSchoolSubNavbar = () => {
             className={` navbar-links click-dropdown ${
               isNavmenuOpen ? "active" : ""
             }`}
+            onMouseEnter={OpenNavmenu}
           >
             <div className="click-dropdown-inner">
               <div className="dropdown-container">

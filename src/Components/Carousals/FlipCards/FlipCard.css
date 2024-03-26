@@ -91,6 +91,10 @@
   display: none;
 }
 
+.size-100{
+  font-size: 40px;
+}
+
 @media screen and (max-width: 748px) {
   .flip-card{
     width: 100%;
@@ -106,6 +110,10 @@
 
   .flip-card{
     width: 300px;
+  }
+
+  .size-100{
+    font-size: 30px;
   }
 
   .flip-card-inner h1 {

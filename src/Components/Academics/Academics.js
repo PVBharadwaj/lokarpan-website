@@ -12,11 +12,13 @@ const Academics = () => {
       <KithNavbar />
       <KithLifeAtSchoolSubNavbar />
       <div className="academics-upper-section">
-        <h1>Academics</h1>
-        <p>
-          Stanford students create and apply knowledge by thinking and doing,
-          preparing for leadership in a rapidly changing world.
-        </p>
+        <div className="academics-upper-section-text">
+          <h1>Academics</h1>
+          <p>
+            Stanford students create and apply knowledge by thinking and doing,
+            preparing for leadership in a rapidly changing world.
+          </p>
+        </div>
       </div>
       <div className="academics-stats">
         <div>

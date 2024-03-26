@@ -20,7 +20,7 @@ const FinancialNav = (props) => {
       </div>
       <ul className={` navbar-links mobile-navbar-links ${isNavmenuOpen ? "active" : ""}`}>
         <li className="navbar-item">
-          <Link to={`${props.link1}`} className="disabled">{props.navitem1}</Link>
+          <Link to={`${props.link1}`}>{props.navitem1}</Link>
         </li>
         <li className="navbar-item">
           <Link to={`${props.link2}`}>{props.navitem2}</Link>

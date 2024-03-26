@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FiSearch } from "react-icons/fi";
@@ -8,7 +8,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import Fuse from "fuse.js";
-
 
 const items = [
   {
@@ -109,28 +108,61 @@ const fuseOptions = {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeIconDropdown, setActiveIconDropdown] = useState(null)
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
+  const [isProfilemenuOpen, setProfilemenuOpen] = useState(false);
   const [queryText, setqueryText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
-
-  const closeSearchMenu = () => {
-    setSearchmenuOpen(false);
-  };
+  const timeoutRef = useRef(null);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       setSearchmenuOpen(false);
+      setProfilemenuOpen(false);
     }
   });
 
-  const OpenSearchmenu = () => {
+  const ToggleSearchmenu = () => {
     if(isSearchmenuOpen) {
       setSearchmenuOpen(false)
     } else {
+      clearTimeout(timeoutRef.current);
       setSearchmenuOpen(true)
       setqueryText("");
     }
+  };
+
+  const OpenSearchmenu = () => {
+    clearTimeout(timeoutRef.current);
+    setSearchmenuOpen(true)
+    setqueryText("");
+  };
+
+  const ToggleProfilemenu = () => {
+    if(isProfilemenuOpen) {
+      setProfilemenuOpen(false)
+    } else {
+      clearTimeout(timeoutRef.current);
+      setProfilemenuOpen(true)
+    }
+  };
+
+  const OpenProfilemenu = () => {
+    clearTimeout(timeoutRef.current);
+    setProfilemenuOpen(true)
+  };
+
+  const closeSearchMenu = () => {
+    timeoutRef.current = setTimeout(() => {
+      setSearchmenuOpen(false);
+    }, 500); 
+  };
+
+  const closeProfileMenu = () => {
+    timeoutRef.current = setTimeout(() => {
+      setProfilemenuOpen(false);
+    }, 500);
   };
 
   const toggleMenu = () => {
@@ -199,7 +231,6 @@ const Navbar = () => {
           <Link to="/about" onClick={handleNavlinkClick}>
             About
           </Link>
-          {/* <IoIosArrowForward className="up" /> */}
           <div
             className={`dropdown-content ${
               activeDropdown !== null ? "active" : ""
@@ -482,16 +513,16 @@ const Navbar = () => {
           className="navbar-item dropdown navbar-icon nav-search"
           onMouseLeave={closeSearchMenu}
         >
-          {/* <div className="dummy-search"></div> */}
           <FiSearch
             style={{ color: "#6B7280", height: "100%" }}
             className="navbar-icon-inner"
-            onClick={OpenSearchmenu}
+            onClick={ToggleSearchmenu}
           />
           <div
             className={`click-dropdown click-dropdown-search  ${
               isSearchmenuOpen ? "active" : ""
             }`}
+            onMouseEnter={OpenSearchmenu}
           >
             <div className="click-dropdown-inner">
               <div className="nav-searchbar">
@@ -550,11 +581,42 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="navbar-item navbar-icon">
+        <li 
+          className="navbar-item dropdown navbar-icon nav-search"
+          onMouseLeave={closeProfileMenu}
+        >
           <IoPersonOutline
             className="navbar-icon-inner"
             style={{ color: "#6B7280", height: "100%" }}
+            onClick={ToggleProfilemenu}
           />
+          <div 
+            className={`click-dropdown click-dropdown-search  ${
+            isProfilemenuOpen ? "active" : ""
+            }`}
+            onMouseEnter={OpenProfilemenu}
+          >
+            <div className="click-dropdown-inner nav-profile-click-dropdown">
+              <RxCross2
+                className="cross"
+                onClick={closeProfileMenu}
+                style={{ fontSize: "20px" }}
+              />
+              <div className="nav-profile">
+                <h1 className="nav-profile-heading">LOKARPAN</h1>
+                <div className="nav-profile-inner">
+                  <div className="nav-profile-inner-in">
+                    <span className=" nav-profile-in-left"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
+                    Staff
+                  </div>
+                  <div className="nav-profile-inner-in">
+                    <span className="nav-profile-in-right"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
+                    Student
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li className="navbar-item hamburger-item">
           <RxHamburgerMenu
