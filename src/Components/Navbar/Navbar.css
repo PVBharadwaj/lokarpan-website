@@ -300,6 +300,7 @@
     visibility: visible;
     opacity: 1;
     overflow: scroll;
+    overflow-x: hidden;
   }
 
   .navbar-menu.active {
