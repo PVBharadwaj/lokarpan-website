@@ -30,7 +30,7 @@ const Footer = () => {
         {/* <hr className="hor-line4" /> */}
         <div className="footer-container-inner">
           <div className="content">
-            <div className="footer-list">
+            <div className="icons-footer-list">
               <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707625023/Frame_48098098_rag4wi.svg"
                 className="lokarpan-logo"
@@ -74,7 +74,7 @@ const Footer = () => {
                 }`}
               >
                 <li>
-                  <Link to="/">Our Role</Link>
+                  <Link to="/our-role">Our Role</Link>
                 </li>
                 <li>
                   <Link to="/history">History</Link>
@@ -94,6 +94,44 @@ const Footer = () => {
               </ul>
               <hr className="footer-hor-line" />
             </div>
+            <div className="mobile-footer-list">
+              <ul className="footer-questions-container-1">
+                <div className="footer-each-question-1">
+                  <input
+                    type="checkbox"
+                    id="about-lokarpan"
+                    name="about-lokarpan"
+                    className="footer-input-1"
+                  />
+                  <label htmlFor="about-lokarpan" className="footer-question-1">
+                    About Lokarpan
+                  </label>
+                  <div className="footer-ans-sec-1">
+                    <ul className="footer-faq-answer-1">
+                      <li>
+                        <Link to="/our-role">Our Role</Link>
+                      </li>
+                      <li>
+                        <Link to="/history">History</Link>
+                      </li>
+                      <li>
+                        <Link to="/mission">Mission</Link>
+                      </li>
+                      <li>
+                        <Link to="/leadership">Leadership</Link>
+                      </li>
+                      <li>
+                        <Link to="/careers">Careers</Link>
+                      </li>
+                      <li>
+                        <Link to="/financials">Financials</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <hr className="footer-hor-line" />
             <div className="footer-list">
               <div
                 className="footer-list-title"
@@ -121,6 +159,32 @@ const Footer = () => {
               </ul>
               <hr className="footer-hor-line" />
             </div>
+            <div className="mobile-footer-list">
+              <ul className="footer-questions-container-1">
+                <div className="footer-each-question-1">
+                  <input
+                    type="checkbox"
+                    id="contact-us"
+                    name="contact-us"
+                    className="footer-input-1"
+                  />
+                  <label htmlFor="contact-us" className="footer-question-1">
+                    Contact Us
+                  </label>
+                  <div className="footer-ans-sec-1">
+                    <ul className="footer-faq-answer-1">
+                      <li>
+                        <Link to="/">Get in Touch</Link>
+                      </li>
+                      <li>
+                        <Link to="/newsletter">Newsletter</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <hr className="footer-hor-line" />
             <div className="footer-list">
               <div
                 className="footer-list-title"
@@ -145,6 +209,32 @@ const Footer = () => {
               </ul>
               <hr className="footer-hor-line" />
             </div>
+            <div className="mobile-footer-list">
+              <ul className="footer-questions-container-1">
+                <div className="footer-each-question-1">
+                  <input
+                    type="checkbox"
+                    id="social"
+                    name="social"
+                    className="footer-input-1"
+                  />
+                  <label htmlFor="social" className="footer-question-1">
+                    Social
+                  </label>
+                  <div className="footer-ans-sec-1">
+                    <ul className="footer-faq-answer-1">
+                      <li>
+                        <Link to="/">Facebook</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Blog</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <hr className="footer-hor-line" />
             <div className="footer-list">
               <div
                 className="footer-list-title"
@@ -174,6 +264,35 @@ const Footer = () => {
               </ul>
               <hr className="footer-hor-line" />
             </div>
+            <div className="mobile-footer-list">
+              <ul className="footer-questions-container-1">
+                <div className="footer-each-question-1">
+                  <input
+                    type="checkbox"
+                    id="contribute"
+                    name="contribute"
+                    className="footer-input-1"
+                  />
+                  <label htmlFor="contribute" className="footer-question-1">
+                    Contribute
+                  </label>
+                  <div className="footer-ans-sec-1">
+                    <ul className="footer-faq-answer-1">
+                      <li>
+                        <Link to="/donate">Donate</Link>
+                      </li>
+                      <li>
+                        <Link to="/being-a-volunteer">Volunteer</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Our Supporters</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <hr className="footer-hor-line" />
           </div>
 
           <div className="social-links">
