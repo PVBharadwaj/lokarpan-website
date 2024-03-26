@@ -348,12 +348,12 @@
   .dropdown .dropdown-content {
     display: none;
     position: fixed;
-    height: 100vh;
     flex-direction: column;
     justify-content: left;
     left: 0px;
     right: 0px;
     top: 0px;
+    bottom: 0px;
     padding: 66px 10px 0px 10px;
     background-color: #fff;
     z-index: 101;
