@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container footer-mobile">
-        <hr className="hor-line4" />
+        {/* <hr className="hor-line4" /> */}
         <div className="footer-container-inner">
           <div className="content">
             <div className="footer-list">
