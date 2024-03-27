@@ -152,35 +152,34 @@
   top: 100%;
 }
 
-
-.nav-profile{
+.nav-profile {
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.nav-profile-heading{
+.nav-profile-heading {
   font-size: 24px;
   padding: 20px 0px;
 }
 
-.nav-profile-inner{
+.nav-profile-inner {
   display: flex;
   gap: 64px;
 }
 
-.nav-icon-profile{
+.nav-icon-profile {
   width: 40px;
   height: 40px;
 }
 
-.nav-profile-click-dropdown{
+.nav-profile-click-dropdown {
   display: flex;
   justify-content: center;
 }
 
-.nav-profile-inner-in{
+.nav-profile-inner-in {
   border: solid 1px black;
   padding: 40px;
   border-radius: 30px;
@@ -189,14 +188,14 @@
   align-items: center;
 }
 
-.nav-profile-in-left{
-  background-color: #FFF7AD;
+.nav-profile-in-left {
+  background-color: #fff7ad;
   border: none;
   border-radius: 50px;
 }
 
-.nav-profile-in-right{
-  background-color: #FA80D1;
+.nav-profile-in-right {
+  background-color: #fa80d1;
   border: none;
   border-radius: 50px;
 }
@@ -294,7 +293,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    bottom: 0;
+    bottom: -100px;
     padding-top: 75px;
     padding-left: 10px;
     flex-direction: column;
@@ -303,6 +302,7 @@
     visibility: visible;
     opacity: 1;
     overflow: scroll;
+    overflow-x: hidden;
   }
 
   .navbar-menu.active {
@@ -318,7 +318,7 @@
     padding: 66px 10px;
   }
 
-  .nav-profile-inner{
+  .nav-profile-inner {
     flex-direction: column;
     gap: 30px;
   }
@@ -350,12 +350,12 @@
   .dropdown .dropdown-content {
     display: none;
     position: fixed;
-    height: 100vh;
     flex-direction: column;
     justify-content: left;
     left: 0px;
     right: 0px;
     top: 0px;
+    bottom: 0px;
     padding: 66px 10px 0px 10px;
     background-color: #fff;
     z-index: 101;
@@ -536,3 +536,9 @@
 }
 
 /* CSS for navSearchBar ends */
+
+@media (orientation: landscape) {
+  .navbar-menu {
+    bottom: 0px;
+  }
+}

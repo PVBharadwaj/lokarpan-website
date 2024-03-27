@@ -162,6 +162,7 @@ class Career extends Component {
             employer, we embrace diversity and do not discriminate based on any
             factors.
           </p>
+          <hr className="hor-line4" />
         </div>
         <Footer />
       </>

@@ -34,6 +34,12 @@ class Home extends Component {
       isAnimationPaused: !prevState.isAnimationPaused,
     }));
   };
+  scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto", // Optional: Add smooth scrolling behavior
+    });
+  };
 
   render() {
     const { isPaused, isAnimationPaused } = this.state;
@@ -85,7 +91,7 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>Understanding our approach to Rural Design Principles</h3>
-                <Link to="/guideline">
+                <Link to="/guideline" onClick={this.scrollToTop}>
                   <button className="read-btn1">Read Now</button>
                 </Link>
               </div>
@@ -97,7 +103,7 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>How do we solve the education crisis?</h3>
-                <Link to="/approach">
+                <Link to="/approach" onClick={this.scrollToTop}>
                   <button className="read-btn1 home-space-above">
                     Read Now
                   </button>
