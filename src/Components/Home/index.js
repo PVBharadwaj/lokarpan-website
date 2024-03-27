@@ -60,11 +60,10 @@ class Home extends Component {
               Commitment beyond conventional boundaries
             </h1>
             <p className="home-para1">
-              Lokarpan is India's leading non-profit with a mission to offer
-              solutions to empower communities living in stress. We work to
-              enable poor, rural communities to improve their social and
-              economic conditions through participatory projects in health,
-              education, income generation, and veterinary care.
+              Lokarpan is dedicated to bringing the best minds together and
+              offering innovative solutions to support and empower underserved
+              communities. We create and support participatory projects to
+              address socio-economic issues in rural India.
             </p>
             <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708659568/image_306_ianuff.png"
@@ -148,12 +147,12 @@ class Home extends Component {
           <div className="lokarpan-container">
             <p className="lokarpan-head5">Our Programs</p>
             <h1 className="home-head3">
-              Keeping people safe and making a positive impact
+              Empowering Communities for Positive Change
             </h1>
             <p className="lokarpan-container-para1">
-              Since our formation in 1996, Lokarpan has strived to organise and
-              empower rural poor to promote development as a liberating force
-              aimed at social justice, economic growth and self-reliance
+              Since its inception in 1996, Lokarpan has strived to organise and
+              empower rural communities to promote development as a liberating
+              force aimed at social justice, economic growth and self-reliance.
             </p>
           </div>
           <div className="carousal-container1">
@@ -321,16 +320,25 @@ class Home extends Component {
             </button>
           </div>
           <div className="next-step-section1">
-            <h1 className="lokarpan-head6">Take Action to Support Change</h1>
+            <h1 className="lokarpan-head6">Take Action. Support Change</h1>
             <p className="lokarpan-head4 lok center">
-              Lokarpan grants support transformational programs for children and
-              adults to lead better and safer lives. Get involved to give every
-              person a fair chance to suceed in life.
+              Lokarpan supports transformative programs for children and adults,
+              empowering them to lead better and safer lives. Get involved and
+              help us provide every person with a fair chance to succeed in
+              life.
             </p>
-            <a href="#">Learn More</a>
-            <button type="button" className="home-donate-btn1">
+            {/* <a href="#">Learn More</a> */}
+            <Link to="/ways-to-give" onClick={this.scrollToTop}>
+              Learn More
+            </Link>
+            <Link to="/donate" onClick={this.scrollToTop}>
+              <button type="button" className="home-donate-btn1">
+                Donate
+              </button>
+            </Link>
+            {/* <button type="button" className="home-donate-btn1">
               Donate
-            </button>
+            </button> */}
           </div>
         </div>
         <Footer />

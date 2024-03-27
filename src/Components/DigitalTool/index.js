@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import EducationSubNav from "../Navbar/EducationSubNav";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -6,6 +7,12 @@ import { IoHomeOutline } from "react-icons/io5";
 import "./index.css";
 
 class DigitalTool extends Component {
+  scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto", // Optional: Add smooth scrolling behavior
+    });
+  };
   render() {
     return (
       <>
@@ -182,7 +189,15 @@ class DigitalTool extends Component {
             </p>
             <div className="digital-tool-btn-cont">
               <button className="digital-tool-btn">Volunteer</button>
-              <button className="digital-tool-btn donate-orange">Donate</button>
+              <Link
+                to="/donate"
+                style={{ textDecoration: "none" }}
+                onClick={this.scrollToTop}
+              >
+                <button className="digital-tool-btn donate-orange">
+                  Donate
+                </button>
+              </Link>
             </div>
           </div>
         </div>

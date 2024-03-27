@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import SubNavbar from "../Navbar/SubNavbar";
 import { IoMdClose, IoMdExpand } from "react-icons/io";
 import Popup from "reactjs-popup";
@@ -31,6 +32,12 @@ class OurRole extends Component {
     } else {
       document.body.style.overflow = "auto";
     }
+  };
+  scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto", // Optional: Add smooth scrolling behavior
+    });
   };
 
   updatePopUpOpen = () => {
@@ -3200,10 +3207,11 @@ class OurRole extends Component {
               helping to fight poverty, disease, school parity, and inequity for
               at risk communities.
             </p>
-
-            <button type="button" className="our-role-apply-btn">
-              Donate
-            </button>
+            <Link to="/donate" onClick={this.scrollToTop}>
+              <button type="button" className="our-role-apply-btn">
+                Donate
+              </button>
+            </Link>
           </div>
         </div>
         <Footer />
