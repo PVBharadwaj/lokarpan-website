@@ -445,7 +445,7 @@ const Navbar = () => {
           className="navbar-item mobile-padding-left dropdown"
           onClick={toggleDropdown}
         >
-          <Link to="/ways-to-give" onClick={handleNavlinkClick}>
+          <Link to="/why-donate" onClick={handleNavlinkClick}>
             Support
           </Link>
           <div

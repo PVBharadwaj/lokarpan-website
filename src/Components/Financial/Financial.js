@@ -3,8 +3,34 @@ import Footer from "../Footer/Footer";
 import FinancialNav from "../Navbar/FinancialSubNav/FinancialNav";
 import Navbar from "../Navbar/Navbar";
 import "./Financial.css";
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Financials = () => {
+
+  
+  const [reports, setAdditionalReportData] = useState([]);
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/additionalreports/')
+      .then(response => {
+        // alert("fetched");
+        setAdditionalReportData(response.data);
+      })
+      .catch(error => {
+        alert("error");
+        console.error('Error fetching Additional Report data:', error);
+      });
+  }, []);
+  const handleDownload = (reportURL) => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = reportURL;
+    downloadLink.download = 'CSR_certification.pdf'; // Set the default file name
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <>
     <Navbar />
@@ -28,7 +54,7 @@ const Financials = () => {
           <div className="report-container">
             <FinCarousel />
           </div>
-          <div className="report-container">
+          {/* <div className="report-container">
             <div className="file">
               <i class="bi bi-file-earmark"></i>Test
             </div>
@@ -41,57 +67,58 @@ const Financials = () => {
             <div className="file">
               <i class="bi bi-file-earmark"></i>Test
             </div>
-          </div>
+          </div> */}
         </div>
-
         <hr />
         <div className="add-repo">
           <h1 className="fin-title">Additional Reports</h1>
-          <div className="desp-cards">
-            {/* <div className="desp-cards-col"> */}
-            <div className="add-repo-text">
-              <h3>FCRA</h3>
-              <a href="/">
-                View Documentation and date{" "}
-                <i class="bi bi-arrow-down-circle"></i>
-              </a>
+          {reports.map((report, index) => (
+            <div key={index} report={report} className="desp-cards">
+              {/* <div className="desp-cards-col"> */}
+              <div className="add-repo-text">
+                <h3>FCRA</h3>
+                <button onClick={()=>{handleDownload(report.FCRAreportFile)}} className="add-repo-link">
+                  View Documentation and date{" "}
+                  <i class="bi bi-arrow-down-circle"></i>
+                </button>
+              </div>
+              <div className="add-repo-text">
+                <h3>Section 12A certificate</h3>
+                <button onClick={()=>{handleDownload(report.LegalreportFile)}} className="add-repo-link">
+                  View Documentation and date{" "}
+                  <i class="bi bi-arrow-down-circle"></i>
+                </button>
+              </div>
+              <div className="add-repo-text">
+                <h3>80 G certificate</h3>
+                <button onClick={()=>{handleDownload(report.PlanningCommisionreportFile)}} className="add-repo-link">
+                  View Documentation and date{" "}
+                  <i class="bi bi-arrow-down-circle"></i>
+                </button>
+              </div>
+              <div className="add-repo-text">
+                <h3>PAN Card</h3>
+                <button onClick={()=>{handleDownload(report.PANcardFile)}} className="add-repo-link">
+                  View Documentation and date{" "}
+                  <i class="bi bi-arrow-down-circle"></i>
+                </button>
+              </div>
+              <div className="add-repo-text">
+                <h3>Memorandum of Association</h3>
+                <button onClick={()=>{handleDownload(report.MemorandumofAssociation)}} className="add-repo-link">
+                  View Documentation and date{" "}
+                  <i class="bi bi-arrow-down-circle"></i>
+                </button>
+              </div>
+              <div className="add-repo-text">
+                <h3>CSR certification letter</h3>
+                <button onClick={()=>{handleDownload(report.CSRcertificationletter)}} className="add-repo-link">
+                  View Documentation and date{" "}
+                  <i class="bi bi-arrow-down-circle"></i>
+                </button>
+              </div>
             </div>
-            <div className="add-repo-text">
-              <h3>Section 12A certificate</h3>
-              <a href="/">
-                View Documentation and date{" "}
-                <i class="bi bi-arrow-down-circle"></i>
-              </a>
-            </div>
-            <div className="add-repo-text">
-              <h3>80 G certificate</h3>
-              <a href="/">
-                View Documentation and date{" "}
-                <i class="bi bi-arrow-down-circle"></i>
-              </a>
-            </div>
-            <div className="add-repo-text">
-              <h3>Pan Card</h3>
-              <a href="/">
-                View Documentation and date{" "}
-                <i class="bi bi-arrow-down-circle"></i>
-              </a>
-            </div>
-            <div className="add-repo-text">
-              <h3>Memorandum of Association</h3>
-              <a href="/">
-                View Documentation and date{" "}
-                <i class="bi bi-arrow-down-circle"></i>
-              </a>
-            </div>
-            <div className="add-repo-text">
-              <h3>CSR certification letter</h3>
-              <a href="/">
-                View Documentation and date{" "}
-                <i class="bi bi-arrow-down-circle"></i>
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
         <div className="dummy"></div>
       </div>

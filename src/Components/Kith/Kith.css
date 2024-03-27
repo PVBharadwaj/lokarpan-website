@@ -437,6 +437,11 @@
         font-size: 16px;
     }
 
+    .our-role-faculty{
+        font-size: 16px;
+        padding: 0px;
+    }
+
     /* .kith-overview-div > .give-card > div{
         width: 100%;
         min-height: unset;
