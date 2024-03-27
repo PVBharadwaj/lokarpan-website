@@ -172,11 +172,13 @@
   display: block;
   margin-right: 20px;
   margin-top: 20px;
+  text-decoration: none;
 }
 .donate-orange {
   background-color: #ff9f0a;
   color: white;
   border: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 748px) {
