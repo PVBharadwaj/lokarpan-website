@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FinancialNav from "../../Navbar/FinancialSubNav/FinancialNav";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Publications.css";
@@ -8,12 +8,50 @@ import axios from "axios";
 import { debounce } from "lodash";
 
 const Columns = [
-  {field: "id", headerName: "ID", width: 250, headerAlign: "center", align: "center",},
-  {field: "year", headerName: "Code", width: 250, headerAlign: "center", align: "center",},
-  {field: "reporttitle1", headerName: "Description", width: 250, headerAlign: "center", align: "center",},
-  {field: "addedDate", headerName: "Date", width: 250, headerAlign: "center", align: "center",},
   {
-    field: "file", headerName: "File", width: 250, headerAlign: "center", align: "center",
+    field: "id", 
+    headerClassName: "custom-header", 
+    headerName: "ID", 
+    width: 250, 
+    sortable: false,
+    // headerAlign: "left", 
+    // align: "left",
+  },
+  {
+    field: "year", 
+    headerClassName: "custom-header", 
+    headerName: "Code", 
+    width: 250, 
+    sortable: false,
+    // headerAlign: "left", 
+    // align: "left",
+  },
+  {
+    field: "reporttitle1",
+    headerClassName: "custom-header", 
+    headerName: "Description", 
+    width: 250, 
+    sortable: false,
+    // headerAlign: "left", 
+    // align: "left",
+  },
+  {
+    field: "addedDate", 
+    headerClassName: "custom-header", 
+    headerName: "Date", 
+    width: 250, 
+    sortable: false,
+    // headerAlign: "left", 
+    // align: "left",
+  },
+  {
+    field: "file", 
+    headerClassName: "custom-header", 
+    headerName: "File", 
+    width: 250, 
+    sortable: false,
+    // headerAlign: "center", 
+    // align: "center",
     renderCell: (params) => (
       <button
         className="download-btn"
@@ -25,74 +63,74 @@ const Columns = [
   },
 ];
 
-const Rows = [
-  {
-    id: 1,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 2,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 3,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 4,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 5,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 6,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 7,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 8,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 9,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 10,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-  {
-    id: 11,
-    year: "AR1",
-    reporttitle1: "test",
-    addedDate: "Jan 13, 2024",
-  },
-];
+// const Rows = [
+//   {
+//     id: 1,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 2,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 3,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 4,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 5,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 6,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 7,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 8,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 9,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 10,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+//   {
+//     id: 11,
+//     year: "AR1",
+//     reporttitle1: "test",
+//     addedDate: "Jan 13, 2024",
+//   },
+// ];
 
 const handleDownload = (id) => {
   alert(`Downloading file for ID: ${id}`);
@@ -100,34 +138,58 @@ const handleDownload = (id) => {
 
 
 const Publications = () => {
-  // const customHeader = {
-  //   backgroundColor: "lightblue",
-  //   fontSize: "16px",
-  //   fontWeight: "bold",
-  // };
+  const customHeader = {
+    backgroundColor: "lightblue",
+    fontSize: "16px",
+    fontWeight: "bold",
+  };
 
   const [searchQuery, setSearchQuery] = useState("");
-
-  const filteredRows = Rows.filter(
-    (row) => row.reporttitle1.toLowerCase().includes(searchQuery.toLowerCase()) || row.addedDate.toLowerCase().includes(searchQuery.toLowerCase()) || row.year.toLowerCase().includes(searchQuery.toLowerCase()) 
-  );
+  const [searchInputAvailable, setSearchInputAvailable] = useState(false);
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
-  // const [Rows, setReportData] = useState([]);
+  
+  // data fetching from backend
+  const [Rows, setReportData] = useState([]);
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/annualreports/')
+      .then(response => {
+        alert("fetched");
+        setReportData(response.data);
+      })
+      .catch(error => {
+        alert("error");
+        console.error('Error fetching Annual Report data:', error);
+      });
+  }, []);
+// search functionality
+  const filteredRows = Rows.filter(row => {
+    const year = String(row.year).toLowerCase();
+    return (
+      year.includes(searchQuery.toLowerCase()) ||
+      row.reporttitle1.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      row.addedDate.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  });  
+  // Ctrl + K key press for search
+  const handleKeyDown = (event) => {
+    if (event.ctrlKey && event.key === 'k' && searchInputAvailable) {
+      event.preventDefault();
+      document.getElementById('searchInput').focus();
+    }
+  };
+  useEffect(() => {
+    setSearchInputAvailable(true);
+  }, []);
 
-  // useEffect(() => {
-  //   axios.get('http://127.0.0.1:8000/api/annualreports/')
-  //     .then(response => {
-  //       alert("success");
-  //       setReportData(response.data);
-  //     })
-  //     .catch(error => {
-  //       alert("error");
-  //       console.error('Error fetching Annual Report data:', error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    document.body.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [searchInputAvailable]);
 
 
   return (
@@ -154,11 +216,10 @@ const Publications = () => {
         </div>
         <div className="column">
           <div className="row">
-            <div className="col-sm-6">
-              <div>
+              <div className="row-inner">
                 <label htmlFor="">
-                  {/* Search:{" "} */}
                   <input
+                    id="searchInput"
                     type="search"
                     className="publication-form-control text-input"
                     placeholder="Search..."
@@ -167,22 +228,30 @@ const Publications = () => {
                   />
                 </label>
               </div>
-            </div>
           </div>
           <div className="responsive-data-grid">
             <DataGrid
               rows={filteredRows}
+              headerClassName="customHeader"
               columns={Columns.filter((column) => column.field !== "id")}
-              pageSize={5}
-              rowSpacingType={"margin"}
-              rowsPerPageOptions={[5, 10, 25, 50, 100]}
-              // headerClassName={customHeader}
-              sx={{
-                borderColor: "#fff",
-                "& .MuiDataGrid-cell:hover": {
-                  color: "primary.main",
+              initialState={{
+                pagination: {
+                  paginationModel: {
+                    pageSize: 5,
+                  },
                 },
               }}
+              sx={{
+                borderColor: "#fff",
+                // "& .MuiDataGrid-cell:hover": {
+                //   color: "primary.main",
+                // },
+              }}
+              pageSizeOptions={[5, 10, 15]}
+              rowsPerPageOptions={[5, 10, 25, 50, 100]}
+              // checkboxSelection
+              disableColumnMenu
+              disableRowSelectionOnClick
             />
           </div>
         </div>

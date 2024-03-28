@@ -1,10 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./FinCarousal.css";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import axios from "axios";
+import { FaFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { RxFontSize } from "react-icons/rx";
 
 const FinCarousel = () => {
-  const [currentYear, setCurrentYear] = useState(2023);
   const [yearsToShow, setYearsToShow] = useState(6);
-  const numberOfYears = 10;
+  const [selectedYear, setSelectedYear] = useState(null);
+
+  const [annualreports, setAnnualReportData] = useState([]);
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/annualreports/')
+      .then(response => {
+        // alert("fetched");
+        setAnnualReportData(response.data);
+      })
+      .catch(error => {
+        alert("error");
+        console.error('Error fetching Annual Report data:', error);
+      });
+  }, []);
+
+ 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -23,52 +44,106 @@ const FinCarousel = () => {
     // Cleanup function to remove event listener
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  const appear = numberOfYears === yearsToShow;
 
-  const handlePrev = () => {
-    if (currentYear < 2023) {
-      setCurrentYear(currentYear + 1);
-    }
+
+  const handleDownload = (reportURL) => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = reportURL;
+    downloadLink.download = 'CSR_certification.pdf'; // Set the default file name
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   };
 
-  const handleNext = () => {
-    if (currentYear > 2023 - (numberOfYears - yearsToShow)) {
-      setCurrentYear(currentYear - 1);
-    }
+  const renderYears = (index) => {
+    // alert(index)
+    const report = annualreports[index]; // Get the report object at the specified index
+    console.log(report)
+    console.log(report.report1)
+    console.log(report.report2)
+      return (
+          <div className="reports-container">
+            {/* {report.map((report, index) => ( */}
+            <div className="report">
+            {(report.report1 !== null && selectedYear === report.year) && <FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report1)} />}
+            {(report.report2 !== null && selectedYear === report.year) && <FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report2)} />}
+            {(report.report3 !== null && selectedYear === report.year) && <FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report3)} />}
+          </div>
+            {/* ))} */}
+          </div>
+        );
   };
 
-  const renderYears = () => {
-    const years = [];
-    for (let i = 0; i < yearsToShow; i++) {
-      years.push(
-        <div className="years" key={currentYear - i}>
-          {currentYear - i}
-        </div>
-      );
-    }
-    return years;
+
+
+
+
+
+
+  var settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+
+
+
+
+
 
   return (
     <>
-      <button
-        className={"carousal-btn years-row"}
-        id={appear ? "btn-off" : ""}
-        onClick={handlePrev}
-        disabled={currentYear >= 2023}
-      >
-        <i class="bi bi-arrow-left-circle icon-100"></i>
-      </button>
-      <div className="years-row">{renderYears()}</div>
 
-      <button
-        className="carousal-btn years-row"
-        id={appear ? "btn-off" : ""}
-        onClick={handleNext}
-        disabled={currentYear <= 2023 - (numberOfYears - yearsToShow)}
-      >
-        <i class="bi h2 bi-arrow-right-circle icon-100"></i>
-      </button>
+
+      <div className="slider-container">
+        <Slider className="slider" {...settings}>
+          {annualreports.map((report, index) => (
+            <div key={index} report={report}>
+              {/* <Link onClick={renderYears(index)} to={'#briefcase'}>{report.year}</Link> */}
+              <p onClick={() => setSelectedYear(report.year)}>{report.year}</p>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <div id="briefcase">
+        <div>
+        {annualreports.map((report, index) => (
+          <div key={index}>
+            {renderYears(index)}
+          </div>
+        ))}
+        </div>
+      </div>
+
+    
     </>
   );
 };

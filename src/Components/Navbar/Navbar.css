@@ -81,13 +81,15 @@
   overflow: hidden;
   max-height: 0;
   visibility: hidden;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
-    visibility 0.5s ease-in-out;
+  transition: max-height 0s ease-in-out, opacity 0s ease-in-out,
+    visibility 0s ease-in-out;
 }
 
 .dropdown:hover .dropdown-content {
   max-height: 900px;
   visibility: visible;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
 }
 
 .navbar a {
