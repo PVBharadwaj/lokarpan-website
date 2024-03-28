@@ -26,10 +26,10 @@ const Footer = () => {
 
   return (
     <div className="footer-container footer-mobile">
-      <hr className="hor-line4" />
+      {/* <hr className="hor-line4" /> */}
       <div className="footer-container-inner">
         <div className="content">
-          <div className="footer-list">
+          <div className="icons-footer-list">
             <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708862176/Frame_48098090_hvamgv.png"
               className="lokarpan-logo"
@@ -65,6 +65,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="hor-line3" />
+
           <div className="footer-list">
             <div
               className="footer-list-title"
@@ -94,6 +95,38 @@ const Footer = () => {
             </ul>
             <hr className="footer-hor-line" />
           </div>
+          <div className="mobile-footer-list">
+            <ul className="footer-questions-container-1">
+              <div className="footer-each-question-1">
+                <input
+                  type="checkbox"
+                  id="about-lokarpan"
+                  name="about-lokarpan"
+                  className="footer-input-1"
+                />
+                <label htmlFor="about-lokarpan" className="footer-question-1">
+                  About
+                </label>
+                <div className="footer-ans-sec-1">
+                  <ul className="footer-faq-answer-1">
+                    <li>
+                      <Link to="/kith/overview">Overview</Link>
+                    </li>
+                    <li>
+                      <Link to="/kith/leadership">Leadership</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact-us">Contact Us</Link>
+                    </li>
+                    <li>
+                      <Link to="/">Events</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <hr className="footer-hor-line" />
           <div className="footer-list">
             <div
               className="footer-list-title"
@@ -124,6 +157,35 @@ const Footer = () => {
             </ul>
             <hr className="footer-hor-line" />
           </div>
+          <div className="mobile-footer-list">
+            <ul className="footer-questions-container-1">
+              <div className="footer-each-question-1">
+                <input
+                  type="checkbox"
+                  id="admissions"
+                  name="about-lokarpan"
+                  className="footer-input-1"
+                />
+                <label htmlFor="admissions" className="footer-question-1">
+                  Admissions
+                </label>
+                <div className="footer-ans-sec-1">
+                  <ul className="footer-faq-answer-1">
+                    <li>
+                      <Link to="/our-role">How to ?</Link>
+                    </li>
+                    <li>
+                      <Link to="/history">Online Enrollment</Link>
+                    </li>
+                    <li>
+                      <Link to="/mission">Scholorships</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <hr className="footer-hor-line" />
           <div className="footer-list">
             <div
               className="footer-list-title"
@@ -159,7 +221,73 @@ const Footer = () => {
             </ul>
             <hr className="footer-hor-line" />
           </div>
-          <div className="footer-list kith-footer-mobile">
+          <div className="mobile-footer-list">
+            <ul className="footer-questions-container-1">
+              <div className="footer-each-question-1">
+                <input
+                  type="checkbox"
+                  id="helpful-links"
+                  name="about-lokarpan"
+                  className="footer-input-1"
+                />
+                <label htmlFor="helpful-links" className="footer-question-1">
+                  Helpful Links
+                </label>
+                <div className="footer-ans-sec-1">
+                  <ul className="footer-faq-answer-1">
+                    <li>
+                      <Link to="/our-role">Donate</Link>
+                    </li>
+                    <li>
+                      <Link to="/history">Employment</Link>
+                    </li>
+                    <li>
+                      <Link to="/mission">Alumni</Link>
+                    </li>
+                    <li>
+                      <Link to="/leadership">FAQ</Link>
+                    </li>
+                    <li>
+                      <Link to="/careers">Press</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <hr className="footer-hor-line" />
+          <div className="mobile-footer-list">
+            <ul className="footer-questions-container-1">
+              <div className="footer-each-question-1">
+                <input
+                  type="checkbox"
+                  id="contact-us"
+                  name="about-lokarpan"
+                  className="footer-input-1"
+                />
+                <label htmlFor="contact-us" className="footer-question-1">
+                  Contact Us
+                </label>
+                <div className="footer-ans-sec-1">
+                  <ul className="footer-faq-answer-1">
+                    <li>
+                      <div className="address-mobile">
+                        <p>Lokarpan HQ</p>
+                        <p>V&P Malhausi</p>
+                        <p>Auariya, U.P</p>
+                        <p>206255</p>
+                        <p>India</p>
+                        <p>Tel:91-00 0000 0000</p>
+                        <p>Tel:91-00 0000 0000</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <hr className="footer-hor-line" />
+          {/* <div className="footer-list kith-footer-mobile">
             <div
               className="footer-list-title"
               onClick={() => toggleList("contactUs")}
@@ -189,7 +317,7 @@ const Footer = () => {
               </li>
             </ul>
             <hr className="footer-hor-line" />
-          </div>
+          </div> */}
 
           {/* <div className="footer-list">
             <div

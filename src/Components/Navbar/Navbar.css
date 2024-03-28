@@ -294,6 +294,7 @@
     bottom: -100px;
     padding-top: 75px;
     padding-left: 10px;
+    padding-bottom: 50px;
     flex-direction: column;
     background-color: #fff;
     z-index: 100;
