@@ -101,16 +101,20 @@ height: 75%;
   #searchQuerySubmit:hover {
     cursor: pointer;
   }
-  .searchfs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .fs_serachbar{
-    width: 200px;
+
+    width: 300px;
     border-radius: 5px;
-    padding: 1rem;
+    margin-left: 150px;
   }
+  .fs_serachbar input[type="text"] {
+    border-radius: 100px;
+    width: 360px;
+    height: 40px;
+    padding: 0 4rem;
+    /* Add any other styling you need */
+}
 
 @media screen and (max-width: 625px) {
   .container_fs {

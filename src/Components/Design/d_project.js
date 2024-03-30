@@ -39,8 +39,8 @@ const D_project = () => {
       <section className='searchfs'>
        
           <form className='fs_serachbar'>
-           
-            <input type='text' value={query} onChange={handleOnSearch} placeholder='Search...' />
+        
+            <input type='text' value={query} onChange={handleOnSearch} placeholder='Searchproject' />
           </form>
       
       </section>
