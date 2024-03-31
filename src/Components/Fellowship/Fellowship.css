@@ -31,7 +31,11 @@
 }
 
 .fellowship-top {
-  position: relative; 
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708612302/DSC03147_2_urfz2o.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* position: relative;  */
   width: 100%;
   height: 750px;
   display: flex;
@@ -40,7 +44,7 @@
   text-align: center;
 }
 
-.fellowship-top::before { 
+/* .fellowship-top::before { 
   content: "";
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708612302/DSC03147_2_urfz2o.png");
   background-size: cover;
@@ -50,10 +54,10 @@
   bottom: 0px;
   left: 0px;
   opacity: 1;
-}
+} */
 
 .fellowship-top h1{
-  position: relative;
+  /* position: relative; */
   font-size: 64px;
   font-weight: bold;
   color: white;
