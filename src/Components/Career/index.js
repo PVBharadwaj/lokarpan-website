@@ -60,18 +60,20 @@ class Career extends Component {
                   Read about our culture
                 </a> */}
               </div>
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771181/Rectangle_1763_2_jukbok.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="career-cont-img-div1"></div>
             </div>
             <div className="health-each-container">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="career-cont-img-div2"></div>
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
                   Exceptional can come from anywhere
@@ -104,18 +106,20 @@ class Career extends Component {
                   Read about our culture
                 </a> */}
               </div>
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771208/image_189_1_q8vzgr.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="career-cont-img-div3"></div>
             </div>
             <div className="health-each-container">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771178/image_190_2_zge0vl.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="career-cont-img-div4"></div>
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">Our Culture</h1>
                 <p className="health-para">

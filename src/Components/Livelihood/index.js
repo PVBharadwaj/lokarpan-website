@@ -10,7 +10,9 @@ class Livelihood extends Component {
     return (
       <>
         <Navbar />
-        <div className="fellowship-nav"><h1>Livelihood</h1></div>
+        <div className="fellowship-nav">
+          <h1>Livelihood</h1>
+        </div>
         <div className="health-container">
           {/* <div className="health-full-img"> */}
           <div className="livelihood-full-img-text">
@@ -18,47 +20,67 @@ class Livelihood extends Component {
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
               alt="health-img"
             /> */}
-            <p>Lokarpan is committed to alleviating poverty in rural India. Through tailored skill development programs, microfinance initiatives, and entrepreneurship support, we empower individuals to improve economic conditions and enhance social mobility. Our goal is to foster stronger, more self-reliant communities.</p>
+            <p>
+              Lokarpan is committed to alleviating poverty in rural India.
+              Through tailored skill development programs, microfinance
+              initiatives, and entrepreneurship support, we empower individuals
+              to improve economic conditions and enhance social mobility. Our
+              goal is to foster stronger, more self-reliant communities.
+            </p>
           </div>
           <div className="health-container-section">
             <div className="health-each-container">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div health-img2"></div>
               <div className="health-content-section content-right">
-                <h1 className="health-lokarpan-head3">
-                Skill Development
-                </h1>
+                <h1 className="health-lokarpan-head3">Skill Development</h1>
                 <p className="health-para">
-                Lokarpan empowers individuals through tailored skill development programs, fostering entrepreneurship and self-reliance. Our initiatives enhance employability, creating sustainable livelihoods for community growth.
-                  <br/><span><Link className="learn-more" to='/'>Learn more</Link></span>
+                  Lokarpan empowers individuals through tailored skill
+                  development programs, fostering entrepreneurship and
+                  self-reliance. Our initiatives enhance employability, creating
+                  sustainable livelihoods for community growth.
+                  <br />
+                  <span>
+                    <Link className="learn-more" to="/">
+                      Learn more
+                    </Link>
+                  </span>
                 </p>
               </div>
             </div>
             <div className="health-each-container">
               <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">
-                Microfinance
-                </h1>
+                <h1 className="health-lokarpan-head3">Microfinance</h1>
                 <p className="health-para">
-                Empowering individuals through financial inclusion, Lokarpan offers small loans and financial services to low-income individuals and budding entrepreneurs.
-                  <br/><span><Link className="learn-more" to='/'>Learn more</Link></span>
+                  Empowering individuals through financial inclusion, Lokarpan
+                  offers small loans and financial services to low-income
+                  individuals and budding entrepreneurs.
+                  <br />
+                  <span>
+                    <Link className="learn-more" to="/">
+                      Learn more
+                    </Link>
+                  </span>
                 </p>
               </div>
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div health-img2"></div>
             </div>
             <div className="health-each-container">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div health-img2"></div>
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
                   Adding years to life and life to years

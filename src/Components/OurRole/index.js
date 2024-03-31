@@ -153,12 +153,10 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Kith n Kin</h4>
+                      <h4>Our Kith Programme</h4>
                       <h3>
-                        At Lokarpan's learning centre, we're dedicated to
-                        creating a specially designed curriculum that targets
-                        learning gaps in children. With our digital classrooms,
-                        learning becomes engaging and memorable. Learn more.
+                        Explore Lokarpan's engaging and tailored learning
+                        solutions at our Kith n Kin centre. Learn more.
                       </h3>
 
                       <Popup
@@ -188,21 +186,14 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">Kith n Kin</h3>
+                                  <h3 className="popup-font40">
+                                    Our Kith Programme
+                                  </h3>
                                   <p className="popup-font20">
-                                    Lokarpan is dedicated to bridging gaps in
-                                    the education system through innovative,
-                                    technology-assisted solutions for learners
-                                    of all ages. Our mission? To elevate India's
-                                    representation in the PISA rankings by 2027,
-                                    benefiting over 100,000 individuals. With a
-                                    diverse team of instructors, we actively
-                                    engage with students in schools and
-                                    communities, focusing on creating enhanced
-                                    teaching tools, expanding skill development,
-                                    and integrating technology to deliver the
-                                    very best educational standards across rural
-                                    India.
+                                    At Lokarpan's Kith n Kin learning centre,
+                                    we're dedicated to creating a specially
+                                    designed curriculum that targets learning
+                                    gaps in children.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -213,28 +204,26 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Established in April 2014, the Kith and
+                                      Kin School in Auraiya, Uttar Pradesh aims
+                                      to elevate education levels in the region.
+                                      Recognising the stark achievement gap
+                                      between low-income and private schools,
+                                      Lokarpan envisions a future where every
+                                      child receives excellent education,
+                                      fostering educational equity and unlocking
+                                      India's potential.
                                     </p>
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      The school's mission revolves around
+                                      creating a holistic ecosystem for parents,
+                                      students, and teachers. Through a
+                                      specially designed curriculum, advanced
+                                      teaching tools, skill development
+                                      programs, and technology integration,
+                                      Lokarpan seeks to empower students while
+                                      supporting teachers in delivering the core
+                                      curriculum effectively.
                                     </p>
                                   </div>
                                 </div>
