@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Subscribebtn.css";
+import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 const Subscribebtn = () => {
   const [popupVisible, setPopup] = useState(false);
@@ -32,12 +33,17 @@ const Subscribebtn = () => {
         <div className="popup-in">
           <div className="pop">
             <h2>Sunday Snippets</h2>
-            <i
+            {/* <i
               onClick={() => {
                 setPopup(false);
               }}
               class="x bi bi-x"
-            ></i>
+            ></i> */}
+            <RxCross2 
+              onClick={() => {
+                setPopup(false);
+              }} 
+              className="x"/>
           </div>
           <div className="popup-text">
             <p>

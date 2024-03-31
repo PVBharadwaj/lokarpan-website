@@ -95,8 +95,10 @@
 }
 
 .x {
+  cursor: pointer;
   font-size: 24px;
   height: 24px;
+  padding: 3px;
   font-weight: bolder;
   display: flex;
   background-color: #dadada;
