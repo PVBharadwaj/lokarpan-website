@@ -4,24 +4,31 @@ import React, { useState } from "react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import SubNavbar from "../../Navbar/SubNavbar";
+import { Link } from "react-router-dom";
 const Mission = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "Community Empowerment",
+      question: "Community centric collaboration",
       answer:
-        "Lokarpan is committed to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects.",
+        "Lokarpan is dedicated to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects. We believe that true progress is achieved when communities are active participants in their own development, and we work to build partnerships that foster sustainable growth and self-reliance.",
       open: false,
     },
     {
-      question: "Innovation for Impact",
+      question: "Equity and Inclusivity",
       answer:
-        "We believe in harnessing innovative and sustainable solutions to create meaningful and lasting change in the lives of those we serve, constantly seeking new ways to improve.",
+        "Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good.",
       open: false,
     },
     {
-      question: "Equity for All",
+      question: "Innovate solutions that are sustainable.",
       answer:
-        "Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance.",
+        "Our goal is to improve the socioeconomic status of rural India. We are working hard to ensure that our projects provide the necessary support and resources to our beneficiaries. Lokarpan supports its partners with capacity building, institutional development, planning, review, financial management, documentation and overall supportive supervision.",
+      open: false,
+    },
+    {
+      question: "Create connections that make a difference.",
+      answer:
+        "Lokarpan strives to create a world where individuals have dignity and self-respect. A world where people respect each other across the barriers of poverty, gender, caste and religion. Over the years, Lokarpan has driven incredible growth and created entirely new opportunities for our beneficiaries.",
       open: false,
     },
   ]);
@@ -46,51 +53,24 @@ const Mission = () => {
       <div className="mission-section-container">
         <section className="mission-1st-secction">
           <div className="mission-1st-section-inner"> 
-            <div className="mission-head">Our purpose, mission, and values</div>
+            <div className="mission-head">Lokarpan offers solutions to empower communities living in stress.</div>
             <div className="mission-content1">
-            At Lokarpan, our mission is to empower rural communities through innovative and sustainable solutions. Since 1996, we have been dedicated to improving the social and economic conditions of those living in stress. 
+            Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India.<Link to={"/mission-text"} style={{color: "blue", cursor: "pointer" }}>Read more</Link>
             </div>
-            {/* <div className="mission-content2">
-              We are a values-driven organization. Our values reflect the thinking
-              of our founder, James O. McKinsey, and Marvin Bower, managing
-              director from 1950 to 1967, who was a major force in shaping the
-              firm. Our values have been updated in small ways to reflect the
-              changing times. They inform both our long-term strategy as a firm
-              and the way we serve our clients on a daily basis. We put aside one
-              day a year to reflect as a group on what our values mean to both our
-              work and our lives.
-            </div> */}
           </div>
         </section>
         <section className="our-purpose">
-          {/* <div className="image-cont">
-            <div className="h1">Our purpose</div>
-            <div className="purpose-cont">
-            We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
-            </div>
-          </div>
-
-          <div className="image-purpose">
-            <div className="imgg"></div>
-          </div> */}
           <div className="give-card give-card-reverse">
             <div className="give-card-text">
-              <h1>Our purpose</h1>
+              <h1>Our vision</h1>
               <p>
               We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
               </p>
             </div>
-            <div className="give-card-img give-card-img-1"></div>
+            <div className="give-card-img mission-card-img-1"></div>
           </div>
         </section>
-        {/* <section className="our-purpose-mobile">
-          <div className="our-purpose1-image"></div>
-          <div className="our-purpose-mobile-h1">Our purpose</div>
-          <div className="our-purpose-mobile-cont">
-          We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
-          </div>
-        </section> */}
-        <section className="our-mission-mobile">
+        {/* <section className="our-mission-mobile">
           <div className="our-mission-mobile-image"></div>
           <div className="our-mission-text">
             <div className="our-mission-text-heading">Our Mission</div>
@@ -101,30 +81,51 @@ const Mission = () => {
               <button>Read More</button>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="our-purpose">
-          {/* <div className="image-cont">
-            <div className="h1">Our Principles</div>
-            <div className="purpose-cont">
-              They embody what we stand for and guide our approach to how we
-              build technology for people and their relationships.
+        <section className="our-principles">
+          <div className="our-principles-inner">
+            <div className="our-principles-text">
+              <h1>Our Vision</h1>
+              <div className="faqs">
+                {faqs.map((faq, index) => (
+                  <FAQ
+                    faq={faq}
+                    index={index}
+                    key={index}
+                    toggleFAQ={toggleFAQ}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="faqs">
-              {faqs.map((faq, index) => (
-                <FAQ
-                  faq={faq}
-                  index={index}
-                  key={index}
-                  toggleFAQ={toggleFAQ}
-                />
-              ))}
+            <div className="our-principles-image">
+              {/* <img src="" /> */}
             </div>
           </div>
+        </section>
 
-          <div className="image-purpose">
-            <div className="imgg"></div>
-          </div> */}
+        <section className="our-principles">
+          <div className="our-principles-inner">
+            <div className="our-principles-text">
+              <h1>Our Principles</h1>
+              <div className="faqs">
+                {faqs.map((faq, index) => (
+                  <FAQ
+                    faq={faq}
+                    index={index}
+                    key={index}
+                    toggleFAQ={toggleFAQ}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="our-principles-image">
+              {/* <img src="" /> */}
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="our-purpose">
           <div className="give-card give-card-reverse">
             <div className="give-card-text">
               <h1>Our Principles</h1>
@@ -143,42 +144,65 @@ const Mission = () => {
               ))}
             </div>
             </div>
-            <div className="give-card-img give-card-img-1"></div>
-          </div>
-        </section>
-        {/* <section className="our-purpose1">
-          <div className="our-purpose1-image"></div>
-
-          <div className="image-cont1">
-            <div className="h2">Our Principles</div>
-            <div className="purpose-cont1">
-              They embody what we stand for and guide our approach to how we
-              build technology for people and their relationships.
-            </div>
-            <div className="faqs">
-              {faqs.map((faq, index) => (
-                <FAQ
-                  faq={faq}
-                  index={index}
-                  key={index}
-                  toggleFAQ={toggleFAQ}
-                />
-              ))}
-            </div>
+            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711614679/cannon_013_1_df4fp7.png"/>
           </div>
         </section> */}
-        <section className="our-vision">
-          <div className="our-vision-head">Our Values</div>
-          {/* <div className="our-vision-subhead">
-            Adhere to the highest professional standards
-          </div> */}
-          <div className="our-vision-text">
-            Lokarpan values education as a transformative tool. We have impacted over 14,000 children through our education programs, focusing on curriculum advancement and infrastructure development. Our commitment extends to training teachers and developing interactive, engaging learning tools to ensure every child reaches their full potential.
-          </div>
-          <div className="our-vision-button">
-            <button>Loren Ipsun</button>
+
+        <section className="our-purpose">
+          <div className="give-card give-card-reverse">
+            <div className="give-card-text">
+              <h1>Our Culture</h1>
+              <p>
+              At Lokarpan, our work culture is defined by a steadfast commitment to growth, both for our organisation and the communities we serve. Our goal is to expand opportunities for all, breaking down barriers to access and creating pathways to success.
+              <span><Link to={'/our-culture'}>Know more</Link></span>
+              </p>
+            </div>
+            <div className="give-card-img mission-card-img-1"></div>
           </div>
         </section>
+        <section className="our-purpose">
+          <div className="give-card give-card-reverse">
+            <div className="give-card-text">
+              <h1>Ethics and Compliance</h1>
+              <p>
+              At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.
+              <span><Link to={'/ethics'}>Know more</Link></span>
+              </p>
+            </div>
+            <div className="give-card-img mission-card-img-1"></div>
+          </div>
+        </section>
+
+        {/* <section className="our-vision">
+          <div className="our-vision-head">Our Culture</div>
+          <div className="our-vision-subhead">
+            Adhere to the highest professional standards
+          </div>
+          <div className="our-vision-text">
+          At Lokarpan, our work culture is defined by a steadfast commitment to growth, both for our organisation and the communities we serve. Our goal is to expand opportunities for all, breaking down barriers to access and creating pathways to success.
+          </div>
+          <div className="hyperlinks">
+          <div className="apply-btn transparent">
+              <Link to="/our-culture" className="apply-btn-text-black body-btn">Know more</Link>
+          </div>
+          </div>
+        </section> */}
+        {/* <section className="our-vision">
+          <div className="our-vision-head">Ethics and Compliance</div>
+          <div className="our-vision-text">
+          At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.
+          </div>
+          <div className="hyperlinks">
+          <div className="apply-btn transparent">
+              <Link to="/ethics" className="apply-btn-text-black body-btn">Know more</Link>
+          </div>
+          </div>
+          <div className="hyperlinks">
+          <div className="apply-btn transparent">
+              <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Know more</Link>
+          </div>
+          </div>
+        </section> */}
       </div>
       <Footer />
     </div>

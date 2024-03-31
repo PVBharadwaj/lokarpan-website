@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { CiSearch } from "react-icons/ci";
@@ -122,6 +122,14 @@ const Navbar = () => {
     if (event.key === "Escape") {
       setSearchmenuOpen(false);
       setProfilemenuOpen(false);
+    }
+  });
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
   });
 
@@ -437,7 +445,7 @@ const Navbar = () => {
             }`}
             onMouseEnter={OpenProfilemenu}
           >
-            <div className="click-dropdown-inner nav-profile-click-dropdown">
+            <div className="click-dropdown-inner">
               <RxCross2
                 className="cross"
                 onClick={closeProfileMenu}
@@ -445,7 +453,7 @@ const Navbar = () => {
               />
               <div className="nav-profile">
                 <h1 className="nav-profile-heading">LOKARPAN</h1>
-                <div className="nav-profile-inner">
+                <Link to={'/'}>Subscribe</Link>
                   <div className="nav-profile-inner-in">
                     <span className=" nav-profile-in-left"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
                     Staff
@@ -454,7 +462,6 @@ const Navbar = () => {
                     <span className="nav-profile-in-right"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
                     Student
                   </div>
-                </div>
               </div>
             </div>
           </div>

@@ -5,6 +5,13 @@ import "./Staff.css";
 import axios from "axios";
 import Navbar from "../../../Navbar/Navbar";
 import Footer from "../../../Footer/Footer";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGlobe } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // const StaffData = [
 //   {
@@ -176,6 +183,44 @@ const Card = ({ item }) => {
     }
   };
 
+
+  const renderSocialIcon1 = () => {
+    if (item.Social_Media_URL_1) {
+      if (item.Social_Media_URL_1.includes("facebook.com")) {
+        return <FaFacebook/>;
+      } else if (item.Social_Media_URL_1.includes("instagram.com")) {
+        return <RiInstagramFill/>;
+      } else if (item.Social_Media_URL_1.includes("github.com")) {
+        return <FaGithub/>;
+      } else if (item.Social_Media_URL_1.includes("gitlab.com")) {
+        return <FaGitlab/>;
+      } else if (item.Social_Media_URL_1.includes("twitter.com")) {
+        return <FaXTwitter/>;
+      } else {
+        return <FaGlobe/>;
+      }
+    }
+  };
+
+  const renderSocialIcon2 = () => {
+    if (item.Social_Media_URL_2) {
+      if (item.Social_Media_URL_2.includes("facebook.com")) {
+        return <FaFacebook/>;
+      } else if (item.Social_Media_URL_2.includes("instagram.com")) {
+        return <RiInstagramFill/>;
+      } else if (item.Social_Media_URL_2.includes("github.com")) {
+        return <FaGithub/>;
+      } else if (item.Social_Media_URL_2.includes("gitlab.com")) {
+        return <FaGitlab/>;
+      } else if (item.Social_Media_URL_2.includes("twitter.com")) {
+        return <FaXTwitter/>;
+      } else {
+        return <FaGlobe/>;
+      }
+  }
+  };
+
+
   return (
     <div
       className="card-lead"
@@ -192,13 +237,15 @@ const Card = ({ item }) => {
       <div className={Mouseon ? "on" : "off"}>
         <h3 className="profile-name">{item.Name}</h3>
         <h4 className="profile-position">{item.Title}</h4>
-        <p className="profile-text">{item.description}</p>
-        <a href="www.google.com" target={"_blank"}>
-          {item.hyperlink2}
-        </a>
-        <a href="www.google.com" target={"_blank"}>
-          {item.hyperlink1}
-        </a>
+        <p className="profile-text">{item.Info}</p>
+        {(item.Social_Media_URL_1) &&
+          <Link to={item.Social_Media_URL_1} target="_blank" className="profile-url">
+          {renderSocialIcon1()}
+          </Link>}
+        {(item.Social_Media_URL_2) &&
+          <Link to={item.Social_Media_URL_2} target="_blank" className="profile-url">
+          {renderSocialIcon2()}
+          </Link>}
       </div>
     </div>
   );

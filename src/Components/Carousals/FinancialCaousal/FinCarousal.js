@@ -7,6 +7,10 @@ import axios from "axios";
 import { FaFileAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { RxFontSize } from "react-icons/rx";
+import { IoChevronBackOutline } from "react-icons/io5";
+import { IoChevronForward } from "react-icons/io5";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const FinCarousel = () => {
   const [yearsToShow, setYearsToShow] = useState(6);
@@ -76,6 +80,38 @@ const FinCarousel = () => {
 
 
 
+  const FinCustomPrevArrow = (props) => (
+    <div
+      {...props}
+      className="custom-arrow"
+      style={{
+        ...props.style,
+        bottom: "-14%",
+        left: "-2%",
+        transform: "translateX(-50%)",
+        zIndex: 1,
+      }}
+    >
+      <IoChevronBackOutline className="app-nav-icon"/>
+    </div>
+  );
+
+  const FinCustomNextArrow = (props) => (
+    <div
+      {...props}
+      className="custom-arrow"
+      style={{
+        ...props.style,
+        bottom: "-14%",
+        left: "100%",
+        transform: "translateX(50%)",
+        zIndex: 1,
+      }}
+    >
+      <IoChevronForward className="app-nav-icon"/>
+    </div>
+  );
+
 
 
 
@@ -87,6 +123,8 @@ const FinCarousel = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    prevArrow: <FinCustomPrevArrow />,
+    nextArrow: <FinCustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -127,7 +165,7 @@ const FinCarousel = () => {
           {annualreports.map((report, index) => (
             <div key={index} report={report}>
               {/* <Link onClick={renderYears(index)} to={'#briefcase'}>{report.year}</Link> */}
-              <p onClick={() => setSelectedYear(report.year)}>{report.year}</p>
+              <p style={{fontSize: "22px"}} onClick={() => setSelectedYear(report.year)}>{report.year}</p>
             </div>
           ))}
         </Slider>

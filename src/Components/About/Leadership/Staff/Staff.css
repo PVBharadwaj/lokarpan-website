@@ -2,22 +2,27 @@
 .fellows-page, 
 .educators-page, 
 .staff-page {
-    width: 100%;
-  }
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
+}
 
-  .board-page h2, 
-  .educators-page h2,
-  .fellows-page h2,
-  .staff-page h2{
-    padding: 50px 123px 10px;
-  }
+/* .board-page h2, 
+.educators-page h2,
+.fellows-page h2,
+.staff-page h2{
+  padding: 50px 123px 10px;
+} */
 
-  .lead-search{
-    width: 100%;
-  }
+.lead-search{
+  width: 100%;
+}
 
 .image {
-  border: solid black;
+  /* border: solid black; */
   width: 100%;
   height: 265px;
   transition: opacity 0.5s ease-in-out;
@@ -37,10 +42,12 @@
 
 .card-lead p {
   text-align: left;
+  padding-bottom: 10px;
 }
 
-.card-lead a {
-  padding: 10px;
+.profile-url {
+  padding-left: 0px;
+  padding-right: 10px;
 }
 
 .profile-name, .profile-position{
@@ -67,12 +74,12 @@
   
 @media screen and (max-width: 836px) {
 
-  .board-page h2, 
+  /* .board-page h2, 
   .educators-page h2,
   .fellows-page h2,
   .staff-page h2 {
     padding:  30px 20px;
-  }
+  } */
 
   .card-list {
     margin: 30px;

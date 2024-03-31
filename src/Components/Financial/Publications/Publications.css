@@ -125,6 +125,18 @@ color: #fff;
   font-size: 24px;
 } */
 
+.with-icon {
+  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711612289/icons8-search_ca6lqn.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center; 
+  padding-left: 40px; 
+  background-size: 20px;
+}
+
+.css-t89xny-MuiDataGrid-columnHeaderTitle{
+  font-weight: 900 !important;
+}
+
 @media screen and (max-width: 748px) {
   .publication-page {
     padding: 10px 30px;

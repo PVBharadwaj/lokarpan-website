@@ -5,6 +5,7 @@ import "./Publications.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import axios from "axios";
+import { CiSearch } from "react-icons/ci";
 import { debounce } from "lodash";
 
 const Columns = [
@@ -221,8 +222,8 @@ const Publications = () => {
                   <input
                     id="searchInput"
                     type="search"
-                    className="publication-form-control text-input"
-                    placeholder="Search..."
+                    className="publication-form-control text-input with-icon"
+                    placeholder="Press Ctrl+K to start Search..."
                     value={searchQuery}
                     onChange={handleSearchChange}
                   />

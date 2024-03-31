@@ -6,17 +6,29 @@
 .mission-1st-secction{
     /* padding: 4rem 20%; */
     width: 100%;
-    height: auto;
-    /* max-width: 950px;
-    min-height: 400px; */
+    min-height: 700px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* max-width: 950px; */
+    /* min-height: 400px; */
     background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710782858/Group_1775_gjomzj.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .mission-1st-section-inner{
-    padding: 150px 200px;
+    /* padding: 150px 200px; */
     color: #fff;
+    margin: var(--navbar-margin);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-inline-start: max(20px, var(--navbar-padding));
+    padding-inline-end: max(20px, var(--navbar-padding));
+  
 }
 .mission-head{
     font-size: 48px;
@@ -118,6 +130,54 @@ font-size: 20px;
     background-color: black;
 }
 
+.our-principles {
+    /* min-height: 600px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.our-principles-inner{
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    margin: var(--navbar-margin);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 450px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-inline-start: max(20px, var(--navbar-padding));
+    padding-inline-end: max(20px, var(--navbar-padding));
+}
+
+.our-principles-text {
+    /* grid-row: span 2;
+    grid-column: span 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.our-principles-text h1{
+    font-size: 44px;
+    padding: 30px 0px;
+}
+
+.our-principles-image{
+    /* grid-row: span 2;
+    grid-column: span 1; */
+    background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711614679/cannon_013_1_df4fp7.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
 
 .our-mission-text{
     padding-top: 3rem ;
@@ -162,6 +222,12 @@ border: none;
     font-weight: bold;
 
 }
+.mission-card-img-1{
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711614399/DSC03237_1_fljgvn.png");
+}
+.mission-card-img-2{
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711614679/cannon_013_1_df4fp7.png");
+}
 .our-vision-subhead{
     padding: 2rem;
     font-size: 36px;
@@ -192,13 +258,29 @@ border: none;
     background-color: #032437;
     border-radius:  20px; 
     display: flex;
-   
+    margin: var(--navbar-margin);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-inline-start: max(20px, var(--navbar-padding));
+    padding-inline-end: max(20px, var(--navbar-padding));
+  
 }
 .our-mission-mobile-image{
-    height: 500px;
+    /* height: 500px; */
     width: 50%;
     border-radius:  20px 0 0 20px; 
     background-color: #000;
+}
+
+@media (max-width:700px){
+    .our-principles-inner{
+        flex-direction: column-reverse;
+        min-height: unset;
+        width: unset;
+    }
 }
 
 @media (max-width:850px){
@@ -227,6 +309,10 @@ border: none;
         display: block;
         
        
+    }
+
+    .our-principles-inner{
+        min-height: 300px;
     }
     
     /* .our-purpose{

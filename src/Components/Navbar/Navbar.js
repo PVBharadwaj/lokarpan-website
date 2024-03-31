@@ -606,7 +606,7 @@ const Navbar = () => {
               }`}
               onMouseEnter={OpenProfilemenu}
             >
-              <div className="click-dropdown-inner nav-profile-click-dropdown">
+              <div className="click-dropdown-inner">
                 <RxCross2
                   className="cross"
                   onClick={closeProfileMenu}
@@ -614,7 +614,7 @@ const Navbar = () => {
                 />
                 <div className="nav-profile">
                   <h1 className="nav-profile-heading">LOKARPAN</h1>
-                  <div className="nav-profile-inner">
+                  <Link to={'/'}>Subscribe</Link>
                     <div className="nav-profile-inner-in">
                       <span className=" nav-profile-in-left">
                         <img
@@ -633,7 +633,6 @@ const Navbar = () => {
                       </span>
                       Student
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
