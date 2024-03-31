@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lokarpan-website/static/css/main.861ffca9.css",
+    "main.css": "/lokarpan-website/static/css/main.4614468e.css",
     "main.js": "/lokarpan-website/static/js/main.c5b9c072.js",
     "reactPlayerYouTube.js": "/lokarpan-website/static/js/reactPlayerYouTube.7d058357.chunk.js",
     "reactPlayerSoundCloud.js": "/lokarpan-website/static/js/reactPlayerSoundCloud.62df2e3b.chunk.js",
@@ -21,7 +21,7 @@
     "static/media/slick.ttf": "/lokarpan-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/lokarpan-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/lokarpan-website/index.html",
-    "main.861ffca9.css.map": "/lokarpan-website/static/css/main.861ffca9.css.map",
+    "main.4614468e.css.map": "/lokarpan-website/static/css/main.4614468e.css.map",
     "main.c5b9c072.js.map": "/lokarpan-website/static/js/main.c5b9c072.js.map",
     "reactPlayerYouTube.7d058357.chunk.js.map": "/lokarpan-website/static/js/reactPlayerYouTube.7d058357.chunk.js.map",
     "reactPlayerSoundCloud.62df2e3b.chunk.js.map": "/lokarpan-website/static/js/reactPlayerSoundCloud.62df2e3b.chunk.js.map",
@@ -38,7 +38,7 @@
     "reactPlayerPreview.79649fe0.chunk.js.map": "/lokarpan-website/static/js/reactPlayerPreview.79649fe0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.861ffca9.css",
+    "static/css/main.4614468e.css",
     "static/js/main.c5b9c072.js"
   ]
 }
