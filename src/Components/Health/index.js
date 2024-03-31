@@ -8,7 +8,9 @@ class Health extends Component {
     return (
       <>
         <Navbar />
-        <div className="fellowship-nav"><h1>Health</h1></div>
+        <div className="fellowship-nav">
+          <h1>Health</h1>
+        </div>
         <div className="health-container">
           <div className="health-full-img">
             <img
@@ -18,11 +20,12 @@ class Health extends Component {
           </div>
           <div className="health-container-section">
             <div className="health-each-container">
-              <img
+              <div className="health-cont-img-div health-img1"></div>
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
                   Adding years to life and life to years
@@ -49,18 +52,21 @@ class Health extends Component {
                   independent creators.
                 </p>
               </div>
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div health-img2"></div>
             </div>
             <div className="health-each-container">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div health-img3"></div>
+
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
                   Adding years to life and life to years

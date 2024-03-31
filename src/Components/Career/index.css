@@ -136,7 +136,7 @@ a {
 .footer-content {
   width: 100%;
   height: 120px;
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,9 +159,59 @@ a {
   border-bottom: none;
   display: block;
   margin: 0 auto;
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
 }
+.career-cont-img-div1 {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710771181/Rectangle_1763_2_jukbok.png");
+}
+.career-cont-img-div2 {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png");
+}
+.career-cont-img-div3 {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710771208/image_189_1_q8vzgr.png");
+}
+.career-cont-img-div4 {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710771178/image_190_2_zge0vl.png");
+}
+
+/* .career-card-img1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png");
+}
+.career-img2 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png");
+}
+.carrer-img3 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710771208/image_189_1_q8vzgr.png");
+}
+.career-img4 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710771178/image_190_2_zge0vl.png");
+} */
+
 @media screen and (max-width: 748px) {
+  .career-cont-img-div1,
+  .career-cont-img-div2,
+  .career-cont-img-div3,
+  .career-cont-img-div4 {
+    order: 1;
+    width: 100%;
+    height: 320px;
+  }
   .hor-line4 {
     width: 95%;
   }
@@ -268,6 +318,15 @@ a {
     height: 300px;
   }
 } */
+
+@media screen and (max-width: 500px) {
+  .career-cont-img-div1,
+  .career-cont-img-div2,
+  .career-cont-img-div3,
+  .career-cont-img-div4 {
+    height: 280px;
+  }
+}
 
 @media screen and (max-width: 393px) {
   .mobile-head2 {
