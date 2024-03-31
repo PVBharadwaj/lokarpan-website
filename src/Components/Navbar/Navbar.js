@@ -224,11 +224,11 @@ const Navbar = () => {
         <ul
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
         >
-          <RxCross2
+          {/* <RxCross2
             className="cross"
             onClick={toggleMenu}
             style={{ fontSize: "20px" }}
-          />
+          /> */}
           <li className="navbar-item mobile-padding-left">
             <Link to="/" onClick={toggleMenu}>
               Home
@@ -638,12 +638,23 @@ const Navbar = () => {
               </div>
             </div>
           </li>
-          <li className="navbar-item hamburger-item">
+          {/* <li className="navbar-item hamburger-item">
             <RxHamburgerMenu
               className="hamburger navbar-icon-inner"
               style={{ color: "#6B7280", height: "100%" }}
               onClick={toggleMenu}
             />
+          </li> */}
+          <li
+            className={`burger-container ${isMenuOpen ? "active" : ""}`}
+            onClick={toggleMenu}
+          >
+            {/* <div > */}
+            <div id="burger">
+              <div className="bar topBar"></div>
+              <div className="bar btmBar"></div>
+            </div>
+            {/* </div> */}
           </li>
         </ul>
       </div>

@@ -12,6 +12,59 @@
   width: 100%;
   min-width: 320px;
   height: 54px;
+  /* transition: all 0.5s ease-out,; */
+}
+
+.burger-container {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s var(--cubic);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#burger {
+  width: 18px;
+  height: 8px;
+  position: relative;
+  display: block;
+  margin: -5px auto 0;
+  top: 50%;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  background: #6b7280;
+  transition: all 0.3s var(--cubic);
+  transition-delay: 0s;
+}
+
+.bar.topBar {
+  transform: translateY(0px) rotate(0deg);
+}
+
+.bar.btmBar {
+  transform: translateY(6px) rotate(0deg);
+  height: 1.5px;
+}
+
+.burger-container.active {
+  transform: rotate(90deg);
+}
+
+.burger-container.active #burger .bar.topBar {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.burger-container.active #burger .bar.btmBar {
+  transform: translateY(3px) rotate(-45deg);
 }
 
 .navbar {
@@ -258,6 +311,10 @@
   display: none;
 }
 
+.burger-container {
+  display: none;
+}
+
 @media screen and (min-width: 922px) {
   .dropdown-content-inner {
     display: flex;
@@ -275,6 +332,10 @@
 
 /* @media screen and (max-width: 836px) { */
 @media screen and (max-width: 922px) {
+  .burger-container {
+    display: inline-block;
+    z-index: 150;
+  }
   .navbar {
     /* padding: 10px 20px; */
     width: 100%;
