@@ -613,9 +613,22 @@ const Navbar = () => {
                   style={{ fontSize: "20px" }}
                 />
                 <div className="nav-profile">
-                  <h1 className="nav-profile-heading">LOKARPAN</h1>
-                  <Link to={'/'}>Subscribe</Link>
-                    <div className="nav-profile-inner-in">
+                  <Link to={'/newsletter'} className="nav-profile-link">Subscribe</Link>
+                  <p className="nav-profile-text">My apps</p>
+                  <p className="nav-profile-text">
+                    <span className=" nav-profile-one">
+                        L
+                    </span>
+                    Lokarpan one
+                  </p>
+                  
+                  <p className="nav-profile-text">
+                    <span className="nav-profile-one">
+                        L
+                    </span>
+                    Lokarpan two
+                  </p>
+                    {/* <div className="nav-profile-inner-in">
                       <span className=" nav-profile-in-left">
                         <img
                           className="nav-icon-profile"
@@ -632,7 +645,7 @@ const Navbar = () => {
                         />
                       </span>
                       Student
-                    </div>
+                    </div> */}
                 </div>
               </div>
             </div>

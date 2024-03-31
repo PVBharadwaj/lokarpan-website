@@ -48,6 +48,43 @@
     font-weight: bold;
     padding: 1rem;
 }
+
+.our-principles{
+    margin: var(--navbar-margin);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-inline-start: max(20px, var(--navbar-padding));
+    padding-inline-end: max(20px, var(--navbar-padding));
+}
+
+.our-principles-main-head{
+    font-size: 64px;
+}
+
+.our-principles-inner{
+    display: flex;
+    gap: 20px;
+    padding: 40px 0px;
+    text-align: left;
+}
+
+.ourp-right, .ourp-left{
+    width: 100%;
+}
+
+.our-principles-head{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.our-principles-inner p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .our-purpose{
     display: flex;
     justify-content: center;
@@ -130,60 +167,14 @@ font-size: 20px;
     background-color: black;
 }
 
-.our-principles {
-    /* min-height: 600px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
-}
 
-.our-principles-inner{
-    display: flex;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); */
-    margin: var(--navbar-margin);
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1100px;
-    min-height: 450px;
-    height: 700px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-inline-start: max(20px, var(--navbar-padding));
-    padding-inline-end: max(20px, var(--navbar-padding));
-}
 
 .mission-read-more{
     text-decoration: none;
     color: #3f86f0;
 }
 
-.our-principles-text {
-    /* grid-row: span 2;
-    grid-column: span 1; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-}
 
-.our-principles-text h1{
-    font-size: 44px;
-    padding: 30px 0px;
-}
-
-.our-principles-image{
-    /* grid-row: span 2;
-    grid-column: span 1; */
-    background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711614679/cannon_013_1_df4fp7.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
 
 .our-mission-text{
     padding-top: 3rem ;
@@ -286,11 +277,7 @@ border: none;
 }
 
 @media (max-width:700px){
-    .our-principles-inner{
-        flex-direction: column-reverse;
-        min-height: unset;
-        width: unset;
-    }
+ 
 }
 
 @media (max-width:850px){
@@ -319,10 +306,6 @@ border: none;
         display: block;
         
        
-    }
-
-    .our-principles-inner{
-        min-height: 300px;
     }
     
     /* .our-purpose{

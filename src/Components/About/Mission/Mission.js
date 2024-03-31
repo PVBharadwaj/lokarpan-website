@@ -33,9 +33,6 @@ const Mission = () => {
     },
   ]);
 
-  const firstTwoFaqs = faqs.slice(0, 2);
-  const lastTwoFaqs = faqs.slice(2);
-
   const toggleFAQ = (index) => {
     setFaqs(
       faqs.map((faq, i) => {
@@ -62,17 +59,6 @@ const Mission = () => {
             </div>
           </div>
         </section>
-        {/* <section className="our-purpose">
-          <div className="give-card give-card-reverse">
-            <div className="give-card-text">
-              <h1>Our vision</h1>
-              <p>
-              We strive to create connections that transcend barriers of poverty, gender, caste, and religion. Lokarpan is committed to driving growth and creating opportunities that uplift our beneficiaries and foster dignity and self-respect.
-              </p>
-            </div>
-            <div className="give-card-img mission-card-img-1"></div>
-          </div>
-        </section> */}
         {/* <section className="our-mission-mobile">
           <div className="our-mission-mobile-image"></div>
           <div className="our-mission-text">
@@ -86,28 +72,35 @@ const Mission = () => {
           </div>
         </section> */}
 
-        <section className="our-principles">
+        <div className="our-principles">
+          <h1 className="our-principles-main-head">Our Vision</h1>
           <div className="our-principles-inner">
-            <div className="our-principles-text">
-              <h1>Our Vision</h1>
-              <div className="faqs">
-                {firstTwoFaqs.map((faq, index) => (
-                  <FAQ
-                    faq={faq}
-                    index={index}
-                    key={index}
-                    toggleFAQ={toggleFAQ}
-                  />
-                ))}
-              </div>
+            <div className="ourp-left">
+              <h3 className="our-principles-head">Innovate solutions that are sustainable.</h3>
+              <p>Our goal is to improve the socioeconomic status of rural India. We are working hard to ensure that our projects provide the necessary support and resources to our beneficiaries. Lokarpan supports its partners with capacity building, institutional development, planning, review, financial management, documentation and overall supportive supervision.</p>
             </div>
-            <div className="our-principles-image">
-              {/* <img src="" /> */}
-            </div>
+            <div className="ourp-right">
+              <h3 className="our-principles-head">Create connections that make a difference.</h3>
+              <p>Lokarpan strives to create a world where individuals have dignity and self-respect. A world where people respect each other across the barriers of poverty, gender, caste and religion. Over the years, Lokarpan has driven incredible growth and created entirely new opportunities for our beneficiaries.</p>
           </div>
-        </section>
+          </div>
+        </div>
 
-        <section className="our-principles">
+        <div className="our-principles">
+          <h1 className="our-principles-main-head">Our Principles</h1>
+          <div className="our-principles-inner">
+            <div className="ourp-left">
+              <h3 className="our-principles-head">Community centric collaboration</h3>
+              <p>Lokarpan is dedicated to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects. We believe that true progress is achieved when communities are active participants in their own development, and we work to build partnerships that foster sustainable growth and self-reliance.</p>
+            </div>
+            <div className="ourp-right">
+              <h3 className="our-principles-head">Equity and Inclusivity</h3>
+              <p>Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good.</p>
+          </div>
+          </div>
+        </div>
+
+        {/* <section className="our-principles">
           <div className="our-principles-inner">
             <div className="our-principles-text">
               <h1>Our Principles</h1>
@@ -127,10 +120,9 @@ const Mission = () => {
               </div>
             </div>
             <div className="our-principles-image">
-              {/* <img src="" /> */}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="our-purpose">
           <div className="give-card give-card-reverse">

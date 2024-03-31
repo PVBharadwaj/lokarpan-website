@@ -452,16 +452,21 @@ const Navbar = () => {
                 style={{ fontSize: "20px" }}
               />
               <div className="nav-profile">
-                <h1 className="nav-profile-heading">LOKARPAN</h1>
-                <Link to={'/'}>Subscribe</Link>
-                  <div className="nav-profile-inner-in">
-                    <span className=" nav-profile-in-left"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png" /></span>
-                    Staff
-                  </div>
-                  <div className="nav-profile-inner-in">
-                    <span className="nav-profile-in-right"><img className="nav-icon-profile" src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png" /></span>
-                    Student
-                  </div>
+              <Link to={'/newsletter'} className="nav-profile-link">Subscribe</Link>
+                  <p className="nav-profile-text">My apps</p>
+                  <p className="nav-profile-text">
+                    <span className=" nav-profile-one">
+                        L
+                    </span>
+                    Lokarpan one
+                  </p>
+                  
+                  <p className="nav-profile-text">
+                    <span className="nav-profile-one">
+                        L
+                    </span>
+                    Lokarpan two
+                  </p>
               </div>
             </div>
           </div>
