@@ -54,6 +54,7 @@ import Carek from "./Components/Kith/KithComp/careerkith/careerk"
 import Alumni from "./Components/Alumni";
 import KithLeadership from "./Components/KithLeadership";
 import KithFaq from "./Components/Kith/KithComp/faqkith/faqk";
+import Sidemap from "./Components/Sidemap/Sidemap";
 import "./styles.css";
 import MissionHead from "./Components/About/Mission/MissionHead";
 import CodeOfConduct from "./Components/About/Mission/CodeOfConduct";
@@ -65,6 +66,8 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/lokarpan-website">
         <Routes>
+          <Route path="/sidemap" element={<Sidemap/>}></Route>
+        <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/faqs" element={<KithFaq />}></Route>
           <Route path="/" element={<Home />}></Route>
