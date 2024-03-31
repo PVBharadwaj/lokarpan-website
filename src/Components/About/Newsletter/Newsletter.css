@@ -50,11 +50,21 @@ text-align: center;
     font-size: 75px;
     color: rgb(235, 191, 14);
 }
+.daily-icon3{
+    font-size: 25px;
+    color: #ebbf0e;
+    padding-top: 1rem ;
+   
+
+}
 .daily-icon2{
     font-size: 25px;
     color:#032437;
     padding-top: 1rem ;
    
+}
+.daily-icon2:hover{
+    color: #ebbf0e;
 }
 .newsbox-heading{
    margin-top: .5rem;
@@ -110,6 +120,37 @@ background-color: #fff;
 
     color: #F2AFEF;
 }
+.subs-newsletter{
+    position:fixed;
+}
+
+
+.email {
+    font-size: 18px;
+    font-weight: 550;
+    color: #fff;
+    background-color: rgb(0, 110, 255);
+    padding: .5rem 10rem;
+    position: fixed;
+   /* Position it at 50% from the top */
+    left: 50%; /* Position it at 50% from the left */
+    transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align children horizontally to center */
+  }
+  
+  .counter{
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    padding: .1rem ;
+    text-align: center;
+    margin-right: .5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color:rgb(0, 110, 255);
+  }
 
 @media (max-width:815px){
     .newsletter-letters{
