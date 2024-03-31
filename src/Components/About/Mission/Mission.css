@@ -147,10 +147,16 @@ font-size: 20px;
     width: 100%;
     max-width: 1100px;
     min-height: 450px;
+    height: 700px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-inline-start: max(20px, var(--navbar-padding));
     padding-inline-end: max(20px, var(--navbar-padding));
+}
+
+.mission-read-more{
+    text-decoration: none;
+    color: #3f86f0;
 }
 
 .our-principles-text {
@@ -273,6 +279,10 @@ border: none;
     width: 50%;
     border-radius:  20px 0 0 20px; 
     background-color: #000;
+}
+
+.coc-link{
+    margin: 0px 40px 100px;
 }
 
 @media (max-width:700px){

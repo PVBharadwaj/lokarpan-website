@@ -33,6 +33,9 @@ const Mission = () => {
     },
   ]);
 
+  const firstTwoFaqs = faqs.slice(0, 2);
+  const lastTwoFaqs = faqs.slice(2);
+
   const toggleFAQ = (index) => {
     setFaqs(
       faqs.map((faq, i) => {
@@ -55,11 +58,11 @@ const Mission = () => {
           <div className="mission-1st-section-inner"> 
             <div className="mission-head">Lokarpan offers solutions to empower communities living in stress.</div>
             <div className="mission-content1">
-            Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India.<Link to={"/mission-text"} style={{color: "blue", cursor: "pointer" }}>Read more</Link>
+            Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India.<Link to={"/mission-text"} className="mission-read-more">Read more</Link>
             </div>
           </div>
         </section>
-        <section className="our-purpose">
+        {/* <section className="our-purpose">
           <div className="give-card give-card-reverse">
             <div className="give-card-text">
               <h1>Our vision</h1>
@@ -69,7 +72,7 @@ const Mission = () => {
             </div>
             <div className="give-card-img mission-card-img-1"></div>
           </div>
-        </section>
+        </section> */}
         {/* <section className="our-mission-mobile">
           <div className="our-mission-mobile-image"></div>
           <div className="our-mission-text">
@@ -88,7 +91,7 @@ const Mission = () => {
             <div className="our-principles-text">
               <h1>Our Vision</h1>
               <div className="faqs">
-                {faqs.map((faq, index) => (
+                {firstTwoFaqs.map((faq, index) => (
                   <FAQ
                     faq={faq}
                     index={index}
@@ -109,12 +112,16 @@ const Mission = () => {
             <div className="our-principles-text">
               <h1>Our Principles</h1>
               <div className="faqs">
-                {faqs.map((faq, index) => (
+                {lastTwoFaqs.map((faq, index) => (
                   <FAQ
                     faq={faq}
-                    index={index}
+                    // index={index}
+                    // key={index}
+                    // toggleFAQ={toggleFAQ}
+                    index={index + 2}
                     key={index}
-                    toggleFAQ={toggleFAQ}
+                    toggleFAQ={() => toggleFAQ(index + 2)}
+
                   />
                 ))}
               </div>
@@ -154,22 +161,23 @@ const Mission = () => {
               <h1>Our Culture</h1>
               <p>
               At Lokarpan, our work culture is defined by a steadfast commitment to growth, both for our organisation and the communities we serve. Our goal is to expand opportunities for all, breaking down barriers to access and creating pathways to success.
-              <span><Link to={'/our-culture'}>Know more</Link></span>
+              <span><Link to={'/our-culture'} className="mission-read-more">Know more</Link></span>
               </p>
             </div>
             <div className="give-card-img mission-card-img-1"></div>
           </div>
         </section>
         <section className="our-purpose">
-          <div className="give-card give-card-reverse">
+          <div className="give-card">
+          <div className="give-card-img mission-card-img-1"></div>
             <div className="give-card-text">
               <h1>Ethics and Compliance</h1>
               <p>
               At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.
-              <span><Link to={'/ethics'}>Know more</Link></span>
+              <span><Link to={'/ethics'} className="mission-read-more">Know more</Link></span>
               </p>
             </div>
-            <div className="give-card-img mission-card-img-1"></div>
+            {/* <div className="give-card-img mission-card-img-1"></div> */}
           </div>
         </section>
 
@@ -187,8 +195,8 @@ const Mission = () => {
           </div>
           </div>
         </section> */}
-        {/* <section className="our-vision">
-          <div className="our-vision-head">Ethics and Compliance</div>
+        {/* <section className="our-vision"> */}
+          {/* <div className="our-vision-head">Ethics and Compliance</div>
           <div className="our-vision-text">
           At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.
           </div>
@@ -196,13 +204,13 @@ const Mission = () => {
           <div className="apply-btn transparent">
               <Link to="/ethics" className="apply-btn-text-black body-btn">Know more</Link>
           </div>
-          </div>
-          <div className="hyperlinks">
+          </div> */}
+          <div className="hyperlinks coc-link">
           <div className="apply-btn transparent">
-              <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Know more</Link>
+              <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Code of Conduct</Link>
           </div>
           </div>
-        </section> */}
+        {/* </section> */}
       </div>
       <Footer />
     </div>

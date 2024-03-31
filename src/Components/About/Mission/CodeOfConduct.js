@@ -87,6 +87,9 @@ const CodeOfConduct = () => {
       <>
         <Navbar />
         <SubNavbar />
+        <div className="mission-img">
+        <h1 className="mission-head-div-head">Code of Conduct</h1>
+      </div>
         <div className="faqs-container">
           <div className="donate-faq-section">
             <div className="faqs-head-sec">
