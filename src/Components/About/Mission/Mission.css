@@ -203,6 +203,7 @@ font-size: 20px;
 .mission-read-more{
     text-decoration: none;
     color: #3f86f0;
+    cursor: pointer;
 }
 
 
