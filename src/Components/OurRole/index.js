@@ -156,7 +156,7 @@ class OurRole extends Component {
                       <h4>Our Kith Programme</h4>
                       <h3>
                         Explore Lokarpan's engaging and tailored learning
-                        solutions at our Kith n Kin centre. Learn more.
+                        solutions at our Kith n Kin centre.
                       </h3>
 
                       <Popup
@@ -187,7 +187,7 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    Our Kith Programme
+                                    OUR KITH PROGRAMME
                                   </h3>
                                   <p className="popup-font20">
                                     At Lokarpan's Kith n Kin learning centre,
@@ -225,6 +225,27 @@ class OurRole extends Component {
                                       supporting teachers in delivering the core
                                       curriculum effectively.
                                     </p>
+                                    <p className="popup-font16">
+                                      For 70+ schools - recommend training,
+                                      infrastructure restructuring, teaching,
+                                      digitisation We replicate learning,
+                                      teacher trainings, provide software and
+                                      content, model school for not just low
+                                      cost private schools but also publicly
+                                      aided schools; scale pilots to outperform
+                                      the pre existing framework by
+                                      standardising quality metrics
+                                    </p>
+                                    <p className="popup-font16">
+                                      Kith n Kin centre of excellence -
+                                      ancillary support, training teachers,
+                                      content development, animation and audio
+                                      content, longitudinal or short term
+                                      research, ed tech, financial modelling and
+                                      restructuring of schools (also
+                                      experimenting with these ideas at the Kith
+                                      school)
+                                    </p>
                                   </div>
                                 </div>
                               </div>
@@ -244,13 +265,11 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4> Podcasts and Digital Content</h4>
+                      <h4>Transition to Digital Learning during COVID </h4>
                       <h3>
-                        Bridging the education gap, Lokarpan offers a digital
-                        content library focusing on English and STEM subjects,
-                        empowering young learners. Immerse in our captivating
-                        audio podcasts, where children can explore and practise
-                        new realms of knowledge.
+                        Across age groups, Lokarpan leverages innovative
+                        technology so children and youth can take education into
+                        their own hands.
                       </h3>
 
                       <Popup
@@ -281,22 +300,12 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    PODCASTS AND DIGITAL CONTENT
+                                    TRANSITION TO DIGITAL LEARNING DURING COVID
                                   </h3>
                                   <p className="popup-font20">
-                                    Lokarpan is dedicated to bridging gaps in
-                                    the education system through innovative,
-                                    technology-assisted solutions for learners
-                                    of all ages. Our mission? To elevate India's
-                                    representation in the PISA rankings by 2027,
-                                    benefiting over 100,000 individuals. With a
-                                    diverse team of instructors, we actively
-                                    engage with students in schools and
-                                    communities, focusing on creating enhanced
-                                    teaching tools, expanding skill development,
-                                    and integrating technology to deliver the
-                                    very best educational standards across rural
-                                    India.
+                                    Our digital resources offer an enriching
+                                    educational experience that nurtures
+                                    curiosity and knowledge.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -307,28 +316,23 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Lokarpan's diverse digital content library
+                                      is meticulously curated to bolster
+                                      proficiency in English and STEM subjects.
+                                      Our engaging online resources empower
+                                      young learners, providing them with the
+                                      tools to excel in these critical areas of
+                                      education.
                                     </p>
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Our "Red Circle Podcasts," are designed
+                                      for practice, these audio gems offer
+                                      children a dynamic platform to hone their
+                                      language abilities. With interactive
+                                      elements and engaging narratives, the Red
+                                      Circle Podcasts are more than just audio
+                                      lessons—they are immersive adventures in
+                                      learning. (move to podcast)
                                     </p>
                                   </div>
                                 </div>
@@ -347,12 +351,10 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Fellowship</h4>
+                      <h4> Solving India’s Reading Crisis</h4>
                       <h3>
-                        Join Lokarpan's passionate team committed to making a
-                        real impact. Our dedicated Fellows volunteer in
-                        classrooms and support various departments, uniting to
-                        shape a brighter future for rural education
+                        Lokarpan's reading assessments are curated to advance
+                        children's literacy capabilities with precision.
                       </h3>
 
                       <Popup
@@ -382,21 +384,13 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">FELLOWSHIP</h3>
+                                  <h3 className="popup-font40">
+                                    SOLVING INDIA'S READING CRISIS
+                                  </h3>
                                   <p className="popup-font20">
-                                    Lokarpan is dedicated to bridging gaps in
-                                    the education system through innovative,
-                                    technology-assisted solutions for learners
-                                    of all ages. Our mission? To elevate India's
-                                    representation in the PISA rankings by 2027,
-                                    benefiting over 100,000 individuals. With a
-                                    diverse team of instructors, we actively
-                                    engage with students in schools and
-                                    communities, focusing on creating enhanced
-                                    teaching tools, expanding skill development,
-                                    and integrating technology to deliver the
-                                    very best educational standards across rural
-                                    India.
+                                    Our innovative reading assessments are
+                                    enhancing educational outcomes for children
+                                    in diverse learning environments.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -407,28 +401,26 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Lokarpan's "Reading Ability Assessment for
+                                      Children (READ)" is a comprehensive tool
+                                      designed to gather vital insights into a
+                                      child's reading skills and habits. We use
+                                      a blend of qualitative and quantitative
+                                      metrics to gather data on the frequency of
+                                      reading at home, number of books read
+                                      monthly, and words per minute (WPM)
+                                      reading speed. This helps educators tailor
+                                      strategies to individual learning needs.
                                     </p>
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Our READ assessment incorporates Likert
+                                      scales and multiple-choice options to
+                                      ensure clarity and consistency in
+                                      responses. From understanding
+                                      comprehension skills to gauging enjoyment
+                                      of reading and willingness to use reading
+                                      aids, the assessment aims to empower
+                                      educators with actionable data.
                                     </p>
                                   </div>
                                 </div>
@@ -450,113 +442,10 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content" onClick={this.updatePopUpOpen}>
-                    <h4>Kith n Kin</h4>
+                    <h4> Our Kith Programme</h4>
                     <h3>
-                      At Lokarpan's learning centre, we're dedicated to creating
-                      a specially designed curriculum that targets learning gaps
-                      in children. With our digital classrooms, learning becomes
-                      engaging and memorable.
-                    </h3>
-
-                    <Popup
-                      trigger={
-                        <div className="expand-sec">
-                          <p>EXPAND TO LEARN MORE</p>
-                          <IoMdExpand />
-                        </div>
-                      }
-                      modal
-                      onOpen={this.updatePopUpOpen}
-                      onClose={this.updatePopUpOpen}
-                      onKeyDown={(event, close) => {
-                        this.onKeyDown(event, close);
-                      }}
-                    >
-                      {(close) => (
-                        <>
-                          <div className="popup-container">
-                            <button className="close-btn">
-                              <IoMdClose
-                                style={{
-                                  fontSize: "30px",
-                                }}
-                                onClick={() => close()}
-                              />
-                            </button>
-                            <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">KITH N KITH</h3>
-                                <p className="popup-font20">
-                                  Lokarpan is dedicated to bridging gaps in the
-                                  education system through innovative,
-                                  technology-assisted solutions for learners of
-                                  all ages. Our mission? To elevate India's
-                                  representation in the PISA rankings by 2027,
-                                  benefiting over 100,000 individuals. With a
-                                  diverse team of instructors, we actively
-                                  engage with students in schools and
-                                  communities, focusing on creating enhanced
-                                  teaching tools, expanding skill development,
-                                  and integrating technology to deliver the very
-                                  best educational standards across rural India.
-                                </p>
-                              </div>
-                              <div className="popup-right-container">
-                                <img
-                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
-                                  alt="popup-img"
-                                  className="popup-img"
-                                />
-                                <div className="popup-content">
-                                  <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                  <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="popup-overlay"></div>
-                        </>
-                      )}
-                    </Popup>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
-                    className="edu-img"
-                    alt="Card 1"
-                  />
-                  <div className="card-content">
-                    <h4>Podcasts and Digital Content</h4>
-                    <h3>
-                      Bridging the education gap, Lokarpan offers a digital
-                      content library focusing on English and STEM subjects,
-                      empowering young learners. Immerse in our captivating
-                      audio podcasts, where children can explore and practise
-                      new realms of knowledge.
+                      Building India’s most technologically advanced low cost
+                      schools to foster educational equity
                     </h3>
 
                     <Popup
@@ -587,21 +476,13 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  PODCASTS AND DIGITAL CONTENT
+                                  OUR KITH PROGRAMME
                                 </h3>
                                 <p className="popup-font20">
-                                  Lokarpan is dedicated to bridging gaps in the
-                                  education system through innovative,
-                                  technology-assisted solutions for learners of
-                                  all ages. Our mission? To elevate India's
-                                  representation in the PISA rankings by 2027,
-                                  benefiting over 100,000 individuals. With a
-                                  diverse team of instructors, we actively
-                                  engage with students in schools and
-                                  communities, focusing on creating enhanced
-                                  teaching tools, expanding skill development,
-                                  and integrating technology to deliver the very
-                                  best educational standards across rural India.
+                                  At Lokarpan's Kith n Kin learning centre,
+                                  we're dedicated to creating a specially
+                                  designed curriculum that targets learning gaps
+                                  in children.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -612,28 +493,134 @@ class OurRole extends Component {
                                 />
                                 <div className="popup-content">
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    Established in April 2014, the Kith and Kin
+                                    School in Auraiya, Uttar Pradesh aims to
+                                    elevate education levels in the region.
+                                    Recognising the stark achievement gap
+                                    between low-income and private schools,
+                                    Lokarpan envisions a future where every
+                                    child receives excellent education,
+                                    fostering educational equity and unlocking
+                                    India's potential.
                                   </p>
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    The school's mission revolves around
+                                    creating a holistic ecosystem for parents,
+                                    students, and teachers. Through a specially
+                                    designed curriculum, advanced teaching
+                                    tools, skill development programs, and
+                                    technology integration, Lokarpan seeks to
+                                    empower students while supporting teachers
+                                    in delivering the core curriculum
+                                    effectively.
+                                  </p>
+                                  <p className="popup-font16">
+                                    For 70+ schools - recommend training,
+                                    infrastructure restructuring, teaching,
+                                    digitisation We replicate learning, teacher
+                                    trainings, provide software and content,
+                                    model school for not just low cost private
+                                    schools but also publicly aided schools;
+                                    scale pilots to outperform the pre existing
+                                    framework by standardising quality metrics
+                                  </p>
+                                  <p className="popup-font16">
+                                    Kith n Kin centre of excellence - ancillary
+                                    support, training teachers, content
+                                    development, animation and audio content,
+                                    longitudinal or short term research, ed
+                                    tech, financial modelling and restructuring
+                                    of schools (also experimenting with these
+                                    ideas at the Kith school)
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="popup-overlay"></div>
+                        </>
+                      )}
+                    </Popup>
+                  </div>
+                </div>
+
+                <div className="card">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                    className="edu-img"
+                    alt="Card 1"
+                  />
+                  <div className="card-content">
+                    <h4>Transition to Digital Learning during COVID</h4>
+                    <h3>
+                      Across age groups, Lokarpan leverages innovative
+                      technology so children and youth can take education into
+                      their own hands.
+                    </h3>
+
+                    <Popup
+                      trigger={
+                        <div className="expand-sec">
+                          <p>EXPAND TO LEARN MORE</p>
+                          <IoMdExpand />
+                        </div>
+                      }
+                      modal
+                      onOpen={this.updatePopUpOpen}
+                      onClose={this.updatePopUpOpen}
+                      onKeyDown={(event, close) => {
+                        this.onKeyDown(event, close);
+                      }}
+                    >
+                      {(close) => (
+                        <>
+                          <div className="popup-container">
+                            <button className="close-btn">
+                              <IoMdClose
+                                style={{
+                                  fontSize: "30px",
+                                }}
+                                onClick={() => close()}
+                              />
+                            </button>
+                            <div className="popup-section">
+                              <div className="popup-left-container">
+                                <h3 className="popup-font40">
+                                  TRANSITION TO DIGITAL LEARNING DURING COVID.
+                                </h3>
+                                <p className="popup-font20">
+                                  Lokarpan's diverse digital content library is
+                                  meticulously curated to bolster proficiency in
+                                  English and STEM subjects. Our engaging online
+                                  resources empower young learners, providing
+                                  them with the tools to excel in these critical
+                                  areas of education.
+                                </p>
+                              </div>
+                              <div className="popup-right-container">
+                                <img
+                                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
+                                  alt="popup-img"
+                                  className="popup-img"
+                                />
+                                <div className="popup-content">
+                                  <p className="popup-font16">
+                                    Lokarpan's diverse digital content library
+                                    is meticulously curated to bolster
+                                    proficiency in English and STEM subjects.
+                                    Our engaging online resources empower young
+                                    learners, providing them with the tools to
+                                    excel in these critical areas of education.
+                                  </p>
+                                  <p className="popup-font16">
+                                    Our "Red Circle Podcasts," are designed for
+                                    practice, these audio gems offer children a
+                                    dynamic platform to hone their language
+                                    abilities. With interactive elements and
+                                    engaging narratives, the Red Circle Podcasts
+                                    are more than just audio lessons—they are
+                                    immersive adventures in learning. (move to
+                                    podcast)
                                   </p>
                                 </div>
                               </div>
@@ -759,11 +746,10 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Maternal and Child Health</h4>
+                      <h4>Maternal and Child Health Initiatives</h4>
                       <h3>
-                        With a focus on reducing infant and maternal mortality
-                        rates, Lokarpan prioritises providing essential midwife
-                        support and valuable educational resources for families.
+                        Empowering families through essential midwife support
+                        and educational resources for maternal and child health
                       </h3>
 
                       <Popup
@@ -794,18 +780,10 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    MATERNAL AND CHILD HEALTH
+                                    MATERNAL AND CHILD HEALTH INITIATIVES
                                   </h3>
                                   <p className="popup-font20">
-                                    Lokarpan is committed to advancing community
-                                    health through a range of impactful
-                                    initiatives. Our goal is to reduce infant
-                                    and mother mortality rates, ensuring a safe
-                                    and healthy start for families. With a focus
-                                    on providing midwife support, essential
-                                    nutrition, and educational resources, we
-                                    strive to empower mothers and children
-                                    alike.
+                                    Project VISTAAR
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -816,28 +794,43 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      LOver the course of eight years,
+                                      Lokarpan's Safe Motherhood and Child
+                                      Survival program made a profound impact in
+                                      160 villages across Kanpur Dehat and
+                                      Auraiya districts, reaching a population
+                                      of 186,750. This initiative brought about
+                                      a remarkable shift in the awareness and
+                                      practices of women within these villages,
+                                      emphasising the importance of
+                                      immunizations, regular check-ups, and safe
+                                      deliveries at Primary Health Centers
+                                      (PHCs) and Community Health Centers
+                                      (CHCs). The program empowered village
+                                      health workers as pivotal figures, guiding
+                                      new mothers and maintaining close
+                                      coordination with Auxiliary Nurse Midwives
+                                      (ANMs).
                                     </p>
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Building on this legacy, Lokarpan, in 2006
+                                      launched Project VISTAAR in Bulandshahr
+                                      district, focusing on providing strategic
+                                      technical assistance, generating
+                                      evidence-based knowledge, and advocating
+                                      for improved Maternal, Neonatal, and Child
+                                      Health and Nutrition (MNCHN) programming.
+                                      This initiative encompassed efforts to
+                                      strengthen MNCHN programs through tailored
+                                      technical assistance, evidence-based
+                                      interventions, and advocacy for
+                                      prioritising nutrition and newborn care.
+                                      The project also emphasised equity and
+                                      gender considerations, striving to improve
+                                      MNCHN outcomes for the most vulnerable
+                                      populations, while actively promoting
+                                      knowledge management to share best
+                                      practices and evidence-based approaches.
                                     </p>
                                   </div>
                                 </div>
@@ -863,7 +856,7 @@ class OurRole extends Component {
                         work diligently to complete vaccination schedules for
                         children, following government guidelines. Our focus
                         includes preventing diseases such as malaria and polio
-                        to safeguard community health
+                        to safeguard community health.
                       </h3>
 
                       <Popup
@@ -893,17 +886,11 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">vACCINATION</h3>
+                                  <h3 className="popup-font40">VACCINATION</h3>
                                   <p className="popup-font20">
-                                    Lokarpan is committed to advancing community
-                                    health through a range of impactful
-                                    initiatives. Our goal is to reduce infant
-                                    and mother mortality rates, ensuring a safe
-                                    and healthy start for families. With a focus
-                                    on providing midwife support, essential
-                                    nutrition, and educational resources, we
-                                    strive to empower mothers and children
-                                    alike.
+                                    Our innovative reading assessments are
+                                    enhancing educational outcomes for children
+                                    in diverse learning environments.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -914,28 +901,26 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Lokarpan's "Reading Ability Assessment for
+                                      Children (READ)" is a comprehensive tool
+                                      designed to gather vital insights into a
+                                      child's reading skills and habits. We use
+                                      a blend of qualitative and quantitative
+                                      metrics to gather data on the frequency of
+                                      reading at home, number of books read
+                                      monthly, and words per minute (WPM)
+                                      reading speed. This helps educators tailor
+                                      strategies to individual learning needs.
                                     </p>
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Our READ assessment incorporates Likert
+                                      scales and multiple-choice options to
+                                      ensure clarity and consistency in
+                                      responses. From understanding
+                                      comprehension skills to gauging enjoyment
+                                      of reading and willingness to use reading
+                                      aids, the assessment aims to empower
+                                      educators with actionable data.
                                     </p>
                                   </div>
                                 </div>
@@ -956,14 +941,14 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Nutrition</h4>
+                      <h4>USAID food aid programmes food for peace</h4>
                       <h3>
                         Ensuring adequate nutrition for children is a key focus
                         of our Nutrition initiatives. We monitor health
                         indicators closely to address any nutritional gaps and
                         implement programs that supply food to schools and
                         homes, combating malnutrition and promoting healthy
-                        growth
+                        growth. Learn more.
                       </h3>
                       <Popup
                         trigger={
@@ -992,17 +977,13 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">NUTRITION</h3>
+                                  <h3 className="popup-font40">
+                                    USAID FOOD AID PROGRAMMES FOR PEACE
+                                  </h3>
                                   <p className="popup-font20">
-                                    Lokarpan is committed to advancing community
-                                    health through a range of impactful
-                                    initiatives. Our goal is to reduce infant
-                                    and mother mortality rates, ensuring a safe
-                                    and healthy start for families. With a focus
-                                    on providing midwife support, essential
-                                    nutrition, and educational resources, we
-                                    strive to empower mothers and children
-                                    alike.
+                                    Our innovative reading assessments are
+                                    enhancing educational outcomes for children
+                                    in diverse learning environments.
                                   </p>
                                 </div>
                                 <div className="popup-right-container">
@@ -1013,28 +994,14 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
+                                      Through initiatives such as the Village
+                                      Health and Nutrition Day (VHND) and
+                                      sector-level meetings, Lokarpan continues
+                                      to lead impactful interventions aimed at
+                                      reducing infant mortality, tackling the
+                                      pervasive issue of malnutrition, and
+                                      fostering a healthier future for
+                                      communities.
                                     </p>
                                   </div>
                                 </div>
@@ -1056,11 +1023,10 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Maternal and Child Health</h4>
+                    <h4> Maternal and Child Health Initiatives</h4>
                     <h3>
-                      With a focus on reducing infant and maternal mortality
-                      rates, Lokarpan prioritises providing essential midwife
-                      support and valuable educational resources for families.
+                      Empowering families through essential midwife support and
+                      educational resources for maternal and child health
                     </h3>
 
                     <Popup
@@ -1091,18 +1057,9 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  MATERNAL AND CHILD HEALTH
+                                  MATERNAL AND CHILD HEALTH INITIATIVES
                                 </h3>
-                                <p className="popup-font20">
-                                  Lokarpan is committed to advancing community
-                                  health through a range of impactful
-                                  initiatives. Our goal is to reduce infant and
-                                  mother mortality rates, ensuring a safe and
-                                  healthy start for families. With a focus on
-                                  providing midwife support, essential
-                                  nutrition, and educational resources, we
-                                  strive to empower mothers and children alike
-                                </p>
+                                <p className="popup-font20">Project VISTAAR</p>
                               </div>
                               <div className="popup-right-container">
                                 <img
@@ -1112,28 +1069,41 @@ class OurRole extends Component {
                                 />
                                 <div className="popup-content">
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    LOver the course of eight years, Lokarpan's
+                                    Safe Motherhood and Child Survival program
+                                    made a profound impact in 160 villages
+                                    across Kanpur Dehat and Auraiya districts,
+                                    reaching a population of 186,750. This
+                                    initiative brought about a remarkable shift
+                                    in the awareness and practices of women
+                                    within these villages, emphasising the
+                                    importance of immunizations, regular
+                                    check-ups, and safe deliveries at Primary
+                                    Health Centers (PHCs) and Community Health
+                                    Centers (CHCs). The program empowered
+                                    village health workers as pivotal figures,
+                                    guiding new mothers and maintaining close
+                                    coordination with Auxiliary Nurse Midwives
+                                    (ANMs).
                                   </p>
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    Building on this legacy, Lokarpan, in 2006
+                                    launched Project VISTAAR in Bulandshahr
+                                    district, focusing on providing strategic
+                                    technical assistance, generating
+                                    evidence-based knowledge, and advocating for
+                                    improved Maternal, Neonatal, and Child
+                                    Health and Nutrition (MNCHN) programming.
+                                    This initiative encompassed efforts to
+                                    strengthen MNCHN programs through tailored
+                                    technical assistance, evidence-based
+                                    interventions, and advocacy for prioritising
+                                    nutrition and newborn care. The project also
+                                    emphasised equity and gender considerations,
+                                    striving to improve MNCHN outcomes for the
+                                    most vulnerable populations, while actively
+                                    promoting knowledge management to share best
+                                    practices and evidence-based approaches.
                                   </p>
                                 </div>
                               </div>
@@ -1192,14 +1162,9 @@ class OurRole extends Component {
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">VACCINATION</h3>
                                 <p className="popup-font20">
-                                  Lokarpan is committed to advancing community
-                                  health through a range of impactful
-                                  initiatives. Our goal is to reduce infant and
-                                  mother mortality rates, ensuring a safe and
-                                  healthy start for families. With a focus on
-                                  providing midwife support, essential
-                                  nutrition, and educational resources, we
-                                  strive to empower mothers and children alike
+                                  Our innovative reading assessments are
+                                  enhancing educational outcomes for children in
+                                  diverse learning environments.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1210,28 +1175,25 @@ class OurRole extends Component {
                                 />
                                 <div className="popup-content">
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    Lokarpan's "Reading Ability Assessment for
+                                    Children (READ)" is a comprehensive tool
+                                    designed to gather vital insights into a
+                                    child's reading skills and habits. We use a
+                                    blend of qualitative and quantitative
+                                    metrics to gather data on the frequency of
+                                    reading at home, number of books read
+                                    monthly, and words per minute (WPM) reading
+                                    speed. This helps educators tailor
+                                    strategies to individual learning needs.
                                   </p>
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    Our READ assessment incorporates Likert
+                                    scales and multiple-choice options to ensure
+                                    clarity and consistency in responses. From
+                                    understanding comprehension skills to
+                                    gauging enjoyment of reading and willingness
+                                    to use reading aids, the assessment aims to
+                                    empower educators with actionable data.
                                   </p>
                                 </div>
                               </div>
@@ -1251,13 +1213,13 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4> Nutrition</h4>
+                    <h4>USAID food aid programmes food for peace</h4>
                     <h3>
                       Ensuring adequate nutrition for children is a key focus of
                       our Nutrition initiatives. We monitor health indicators
                       closely to address any nutritional gaps and implement
                       programs that supply food to schools and homes, combating
-                      malnutrition and promoting healthy growth
+                      malnutrition and promoting healthy growth.
                     </h3>
 
                     <Popup
@@ -1287,16 +1249,13 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">NUTRITION</h3>
+                                <h3 className="popup-font40">
+                                  USAID FOOD AID PROGRAMMES FOOD FOR PEACE
+                                </h3>
                                 <p className="popup-font20">
-                                  Lokarpan is committed to advancing community
-                                  health through a range of impactful
-                                  initiatives. Our goal is to reduce infant and
-                                  mother mortality rates, ensuring a safe and
-                                  healthy start for families. With a focus on
-                                  providing midwife support, essential
-                                  nutrition, and educational resources, we
-                                  strive to empower mothers and children alike.
+                                  Our innovative reading assessments are
+                                  enhancing educational outcomes for children in
+                                  diverse learning environments.
                                 </p>
                               </div>
                               <div className="popup-right-container">
@@ -1307,16 +1266,14 @@ class OurRole extends Component {
                                 />
                                 <div className="popup-content">
                                   <p className="popup-font16">
-                                    GiveDirectly empowers marginalized
-                                    communities and those affected by disasters
-                                    like COVID-19 through direct cash transfers,
-                                    which give people the flexibility to provide
-                                    for their true needs, in contrast to in-kind
-                                    donations. Since 2012, Google.org has
-                                    provided over $10 million to GiveDirectly to
-                                    support people in need and research the
-                                    impact of GiveDirectly’s innovative
-                                    approach.
+                                    Through initiatives such as the Village
+                                    Health and Nutrition Day (VHND) and
+                                    sector-level meetings, Lokarpan continues to
+                                    lead impactful interventions aimed at
+                                    reducing infant mortality, tackling the
+                                    pervasive issue of malnutrition, and
+                                    fostering a healthier future for
+                                    communities.
                                   </p>
                                   <p className="popup-font16">
                                     GiveDirectly empowers marginalized

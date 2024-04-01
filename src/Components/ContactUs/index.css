@@ -18,6 +18,15 @@
   /* background-size: cover; */
   background-position: center;
 }
+.contact-us-top-sec {
+  width: 100%;
+  height: 800px;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1708797777/image_322_huxmrs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
 .contact-sec {
   width: 700px;
   height: 170px;
@@ -120,7 +129,7 @@
 }
 .maps-section {
   height: 441px;
-  width: 910px;
+  width: 90%;
   margin: auto;
   margin-top: 160px;
 }
@@ -137,7 +146,8 @@
 }
 
 .maps-below-right-sec {
-  width: 50%;
+  width: 45%;
+  margin-left: auto;
   height: 80%;
 }
 .contact-last-section {
@@ -182,7 +192,19 @@
   font-weight: bold;
 }
 
+.contact-us-img1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1706005062/Rectangle_1899_etymet.png");
+}
+
 @media screen and (max-width: 748px) {
+  /* .contact-us-top-sec {
+    height: 400px;
+  } */
+  .maps-below-right-sec {
+    margin-bottom: 30px;
+    order: 2;
+  }
+
   .contact-us-top-section {
     margin: auto;
     height: auto;
@@ -248,6 +270,7 @@
   .contact-font64-left {
     font-size: 40px;
     margin-top: 50px;
+    width: 400px;
   }
   .contact-font48-left {
     font-size: 36px;
@@ -261,5 +284,11 @@
   }
   .each-item-p {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-font64-left {
+    width: 300px;
   }
 }

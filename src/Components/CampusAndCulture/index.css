@@ -152,8 +152,8 @@
   margin: auto;
 }
 .campus-culture-last-section {
-  width: calc(100% - 320px);
-  height: 400px;
+  width: 85%;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,8 +165,10 @@
   width: 45%;
 }
 .campus-last-section-content {
-  width: 50%;
+  width: 45%;
   height: 100%;
+  margin-left: auto;
+  align-content: center;
 }
 .campus-last-section-list {
   padding: 0;
@@ -180,6 +182,9 @@
 }
 .campus-font18 {
   font-size: 18px;
+}
+.campus-culture-img1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1707799693/Rectangle_1882_uamn0n.png");
 }
 
 @media screen and (max-width: 748px) {

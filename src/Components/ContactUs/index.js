@@ -28,7 +28,8 @@ class ContactUs extends Component {
 
         <div className="contact-us-container">
           <div className="contact-us-top-section">
-            <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708797777/image_322_huxmrs.png" />
+            {/* <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708797777/image_322_huxmrs.png" /> */}
+            <div className="contact-us-top-sec"></div>
             <div className="contact-sec">
               <h1 className="contact-font64">Contact Us</h1>
               <p className="contact-font24">
@@ -94,10 +95,12 @@ class ContactUs extends Component {
           <div className="maps-section">
             <h1 className="contact-font48">Maps & Directions</h1>
             <div className="maps-below-section">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1706005062/Rectangle_1899_etymet.png"
                 className="maps-img"
-              />
+              /> */}
+              <div className="health-cont-img-div  contact-us-img1"></div>
+
               <div className="maps-below-right-sec">
                 <h3 className="contact-font24-left">Address</h3>
                 <p className="contact-font16">Lokarpan HQ</p>
