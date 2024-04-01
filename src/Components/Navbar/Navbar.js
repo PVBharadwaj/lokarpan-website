@@ -115,6 +115,11 @@ const Navbar = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
   const timeoutRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
+
+  // const toggleMenu = () => {
+  //   setIsActive(!isActive);
+  // };
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -176,6 +181,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setActiveDropdown(null);
     setIsMenuOpen(!isMenuOpen);
+    
+    setIsActive(!isActive);
   };
 
   const handleNavlinkClick = (e) => {
@@ -224,11 +231,11 @@ const Navbar = () => {
         <ul
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
         >
-          <RxCross2
+          {/* <RxCross2
             className="cross"
             onClick={toggleMenu}
             style={{ fontSize: "20px" }}
-          />
+          /> */}
           <li className="navbar-item mobile-padding-left">
             <Link to="/" onClick={toggleMenu}>
               Home
@@ -536,11 +543,11 @@ const Navbar = () => {
             >
               <div className="click-dropdown-inner">
                 <div className="nav-searchbar">
-                  <RxCross2
+                  {/* <RxCross2
                     className="cross"
                     onClick={closeSearchMenu}
                     style={{ fontSize: "20px" }}
-                  />
+                  /> */}
                   <div className="nav-form">
                     <CiSearch className="react-icon size-80" />
                     <input
@@ -607,11 +614,11 @@ const Navbar = () => {
               onMouseEnter={OpenProfilemenu}
             >
               <div className="click-dropdown-inner">
-                <RxCross2
+                {/* <RxCross2
                   className="cross"
                   onClick={closeProfileMenu}
                   style={{ fontSize: "20px" }}
-                />
+                /> */}
                 <div className="nav-profile">
                   <Link to={'/newsletter'} className="nav-profile-link">Subscribe</Link>
                   <p className="nav-profile-text">My apps</p>
@@ -628,34 +635,20 @@ const Navbar = () => {
                     </span>
                     Lokarpan two
                   </p>
-                    {/* <div className="nav-profile-inner-in">
-                      <span className=" nav-profile-in-left">
-                        <img
-                          className="nav-icon-profile"
-                          src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945989/d8ed05d14bd539cdbc1ed938ac2ffbb5-sticker_2_elml8g.png"
-                        />
-                      </span>
-                      Staff
-                    </div>
-                    <div className="nav-profile-inner-in">
-                      <span className="nav-profile-in-right">
-                        <img
-                          className="nav-icon-profile"
-                          src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1710945990/fa3df21e576434e675e8236c5903f98e-sticker_1_cqn6t3.png"
-                        />
-                      </span>
-                      Student
-                    </div> */}
                 </div>
               </div>
             </div>
           </li>
           <li className="navbar-item hamburger-item">
-            <RxHamburgerMenu
+            <div class={`hamburger navbar-icon-inner ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            {/* <RxHamburgerMenu
               className="hamburger navbar-icon-inner"
               style={{ color: "#6B7280", height: "100%" }}
               onClick={toggleMenu}
-            />
+            /> */}
           </li>
         </ul>
       </div>

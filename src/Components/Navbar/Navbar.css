@@ -164,11 +164,6 @@
   padding: 20px 0px;
 }
 
-/* .nav-profile-inner {
-  display: flex;
-  gap: 64px;
-} */
-
 .nav-icon-profile {
   width: 40px;
   height: 40px;
@@ -191,31 +186,21 @@
   border-radius: 30px;
 }
 
-/* .nav-profile-click-dropdown {
-  display: flex;
-  justify-content: center;
-} */
-
-/* .nav-profile-inner-in {
-  border: solid 1px black;
-  padding: 10px 0px;
-  border-radius: 30px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-} */
-
-/* .nav-profile-in-left {
-  background-color: #fff7ad;
-  border: none;
-  border-radius: 50px;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 100;
 }
 
-.nav-profile-in-right {
-  background-color: #fa80d1;
-  border: none;
-  border-radius: 50px;
-} */
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(107, 114, 128);
+}
 
 .up {
   display: none;
@@ -250,10 +235,6 @@
   height: 100%;
   z-index: -1;
 }
-
-/* .dropdown-content + .active{
-  overflow: scroll;
-} */
 
 .dropdown-container .list-item-container li a {
   font-size: 20px;
@@ -458,6 +439,29 @@
   .nav-heading {
     display: none;
   }
+
+  
+
+
+
+
+  .hamburger {
+    display: block;
+    /* position: fixed; */
+    /* right: 15px; */
+}
+
+.hamburger.active {
+    top: 15px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 0px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    transform: rotate(45deg) translate(-5px, 0px);
+}
 }
 
 /* CSS for navSearchBar starts */
