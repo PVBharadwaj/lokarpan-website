@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './histroy.css';
 import Time from './timeline';
+import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import BackToTopButton from './backtotop';
@@ -10,11 +11,46 @@ import Navbar from "../../Navbar/Navbar";
 import SubNavbar from '../../Navbar/SubNavbar';
 
 const History = () => {
+
+  const [TimelineData, setTimelineData] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/timeline/')
+      .then(response => {
+        setTimelineData(response.data);
+        // alert("success");
+      })
+      .catch(error => {
+        alert("error");
+        console.error('Error fetching the data:', error);
+      });
+  }, []);
+
+
   const scrollToYear = (year) => {
     const element = document.getElementById(year);
-  
+    
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const filterByDecade = (decade) => {
+    let targetYear = null;
+    TimelineData.filter(item => {
+      const itemYear = parseInt(item.Year);
+      const yeararray = itemYear >= decade && itemYear < decade + 10;
+      if (yeararray) {
+        targetYear = itemYear;
+        return true; 
+      }
+      return false;
+    });
+    if (targetYear) {
+      scrollToYear(targetYear.toString());
+    }
+    else {
+      alert("Sorry!! No data found for this input")
     }
   };
   
@@ -53,12 +89,14 @@ const History = () => {
       <div className="history-jumto">Jump to :</div>
 
       <div className="history-buttons">
-      <button onClick={() => scrollToYear('2020')}>2020's</button>
-
-      <button>2010's</button><button>2000's</button><button>1990's</button></div>
+        <button onClick={() => filterByDecade(2020)}>2020's</button>
+        <button onClick={() => filterByDecade(2010)}>2010's</button>
+        <button onClick={() => filterByDecade(2000)}>2000's</button>
+        <button onClick={() => filterByDecade(1990)}>1990's</button>
+      </div>
      <div class='history-down'><FontAwesomeIcon icon={faChevronDown} /></div>
      <div className="timeline-desk">
-     <Time /></div> 
+     <Time  /></div> 
      <div  className="timeline-mobile">
      <Timelinemobile/>
      </div>

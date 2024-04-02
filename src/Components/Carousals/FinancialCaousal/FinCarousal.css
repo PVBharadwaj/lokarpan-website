@@ -18,6 +18,10 @@
   border: none;
 }
 
+.report{
+  display: flex;
+}
+
 .icon-100 {
   font-size: x-large;
 }
