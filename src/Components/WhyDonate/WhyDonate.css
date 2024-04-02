@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 100px 123px;
+  padding: 100px 80px;
 }
 
 /* .whydonate-img {
@@ -20,10 +20,10 @@
   height: 388px;
 } */
 
-.whydonate-opp >h1,
-.why-donate >div, 
+.whydonate-opp > h1,
+.why-donate > div,
 .donate-first-div > h1,
-.donate-first-div >p{
+.donate-first-div > p {
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
@@ -61,7 +61,9 @@
 .donate-card {
   display: flex;
   gap: 50px;
-  padding: 75px 0px;
+  /* padding: 75px 0px; */
+  height: 450px;
+  margin: 70px 0px !important;
 }
 
 /* .donate-card > div{
@@ -70,32 +72,33 @@
 
 .donate-card-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.donate-card-img-1{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/Rectangle_1766_1_uufero.png');
+.donate-card-img-1 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/Rectangle_1766_1_uufero.png");
 }
 
-.donate-card-img-2{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628156/Rectangle_1766_hw9dzv.png');
+.donate-card-img-2 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628156/Rectangle_1766_hw9dzv.png");
 }
 
-.donate-card-img-3{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/image_343_fj2hi1.png');
+.donate-card-img-3 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/image_343_fj2hi1.png");
 }
 
-.donate-card-img-4{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628225/image_343_1_esstfj.png');
+.donate-card-img-4 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628225/image_343_1_esstfj.png");
 }
 
 .donate-card-text {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: left !important;
+  align-self: center;
 }
 
 .donate-card-text h1 {
@@ -133,7 +136,7 @@
   margin: 40px;
 }
 
-.hyperlinks div{
+.hyperlinks div {
   display: flex;
 }
 
@@ -156,7 +159,7 @@
     padding: 100px 30px;
   }
 
-  .donate-first-div{
+  .donate-first-div {
     padding: 40px 30px;
   }
   .donate-first-div h1 {
@@ -167,7 +170,7 @@
     font-size: 14px;
   }
 
-  .donate-card > div{
+  .donate-card > div {
     width: 100%;
   }
 
@@ -208,15 +211,15 @@
   .donate-first-div p {
     font-size: 16px;
   }
-  .hyperlinks{
+  .hyperlinks {
     flex-direction: column-reverse;
     height: auto;
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 748px) and (max-width: 1000px){
-  .donate-first-div{
+@media screen and (min-width: 748px) and (max-width: 1000px) {
+  .donate-first-div {
     padding: 150px;
   }
 

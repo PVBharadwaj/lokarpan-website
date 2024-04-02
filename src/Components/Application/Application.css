@@ -16,7 +16,7 @@
   height: auto;
   max-width: 950px;
   min-height: 400px;
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png');
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,17 +47,18 @@
   padding-inline-end: max(20px, var(--navbar-padding));
 }
 
-.app-div-bottom{
+.app-div-bottom {
   padding: 60px 0px;
 }
 
 .browse {
   display: flex;
   justify-content: center;
-  margin: 60px 0px;
+  margin: 130px 0px;
   width: 100%;
-  min-height: 350px;
+  /* min-height: 350px; */
   gap: 20px;
+  height: 500px;
 }
 
 .browse-text {
@@ -65,19 +66,19 @@
   height: auto;
   /* padding: 30px; */
   text-align: left;
+  align-self: center;
 }
 
-.browse-text-button{
+.browse-text-button {
   margin-top: 32px;
   width: 180px;
   height: 40px;
-
 }
 
 .browse-img {
   width: 100%;
   height: auto;
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708625144/Rectangle_1889_z8esn3.png');
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708625144/Rectangle_1889_z8esn3.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,8 +134,8 @@
   align-items: center;
 }
 
-.choose-plan-para{
-  color: #646A7B;
+.choose-plan-para {
+  color: #646a7b;
   font-weight: 300;
   font-size: 14px;
   padding: 10px 0px;
@@ -195,7 +196,7 @@
     display: block;
   }
 
-  .choose-plan-second-head{
+  .choose-plan-second-head {
     font-weight: bold;
   }
 

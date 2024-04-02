@@ -82,10 +82,11 @@ class CampusAndCulture extends Component {
             </div>
           </div>
           <div className="campus-culture-last-section">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707799693/Rectangle_1882_uamn0n.png"
               className="campus-last-section-img"
-            />
+            /> */}
+            <div className="health-cont-img-div campus-culture-img1"></div>
             <div className="campus-last-section-content">
               <h1 className="campus-font48 mobile-no-space-above">
                 Our Culture

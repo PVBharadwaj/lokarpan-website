@@ -15,7 +15,7 @@
 .enrollment-upper-section > h1,
 .enrollment-upper-section > p,
 .enrollment-card,
-.enrollment-last-sec{
+.enrollment-last-sec {
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
@@ -73,31 +73,32 @@
 .enrollment-card {
   display: flex;
   gap: 30px;
-  padding: 50px 0px;
-  min-height: 350px;
+  padding: 0px 0px;
+  height: 400px;
+  margin: 50px 0;
 }
 
 .enrollment-card-img {
   width: 100%;
   height: auto;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.enrollment-card-img-1{
-  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709053253/Rectangle_1766_3_g9jpwi.png');
+.enrollment-card-img-1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709053253/Rectangle_1766_3_g9jpwi.png");
 }
 
-.enrollment-card-img-2{
-  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709053246/Rectangle_1767_xenonw.png');
+.enrollment-card-img-2 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709053246/Rectangle_1767_xenonw.png");
 }
 
 .enrollment-card-text {
   display: flex;
   flex-direction: column;
   text-align: left;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
@@ -108,7 +109,7 @@
 .enrollment-form {
   background-color: #3f86f0;
   color: white;
-  padding: 100px 123px;
+  padding: 100px 80px;
 }
 
 .enrollment-admin {
@@ -175,7 +176,7 @@
   width: calc(100% / 4 - 20px);
 }
 
-.enrollment-imgs-list > div > img{
+.enrollment-imgs-list > div > img {
   width: 100%;
 }
 
@@ -403,19 +404,19 @@
     margin-bottom: 40px;
   }
 
-  .enrollment-last-sec h3{
+  .enrollment-last-sec h3 {
     font-size: 24px;
   }
 }
 
-@media screen and (min-width: 748px) and (max-width: 1000px){
+@media screen and (min-width: 748px) and (max-width: 1000px) {
   .enrollment-upper-section h1 {
     width: calc(100% - 200px);
   }
   .enrollment-div {
     padding: 100px 150px;
   }
-  .enrollment-card-div{
+  .enrollment-card-div {
     padding: 100px 50px;
   }
 
@@ -423,7 +424,7 @@
     width: 200px;
   }
 
-  .enrollment-last-sec{
+  .enrollment-last-sec {
     margin: 100px auto;
   }
 }

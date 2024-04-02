@@ -13,7 +13,7 @@
   /* padding-left: 123px; */
 }
 
-.academics-upper-section-text{
+.academics-upper-section-text {
   width: 500px;
   height: auto;
 }
@@ -32,7 +32,7 @@
 .academics-div > h1,
 .academics-div > h3,
 .academics-div > div,
-.academics-stats{
+.academics-stats {
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
@@ -56,7 +56,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 150px;
+  padding: 150px 80px;
 }
 
 .academics-head > p {
@@ -81,7 +81,9 @@
 .academics-card {
   display: flex;
   gap: 30px;
-  padding: 75px 0px;
+  /* padding: 75px 0px; */
+  height: 600px;
+  margin: 100px 0 !important;
 }
 
 .academics-card-img {
@@ -92,16 +94,16 @@
   background-size: cover;
 }
 
-.academics-card-img-1{
-  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709277369/Rectangle_1922_ygjslo.png');
+.academics-card-img-1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709277369/Rectangle_1922_ygjslo.png");
 }
 
-.academics-card-img-2{
-  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709277385/Rectangle_1924_qhodkb.png');
+.academics-card-img-2 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709277385/Rectangle_1924_qhodkb.png");
 }
 
-.academics-card-img-3{
-  background-image: url('https://res.cloudinary.com/digbzwlfx/image/upload/v1709281412/Rectangle_1925_ue0lq3.png');
+.academics-card-img-3 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709281412/Rectangle_1925_ue0lq3.png");
 }
 
 .academics-card-text {
@@ -148,8 +150,7 @@
     margin-top: -30px;
     font-size: 28px;
   }
-  .academics-upper-section-text{
-    
+  .academics-upper-section-text {
     height: auto;
   }
   .academics-upper-section p {
@@ -172,6 +173,8 @@
     flex-direction: column;
     gap: 16px;
     padding: 40px 0px;
+    margin: 20px 0 !important;
+    height: auto;
   }
 
   .academics-card-reverse {
@@ -246,7 +249,7 @@
   }
 }
 
-@media screen and (min-width: 748px) and (max-width: 1050px){
+@media screen and (min-width: 748px) and (max-width: 1050px) {
   .academics-div {
     padding: 100px 50px;
   }

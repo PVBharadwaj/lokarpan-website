@@ -20,16 +20,17 @@
   font-size: 48px;
 }
 
-.ways-top h1{
+.ways-top h1 {
   font-size: 64px;
   color: #ffffff;
 }
 
 .give-card {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   padding: 75px 0px;
   max-width: 1100px;
+  height: 500px;
 }
 
 .give-card-img {
@@ -40,20 +41,20 @@
   background-size: cover;
 }
 
-.give-card-img-1{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635200/image_341_ym6hdk.png');
+.give-card-img-1 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635200/image_341_ym6hdk.png");
 }
 
-.give-card-img-2{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_340_ufii5c.png');
+.give-card-img-2 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_340_ufii5c.png");
 }
 
-.give-card-img-3{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_344_fiaeft.png');
+.give-card-img-3 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635201/image_344_fiaeft.png");
 }
 
-.give-card-img-4{
-  background-image: url('https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635217/image_342_seejwv.png');
+.give-card-img-4 {
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708635217/image_342_seejwv.png");
 }
 
 .give-card-text {
@@ -80,7 +81,7 @@
   font-size: 20px;
   padding: 6px 0px;
   text-decoration: underline;
-  color: #3F86F0;
+  color: #3f86f0;
 }
 
 @media screen and (max-width: 748px) {
@@ -121,14 +122,14 @@
     padding: 15px 0px;
   }
 
-.give-card-link {
-  font-size: 14px;
-  text-decoration: underline;
-  color: #3F86F0;
-}
+  .give-card-link {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #3f86f0;
+  }
 }
 
-@media screen and (min-width: 748px) and (max-width: 1000px){
+@media screen and (min-width: 748px) and (max-width: 1000px) {
   .ways-page {
     padding: 110px 50px;
   }

@@ -36,18 +36,21 @@ class Approach extends Component {
                   Read more about our learing centers
                 </a>
               </div>
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768785/nehal-patel-aho7nVdauuc-unsplash_1_azf35q.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+
+              <div className="health-cont-img-div approach-img1"></div>
             </div>
             <div className="health-each-container">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768741/Rectangle_1764_1_mwljyp.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div approach-img2"></div>
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
                   Dive into our Digital Content Hub
@@ -75,11 +78,12 @@ class Approach extends Component {
                   Find out more in our careers page
                 </a>
               </div>
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768715/IMG_3648_1_lr2rgu.png"
                 alt="learn-img"
                 className="health-cont-img"
-              />
+              /> */}
+              <div className="health-cont-img-div approach-img3"></div>
             </div>
           </div>
 

@@ -14,7 +14,7 @@
   /* margin-top: 28px; */
 }
 
-.edu-head-img{
+.edu-head-img {
   margin-top: 0px;
 }
 
@@ -276,6 +276,15 @@
 }
 .no-space-above {
   margin-top: 0 !important;
+}
+.approach-img1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710768785/nehal-patel-aho7nVdauuc-unsplash_1_azf35q.png");
+}
+.approach-img2 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710768741/Rectangle_1764_1_mwljyp.png");
+}
+.approach-img3 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1710768715/IMG_3648_1_lr2rgu.png");
 }
 
 @media screen and (max-width: 748px) {
