@@ -53,7 +53,7 @@
 }
 
 .health-container-section {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -62,24 +62,25 @@
   margin: 83px 250px;
 }
 .health-each-container {
-  height: 400px;
+  height: 120vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 150px 0;
+  margin: 250px 0;
   margin-top: 0;
 }
 
 .health-content-section {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 45%;
+  width: 50%;
   height: 100%;
   margin: auto;
-
+  padding: 0px 5%;
   padding-top: 0;
 }
 .health-cont-img-div {
@@ -108,9 +109,10 @@
   margin-top: 0;
 }
 .health-para {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
+  line-height: 32px;
 }
 
 .learn-more {
