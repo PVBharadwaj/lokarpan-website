@@ -25,7 +25,7 @@ const Financials = () => {
   const handleDownload = (reportURL) => {
     const downloadLink = document.createElement('a');
     downloadLink.href = reportURL;
-    downloadLink.download = 'CSR_certification.pdf'; // Set the default file name
+    downloadLink.download = 'download.pdf'; // Set the default file name
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
@@ -54,20 +54,6 @@ const Financials = () => {
           <div className="report-container">
             <FinCarousel />
           </div>
-          {/* <div className="report-container">
-            <div className="file">
-              <i class="bi bi-file-earmark"></i>Test
-            </div>
-            <div className="file">
-              <i class="bi bi-file-earmark"></i>Test
-            </div>
-            <div className="file">
-              <i class="bi bi-file-earmark"></i>Test
-            </div>
-            <div className="file">
-              <i class="bi bi-file-earmark"></i>Test
-            </div>
-          </div> */}
         </div>
         <hr />
         <div className="add-repo">

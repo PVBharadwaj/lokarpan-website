@@ -5,15 +5,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import axios from "axios";
 import { FaFileAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { RxFontSize } from "react-icons/rx";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { IoChevronForward } from "react-icons/io5";
-import { FaArrowLeftLong } from "react-icons/fa6";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const FinCarousel = () => {
-  const [yearsToShow, setYearsToShow] = useState(6);
   const [selectedYear, setSelectedYear] = useState(null);
 
   const [annualreports, setAnnualReportData] = useState([]);
@@ -29,31 +24,10 @@ const FinCarousel = () => {
       });
   }, []);
 
- 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setYearsToShow(3);
-      } else {
-        setYearsToShow(6);
-      }
-    };
-
-    // Call handleResize on initial load
-    handleResize();
-
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup function to remove event listener
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-
   const handleDownload = (reportURL) => {
     const downloadLink = document.createElement('a');
     downloadLink.href = reportURL;
-    downloadLink.download = 'CSR_certification.pdf'; // Set the default file name
+    downloadLink.download = 'download.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
@@ -61,24 +35,20 @@ const FinCarousel = () => {
 
   const renderYears = (index) => {
     // alert(index)
-    const report = annualreports[index]; // Get the report object at the specified index
-    console.log(report)
-    console.log(report.report1)
-    console.log(report.report2)
+    const report = annualreports[index]; 
+    // console.log(report)
+    // console.log(report.report1)
+    // console.log(report.report2)
       return (
           <div className="reports-container">
-            {/* {report.map((report, index) => ( */}
             <div className="report">
-            {(report.report1 !== null && selectedYear === report.year) && <FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report1)} />}
-            {(report.report2 !== null && selectedYear === report.year) && <FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report2)} />}
-            {(report.report3 !== null && selectedYear === report.year) && <FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report3)} />}
+            {(report.report1 !== null && selectedYear === report.year) && (<span><FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report1)} /><p>Report1</p></span>)}
+            {(report.report2 !== null && selectedYear === report.year) && (<span><FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report2)} /><p>Report2</p></span>)}
+            {(report.report3 !== null && selectedYear === report.year) && (<span><FaFileAlt style={{ fontSize: "50px", color: "#333333", padding: "20px" }} onClick={() => handleDownload(report.report3)} /><p>Report3</p></span>)}
           </div>
-            {/* ))} */}
           </div>
         );
   };
-
-
 
   const FinCustomPrevArrow = (props) => (
     <div
@@ -111,10 +81,6 @@ const FinCarousel = () => {
       <IoChevronForward className="app-nav-icon"/>
     </div>
   );
-
-
-
-
 
   var settings = {
     dots: false,
@@ -151,11 +117,6 @@ const FinCarousel = () => {
     ]
   };
 
-
-
-
-
-
   return (
     <>
 
@@ -164,8 +125,7 @@ const FinCarousel = () => {
         <Slider className="slider" {...settings}>
           {annualreports.map((report, index) => (
             <div key={index} report={report}>
-              {/* <Link onClick={renderYears(index)} to={'#briefcase'}>{report.year}</Link> */}
-              <p style={{fontSize: "22px"}} onClick={() => setSelectedYear(report.year)}>{report.year}</p>
+              <p style={{fontSize: "22px", color: selectedYear === report.year ? "#3F86F0": "initial"}} onClick={() => setSelectedYear(report.year)}>{report.year}</p>
             </div>
           ))}
         </Slider>

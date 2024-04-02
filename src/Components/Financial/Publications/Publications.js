@@ -5,7 +5,6 @@ import "./Publications.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import axios from "axios";
-import { CiSearch } from "react-icons/ci";
 import { debounce } from "lodash";
 
 const Columns = [
@@ -28,7 +27,7 @@ const Columns = [
     // align: "left",
   },
   {
-    field: "reporttitle1",
+    field: "reportTitle",
     headerClassName: "custom-header", 
     headerName: "Description", 
     width: 250, 
@@ -56,7 +55,7 @@ const Columns = [
     renderCell: (params) => (
       <button
         className="download-btn"
-        onClick={() => handleDownload(params.row.id)}
+        onClick={() => handleDownload(params.row.reportname)}
       >
         Download
       </button>
@@ -133,10 +132,17 @@ const Columns = [
 //   },
 // ];
 
-const handleDownload = (id) => {
-  alert(`Downloading file for ID: ${id}`);
+// const handleDownload = (id) => {
+//   alert(`Downloading file for ID: ${id}`);
+// };
+const handleDownload = (reportURL) => {
+  const downloadLink = document.createElement('a');
+  downloadLink.href = reportURL;
+  downloadLink.download = 'downlload.pdf'; 
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
 };
-
 
 const Publications = () => {
   const customHeader = {
@@ -156,9 +162,29 @@ const Publications = () => {
   const [Rows, setReportData] = useState([]);
   useEffect(() => {
     axios.get('http://127.0.0.1:8000/api/annualreports/')
+      // .then(response => {
+      //   alert("fetched");
+      //   setReportData(response.data);
+      // })
       .then(response => {
-        alert("fetched");
-        setReportData(response.data);
+        const flattenedRows = response.data.flatMap(report => {
+          const flattenedReport = [];
+          for (let i = 1; i <= 5; i++) {
+            const reportTitle = report[`reporttitle${i}`];
+            const reportfile = report[`report${i}`]
+            if (reportTitle) {
+              flattenedReport.push({
+                id: `${report.year}_${i}`,
+                year: report.year,
+                reportname: reportfile,
+                reportTitle: reportTitle,
+                addedDate: report.addedDate,
+              });
+            }
+          }
+          return flattenedReport;
+        });
+        setReportData(flattenedRows);
       })
       .catch(error => {
         alert("error");
