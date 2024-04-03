@@ -46,7 +46,10 @@ const Application = () => {
             alt=""
           /> */}
           <p className="application-para1">
-          Immerse yourself in stories that will challenge your mind and capture your heart. Explore new interests and stay on top of what’s trending. Our global catalogue features leading voices on the topics you care about — from the biggest names to independent creators.
+            Immerse yourself in stories that will challenge your mind and
+            capture your heart. Explore new interests and stay on top of what’s
+            trending. Our global catalogue features leading voices on the topics
+            you care about — from the biggest names to independent creators.
           </p>
           <h2 className="app-title title3">
             We ask communities what they need
@@ -62,8 +65,10 @@ const Application = () => {
           </p>
         </div>
       </div>
-        <div className="app-page"><h1 className="title2">Heading</h1></div>
-        <AppCarousel />
+      <div className="app-page">
+        <h1 className="title2">Heading</h1>
+      </div>
+      <AppCarousel />
       <div className="app-page">
         <div className="app-div app-div-bottom">
           <div className="plan">
@@ -81,18 +86,20 @@ const Application = () => {
               ))}
             </div>
           </div>
-          <div className="browse">
-            <div className="browse-text">
-              <h1 className="title3">
-                Browse accessories or find new colours to go with your devices.
-              </h1>
-              <div className="apply-btn browse-text-button transparent">
-                <Link to="/" className="apply-btn-text-black body-btn">Learn more</Link>
-              </div>
-            </div>
-            <div className="browse-img"></div>
+        </div>
+      </div>
+      <div className="browse">
+        <div className="browse-text">
+          <h1 className="title3">
+            Browse accessories or find new colours to go with your devices.
+          </h1>
+          <div className="apply-btn browse-text-button transparent">
+            <Link to="/" className="apply-btn-text-black body-btn">
+              Learn more
+            </Link>
           </div>
         </div>
+        <div className="browse-img"></div>
       </div>
       <Footer />
     </>
@@ -124,7 +131,9 @@ const Card = ({ item }) => {
         {item.features}
       </p>
       <div className="apply-btn transparent">
-              <Link to="/donate" className="apply-btn-text-black body-btn">Choose {item.type}</Link>
+        <Link to="/donate" className="apply-btn-text-black body-btn">
+          Choose {item.type}
+        </Link>
       </div>
     </div>
   );

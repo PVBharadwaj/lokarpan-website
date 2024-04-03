@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 100px 80px;
+  /* padding: 100px 80px; */
+  width: 100%;
 }
 
 /* .whydonate-img {
@@ -27,11 +28,11 @@
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
-  max-width: 1100px;
+  /* max-width: 1100px; */
   /* padding-top: 10px;
   padding-bottom: 0; */
-  padding-inline-start: max(20px, var(--navbar-padding));
-  padding-inline-end: max(20px, var(--navbar-padding));
+  /* padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding)); */
 }
 
 .donate-first-div {
@@ -60,10 +61,11 @@
 
 .donate-card {
   display: flex;
-  gap: 50px;
+  /* gap: 50px; */
   /* padding: 75px 0px; */
-  height: 450px;
-  margin: 70px 0px !important;
+  height: 110vh;
+  width: 100%;
+  margin: 150px 0px !important;
 }
 
 /* .donate-card > div{
@@ -71,7 +73,7 @@
 } */
 
 .donate-card-img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -99,15 +101,19 @@
   flex-direction: column;
   text-align: left !important;
   align-self: center;
+  width: 50% !important;
+  box-sizing: border-box;
+  padding: 0px 5%;
 }
 
 .donate-card-text h1 {
   font-size: 28px;
 }
 .donate-card-text p {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   color: #333333;
+  line-height: 32px;
 }
 
 .whydonate-opp {
@@ -156,7 +162,7 @@
 
 @media screen and (max-width: 748px) {
   .why-donate {
-    padding: 100px 30px;
+    /* padding: 100px 30px; */
   }
 
   .donate-first-div {
@@ -176,12 +182,16 @@
 
   .donate-card-text {
     padding: 0px !important;
+    width: 100% !important;
   }
   .donate-card {
     display: flex;
     flex-direction: column;
-    padding: 30px 0px !important;
-    gap: 24px;
+    /* padding: 30px 0px !important; */
+    gap: 30px;
+    height: 600px;
+    margin: 70px auto !important;
+    width: 90% !important;
   }
 
   .donate-card-img {
@@ -224,7 +234,7 @@
   }
 
   .why-donate {
-    padding: 110px 50px;
+    /* padding: 110px 50px; */
   }
 
   .whydonate-opp h1 {

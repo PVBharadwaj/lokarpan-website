@@ -327,9 +327,9 @@
 }
 .card-content h3 {
   padding: 18px 18px 0;
-  font-size: 15px; /*18px*/
-  font-weight: 300;
-  line-height: 18px;
+  font-size: 16px; /*18px*/
+  font-weight: 400;
+  line-height: 25px;
   margin-top: 5px;
   padding-left: 10px;
   padding-top: 10px;
@@ -338,7 +338,7 @@
   font-size: 15px;
   font-weight: 500;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 24px;
   margin-left: 10px;
 }
 .donate-section {
@@ -455,6 +455,7 @@
 }
 .expand-sec p {
   font-size: 14px;
+  font-weight: 500;
 }
 .card-content:hover .expand-sec {
   color: #0f81e0;
@@ -499,10 +500,11 @@
   font-size: 36px;
   color: #174ea6;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .our-role-each-container-content p {
   font-size: 20px;
+  line-height: 28px;
 }
 .space-left {
   margin-left: 30px;
