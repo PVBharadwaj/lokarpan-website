@@ -2,7 +2,7 @@
     width: 90%;
    text-align: left;
     /* margin: 0 1rem; */
-    
+    position: absolute;
   
   }
   
@@ -48,10 +48,11 @@
   
   .faqs .faq .faq-answer {
     font-size:15px ;
-    font-weight: 500;
+    font-weight: 400;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    line-height: 30px;
     transition: all 0.2s ease;
   }
   

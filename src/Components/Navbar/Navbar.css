@@ -286,7 +286,7 @@
   }
 
   .navbar-menu {
-    display: none;
+    /* display: none; */
     position: fixed;
     left: 0px;
     right: 0px;
@@ -298,14 +298,19 @@
     flex-direction: column;
     background-color: #fff;
     z-index: 100;
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    max-height: 0px;
     overflow: scroll;
     overflow-x: hidden;
+    transition: all 0.7s;
   }
 
   .navbar-menu.active {
-    display: flex;
+    /* display: flex; */
+    max-height: 100vh;
+    visibility: visible;
+    transition: all 0.7s;
+
   }
 
   .dropdown:hover .dropdown-content {
@@ -336,7 +341,9 @@
   }
 
   .navbar-links.active {
-    display: flex;
+    /* display: flex; */
+    transform: translateX(0) translateY(0);
+    transition: all 0.7s;
     gap: 15px;
   }
 
@@ -440,16 +447,11 @@
     display: none;
   }
 
-  
-
-
-
-
   .hamburger {
     display: block;
     /* position: fixed; */
     /* right: 15px; */
-}
+  }
 
 .hamburger.active {
     top: 15px;
