@@ -56,10 +56,7 @@ import KithLeadership from "./Components/KithLeadership";
 import KithFaq from "./Components/Kith/KithComp/faqkith/faqk";
 import Sidemap from "./Components/Sidemap/Sidemap";
 import "./styles.css";
-import MissionHead from "./Components/About/Mission/MissionHead";
 import CodeOfConduct from "./Components/About/Mission/CodeOfConduct";
-import OurCulture from "./Components/About/Mission/OurCulture";
-import Ethics from "./Components/About/Mission/Ethics";
 
 function App() {
   return (
@@ -67,7 +64,7 @@ function App() {
       <BrowserRouter basename="/lokarpan-website">
         <Routes>
           <Route path="/sidemap" element={<Sidemap/>}></Route>
-        <Route path="/kith/career" element={<Carek />}></Route>
+          <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/faqs" element={<KithFaq />}></Route>
           <Route path="/" element={<Home />}></Route>
@@ -86,15 +83,11 @@ function App() {
           <Route path="/publications" element={<Publications />}></Route>
           <Route path="/application" element={<Application />}></Route>
 
-
           <Route path="/newsletter" element={<Newsletter />}></Route>
           <Route path="/mission" element={<Mission />}></Route>
           <Route path="/history" element={<History />}></Route>
-          <Route path="/mission-text" element={<MissionHead />}></Route>
           <Route path="/code-of-conduct" element={<CodeOfConduct />}></Route>
-          <Route path="/our-culture" element={<OurCulture />}></Route>
-          <Route path="/ethics" element={<Ethics />}></Route>
-
+          
           <Route path="/design" element={<DesignPage />}></Route>
           <Route path="/designlist" element={<DesignList />}></Route>
           <Route path="/designindividual" element={<IndiDesignpage />}></Route>

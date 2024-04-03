@@ -43,46 +43,34 @@ const Mission = () => {
     }
   }, [popupVisibility]);
 
-  // const [faqs, setFaqs] = useState([
-  //   {
-  //     question: "Community centric collaboration",
-  //     answer:
-  //       "Lokarpan is dedicated to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects. We believe that true progress is achieved when communities are active participants in their own development, and we work to build partnerships that foster sustainable growth and self-reliance.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Equity and Inclusivity",
-  //     answer:
-  //       "Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Innovate solutions that are sustainable.",
-  //     answer:
-  //       "Our goal is to improve the socioeconomic status of rural India. We are working hard to ensure that our projects provide the necessary support and resources to our beneficiaries. Lokarpan supports its partners with capacity building, institutional development, planning, review, financial management, documentation and overall supportive supervision.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Create connections that make a difference.",
-  //     answer:
-  //       "Lokarpan strives to create a world where individuals have dignity and self-respect. A world where people respect each other across the barriers of poverty, gender, caste and religion. Over the years, Lokarpan has driven incredible growth and created entirely new opportunities for our beneficiaries.",
-  //     open: false,
-  //   },
-  // ]);
+  const [faqs, setFaqs] = useState([
+    {
+      question: "Community centric collaboration",
+      answer:
+        "Lokarpan is dedicated to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects. We believe that true progress is achieved when communities are active participants in their own development, and we work to build partnerships that foster sustainable growth and self-reliance.",
+      open: false,
+    },
+    {
+      question: "Equity and Inclusivity",
+      answer:
+        "Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good.",
+      open: false,
+    },
+  ]);
 
-  // const toggleFAQ = (index) => {
-  //   setFaqs(
-  //     faqs.map((faq, i) => {
-  //       if (i === index) {
-  //         faq.open = !faq.open;
-  //       } else {
-  //         faq.open = false;
-  //       }
+  const toggleFAQ = (index) => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
 
-  //       return faq;
-  //     })
-  //   );
-  // };
+        return faq;
+      })
+    );
+  };
   return (
     <div>
       <Navbar />
@@ -92,7 +80,14 @@ const Mission = () => {
           <div className="mission-1st-section-inner"> 
             <div className="mission-head">Lokarpan offers solutions to empower communities living in stress.</div>
             <div className="mission-content1">
-              Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India.<span  onClick={() => openpopup(0)} className="mission-read-more">Read more</span>
+              Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India. <br/>
+              {/* <span  onClick={() => openpopup(0)} className="mission-read-more">Read more</span> */}
+              <div className="hyperlinks mission-popup">
+              <div className="apply-btn white">
+                  {/* <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Code of Conduct</Link> */}
+                  <span  onClick={() => openpopup(0)} className="mission-read-more apply-btn-text-black body-btn">Read more</span>
+              </div>
+              </div>
             </div>
             {popupVisibility[0] && (
               <div className="misson-popup">
@@ -142,7 +137,7 @@ const Mission = () => {
           </div>
         </div>
 
-        <div className="our-principles">
+        {/* <div className="our-principles">
           <h1 className="our-principles-main-head">Our Principles</h1>
           <div className="our-principles-inner">
             <div className="ourp-left">
@@ -154,37 +149,36 @@ const Mission = () => {
               <p>Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good.</p>
           </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* <section className="our-purpose">
-          <div className="give-card give-card-reverse">
+        <section className="our-purpose">
+          <div className="give-card give-card-reverse mission-principles-container">
             <div className="give-card-text">
+            <div className="mission-principles-container-in">
               <h1>Our Principles</h1>
-              <p>
-                They embody what we stand for and guide our approach to how we
-                build technology for people and their relationships.
-              </p>
-              <div className="faqs">
-              {faqs.map((faq, index) => (
-                <FAQ
-                  faq={faq}
-                  index={index}
-                  key={index}
-                  toggleFAQ={toggleFAQ}
-                />
-              ))}
+                <div className="faqs">
+                  {faqs.map((faq, index) => (
+                    <FAQ
+                      faq={faq}
+                      index={index}
+                      key={index}
+                      toggleFAQ={toggleFAQ}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
-            </div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1711614679/cannon_013_1_df4fp7.png"/>
+            <div className="give-card-img mission-card-img-1"></div>
           </div>
-        </section> */}
+        </section>
 
         <section className="our-purpose">
           <div className="give-card give-card-reverse">
+            <div className="give-card-img mission-card-img-1"></div>
             <div className="give-card-text">
               <h1>Our Culture</h1>
               <p>
-              At Lokarpan, our work culture is defined by a steadfast commitment to growth, both for our organisation and the communities we serve. Our goal is to expand opportunities for all, breaking down barriers to access and creating pathways to success.
+              At Lokarpan, our work culture is defined by a steadfast commitment to growth, both for our organisation and the communities we serve. Our goal is to expand opportunities for all, breaking down barriers to access and creating pathways to success. <br/>
               <span onClick={() => openpopup(1)} className="mission-read-more">Know more</span>
               </p>
               {popupVisibility[1] && (
@@ -207,16 +201,14 @@ const Mission = () => {
                 </div>
               )}
             </div>
-            <div className="give-card-img mission-card-img-1"></div>
           </div>
         </section>
         <section className="our-purpose">
           <div className="give-card">
-          <div className="give-card-img mission-card-img-2"></div>
             <div className="give-card-text">
               <h1>Ethics and Compliance</h1>
               <p>
-              At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.
+              At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.<br/>
               <span onClick={() => openpopup(2)} className="mission-read-more">Know more</span>
               </p>
               {popupVisibility[2] && (
@@ -241,7 +233,13 @@ const Mission = () => {
                   </div>
                 </div>
               )}
+              <div className="hyperlinks coc-link">
+              <div className="apply-btn transparent">
+                  <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Code of Conduct</Link>
+              </div>
+              </div>
             </div>
+          <div className="give-card-img mission-card-img-2"></div>
             {/* <div className="give-card-img mission-card-img-1"></div> */}
           </div>
         </section>
@@ -255,11 +253,6 @@ const Mission = () => {
               <Link to="/ethics" className="apply-btn-text-black body-btn">Know more</Link>
           </div>
           </div> */}
-          <div className="hyperlinks coc-link">
-          <div className="apply-btn transparent">
-              <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Code of Conduct</Link>
-          </div>
-          </div>
         {/* </section> */}
       </div>
       <Footer />
