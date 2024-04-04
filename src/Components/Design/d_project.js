@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
 const D_project = () => {
   const [query, setQuery] = useState('');
   const fuse = new Fuse(cardsData, {
-    keys: ['content'],
+    keys: ['title', 'content'],
     includeScore: true,
     threshold: 0.4, // Adjust the threshold as needed
   });
@@ -40,7 +40,7 @@ const D_project = () => {
        
           <form className='fs_serachbar'>
         
-            <input type='text' value={query} onChange={handleOnSearch} placeholder='Searchproject' />
+            <input className='text-input' type='text' value={query} onChange={handleOnSearch} placeholder='Searchproject' />
           </form>
       
       </section>
