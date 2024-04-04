@@ -58,7 +58,7 @@
   width: 100%;
   /* min-height: 350px; */
   gap: 20px;
-  height: 500px;
+  height: 120vh;
 }
 
 .browse-text {
@@ -67,6 +67,8 @@
   /* padding: 30px; */
   text-align: left;
   align-self: center;
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 
 .browse-text-button {
@@ -206,9 +208,9 @@
   }
 
   .browse {
-    width: 100%;
+    width: 90%;
     flex-direction: column-reverse;
-    margin: 30px 0px;
+    margin: 120px auto;
   }
 
   .browse-text {

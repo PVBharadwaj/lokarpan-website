@@ -16,6 +16,7 @@
 .academics-upper-section-text {
   width: 500px;
   height: auto;
+  padding-left: 50px;
 }
 
 .academics-upper-section h1 {
@@ -36,9 +37,9 @@
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
-  max-width: 1100px;
+  /* max-width: 1100px;
   padding-inline-start: max(20px, var(--navbar-padding));
-  padding-inline-end: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding)); */
 }
 .academics-head h1,
 .academics-head p {
@@ -56,7 +57,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 150px 80px;
+  padding: 150px 0px;
 }
 
 .academics-head > p {
@@ -70,7 +71,7 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  padding: 80px 50px;
+  padding: 80px 150px;
 }
 
 .academics-stats p {
@@ -80,14 +81,15 @@
 
 .academics-card {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
   /* padding: 75px 0px; */
-  height: 600px;
+  height: 110vh;
+  width: 100%;
   margin: 100px 0 !important;
 }
 
 .academics-card-img {
-  width: 100%;
+  width: 50%;
   height: auto;
   background-position: center center;
   background-repeat: no-repeat;
@@ -111,7 +113,9 @@
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0px 5%;
 }
 
 .academics-card-text h3 {
@@ -121,7 +125,8 @@
 }
 
 .academics-card-text p {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 32px;
   padding: 4px 0px;
 }
 
@@ -167,6 +172,7 @@
   }
   .academics-card {
     padding: 40px 0;
+    width: 90% !important;
   }
 
   .academics-card {
@@ -183,12 +189,14 @@
 
   .academics-card-img {
     width: 100%;
-    min-height: 400px;
+    /* min-height: 400px; */
+    height: 400px;
   }
 
   .academics-card-text {
     padding: 0px;
     justify-content: flex-start;
+    width: 100%;
   }
 
   .academics-div > h1 {

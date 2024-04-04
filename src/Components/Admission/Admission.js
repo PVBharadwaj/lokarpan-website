@@ -40,7 +40,7 @@ const Admission = () => {
           <div className="admission-card-img admission-card-img-2"></div>
         </div>
       </div>
-      <div className="admissions-div">
+      <div className="admissions-div2">
         <div className="mobile-admissions-faculty-content">
           <h3>Faculty</h3>
           <p>
