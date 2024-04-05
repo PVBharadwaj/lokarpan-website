@@ -413,7 +413,7 @@
     padding: 15px 0px;
   }
   .kith-overview-head {
-    padding: 75px 32px !important;
+    padding: 75px 0px !important;
   }
 
   .kith-overview-div {
@@ -447,13 +447,9 @@
     padding: 0px;
   }
 
-  /* .kith-overview-div > .give-card > div{
-        width: 100%;
-        min-height: unset;
-    } */
-
   .kith-overview-div > p {
     font-size: 16px;
+    padding: 0px 50px;
   }
 
   .kith-overview-grid {

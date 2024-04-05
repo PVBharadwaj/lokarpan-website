@@ -110,6 +110,7 @@ const fuseOptions = {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeMainDropdown, setActiveMainDropdown] = useState(null);
   const [activeIconDropdown, setActiveIconDropdown] = useState(null)
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
   const [isProfilemenuOpen, setProfilemenuOpen] = useState(false);
@@ -117,6 +118,7 @@ const Navbar = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchState, setSearchLength] = useState(false);
   const timeoutRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -178,6 +180,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setActiveDropdown(null);
     setIsMenuOpen(!isMenuOpen);
+    setIsActive(!isActive);
   };
 
   const handleNavlinkClick = (e) => {
@@ -207,6 +210,21 @@ const Navbar = () => {
     setSearchResults(results);
   };
 
+  const openmaindropdown = (dropdownId) => {
+    setActiveMainDropdown(dropdownId);
+    var desktopActiveElement = document.querySelector('.desktopactive');
+    if (desktopActiveElement) {
+      var currentHeight = desktopActiveElement.clientHeight;
+      var dropdownHeight = document.getElementById('navbar-bg-layer');
+      dropdownHeight.style.height = currentHeight + "px";
+    } 
+  }
+  const closemaindropdown = () => {
+    setActiveMainDropdown(null);
+    var dropdownHeight = document.getElementById('navbar-bg-layer');
+        dropdownHeight.style.height = "0px";
+  }
+
   return (
     <nav className="global-nav">
       <div className="navbar">
@@ -222,13 +240,13 @@ const Navbar = () => {
               className={activeDropdown !== null ? "down active" : "down"}
             />
           </div>
-
+          <div id="navbar-bg-layer"></div>
         <ul className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
-          <RxCross2
+          {/* <RxCross2
             className="cross"
             onClick={toggleMenu}
             style={{ fontSize: "20px" }}
-          />
+          /> */}
           <li className="navbar-item mobile-padding-left">
             <Link to="/kith/overview" onClick={toggleMenu}>
               Overview
@@ -237,6 +255,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('overviewDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/kith/admission" onClick={handleNavlinkClick}>
               Admission
@@ -245,7 +265,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === 'overviewDropdown' ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -273,6 +293,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('schoolDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/kith/life-at-school" onClick={handleNavlinkClick}>
               Life at School
@@ -281,7 +303,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === 'schoolDropdown' ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -314,6 +336,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('informationDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/kith/information" onClick={handleNavlinkClick}>
               Information
@@ -321,7 +345,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === 'informationDropdown' ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -480,11 +504,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-item hamburger-item">
-            <RxHamburgerMenu
+            <div class={`hamburger navbar-icon-inner ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            {/* <RxHamburgerMenu
               className="hamburger navbar-icon-inner"
               style={{ color: "#6B7280", height: "100%" }}
               onClick={toggleMenu}
-            />
+            /> */}
           </li>
         </ul>
       </div>

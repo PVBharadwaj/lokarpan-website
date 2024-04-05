@@ -108,6 +108,7 @@ const fuseOptions = {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeMainDropdown, setActiveMainDropdown] = useState(null);
   const [activeIconDropdown, setActiveIconDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
   const [isProfilemenuOpen, setProfilemenuOpen] = useState(false);
@@ -117,9 +118,6 @@ const Navbar = () => {
   const timeoutRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setIsActive(!isActive);
-  // };
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -135,6 +133,16 @@ const Navbar = () => {
   //     document.body.style.overflow = "auto";
   //   }
   // });
+
+  useEffect(() => {
+    if (window.innerWidth <= 922) {
+      if (isSearchmenuOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    }
+  });
 
   const ToggleSearchmenu = () => {
     if (isSearchmenuOpen) {
@@ -181,7 +189,10 @@ const Navbar = () => {
   const toggleMenu = () => {
     setActiveDropdown(null);
     setIsMenuOpen(!isMenuOpen);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 791a3d85f3ea2518b5a5da67fd8623235c481912
     setIsActive(!isActive);
   };
 
@@ -193,7 +204,21 @@ const Navbar = () => {
   };
 
   const toggleDropdown = (index) => {
-    setActiveDropdown(activeDropdown === index ? null : index);
+    // setActiveDropdown(activeDropdown === index ? null : index);
+    if(activeDropdown === index){
+      setActiveDropdown(null);
+      // if (window.innerWidth <= 922) {
+      //   const menunavbar = document.getElementById("navbar-menu")
+      //   menunavbar.style.overflow = "auto";
+      // }
+    }
+    else {
+      setActiveDropdown(index);
+      // if (window.innerWidth <= 922) {
+      //   const menunavbar = document.getElementById("navbar-menu")
+      //   menunavbar.style.overflow = "hidden";
+      // }
+    }
   };
 
   const handleBackClick = () => {
@@ -212,6 +237,21 @@ const Navbar = () => {
     setSearchResults(results);
   };
 
+  const openmaindropdown = (dropdownId) => {
+    setActiveMainDropdown(dropdownId);
+    var desktopActiveElement = document.querySelector('.desktopactive');
+    if (desktopActiveElement) {
+      var currentHeight = desktopActiveElement.clientHeight;
+      var dropdownHeight = document.getElementById('navbar-bg-layer');
+      dropdownHeight.style.height = currentHeight + "px";
+    } 
+  }
+  const closemaindropdown = () => {
+    setActiveMainDropdown(null);
+    var dropdownHeight = document.getElementById('navbar-bg-layer');
+        dropdownHeight.style.height = "0px";
+  }
+
   return (
     <nav className="global-nav">
       <div className="navbar">
@@ -227,15 +267,11 @@ const Navbar = () => {
             className={activeDropdown !== null ? "down active" : "down"}
           />
         </div>
-
+        <div id="navbar-bg-layer"></div>
         <ul
+          id="navbar-menu"
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
         >
-          {/* <RxCross2
-            className="cross"
-            onClick={toggleMenu}
-            style={{ fontSize: "20px" }}
-          /> */}
           <li className="navbar-item mobile-padding-left">
             <Link to="/" onClick={toggleMenu}>
               Home
@@ -244,6 +280,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('aboutDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/about" onClick={handleNavlinkClick}>
               About
@@ -251,7 +289,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === 'aboutDropdown' ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -328,6 +366,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('eduDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/approach" onClick={handleNavlinkClick}>
               Education
@@ -335,7 +375,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === 'eduDropdown' ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -405,6 +445,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('designDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/design" onClick={handleNavlinkClick}>
               Design
@@ -412,7 +454,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === 'designDropdown' ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -461,6 +503,8 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
+            onMouseOver={() => openmaindropdown('supportDropdown')}
+            onMouseOut={closemaindropdown}
           >
             <Link to="/ways-to-give" onClick={handleNavlinkClick}>
               Support
@@ -468,7 +512,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              }`}
+              } ${activeMainDropdown === "supportDropdown" ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -543,11 +587,11 @@ const Navbar = () => {
             >
               <div className="click-dropdown-inner">
                 <div className="nav-searchbar">
-                  {/* <RxCross2
+                  <RxCross2
                     className="cross"
                     onClick={closeSearchMenu}
                     style={{ fontSize: "20px" }}
-                  /> */}
+                  />
                   <div className="nav-form">
                     <CiSearch className="react-icon size-80" />
                     <input
@@ -614,11 +658,11 @@ const Navbar = () => {
               onMouseEnter={OpenProfilemenu}
             >
               <div className="click-dropdown-inner">
-                {/* <RxCross2
+                <RxCross2
                   className="cross"
                   onClick={closeProfileMenu}
                   style={{ fontSize: "20px" }}
-                /> */}
+                />
                 <div className="nav-profile">
                   <Link to={"/newsletter"} className="nav-profile-link">
                     Subscribe
