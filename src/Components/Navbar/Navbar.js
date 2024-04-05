@@ -118,7 +118,6 @@ const Navbar = () => {
   const timeoutRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
 
-
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       setSearchmenuOpen(false);
@@ -189,10 +188,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setActiveDropdown(null);
     setIsMenuOpen(!isMenuOpen);
-<<<<<<< HEAD
-
-=======
->>>>>>> 791a3d85f3ea2518b5a5da67fd8623235c481912
     setIsActive(!isActive);
   };
 
@@ -205,14 +200,13 @@ const Navbar = () => {
 
   const toggleDropdown = (index) => {
     // setActiveDropdown(activeDropdown === index ? null : index);
-    if(activeDropdown === index){
+    if (activeDropdown === index) {
       setActiveDropdown(null);
       // if (window.innerWidth <= 922) {
       //   const menunavbar = document.getElementById("navbar-menu")
       //   menunavbar.style.overflow = "auto";
       // }
-    }
-    else {
+    } else {
       setActiveDropdown(index);
       // if (window.innerWidth <= 922) {
       //   const menunavbar = document.getElementById("navbar-menu")
@@ -239,18 +233,18 @@ const Navbar = () => {
 
   const openmaindropdown = (dropdownId) => {
     setActiveMainDropdown(dropdownId);
-    var desktopActiveElement = document.querySelector('.desktopactive');
+    var desktopActiveElement = document.querySelector(".desktopactive");
     if (desktopActiveElement) {
       var currentHeight = desktopActiveElement.clientHeight;
-      var dropdownHeight = document.getElementById('navbar-bg-layer');
+      var dropdownHeight = document.getElementById("navbar-bg-layer");
       dropdownHeight.style.height = currentHeight + "px";
-    } 
-  }
+    }
+  };
   const closemaindropdown = () => {
     setActiveMainDropdown(null);
-    var dropdownHeight = document.getElementById('navbar-bg-layer');
-        dropdownHeight.style.height = "0px";
-  }
+    var dropdownHeight = document.getElementById("navbar-bg-layer");
+    dropdownHeight.style.height = "0px";
+  };
 
   return (
     <nav className="global-nav">
@@ -280,7 +274,7 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
-            onMouseOver={() => openmaindropdown('aboutDropdown')}
+            onMouseOver={() => openmaindropdown("aboutDropdown")}
             onMouseOut={closemaindropdown}
           >
             <Link to="/about" onClick={handleNavlinkClick}>
@@ -289,7 +283,9 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              } ${activeMainDropdown === 'aboutDropdown' ? "desktopactive" : ""}`}
+              } ${
+                activeMainDropdown === "aboutDropdown" ? "desktopactive" : ""
+              }`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -366,7 +362,7 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
-            onMouseOver={() => openmaindropdown('eduDropdown')}
+            onMouseOver={() => openmaindropdown("eduDropdown")}
             onMouseOut={closemaindropdown}
           >
             <Link to="/approach" onClick={handleNavlinkClick}>
@@ -375,7 +371,7 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              } ${activeMainDropdown === 'eduDropdown' ? "desktopactive" : ""}`}
+              } ${activeMainDropdown === "eduDropdown" ? "desktopactive" : ""}`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -445,7 +441,7 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
-            onMouseOver={() => openmaindropdown('designDropdown')}
+            onMouseOver={() => openmaindropdown("designDropdown")}
             onMouseOut={closemaindropdown}
           >
             <Link to="/design" onClick={handleNavlinkClick}>
@@ -454,7 +450,9 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              } ${activeMainDropdown === 'designDropdown' ? "desktopactive" : ""}`}
+              } ${
+                activeMainDropdown === "designDropdown" ? "desktopactive" : ""
+              }`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -503,7 +501,7 @@ const Navbar = () => {
           <li
             className="navbar-item mobile-padding-left dropdown"
             onClick={toggleDropdown}
-            onMouseOver={() => openmaindropdown('supportDropdown')}
+            onMouseOver={() => openmaindropdown("supportDropdown")}
             onMouseOut={closemaindropdown}
           >
             <Link to="/ways-to-give" onClick={handleNavlinkClick}>
@@ -512,7 +510,9 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              } ${activeMainDropdown === "supportDropdown" ? "desktopactive" : ""}`}
+              } ${
+                activeMainDropdown === "supportDropdown" ? "desktopactive" : ""
+              }`}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
