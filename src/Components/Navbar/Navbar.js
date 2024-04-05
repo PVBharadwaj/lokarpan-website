@@ -128,13 +128,13 @@ const Navbar = () => {
     }
   });
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  });
+  // useEffect(() => {
+  //   if (isMenuOpen) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //   }
+  // });
 
   const ToggleSearchmenu = () => {
     if (isSearchmenuOpen) {
@@ -181,7 +181,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setActiveDropdown(null);
     setIsMenuOpen(!isMenuOpen);
-    
+
     setIsActive(!isActive);
   };
 
@@ -480,8 +480,8 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/why-donate" onClick={toggleMenu}>
-                        Why Donate
+                      <Link to="/ways-to-give" onClick={toggleMenu}>
+                        Ways to Give
                       </Link>
                     </li>
                     <li>
@@ -495,8 +495,8 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/ways-to-give" onClick={toggleMenu}>
-                        Ways to Give
+                      <Link to="/why-donate" onClick={toggleMenu}>
+                        Why Donate
                       </Link>
                     </li>
                     <li>
@@ -620,19 +620,17 @@ const Navbar = () => {
                   style={{ fontSize: "20px" }}
                 /> */}
                 <div className="nav-profile">
-                  <Link to={'/newsletter'} className="nav-profile-link">Subscribe</Link>
+                  <Link to={"/newsletter"} className="nav-profile-link">
+                    Subscribe
+                  </Link>
                   <p className="nav-profile-text">My apps</p>
                   <p className="nav-profile-text">
-                    <span className=" nav-profile-one">
-                        L
-                    </span>
+                    <span className=" nav-profile-one">L</span>
                     Lokarpan one
                   </p>
-                  
+
                   <p className="nav-profile-text">
-                    <span className="nav-profile-one">
-                        L
-                    </span>
+                    <span className="nav-profile-one">L</span>
                     Lokarpan two
                   </p>
                 </div>
@@ -640,9 +638,12 @@ const Navbar = () => {
             </div>
           </li>
           <li className="navbar-item hamburger-item">
-            <div class={`hamburger navbar-icon-inner ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div
+              class={`hamburger navbar-icon-inner ${isActive ? "active" : ""}`}
+              onClick={toggleMenu}
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
             {/* <RxHamburgerMenu
               className="hamburger navbar-icon-inner"

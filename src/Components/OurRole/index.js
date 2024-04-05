@@ -27,6 +27,7 @@ class OurRole extends Component {
 
   scrollBar = () => {
     const { isPopUpOpen } = this.state;
+    console.log(isPopUpOpen);
     if (isPopUpOpen) {
       document.body.style.overflow = "hidden";
     } else {
