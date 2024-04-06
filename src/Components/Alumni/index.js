@@ -71,10 +71,11 @@ class Alumni extends Component {
             </div>
           </div>
           <div className="alumni-donate-section">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708016452/Rectangle_1812_ci3h1r.png"
               className="alumni-donate-img"
-            />
+            /> */}
+            <div className="health-cont-img-div alumni-img1"></div>
             <div className="alumni-donate-cont">
               <h1>Donate</h1>
               <p>
@@ -127,10 +128,11 @@ class Alumni extends Component {
             </div>
           </div>
           <div className="alumni-donate-section">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708016442/Rectangle_1814_u7as3o.png"
               className="alumni-donate-img"
-            />
+            /> */}
+            <div className="health-cont-img-div alumni-img2"></div>
             <div className="alumni-donate-cont">
               <h1>How to make a gifts</h1>
               <p>

@@ -27,9 +27,9 @@
   margin-left: 38px;
 }
 .alumni-donate-section {
-  height: 420px;
-  width: calc(100% - 200px);
-  margin: 100px auto;
+  height: 110vh;
+  width: 100%;
+  margin: 200px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,6 +46,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  box-sizing: border-box;
+  padding: 0px 5%;
 }
 
 .alumni-donate-cont h1 {
@@ -53,7 +55,9 @@
   margin-bottom: 30px;
 }
 .alumni-donate-cont p {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
   margin-bottom: 30px;
 }
 .alumni-donate-btn {
@@ -151,6 +155,12 @@
   font-size: 24px;
   margin-bottom: 30px;
   align-self: flex-start;
+}
+.alumni-img1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1708016452/Rectangle_1812_ci3h1r.png");
+}
+.alumni-img2 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1708016442/Rectangle_1814_u7as3o.png");
 }
 
 @media screen and (max-width: 748px) {
