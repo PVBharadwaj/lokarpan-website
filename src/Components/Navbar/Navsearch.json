@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "Dummy",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 2,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "test",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 3,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "example",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 4,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "person",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 5,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "pupil",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 6,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "people",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 7,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "member",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    },
+    {
+      "id": 8,
+      "link": "/staff",
+      "img": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+      "name": "item",
+      "position": "Classroom Educator",
+      "description":
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio"
+    }
+  ]

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import items from "./Navsearch.json"
 import { FiSearch } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
@@ -8,97 +9,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import Fuse from "fuse.js";
-
-const items = [
-  {
-    id: 1,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "Dummy",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 2,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "test",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 3,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "example",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 4,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "person",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 5,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "pupil",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 6,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "people",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 7,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "member",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 8,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "item",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-];
 
 const fuseOptions = {
   keys: ["name", "position", "description"],
