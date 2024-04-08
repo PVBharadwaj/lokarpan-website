@@ -11,7 +11,7 @@ import { CiSearch } from "react-icons/ci";
 import Fuse from "fuse.js";
 
 const fuseOptions = {
-  keys: ["name", "position", "description"],
+  keys: ["name", "position", "description", "navitem", "subnavitems", "subnavlistitem"],
   includeScore: true,
 };
 
@@ -27,6 +27,8 @@ const Navbar = () => {
   const [searchState, setSearchLength] = useState(false);
   const timeoutRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -35,13 +37,22 @@ const Navbar = () => {
     }
   });
 
-  // useEffect(() => {
-  //   if (isMenuOpen) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
-  // });
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('body-no-scroll');
+    } else {
+      document.body.classList.remove('body-no-scroll');
+    }
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    const menunavbar = document.getElementById("navbar-mainmenu")
+    if (activeDropdown) {
+      menunavbar.classList.add('body-no-scroll');
+    } else {
+      menunavbar.classList.remove('body-no-scroll');
+    }
+  });
 
   useEffect(() => {
     if (window.innerWidth <= 922) {
@@ -53,6 +64,25 @@ const Navbar = () => {
     }
   });
 
+  useEffect(() => {
+    const scrolldiv = document.getElementsByClassName("navbar-menu");
+  
+    const handleScroll = () => {
+      if (scrolldiv.length > 0) {
+        setScrollPosition(scrolldiv[0].scrollTop);
+        console.log(scrolldiv[0].scrollTop);
+      }
+    };
+  
+    if (scrolldiv.length > 0) {
+      scrolldiv[0].addEventListener("scroll", handleScroll);
+  
+      return () => {
+        scrolldiv[0].removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
+  
   const ToggleSearchmenu = () => {
     if (isSearchmenuOpen) {
       setSearchmenuOpen(false);
@@ -102,9 +132,11 @@ const Navbar = () => {
   };
 
   const handleNavlinkClick = (e) => {
+    // console.log("handleNavlinkClick called");
+    // console.log("Window width:", window.innerWidth);
     if (window.innerWidth <= 922) {
       e.preventDefault();
-      toggleDropdown();
+      // toggleDropdown();
     }
   };
 
@@ -113,14 +145,16 @@ const Navbar = () => {
     if (activeDropdown === index) {
       setActiveDropdown(null);
       // if (window.innerWidth <= 922) {
-      //   const menunavbar = document.getElementById("navbar-menu")
-      //   menunavbar.style.overflow = "auto";
+      //   const menunavbar = document.getElementById("navbar-mainmenu")
+      //   menunavbar.classList.remove('body-no-scroll');
+      
       // }
     } else {
       setActiveDropdown(index);
       // if (window.innerWidth <= 922) {
-      //   const menunavbar = document.getElementById("navbar-menu")
-      //   menunavbar.style.overflow = "hidden";
+      //   const menunavbar = document.getElementById("navbar-mainmenu")
+      //   menunavbar.classList.add('body-no-scroll');
+      
       // }
     }
   };
@@ -142,18 +176,24 @@ const Navbar = () => {
   };
 
   const openmaindropdown = (dropdownId) => {
-    setActiveMainDropdown(dropdownId);
-    var desktopActiveElement = document.querySelector(".desktopactive");
-    if (desktopActiveElement) {
-      var currentHeight = desktopActiveElement.clientHeight;
-      var dropdownHeight = document.getElementById("navbar-bg-layer");
-      dropdownHeight.style.height = currentHeight + "px";
-    }
+    // if(window.innerWidth >= 922){
+      // console.log("onmouseover")
+      setActiveMainDropdown(dropdownId);
+      var desktopActiveElement = document.querySelector(".desktopactive");
+      if (desktopActiveElement) {
+        var currentHeight = desktopActiveElement.clientHeight;
+        var dropdownHeight = document.getElementById("navbar-bg-layer");
+        dropdownHeight.style.height = currentHeight + "px";
+      }
+    // }
   };
   const closemaindropdown = () => {
-    setActiveMainDropdown(null);
-    var dropdownHeight = document.getElementById("navbar-bg-layer");
-    dropdownHeight.style.height = "0px";
+    // console.log("onmouseout")
+    // if(window.innerWidth >= 922){
+      setActiveMainDropdown(null);
+      var dropdownHeight = document.getElementById("navbar-bg-layer");
+      dropdownHeight.style.height = "0px";
+    // }
   };
 
   return (
@@ -173,10 +213,10 @@ const Navbar = () => {
         </div>
         <div id="navbar-bg-layer"></div>
         <ul
-          id="navbar-menu"
+          id="navbar-mainmenu"
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
         >
-          <li className="navbar-item mobile-padding-left">
+          <li className="navbar-item mobile-padding-left mobile-padding-top">
             <Link to="/" onClick={toggleMenu}>
               Home
             </Link>
@@ -363,6 +403,7 @@ const Navbar = () => {
               } ${
                 activeMainDropdown === "designDropdown" ? "desktopactive" : ""
               }`}
+              style={{top: window.innerWidth <= 922 ? `${scrollPosition}px` : '' }}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -420,9 +461,8 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              } ${
-                activeMainDropdown === "supportDropdown" ? "desktopactive" : ""
-              }`}
+              } ${ activeMainDropdown === "supportDropdown" ? "desktopactive" : "" }`}
+              style={{top: window.innerWidth <= 922 ? `${scrollPosition}px` : '' }}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -498,7 +538,7 @@ const Navbar = () => {
               <div className="click-dropdown-inner">
                 <div className="nav-searchbar">
                   <RxCross2
-                    className="cross"
+                    className="cross mobile-only"
                     onClick={closeSearchMenu}
                     style={{ fontSize: "20px" }}
                   />
@@ -542,6 +582,8 @@ const Navbar = () => {
                           {searchResults.map((result) => (
                             <li key={result.item.id}>
                               <a href={result.item.link}>{result.item.name}</a>
+                              <a href={result.item.Link}>{result.item.subnavlistitem}</a>
+                              <a href={result.item.Link}>{result.item.navitem}</a>
                             </li>
                           ))}
                         </ul>
@@ -569,7 +611,7 @@ const Navbar = () => {
             >
               <div className="click-dropdown-inner">
                 <RxCross2
-                  className="cross"
+                  className="icon-cross mobile-only"
                   onClick={closeProfileMenu}
                   style={{ fontSize: "20px" }}
                 />
@@ -593,7 +635,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item hamburger-item">
             <div
-              class={`hamburger navbar-icon-inner ${isActive ? "active" : ""}`}
+              class={`hamburger cross navbar-icon-inner ${isActive ? "active" : ""}`}
               onClick={toggleMenu}
             >
               <span class="bar"></span>

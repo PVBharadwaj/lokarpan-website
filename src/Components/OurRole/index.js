@@ -29,9 +29,9 @@ class OurRole extends Component {
     const { isPopUpOpen } = this.state;
     console.log(isPopUpOpen);
     if (isPopUpOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add('body-no-scroll');
     } else {
-      document.body.style.overflow = "auto";
+        document.body.classList.remove('body-no-scroll');
     }
   };
   scrollToTop = () => {

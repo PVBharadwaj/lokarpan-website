@@ -37,9 +37,9 @@ const Mission = () => {
 
   useEffect(() => {
     if (popupVisibility.some((isVisible) => isVisible)) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add('body-no-scroll');
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove('body-no-scroll');
     }
   }, [popupVisibility]);
 

@@ -10,7 +10,7 @@ const ButtonContainer = styled.span`
   height: 32px;
   width: 32px;
   justify-content: center;
-  z-index: 1000;
+  z-index: 99;
   cursor: pointer;
   animation: fadeIn 0.3s;
   

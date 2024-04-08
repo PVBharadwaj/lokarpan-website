@@ -8,6 +8,10 @@
   font-family: "Inter", sans-serif;
 }
 
+.body-no-scroll{
+  overflow: hidden !important;
+}
+
 .apply-btn {
   display: flex;
   border: 1px solid black;
