@@ -203,6 +203,7 @@ height: 100%;
   color: #000000;
   padding-left: 40px;
   text-align: left;
+  font-family: "Inter", sans-serif;
 }
 
 .project-form-control:focus {
@@ -252,6 +253,7 @@ height: 100%;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 }
 
 .dropdown-toggle-btn::after {
@@ -270,6 +272,10 @@ height: 100%;
   margin: 0 6px 4px 10px;
   transform: translateY(-50%) rotate(45deg);
   transition: transform 665ms cubic-bezier(0, 0, 0.1, 1);
+}
+
+.dropdown-toggle-btn.active{
+  background-color: #d4d4d4;
 }
 
 .dropdown-toggle-btn.active::after {

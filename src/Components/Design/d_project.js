@@ -26,10 +26,6 @@ const D_project = () => {
     threshold: 0.4, // Adjust the threshold as needed
   });
 
-
-  
-  const dropdownRef = useRef(null);
-
   const handleOnSearch = ({ target: { value } }) => {
     setQuery(value);
     const searchResults = fuse.search(value);
@@ -82,7 +78,9 @@ const ToogleSortAlphabetically = () => {
 
 useEffect(() => {
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    const desiginProjecttypedropdown = document.getElementById("desiginProjecttypedropdown");
+    const desiginLocationdropdown = document.getElementById("desiginLocationdropdown")
+    if(!( desiginProjecttypedropdown.contains(event.target) || desiginLocationdropdown.contains(event.target) )){
       setProjDropdownOpen(null);
     }
   };
@@ -93,11 +91,11 @@ useEffect(() => {
     }
   };
 
-  // document.addEventListener('mousedown', handleClickOutside);
+  document.addEventListener('mousedown', handleClickOutside);
   document.addEventListener('keydown', handleEsc);
 
   return () => {
-    // document.removeEventListener('mousedown', handleClickOutside);
+    document.removeEventListener('mousedown', handleClickOutside);
     document.removeEventListener('keydown', handleEsc);
   };
 }, []);
@@ -132,7 +130,7 @@ useEffect(() => {
               </div>
             </div>
             </div>
-            <div className='project-dropdown-container proj-type' ref={dropdownRef}>
+            <div id='desiginProjecttypedropdown' className='project-dropdown-container proj-type'>
               <button onClick={() => ToggleProjDropdown("proj-type")} className={`dropdown-toggle-btn active-btn ${isProjDropdownOpen==="proj-type" ? "active" : ""}`} type='button' value={"All"}>
                 <span>{selectedProjType}</span>
               </button>
@@ -157,7 +155,7 @@ useEffect(() => {
                   </button>
                 </div>
             </div>
-            <div className='project-dropdown-container proj-location' ref={dropdownRef}>
+            <div id='desiginLocationdropdown' className='project-dropdown-container proj-location'>
               <button onClick={() => ToggleProjDropdown("location")} className={`dropdown-toggle-btn active-btn ${isProjDropdownOpen==="location" ? "active" : ""}`} type='button' value={"All"}>
                 <span>{selectedLocation}</span>
               </button>
