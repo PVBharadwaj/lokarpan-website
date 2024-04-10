@@ -94,7 +94,7 @@
     max-height: 100vh;
     visibility: visible;
     opacity: 1;
-    z-index: 101 !important;
+    z-index: 103 !important;
     background-color: white;
     transition: max-height 0.7s ease-in-out;
   }

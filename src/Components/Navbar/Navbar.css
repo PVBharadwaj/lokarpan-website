@@ -251,6 +251,10 @@
   display: none;
 }
 
+.search-click-dropdown{
+  padding-top: 40px !important;
+}
+
 @media screen and (min-width: 922px) {
   .dropdown-content-inner {
     display: flex;
@@ -414,6 +418,15 @@
     right: 20px; */
     z-index: 102;
   }
+
+  .search-cross{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 102;
+  }
+
   .navbar-links li a {
     font-size: 32px;
     margin-left: 30px;
@@ -447,8 +460,10 @@
   }
 
   .click-dropdown-search {
+    overflow: auto !important;
     top: 0px !important;
     padding: 55px 10px !important;
+    max-height: 100vh !important;
   }
   .dropdown-container .list-item-container li a {
     /* font-size: 32px; */
@@ -475,6 +490,11 @@
 .hamburger.active .bar:nth-child(2) {
     transform: rotate(45deg) translate(-5px, 0px);
 }
+
+.search-click-dropdown {
+  padding-top: 0px !important;
+  max-height: 100% !important;
+}
 }
 
 /* CSS for navSearchBar starts */
@@ -491,12 +511,16 @@
   align-items: center;
 }
 
+.margin0{
+  margin: 0px !important;
+}
+
 .size-80 {
   font-size: 28px;
 }
 
 .nav-form-control {
-  font-size: 30px;
+  font-size: 28px;
   margin: 0px 10px;
   padding: 8px;
   width: calc(100% - 30px);
@@ -553,7 +577,7 @@
 
 @media screen and (max-width: 836px) {
   .nav-searchbar {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .nav-form-control {

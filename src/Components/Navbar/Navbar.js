@@ -19,7 +19,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeMainDropdown, setActiveMainDropdown] = useState(null);
-  const [activeIconDropdown, setActiveIconDropdown] = useState(null);
+  // const [activeIconDropdown, setActiveIconDropdown] = useState(null);
   const [isSearchmenuOpen, setSearchmenuOpen] = useState(false);
   const [isProfilemenuOpen, setProfilemenuOpen] = useState(false);
   const [queryText, setqueryText] = useState("");
@@ -27,7 +27,6 @@ const Navbar = () => {
   const [searchState, setSearchLength] = useState(false);
   const timeoutRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
 
   document.addEventListener("keydown", function (event) {
@@ -96,7 +95,13 @@ const Navbar = () => {
   const OpenSearchmenu = () => {
     clearTimeout(timeoutRef.current);
     setSearchmenuOpen(true);
-    setqueryText("");
+    // setqueryText("");
+  };
+
+  const closeSearchMenu = () => {
+    timeoutRef.current = setTimeout(() => {
+      setSearchmenuOpen(false);
+    }, 500);
   };
 
   const ToggleProfilemenu = () => {
@@ -113,12 +118,6 @@ const Navbar = () => {
     setProfilemenuOpen(true);
   };
 
-  const closeSearchMenu = () => {
-    timeoutRef.current = setTimeout(() => {
-      setSearchmenuOpen(false);
-    }, 500);
-  };
-
   const closeProfileMenu = () => {
     timeoutRef.current = setTimeout(() => {
       setProfilemenuOpen(false);
@@ -132,8 +131,6 @@ const Navbar = () => {
   };
 
   const handleNavlinkClick = (e) => {
-    // console.log("handleNavlinkClick called");
-    // console.log("Window width:", window.innerWidth);
     if (window.innerWidth <= 922) {
       e.preventDefault();
       // toggleDropdown();
@@ -141,22 +138,7 @@ const Navbar = () => {
   };
 
   const toggleDropdown = (index) => {
-    // setActiveDropdown(activeDropdown === index ? null : index);
-    if (activeDropdown === index) {
-      setActiveDropdown(null);
-      // if (window.innerWidth <= 922) {
-      //   const menunavbar = document.getElementById("navbar-mainmenu")
-      //   menunavbar.classList.remove('body-no-scroll');
-      
-      // }
-    } else {
-      setActiveDropdown(index);
-      // if (window.innerWidth <= 922) {
-      //   const menunavbar = document.getElementById("navbar-mainmenu")
-      //   menunavbar.classList.add('body-no-scroll');
-      
-      // }
-    }
+    setActiveDropdown(activeDropdown === index ? null : index);
   };
 
   const handleBackClick = () => {
@@ -176,8 +158,6 @@ const Navbar = () => {
   };
 
   const openmaindropdown = (dropdownId) => {
-    // if(window.innerWidth >= 922){
-      // console.log("onmouseover")
       setActiveMainDropdown(dropdownId);
       var desktopActiveElement = document.querySelector(".desktopactive");
       if (desktopActiveElement) {
@@ -185,15 +165,11 @@ const Navbar = () => {
         var dropdownHeight = document.getElementById("navbar-bg-layer");
         dropdownHeight.style.height = currentHeight + "px";
       }
-    // }
   };
   const closemaindropdown = () => {
-    // console.log("onmouseout")
-    // if(window.innerWidth >= 922){
       setActiveMainDropdown(null);
       var dropdownHeight = document.getElementById("navbar-bg-layer");
       dropdownHeight.style.height = "0px";
-    // }
   };
 
   return (
@@ -535,15 +511,15 @@ const Navbar = () => {
               }`}
               onMouseEnter={OpenSearchmenu}
             >
-              <div className="click-dropdown-inner">
+              <div className="click-dropdown-inner search-click-dropdown">
                 <div className="nav-searchbar">
                   <RxCross2
-                    className="cross mobile-only"
+                    className="search-cross mobile-only"
                     onClick={closeSearchMenu}
                     style={{ fontSize: "20px" }}
                   />
                   <div className="nav-form">
-                    <CiSearch className="react-icon size-80" />
+                    <CiSearch className="react-icon margin0 size-80" />
                     <input
                       className="nav-form-control text-input"
                       type="text"
@@ -581,9 +557,9 @@ const Navbar = () => {
                         <ul>
                           {searchResults.map((result) => (
                             <li key={result.item.id}>
-                              <a href={result.item.link}>{result.item.name}</a>
-                              <a href={result.item.Link}>{result.item.subnavlistitem}</a>
-                              <a href={result.item.Link}>{result.item.navitem}</a>
+                              {result.item.name ? <a href={result.item.link}>{result.item.name}</a> : ""}
+                              {result.item.subnavlistitem ? <a href={result.item.Link}>{result.item.subnavlistitem}</a> : ""}
+                              {result.item.navitem ? <a href={result.item.Link}>{result.item.navitem}</a>: ""}
                             </li>
                           ))}
                         </ul>
@@ -611,12 +587,12 @@ const Navbar = () => {
             >
               <div className="click-dropdown-inner">
                 <RxCross2
-                  className="icon-cross mobile-only"
+                  className="icon-cross search-cross mobile-only"
                   onClick={closeProfileMenu}
                   style={{ fontSize: "20px" }}
                 />
                 <div className="nav-profile">
-                  <Link to={"/newsletter"} className="nav-profile-link">
+                  <Link to={"/newsletter"} className="nav-profile-link margin0">
                     Subscribe
                   </Link>
                   <p className="nav-profile-text">My apps</p>

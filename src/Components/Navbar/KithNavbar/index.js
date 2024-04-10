@@ -9,101 +9,102 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { IoExitOutline } from "react-icons/io5";
 import Fuse from "fuse.js";
+import items from "../Navsearch.json"
 
 
-const items = [
-  {
-    id: 1,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "Dummy",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 2,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "test",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 3,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "example",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 4,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "person",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 5,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "pupil",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 6,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "people",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 7,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "member",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-  {
-    id: 8,
-    link: "/staff",
-    img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
-    name: "item",
-    position: "Classroom Educator",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
-    hyperlink1: <i class="bi bi-facebook"></i>,
-    hyperlink2: <i class="bi bi-house-door"></i>,
-  },
-];
+// const items = [
+//   {
+//     id: 1,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "Dummy",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 2,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "test",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 3,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "example",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 4,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "person",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 5,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "pupil",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 6,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "people",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 7,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "member",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+//   {
+//     id: 8,
+//     link: "/staff",
+//     img: "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+//     name: "item",
+//     position: "Classroom Educator",
+//     description:
+//       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat vero nemo accusamus, eum optio",
+//     hyperlink1: <i class="bi bi-facebook"></i>,
+//     hyperlink2: <i class="bi bi-house-door"></i>,
+//   },
+// ];
 
 const fuseOptions = {
-  keys: ["name", "position", "description"],
+  keys: ["name", "position", "description", "navitem", "subnavitems", "subnavlistitem"],
   includeScore: true,
 };
 
@@ -119,6 +120,7 @@ const Navbar = () => {
   const [searchState, setSearchLength] = useState(false);
   const timeoutRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -129,11 +131,49 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add('body-no-scroll');
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove('body-no-scroll');
+    }
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    const menunavbar = document.getElementById("navbar-mainmenu")
+    if (activeDropdown) {
+      menunavbar.classList.add('body-no-scroll');
+    } else {
+      menunavbar.classList.remove('body-no-scroll');
     }
   });
+
+  useEffect(() => {
+    if (window.innerWidth <= 922) {
+      if (isSearchmenuOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    }
+  });
+
+  useEffect(() => {
+    const scrolldiv = document.getElementsByClassName("navbar-menu");
+  
+    const handleScroll = () => {
+      if (scrolldiv.length > 0) {
+        setScrollPosition(scrolldiv[0].scrollTop);
+        console.log(scrolldiv[0].scrollTop);
+      }
+    };
+  
+    if (scrolldiv.length > 0) {
+      scrolldiv[0].addEventListener("scroll", handleScroll);
+  
+      return () => {
+        scrolldiv[0].removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
 
   const ToggleSearchmenu = () => {
     if(isSearchmenuOpen) {
@@ -148,7 +188,13 @@ const Navbar = () => {
   const OpenSearchmenu = () => {
     clearTimeout(timeoutRef.current);
     setSearchmenuOpen(true)
-    setqueryText("");
+    // setqueryText("");
+  };
+  
+  const closeSearchMenu = () => {
+    timeoutRef.current = setTimeout(() => {
+      setSearchmenuOpen(false);
+    }, 500); 
   };
 
   const ToggleProfilemenu = () => {
@@ -163,12 +209,6 @@ const Navbar = () => {
   const OpenProfilemenu = () => {
     clearTimeout(timeoutRef.current);
     setProfilemenuOpen(true)
-  };
-
-  const closeSearchMenu = () => {
-    timeoutRef.current = setTimeout(() => {
-      setSearchmenuOpen(false);
-    }, 500); 
   };
 
   const closeProfileMenu = () => {
@@ -186,7 +226,7 @@ const Navbar = () => {
   const handleNavlinkClick = (e) => {
     if (window.innerWidth <= 922) {
       e.preventDefault();
-      toggleDropdown();
+      // toggleDropdown();
     }
   };
 
@@ -241,7 +281,9 @@ const Navbar = () => {
             />
           </div>
           <div id="navbar-bg-layer"></div>
-        <ul className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
+        <ul
+          id="navbar-mainmenu" 
+          className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}>
           {/* <RxCross2
             className="cross"
             onClick={toggleMenu}
@@ -400,12 +442,12 @@ const Navbar = () => {
             <div className="click-dropdown-inner">
               <div className="nav-searchbar">
                 <RxCross2
-                  className="cross"
+                  className="search-cross mobile-only"
                   onClick={closeSearchMenu}
                   style={{ fontSize: "20px" }}
                 />
                 <div className="nav-form">
-                  <CiSearch className="react-icon size-80" />
+                  <CiSearch className="react-icon margin0 size-80" />
                     <input
                       className="nav-form-control text-input"
                       type="text"
@@ -443,8 +485,10 @@ const Navbar = () => {
                       <ul>
                         {searchResults.map((result) => (
                           <li key={result.item.id}>
-                            <a href={result.item.link}>{result.item.name}</a>
-                          </li>
+                          {result.item.name ? <a href={result.item.link}>{result.item.name}</a> : ""}
+                          {result.item.subnavlistitem ? <a href={result.item.Link}>{result.item.subnavlistitem}</a> : ""}
+                          {result.item.navitem ? <a href={result.item.Link}>{result.item.navitem}</a>: ""}
+                        </li>
                         ))}
                       </ul>
                     </>
@@ -471,12 +515,12 @@ const Navbar = () => {
           >
             <div className="click-dropdown-inner">
               <RxCross2
-                className="cross"
+                className="icon-cross search-cross mobile-only"
                 onClick={closeProfileMenu}
                 style={{ fontSize: "20px" }}
               />
               <div className="nav-profile">
-              <Link to={'/newsletter'} className="nav-profile-link">Subscribe</Link>
+              <Link to={'/newsletter'} className="nav-profile-link margin0">Subscribe</Link>
                   <p className="nav-profile-text">My apps</p>
                   <p className="nav-profile-text">
                     <span className=" nav-profile-one">
@@ -504,7 +548,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-item hamburger-item">
-            <div class={`hamburger navbar-icon-inner ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
+            <div class={`hamburger cross navbar-icon-inner ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
               <span class="bar"></span>
               <span class="bar"></span>
             </div>
