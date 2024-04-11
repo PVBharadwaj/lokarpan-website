@@ -37,8 +37,5 @@
     "reactPlayerFilePlayer.c18c5309.chunk.js.map": "/lokarpan-website/static/js/reactPlayerFilePlayer.c18c5309.chunk.js.map",
     "reactPlayerPreview.79649fe0.chunk.js.map": "/lokarpan-website/static/js/reactPlayerPreview.79649fe0.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.5455575d.css",
-    "static/js/main.49380111.js"
-  ]
+  "entrypoints": ["static/css/main.5455575d.css", "static/js/main.49380111.js"]
 }

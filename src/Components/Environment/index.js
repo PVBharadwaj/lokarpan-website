@@ -14,13 +14,13 @@ class Environment extends Component {
           <h1>Environment</h1>
         </div>
         <div className="health-container">
-          {/* <div className="health-full-img"> */}
-          <div className="health-full-img-text">
-            {/* <img
+          <div className="health-full-img">
+          {/* <div className="health-full-img-text"> */}
+            <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
               alt="health-img"
-            /> */}
-            <p>
+            />
+            {/* <p>
               Lokarpan addresses gaps in education systems with innovative,
               technology-assisted solutions that span the age spectrum. Our
               goal? To showcase excellence by representing India in the PISA
@@ -31,7 +31,7 @@ class Environment extends Component {
               create better teaching tools, scale up skill development and
               integrate technology to aid teachers in delivering the very best
               educational standards across rural India.{" "}
-            </p>
+            </p> */}
           </div>
           <div className="health-container-section">
             <div className="health-each-container">

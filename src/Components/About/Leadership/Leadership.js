@@ -45,7 +45,7 @@ const Leadership = () => {
           <div className="lead-rest">
             <div className="desp lead-desp-head">
               {/* Lokarpan is led globally by our managing partner; our elected board of directors, known as the Shareholders Council; a global leadership team known as the Acceleration Team; and the leaders of our offices and practices. */}
-              These are Lokarpan's leaders: visionaries dedicated to improving the lives of those we serve. Here are some of the pillars of Lokarpan.
+              Board. Staff. Educators. Fellows. These are Lokarpan's leaders: visionaries dedicated to improving the lives of those we serve. Here are some of the pillars of Lokarpan.
             </div>
             <div className="desp-cards">
               {Desp.map((item, index) => (

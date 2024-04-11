@@ -7,6 +7,7 @@ const TimeRight = ({ heading, content,image}) => {
   return (
    
       <div className='timeline-container'>
+        <div className='timeline-container-inner'>
         <div className="timeline-left-section">
           {/* Left section content */}
           {/* Add your content here */}
@@ -25,6 +26,8 @@ const TimeRight = ({ heading, content,image}) => {
             </div>
           </div>
         </div>
+        </div>
+
       </div>
    
   );

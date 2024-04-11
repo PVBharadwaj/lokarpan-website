@@ -14,19 +14,19 @@ class Livelihood extends Component {
           <h1>Livelihood</h1>
         </div>
         <div className="health-container">
-          {/* <div className="health-full-img"> */}
-          <div className="livelihood-full-img-text">
-            {/* <img
+          <div className="health-full-img">
+          {/* <div className="livelihood-full-img-text"> */}
+            <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
               alt="health-img"
-            /> */}
-            <p>
+            />
+            {/* <p>
               Lokarpan is committed to alleviating poverty in rural India.
               Through tailored skill development programs, microfinance
               initiatives, and entrepreneurship support, we empower individuals
               to improve economic conditions and enhance social mobility. Our
               goal is to foster stronger, more self-reliant communities.
-            </p>
+            </p> */}
           </div>
           <div className="health-container-section">
             <div className="health-each-container">
