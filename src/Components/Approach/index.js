@@ -28,12 +28,16 @@ class Approach extends Component {
                   Discover how we are shaping the learning environment
                 </h1>
                 <p className="health-para">
-                  Lokarpan's Learning Centre harnesses innovative technology and
-                  tailored curriculums, empowering children and youth to take
-                  control of their education.
+                  Despite India's vast school network, many children struggle
+                  with basic literacy and numeracy skills. Lokarpan recognises
+                  the transformative power of education and is committed to
+                  bridging learning gaps through innovative curriculums,
+                  enhanced teaching tools, and technology. Our investment aims
+                  not just at today's students, but at building a brighter
+                  future for generations to come.
                 </p>
                 <a href="#" className="approach-anchor">
-                  Read more about our learing centers
+                  Read more
                 </a>
               </div>
               {/* <img
@@ -53,29 +57,35 @@ class Approach extends Component {
               <div className="health-cont-img-div approach-img2"></div>
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">
-                  Dive into our Digital Content Hub
+                  Empowering Education Through Digital Innovation
                 </h1>
                 <p className="health-para">
-                  With an extensive library, centred on English and STEM
-                  subjects, and captivating audio podcasts, our digital content
-                  hub offers a world of exploration and skill-building.
+                  Lokarpan pioneers digital transformation in education,
+                  offering tailored content, personalised learning, and advanced
+                  analytics. Our digital infrastructure, including interactive
+                  apps and virtual training, ensures efficient and effective
+                  education delivery, fostering a culture of continuous
+                  improvement.
                 </p>
                 <a href="#" className="approach-anchor">
-                  Learn more about our digital resources
+                  Learn more
                 </a>
               </div>
             </div>
             <div className="health-each-container">
               <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Get Involved </h1>
+                <h1 className="health-lokarpan-head3">Fellowship Programme</h1>
                 <p className="health-para">
-                  Be a part of Lokarpan's dedicated team, driven by a common
-                  goal of creating a tangible impact. Our enthusiastic Fellows
-                  actively engage in classrooms, coming together to shape a
-                  brighter tomorrow for rural education.
+                  The road to end educational inequity is long, and Lokarpan
+                  recognises the power of collective effort in achieving this
+                  vision. We invite passionate individuals who share our
+                  commitment to join us in this journey through our Fellowship
+                  Program. Whether you have a few hours a week or more to spare,
+                  volunteering in our classrooms or contributing to our existing
+                  programmes can make a significant impact.
                 </p>
                 <a href="#" className="approach-anchor">
-                  Find out more in our careers page
+                  Read more
                 </a>
               </div>
               {/* <img
