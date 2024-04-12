@@ -6,11 +6,14 @@ import "./Fellowship.css";
 const Fellowship = () => {
   return (
     <>
-    <Navbar />
-    <div className="fellowship-nav"><h1>Fellowship</h1></div>
+      <Navbar />
+      <div className="fellowship-nav">
+        <h1>Fellowship</h1>
+      </div>
       <div className="fellowship-top">
         <h1>
-          We know the best answers often come from those closest to the problem.
+          At Lokarpan, we firmly believe that the best solutions arise from
+          those who intimately understand the challenges at hand.
         </h1>
       </div>
       <div className="fellowship-page">
@@ -23,10 +26,11 @@ const Fellowship = () => {
             />
             <h3 className="impact-title">We look for big ideas.</h3>
             <p className="fellow-data">
-              We believe big things can happen when you dont shy from big ideas.
-              We look for non-profits, social enterprises and civic entities who
-              understand the needs of marginilized and vulnerable populations
-              andare working to address inequities at scale.
+              By joining Lokarpan Fellows, you become part of a community-driven
+              initiative where your insights, experiences, and ideas are not
+              just valued but actively sought after. Whether you're working in a
+              classroom, collaborating with our teams, or engaging directly with
+              communities, your voice matters.
             </p>
           </div>
           <div className="sub-div">
@@ -35,12 +39,15 @@ const Fellowship = () => {
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708613080/cannon_040_1_skwlle.png"
               alt="img2"
             />
-            <h3 className="impact-title">We ask communities what they need.</h3>
+            <h3 className="impact-title">Our Approach is Community Centric</h3>
             <p className="fellow-data">
-              We believe big things can happen when you dont shy from big ideas.
-              We look for non-profits, social enterprises and civic entities who
-              understand the needs of marginilized and vulnerable populations
-              andare working to address inequities at scale.
+              We believe that true solutions emerge when we listen closely to
+              the voices of the communities we serve. By engaging directly with
+              those most affected by social challenges, we gain valuable
+              insights into their needs and aspirations. Together, we co-create
+              innovative initiatives and programs that have a meaningful impact
+              and pave the way for a more equitable society. engaging directly
+              with communities, your voice matters.
             </p>
           </div>
         </div>
@@ -69,14 +76,18 @@ const Fellowship = () => {
           </div>
         </div>
         <div className="fourth-div">
-          <h3 className="impact-title">The Google.org Fellowship</h3>
+          <h3 className="impact-title">Who You’ll Work with</h3>
           <p className="fourth-div-data fellow-data">
-            The google.org fellowship is a pro bono program that matched Google
-            employees with non-profits and civic entities for up to six months
-            on full time technical projects. Fellows leave their day jobs at
-            Google to work alongside the organization's staff to build scalable
-            slutions, working as a team to ensure that the work has sustined and
-            lasting impact.
+            You'll join one of our locations on site or opt for working
+            remotely. Fellows join our technical and research projects from
+            around the world to work in teams and directly with our
+            beneficiaries. When you join Lokarpan as a Fellow, you are joining
+            an organisation that will challenge you and invest heavily in your
+            professional development. In this role you will have the opportunity
+            to work in teams and help the most vulnerable – across a wide range
+            of initiatives – solving some of their most difficult problems. You
+            will also work with a diverse range of experts in the organisation,
+            from researchers to software and app designers.
           </p>
         </div>
       </div>
@@ -88,7 +99,9 @@ const Fellowship = () => {
           enterprises with support to help bring their ideas to life.
         </p>
         <div className="apply-btn white">
-          <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>
+          <Link to="/" className="apply-btn-text-black body-btn">
+            Apply
+          </Link>
         </div>
       </div>
       <Footer />

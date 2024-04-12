@@ -60,19 +60,15 @@ class DigitalTool extends Component {
           <div className="browse-cont">
             <div>
               <h2>
-                Browse accessories or find new colours to go with your devices.
+                Transforming education through innovative technology solutions
               </h2>
             </div>
             <div>
               <p>
-                Lokarpan is a non-profit organization registered under the
-                Societies Registration Act 1860. Lokarpan is registered u/s 12A
-                of the Income Tax Act, 1961. Lokarpan is registered under the
-                Foreign Contributions (Regulation) Act FCRA 136550133, and
-                renewed dated 01.11.2016 for the receipt of foreign donations.
-                Lokarpan assumes no obligation to update any forward looking
-                statement or information, which speak as of their respective
-                dates.
+                At Lokarpan, our digital services pave the way for a dynamic,
+                inclusive, and future-ready education landscape. Our goal is to
+                integrate technology as a tool to support, not replace, teachers
+                in delivering the core curriculum.
               </p>
             </div>
           </div>
@@ -84,13 +80,10 @@ class DigitalTool extends Component {
                   className="dig-icon-img"
                 />
               </div>
-              <h4>Temperature & Humanity</h4>
+              <h4>Data Repository</h4>
               <p>
-                Model S Plaid has the quickest acceleration of any vehicle in
-                production. Updated battery architecture for all Model S trims
-                enables back-to-back track runs without performance degradation.
-                Chat with a Tesla Advisor to learn more about Model S or
-                schedule a demo drive today.
+                Survey, collect, and organise data efficiently with our
+                user-friendly tools tailored for diverse research needs.
               </p>
             </div>
             <div className="temp-each-cont">
@@ -100,13 +93,10 @@ class DigitalTool extends Component {
                   className="dig-icon-img"
                 />
               </div>
-              <h4>Temperature & Humanity</h4>
+              <h4>Learning Management Systems</h4>
               <p>
-                Model S Plaid has the quickest acceleration of any vehicle in
-                production. Updated battery architecture for all Model S trims
-                enables back-to-back track runs without performance degradation.
-                Chat with a Tesla Advisor to learn more about Model S or
-                schedule a demo drive today.
+                Seamlessly manage classrooms, programs, and users with our
+                Hybrid, Google Classroom, Notion, and Wiki platforms.
               </p>
             </div>
             <div className="temp-each-cont">
@@ -116,13 +106,10 @@ class DigitalTool extends Component {
                   className="dig-icon-img"
                 />
               </div>
-              <h4>Temperature & Humanity</h4>
+              <h4>Adobe</h4>
               <p>
-                Model S Plaid has the quickest acceleration of any vehicle in
-                production. Updated battery architecture for all Model S trims
-                enables back-to-back track runs without performance degradation.
-                Chat with a Tesla Advisor to learn more about Model S or
-                schedule a demo drive today.
+                Transform health and education data into insightful visuals with
+                our informatics web app for dynamic data visualisation.
               </p>
             </div>
             <div className="temp-each-cont">
@@ -132,13 +119,11 @@ class DigitalTool extends Component {
                   className="dig-icon-img"
                 />
               </div>
-              <h4>Temperature & Humanity</h4>
+              <h4>Content Creation</h4>
               <p>
-                Model S Plaid has the quickest acceleration of any vehicle in
-                production. Updated battery architecture for all Model S trims
-                enables back-to-back track runs without performance degradation.
-                Chat with a Tesla Advisor to learn more about Model S or
-                schedule a demo drive today.
+                A repository of engaging digital content, captivating stories,
+                and immersive audio podcasts effortlessly with our innovative
+                tools.
               </p>
             </div>
             <div className="temp-each-cont">
@@ -148,13 +133,10 @@ class DigitalTool extends Component {
                   className="dig-icon-img"
                 />
               </div>
-              <h4>Temperature & Humanity</h4>
+              <h4>Analytics & Prediction</h4>
               <p>
-                Model S Plaid has the quickest acceleration of any vehicle in
-                production. Updated battery architecture for all Model S trims
-                enables back-to-back track runs without performance degradation.
-                Chat with a Tesla Advisor to learn more about Model S or
-                schedule a demo drive today.
+                Gain valuable insights into performance trends and predict
+                future outcomes with our advanced analytics practices.
               </p>
             </div>
             <div className="temp-each-cont">
@@ -164,28 +146,20 @@ class DigitalTool extends Component {
                   className="dig-icon-img"
                 />
               </div>
-              <h4>Temperature & Humanity</h4>
+              <h4>Exams & Quizzes</h4>
               <p>
-                Model S Plaid has the quickest acceleration of any vehicle in
-                production. Updated battery architecture for all Model S trims
-                enables back-to-back track runs without performance degradation.
-                Chat with a Tesla Advisor to learn more about Model S or
-                schedule a demo drive today.
+                Create and conduct engaging exams and quizzes for learners of
+                all ages using our Horizon app, designed for effective
+                assessments.
               </p>
             </div>
           </div>
           <div className="digital-tool-last-sec">
-            <h3>
-              Browse accessories or find new colours to go with your devices.
-            </h3>
+            <h3>Be a Catalyst for Change!</h3>
             <p>
-              Lokarpan is a non-profit organization registered under the
-              Societies Registration Act 1860. Lokarpan is registered u/s 12A of
-              the Income Tax Act, 1961. Lokarpan is registered under the Foreign
-              Contributions (Regulation) Act FCRA 136550133, and renewed dated
-              01.11.2016 for the receipt of foreign donations. Lokarpan assumes
-              no obligation to update any forward looking statement or
-              information, which speak as of their respective dates.
+              Join Lokarpan in our mission to combat educational disparities,
+              empowering at-risk communities for a brighter future. Your support
+              fuels innovation and transformative impact.
             </p>
             <div className="digital-tool-btn-cont">
               <button className="digital-tool-btn">Volunteer</button>

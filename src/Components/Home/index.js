@@ -77,7 +77,7 @@ class Home extends Component {
           <div className="who-we-are">
             <p className="lokarpan-head4">Our Approach</p>
             <h1 className="home-head3">
-              Big change is impossible without a little help. For 27 years, we
+              Big change is impossible without a little help. For 28 years, we
               have worked closely with communities to identify their needs and
               aspirations in order to serve them.
             </h1>
@@ -115,12 +115,10 @@ class Home extends Component {
               <p className="home-head3">The Lokarpan Fellowship</p>
               <p className="lokarpan-head4 color">
                 The Lokarpan Fellowship is a pro bono program that matches
-                Lokarpan employees with beneficiaries and civic entities for up
-                to six months on full-time technical and research projects.
-                Fellows may leave their day jobs to work alongside the
-                organization’s staff to build scalable solutions, or opt for
-                working remotely as a team to ensure that the work has sustained
-                and lasting impact.
+                members to unique commitments on technical and research projects
+                that amplify social change. Fellows may work on site or opt for
+                working remotely as a team to build scalable solutions with
+                lasting impact on the lives of millions.
               </p>
             </div>
 
