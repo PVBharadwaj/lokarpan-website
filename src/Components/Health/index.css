@@ -7,7 +7,7 @@
 
 .health-full-img-text,
 .livelihood-full-img-text {
-  padding: 150px 220px;
+  padding: 150px 120px;
   color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,6 +35,50 @@
 .livelihood-full-img-text p {
   font-size: 32px;
   font-weight: 500;
+}
+
+.livelihood-full-img-text-head{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.livelihood-full-img-text{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.environment-container-section{
+  margin: 180px 0px !important;
+}
+.livelihood-top-section{
+  margin: var(--navbar-margin);
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  padding-top: 20px;
+  padding-bottom: 120px;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
+}
+
+.livelihood-desp-cards-head{
+  font-size: 54px;
+}
+
+.livelihood-top-section h1{
+  padding: 20px 0px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.livelihood-top-section p{
+  padding: 20px 0px;
+  font-size: 28px;
+}
+
+.justify-top{
+  justify-content: flex-start !important;
 }
 
 .health-full-img img {
@@ -67,8 +111,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 250px 0;
+  margin: 200px 0;
   margin-top: 0;
+}
+
+.environment-main-head{
+  padding: 0px 100px !important;
+  font-size: 48px;
 }
 
 .health-content-section {
@@ -108,13 +157,36 @@
   font-weight: 700;
   margin-top: 0;
 }
+.health-lokarpan-head4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .health-para {
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
   line-height: 32px;
 }
+.livelihood-card-list{
+  gap: 0px !important;
+}
 
+.livelihood-card-list h4{
+  font-size: 30px !important;
+}
+.environment-bottom-section{
+  text-align: left;
+  padding-bottom: 30px;
+}
+.environment-bottom-section h1{
+  font-size: 38px;
+  font-weight: 400;
+}
+.environment-bottom-section p{
+  font-size: 20px;
+}
 .learn-more {
   color: #3f86f0;
   text-decoration: none;
@@ -140,11 +212,24 @@
   }
   .health-full-img-text,
   .livelihood-full-img-text {
-    padding: 40px 30px;
+    padding: 40px 20px;
   }
   .health-full-img-text,
   .livelihood-full-img-text p {
     font-size: 20px;
+  }
+  .livelihood-full-img-text-head{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .environment-main-head{
+    padding: 0px 20px !important;
+    font-size: 30px;
+  }
+  
+  .livelihood-full-img-text{
+    font-size: 20px;
+    font-weight: bold;
   }
   .health-container-section {
     width: calc(100% - 100px);
@@ -181,6 +266,9 @@
   }
   .space-below {
     margin-bottom: 150px;
+  }
+  .health-each-container{
+    margin: 75px 0px;
   }
 }
 

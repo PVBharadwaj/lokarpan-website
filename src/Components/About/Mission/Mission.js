@@ -81,10 +81,8 @@ const Mission = () => {
             <div className="mission-head">Lokarpan offers solutions to empower communities living in stress.</div>
             <div className="mission-content1">
               Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India. <br/>
-              {/* <span  onClick={() => openpopup(0)} className="mission-read-more">Read more</span> */}
               <div className="hyperlinks mission-popup">
               <div className="apply-btn white">
-                  {/* <Link to="/code-of-conduct" className="apply-btn-text-black body-btn">Code of Conduct</Link> */}
                   <span  onClick={() => openpopup(0)} className="mission-read-more apply-btn-text-black body-btn">Read more</span>
               </div>
               </div>
@@ -154,7 +152,7 @@ const Mission = () => {
         <section className="our-purpose">
           <div className="give-card give-card-reverse mission-principles-container">
             <div className="give-card-text">
-            <div className="mission-principles-container-in">
+              <div className="mission-principles-container-in">
               <h1>Our Principles</h1>
                 <div className="faqs">
                   {faqs.map((faq, index) => (

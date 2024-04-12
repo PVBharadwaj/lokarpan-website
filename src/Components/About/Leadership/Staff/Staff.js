@@ -135,7 +135,7 @@ const Staff = () => {
     axios.get('http://127.0.0.1:8000/api/staff/')
       .then(response => {
         setStaffData(response.data);
-        alert("success");
+        // alert("success");
       })
       .catch(error => {
         alert("error");
