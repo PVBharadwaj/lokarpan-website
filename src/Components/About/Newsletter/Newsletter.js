@@ -3,15 +3,16 @@ import "./Newsletter.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
+import Popup from "reactjs-popup";
 
 import {
-  faCirclePlus,
   faNewspaper,
   faCalendarDays,
   faComputer,
   faMicroscope,
-  faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import { counter } from "@fortawesome/fontawesome-svg-core";
+import { IoMdClose } from "react-icons/io";
 
 class Newslettert extends Component {
   constructor(props) {
@@ -22,46 +23,50 @@ class Newslettert extends Component {
     };
   }
 
-  handleNewsletterSelection = (newsletter) => {
-    console.log("news", newsletter);
+  handleNewsletterSelection = (e, newsletter) => {
+    console.log("Hi");
     const { selectedNewsletters } = this.state;
+    let updatedNewsletters;
+
     if (selectedNewsletters.includes(newsletter)) {
-      this.setState({
-        selectedNewsletters: selectedNewsletters.filter(
-          (item) => item !== newsletter
-        ),
-      });
+      updatedNewsletters = selectedNewsletters.filter(
+        (item) => item !== newsletter
+      );
     } else {
-      this.setState({
-        selectedNewsletters: [...selectedNewsletters, newsletter],
-      });
+      updatedNewsletters = [...selectedNewsletters, newsletter];
     }
+
+    this.setState({
+      selectedNewsletters: updatedNewsletters,
+      counter: updatedNewsletters.length,
+    });
   };
 
-  componentDidUpdate(prevProps, prevState) {
-    const { selectedNewsletters } = this.state;
-    if (prevState.selectedNewsletters !== selectedNewsletters) {
-      console.log("list", selectedNewsletters);
-      const len = selectedNewsletters.length;
-      console.log("len", len);
-      this.setState({
-        counter: len,
-      });
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   const { selectedNewsletters } = this.state;
+  //   if (prevState.selectedNewsletters !== selectedNewsletters) {
+  //     console.log("list", selectedNewsletters);
+  //     const len = selectedNewsletters.length;
+  //     console.log("len", len);
+  //     this.setState({
+  //       counter: len,
+  //     });
+  //   }
+  // }
 
-  componentDidMount() {
-    // Initialize counter to the length of selectedNewsletters
-    this.setState({
-      counter: this.state.selectedNewsletters.length,
-    });
-  }
+  // componentDidMount() {
+  //   // Initialize counter to the length of selectedNewsletters
+  //   this.setState({
+  //     counter: this.state.selectedNewsletters.length,
+  //   });
+  // }
 
   render() {
     const { selectedNewsletters, counter } = this.state;
 
+    console.log("count", counter);
     return (
-      <div>
+      <div className="newsletter">
         <Navbar />
         <div className="newsletter-top-section">
           <h1 className="newsletter-heading">
@@ -81,11 +86,14 @@ class Newslettert extends Component {
                 <FontAwesomeIcon icon={faNewspaper} className="daily-icon1" />
                 <div
                   className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("Daily") ? "selected-item" : ""
+                    selectedNewsletters.includes("Daily") ? "" : ""
                   }`}
-                  onClick={() => this.handleNewsletterSelection("Daily")}
                 >
-                  <input type="checkbox" id="newsletter-checkbox-daily" />
+                  <input
+                    type="checkbox"
+                    id="newsletter-checkbox-daily"
+                    onClick={(e) => this.handleNewsletterSelection(e, "Daily")}
+                  />
                   <label
                     htmlFor="newsletter-checkbox-daily"
                     className="ihmHAQ"
@@ -108,13 +116,14 @@ class Newslettert extends Component {
                 />
                 <div
                   className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("Weekly")
-                      ? "selected-item"
-                      : ""
+                    selectedNewsletters.includes("Weekly") ? "" : ""
                   }`}
-                  onClick={() => this.handleNewsletterSelection("Weekly")}
                 >
-                  <input type="checkbox" id="newsletter-checkbox-weekly" />
+                  <input
+                    type="checkbox"
+                    id="newsletter-checkbox-weekly"
+                    onClick={(e) => this.handleNewsletterSelection(e, "Weekly")}
+                  />
                   <label
                     htmlFor="newsletter-checkbox-weekly"
                     className="ihmHAQ"
@@ -139,13 +148,16 @@ class Newslettert extends Component {
                 <FontAwesomeIcon icon={faComputer} className="ic1" />
                 <div
                   className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("NewYorker")
-                      ? "selected-item"
-                      : ""
+                    selectedNewsletters.includes("NewYorker") ? "" : ""
                   }`}
-                  onClick={() => this.handleNewsletterSelection("NewYorker")}
                 >
-                  <input type="checkbox" id="newsletter-checkbox-newyorker" />
+                  <input
+                    type="checkbox"
+                    id="newsletter-checkbox-newyorker"
+                    onClick={(e) =>
+                      this.handleNewsletterSelection(e, "NewYorker")
+                    }
+                  />
                   <label
                     htmlFor="newsletter-checkbox-newyorker"
                     className="ihmHAQ"
@@ -164,13 +176,16 @@ class Newslettert extends Component {
                 <FontAwesomeIcon icon={faMicroscope} className="ic1" />
                 <div
                   className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("Science")
-                      ? "selected-item"
-                      : ""
+                    selectedNewsletters.includes("Science") ? "" : ""
                   }`}
-                  onClick={() => this.handleNewsletterSelection("Science")}
                 >
-                  <input type="checkbox" id="newsletter-checkbox-science" />
+                  <input
+                    type="checkbox"
+                    id="newsletter-checkbox-science"
+                    onClick={(e) =>
+                      this.handleNewsletterSelection(e, "Science")
+                    }
+                  />
                   <label
                     htmlFor="newsletter-checkbox-science"
                     className="ihmHAQ"
@@ -200,10 +215,42 @@ class Newslettert extends Component {
           </ul>
         </section>
         {counter > 0 && (
-          <div className="email">
-            <div className="counter">{counter}</div>
-            <div>E-mail address</div>
-          </div>
+          <Popup
+            className="newsletter-popup-container"
+            modal
+            trigger={
+              <div className="email">
+                <div className="counter">{counter}</div>
+                <div>E-mail address</div>
+              </div>
+            }
+          >
+            {(close) => (
+              <div className="modal">
+                <button className="btn-close" onClick={close}>
+                  <IoMdClose style={{ fontSize: "24px" }} />
+                </button>
+                <div className="n-header"> Email Address </div>
+                <div className="n-content">
+                  <input
+                    type="text"
+                    className="n-input"
+                    placeholder="E-mail Address"
+                  />
+                  <div className="n-email-box">
+                    <span className="span-c">{counter}</span>
+                    <p>complete sign-up</p>
+                  </div>
+                  <p className="n-para">
+                    By signing up, you agree to our User Agreement and Privacy
+                    Policy & Cookie Statement. This site is protected by
+                    reCAPTCHA and the Google Privacy Policy and Terms of Service
+                    apply.
+                  </p>
+                </div>
+              </div>
+            )}
+          </Popup>
         )}
         <Footer />
       </div>

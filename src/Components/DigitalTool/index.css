@@ -100,7 +100,7 @@
   padding-bottom: 40px;
 }
 .temp-each-cont {
-  height: 320px;
+  height: auto;
   width: 280px;
   display: flex;
   flex-direction: column;

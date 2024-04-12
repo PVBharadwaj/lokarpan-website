@@ -380,6 +380,7 @@
   overflow-y: auto;
   /* margin-bottom: 30px; */
   background-color: #f1f4f7;
+  overflow-x: hidden;
 }
 .popup-img {
   width: 100%;
