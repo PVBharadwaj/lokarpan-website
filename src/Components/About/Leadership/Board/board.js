@@ -129,7 +129,7 @@ const Board = () => {
     axios.get('http://127.0.0.1:8000/api/board/')
       .then(response => {
         setBoardData(response.data);
-        alert("success");
+        // alert("success");
       })
       .catch(error => {
         alert("error");
