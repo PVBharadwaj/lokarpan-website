@@ -60,11 +60,7 @@ class PodCasts extends Component {
               Make Me Care About. With Jen Hatmaker
             </h1>
             <p className="font32-podcasts">
-              There are so many things clamoring for our attention, and it’s
-              hard to distill which issues are important…or why we should care.
-              In partnership with The Bill & Melinda Gates Foundation, Make Me
-              Care About... explores topics that have deep importance and impact
-              in the world.
+            Embark on an educational journey with our story podcasts, weaving captivating narratives to inspire young minds
             </p>
             <p className="font25-podcasts">Subscribe on</p>
             <div className="podcasts-icon-cont">
@@ -113,10 +109,9 @@ class PodCasts extends Component {
             </div>
           </div>
           <div className="lower-podcasts-cont">
-            <h1 className="font40-podcasts">Working with Apple Podcasts.</h1>
+            <h1 className="font40-podcasts">Exploring Lokarpan's Podcast Universe</h1>
             <p className="font24-podcasts">
-              Stay up to date on the latest news, features, and best practices
-              that help you create your own podcast.
+            Stay up to date on the latest news, features, and best practices that help us create an enriching content library
             </p>
             <div className="podcasts-icon-cont2">
               <FaSpotify className="icon-size" />

@@ -3,9 +3,7 @@ import './d_project.css'
 
 const Card = (props) => (
     <div className="card_fs">
-      <div className='card_fs_img'>
-      <img src={ props.imgUrl } 
-        alt={ props.alt || 'Image' } />
+      <div style={{backgroundImage: `URL(${props.imgUrl})`}} className='card_fs_img'>
       </div>
       <div className="card-content_fs">
         <div className="card-content_fs1">{ props.date } { " - " } { props.city } { ", " } { props.state }</div>
