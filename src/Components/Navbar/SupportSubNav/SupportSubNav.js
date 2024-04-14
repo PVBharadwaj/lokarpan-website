@@ -57,7 +57,7 @@ const SupportSubNav = () => {
                 <ul className="support-subnav-list">
                   <h1 className="sub-heading">Explore Support</h1>
                   <li>
-                    <Link to="/why-donate">Why Donate</Link>
+                    <Link to="/ways-to-give">Ways to Give</Link>
                   </li>
                   <li>
                     <Link to="/being-a-volunteer">Being a Volunteer</Link>
@@ -66,7 +66,7 @@ const SupportSubNav = () => {
                     <Link to="/our-role">Our Supporters</Link>
                   </li>
                   <li>
-                    <Link to="/ways-to-give">Ways to Give</Link>
+                    <Link to="/why-donate">Why Donate</Link>
                   </li>
                   <li>
                     <Link to="/donate">Donate Now</Link>

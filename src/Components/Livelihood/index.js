@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 // import "./index.css";
 import "../Health/index.css";
 import { Link } from "react-router-dom";
+import { PiContactlessPaymentFill } from "react-icons/pi";
 
 class Livelihood extends Component {
   render() {
@@ -11,21 +12,25 @@ class Livelihood extends Component {
     const Desp = [
       {
         id: 1,
+        img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png",
         head: "Skill Development Initiatives",
         des: "Equipping individuals with the skills and knowledge necessary to excel in diverse livelihood opportunities.",
       },
       {
         id: 2,
+        img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png",
         head: "Entrepreneurship Support",
         des: "Nurturing budding rural entrepreneurs, providing mentorship, training, and access to local producers and broader markets, expanding opportunities for sustainable income.",
       },
       {
         id: 3,
+        img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png",
         head: "Financial Inclusion",
         des: "Promoting access to financial services, micro-loans, and savings mechanisms to empower economic independence.",
       },
       {
         id: 4,
+        img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png",
         head: "Community Capacity Building",
         des: "Strengthening community resilience through education, awareness, and collaborative initiatives for long-term prosperity.",
       },
@@ -45,12 +50,27 @@ class Livelihood extends Component {
               alt="health-img"
             /> */}
             <h1 className="livelihood-full-img-text-head">Building sustainable futures for communities living in stress</h1>
-            <p className="livelihood-full-img-text-para">
+            {/* <p className="livelihood-full-img-text-para">
             At Lokarpan, our approach to livelihood development is rooted in empowerment and sustainability. We believe in creating lasting change by providing opportunities for skill development, fostering entrepreneurship, and facilitating access to markets. By focusing on self-sufficiency, improving agricultural practices, and enhancing trade networks, we pave the way for communities to thrive and grow economically.
-            </p>
+            </p> */}
           </div>
           <div className="health-container-section">
-            <div className="livelihood-top-section">
+            {/* <div className="livelihood-top-section">
+              <p className="livelihood-full-img-text-para">
+                At Lokarpan, our approach to livelihood development is rooted in empowerment and sustainability. We believe in creating lasting change by providing opportunities for skill development, fostering entrepreneurship, and facilitating access to markets. By focusing on self-sufficiency, improving agricultural practices, and enhancing trade networks, we pave the way for communities to thrive and grow economically.
+              </p>
+            </div> */}
+            <div className="health-each-container">
+              <div className="health-content-section content-left">
+                <h1 className="health-lokarpan-head3">Heading</h1>
+                <p className="health-para">
+                At Lokarpan, our approach to livelihood development is rooted in empowerment and sustainability. We believe in creating lasting change by providing opportunities for skill development, fostering entrepreneurship, and facilitating access to markets. By focusing on self-sufficiency, improving agricultural practices, and enhancing trade networks, we pave the way for communities to thrive and grow economically.
+                  <br />
+                </p>
+              </div>
+              <div className="health-cont-img-div health-img2"></div>
+            </div>
+            <div className="livelihood-top-section environment-bottom-section">
               <h1>Strengthening Livelihoods Across Every Link in the Chain</h1>
               <p>In the face of growing economic challenges, particularly amidst the global pandemic, securing livelihoods stands as a crucial mission within Lokarpan's work across various sectors.</p>
               <p>As a dedicated advocate for empowering communities, Lokarpan focuses on bolstering each pivotal element in the livelihood supply chain. Our programs are designed to support every aspect of livelihood development, ensuring that underserved communities have access to the resources they need to thrive.</p>
@@ -85,48 +105,36 @@ class Livelihood extends Component {
                 </p>
               </div>
             </div>
-            <div className="health-each-container">
+            {/* <div className="health-each-container">
               <div className="health-content-section content-left">
                 <h1 className="health-lokarpan-head3">Be a Catalyst for Change</h1>
                 <p className="health-para">
                 Join Lokarpan in our mission to combat social and economic disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
                   <br />
-                  {/* <span>
-                    <Link className="learn-more" to="/">
-                      Learn more
-                    </Link>
-                  </span> */}
                 </p>
               </div>
-              {/* <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
-                alt="learn-img"
-                className="health-cont-img"
-              /> */}
               <div className="health-cont-img-div health-img2"></div>
-            </div>
-            {/* <div className="health-each-container">
-              <div className="health-cont-img-div health-img2"></div>
-              <div className="health-content-section content-right">
-                <h1 className="health-lokarpan-head3">
-                  Adding years to life and life to years
-                </h1>
-                <p className="health-para">
-                  Immerse yourself in stories that will challenge your mind and
-                  capture your heart. Explore new interests and stay on top of
-                  what’s trending. Our global catalogue features leading voices
-                  on the topics you care about — from the biggest names to
-                  independent creators.
-                </p>
-              </div>
             </div> */}
+
+
+            <div className="donate-section">
+              <h1 className="last-space">Be a Catalyst for Change</h1>
+              <p className="our-role-font24">
+              Join Lokarpan in our mission to combat social and economic disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
+              </p>
+              <Link to="/donate" onClick={this.scrollToTop}>
+                <button type="button" className="our-role-apply-btn">
+                  Donate
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className="health-full-img space-below">
+          {/* <div className="health-full-img space-below">
             <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
               alt="health-img"
             />
-          </div>
+          </div> */}
         </div>
         <Footer />
       </>
@@ -137,6 +145,7 @@ class Livelihood extends Component {
 const DespCard = ({ item }) => {
   return (
     <div className="desp-card-list livelihood-card-list">
+      <img src={item.img} style={{width: "50px", height: "50px", paddingBottom: "20px"}}/>
       <h4>{item.head}</h4>
       <p>{item.des}</p>
     </div>
