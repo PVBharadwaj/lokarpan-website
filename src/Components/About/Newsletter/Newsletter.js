@@ -226,29 +226,37 @@ class Newslettert extends Component {
             }
           >
             {(close) => (
-              <div className="modal">
-                <button className="btn-close" onClick={close}>
-                  <IoMdClose style={{ fontSize: "24px" }} />
-                </button>
-                <div className="n-header"> Email Address </div>
-                <div className="n-content">
-                  <input
-                    type="text"
-                    className="n-input"
-                    placeholder="E-mail Address"
-                  />
-                  <div className="n-email-box">
-                    <span className="span-c">{counter}</span>
-                    <p>complete sign-up</p>
-                  </div>
-                  <p className="n-para">
-                    By signing up, you agree to our User Agreement and Privacy
-                    Policy & Cookie Statement. This site is protected by
-                    reCAPTCHA and the Google Privacy Policy and Terms of Service
-                    apply.
-                  </p>
-                </div>
-              </div>
+              // <div className="modal">
+              //   <button className="btn-close" onClick={close}>
+              //     <IoMdClose style={{ fontSize: "24px" }} />
+              //   </button>
+              //   <div className="n-header"> Email Address </div>
+              //   <div className="n-content">
+              //     <input
+              //       type="text"
+              //       className="n-input"
+              //       placeholder="E-mail Address"
+              //     />
+              //     <div className="n-email-box">
+              //       <span className="span-c">{counter}</span>
+              //       <p>complete sign-up</p>
+              //     </div>
+              //     <p className="n-para">
+              //       By signing up, you agree to our User Agreement and Privacy
+              //       Policy & Cookie Statement. This site is protected by
+              //       reCAPTCHA and the Google Privacy Policy and Terms of Service
+              //       apply.
+              //     </p>
+              //   </div>
+              // </div>
+              <iframe
+                src="https://swathipyla.substack.com/embed"
+                width="480"
+                height="320"
+                style={{ border: "1px solid #EEE", background: "white" }}
+                sandbox="allow-scripts allow-same-origin"
+                // scrolling="no"
+              />
             )}
           </Popup>
         )}
