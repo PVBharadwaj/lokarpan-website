@@ -20,6 +20,8 @@ const D_project = () => {
   const [DatesortingOrder, setDateSortingOrder] = useState('Dateasc');
   const [selectedLocation, setSelectedLocation] = useState('All');
   const [selectedProjType, setSelectedProjType] = useState('All');
+  const [activeDateSort, setDateSortActive] = useState(false)
+  const [activeAplhabeticalSort, setAplhabeticalSortActive] = useState(false)
   const fuse = new Fuse(cardsData, {
     keys: ['title', 'content', 'projectType', 'city', 'state'],
     includeScore: true,
@@ -63,6 +65,8 @@ const D_project = () => {
       const dateB = new Date(b.date);
       return DatesortingOrder === 'Dateasc' ? dateA - dateB : dateB - dateA;
     });
+    setDateSortActive(true)
+    setAplhabeticalSortActive(false)
     setDateSortingOrder(DatesortingOrder === 'Dateasc' ? 'Datedesc' : 'Dateasc');
     setCardsData(sortedData);
   };
@@ -71,6 +75,8 @@ const ToogleSortAlphabetically = () => {
     const sortedData = [...cardsData].sort((a, b) => {
       return AlphabeticalsortingOrder === 'Alphabeticalasc' ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title);
     });
+    setAplhabeticalSortActive(true)
+    setDateSortActive(false)
     setAlphabeticalSortingOrder(AlphabeticalsortingOrder === 'Alphabeticalasc' ? 'Alphabeticaldesc' : 'Alphabeticalasc');
     setCardsData(sortedData);
 };
@@ -123,10 +129,10 @@ useEffect(() => {
               <input className='project-form-control text-input with-icon' type='text' value={query} onChange={handleOnSearch} placeholder='Search project' />
               <div className='mobile-sort'>
               <div onClick={ToogleSortDatewise} className='project-sorting sort-datewise d-proj-mobile-only'>
-                <span className='sort-inner'>{DatesortingOrder==='Dateasc' ? <TbCalendarUp/> : <TbCalendarDown/>} </span>
+                <span className={`sort-inner ${activeDateSort ? "sortactive" : ""} `}>{DatesortingOrder==='Dateasc' ? <TbCalendarUp/> : <TbCalendarDown/>} </span>
               </div>
               <div onClick={ToogleSortAlphabetically} className='project-sorting sort-alphabetcaly d-proj-mobile-only'>
-                <span className='sort-inner'>{AlphabeticalsortingOrder==='Alphabeticalasc' ? <FcAlphabeticalSortingZa/> : <FcAlphabeticalSortingAz />} </span>
+                <span className={`sort-inner ${activeAplhabeticalSort ? "sortactive" : ""} `}>{AlphabeticalsortingOrder==='Alphabeticalasc' ? <FcAlphabeticalSortingZa/> : <FcAlphabeticalSortingAz />} </span>
               </div>
             </div>
             </div>
@@ -182,10 +188,10 @@ useEffect(() => {
             </div>
             <div className='sort-section d-proj-desktop-only'>
               <div onClick={ToogleSortDatewise} className='project-sorting sort-datewise'>
-                <span className='sort-inner'>Date {" "} {DatesortingOrder==='Dateasc' ? <TbCalendarUp/> : <TbCalendarDown/>} </span>
+                <span className={`sort-inner ${activeDateSort ? "sortactive" : ""} `}>Date {DatesortingOrder==='Dateasc' ? <TbCalendarUp style={{marginLeft: "5px"}}/> : <TbCalendarDown style={{marginLeft: "5px"}}/>} </span>
               </div>
               <div onClick={ToogleSortAlphabetically} className='project-sorting sort-alphabetcaly'>
-                <span className='sort-inner'>Alphabetical {" "} {AlphabeticalsortingOrder==='Alphabeticalasc' ? <FcAlphabeticalSortingZa/> : <FcAlphabeticalSortingAz />} </span>
+                <span className={`sort-inner ${activeAplhabeticalSort ? "sortactive" : ""} `}>Alphabetical {AlphabeticalsortingOrder==='Alphabeticalasc' ? <FcAlphabeticalSortingZa style={{marginLeft: "5px"}}/> : <FcAlphabeticalSortingAz style={{marginLeft: "5px"}}/>} </span>
               </div>
             </div>
 

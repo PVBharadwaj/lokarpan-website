@@ -16,7 +16,7 @@
 .cards-container_fs {
     
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns in each row */
+  grid-template-columns: repeat(2, 1fr); /* Three columns in each row */
   gap: 20px; /* Adjust the gap between images as needed */
 
   border-radius: 6px;
@@ -29,7 +29,7 @@
 }
 
 .card_fs {
-    height: 300px;
+    height: 400px;
  
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #fff;
@@ -42,27 +42,30 @@
 }
 
 .card_fs_img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-height: 75%;
-}
-
-.card_fs img {
-  width: 100%;
-height: 100%;
+  height: 75%;
 }
 
 
 .card-content_fs1 {
   font-size: 16px;
   font-weight: 300;
-  padding-bottom: 2px;
+  padding: 0px 30px;
 }
 .card-content_fs2 {
   font-size: 20px;
   font-weight: 400;
+  padding: 0px 30px;
 }
 .card-content_fs{
-    padding: 10px;
+  height: 25%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
 }
 .project_listfs{
    display: grid;
@@ -185,9 +188,14 @@ height: 100%;
 
 .sort-section{
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   width: 17%;
   align-items: center;
+}
+
+.sortactive{
+  color: black;
 }
 
 .proj-search-container{
@@ -253,7 +261,6 @@ height: 100%;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: "Inter", sans-serif;
 }
 
 .dropdown-toggle-btn::after {
