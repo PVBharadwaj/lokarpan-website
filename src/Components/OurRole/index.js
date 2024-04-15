@@ -154,10 +154,10 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Our Kith Programme</h4>
+                      {/* <h4>Our Kith Programme</h4> */}
                       <h3>
-                        Explore Lokarpan's engaging and tailored learning
-                        solutions at our Kith n Kin centre.
+                        Building India’s most technologically advanced low cost
+                        schools to foster educational equity
                       </h3>
 
                       <Popup
@@ -187,9 +187,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     OUR KITH PROGRAMME
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     As part of Lokarpan's commitment to
                                     achieving great results through innovation,
@@ -205,16 +205,20 @@ class OurRole extends Component {
                                   />
                                   <div className="popup-content">
                                     <p className="popup-font16">
-                                      Lokarpan's mission is rooted in the
-                                      creation of a holistic educational
-                                      ecosystem for parents, students, and
-                                      educators alike. With a meticulously
-                                      crafted curriculum, cutting-edge teaching
-                                      tools, and comprehensive skill development
-                                      programs, Lokarpan empowers students while
-                                      supporting teachers in effective
+                                      Lokarpan's vision extends far beyond
+                                      traditional education, aiming to cultivate
+                                      a holistic educational ecosystem that
+                                      empowers parents, students, and educators
+                                      alike. Anchored in a meticulously curated
+                                      curriculum and cutting-edge teaching
+                                      tools, Lokarpan stands as a beacon of
+                                      empowerment, supporting effective
                                       curriculum delivery across our expansive
                                       network of 75 partner schools.
+                                    </p>
+                                    <p className="popup-font18">
+                                      The Hub of Innovation: Kith n Kin Centre
+                                      of Excellence
                                     </p>
                                     <p className="popup-font16">
                                       At the heart of this initiative lies the
@@ -230,24 +234,57 @@ class OurRole extends Component {
                                       for low-cost private and publicly aided
                                       schools alike.
                                     </p>
+                                    <p className="popup-font18">
+                                      Catalyzing Discovery: Lokarpan Research
+                                      Centre
+                                    </p>
                                     <p className="popup-font16">
-                                      Established in April 2014, the Kith and
-                                      Kin School in Auraiya, Uttar Pradesh aims
-                                      to elevate education levels in the region.
-                                      Through a specially designed curriculum,
-                                      the school has served as a model for
-                                      developing advanced educational strategies
-                                      and infrastructure for partner schools in
-                                      rural districts, creating a ripple effect
-                                      of progress. By integrating
-                                      state-of-the-art digital classrooms, we
-                                      bolster knowledge retention and spark
-                                      curiosity among students. Complementing
-                                      this, our latest endeavour, the Rural
-                                      Planning and School Design Guidelines,
-                                      sets the benchmark for construction,
-                                      guaranteeing nurturing learning
-                                      environments for generations to come.
+                                      In the pursuit of continuous evolution,
+                                      Lokarpan proudly introduces its Research
+                                      Centre—a crucible of ideas and innovation.
+                                      Here, we delve deep into educational
+                                      methodologies, pioneering new strategies
+                                      to enhance learning outcomes. From
+                                      data-driven insights to cutting-edge
+                                      pedagogical approaches, Lokarpan Research
+                                      Centre is at the forefront of educational
+                                      innovation, shaping the future of
+                                      learning.
+                                    </p>
+                                    <p className="popup-font18">
+                                      The Aurora of Progress: Kith and Kin
+                                      School, Auraiya
+                                    </p>
+                                    <p className="popup-font16">
+                                      Founded in April 2014, the Kith and Kin
+                                      School in Auraiya, Uttar Pradesh, embodies
+                                      Lokarpan's commitment to uplifting
+                                      educational standards in the region.
+                                      Serving as a model of excellence, the
+                                      school pioneers specially designed
+                                      curriculum strategies and infrastructure
+                                      development for partner schools in rural
+                                      districts. Through state-of-the-art
+                                      digital classrooms, Lokarpan ignites
+                                      curiosity and fortifies knowledge
+                                      retention among students.
+                                    </p>
+                                    <p className="popup-font18">
+                                      Pioneering Progress: Rural Planning and
+                                      School Design Guidelines
+                                    </p>
+                                    <p className="popup-font16">
+                                      {" "}
+                                      Lokarpan's latest initiative—the Rural
+                                      Planning and School Design
+                                      Guidelines—ushers in a new era of
+                                      educational infrastructure. By setting
+                                      benchmarks for construction, we ensure
+                                      nurturing learning environments that
+                                      transcend generations. At Lokarpan, every
+                                      endeavour is a stride towards a brighter
+                                      future, where education knows no bounds
+                                      and possibilities are endless.
                                     </p>
                                   </div>
                                 </div>
@@ -268,11 +305,10 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Transition to Digital Learning during COVID </h4>
+                      {/* <h4>Transition to Digital Learning during COVID </h4> */}
                       <h3>
-                        Across age groups, Lokarpan leverages innovative
-                        technology so children and youth can take education into
-                        their own hands.
+                        Helping out of school children get access to digital
+                        learning opportunities during COVID
                       </h3>
 
                       <Popup
@@ -302,9 +338,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     TRANSITION TO DIGITAL LEARNING DURING COVID
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Our digital resources offer an enriching
                                     educational experience that nurtures
@@ -369,10 +405,10 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4> Solving India’s Reading Crisis</h4>
+                      {/* <h4> Solving India’s Reading Crisis</h4> */}
                       <h3>
-                        Lokarpan's reading assessments are curated to advance
-                        children's literacy capabilities with precision.
+                        Helping advance children's literacy capabilities through
+                        curated reading assessments
                       </h3>
 
                       <Popup
@@ -402,9 +438,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     SOLVING INDIA'S READING CRISIS
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Our innovative reading assessments are
                                     enhancing educational outcomes for children
@@ -464,7 +500,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content" onClick={this.updatePopUpOpen}>
-                    <h4> Our Kith Programme</h4>
+                    {/* <h4> Our Kith Programme</h4> */}
                     <h3>
                       Building India’s most technologically advanced low cost
                       schools to foster educational equity
@@ -497,9 +533,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   OUR KITH PROGRAMME
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   As part of Lokarpan's commitment to achieving
                                   great results through innovation, the
@@ -515,16 +551,20 @@ class OurRole extends Component {
                                 />
                                 <div className="popup-content">
                                   <p className="popup-font16">
-                                    Lokarpan's mission is rooted in the creation
-                                    of a holistic educational ecosystem for
-                                    parents, students, and educators alike. With
-                                    a meticulously crafted curriculum,
-                                    cutting-edge teaching tools, and
-                                    comprehensive skill development programs,
-                                    Lokarpan empowers students while supporting
-                                    teachers in effective curriculum delivery
+                                    Lokarpan's vision extends far beyond
+                                    traditional education, aiming to cultivate a
+                                    holistic educational ecosystem that empowers
+                                    parents, students, and educators alike.
+                                    Anchored in a meticulously curated
+                                    curriculum and cutting-edge teaching tools,
+                                    Lokarpan stands as a beacon of empowerment,
+                                    supporting effective curriculum delivery
                                     across our expansive network of 75 partner
                                     schools.
+                                  </p>
+                                  <p className="popup-font18">
+                                    The Hub of Innovation: Kith n Kin Centre of
+                                    Excellence
                                   </p>
                                   <p className="popup-font16">
                                     At the heart of this initiative lies the
@@ -539,24 +579,53 @@ class OurRole extends Component {
                                     standardising quality metrics for low-cost
                                     private and publicly aided schools alike.
                                   </p>
+                                  <p className="popup-font18">
+                                    Catalyzing Discovery: Lokarpan Research
+                                    Centre
+                                  </p>
                                   <p className="popup-font16">
-                                    Established in April 2014, the Kith and Kin
-                                    School in Auraiya, Uttar Pradesh aims to
-                                    elevate education levels in the region.
-                                    Through a specially designed curriculum, the
-                                    school has served as a model for developing
-                                    advanced educational strategies and
-                                    infrastructure for partner schools in rural
-                                    districts, creating a ripple effect of
-                                    progress. By integrating state-of-the-art
-                                    digital classrooms, we bolster knowledge
-                                    retention and spark curiosity among
-                                    students. Complementing this, our latest
-                                    endeavour, the Rural Planning and School
-                                    Design Guidelines, sets the benchmark for
-                                    construction, guaranteeing nurturing
-                                    learning environments for generations to
-                                    come.
+                                    In the pursuit of continuous evolution,
+                                    Lokarpan proudly introduces its Research
+                                    Centre—a crucible of ideas and innovation.
+                                    Here, we delve deep into educational
+                                    methodologies, pioneering new strategies to
+                                    enhance learning outcomes. From data-driven
+                                    insights to cutting-edge pedagogical
+                                    approaches, Lokarpan Research Centre is at
+                                    the forefront of educational innovation,
+                                    shaping the future of learning.
+                                  </p>
+                                  <p className="popup-font18">
+                                    The Aurora of Progress: Kith and Kin School,
+                                    Auraiya
+                                  </p>
+                                  <p className="popup-font16">
+                                    Founded in April 2014, the Kith and Kin
+                                    School in Auraiya, Uttar Pradesh, embodies
+                                    Lokarpan's commitment to uplifting
+                                    educational standards in the region. Serving
+                                    as a model of excellence, the school
+                                    pioneers specially designed curriculum
+                                    strategies and infrastructure development
+                                    for partner schools in rural districts.
+                                    Through state-of-the-art digital classrooms,
+                                    Lokarpan ignites curiosity and fortifies
+                                    knowledge retention among students.
+                                  </p>
+                                  <p className="popup-font18">
+                                    Pioneering Progress: Rural Planning and
+                                    School Design Guidelines
+                                  </p>
+                                  <p className="popup-font16">
+                                    Lokarpan's latest initiative—the Rural
+                                    Planning and School Design Guidelines—ushers
+                                    in a new era of educational infrastructure.
+                                    By setting benchmarks for construction, we
+                                    ensure nurturing learning environments that
+                                    transcend generations. At Lokarpan, every
+                                    endeavour is a stride towards a brighter
+                                    future, where education knows no bounds and
+                                    possibilities are endless.
                                   </p>
                                 </div>
                               </div>
@@ -576,11 +645,10 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Transition to Digital Learning during COVID</h4>
+                    {/* <h4>Transition to Digital Learning during COVID</h4> */}
                     <h3>
-                      Across age groups, Lokarpan leverages innovative
-                      technology so children and youth can take education into
-                      their own hands.
+                      Helping out of school children get access to digital
+                      learning opportunities during COVID
                     </h3>
 
                     <Popup
@@ -610,9 +678,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   TRANSITION TO DIGITAL LEARNING DURING COVID.
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Our digital resources offer an enriching
                                   educational experience that nurtures curiosity
@@ -677,10 +745,10 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Solving India’s Reading Crisis</h4>
+                    {/* <h4>Solving India’s Reading Crisis</h4> */}
                     <h3>
-                      Lokarpan's reading assessments are curated to advance
-                      children's literacy capabilities with precision.
+                      Helping advance children's literacy capabilities through
+                      curated reading assessments
                     </h3>
 
                     <Popup
@@ -710,9 +778,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   SOLVING INDIA'S READING CRISIS
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Our innovative reading assessments are
                                   enhancing educational outcomes for children in
@@ -776,7 +844,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Maternal and Child Health Initiatives</h4>
+                      {/* <h4>Maternal and Child Health Initiatives</h4> */}
                       <h3>
                         Empowering families through essential midwife support
                         and educational resources for maternal and child health.
@@ -809,9 +877,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     MATERNAL AND CHILD HEALTH INITIATIVES
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Project VISTAAR: Advocating for improved
                                     MNCHN programming
@@ -880,7 +948,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Our Vaccination Initiatives</h4>
+                      {/* <h4>Our Vaccination Initiatives</h4> */}
                       <h3>
                         Safeguarding community health through comprehensive
                         vaccination initiatives
@@ -913,9 +981,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     OUR VACCINATION INITIATIVES
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Lokarpan has worked to ensure that children
                                     – no matter who they are or where they live
@@ -972,7 +1040,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Food aid programme</h4>
+                      {/* <h4>Food aid programme</h4> */}
                       <h3>
                         Ensuring adequate nutrition for children is a key focus
                         of our nutrition initiatives.
@@ -1004,9 +1072,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     FOOD AID PROGRAMME
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     We monitor health indicators closely to
                                     address any nutritional gaps and implement
@@ -1069,7 +1137,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4> Maternal and Child Health Initiatives</h4>
+                    {/* <h4> Maternal and Child Health Initiatives</h4> */}
                     <h3>
                       Empowering families through essential midwife support and
                       educational resources for maternal and child health
@@ -1102,9 +1170,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   MATERNAL AND CHILD HEALTH INITIATIVES
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Project VISTAAR: Advocating for improved MNCHN
                                   programming
@@ -1173,7 +1241,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Our Vaccination Initiatives</h4>
+                    {/* <h4>Our Vaccination Initiatives</h4> */}
                     <h3>
                       Safeguarding community health through comprehensive
                       vaccination initiatives
@@ -1206,10 +1274,10 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   {" "}
                                   OUR VACCINATION INITIATIVES
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Lokarpan has worked to ensure that children –
                                   no matter who they are or where they live –
@@ -1264,7 +1332,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>food aid programmes</h4>
+                    {/* <h4>food aid programmes</h4> */}
                     <h3>
                       Ensuring adequate nutrition for children is a key focus of
                       our nutrition initiatives.
@@ -1297,9 +1365,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   FOOD AID PROGRAMME
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   We monitor health indicators closely to
                                   address any nutritional gaps and implement
@@ -1388,7 +1456,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Skill Development</h4>
+                      {/* <h4>Skill Development</h4> */}
                       <h3>
                         Tailored skill development programmes fostering
                         entrepreneurship and self-reliance.
@@ -1420,9 +1488,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     SKILL DEVELOPMENT
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Our initiatives enhance employability,
                                     creating sustainable livelihoods for
@@ -1479,7 +1547,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Microfinance Initiatives</h4>
+                      {/* <h4>Microfinance Initiatives</h4> */}
                       <h3>
                         Empowering individuals and communities through financial
                         inclusion.
@@ -1512,9 +1580,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     MICROFINANCE INITIATIVES
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     In Uttar Pradesh, Lokarpan has helped
                                     reshape communities by fostering financial
@@ -1576,7 +1644,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Economic Resilience Programmes</h4>
+                      {/* <h4>Economic Resilience Programmes</h4> */}
                       <h3>
                         Working with civil society to tackle social exclusion
                       </h3>
@@ -1607,9 +1675,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     ECONOMIC RESILIENCE PROGRAMMES
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Lokarpan's vision for the future includes a
                                     comprehensive Livelihoods intervention,
@@ -1681,7 +1749,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Skill Development</h4>
+                    {/* <h4>Skill Development</h4> */}
                     <h3>
                       Tailored skill development programmes fostering
                       entrepreneurship and self-reliance.
@@ -1714,9 +1782,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   SKILL DEVELOPMENT
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Our initiatives enhance employability,
                                   creating sustainable livelihoods for community
@@ -1772,7 +1840,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4> Microfinance Initiatives</h4>
+                    {/* <h4> Microfinance Initiatives</h4> */}
                     <h3>
                       Empowering individuals and communities through financial
                       inclusion.
@@ -1805,9 +1873,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   MICROFINANCE INITIATIVES
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   In Uttar Pradesh, Lokarpan has helped reshape
                                   communities by fostering financial autonomy
@@ -1868,7 +1936,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4> Economic Resilience Programmes</h4>
+                    {/* <h4> Economic Resilience Programmes</h4> */}
                     <h3>
                       Working with civil society to tackle social exclusion.
                     </h3>
@@ -1900,9 +1968,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   ECONOMIC RESILIENCE PROGRAMMES
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Lokarpan's vision for the future includes a
                                   comprehensive Livelihoods intervention,
@@ -1974,7 +2042,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Design Fellowship</h4>
+                      {/* <h4>Design Fellowship</h4> */}
                       <h3>
                         Help us design the ideal school for our communities.
                       </h3>
@@ -2006,9 +2074,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     DESIGN FELLOWSHIP
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Drawing insights from challenges in rural
                                     educational infrastructure, we invite
@@ -2081,7 +2149,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Reading Rooms</h4>
+                      {/* <h4>Reading Rooms</h4> */}
                       <h3>
                         Learning spaces that sparks curiosity and exploration.
                       </h3>
@@ -2113,9 +2181,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     READING ROOMS
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Transforming spaces that support inclusive
                                     approaches to education, enabling children
@@ -2186,7 +2254,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Sanitation</h4>
+                      {/* <h4>Sanitation</h4> */}
                       <h3>
                         Child-friendly, functional sanitation stalls for school
                         environments
@@ -2219,7 +2287,7 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">SANITATION</h3>
+                                  {/* <h3 className="popup-font40">SANITATION</h3> */}
                                   <p className="popup-font20">
                                     Ensuring a safer, comfortable, and
                                     age-appropriate restroom experience for
@@ -2290,7 +2358,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Design Fellowship</h4>
+                    {/* <h4>Design Fellowship</h4> */}
                     <h3>
                       Help us design the ideal school for our communities.
                     </h3>
@@ -2321,9 +2389,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   DESIGN FELLOWSHIP
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Drawing insights from challenges in rural
                                   educational infrastructure, we invite experts
@@ -2397,7 +2465,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Reading Rooms</h4>
+                    {/* <h4>Reading Rooms</h4> */}
                     <h3>
                       Learning spaces that sparks curiosity and exploration.
                     </h3>
@@ -2429,7 +2497,7 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">READING ROOMS</h3>
+                                {/* <h3 className="popup-font40">READING ROOMS</h3> */}
                                 <p className="popup-font20">
                                   Transforming spaces that support inclusive
                                   approaches to education, enabling children to
@@ -2498,7 +2566,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>Sanitation</h4>
+                    {/* <h4>Sanitation</h4> */}
                     <h3>
                       Child-friendly, functional sanitation stalls for school
                       environments.
@@ -2531,7 +2599,7 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">SANITATION</h3>
+                                {/* <h3 className="popup-font40">SANITATION</h3> */}
                                 <p className="popup-font20">
                                   Ensuring a safer, comfortable, and
                                   age-appropriate restroom experience for
@@ -2628,7 +2696,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>Tree Plantations</h4>
+                      {/* <h4>Tree Plantations</h4> */}
                       <h3>
                         Lokarpan has planted one lakh trees, contributing
                         significantly to reforestation efforts.
@@ -2661,9 +2729,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     TREE PLANTATIONS
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Our ongoing tree plantation initiatives aim
                                     to enhance green cover, combat climate
@@ -2734,7 +2802,7 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4> Annual Migratory Bird Survey</h4>
+                      {/* <h4> Annual Migratory Bird Survey</h4> */}
                       <h3>
                         Safeguarding biodiversity and protecting critical
                         habitats.
@@ -2767,9 +2835,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     ANNUAL MIGRATORY BIRD SURVEY
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Tracking migratory birds across districts to
                                     monitor and conserve exotic bird populations
@@ -2829,9 +2897,9 @@ class OurRole extends Component {
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      <h4>
+                      {/* <h4>
                         Water Quality Assessment and Freshwater Availability
-                      </h4>
+                      </h4> */}
                       <h3>
                         Sustainable, community owned water conservation projects
                       </h3>
@@ -2863,10 +2931,10 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">
+                                  {/* <h3 className="popup-font40">
                                     WATER QUALITY ASSESSMENT AND FRESHWATER
                                     AVAILABILITY
-                                  </h3>
+                                  </h3> */}
                                   <p className="popup-font20">
                                     Promoting conservation practices and
                                     fostering a harmonious balance between human
@@ -2934,7 +3002,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4> Tree Plantations</h4>
+                    {/* <h4> Tree Plantations</h4> */}
                     <h3>
                       Lokarpan has planted one lakh trees, contributing
                       significantly to reforestation efforts.
@@ -2966,9 +3034,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   TREE PLANTATIONS
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Our ongoing tree plantation initiatives aim to
                                   enhance green cover, combat climate change,
@@ -3037,7 +3105,7 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4> Annual Migratory Bird Survey </h4>
+                    {/* <h4> Annual Migratory Bird Survey </h4> */}
                     <h3>
                       Safeguarding biodiversity and protecting critical
                       habitats.
@@ -3070,9 +3138,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   ANNUAL MIGRATORY BIRD SURVEY
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Tracking migratory birds across districts to
                                   monitor and conserve exotic bird populations
@@ -3131,9 +3199,9 @@ class OurRole extends Component {
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    <h4>
+                    {/* <h4>
                       Water Quality Assessment and Freshwater Availability
-                    </h4>
+                    </h4> */}
                     <h3>
                       Sustainable, community owned water conservation projects
                     </h3>
@@ -3165,10 +3233,10 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">
+                                {/* <h3 className="popup-font40">
                                   WATER QUALITY ASSESSMENT AND FRESHWATER
                                   AVAILABILITY
-                                </h3>
+                                </h3> */}
                                 <p className="popup-font20">
                                   Promoting conservation practices and fostering
                                   a harmonious balance between human needs and

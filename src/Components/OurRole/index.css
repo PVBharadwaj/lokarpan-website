@@ -485,6 +485,14 @@
   font-weight: 500;
   line-height: 20px;
 }
+
+.popup-font18 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
 .hidden-overflow {
   overflow: hidden;
 }
