@@ -336,6 +336,8 @@
   align-items: center;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 .n-para {
   font-size: 13px;

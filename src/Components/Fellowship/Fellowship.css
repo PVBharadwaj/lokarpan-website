@@ -186,8 +186,14 @@
   font-size: 18px;
   margin-top: 50px;
 }
+.fellow-space-above {
+  padding-top: 50px;
+}
 
 @media screen and (max-width: 748px) {
+  .fellow-space-above {
+    padding-top: 0;
+  }
   .fellowship-top > .impact-title {
     font-size: 20px;
     padding: 10px 20px;
