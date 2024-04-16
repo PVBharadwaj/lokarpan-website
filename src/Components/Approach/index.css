@@ -88,7 +88,7 @@
 .app-row-cont-left-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 30%;
   height: 90%;
 }
@@ -303,6 +303,8 @@
 .white-head {
   color: white;
   text-align: center;
+  width: 90%;
+  margin: auto;
 }
 .taglines-section {
   width: 80%;
@@ -318,6 +320,11 @@
   margin-bottom: 60px;
   text-align: center;
   font-size: 32px;
+}
+.approach {
+  height: auto;
+  width: 700px;
+  margin: 250px auto;
 }
 
 @media screen and (max-width: 748px) {

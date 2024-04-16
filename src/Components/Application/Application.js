@@ -47,7 +47,7 @@ const Application = () => {
         <div className="app-div">
           <h1 className="app-title title2">
             Lokarpan presents a suite of digital applications to redefine
-            classroom strategies.
+            classroom strategies
           </h1>
           <div className="application-img"></div>
           {/* <img
@@ -117,7 +117,7 @@ const Application = () => {
         <div className="browse-img"></div>
       </div>
       <div className="new-platform-sec">
-        <h1>Be a Catalyst for Change!</h1>
+        <h1>Be a Catalyst for Change</h1>
         {/* <h1>An all-new for developers</h1> */}
         <p>
           Join Lokarpan in our mission to combat educational disparities,

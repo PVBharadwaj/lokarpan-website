@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import EducationSubNav from "../Navbar/EducationSubNav";
 import Navbar from "../Navbar/Navbar";
@@ -14,6 +14,9 @@ const Approach = () => {
     false,
     false,
   ]);
+
+  const headingRefs = Array.from({ length: 4 }, () => useRef());
+  let intersectionObserver = null;
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -54,6 +57,36 @@ const Approach = () => {
     }
   }, [approachPopupVisibility]);
 
+  useEffect(() => {
+    intersectionObserver = new IntersectionObserver(
+      handleIntersection,
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    // Iterate over the array of refs and observe each heading
+    headingRefs.forEach((ref) => {
+      if (ref.current) {
+        intersectionObserver.observe(ref.current);
+      }
+    });
+
+    return () => {
+      if (intersectionObserver) {
+        intersectionObserver.disconnect();
+      }
+    };
+  }, []);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in-animation");
+      } else {
+        entry.target.classList.remove("fade-in-animation");
+      }
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -71,7 +104,7 @@ const Approach = () => {
             and contribute meaningfully to India's bright future.
           </h1>
         </div>
-        <div className="taglines-section">
+        {/* <div className="taglines-section">
           <h1>
             A delivery system that revolutionises education at the systemic
             level
@@ -83,6 +116,21 @@ const Approach = () => {
           <h1>
             Leveraging data to tailor learning experiences and measure progress
           </h1>
+        </div> */}
+
+        <div className="approach">
+          {headingRefs.map((ref, index) => (
+            <h1 key={index} className="font48-podcasts" ref={ref}>
+              {index === 0 &&
+                "A delivery system that revolutionises education at the systemic level"}
+              {index === 1 &&
+                "Utilising technology to bring experts into classrooms"}
+              {index === 2 &&
+                "Inspiring Excellence Through interactive, project-Based Learning"}
+              {index === 3 &&
+                "Leveraging data to tailor learning experiences and measure progress"}
+            </h1>
+          ))}
         </div>
 
         <div className="health-container-section">
@@ -303,25 +351,25 @@ const Approach = () => {
         </div>
         <div className="approach-row-container">
           <div className="app-row-cont-left-container">
-            <h3 className="sub-head1">Plaid</h3>
-            <h3 className="sub-head2">Beyond Ludicrous</h3>
+            {/* <h3 className="sub-head1">Plaid</h3> */}
+            <h3 className="sub-head2">Mission 2030</h3>
             <p className="app-mobile-para">
-              Model S Plaid has the quickest acceleration of any vehicle in
-              production. Updated battery architecture for all Model S trims
-              enables back-to-back track runs without performance degradation.
-              Chat with a Tesla Advisor to learn more about Model S or schedule
-              a demo drive today.
+              75 schools in Uttar Pradesh have adopted Mission 2030, a
+              comprehensive program designed by Lokarpan to help everyone learn
+              to build better schools. These schools are adopting Lokarpan's
+              curriculum, helping to create opportunities for all students and
+              equipping them with the skills they need to pursue their dreams.
             </p>
-            <button className="sub-btn sub-btn-black">Order Now</button>
-            <button className="sub-btn">Compare Model</button>
+            {/* <button className="sub-btn sub-btn-black">Order Now</button>
+            <button className="sub-btn">Compare Model</button> */}
           </div>
           <div className="app-row-cont-right-container">
             <p>
-              Model S Plaid has the quickest acceleration of any vehicle in
-              production. Updated battery architecture for all Model S trims
-              enables back-to-back track runs without performance degradation.
-              Chat with a Tesla Advisor to learn more about Model S or schedule
-              a demo drive today.
+              75 schools in Uttar Pradesh have adopted Mission 2030, a
+              comprehensive program designed by Lokarpan to help everyone learn
+              to build better schools. These schools are adopting Lokarpan's
+              curriculum, helping to create opportunities for all students and
+              equipping them with the skills they need to pursue their dreams.
             </p>
           </div>
         </div>
@@ -455,7 +503,7 @@ const Approach = () => {
           </div>
         </div>
         <div className="new-platform-sec">
-          <h1>Call to Action</h1>
+          <h1>Donate Now</h1>
           {/* <h1>An all-new for developers</h1> */}
           <p>
             If you're unable to volunteer but still want to support our mission,
@@ -468,14 +516,13 @@ const Approach = () => {
             Learn More
           </a> */}
           <Link
-            to="/ways-to-give"
+            to="/donate"
             onClick={scrollToTop}
             className="approach-anchor white-content"
           >
-            {/* <button type="button" className="our-role-apply-btn">
-                Donate
-              </button> */}
-            Learn More
+            <button type="button" className="our-role-apply-btn">
+              Donate
+            </button>
           </Link>
         </div>
       </div>

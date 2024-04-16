@@ -13,7 +13,7 @@ const Fellowship = () => {
       <div className="fellowship-top">
         <h1>
           At Lokarpan, we firmly believe that the best solutions arise from
-          those who intimately understand the challenges at hand.
+          those who intimately understand the challenges at hand
         </h1>
       </div>
       <div className="fellowship-page">
@@ -116,11 +116,9 @@ const Fellowship = () => {
           journey of discovery and impact.
         </p>
 
-        <div className="apply-btn white">
-          <Link to="/" className="apply-btn-text-black body-btn">
-            Apply
-          </Link>
-        </div>
+        <Link to="/">
+          <button className="fell-apply-btn">Apply</button>
+        </Link>
       </div>
       <Footer />
     </>

@@ -22,9 +22,9 @@ class DigitalTool extends Component {
         <div className="digital-tool-container">
           <div className="digital-tool-head-cont">
             {/* <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708782682/Group_1765_cvdn5q.png" /> */}
-            <h1>
+            {/* <h1>
               Transforming education through innovative technology solutions
-            </h1>
+            </h1> */}
           </div>
           <div className="digital-tool-img-sec">
             <h1>Heading</h1>
@@ -153,7 +153,7 @@ class DigitalTool extends Component {
             </div>
           </div>
           <div className="digital-tool-last-sec">
-            <h3>Be a Catalyst for Change!</h3>
+            <h3>Be a Catalyst for Change</h3>
             <p>
               Join Lokarpan in our mission to combat educational disparities,
               empowering at-risk communities for a brighter future. Your support
