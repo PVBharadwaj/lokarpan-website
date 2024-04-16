@@ -32,13 +32,23 @@ const Plans = [
 ];
 
 const Application = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto", // Optional: Add smooth scrolling behavior
+    });
+  };
+
   return (
     <>
       <Navbar />
       <EducationSubNav />
       <div className="app-page">
         <div className="app-div">
-          <h1 className="app-title title2">Work as one. or one thousand.</h1>
+          <h1 className="app-title title2">
+            Lokarpan presents a suite of digital applications to redefine
+            classroom strategies
+          </h1>
           <div className="application-img"></div>
           {/* <img
             className="application-img"
@@ -46,22 +56,27 @@ const Application = () => {
             alt=""
           /> */}
           <p className="application-para1">
-            Immerse yourself in stories that will challenge your mind and
-            capture your heart. Explore new interests and stay on top of what’s
-            trending. Our global catalogue features leading voices on the topics
-            you care about — from the biggest names to independent creators.
+            The education sector is constantly evolving, and technology has
+            played a significant role in shaping the way we learn. Our goal? To
+            craft a digital roadmap that integrates our data repository,
+            learning management systems, and predictive performance based
+            analytics for educational success.
           </p>
-          <h2 className="app-title title3">
-            We ask communities what they need
-          </h2>
+          <h2 className="app-title title3">Adobe</h2>
           <p className="application-para2">
-            Lokarpan is a non-profit organization registered under the Societies
-            Registration Act 1860. Lokarpan is registered u/s 12A of the Income
-            Tax Act, 1961. Lokarpan is registered under the Foreign
-            Contributions (Regulation) Act FCRA 136550133, and renewed dated
-            01.1.2016 for the receipt of foreign donations. Lokarpan assumes no
-            obligation to update any forward looking statement or information,
-            which speak as of their respective dates.
+            Introducing Lokarpan's Adobe-powered web application, a
+            transformative tool for tracking student performance and well-being.
+            With modules like RankMaster for academic rankings and HealthMap for
+            health monitoring, schools can efficiently manage exams and provide
+            real-time feedback, empowering rural communities in Uttar Pradesh.
+          </p>
+          <h2 className="app-title title3">Horizon</h2>
+          <p className="application-para2">
+            Horizon, our innovative web application, harnesses Bayesian models
+            to analyse student quizzes and assessments. This enables us to offer
+            personalised recommendations for academic improvement, providing
+            teachers with invaluable insights to tailor their teaching
+            strategies effectively.
           </p>
         </div>
       </div>
@@ -100,6 +115,28 @@ const Application = () => {
           </div>
         </div>
         <div className="browse-img"></div>
+      </div>
+      <div className="new-platform-sec">
+        <h1>Be a Catalyst for Change</h1>
+        {/* <h1>An all-new for developers</h1> */}
+        <p>
+          Join Lokarpan in our mission to combat educational disparities,
+          empowering at-risk communities for a brighter future. Your support
+          fuels innovation and transformative impact.
+        </p>
+        {/* <a href="#" className="approach-anchor">
+            Learn More
+          </a> */}
+        <Link
+          to="/ways-to-give"
+          onClick={scrollToTop}
+          className="approach-anchor white-content"
+        >
+          {/* <button type="button" className="our-role-apply-btn">
+                Donate
+              </button> */}
+          Learn More
+        </Link>
       </div>
       <Footer />
     </>

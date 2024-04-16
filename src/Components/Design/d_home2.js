@@ -18,7 +18,7 @@ export default class d_home extends Component {
 
     <h1>Browse accessories or find new colours to go with your devices.</h1>
 
-<div className='d_home_section2_image'></div>
+<div className='d_home_section2_image1'></div>
 
 </section>
 <section className='d_our_team'>

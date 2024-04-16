@@ -15,12 +15,10 @@ const Moonshots = () => {
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623658/100_2093_1_zr9bw1.png"
               alt="img1"
             />
-            <h3 className="impact-title">We look for big ideas.</h3>
+            <h3 className="impact-title">Progressive Curriculum:</h3>
             <p className="fellow-data">
-              We believe big things can happen when you dont shy from big ideas.
-              We look for non-profits, social enterprises and civic entities who
-              understand the needs of marginilized and vulnerable populations
-              andare working to address inequities at scale.
+            Developing technology-driven, innovative curriculum to empower rural students for a brighter future.
+
             </p>
           </div>
           <div className="sub-div">
@@ -29,22 +27,14 @@ const Moonshots = () => {
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623659/IMG_3313_2_zapx1r.png"
               alt="img2"
             />
-            <h3 className="impact-title">We ask communities what they need.</h3>
+            <h3 className="impact-title">Empowering Educators:</h3>
             <p className="fellow-data">
-              We believe big things can happen when you dont shy from big ideas.
-              We look for non-profits, social enterprises and civic entities who
-              understand the needs of marginilized and vulnerable populations
-              andare working to address inequities at scale.
+            Empowering Educators: Equipping teachers with skills for engaging lesson plans, enhancing Mathematics and Science education quality.
+
             </p>
           </div>
         </div>
-        <div className="third-div">
-          <h5 className="impact-head">ACCLERATING IMPACT</h5>
-          <h2 className="impact-title">
-            We provide support through a combination of funding, innovation and
-            technical expertise.
-          </h2>
-        </div>
+        
         <div className="second-div">
           <div className="sub-div">
             <img
@@ -52,12 +42,10 @@ const Moonshots = () => {
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623659/DSC04890_1_xxtsrn.png"
               alt="img1"
             />
-            <h3 className="impact-title">We look for big ideas.</h3>
+            <h3 className="impact-title">Strategic Partnerships: </h3>
             <p className="fellow-data">
-              We believe big things can happen when you dont shy from big ideas.
-              We look for non-profits, social enterprises and civic entities who
-              understand the needs of marginilized and vulnerable populations
-              andare working to address inequities at scale.
+            Forging collaborations with higher education institutes, fostering innovation in education practices.
+
             </p>
           </div>
           <div className="sub-div">
@@ -66,22 +54,22 @@ const Moonshots = () => {
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623657/Rectangle_1875_akaqkc.png"
               alt="img2"
             />
-            <h3 className="impact-title">We ask communities what they need.</h3>
+            <h3 className="impact-title">Infrastructure Investment:</h3>
             <p className="fellow-data">
-              We believe big things can happen when you dont shy from big ideas.
-              We look for non-profits, social enterprises and civic entities who
-              understand the needs of marginilized and vulnerable populations
-              andare working to address inequities at scale.
+            Building modern facilities and classrooms to inspire creativity and ensure access to quality education.
+
+
             </p>
           </div>
         </div>
       </div>
 
       <div className="opp moonshots-opp">
-        <h3 className="opp-head fellow-data">OPPORTUNITIES</h3>
+        <h3 className="opp-head fellow-data">Be a Catalyst for Change
+</h3>
         <p className="opp-data impact-title">
-          Through Google.org Impact challenges, we award nonprofits and social
-          enterprises with support to help bring their ideas to life.
+        Join Lokarpan in our mission to combat educational disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
+
         </p>
         <div className="apply-btn white">
           <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>

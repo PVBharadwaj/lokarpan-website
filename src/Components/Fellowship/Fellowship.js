@@ -13,7 +13,7 @@ const Fellowship = () => {
       <div className="fellowship-top">
         <h1>
           At Lokarpan, we firmly believe that the best solutions arise from
-          those who intimately understand the challenges at hand.
+          those who intimately understand the challenges at hand
         </h1>
       </div>
       <div className="fellowship-page">
@@ -93,16 +93,32 @@ const Fellowship = () => {
       </div>
 
       <div className="opp">
-        <h3 className="opp-head fellow-data">OPPORTUNITIES</h3>
+        <h3 className="opp-head fellow-data">What You’ll Do</h3>
         <p className="opp-data impact-title">
-          Through Google.org Impact challenges, we award nonprofits and social
-          enterprises with support to help bring their ideas to life.
+          As a Lokarpan Fellow, you'll be an integral part of a team of
+          passionate individuals, actively engaged in our mission to transform
+          education and empower rural communities.
         </p>
-        <div className="apply-btn white">
-          <Link to="/" className="apply-btn-text-black body-btn">
-            Apply
-          </Link>
-        </div>
+        <p className="opp-data impact-title">
+          Your role will involve formulating innovative solutions to drive
+          impactful change. You'll have the opportunity to develop and present
+          recommendations to our partner schools and communities, working
+          closely with our dedicated team members on ground. Throughout your
+          journey, you'll receive exceptional training and mentoring sessions
+          from experienced colleagues and partners.
+        </p>
+        <p className="opp-data impact-title">
+          At Lokarpan, we believe in broadening your skills and experiences.
+          While you'll contribute your unique talents and insights, you'll also
+          have the chance to learn and grow in a diverse and dynamic
+          environment. Whether you're new to the field or an experienced
+          professional, joining our Fellowship Program means embarking on a
+          journey of discovery and impact.
+        </p>
+
+        <Link to="/">
+          <button className="fell-apply-btn">Apply</button>
+        </Link>
       </div>
       <Footer />
     </>

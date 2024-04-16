@@ -3,6 +3,11 @@
     justify-content: center;
     align-items: center;
 }
+.d_home_section2_image1{
+    width:1072px;
+    height: 500px;
+background-color: rgb(147, 112, 70) ;
+}
 .our_team_image{
     background-color:bisque ;
     width: 100px;

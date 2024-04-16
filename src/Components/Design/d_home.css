@@ -2,6 +2,9 @@
     justify-content: center;
     text-align: center;
     padding: 10% 25% 5% 25%;
+color: #fff;
+    height: 500px;
+background-color: aquamarine;
 }
 .d_home_hero_head1{
     font-size: 64px;

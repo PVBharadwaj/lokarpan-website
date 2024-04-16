@@ -150,6 +150,7 @@
   padding: 0px 120px;
   font-size: 24px;
   color: #333333;
+  margin-bottom: 100px;
 }
 
 .fourth-div > .impact-title {
@@ -164,15 +165,27 @@
 }
 
 .opp-data {
-  padding: 50px;
-  font-size: 48px;
-  font-weight: bolder;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .opp-head {
-  font-size: 20px;
+  font-size: 28px;
   padding: 0px;
   font-weight: 500;
+}
+.fell-apply-btn {
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 748px) {

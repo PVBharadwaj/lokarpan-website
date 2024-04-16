@@ -327,12 +327,11 @@
 }
 .card-content h3 {
   padding: 18px 18px 0;
-  font-size: 16px; /*18px*/
+  font-size: 17px; /*18px*/
   font-weight: 400;
-  line-height: 25px;
+  line-height: 27px;
   margin-top: 5px;
   padding-left: 10px;
-  padding-top: 10px;
 }
 .card-content h4 {
   font-size: 15px;
@@ -484,6 +483,14 @@
   margin-bottom: 30px;
   font-weight: 500;
   line-height: 20px;
+}
+
+.popup-font18 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
 }
 .hidden-overflow {
   overflow: hidden;
