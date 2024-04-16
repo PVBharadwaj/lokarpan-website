@@ -116,12 +116,17 @@ const FellowData = [
     hyperlink2: <i class="bi bi-house-door"></i>,
   },
 ];
-
 const Fellows = () => {
-  const [handleYear, sethandleYear] = useState("All")
-  const handleyear = (event) => {
-    sethandleYear(event.target.innerHTML);
-  }
+  const [selectedfellow, setSelectedfellow] = useState('All');
+  const [isfellowsDropdownOpen, setfellowsDropdownOpen] = useState(null); 
+  const TogglefellowDropdown = (dropdownType) => {
+    setfellowsDropdownOpen(isfellowsDropdownOpen === dropdownType ? null : dropdownType);
+  };
+  const handlefellowFilter = (year) => {
+    setSelectedfellow(year);
+    // applyFilters(cardsData, selectedLocation, projType); 
+    TogglefellowDropdown("proj-type");
+};
   return (
     <>
     <Navbar />
@@ -130,16 +135,33 @@ const Fellows = () => {
         <h2 className="title1">Fellows</h2>
         <div className="lead-search">
           <SearchBar />
+        </div> 
+
+        <div id='fellowsdropdown' className='project-dropdown-container proj-type'>
+          <button onClick={() => TogglefellowDropdown("proj-type")} className={`dropdown-toggle-btn active-btn ${isfellowsDropdownOpen==="proj-type" ? "active" : ""}`} type='button' value={"All"}>
+            <span>{selectedfellow}</span>
+          </button>
+            <div className={`project-dropdown scroll ${isfellowsDropdownOpen==="proj-type" ? "active" : ""}`}>
+              <button className=' inactive-btn ' onClick={() => handlefellowFilter('All')} type='button' value={"All"}>
+                <span>All</span>
+              </button>
+              <button className=' inactive-btn ' onClick={() => handlefellowFilter('2024')} type='button' value={"2024"}>
+                <span>2024</span>
+              </button>
+              <button className=' inactive-btn ' onClick={() => handlefellowFilter('2023')} type='button' value={"2023"}>
+                <span>2023</span>
+              </button>
+              <button className=' inactive-btn ' onClick={() => handlefellowFilter('2022')} type='button' value={"2022"}>
+                <span>2022</span>
+              </button>
+              <button className=' inactive-btn ' onClick={() => handlefellowFilter('2021')} type='button' value={"2021"}>
+                <span>2021</span>
+              </button>
+              <button className=' inactive-btn ' onClick={() => handlefellowFilter('2020')} type='button' value={"2020"}>
+                <span>2020</span>
+              </button>
+            </div>
         </div>
-        <div className="year-pointer">
-          <p className="year-pointer-btn" onClick={handleyear}>All</p>
-          <p className="year-pointer-btn" onClick={handleyear}>2024</p>
-          <p className="year-pointer-btn" onClick={handleyear}>2023</p>
-          <p className="year-pointer-btn" onClick={handleyear}>2022</p>
-          <p className="year-pointer-btn" onClick={handleyear}>2021</p>
-          <p className="year-pointer-btn" onClick={handleyear}>2020</p>
-        </div>
-        <div className="year-pointer-index"><p className="year-pointer-btn">{handleYear}</p></div>
         <div className="card-list">
           {FellowData.map((item, index) => (
             <Card key={index} item={item} />

@@ -52,6 +52,7 @@
     background-color: white;
     color: black;
     overflow: auto;
+    z-index: 102;
 }
 
 .mission-principles-container{
@@ -324,6 +325,7 @@ border: none;
 .mission-popup{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media (max-width:750px){
@@ -342,6 +344,9 @@ border: none;
     }
     .our-principles-inner p{
         font-size: 16px;
+    }
+    .mission-card{
+        height: 100%;
     }
 
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-width: 320px;
 }
 
 .fin-desp-head {
@@ -12,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 630px;
+  min-width: 320px;
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708923066/image_338_t09wfz.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -104,6 +106,12 @@ hr {
 
 .file {
   padding: 5px 20px;
+}
+
+@media screen and  (min-width: 748px) and (max-width: 1000px) {
+  .add-repo-text {
+    grid-column: span 6;
+  }
 }
 
 @media screen and (max-width: 748px) {
