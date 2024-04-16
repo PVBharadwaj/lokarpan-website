@@ -72,13 +72,8 @@ const History = () => {
        
       </div>
       <div className="history-right-side">
-      <p className='history-subheader'>Since our formation in 1926, Lokarpan has 
-      operated as a single global partnership united by a strong set of 
-      values, and the drive to deliver positive, enduring change.</p>
-      <p className='history-subheader1'>Today, we continue to combine bold 
-      strategies and transformative technologies to support organizations to 
-      innovate more sustainably, achieve lasting gains in performance, and 
-      build workforces that will thrive for this generation and the next.</p>
+      <p className='history-subheader'>Established in November 1996, Lokarpan emerged as a beacon of hope for rural communities grappling with poverty and inequity. Under the guidance of Shri H.V. Singh, our organisation was born from the belief in empowering communities to become architects of their own progress. This ethos formed the bedrock of our mission: to organise and empower the rural poor, fostering development as a catalyst for social justice, economic growth, and self-reliance. </p>
+      <p className='history-subheader1'>Over two decades, Lokarpan has developed a comprehensive strategy rooted in community engagement, forging sustainable solutions to the diverse challenges confronting rural India. Through our strategic partnerships, we've built a robust network of change-makers, amplifying our impact and driving inclusive development. With a team of sector-specialist trainers, locally trained staff, and grassroots infrastructure, Lokarpan remains steadfast in its commitment to a brighter, more equitable future for all.</p>
       </div>
       </div>
     <div className="history-section-container">

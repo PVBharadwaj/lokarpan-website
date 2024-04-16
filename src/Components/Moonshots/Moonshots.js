@@ -78,10 +78,11 @@ const Moonshots = () => {
       </div>
 
       <div className="opp moonshots-opp">
-        <h3 className="opp-head fellow-data">OPPORTUNITIES</h3>
+        <h3 className="opp-head fellow-data">Be a Catalyst for Change
+</h3>
         <p className="opp-data impact-title">
-          Through Google.org Impact challenges, we award nonprofits and social
-          enterprises with support to help bring their ideas to life.
+        Join Lokarpan in our mission to combat educational disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
+
         </p>
         <div className="apply-btn white">
           <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>
