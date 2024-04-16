@@ -25,7 +25,7 @@ const Fellowship = () => {
               alt="img1"
             />
             <h3 className="impact-title">We look for big ideas.</h3>
-            <p className="fellow-data">
+            <p className="fellow-data fellow-space-above">
               By joining Lokarpan Fellows, you become part of a community-driven
               initiative where your insights, experiences, and ideas are not
               just valued but actively sought after. Whether you're working in a

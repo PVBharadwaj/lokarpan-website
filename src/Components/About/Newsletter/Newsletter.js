@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import Popup from "reactjs-popup";
+import axios from "axios";
+// import clsx from "@mui/base/node_modules/clsx";
 
 import {
   faNewspaper,
@@ -20,8 +22,13 @@ class Newslettert extends Component {
     this.state = {
       selectedNewsletters: [],
       counter: 0,
+      email: "",
     };
   }
+
+  onChangeEmail = (event) => {
+    this.setState({ email: event.target.email });
+  };
 
   handleNewsletterSelection = (e, newsletter) => {
     console.log("Hi");
@@ -39,6 +46,21 @@ class Newslettert extends Component {
     this.setState({
       selectedNewsletters: updatedNewsletters,
       counter: updatedNewsletters.length,
+    });
+  };
+
+  handleSubmit = async () => {
+    const { email } = this.state;
+    const formField = new FormData();
+    formField.append("email", email);
+    console.log(formField.get("email"));
+
+    await axios({
+      method: "post",
+      url: "http://127.0.0.1:8000/api/newsletter_subscibe/",
+      data: formField,
+    }).then((response) => {
+      console.log(response.data);
     });
   };
 
@@ -62,7 +84,7 @@ class Newslettert extends Component {
   // }
 
   render() {
-    const { selectedNewsletters, counter } = this.state;
+    const { selectedNewsletters, counter, email } = this.state;
 
     console.log("count", counter);
     return (
@@ -226,37 +248,39 @@ class Newslettert extends Component {
             }
           >
             {(close) => (
-              // <div className="modal">
-              //   <button className="btn-close" onClick={close}>
-              //     <IoMdClose style={{ fontSize: "24px" }} />
-              //   </button>
-              //   <div className="n-header"> Email Address </div>
-              //   <div className="n-content">
-              //     <input
-              //       type="text"
-              //       className="n-input"
-              //       placeholder="E-mail Address"
-              //     />
-              //     <div className="n-email-box">
-              //       <span className="span-c">{counter}</span>
-              //       <p>complete sign-up</p>
-              //     </div>
-              //     <p className="n-para">
-              //       By signing up, you agree to our User Agreement and Privacy
-              //       Policy & Cookie Statement. This site is protected by
-              //       reCAPTCHA and the Google Privacy Policy and Terms of Service
-              //       apply.
-              //     </p>
-              //   </div>
-              // </div>
-              <iframe
-                src="https://swathipyla.substack.com/embed"
-                width="480"
-                height="320"
-                style={{ border: "1px solid #EEE", background: "white" }}
-                sandbox="allow-scripts allow-same-origin"
-                // scrolling="no"
-              />
+              <div className="modal">
+                <button className="btn-close" onClick={close}>
+                  <IoMdClose style={{ fontSize: "24px" }} />
+                </button>
+                <div className="n-header"> Email Address </div>
+                <div className="n-content">
+                  <input
+                    type="text"
+                    className="n-input"
+                    placeholder="E-mail Address"
+                    value={email}
+                    onChange={this.onChangeEmail}
+                  />
+                  <button className="n-email-box" onClick={this.handleSubmit}>
+                    <span className="span-c">{counter}</span>
+                    <p>complete sign-up</p>
+                  </button>
+                  <p className="n-para">
+                    By signing up, you agree to our User Agreement and Privacy
+                    Policy & Cookie Statement. This site is protected by
+                    reCAPTCHA and the Google Privacy Policy and Terms of Service
+                    apply.
+                  </p>
+                </div>
+              </div>
+              // <iframe
+              //   src="https://swathipyla.substack.com/embed"
+              //   width="480"
+              //   height="320"
+              //   style={{ border: "1px solid #EEE", background: "white" }}
+              //   sandbox="allow-scripts allow-same-origin"
+              //   // scrolling="no"
+              // />
             )}
           </Popup>
         )}
