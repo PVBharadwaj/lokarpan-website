@@ -3,6 +3,9 @@ import Navbar from "../Navbar/Navbar";
 import "./Moonshots.css";
 import { Link } from "react-router-dom";
 const Moonshots = () => {
+  const scrollToTopAndNavigate = () => {
+    window.scrollTo(0, 0); 
+  };
   return (
     <>
       <Navbar />
@@ -63,18 +66,17 @@ const Moonshots = () => {
           </div>
         </div>
       </div>
-
-      <div className="opp moonshots-opp">
-        <h3 className="opp-head fellow-data">Be a Catalyst for Change
-</h3>
-        <p className="opp-data impact-title">
-        Join Lokarpan in our mission to combat educational disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
-
-        </p>
-        <div className="apply-btn white">
-          <Link to="/" className="apply-btn-text-black body-btn">Apply</Link>
-        </div>
-      </div>
+      <div className="donate-section">
+              <h1 className="last-space">Be a Catalyst for Change</h1>
+              <p className="our-role-font24">
+              Join Lokarpan in our mission to combat social and economic disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
+              </p>
+              <Link to="/donate" onClick={scrollToTopAndNavigate}>
+                <button type="button" className="our-role-apply-btn">
+                  Donate
+                </button>
+              </Link>
+            </div>
       <Footer />
     </>
   );

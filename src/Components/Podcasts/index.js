@@ -120,6 +120,7 @@ const PodCasts = () => {
             Virtual Experts Enriching Classroom Experiences
             </h1>
           </div>
+          <h1 className="font24-podcasts space-blw">Speaker profiles</h1>
           <div className="like-container">
             <div className="like-left-cont">
               {/* <h1 className="font48-left-podcasts">Personalized Discovery</h1> */}
@@ -131,7 +132,7 @@ const PodCasts = () => {
               {/* <p className="font24-podcasts space-blw">Speaker profiles</p> */}
               <div className="like-right-img-cont">
                 <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
+                  src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713273901/Screenshot_2024-04-16_185311_gwamnh.png"
                   className="like-img"
                   onClick={() => openpopup(0)}
                 />

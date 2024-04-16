@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0px 123px;
 }
 
 .fellowship-nav h1,
@@ -75,7 +74,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 48%;
+  width: 100%;
 }
 
 .second-div > .sub-div > .impact-title {
@@ -210,6 +209,7 @@
   .second-div {
     flex-direction: column;
     gap: 50px;
+    padding: 50px 0px;
   }
 
   .second-div > .sub-div > .impact-title {

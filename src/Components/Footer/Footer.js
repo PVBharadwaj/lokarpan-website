@@ -24,6 +24,10 @@ const Footer = () => {
     }));
   };
 
+  const scrollToTopAndNavigate = () => {
+    window.scrollTo(0, 0); 
+  };
+
   return (
     <>
       <div className="footer-container footer-mobile">
@@ -154,7 +158,7 @@ const Footer = () => {
                   <Link to="/">Get in Touch</Link>
                 </li>
                 <li>
-                  <Link to="/newsletter">Newsletter</Link>
+                  <Link onClick={scrollToTopAndNavigate} to="/newsletter">Newsletter</Link>
                 </li>
                 <li>
                   <Link to="/sitemap">Sitemap</Link>
