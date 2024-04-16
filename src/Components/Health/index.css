@@ -47,8 +47,8 @@
   font-weight: bold;
 }
 
-.environment-container-section {
-  margin: 180px 0px !important;
+.environment-container-section{
+  margin: 75px 0px 0px !important;
 }
 .livelihood-top-section {
   margin: var(--navbar-margin);
@@ -76,6 +76,9 @@
   padding: 20px 0px;
   font-size: 28px;
 }
+.environment-desp-cards{
+  padding: 60px 0px 0px !important;
+}
 
 .justify-top {
   justify-content: flex-start !important;
@@ -94,6 +97,7 @@
   background-size: cover;
   width: 100%;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 .health-container-section {
@@ -202,58 +206,10 @@
   margin-bottom: 100px;
 }
 
-.new-head-text {
-  width: 80%;
-  margin: 150px auto;
-  text-align: center;
-}
-.health-cards-section {
-  height: auto;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.health-head {
-  margin: 30px 0px;
-  text-align: center;
-}
-
-.health-para2 {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 30px;
-  width: 90%;
-}
-
-.health-cards-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  margin-bottom: 100px;
-}
-.health-cards-cont-each-card {
-  height: 200px;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start;
-  margin: 50px auto;
-}
-.health-cards-cont-each-card h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.health-cards-cont-each-card p {
-  font-size: 18px;
-  line-height: 25px;
+@media screen and  (min-width: 748px) and (max-width: 1000px) {
+  .health-full-img-text,.livelihood-full-img-text{
+    padding: 150px 20px;
+  }
 }
 
 @media screen and (max-width: 748px) {
@@ -297,6 +253,12 @@
   .livelihood-full-img-text {
     font-size: 20px;
     font-weight: bold;
+  }
+  .livelihood-top-section h1{
+    font-size: 30px;
+  }
+  .livelihood-card-list h4{
+    font-size: 24px !important;
   }
   .health-container-section {
     width: calc(100% - 100px);

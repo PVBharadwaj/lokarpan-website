@@ -1,13 +1,16 @@
 import { Component } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-// import "./index.css";
 import "../Health/index.css";
 import { Link } from "react-router-dom";
 import { PiContactlessPaymentFill } from "react-icons/pi";
 
 class Livelihood extends Component {
   render() {
+
+    const scrollToTopAndNavigate = () => {
+      window.scrollTo(0, 0); 
+    };
 
     const Desp = [
       {
@@ -43,23 +46,10 @@ class Livelihood extends Component {
           <h1>Livelihood</h1>
         </div>
         <div className="health-container">
-          {/* <div className="health-full-img"> */}
           <div className="livelihood-full-img-text">
-            {/* <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
-              alt="health-img"
-            /> */}
             <h1 className="livelihood-full-img-text-head">Building sustainable futures for communities living in stress</h1>
-            {/* <p className="livelihood-full-img-text-para">
-            At Lokarpan, our approach to livelihood development is rooted in empowerment and sustainability. We believe in creating lasting change by providing opportunities for skill development, fostering entrepreneurship, and facilitating access to markets. By focusing on self-sufficiency, improving agricultural practices, and enhancing trade networks, we pave the way for communities to thrive and grow economically.
-            </p> */}
           </div>
           <div className="health-container-section">
-            {/* <div className="livelihood-top-section">
-              <p className="livelihood-full-img-text-para">
-                At Lokarpan, our approach to livelihood development is rooted in empowerment and sustainability. We believe in creating lasting change by providing opportunities for skill development, fostering entrepreneurship, and facilitating access to markets. By focusing on self-sufficiency, improving agricultural practices, and enhancing trade networks, we pave the way for communities to thrive and grow economically.
-              </p>
-            </div> */}
             <div className="health-each-container">
               <div className="health-content-section content-left">
                 <h1 className="health-lokarpan-head3">Heading</h1>
@@ -86,55 +76,28 @@ class Livelihood extends Component {
               </div>
             </div>
             <div className="health-each-container">
-              {/* <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
-                alt="learn-img"
-                className="health-cont-img"
-              /> */}
               <div className="health-cont-img-div health-img2"></div>
               <div className="health-content-section content-right">
                 <h1 className="health-lokarpan-head3">Empowering Communities, Igniting Economic Growth</h1>
                 <p className="health-para">
                 Lokarpan is dedicated to creating avenues for economic growth and prosperity. We work tirelessly to identify and develop new opportunities for income generation, whether through entrepreneurship support, market linkages, or innovative business models.
-                  <br />
-                  {/* <span>
-                    <Link className="learn-more" to="/">
-                      Learn more
-                    </Link>
-                  </span> */}
                 </p>
               </div>
             </div>
-            {/* <div className="health-each-container">
-              <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Be a Catalyst for Change</h1>
-                <p className="health-para">
-                Join Lokarpan in our mission to combat social and economic disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
-                  <br />
-                </p>
-              </div>
-              <div className="health-cont-img-div health-img2"></div>
-            </div> */}
+            
+          </div>
 
-
-            <div className="donate-section">
+          <div className="donate-section">
               <h1 className="last-space">Be a Catalyst for Change</h1>
               <p className="our-role-font24">
               Join Lokarpan in our mission to combat social and economic disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
               </p>
-              <Link to="/donate" onClick={this.scrollToTop}>
+              <Link to="/donate" onClick={scrollToTopAndNavigate}>
                 <button type="button" className="our-role-apply-btn">
                   Donate
                 </button>
               </Link>
             </div>
-          </div>
-          {/* <div className="health-full-img space-below">
-            <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
-              alt="health-img"
-            />
-          </div> */}
         </div>
         <Footer />
       </>

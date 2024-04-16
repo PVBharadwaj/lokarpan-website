@@ -5,17 +5,11 @@
   margin: 0px auto;
   width: 100%;
   max-width: 1100px;
+  min-width: 320px;
   box-sizing: border-box;
   padding-inline-start: max(20px, var(--navbar-padding));
   padding-inline-end: max(20px, var(--navbar-padding));
 }
-
-/* .board-page h2, 
-.educators-page h2,
-.fellows-page h2,
-.staff-page h2{
-  padding: 50px 123px 10px;
-} */
 
 .lead-search{
   width: 100%;

@@ -202,7 +202,7 @@ const Mission = () => {
           </div>
         </section>
         <section className="our-purpose">
-          <div className="give-card">
+          <div className="give-card mission-card">
             <div className="give-card-text">
               <h1>Ethics and Compliance</h1>
               <p>

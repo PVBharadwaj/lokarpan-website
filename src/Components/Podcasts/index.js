@@ -1,40 +1,31 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, useRef, Component } from "react";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
 import EducationSubNav from "../Navbar/EducationSubNav";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { RxCross2 } from "react-icons/rx";
 import { SiApplepodcasts, SiGooglepodcasts } from "react-icons/si";
 
 import "./index.css";
 
-class PodCasts extends Component {
-  constructor(props) {
-    super(props);
-    this.headingRefs = Array.from({ length: 3 }, () => React.createRef());
-    this.intersectionObserver = null;
-  }
+const PodCasts = () => {
+  const [popupVisibility, setPopupVisibility] = useState([false, false]);
+  const headingRefs = useRef(Array.from({ length: 3 }, () => null));
+  let intersectionObserver = null;
 
-  componentDidMount() {
-    this.intersectionObserver = new IntersectionObserver(
-      this.handleIntersection,
-      { threshold: 0.5 } // Adjust the threshold as needed
-    );
+  const openpopup = (index) => {
+    const updatedVisibility = [...popupVisibility];
+    updatedVisibility[index] = true;
+    setPopupVisibility(updatedVisibility);
+  };
 
-    // Iterate over the array of refs and observe each heading
-    this.headingRefs.forEach((ref) => {
-      if (ref.current) {
-        this.intersectionObserver.observe(ref.current);
-      }
-    });
-  }
+  const closepopup = (index) => {
+    const updatedVisibility = [...popupVisibility];
+    updatedVisibility[index] = false;
+    setPopupVisibility(updatedVisibility);
+  };
 
-  componentWillUnmount() {
-    if (this.intersectionObserver) {
-      this.intersectionObserver.disconnect();
-    }
-  }
-
-  handleIntersection = (entries) => {
+  const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("fade-in-animation");
@@ -44,7 +35,49 @@ class PodCasts extends Component {
     });
   };
 
-  render() {
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.which === 27) {
+        setPopupVisibility(popupVisibility.map(() => false));
+      }
+    };
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [popupVisibility]);
+
+  useEffect(() => {
+    if (popupVisibility.some((isVisible) => isVisible)) {
+      document.body.classList.add('body-no-scroll');
+    } else {
+      document.body.classList.remove('body-no-scroll');
+    }
+  }, [popupVisibility]);
+
+  
+  useEffect(() => {
+    intersectionObserver = new IntersectionObserver(
+      handleIntersection,
+      { threshold: 0.5 }
+    );
+
+    headingRefs.current.forEach((ref) => {
+      if (ref) {
+        intersectionObserver.observe(ref);
+      }
+    });
+
+    return () => {
+      if (intersectionObserver) {
+        intersectionObserver.disconnect();
+      }
+    };
+  }, []);
+
+
+
     return (
       <>
         <Navbar />
@@ -71,41 +104,109 @@ class PodCasts extends Component {
             </div>
           </div>
           <div className="podcast">
-            <h1 className="font48-podcasts" ref={this.headingRefs[0]}>
-              Millions of podcasts on topics for everyone.
+            <h1 className="font48-podcasts" 
+            ref={(el) => headingRefs.current[0] = el}
+            >
+            Empowering Minds with Diverse Podcasts
             </h1>
-            <h1 className="font48-podcasts" ref={this.headingRefs[1]}>
-              Seamless listening across all your Apple devices.
+            <h1 className="font48-podcasts" 
+            ref={(el) => headingRefs.current[1] = el}
+            >
+            Seamless Learning, Anywhere, Anytime
             </h1>
-            <h1 className="font48-podcasts" ref={this.headingRefs[2]}>
-              Powerful playback controls to customise your listening.
+            <h1 className="font48-podcasts" 
+            ref={(el) => headingRefs.current[2] = el}
+            >
+            Virtual Experts Enriching Classroom Experiences
             </h1>
           </div>
           <div className="like-container">
             <div className="like-left-cont">
-              <h1 className="font48-left-podcasts">Personalized Discovery</h1>
+              {/* <h1 className="font48-left-podcasts">Personalized Discovery</h1> */}
               <p className="font24-podcasts">
-                With personalized recommendations based on what you already
-                listen to, you’ll get more shows catering to your tastes than
-                ever before.
+              Delve into the minds behind Lokarpan's captivating podcasts, where experts from diverse fields share their insights, experiences, and knowledge. Meet our speakers, ranging from educators to scientists, as they engage in thought-provoking discussions aimed at enriching young minds and inspiring curiosity. 
               </p>
             </div>
             <div className="like-right-cont">
-              <p className="font24-podcasts space-blw">You might like</p>
+              {/* <p className="font24-podcasts space-blw">Speaker profiles</p> */}
               <div className="like-right-img-cont">
                 <img
                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
+                  onClick={() => openpopup(0)}
                 />
                 <img
                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
+                  onClick={() => openpopup(1)}
                 />
                 <img
                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
+                  onClick={() => openpopup(2)}
                 />
               </div>
+
+              {popupVisibility[0] && (
+              <div className="misson-popup">
+                <div className="misson-popup-content">
+                  <RxCross2 
+                    onClick={() => closepopup(0)} 
+                    className="x"
+                  />
+                  <div className="podcasts-pop">
+                    <div className="podcasts-pop-img"></div>
+                    <div className="podcasts-pop-text">
+                      <h1>Osnat Pavese Rafael</h1>
+                    <p className="mission-para">
+                    Born and raised in Johannesburg, South Africa, Osnat is a qualified architect from the Technion-Israel Institute of Technology and an urban designer from the Bezalel Academy of Arts and Design. With a passion for leveraging her skills to empower marginalised communities, she is multilingual and deeply committed to amplifying the voices of the unheard. Osnat's master's project, spotlighting an informal settlement in Johannesburg, has been showcased at national and international conferences, alongside publication in a local newspaper and journal. Always eager to explore new cultures, she thrives on research and continual learning.
+                    </p>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              )}
+              {popupVisibility[1] && (
+              <div className="misson-popup">
+                <div className="misson-popup-content">
+                  <RxCross2 
+                    onClick={() => closepopup(1)} 
+                    className="x"
+                  />
+                  <p className="mission-para">
+                  At Lokarpan, a spirit of innovation has always guided our path. From our early days, our team has been driven by a relentless pursuit of excellence, refusing to settle for anything less than the best. This ethos was embodied by our founder, H.V. Singh, a man of unwavering patience and a sincere belief in the shared responsibility of all community members for fostering true transformation.
+                  </p>
+                  <p className="mission-para">
+                  In 1996, Lokarpan was born from Singh's vision, dedicated to addressing some of the most pressing challenges in our communities: high child mortality, unemployment, socio-economic disparities, and inadequate education. The organisation helped revitalise the communities, reform the education system and rescue mothers and their children from neonatal complications in the region.
+                  </p>
+                  <p className="mission-para">
+                  Over the past 28 years, we have worked hand-in-hand with communities, listening to their needs and aspirations to develop tailored solutions. Today, we are pioneering a new era of education with fully immersive, cross-compatible technologies designed to enhance learning outcomes and empower both students and teachers.
+                  </p>
+                </div>
+              </div>
+              )}
+              {popupVisibility[2] && (
+              <div className="misson-popup">
+                <div className="misson-popup-content">
+                  <RxCross2 
+                    onClick={() => closepopup(2)} 
+                    className="x"
+                  />
+                  <p className="mission-para">
+                  At Lokarpan, a spirit of innovation has always guided our path. From our early days, our team has been driven by a relentless pursuit of excellence, refusing to settle for anything less than the best. This ethos was embodied by our founder, H.V. Singh, a man of unwavering patience and a sincere belief in the shared responsibility of all community members for fostering true transformation.
+                  </p>
+                  <p className="mission-para">
+                  In 1996, Lokarpan was born from Singh's vision, dedicated to addressing some of the most pressing challenges in our communities: high child mortality, unemployment, socio-economic disparities, and inadequate education. The organisation helped revitalise the communities, reform the education system and rescue mothers and their children from neonatal complications in the region.
+                  </p>
+                  <p className="mission-para">
+                  Over the past 28 years, we have worked hand-in-hand with communities, listening to their needs and aspirations to develop tailored solutions. Today, we are pioneering a new era of education with fully immersive, cross-compatible technologies designed to enhance learning outcomes and empower both students and teachers.
+                  </p>
+                </div>
+              </div>
+              )}
+
             </div>
           </div>
           <div className="lower-podcasts-cont">
@@ -125,6 +226,6 @@ class PodCasts extends Component {
       </>
     );
   }
-}
+// }
 
 export default PodCasts;
