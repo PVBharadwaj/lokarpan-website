@@ -17,6 +17,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mission-princ-text-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* .mission-princ-text-inner h3{
+    font-size: 20px;
+}
+.mission-princ-text-inner p{
+    font-size: 16px;
+} */
 .mission-1st-section-inner{
     /* padding: 150px 200px; */
     color: #fff;
@@ -130,7 +141,7 @@
 .our-purpose{
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    /* padding: 50px 0; */
    
 }
 .our-purpose1{
@@ -327,6 +338,18 @@ border: none;
     justify-content: center;
     align-items: center;
 }
+.mision-mobi-7481150{
+    display: none;
+}
+
+@media (min-width:750px) and (max-width: 1150px){
+    .mission-desktop{
+        display: none;
+    }
+    .mision-mobi-7481150{
+        display: block;
+    }
+}
 
 @media (max-width:750px){
     .mission-head{
@@ -375,7 +398,12 @@ border: none;
         font-weight: 500;
     }
     .our-purpose{
-        padding: 2rem;
+        margin: var(--navbar-margin);
+        box-sizing: border-box;
+        width: 100%;
+        margin: 100px 0px;
+        padding-inline-start: max(20px, var(--navbar-padding));
+        padding-inline-end: max(20px, var(--navbar-padding));
     }
     .our-purpose1{
         display: block;

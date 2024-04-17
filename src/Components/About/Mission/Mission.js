@@ -150,11 +150,21 @@ const Mission = () => {
         </div> */}
 
         <section className="our-purpose">
-          <div className="give-card give-card-reverse mission-principles-container">
-            <div className="give-card-text">
+          <div className="give-card mission-principles-container mission-principles-container2">
+            <div className="give-card-text mission-card-text">
               <div className="mission-principles-container-in">
               <h1>Our Principles</h1>
-                <div className="faqs">
+              <div className="mission-princ-text-inner mission-desktop">
+                <div>
+                  <h3 className="our-principles-head">Community centric collaboration</h3>
+                  <p>Lokarpan is dedicated to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects. We believe that true progress is achieved when communities are active participants in their own development, and we work to build partnerships that foster sustainable growth and self-reliance</p>
+                </div>
+                <div>
+                  <h3 className="our-principles-head">Equity and Inclusivity</h3>
+                  <p>Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good</p>
+                </div>
+              </div>
+                <div className="faqs mision-mobi-7481150">
                   {faqs.map((faq, index) => (
                     <FAQ
                       faq={faq}

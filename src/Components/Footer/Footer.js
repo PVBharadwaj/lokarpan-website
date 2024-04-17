@@ -187,7 +187,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/newsletter" onClick={scrollToTop()}>
+                  <Link onClick={scrollToTopAndNavigate} to="/newsletter">
                     Newsletter
                   </Link>
                 </li>

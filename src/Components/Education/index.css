@@ -14,13 +14,13 @@
     text-align: center;
   }
   
-  .fellowship-page {
+  /* .fellowship-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 0px 123px;
-  }
+  } */
   
   .edu-second-div {
     display: flex;
