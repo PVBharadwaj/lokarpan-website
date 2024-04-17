@@ -24,6 +24,13 @@ const Footer = () => {
     }));
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto", // Optional: Add smooth scrolling behavior
+    });
+  };
+
   return (
     <>
       <div className="footer-container footer-mobile">
@@ -74,22 +81,34 @@ const Footer = () => {
                 }`}
               >
                 <li>
-                  <Link to="/our-role">Our Role</Link>
+                  <Link to="/our-role" onClick={scrollToTop()}>
+                    Our Role
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/history">History</Link>
+                  <Link to="/history" onClick={scrollToTop()}>
+                    History
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/mission">Mission</Link>
+                  <Link to="/mission" onClick={scrollToTop()}>
+                    Mission
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/leadership">Leadership</Link>
+                  <Link to="/leadership" onClick={scrollToTop()}>
+                    Leadership
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/careers">Careers</Link>
+                  <Link to="/career" onClick={scrollToTop()}>
+                    Careers
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/financials">Financials</Link>
+                  <Link to="/financials" onClick={scrollToTop()}>
+                    Financials
+                  </Link>
                 </li>
               </ul>
               <hr className="footer-hor-line" />
@@ -109,22 +128,34 @@ const Footer = () => {
                   <div className="footer-ans-sec-1">
                     <ul className="footer-faq-answer-1">
                       <li>
-                        <Link to="/our-role">Our Role</Link>
+                        <Link to="/our-role" onClick={scrollToTop()}>
+                          Our Role
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/history">History</Link>
+                        <Link to="/history" onClick={scrollToTop()}>
+                          History
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/mission">Mission</Link>
+                        <Link to="/mission" onClick={scrollToTop()}>
+                          Mission
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/leadership">Leadership</Link>
+                        <Link to="/leadership" onClick={scrollToTop()}>
+                          Leadership
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/careers">Careers</Link>
+                        <Link to="/careers" onClick={scrollToTop()}>
+                          Careers
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/financials">Financials</Link>
+                        <Link to="/financials" onClick={scrollToTop()}>
+                          Financials
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -151,13 +182,19 @@ const Footer = () => {
                 }`}
               >
                 <li>
-                  <Link to="/">Get in Touch</Link>
+                  <Link to="/" onClick={scrollToTop()}>
+                    Get in Touch
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/newsletter">Newsletter</Link>
+                  <Link to="/newsletter" onClick={scrollToTop()}>
+                    Newsletter
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/sitemap">Sitemap</Link>
+                  <Link to="/sitemap" onClick={scrollToTop()}>
+                    Sitemap
+                  </Link>
                 </li>
               </ul>
               <hr className="footer-hor-line" />
@@ -177,10 +214,14 @@ const Footer = () => {
                   <div className="footer-ans-sec-1">
                     <ul className="footer-faq-answer-1">
                       <li>
-                        <Link to="/">Get in Touch</Link>
+                        <Link to="/" onClick={scrollToTop()}>
+                          Get in Touch
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/newsletter">Newsletter</Link>
+                        <Link to="/newsletter" onClick={scrollToTop()}>
+                          Newsletter
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -204,10 +245,14 @@ const Footer = () => {
                 }`}
               >
                 <li>
-                  <Link to="/">Facebook</Link>
+                  <Link to="/" onClick={scrollToTop()}>
+                    Facebook
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/">Blog</Link>
+                  <Link to="/" onClick={scrollToTop()}>
+                    Blog
+                  </Link>
                 </li>
               </ul>
               <hr className="footer-hor-line" />
@@ -227,10 +272,14 @@ const Footer = () => {
                   <div className="footer-ans-sec-1">
                     <ul className="footer-faq-answer-1">
                       <li>
-                        <Link to="/">Facebook</Link>
+                        <Link to="/" onClick={scrollToTop()}>
+                          Facebook
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Blog</Link>
+                        <Link to="/" onClick={scrollToTop()}>
+                          Blog
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -256,13 +305,19 @@ const Footer = () => {
                 }`}
               >
                 <li>
-                  <Link to="/donate">Donate</Link>
+                  <Link to="/donate" onClick={scrollToTop()}>
+                    Donate
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/being-a-volunteer">Volunteer</Link>
+                  <Link to="/being-a-volunteer" onClick={scrollToTop()}>
+                    Volunteer
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/">Our Supporters</Link>
+                  <Link to="/" onClick={scrollToTop()}>
+                    Our Supporters
+                  </Link>
                 </li>
               </ul>
               <hr className="footer-hor-line" />
@@ -282,13 +337,19 @@ const Footer = () => {
                   <div className="footer-ans-sec-1">
                     <ul className="footer-faq-answer-1">
                       <li>
-                        <Link to="/donate">Donate</Link>
+                        <Link to="/donate" onClick={scrollToTop()}>
+                          Donate
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/being-a-volunteer">Volunteer</Link>
+                        <Link to="/being-a-volunteer" onClick={scrollToTop()}>
+                          Volunteer
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Our Supporters</Link>
+                        <Link to="/" onClick={scrollToTop()}>
+                          Our Supporters
+                        </Link>
                       </li>
                     </ul>
                   </div>
