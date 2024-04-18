@@ -49,7 +49,7 @@
   font-size: 64px;
   font-weight: bold;
   width: 740px;
-  height: 134px;
+  /* height: 134px; */
   text-align: center;
   margin: 50px auto;
 }
@@ -342,7 +342,7 @@
     width: calc(100% - 200px);
   }
   .font64-podcasts {
-    font-size: 40px;
+    font-size: 36px;
     width: calc(100% - 32px);
     margin: auto;
     margin-bottom: 30px;

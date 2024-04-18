@@ -5,6 +5,11 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 50px;
+  margin: var(--navbar-margin);
+  box-sizing: border-box;
+  max-width: 1100px;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
 }
 
 .remove-inline-block {

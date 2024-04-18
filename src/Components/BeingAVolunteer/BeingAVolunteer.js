@@ -14,10 +14,7 @@ const BeingAVolunteer = () => {
         <div className="volunteer-first-div">
           <h1>Being a Volunteer</h1>
           <p>
-            The road to end educational inequity is long and we cannot do this
-            on our own. If you are passionate about our vision and have a
-            certain number of hours a week to put in, you can volunteer with
-            Fellows in their classroom or with different departments on staff.
+          The road to end educational inequity is long and we cannot do this on our own. If you are passionate about our vision and have a certain number of hours a week to put in, you can volunteer with Fellows in their classroom or with different departments on staff.
           </p>
         </div>
         <FlipCard />
@@ -26,15 +23,23 @@ const BeingAVolunteer = () => {
         <VolunteerCarousel />
       </div>
       <div className="volunter-opp">
-          <h1>
+        <div className="volunter-opp-inner">
+          {/* <h1>
             An AI power play: Fueling the next wave of innovation in the{" "}
             energy sector
-          </h1>
-          <div className="hyperlinks">
-          <div className="apply-btn transparent">
+          </h1> */}
+          <h1>Explore current volunteer opportunities with Lokarpan</h1>
+          <p>Lokarpan collaborates with volunteers primarily through our dedicated volunteer program. If you hold an undergraduate degree, possess relevant work experience, and are passionate about making a difference, you may qualify to join us as a volunteer.
+            Our volunteer program provides opportunities for impactful assignments across various initiatives within Lokarpan. While we do not directly recruit volunteers, interested individuals can explore potential opportunities through our volunteer program. To learn more and register your interest, please visit our volunteer signup page.
+            Additionally, volunteer positions may also be available through our affiliated partners and organisations.
+          </p>
+          <div style={{width: "150px"}} className="hyperlinks">
+          <div className="apply-btn white">
               <Link to="/donate" className="apply-btn-text-black body-btn">Apply</Link>
           </div>
           </div>
+        </div>
+
         </div>
         <Footer />
     </>

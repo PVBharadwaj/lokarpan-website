@@ -26,8 +26,12 @@ class Newslettert extends Component {
     };
   }
 
+  // onChangeEmail = (event) => {
+  //   this.setState({ email: event.target.email });
+  // };
+
   onChangeEmail = (event) => {
-    this.setState({ email: event.target.email });
+    this.setState({ email: event.target.value });
   };
 
   handleNewsletterSelection = (e, newsletter) => {
@@ -49,20 +53,66 @@ class Newslettert extends Component {
     });
   };
 
-  handleSubmit = async () => {
-    const { email } = this.state;
-    const formField = new FormData();
-    formField.append("email", email);
-    console.log(formField.get("email"));
 
-    await axios({
-      method: "post",
-      url: "http://127.0.0.1:8000/api/newsletter_subscibe/",
-      data: formField,
-    }).then((response) => {
-      console.log(response.data);
-    });
+
+
+  handleSubmit = async () => {
+    const { email, selectedNewsletters } = this.state;
+    
+    try {
+      // Check if email is provided and at least one newsletter is selected
+      if (email.trim() !== "" && selectedNewsletters.length > 0) {
+      // if (email && selectedNewsletters.length > 0) {
+        // Prepare data to be sent to the backend
+        const formData = {
+          email: email,
+          newsletters: selectedNewsletters
+        };
+  
+        // Send a POST request to your Django backend
+        const response = await axios.post(
+          "http://127.0.0.1:8000/api/newsletter_subscribe/", 
+          formData
+        );
+  
+        // Handle the response from the backend
+        if (response.status === 200) {
+          console.log("Email submitted successfully");
+          // Optionally, you can reset the form fields here
+          this.setState({
+            email: "",
+            selectedNewsletters: [],
+            counter: 0
+          });
+        } else {
+          console.error("Failed to submit email", error);
+        }
+      } else {
+        console.error("Email or newsletters not provided");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
+
+  
+
+
+
+  // handleSubmit = async () => {
+  //   const { email } = this.state;
+  //   const formField = new FormData();
+  //   formField.append("email", email);
+  //   console.log(formField.get("email"));
+
+  //   await axios({
+  //     method: "post",
+  //     url: "http://127.0.0.1:8000/api/newsletter_subscibe/",
+  //     data: formField,
+  //   }).then((response) => {
+  //     console.log(response.data);
+  //   });
+  // };
 
   // componentDidUpdate(prevProps, prevState) {
   //   const { selectedNewsletters } = this.state;

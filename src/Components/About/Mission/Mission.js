@@ -79,7 +79,7 @@ const Mission = () => {
         <section className="mission-1st-secction">
           <div className="mission-1st-section-inner"> 
             <div className="mission-head">Lokarpan offers solutions to empower communities living in stress.</div>
-            <div className="mission-content1">
+            {/* <div className="mission-content1">
               Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India. <br/>
               <div className="hyperlinks mission-popup">
               <div className="apply-btn white">
@@ -105,7 +105,41 @@ const Mission = () => {
                   </p>
                 </div>
               </div>
+            )} */}
+          </div>
+        </section>
+
+
+        <section className="our-purpose">
+          <div className="give-card give-card-reverse">
+            <div className="give-card-img mission-card-img-1"></div>
+            <div className="give-card-text">
+              {/* <h1>Our Culture</h1> */}
+              <p>
+                Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India. <br/>
+                    <span  onClick={() => openpopup(0)} className="mission-read-more">Read more</span>
+                
+              </p>
+              {popupVisibility[0] && (
+              <div className="misson-popup">
+                <div className="misson-popup-content">
+                  <RxCross2 
+                    onClick={() => closepopup(0)} 
+                    className="x"
+                  />
+                  <p className="mission-para">
+                  At Lokarpan, a spirit of innovation has always guided our path. From our early days, our team has been driven by a relentless pursuit of excellence, refusing to settle for anything less than the best. This ethos was embodied by our founder, H.V. Singh, a man of unwavering patience and a sincere belief in the shared responsibility of all community members for fostering true transformation.
+                  </p>
+                  <p className="mission-para">
+                  In 1996, Lokarpan was born from Singh's vision, dedicated to addressing some of the most pressing challenges in our communities: high child mortality, unemployment, socio-economic disparities, and inadequate education. The organisation helped revitalise the communities, reform the education system and rescue mothers and their children from neonatal complications in the region.
+                  </p>
+                  <p className="mission-para">
+                  Over the past 28 years, we have worked hand-in-hand with communities, listening to their needs and aspirations to develop tailored solutions. Today, we are pioneering a new era of education with fully immersive, cross-compatible technologies designed to enhance learning outcomes and empower both students and teachers.
+                  </p>
+                </div>
+              </div>
             )}
+            </div>
           </div>
         </section>
         {/* <section className="our-mission-mobile">
