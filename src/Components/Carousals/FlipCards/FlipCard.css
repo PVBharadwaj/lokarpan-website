@@ -44,7 +44,7 @@
   display: flex;
   text-align: left;
   gap: 32px;
-  margin: 50px;
+  margin: 20px 50px 50px 50px;
   align-items: center;
 }
 
@@ -174,5 +174,6 @@
 
   .flip-card{
     width: 700px;
+    height: 600px;
   }
 }

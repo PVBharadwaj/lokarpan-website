@@ -32,7 +32,7 @@ const Subscribebtn = () => {
         <div className="popup-back"></div>
         <div className="popup-in">
           <div className="pop">
-            <h2>Sunday Snippets</h2>
+            <h2>Subscribe to our Newsletters!</h2>
             {/* <i
               onClick={() => {
                 setPopup(false);
@@ -47,16 +47,13 @@ const Subscribebtn = () => {
           </div>
           <div className="popup-text">
             <p>
-              Join a growing community of more than 400,000 (🤯) friendly
-              readers. Every Sunday I share actionable productivity tips,
-              practical life advice, and high-quality insights from across the
-              web, directly to your inbox.
+            Join our vibrant community of engaged readers as we deliver the latest updates, success stories, and transformative initiatives aimed at empowering rural education. Receive valuable insights and impactful stories directly to your inbox every week, and be a part of the journey towards positive change.
             </p>
             <form action="">
               <input type="text" placeholder="Email address" />
               <button type="submit">Subscribe</button>
             </form>
-            <p>We respect your privacy. Unsubscribe at any time.</p>
+            {/* <p>We respect your privacy. Unsubscribe at any time.</p> */}
           </div>
         </div>
       </div>

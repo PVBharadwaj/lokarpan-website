@@ -9,9 +9,9 @@ import { IoChevronForward } from "react-icons/io5";
 const VolunteerCarousel = () => {
   const persons = [
     {
-      name: "Ellen",
-      position: "SOFTWARE ENGINEER",
-      desp: "Our goal was to help make proper diagnosis of bacterial infections more equitable and accessible, and ultimately to slow the spread of antibiotic-resistant bacteria. Working with Médecins Sans Frontières (MSF or Doctors without Borders) through the Google.org Fellowship has been a dream come true. First and foremost, it was fulfilling to work on saving lives. Secondarily, I was able to grow new skills very quickly, which has made me a more well-rounded engineer.",
+      name: "X",
+      position: "a Lokarpan Volunteer",
+      desp: "meet X, a dedicated volunteer with Lokarpan's Kith n Kin School initiative in rural Uttar Pradesh. Rahul has served as a teacher trainer, contributing tirelessly to the development and coordination of educational programs for underserved communities. In his first year as a volunteer, he was able to earn recognition from colleagues and partners alike for his invaluable contributions to enhancing learning opportunities for children in the region.On the International Day of Education, ",
       img: "https://lh3.googleusercontent.com/9REEk-wB0sHICrkyVRTy80exW_7CWIQPjUBdvyuRjsJ4Bn2cbW12G_oaZZY8TOJjwwVLd5-HhhwORP0VIDJYnq6W2enbDDgNm8rt9Q=w1424-h1600-n-l80-sg-rj",
     },
     {

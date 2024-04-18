@@ -39,7 +39,9 @@
 }
 
 .being-a-volunteer-second{
-  padding: 200px 123px;
+  padding: 200px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .donate-card {
@@ -67,14 +69,35 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: black;
-  background-color: #fff;
-  padding: 0px 0px 100px;
+  color: white;
+  background-color: black;
+  margin-bottom: 100px;
+
+}
+.set-z-high{
+  z-index: 102;
+}
+.volunter-opp-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: var(--navbar-margin);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
 }
 
 .volunter-opp h1 {
   font-size: 40px;
-  padding: 0px 200px;
+  padding: 50px 50px;
+}
+
+.volunter-opp{
+  font-size: 24px;
 }
 
 @media screen and (max-width: 748px) {
@@ -111,7 +134,9 @@
 .volunter-opp h1{
   font-size: 32px;
   padding: 20px;
-  color: #181818;
+}
+.volunter-opp{
+  font-size: 16px;
 }
 }
 
@@ -122,6 +147,6 @@
   }
 
   .being-a-volunteer-second {
-    padding: 150px 50px;
+    padding: 150px 0px;
   }
 }

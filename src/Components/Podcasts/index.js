@@ -90,7 +90,7 @@ const PodCasts = () => {
               className="podcasts-img"
             />
             <h1 className="font64-podcasts">
-              Make Me Care About. With Jen Hatmaker
+            Connecting Classroom, Bridging Learning Horizons
             </h1>
             <p className="font32-podcasts">
             Embark on an educational journey with our story podcasts, weaving captivating narratives to inspire young minds
