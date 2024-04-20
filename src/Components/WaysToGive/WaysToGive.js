@@ -12,59 +12,46 @@ const WaysToGive = () => {
         <h1>Ways to give</h1>
       </div>
       <div className="ways-page">
-        <div className="give-card">
+        <div className="give-card padding40">
           <div className="give-card-img give-card-img-1"></div>
           <div className="give-card-text">
-            <h1>Make a Gift</h1>
+            <h1>Make a Donation:</h1>
             <p>
-              The work of the Harvard Art Museums would not be possible without
-              the support of an international community of generous alumini and
-              friends, includung our Friends and Fellows. Contributions help
-              ensure that the museums remain an active, innovative centre for
-              teaching, learning and research.
+            Lokarpan relies on the generosity of a diverse community, including supporters like you, to sustain our impactful work. Your contributions ensure that we can continue to make a difference in rural education and community development.
             </p>
-            <Link className="give-card-link" to="/make-a-gift">Annual Fund</Link>
+            <Link className="give-card-link" to="/donate">Link to Donate Now</Link>
           </div>
         </div>
-        <div className="give-card give-card-reverse">
+        <div className="give-card padding40 give-card-reverse">
           <div className="give-card-text">
-            <h1>Friends Circle</h1>
+            <h1>Supporter Circle:</h1>
             <p>
-              By becoming a Friends Circle member, you are supporting our
-              mission to make art accessiblr to everyone! Our community of
-              Friends recieves unparalleled access to our collections and
-              special opportunities to engage with art throughout the year.
+            Join our Supporter Circle to help us in our mission to empower rural communities through education! As a member, you'll gain special insights into our projects and opportunities to engage with our initiatives throughout the year.
             </p>
-            <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
-            <Link className="give-card-link" to="/">Free Membership</Link>
+            <Link className="give-card-link" to="/">Link</Link>
+            {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-2"></div>
         </div>
-        <div className="give-card">
+        <div className="give-card padding40">
           <div className="give-card-img give-card-img-3"></div>
           <div className="give-card-text">
-            <h1>Fellows</h1>
+            <h1>Volunteers:</h1>
             <p>
-              By becoming a Friends Circle member, you are supporting our
-              mission to make art accessiblr to everyone! Our community of
-              Friends recieves unparalleled access to our collections and
-              special opportunities to engage with art throughout the year.
+            Become a volunteer and play a vital role in advancing our mission of transforming rural education. Volunteers contribute their time and skills to support our programs, making a meaningful impact in communities we serve.
             </p>
-            <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
-            <Link className="give-card-link" to="/">Free Membership</Link>
+            <Link className="give-card-link" to="/being-a-volunteer">Link for volunteer opportunities</Link>
+            <Link className="give-card-link" to="/fellowship">Link for Fellowship</Link>
           </div>
         </div>
-        <div className="give-card give-card-reverse">
+        <div className="give-card padding40 give-card-reverse">
           <div className="give-card-text">
-            <h1>Corporate Support</h1>
+            <h1>Corporate Partnerships:</h1>
             <p>
-              By becoming a Friends Circle member, you are supporting our
-              mission to make art accessiblr to everyone! Our community of
-              Friends recieves unparalleled access to our collections and
-              special opportunities to engage with art throughout the year.
+            Partner with us to create lasting change in rural education! Your corporate support enables us to expand our reach and make education accessible to more children. Join our community of supporters and gain exclusive insights into our projects and initiatives.
             </p>
-            <Link className="give-card-link" to="/">Friends Circle Benifits</Link>
-            <Link className="give-card-link" to="/">Free Membership</Link>
+            <Link className="give-card-link" to="/">Link</Link>
+            {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-4"></div>
         </div>

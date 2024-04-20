@@ -142,7 +142,7 @@ const Environment = () => {
               </h1>
               <div className="desp-cards environment-desp-cards">
                 {Desp.map((item, index) => (
-                  <DespCard key={index} item={item} index={index} />
+                  <DespCard key={index} item={item} index={index} totalCount={Desp.length}/>
                 ))}
               </div>
             {/* </div> */}
@@ -192,9 +192,13 @@ const Environment = () => {
 
 
 
-const DespCard = ({ item }) => {
+const DespCard = ({ item, index, totalCount }) => {
+  const isOddTotalCount = totalCount % 2 !== 0;
+  const isLastCard = index === totalCount - 1;
+  const cardClassName = `desp-card-list livelihood-card-list ${isOddTotalCount && isLastCard ? 'last-card' : ''}`;
+
   return (
-    <div className="desp-card-list livelihood-card-list">
+    <div className={cardClassName}>
       <img src={item.img} style={{width: "50px", height: "50px", paddingBottom: "20px"}}/>
       <h4>{item.head}</h4>
       <p>{item.des}</p>

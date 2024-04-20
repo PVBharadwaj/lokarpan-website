@@ -114,11 +114,10 @@ const Mission = () => {
           <div className="give-card give-card-reverse">
             <div className="give-card-img mission-card-img-1"></div>
             <div className="give-card-text">
-              {/* <h1>Our Culture</h1> */}
+              <h1>Our Mission</h1>
               <p>
                 Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India. <br/>
                     <span  onClick={() => openpopup(0)} className="mission-read-more">Read more</span>
-                
               </p>
               {popupVisibility[0] && (
               <div className="misson-popup">

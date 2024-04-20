@@ -78,6 +78,7 @@
 }
 .environment-desp-cards {
   padding: 60px 0px 0px !important;
+  gap: 40px !important
 }
 
 .justify-top {
@@ -177,6 +178,11 @@
   gap: 0px !important;
 }
 
+.last-card{
+  grid-column-start: 4 !important;
+  grid-column-end: 10 !important;
+}
+
 .livelihood-card-list h4 {
   font-size: 30px !important;
 }
@@ -190,6 +196,7 @@
 }
 .environment-bottom-section p {
   font-size: 20px;
+  line-height: 32px;
 }
 .learn-more {
   color: #3f86f0;
@@ -360,7 +367,7 @@
   }
   .health-full-img-text,
   .livelihood-full-img-text {
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
   .health-full-img-text,
   .livelihood-full-img-text p {
