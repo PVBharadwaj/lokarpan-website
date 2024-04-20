@@ -307,10 +307,10 @@ const Donate = () => {
         link2="/faqs"
       />
       <div className="donate-head">
+        <h1>Invest in the Future of India</h1>
         <h1>
-          Through the Stronger Together campaign, our goal is to bridge the
-          learning loss and strengthen our core program in Akanksha schools and
-          communities.
+          Your contributions make an immediate difference in classrooms,
+          fostering a lasting impact on rural education for years to come.
         </h1>
         <div className="citizen-dropdown">
           <div className="citizen-dropdown-inner">
@@ -321,11 +321,15 @@ const Donate = () => {
               className="input-d"
             />
             <label htmlFor="donate-hyperlink" className="drop-content">
-              Non-Indian Citizens
+              Non Indian Citizens
             </label>
             <div className="ans-sec donate-ans-sec">
-              <p className="answer">test text</p>
-              <p className="answer">test text</p>
+              <p className="answer">
+                {" "}
+                If you are a non-resident Indian or a foreign national residing
+                outside of India, please consult our FAQs to learn how you can
+                make a donation.
+              </p>
             </div>
           </div>
         </div>
@@ -471,7 +475,7 @@ const Donate = () => {
                 <div className="page-marker">03/06</div>
                 <fieldset>
                   <legend className="donate-form-sec-title">
-                    What fund would you like your donation to go towards?
+                    Which fund would you prefer to support with your donation?
                   </legend>
                   <div role="radiogroup" className="grid">
                     <input
@@ -492,7 +496,7 @@ const Donate = () => {
                         alt=""
                       />
                       <span className="radio-label-with-img-text">
-                        Must Solve <br /> problems
+                        Education
                       </span>
                     </label>
                     <input
@@ -513,7 +517,7 @@ const Donate = () => {
                         alt=""
                       />
                       <span className="radio-label-with-img-text">
-                        Frontiers: HIV & Sickle Cell
+                        Health and Nutrition
                       </span>
                     </label>
                     <input
@@ -534,7 +538,7 @@ const Donate = () => {
                         alt=""
                       />
                       <span className="radio-label-with-img-text">
-                        Empowerment & <br /> Opportunity
+                        Livelihoods
                       </span>
                     </label>
                   </div>
