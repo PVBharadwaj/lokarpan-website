@@ -237,7 +237,7 @@ class Newslettert extends Component {
                 Latest updates, success stories, and impactful initiatives aimed
                 at transforming education in rural communities.
               </div>
-              <button className="newsbox-tag">Quarterly newsletter</button>
+              <button className="newsbox-tag">Quarterly Newsletter</button>
             </div>
             <div className="daily">
               <div className="daily-icon">

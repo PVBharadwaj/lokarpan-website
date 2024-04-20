@@ -256,6 +256,7 @@
   font-weight: 500;
   text-align: center;
   margin-top: 100px;
+  width: 90%;
 }
 
 .newsletter-heading2 {
@@ -360,7 +361,10 @@
   margin-right: 15px;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 835px) {
+  .newsletter-heading {
+    width: 90%;
+  }
   .newsletter-letters {
     display: grid;
   }
