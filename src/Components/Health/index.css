@@ -271,6 +271,7 @@
   align-items: flex-start;
   margin: auto;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 .health-cards-cont-each-card h1 {
   margin-bottom: 20px;

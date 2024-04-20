@@ -53,28 +53,25 @@ class Newslettert extends Component {
     });
   };
 
-
-
-
   handleSubmit = async () => {
     const { email, selectedNewsletters } = this.state;
-    
+
     try {
       // Check if email is provided and at least one newsletter is selected
       if (email.trim() !== "" && selectedNewsletters.length > 0) {
-      // if (email && selectedNewsletters.length > 0) {
+        // if (email && selectedNewsletters.length > 0) {
         // Prepare data to be sent to the backend
         const formData = {
           email: email,
-          newsletters: selectedNewsletters
+          newsletters: selectedNewsletters,
         };
-  
+
         // Send a POST request to your Django backend
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/newsletter_subscribe/", 
+          "http://127.0.0.1:8000/api/newsletter_subscribe/",
           formData
         );
-  
+
         // Handle the response from the backend
         if (response.status === 200) {
           console.log("Email submitted successfully");
@@ -82,7 +79,7 @@ class Newslettert extends Component {
           this.setState({
             email: "",
             selectedNewsletters: [],
-            counter: 0
+            counter: 0,
           });
         } else {
           console.error("Failed to submit email", error);
@@ -94,10 +91,6 @@ class Newslettert extends Component {
       console.error("Error:", error);
     }
   };
-
-  
-
-
 
   // handleSubmit = async () => {
   //   const { email } = this.state;
@@ -142,7 +135,8 @@ class Newslettert extends Component {
         <Navbar />
         <div className="newsletter-top-section">
           <h1 className="newsletter-heading">
-            Get the best of The New Yorker in your in-box.
+            Stay Informed, Stay Inspired: Join Lokarpan's Newsletter Community
+            Today.
           </h1>
           <h2 className="newsletter-heading2">
             Select the newsletters you’d like to receive. Then, add your e-mail
@@ -172,12 +166,13 @@ class Newslettert extends Component {
                   ></label>
                 </div>
               </div>
-              <div className="newsbox-heading">Daily</div>
+              <div className="newsbox-heading">Lokarpan</div>
               <div className="newsbox-content">
-                Our flagship newsletter highlights the best of The New Works,
-                including top stories, fiction, horror and podcasts.
+                Our flagship newsletter highlights the latest developments and
+                insights from our kith programme, our research and learning
+                initiatives and podcasts
               </div>
-              <button className="newsbox-tag">Daily</button>
+              <button className="newsbox-tag">Lokarpan</button>
             </div>
 
             <div className="daily">
@@ -202,12 +197,13 @@ class Newslettert extends Component {
                   ></label>
                 </div>
               </div>
-              <div className="newsbox-heading">Weekly</div>
+              <div className="newsbox-heading">Technology</div>
               <div className="newsbox-content">
-                Our flagship newsletter highlights the best of The New Works,
-                including top stories, fiction, horror and podcasts.
+                Lokarpan's specialised newsletter, where we delve into the
+                latest advancements, trends, and innovations shaping the
+                intersection of technology and rural education
               </div>
-              <button className="newsbox-tag">Weekly</button>
+              <button className="newsbox-tag">Technology</button>
             </div>
           </div>
         </section>
@@ -236,12 +232,12 @@ class Newslettert extends Component {
                   ></label>
                 </div>
               </div>
-              <div className="newsbox-heading">New Yorker</div>
+              <div className="newsbox-heading">Quarterly newsletter</div>
               <div className="newsbox-content">
-                Our flagship newsletter highlights the best of The New Works,
-                including top stories, fiction, horror and podcasts.
+                Latest updates, success stories, and impactful initiatives aimed
+                at transforming education in rural communities.
               </div>
-              <button className="newsbox-tag">Twice Weekly</button>
+              <button className="newsbox-tag">Quarterly newsletter</button>
             </div>
             <div className="daily">
               <div className="daily-icon">
@@ -264,12 +260,13 @@ class Newslettert extends Component {
                   ></label>
                 </div>
               </div>
-              <div className="newsbox-heading">Science</div>
+              <div className="newsbox-heading">Annual Newsletter</div>
               <div className="newsbox-content">
-                Our flagship newsletter highlights the best of The New Works,
-                including top stories, fiction, horror and podcasts.
+                Comprehensive insights, impactful milestones, and compelling
+                narratives that showcase the ear-long journey of our annual Kith
+                newsletter
               </div>
-              <button className="newsbox-tag">Weekly</button>
+              <button className="newsbox-tag">Annual Newsletter</button>
             </div>
           </div>
         </section>

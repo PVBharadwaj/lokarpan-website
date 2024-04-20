@@ -46,10 +46,12 @@
   margin-top: 20px;
 }
 .digital-tool-img-sec h1 {
-  font-size: 60px;
+  font-size: 35px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  width: 80%;
 }
 .img-cont {
   width: 80%;

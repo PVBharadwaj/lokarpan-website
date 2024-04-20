@@ -216,10 +216,7 @@ class OurRole extends Component {
                                       curriculum delivery across our expansive
                                       network of 75 partner schools.
                                     </p>
-                                    <p className="popup-font18">
-                                      The Hub of Innovation: Kith n Kin Centre
-                                      of Excellence
-                                    </p>
+
                                     <p className="popup-font16">
                                       At the heart of this initiative lies the
                                       Kith n Kin Centre of Excellence, a beacon
@@ -234,10 +231,7 @@ class OurRole extends Component {
                                       for low-cost private and publicly aided
                                       schools alike.
                                     </p>
-                                    <p className="popup-font18">
-                                      Catalyzing Discovery: Lokarpan Research
-                                      Centre
-                                    </p>
+
                                     <p className="popup-font16">
                                       In the pursuit of continuous evolution,
                                       Lokarpan proudly introduces its Research
@@ -251,10 +245,7 @@ class OurRole extends Component {
                                       innovation, shaping the future of
                                       learning.
                                     </p>
-                                    <p className="popup-font18">
-                                      The Aurora of Progress: Kith and Kin
-                                      School, Auraiya
-                                    </p>
+
                                     <p className="popup-font16">
                                       Founded in April 2014, the Kith and Kin
                                       School in Auraiya, Uttar Pradesh, embodies
@@ -268,23 +259,6 @@ class OurRole extends Component {
                                       digital classrooms, Lokarpan ignites
                                       curiosity and fortifies knowledge
                                       retention among students.
-                                    </p>
-                                    <p className="popup-font18">
-                                      Pioneering Progress: Rural Planning and
-                                      School Design Guidelines
-                                    </p>
-                                    <p className="popup-font16">
-                                      {" "}
-                                      Lokarpan's latest initiative—the Rural
-                                      Planning and School Design
-                                      Guidelines—ushers in a new era of
-                                      educational infrastructure. By setting
-                                      benchmarks for construction, we ensure
-                                      nurturing learning environments that
-                                      transcend generations. At Lokarpan, every
-                                      endeavour is a stride towards a brighter
-                                      future, where education knows no bounds
-                                      and possibilities are endless.
                                     </p>
                                   </div>
                                 </div>
@@ -562,10 +536,7 @@ class OurRole extends Component {
                                     across our expansive network of 75 partner
                                     schools.
                                   </p>
-                                  <p className="popup-font18">
-                                    The Hub of Innovation: Kith n Kin Centre of
-                                    Excellence
-                                  </p>
+
                                   <p className="popup-font16">
                                     At the heart of this initiative lies the
                                     Kith n Kin Centre of Excellence, a beacon of
@@ -579,10 +550,7 @@ class OurRole extends Component {
                                     standardising quality metrics for low-cost
                                     private and publicly aided schools alike.
                                   </p>
-                                  <p className="popup-font18">
-                                    Catalyzing Discovery: Lokarpan Research
-                                    Centre
-                                  </p>
+
                                   <p className="popup-font16">
                                     In the pursuit of continuous evolution,
                                     Lokarpan proudly introduces its Research
@@ -595,10 +563,7 @@ class OurRole extends Component {
                                     the forefront of educational innovation,
                                     shaping the future of learning.
                                   </p>
-                                  <p className="popup-font18">
-                                    The Aurora of Progress: Kith and Kin School,
-                                    Auraiya
-                                  </p>
+
                                   <p className="popup-font16">
                                     Founded in April 2014, the Kith and Kin
                                     School in Auraiya, Uttar Pradesh, embodies
@@ -612,10 +577,7 @@ class OurRole extends Component {
                                     Lokarpan ignites curiosity and fortifies
                                     knowledge retention among students.
                                   </p>
-                                  <p className="popup-font18">
-                                    Pioneering Progress: Rural Planning and
-                                    School Design Guidelines
-                                  </p>
+
                                   <p className="popup-font16">
                                     Lokarpan's latest initiative—the Rural
                                     Planning and School Design Guidelines—ushers
@@ -1437,7 +1399,7 @@ class OurRole extends Component {
           {active === "livelihood" && (
             <div className={containerClass}>
               <div className="our-role-each-container-content">
-                <h1>Liveliood</h1>
+                <h1>Livelihood</h1>
                 <p>
                   Lokarpan is committed to alleviating poverty in rural India.
                   Through tailored skill development programs, microfinance

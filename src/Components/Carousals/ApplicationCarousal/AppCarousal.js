@@ -10,35 +10,35 @@ const AppCarousal = () => {
   const items = [
     {
       head: "Temperature",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Track student performance on leaderboards",
     },
     {
       head: "Humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Gamify results to boost student engagement",
     },
     {
       head: "Temperature",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Track health and nutrition metrics and submit sickness reports",
     },
     {
       head: "Humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Gather insights into education and health trends across institutions",
     },
     {
       head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Track student performance on leaderboards",
     },
     {
       head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Gamify results to boost student engagement",
     },
     {
       head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Track health and nutrition metrics and submit sickness reports",
     },
     {
       head: "Temperature and humidity",
-      desp: "Model S plaid has the quickest accleration of any vechile in production.",
+      desp: "Gather insights into education and health trends across institutions",
     },
   ];
 
@@ -111,7 +111,7 @@ const AppCarousal = () => {
                 }}
               >
                 <PiHouseFill className="app-icon" />
-                <h3
+                {/* <h3
                   style={{
                     color: "#333",
                     width: "180px",
@@ -119,13 +119,16 @@ const AppCarousal = () => {
                   }}
                 >
                   {item.head}
-                </h3>
+                </h3> */}
                 <p
                   style={{
                     color: "#555",
                     width: "225px",
                     height: "auto",
                     padding: "20px 0px",
+                    fontSize: "20px",
+                    marginTop: "30px",
+                    lineHeight: "30px",
                   }}
                 >
                   {item.desp}

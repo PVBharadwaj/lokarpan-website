@@ -209,7 +209,7 @@ const Health = () => {
                 className="stories-img"
               />
               <div className="health-stories-each-card-content">
-                <p>EASHA Workers: Guardians of Community Well-being</p>
+                <p>ASHA Workers: Guardians of Community Well-being</p>
                 <span
                   onClick={() => healthopenpopup(1)}
                   className="approach-anchor health-space-left"

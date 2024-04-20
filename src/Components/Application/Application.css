@@ -23,7 +23,7 @@
 }
 
 .title2 {
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .title3 {
@@ -161,6 +161,20 @@
 
 .choose-plan {
   display: none;
+}
+.app-para-5 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px auto;
+  line-height: 40px;
+}
+
+.app-para-4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px auto;
+  line-height: 40px;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 748px) {

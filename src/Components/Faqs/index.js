@@ -46,18 +46,18 @@ const Faqs = () => {
       <div className="faqs-container">
         <div className="donate-upper-section">
           <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708856246/image_345_du7cda.png" />
-          <h1 className="faqs-font64">In case you missed anything.</h1>
+          <h1 className="faqs-font64">Frequently Asked Questions</h1>
         </div>
         <div className="faqs-browse-sec">
           <h2>Browse through some common questions that you might have.</h2>
           <p>
             If you don’t find what you’re looking for, please write to us at
-            Lokarpan Support and we’ll be happy to address your query!
+            support@lokarpan.com and we’ll be happy to address your query!
           </p>
         </div>
         <div className="donate-faq-section">
           <div className="faqs-head-sec">
-            <h1 className="faqs-head">frequently asked Questions</h1>
+            <h1 className="faqs-head">Frequently Asked Questions</h1>
             <p className="faqs-para-1">Show All</p>
           </div>
 

@@ -27,7 +27,10 @@ class DigitalTool extends Component {
             </h1> */}
           </div>
           <div className="digital-tool-img-sec">
-            <h1>Heading</h1>
+            <h1>
+              A suite of digital services that help our learners build
+              knowledge, fuel curiosity, and prepare for what’s next.
+            </h1>
             <div className="img-cont">
               <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784180/Group_1756_wixb2m.png"

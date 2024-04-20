@@ -81,13 +81,27 @@ const Application = () => {
         </div>
       </div>
       <div className="app-page">
-        <h1 className="title2">Heading</h1>
+        <h1 className="title2">
+          Empower Teaching and Learning with Advanced Tools
+        </h1>
+        <p className="app-para-5">
+          Unlock the potential of personalised learning experiences, instant
+          feedback, enhanced accessibility, well-being tracking, fortified
+          digital security, and time-saving solutions for educators.
+        </p>
       </div>
       <AppCarousel />
       <div className="app-page">
         <div className="app-div app-div-bottom">
           <div className="plan">
-            <h1 className="app-title title3">Lokarpan</h1>
+            <h1 className="app-title title3">Access one of our plans below</h1>
+            <p className="app-para-4">
+              In education, technology serves as a powerful supplement to the
+              expertise and creativity of educators. Our commitment to
+              responsible tech practices ensures that our tools are
+              human-centered and meticulously designed to enhance teaching and
+              learning experiences.
+            </p>
             <div className="choose-plan">
               <h4 className="choose-plan-head">Plans</h4>
               <p className="choose-plan-second-head">Choose your plan</p>
@@ -106,10 +120,13 @@ const Application = () => {
       <div className="browse">
         <div className="browse-text">
           <h1 className="title3">
-            Browse accessories or find new colours to go with your devices.
+            Learn more about our organisation’s code of conduct.
           </h1>
           <div className="apply-btn browse-text-button transparent">
-            <Link to="/" className="apply-btn-text-black body-btn">
+            <Link
+              to="/code-of-conduct"
+              className="apply-btn-text-black body-btn"
+            >
               Learn more
             </Link>
           </div>
