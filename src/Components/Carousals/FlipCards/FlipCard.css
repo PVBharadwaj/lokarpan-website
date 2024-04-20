@@ -2,7 +2,7 @@
   width: 970px;
   height: 500px;
   perspective: 1000px;
-  margin: 30px 0px 250px;
+  margin: 30px 0px 100px;
 }
 
 .flip-card-inner {
@@ -98,6 +98,7 @@
 @media screen and (max-width: 748px) {
   .flip-card{
     width: 100%;
+    height: 600px;
   }
 }
 
@@ -117,7 +118,7 @@
   }
 
   .flip-card-inner h1 {
-    font-size: 24px;
+    font-size: 20px;
     padding: 5px 0px 30px;
   }
 
@@ -174,6 +175,10 @@
 
   .flip-card{
     width: 700px;
-    height: 600px;
+    height: 500px;
+  }
+
+  .flip-card-inner h1{
+    font-size: 30px;
   }
 }

@@ -114,11 +114,10 @@ useEffect(() => {
       <SubnavBar/>
       {/* ------------------------------------------------------------- */}
       <section className='d_home_hero'>
-        <div className='d_home_hero_head1'>Meet the A-list of </div>
-        <div className='d_home_hero_head2'>Entertainment.</div>
+        <div className='d_home_hero_head1'>Explore Lokarpan's  </div>
+        <div className='d_home_hero_head2'>Design Initiatives</div>
         <div className='d_home_hero_content'>
-          Award-winning movies. Binge-worthy shows. Your favorite music mastered in Spatial Audio. And the most epic
-          collection of mobile games. The best entertainment and experiences live here only on Apple.
+        Our design approach prioritises sustainability and efficient use of spaces, integrating grid layouts and child-centric design elements.
         </div>
       </section>
 

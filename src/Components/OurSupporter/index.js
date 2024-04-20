@@ -17,28 +17,36 @@ class OurSupporter extends Component {
             <h1 className="font64">
               With great power comes great responsibility
             </h1>
-            <p className="font24">
+            {/* <p className="font24">
               Lokarpan understands the value of partnerships. We would like to
               thank our supporters who have helped us grow and stay true to our
               vision. Donate to Lokarpan and take a front seat as we change the
               world!
-            </p>
+            </p> */}
           </div>
           <div className="donor-section">
-            <h1 className="font48-left">Donors</h1>
+            <div className="why-donate-topdiv">
+              <p>
+              Lokarpan understands the value of partnerships. We would like to
+              thank our supporters who have helped us grow and stay true to our
+              vision. Donate to Lokarpan and take a front seat as we change the
+              world!
+              </p>
+            </div>
+            <h1 className="font48-left padding100">Donors</h1>
             <div className="donor-below-section">
-              <div className="each-sec">
+              <div className="each-sec supp-each-sec">
                 <p className="font28">$1,000,000 and above</p>
                 <h5 className="font20">Catholic Relief Services</h5>
               </div>
-              <div className="each-sec">
+              <div className="each-sec supp-each-sec">
                 <p className="font28">$100,000 to $999,999</p>
                 <h5 className="font20">
                   Poorest Areas Civil Society.Department for International
                   Development, UK
                 </h5>
               </div>
-              <div className="each-sec">
+              <div className="each-sec supp-each-sec">
                 <p className="font28">Below $100,000</p>
                 <h5 className="font20">
                   CreateFund.National Bank for Agriculture and Rural
@@ -49,7 +57,7 @@ class OurSupporter extends Component {
             </div>
           </div>
           <div className="philantropic-section">
-            <h1 className="font36">Philanthropic Partners</h1>
+            <h1 className="font36 padding100">Philanthropic Partners</h1>
             <div className="philantropic-below-section">
               <p>
                 Catholic Relief Services Poorest Areas Civil Society Department

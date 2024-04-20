@@ -53,7 +53,7 @@ const Subscribebtn = () => {
               <input type="text" placeholder="Email address" />
               <button type="submit">Subscribe</button>
             </form>
-            {/* <p>We respect your privacy. Unsubscribe at any time.</p> */}
+            <p>We respect your privacy. Unsubscribe at any time.</p>
           </div>
         </div>
       </div>

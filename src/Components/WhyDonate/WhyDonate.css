@@ -37,7 +37,8 @@
 }
 
 .why-donate-topdiv{
-  font-size: 32px;
+  font-size: 28px;
+  line-height: 36px;
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
@@ -180,7 +181,8 @@
   }
 
   .why-donate-topdiv{
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 32px;
     padding-top: 50px;
   }
 

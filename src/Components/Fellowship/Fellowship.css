@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-width: 320px;
 }
 
 .fellowship-nav h1,

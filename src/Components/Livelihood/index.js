@@ -52,7 +52,7 @@ class Livelihood extends Component {
           <div className="health-container-section">
             <div className="health-each-container">
               <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Heading</h1>
+                <h1 className="health-lokarpan-head3">Our Approach</h1>
                 <p className="health-para">
                 At Lokarpan, our approach to livelihood development is rooted in empowerment and sustainability. We believe in creating lasting change by providing opportunities for skill development, fostering entrepreneurship, and facilitating access to markets. By focusing on self-sufficiency, improving agricultural practices, and enhancing trade networks, we pave the way for communities to thrive and grow economically.
                   <br />
