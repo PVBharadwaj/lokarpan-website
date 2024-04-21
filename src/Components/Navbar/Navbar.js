@@ -158,14 +158,20 @@ const Navbar = () => {
   };
 
   const openmaindropdown = (dropdownId) => {
-      setActiveMainDropdown(dropdownId);
-      var desktopActiveElement = document.querySelector(".desktopactive");
-      if (desktopActiveElement) {
-        var currentHeight = desktopActiveElement.clientHeight;
-        var dropdownHeight = document.getElementById("navbar-bg-layer");
-        dropdownHeight.style.height = currentHeight + "px";
-      }
-  };
+  setActiveMainDropdown(dropdownId);
+  var dropdownHeight = document.getElementById("navbar-bg-layer");
+  if (dropdownHeight) {
+    if(dropdownId === "aboutDropdown"){
+      dropdownHeight.style.height = "340px"
+    } else if (dropdownId === "eduDropdown"){
+      dropdownHeight.style.height = "280px"
+    } else if (dropdownId === "designDropdown"){
+      dropdownHeight.style.height = "235px"
+    } else{
+      dropdownHeight.style.height = "320px"
+    }
+  }
+};
   const closemaindropdown = () => {
       setActiveMainDropdown(null);
       var dropdownHeight = document.getElementById("navbar-bg-layer");

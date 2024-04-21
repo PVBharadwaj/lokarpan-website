@@ -250,15 +250,28 @@ const Navbar = () => {
     setSearchResults(results);
   };
 
+  // const openmaindropdown = (dropdownId) => {
+  //   setActiveMainDropdown(dropdownId);
+  //   var desktopActiveElement = document.querySelector('.desktopactive');
+  //   if (desktopActiveElement) {
+  //     var currentHeight = desktopActiveElement.clientHeight;
+  //     var dropdownHeight = document.getElementById('navbar-bg-layer');
+  //     dropdownHeight.style.height = currentHeight + "px";
+  //   } 
+  // }
   const openmaindropdown = (dropdownId) => {
     setActiveMainDropdown(dropdownId);
-    var desktopActiveElement = document.querySelector('.desktopactive');
-    if (desktopActiveElement) {
-      var currentHeight = desktopActiveElement.clientHeight;
-      var dropdownHeight = document.getElementById('navbar-bg-layer');
-      dropdownHeight.style.height = currentHeight + "px";
-    } 
-  }
+    var dropdownHeight = document.getElementById("navbar-bg-layer");
+    if (dropdownHeight) {
+      if(dropdownId === "overviewDropdown"){
+        dropdownHeight.style.height = "200px"
+      } else if (dropdownId === "schoolDropdown"){
+        dropdownHeight.style.height = "240px"
+      } else {
+        dropdownHeight.style.height = "280px"
+      } 
+    }
+  };
   const closemaindropdown = () => {
     setActiveMainDropdown(null);
     var dropdownHeight = document.getElementById('navbar-bg-layer');

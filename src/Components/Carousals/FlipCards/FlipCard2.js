@@ -34,11 +34,12 @@ const FlipCard2 = () => {
               {/* <h1>
                 Browse accessories to find new colors to go with your devices.
               </h1> */}
-              <h1>Connect with a diverse network of passionate volunteers dedicated to making a difference in rural communities.</h1>
-              <img
+                            <img
                 src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632775/image_327_tg9gsn.png"
                 alt=""
               />
+              <h1>Connect with a diverse network of passionate volunteers dedicated to making a difference in rural communities.</h1>
+
             </div>
             <div className="right-align">
               <FaCirclePlus className="size-100" onClick={handleClickin} />

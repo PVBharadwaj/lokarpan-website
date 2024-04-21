@@ -5,7 +5,7 @@
         "city": "Mumbai",
         "state": "Maharashtra",
         "title": "Reading Rooms", 
-        "content": "KNK Centre", 
+        "content": "Creating spaces that ignite curiosity and foster inclusive learning for rural children. Our 310 sq ft reading room offers a haven for young readers, equipped with 1000 books, workstations, and optimal lighting", 
         "date": "2024",
         "imgUrl": "https://unsplash.it/200/200" 
     },
@@ -15,7 +15,7 @@
         "city": "Mumbai",
         "state": "Maharashtra",
         "title": "Restroom Stalls", 
-        "content": "LNL Centre1", 
+        "content": "Building child-friendly restroom stalls at Kith n Kin School, Auraiya, for a safer, comfortable, and hygienic experience. Each stall features age-appropriate design, durability, and eco-friendly practices.", 
         "date": "2024",
         "imgUrl": "https://unsplash.it/201/200" 
     },
@@ -25,7 +25,7 @@
         "city": "Pune",
         "state": "Maharashtra",
         "title": "Grid Design for Optimal Learning", 
-        "content": "MNM Centre", 
+        "content": "Our modular grid units feature expandable semi-open spaces, fostering versatility for classrooms, labs, and play areas. Tailored to a rural infrastructure, this design ensures sustainable and scalable solutions for learning environments.", 
         "date": "2023",
         "imgUrl": "https://unsplash.it/200/201" 
     },
@@ -35,7 +35,7 @@
         "city": "Pune",
         "state": "Maharashtra",
         "title": "Pavilion School", 
-        "content": "NNN Centre1",
+        "content": "Reimagining education with scattered enclosed spaces around a central street, fostering social interaction and modular flexibility.",
         "date": "2022", 
         "imgUrl": "https://unsplash.it/201/201" 
     },
@@ -45,108 +45,8 @@
         "city": "Nagpur",
         "state": "Maharashtra",
         "title": "School as a Street", 
-        "content": "ONO Centre", 
+        "content": "Our innovative design concept features modular classrooms, interactive elements, and eco-friendly systems to enhance learning environments and community engagement.", 
         "date": "2021",
         "imgUrl": "https://unsplash.it/202/200" 
-    },
-    { 
-        "id": 6, 
-        "projectType": "projtype2",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "title": "d Upgrade of Bathrooms at the", 
-        "content": "PNP Centre1", 
-        "date": "2020",
-        "imgUrl": "https://unsplash.it/200/199" 
-    },
-    { 
-        "id": 7, 
-        "projectType": "projtype3",
-        "city": "Hyderabad",
-        "state": "Telengana",
-        "title": "n Upgrade of Bathrooms at the", 
-        "content": "QNQ Centre", 
-        "date": "2020",
-        "imgUrl": "https://unsplash.it/199/199" 
-    },
-    { 
-        "id": 8, 
-        "projectType": "projtype3",
-        "city": "Hyderabad",
-        "state": "Telengana",
-        "title": "t Upgrade of Bathrooms at the", 
-        "content": "RNR Centre1", 
-        "date": "2019",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 9, 
-        "projectType": "projtype3",
-        "city": "Lucknow",
-        "state": "Uttar Pradesh",
-        "title": "q Upgrade of Bathrooms at the", 
-        "content": "SNS Centre", 
-        "date": "2018",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 10, 
-        "projectType": "projtype4",
-        "city": "Lucknow",
-        "state": "Uttar Pradesh",
-        "title": "f Upgrade of Bathrooms at the", 
-        "content": "TNT Centre", 
-        "date": "2012",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 11, 
-        "projectType": "projtype4",
-        "city": "Bengalore",
-        "state": "Karnataka",
-        "title": "d Upgrade of Bathrooms at the", 
-        "content": "RNR Centre", 
-        "date": "2013",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 12, 
-        "projectType": "projtype4",
-        "city": "Bengalore",
-        "state": "Karnataka",
-        "title": "s Upgrade of Bathrooms at the", 
-        "content": "YNY Centre", 
-        "date": "2014",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 13, 
-        "projectType": "projtype5",
-        "city": "Chennai",
-        "state": "Tamil Nadu",
-        "title": "c Upgrade of Bathrooms at the", 
-        "content": "ZNZ Centre", 
-        "date": "2019",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 14, 
-        "projectType": "projtype5",
-        "city": "Pune",
-        "state": "Maharashtra",
-        "title": "x Upgrade of Bathrooms at the", 
-        "content": "XNX Centre", 
-        "date": "2018",
-        "imgUrl": "https://unsplash.it/199/200" 
-    },
-    { 
-        "id": 15, 
-        "projectType": "projtype5",
-        "city": "Lucknow",
-        "state": "Uttar Pradesh",
-        "title": "p Upgrade of Bathrooms at the", 
-        "content": "FNF Centre", 
-        "date": "2017",
-        "imgUrl": "https://unsplash.it/199/200" 
     }
 ]  

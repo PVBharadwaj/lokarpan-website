@@ -34,11 +34,12 @@ const FlipCard4 = () => {
               {/* <h1>
                 Browse accessories to find new colors to go with your devices.
               </h1> */}
-              <h1>Join Lokarpan in its mission to empower individuals and families, ensuring access to education, healthcare, and sustainable livelihoods for rural populations.</h1>
-              <img
+                            <img
                 src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632775/image_327_tg9gsn.png"
                 alt=""
               />
+              <h1>Join Lokarpan in its mission to empower individuals and families, ensuring access to education, healthcare, and sustainable livelihoods for rural populations.</h1>
+
             </div>
             <div className="right-align">
               <FaCirclePlus className="size-100" onClick={handleClickin} />
