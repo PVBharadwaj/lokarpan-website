@@ -34,12 +34,6 @@ class Home extends Component {
       isAnimationPaused: !prevState.isAnimationPaused,
     }));
   };
-  scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "auto", // Optional: Add smooth scrolling behavior
-    });
-  };
 
   render() {
     const { isPaused, isAnimationPaused } = this.state;
@@ -90,7 +84,7 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>Understanding our approach to Rural Design Principles</h3>
-                <Link to="/guideline" onClick={this.scrollToTop}>
+                <Link to="/guideline">
                   <button className="read-btn1">Read Now</button>
                 </Link>
               </div>
@@ -102,7 +96,7 @@ class Home extends Component {
               />
               <div className="under-cont">
                 <h3>How do we solve the education crisis?</h3>
-                <Link to="/approach" onClick={this.scrollToTop}>
+                <Link to="/approach">
                   <button className="read-btn1 home-space-above">
                     Read Now
                   </button>
@@ -172,7 +166,9 @@ class Home extends Component {
                     className="carousal-img1"
                   />
                   <div className="link-cont">
-                    <button className="home-link">Education</button>
+                    <Link to="/approach">
+                      <button className="home-link">Education</button>
+                    </Link>
                   </div>
                 </div>
 
@@ -186,7 +182,9 @@ class Home extends Component {
                     className="carousal-img1"
                   />
                   <div className="link-cont">
-                    <button className="home-link">Environment</button>
+                    <Link to="/environment">
+                      <button className="home-link">Environment</button>
+                    </Link>
                   </div>
                 </div>
 
@@ -200,7 +198,9 @@ class Home extends Component {
                     className="carousal-img1"
                   />
                   <div className="link-cont">
-                    <button className="home-link">Health</button>
+                    <Link to="/health">
+                      <button className="home-link">Health</button>
+                    </Link>
                   </div>
                 </div>
 
@@ -214,7 +214,9 @@ class Home extends Component {
                     className="carousal-img1"
                   />
                   <div className="link-cont">
-                    <button className="home-link">Livelihood</button>
+                    <Link to="/livelihood">
+                      <button className="home-link">Livelihood</button>
+                    </Link>
                   </div>
                 </div>
 
@@ -326,10 +328,8 @@ class Home extends Component {
               life.
             </p>
             {/* <a href="#">Learn More</a> */}
-            <Link to="/ways-to-give" onClick={this.scrollToTop}>
-              Learn More
-            </Link>
-            <Link to="/donate" onClick={this.scrollToTop}>
+            <Link to="/ways-to-give">Learn More</Link>
+            <Link to="/donate">
               <button type="button" className="home-donate-btn1">
                 Donate
               </button>

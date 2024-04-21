@@ -7,12 +7,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import "./index.css";
 
 class DigitalTool extends Component {
-  scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "auto", // Optional: Add smooth scrolling behavior
-    });
-  };
   render() {
     return (
       <>
@@ -164,11 +158,7 @@ class DigitalTool extends Component {
             </p>
             <div className="digital-tool-btn-cont">
               <button className="digital-tool-btn">Volunteer</button>
-              <Link
-                to="/donate"
-                style={{ textDecoration: "none" }}
-                onClick={this.scrollToTop}
-              >
+              <Link to="/donate" style={{ textDecoration: "none" }}>
                 <button className="digital-tool-btn donate-orange">
                   Donate
                 </button>

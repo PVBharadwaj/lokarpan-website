@@ -18,13 +18,6 @@ const Approach = () => {
   const headingRefs = Array.from({ length: 4 }, () => useRef());
   let intersectionObserver = null;
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "auto", // Optional: Add smooth scrolling behavior
-    });
-  };
-
   const approachopenpopup = (index) => {
     const updatedVisibility = [...approachPopupVisibility];
     updatedVisibility[index] = true;
@@ -515,11 +508,7 @@ const Approach = () => {
           {/* <a href="#" className="approach-anchor">
             Learn More
           </a> */}
-          <Link
-            to="/donate"
-            onClick={scrollToTop}
-            className="approach-anchor white-content"
-          >
+          <Link to="/donate" className="approach-anchor white-content">
             <button type="button" className="our-role-apply-btn">
               Donate
             </button>

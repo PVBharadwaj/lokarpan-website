@@ -32,13 +32,6 @@ const Plans = [
 ];
 
 const Application = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "auto", // Optional: Add smooth scrolling behavior
-    });
-  };
-
   return (
     <>
       <Navbar />
@@ -144,11 +137,7 @@ const Application = () => {
         {/* <a href="#" className="approach-anchor">
             Learn More
           </a> */}
-        <Link
-          to="/ways-to-give"
-          onClick={scrollToTop}
-          className="approach-anchor white-content"
-        >
+        <Link to="/ways-to-give" className="approach-anchor white-content">
           {/* <button type="button" className="our-role-apply-btn">
                 Donate
               </button> */}

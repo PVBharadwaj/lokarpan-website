@@ -126,6 +126,8 @@ a {
   cursor: pointer;
   outline: none;
   color: white;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .career-anchor {

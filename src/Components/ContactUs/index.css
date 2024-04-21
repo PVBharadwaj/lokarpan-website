@@ -3,7 +3,7 @@
   overflow-x: hidden;
 }
 .contact-us-top-section {
-  height: 1100px;
+  /* height: 1100px; */
   width: 100%;
   margin: auto;
   display: flex;
@@ -192,11 +192,117 @@
   font-weight: bold;
 }
 
+.new-contact-sec {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-contact-head1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.new-para1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.new-contact-btn {
+  height: 40px;
+  width: 200px;
+  background-color: black;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+.new-follow-sec {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+.new-last-sec {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+.new-f-left {
+  width: 40%;
+}
+.new-f-right {
+  width: 50%;
+}
+.new-f-p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.new-last-h {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.new-last-p {
+  font-size: 20px;
+  font-family: 400;
+  margin-bottom: 50px;
+}
+.new-icons-cont {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.new-f-h {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.new-f-p2 {
+  font-size: 16px;
+  line-height: 25px;
+}
+.new-f-p3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
 .contact-us-img1 {
   background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1706005062/Rectangle_1899_etymet.png");
 }
 
 @media screen and (max-width: 748px) {
+  .new-icons-cont {
+    width: 40%;
+  }
+  .new-follow-sec {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .new-f-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .new-f-right {
+    width: 100%;
+    margin-bottom: 40px;
+  }
   /* .contact-us-top-sec {
     height: 400px;
   } */
