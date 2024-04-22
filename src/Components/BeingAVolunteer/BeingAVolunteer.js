@@ -26,6 +26,7 @@ const BeingAVolunteer = () => {
         <FlipCard3 />
         <FlipCard4 />
       </div>
+        <h1 className="meet-vol">Meet Our Volunteers</h1>
       <div className="being-a-volunteer-second">
         <VolunteerCarousel />
       </div>

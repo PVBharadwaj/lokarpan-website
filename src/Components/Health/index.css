@@ -57,7 +57,7 @@
   width: 100%;
   max-width: 1100px;
   padding-top: 20px;
-  padding-bottom: 120px;
+  padding-bottom: 20px;
   padding-inline-start: max(20px, var(--navbar-padding));
   padding-inline-end: max(20px, var(--navbar-padding));
 }
@@ -178,9 +178,19 @@
   gap: 0px !important;
 }
 
+.livelihood-cont-section{
+  margin-bottom: 0px;
+}
+
 .last-card{
-  grid-column-start: 4 !important;
-  grid-column-end: 10 !important;
+  grid-column: span 10;
+  grid-column-start: 2 !important;
+  grid-column-end: 12 !important;
+  align-items: center;
+}
+
+.last-card p{
+  text-align: center;
 }
 
 .livelihood-card-list h4 {

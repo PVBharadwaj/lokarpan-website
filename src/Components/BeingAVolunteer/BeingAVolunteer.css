@@ -11,6 +11,8 @@
 .volunteer-top{
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632802/image_325_zhdkyv.png");
   color: white;
+  background-repeat: no-repeat;
+  background-color: rgb(82, 182, 199);
 }
 
 .vol-head-div-text{
@@ -45,7 +47,7 @@
 }
 
 .being-a-volunteer-second{
-  padding: 200px 0px;
+  padding: 100px 0px 200px;
   display: flex;
   justify-content: center;
   min-width: 320px;
@@ -109,6 +111,12 @@
   padding: 20px 0px;
 }
 
+.meet-vol{
+  text-align: center;
+  font-size: 52px;
+  padding-top: 150px;
+}
+
 @media screen and (max-width: 748px) {
   .being-a-volunteer {
     padding: 10px 30px;
@@ -151,6 +159,10 @@
 }
 .volunter-opp p{
   font-size: 16px;
+}
+
+.meet-vol{
+  font-size: 32px;
 }
 }
 

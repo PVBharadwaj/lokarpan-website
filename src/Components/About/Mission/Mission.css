@@ -17,6 +17,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.mission-img{
+    height: 500px;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfdfdf;
+}
 .mission-princ-text-inner{
     display: flex;
     flex-direction: column;
@@ -64,6 +73,15 @@
     color: black;
     overflow: auto;
     z-index: 102;
+}
+
+.coc-questions{
+    padding: 50px 0px;
+    list-style: disc;
+}
+
+.coc-questions li{
+    padding: 20px 0px;
 }
 
 .mission-principles-container{
@@ -464,6 +482,11 @@ border: none;
  }
  .our-vision-text{
     padding: 0;
+ }
+ .mission-img{
+    height: 400px;
+    font-size: 32px;
+    text-align: center;
  }
 }
 
