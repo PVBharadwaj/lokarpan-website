@@ -28,7 +28,7 @@ const WaysToGive = () => {
             <p>
             Join our Supporter Circle to help us in our mission to empower rural communities through education! As a member, you'll gain special insights into our projects and opportunities to engage with our initiatives throughout the year.
             </p>
-            <Link className="give-card-link" to="/">Link</Link>
+            <Link className="give-card-link" to="/our-supporter">Link</Link>
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-2"></div>
@@ -48,7 +48,7 @@ const WaysToGive = () => {
           <div className="give-card-text">
             <h1>Corporate Partnerships:</h1>
             <p>
-            Partner with us to create lasting change in rural education! Your corporate support enables us to expand our reach and make education accessible to more children. Join our community of supporters and gain exclusive insights into our projects and initiatives.
+            Partner with us to create lasting change in rural education! Your corporate support enables us to expand our reach and make education accessible to more children. Join our community of supporters and gain exclusive insights into our projects and initiatives
             </p>
             <Link className="give-card-link" to="/">Link</Link>
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}

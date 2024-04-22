@@ -131,13 +131,16 @@ const PodCasts = () => {
             <div className="like-right-cont">
               {/* <p className="font24-podcasts space-blw">Speaker profiles</p> */}
               <div className="like-right-img-cont">
-                <img
+                <div className="like-img like-img1" onClick={() => openpopup(0)}></div>
+                <div className="like-img like-img2" onClick={() => openpopup(1)}></div>
+                <div className="like-img like-img2" onClick={() => openpopup(2)}></div>
+                {/* <img
                   src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713273901/Screenshot_2024-04-16_185311_gwamnh.png"
                   className="like-img"
                   onClick={() => openpopup(0)}
                 />
                 <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
+                  src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713774524/Screenshot_2024-04-22_135706_q6mgks.png"
                   className="like-img"
                   onClick={() => openpopup(1)}
                 />
@@ -145,7 +148,7 @@ const PodCasts = () => {
                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
                   className="like-img"
                   onClick={() => openpopup(2)}
-                />
+                /> */}
               </div>
 
               {popupVisibility[0] && (
@@ -156,7 +159,7 @@ const PodCasts = () => {
                     className="x"
                   />
                   <div className="podcasts-pop">
-                    <div className="podcasts-pop-img"></div>
+                    <div className="podcasts-pop-img popup-img1"></div>
                     <div className="podcasts-pop-text">
                       <h1>Osnat Pavese Rafael</h1>
                     <p className="mission-para">
@@ -164,8 +167,6 @@ const PodCasts = () => {
                     </p>
                     </div>
                   </div>
-                  
-                  
                 </div>
               </div>
               )}
@@ -176,15 +177,15 @@ const PodCasts = () => {
                     onClick={() => closepopup(1)} 
                     className="x"
                   />
-                  <p className="mission-para">
-                  At Lokarpan, a spirit of innovation has always guided our path. From our early days, our team has been driven by a relentless pursuit of excellence, refusing to settle for anything less than the best. This ethos was embodied by our founder, H.V. Singh, a man of unwavering patience and a sincere belief in the shared responsibility of all community members for fostering true transformation.
-                  </p>
-                  <p className="mission-para">
-                  In 1996, Lokarpan was born from Singh's vision, dedicated to addressing some of the most pressing challenges in our communities: high child mortality, unemployment, socio-economic disparities, and inadequate education. The organisation helped revitalise the communities, reform the education system and rescue mothers and their children from neonatal complications in the region.
-                  </p>
-                  <p className="mission-para">
-                  Over the past 28 years, we have worked hand-in-hand with communities, listening to their needs and aspirations to develop tailored solutions. Today, we are pioneering a new era of education with fully immersive, cross-compatible technologies designed to enhance learning outcomes and empower both students and teachers.
-                  </p>
+                  <div className="podcasts-pop">
+                    <div className="podcasts-pop-img popup-img2"></div>
+                    <div className="podcasts-pop-text">
+                      <h1>Rhea Shah</h1>
+                    <p className="mission-para">
+                    Rhea Shah is a polyglot with a deep passion for languages. With 8 years dedicated to mastering French, Rhea has served as a tutor, translator, and corporate language trainer. For the past 4 years, she has been teaching Mandarin at the Yeh China Institute & JBCN School in Mumbai. Rhea's journey has seen her transform her passion for language into a fulfilling profession, complemented by her background in mass media. Beyond linguistics, she finds joy in photography, travel, volunteering, culinary adventures, fitness activities, swimming, and dancing. A firm believer in the power of social entrepreneurship, Rhea aspires to impact and positively change the lives of 10,000 individuals over the next decade.
+                    </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               )}
