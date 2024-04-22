@@ -597,6 +597,9 @@
 }
 
 @media only screen and (max-width: 748px) {
+  .row-element {
+    width: 100%;
+  }
   .mobile-home {
     display: flex;
     margin-top: -130px;
@@ -868,6 +871,9 @@
   }
   .under-cont {
     height: 90%;
+  }
+  .read-btn1 {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 354px) {

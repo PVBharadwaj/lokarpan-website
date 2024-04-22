@@ -219,7 +219,7 @@ class ContactUs extends Component {
               <p className="new-f-p3">Email:</p>
             </div>
           </div>
-          <div className="new-last-sec">
+          {/* <div className="new-last-sec">
             <h1 className="new-last-h">Career Seekers</h1>
             <p className="new-last-p">
               We'd love to have you make a difference with us at Lokarpan.
@@ -235,6 +235,48 @@ class ContactUs extends Component {
               If you would like to support our work beyond grants, head to our
               Ways to Give page to know more.
             </p>
+          </div> */}
+          <div className="contact-last-section">
+            <h1 className="contact-font64-left">In case you missed anything</h1>
+            <p className="contact-font48-left">Resources</p>
+            <ul className="list">
+              <li className="each-item">
+                <p className="contact-font28">Donate</p>
+                <p className="each-item-p">
+                  Visit our <a href="#">Support</a> Page to find how can help
+                </p>
+              </li>
+              <li className="each-item">
+                <p className="contact-font28">LeaderShip</p>
+                <p className="each-item-p">
+                  Visit our <a href="#">LeaderShip</a> to ...
+                </p>
+              </li>
+              <li className="each-item">
+                <p className="contact-font28">Alumni</p>
+                <p className="each-item-p">
+                  Visit our <a href="#">Alumni Page</a> to ...
+                </p>
+              </li>
+              <li className="each-item">
+                <p className="contact-font28">Careers</p>
+                <p className="each-item-p">
+                  Visit our <a href="#">Careers Page</a> to ...
+                </p>
+              </li>
+              <li className="each-item">
+                <p className="contact-font28">Financial Info</p>
+                <p className="each-item-p">
+                  Visit our <a href="#">Financial Info </a> to ...
+                </p>
+              </li>
+              <li className="each-item">
+                <p className="contact-font28">Careers</p>
+                <p className="each-item-p">
+                  Visit our <a href="#">Careers Page</a> to ...
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
         <Footer />
