@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import items from "./Navsearch.json"
+import items from "./Navsearch.json";
 import { FiSearch } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
@@ -11,7 +11,14 @@ import { CiSearch } from "react-icons/ci";
 import Fuse from "fuse.js";
 
 const fuseOptions = {
-  keys: ["name", "position", "description", "navitem", "subnavitems", "subnavlistitem"],
+  keys: [
+    "name",
+    "position",
+    "description",
+    "navitem",
+    "subnavitems",
+    "subnavlistitem",
+  ],
   includeScore: true,
 };
 
@@ -37,20 +44,39 @@ const Navbar = () => {
   });
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.classList.add('body-no-scroll');
-    } else {
-      document.body.classList.remove('body-no-scroll');
-    }
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        document.body.classList.add("body-no-scroll");
+      } else {
+        document.body.classList.remove("body-no-scroll");
+      }
+    };
+
+    // Add event listener for scrolling
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [isMenuOpen]);
 
   useEffect(() => {
-    const menunavbar = document.getElementById("navbar-mainmenu")
-    if (activeDropdown) {
-      menunavbar.classList.add('body-no-scroll');
-    } else {
-      menunavbar.classList.remove('body-no-scroll');
-    }
+    const menunavbar = document.getElementById("navbar-mainmenu");
+
+    const handleScroll = () => {
+      if (activeDropdown) {
+        menunavbar.classList.add("body-no-scroll");
+      } else {
+        menunavbar.classList.remove("body-no-scroll");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   });
 
   useEffect(() => {
@@ -65,23 +91,23 @@ const Navbar = () => {
 
   useEffect(() => {
     const scrolldiv = document.getElementsByClassName("navbar-menu");
-  
+
     const handleScroll = () => {
       if (scrolldiv.length > 0) {
         setScrollPosition(scrolldiv[0].scrollTop);
         console.log(scrolldiv[0].scrollTop);
       }
     };
-  
+
     if (scrolldiv.length > 0) {
       scrolldiv[0].addEventListener("scroll", handleScroll);
-  
+
       return () => {
         scrolldiv[0].removeEventListener("scroll", handleScroll);
       };
     }
   }, []);
-  
+
   const ToggleSearchmenu = () => {
     if (isSearchmenuOpen) {
       setSearchmenuOpen(false);
@@ -158,24 +184,24 @@ const Navbar = () => {
   };
 
   const openmaindropdown = (dropdownId) => {
-  setActiveMainDropdown(dropdownId);
-  var dropdownHeight = document.getElementById("navbar-bg-layer");
-  if (dropdownHeight) {
-    if(dropdownId === "aboutDropdown"){
-      dropdownHeight.style.height = "340px"
-    } else if (dropdownId === "eduDropdown"){
-      dropdownHeight.style.height = "280px"
-    } else if (dropdownId === "designDropdown"){
-      dropdownHeight.style.height = "235px"
-    } else{
-      dropdownHeight.style.height = "320px"
+    setActiveMainDropdown(dropdownId);
+    var dropdownHeight = document.getElementById("navbar-bg-layer");
+    if (dropdownHeight) {
+      if (dropdownId === "aboutDropdown") {
+        dropdownHeight.style.height = "340px";
+      } else if (dropdownId === "eduDropdown") {
+        dropdownHeight.style.height = "280px";
+      } else if (dropdownId === "designDropdown") {
+        dropdownHeight.style.height = "235px";
+      } else {
+        dropdownHeight.style.height = "320px";
+      }
     }
-  }
-};
+  };
   const closemaindropdown = () => {
-      setActiveMainDropdown(null);
-      var dropdownHeight = document.getElementById("navbar-bg-layer");
-      dropdownHeight.style.height = "0px";
+    setActiveMainDropdown(null);
+    var dropdownHeight = document.getElementById("navbar-bg-layer");
+    dropdownHeight.style.height = "0px";
   };
 
   return (
@@ -350,7 +376,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/our-role" onClick={toggleMenu}>
+                      <Link to="/being-a-volunteer" onClick={toggleMenu}>
                         {/*  need to update to in Link  */}
                         Volunteer
                       </Link>
@@ -385,7 +411,9 @@ const Navbar = () => {
               } ${
                 activeMainDropdown === "designDropdown" ? "desktopactive" : ""
               }`}
-              style={{top: window.innerWidth <= 922 ? `${scrollPosition}px` : '' }}
+              style={{
+                top: window.innerWidth <= 922 ? `${scrollPosition}px` : "",
+              }}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -443,8 +471,12 @@ const Navbar = () => {
             <div
               className={`dropdown-content ${
                 activeDropdown !== null ? "active" : ""
-              } ${ activeMainDropdown === "supportDropdown" ? "desktopactive" : "" }`}
-              style={{top: window.innerWidth <= 922 ? `${scrollPosition}px` : '' }}
+              } ${
+                activeMainDropdown === "supportDropdown" ? "desktopactive" : ""
+              }`}
+              style={{
+                top: window.innerWidth <= 922 ? `${scrollPosition}px` : "",
+              }}
             >
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
@@ -563,9 +595,27 @@ const Navbar = () => {
                         <ul>
                           {searchResults.map((result) => (
                             <li key={result.item.id}>
-                              {result.item.name ? <a href={result.item.link}>{result.item.name}</a> : ""}
-                              {result.item.subnavlistitem ? <a href={result.item.Link}>{result.item.subnavlistitem}</a> : ""}
-                              {result.item.navitem ? <a href={result.item.Link}>{result.item.navitem}</a>: ""}
+                              {result.item.name ? (
+                                <a href={result.item.link}>
+                                  {result.item.name}
+                                </a>
+                              ) : (
+                                ""
+                              )}
+                              {result.item.subnavlistitem ? (
+                                <a href={result.item.Link}>
+                                  {result.item.subnavlistitem}
+                                </a>
+                              ) : (
+                                ""
+                              )}
+                              {result.item.navitem ? (
+                                <a href={result.item.Link}>
+                                  {result.item.navitem}
+                                </a>
+                              ) : (
+                                ""
+                              )}
                             </li>
                           ))}
                         </ul>
@@ -617,7 +667,9 @@ const Navbar = () => {
           </li>
           <li className="navbar-item hamburger-item">
             <div
-              class={`hamburger cross navbar-icon-inner ${isActive ? "active" : ""}`}
+              class={`hamburger cross navbar-icon-inner ${
+                isActive ? "active" : ""
+              }`}
               onClick={toggleMenu}
             >
               <span class="bar"></span>

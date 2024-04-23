@@ -8,11 +8,11 @@ const SupportSubNav = () => {
   const timeoutRef = useRef(null);
 
   const toggleNavmenu = () => {
-    if(isNavmenuOpen) {
-      setNavmenuOpen(false)
+    if (isNavmenuOpen) {
+      setNavmenuOpen(false);
     } else {
       clearTimeout(timeoutRef.current);
-      setNavmenuOpen(true)
+      setNavmenuOpen(true);
     }
   };
 
@@ -24,13 +24,13 @@ const SupportSubNav = () => {
   const closeBrowseMenu = () => {
     timeoutRef.current = setTimeout(() => {
       setNavmenuOpen(false);
-    }, 500); 
+    }, 500);
   };
 
   return (
     <nav className="SecNavbar support-nav">
       <div className="navbar-logo">
-        <Link className="navbar-mainlink" to="/why-donate">
+        <Link className="navbar-mainlink" to="/ways-to-give">
           Support
         </Link>
       </div>
@@ -42,8 +42,10 @@ const SupportSubNav = () => {
         >
           <p className="desktop-only">
             <span>Browse All</span>
-            <BsChevronDown 
-              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+            <BsChevronDown
+              className={`react-icon arrow-down ${
+                isNavmenuOpen ? "arrow-rotate" : ""
+              }`}
             />
           </p>
           <div
@@ -78,9 +80,11 @@ const SupportSubNav = () => {
         </li>
         <div className="mobile-view-dropdown" onClick={toggleNavmenu}>
           <p>
-          <BsChevronDown 
-            className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
-          />
+            <BsChevronDown
+              className={`react-icon arrow-down ${
+                isNavmenuOpen ? "arrow-rotate" : ""
+              }`}
+            />
           </p>
         </div>
         <li className="navbar-item apply-btn orange">
