@@ -44,40 +44,57 @@ const Navbar = () => {
   });
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (isMenuOpen) {
-        document.body.classList.add("body-no-scroll");
-      } else {
-        document.body.classList.remove("body-no-scroll");
-      }
-    };
-
-    // Add event listener for scrolling
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (isMenuOpen) {
+      document.body.classList.add("body-no-scroll");
+    } else {
+      document.body.classList.remove("body-no-scroll");
+    }
   }, [isMenuOpen]);
 
   useEffect(() => {
     const menunavbar = document.getElementById("navbar-mainmenu");
-
-    const handleScroll = () => {
-      if (activeDropdown) {
-        menunavbar.classList.add("body-no-scroll");
-      } else {
-        menunavbar.classList.remove("body-no-scroll");
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (activeDropdown) {
+      menunavbar.classList.add("body-no-scroll");
+    } else {
+      menunavbar.classList.remove("body-no-scroll");
+    }
   });
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (isMenuOpen) {
+  //       document.body.classList.add("body-no-scroll");
+  //     } else {
+  //       document.body.classList.remove("body-no-scroll");
+  //     }
+  //   };
+
+  //   // Add event listener for scrolling
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Clean up the event listener
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [isMenuOpen]);
+
+  // useEffect(() => {
+  //   const menunavbar = document.getElementById("navbar-mainmenu");
+
+  //   const handleScroll = () => {
+  //     if (activeDropdown) {
+  //       menunavbar.classList.add("body-no-scroll");
+  //     } else {
+  //       menunavbar.classList.remove("body-no-scroll");
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Clean up the event listener
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // });
 
   useEffect(() => {
     if (window.innerWidth <= 922) {
