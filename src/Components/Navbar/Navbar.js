@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import items from "./Navsearch.json";
 import { FiSearch } from "react-icons/fi";
@@ -44,6 +44,7 @@ const Navbar = () => {
   });
 
   useEffect(() => {
+    console.log("1");
     if (isMenuOpen) {
       document.body.classList.add("body-no-scroll");
     } else {
@@ -52,13 +53,15 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   useEffect(() => {
+    console.log("2");
     const menunavbar = document.getElementById("navbar-mainmenu");
     if (activeDropdown) {
+      console.log("dropdown-active");
       menunavbar.classList.add("body-no-scroll");
     } else {
       menunavbar.classList.remove("body-no-scroll");
     }
-  });
+  }, [activeDropdown]);
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -97,6 +100,7 @@ const Navbar = () => {
   // });
 
   useEffect(() => {
+    console.log("3");
     if (window.innerWidth <= 922) {
       if (isSearchmenuOpen) {
         document.body.style.overflow = "hidden";
@@ -104,9 +108,10 @@ const Navbar = () => {
         document.body.style.overflow = "auto";
       }
     }
-  });
+  }, [isSearchmenuOpen]);
 
   useEffect(() => {
+    console.log("4");
     const scrolldiv = document.getElementsByClassName("navbar-menu");
 
     const handleScroll = () => {
@@ -172,6 +177,39 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
     setIsActive(!isActive);
   };
+
+  // const toggleMenu = (e) => {
+  //   // Check if the clicked link is the "Home" or "Health" link
+  //   console.log(e.target.getAttribute("to"));
+  //   const isExcludedLink = [
+  //     "",
+  //     "/health",
+  //     "/environment",
+  //     "/livelihood",
+  //     "/fellowship",
+  //   ].includes(e.target.getAttribute("to"));
+  //   if (isExcludedLink) {
+  //     return; // Don't toggle the menu if it's the "Home" or "Health" link
+  //   }
+
+  //   setActiveDropdown(null);
+  //   setIsMenuOpen(!isMenuOpen);
+  //   setIsActive(!isActive);
+  // };
+
+  // const toggleMenu = (e) => {
+  //   // Get the path of the clicked link
+  //   const path = e.target.closest(Link)?.pathname || "/";
+
+  //   // If the clicked link's path is either "/" or "/health", return early
+  //   if (["/", "/health"].includes(path)) {
+  //     return;
+  //   }
+
+  //   setActiveDropdown(null);
+  //   setIsMenuOpen(!isMenuOpen);
+  //   setIsActive(!isActive);
+  // };
 
   const handleNavlinkClick = (e) => {
     if (window.innerWidth <= 922) {
@@ -242,9 +280,7 @@ const Navbar = () => {
           className={`navbar-links navbar-menu ${isMenuOpen ? "active" : ""}`}
         >
           <li className="navbar-item mobile-padding-left mobile-padding-top">
-            <Link to="/" onClick={toggleMenu}>
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li
             className="navbar-item mobile-padding-left dropdown"
@@ -268,39 +304,32 @@ const Navbar = () => {
 
                   <ul className="list-item-container">
                     <li className="mobile-explore">
-                      <Link to="/about" onClick={toggleMenu}>
+                      <Link
+                        to="/about"
+                        onClick={(e) => {
+                          toggleMenu(e);
+                        }}
+                      >
                         Explore About
                       </Link>
                     </li>
                     <li>
-                      <Link to="/about" onClick={toggleMenu}>
-                        Our Role
-                      </Link>
+                      <Link to="/about">Our Role</Link>
                     </li>
                     <li>
-                      <Link to="/history" onClick={toggleMenu}>
-                        History
-                      </Link>
+                      <Link to="/history">History</Link>
                     </li>
                     <li>
-                      <Link to="/mission" onClick={toggleMenu}>
-                        Mission
-                      </Link>
+                      <Link to="/mission">Mission</Link>
                     </li>
                     <li>
-                      <Link to="/leadership" onClick={toggleMenu}>
-                        Leadership
-                      </Link>
+                      <Link to="/leadership">Leadership</Link>
                     </li>
                     <li>
-                      <Link to="/career" onClick={toggleMenu}>
-                        Careers
-                      </Link>
+                      <Link to="/career">Careers</Link>
                     </li>
                     <li>
-                      <Link to="/financials" onClick={toggleMenu}>
-                        Financials
-                      </Link>
+                      <Link to="/financials">Financials</Link>
                     </li>
                   </ul>
                 </div>
@@ -308,23 +337,19 @@ const Navbar = () => {
                   <h1 className="quicklinks-heading">Quick Links</h1>
                   <ul className="quick-links">
                     <li>
-                      <Link to="/alumni" onClick={toggleMenu}>
-                        Alumni
-                      </Link>
+                      <Link to="/alumni">Alumni</Link>
                     </li>
                     <li>
-                      <Link to="/contact-us" onClick={toggleMenu}>
-                        Contact
-                      </Link>
+                      <Link to="/contact-us">Contact</Link>
                     </li>
                     <li>
-                      <Link to="/our-role" onClick={toggleMenu}>
+                      <Link to="/our-role">
                         {/*  need to update to in Link  */}
                         Blog
                       </Link>
                     </li>
                     <li>
-                      <Link to="/leadership" onClick={toggleMenu}>
+                      <Link to="/leadership">
                         {/*  need to update to in Link  */}
                         Subscribe
                       </Link>
@@ -353,29 +378,26 @@ const Navbar = () => {
                   <h1 className="nav-heading">Explore Education</h1>
                   <ul className="list-item-container">
                     <li className="mobile-explore">
-                      <Link to="/approach" onClick={toggleMenu}>
+                      <Link
+                        to="/approach"
+                        onClick={(e) => {
+                          toggleMenu(e);
+                        }}
+                      >
                         Explore Education
                       </Link>
                     </li>
                     <li>
-                      <Link to="/approach" onClick={toggleMenu}>
-                        Approach
-                      </Link>
+                      <Link to="/approach">Approach</Link>
                     </li>
                     <li>
-                      <Link to="/digital-tool" onClick={toggleMenu}>
-                        Digital Tools
-                      </Link>
+                      <Link to="/digital-tool">Digital Tools</Link>
                     </li>
                     <li>
-                      <Link to="/application" onClick={toggleMenu}>
-                        Application
-                      </Link>
+                      <Link to="/application">Application</Link>
                     </li>
                     <li>
-                      <Link to="/podcasts" onClick={toggleMenu}>
-                        Podcast
-                      </Link>
+                      <Link to="/podcasts">Podcast</Link>
                     </li>
                   </ul>
                 </div>
@@ -383,17 +405,13 @@ const Navbar = () => {
                   <h1 className="quicklinks-heading">Quick Links</h1>
                   <ul className="quick-links">
                     <li>
-                      <Link to="/impact" onClick={toggleMenu}>
-                        Impact
-                      </Link>
+                      <Link to="/impact">Impact</Link>
                     </li>
                     <li>
-                      <Link to="/moonshots" onClick={toggleMenu}>
-                        Moonshots
-                      </Link>
+                      <Link to="/moonshots">Moonshots</Link>
                     </li>
                     <li>
-                      <Link to="/being-a-volunteer" onClick={toggleMenu}>
+                      <Link to="/being-a-volunteer">
                         {/*  need to update to in Link  */}
                         Volunteer
                       </Link>
@@ -404,12 +422,15 @@ const Navbar = () => {
             </div>
           </li>
           <li className="navbar-item mobile-padding-left">
-            <Link to="/fellowship" onClick={toggleMenu}>
-              Fellowship
-            </Link>
+            <Link to="/fellowship">Fellowship</Link>
           </li>
           <li className="navbar-item mobile-padding-left">
-            <Link to="/kith/overview" onClick={toggleMenu}>
+            <Link
+              to="/kith/overview"
+              onClick={(e) => {
+                toggleMenu(e);
+              }}
+            >
               Kith
             </Link>
           </li>
@@ -437,24 +458,23 @@ const Navbar = () => {
                   <h1 className="nav-heading">Explore Design</h1>
                   <ul className="list-item-container">
                     <li className="mobile-explore">
-                      <Link to="/designlist" onClick={toggleMenu}>
+                      <Link
+                        to="/designlist"
+                        onClick={(e) => {
+                          toggleMenu(e);
+                        }}
+                      >
                         Explore Design
                       </Link>
                     </li>
                     <li>
-                      <Link to="/designlist" onClick={toggleMenu}>
-                        Projects
-                      </Link>
+                      <Link to="/designlist">Projects</Link>
                     </li>
                     <li>
-                      <Link to="/guideline" onClick={toggleMenu}>
-                        Design Guidelines
-                      </Link>
+                      <Link to="/guideline">Design Guidelines</Link>
                     </li>
                     <li>
-                      <Link to="/our-role" onClick={toggleMenu}>
-                        Resources
-                      </Link>
+                      <Link to="/our-role">Resources</Link>
                     </li>
                   </ul>
                 </div>
@@ -462,19 +482,13 @@ const Navbar = () => {
             </div>
           </li>
           <li className="navbar-item mobile-padding-left">
-            <Link to="/health" onClick={toggleMenu}>
-              Health
-            </Link>
+            <Link to="/health">Health</Link>
           </li>
           <li className="navbar-item mobile-padding-left">
-            <Link to="/environment" onClick={toggleMenu}>
-              Environment
-            </Link>
+            <Link to="/environment">Environment</Link>
           </li>
           <li className="navbar-item mobile-padding-left">
-            <Link to="/livelihood" onClick={toggleMenu}>
-              Livelihood
-            </Link>
+            <Link to="/livelihood">Livelihood</Link>
           </li>
           <li
             className="navbar-item mobile-padding-left dropdown"
@@ -500,34 +514,29 @@ const Navbar = () => {
                   <h1 className="nav-heading">Explore Donate</h1>
                   <ul className="list-item-container">
                     <li className="mobile-explore">
-                      <Link to="/why-donate" onClick={toggleMenu}>
+                      <Link
+                        to="/why-donate"
+                        onClick={(e) => {
+                          toggleMenu(e);
+                        }}
+                      >
                         Explore Donate
                       </Link>
                     </li>
                     <li>
-                      <Link to="/ways-to-give" onClick={toggleMenu}>
-                        Ways to Give
-                      </Link>
+                      <Link to="/ways-to-give">Ways to Give</Link>
                     </li>
                     <li>
-                      <Link to="/being-a-volunteer" onClick={toggleMenu}>
-                        Being a Volunteer
-                      </Link>
+                      <Link to="/being-a-volunteer">Being a Volunteer</Link>
                     </li>
                     <li>
-                      <Link to="/our-supporter" onClick={toggleMenu}>
-                        Our Supporters
-                      </Link>
+                      <Link to="/our-supporter">Our Supporters</Link>
                     </li>
                     <li>
-                      <Link to="/why-donate" onClick={toggleMenu}>
-                        Why Donate
-                      </Link>
+                      <Link to="/why-donate">Why Donate</Link>
                     </li>
                     <li>
-                      <Link to="/donate" onClick={toggleMenu}>
-                        Donate Now
-                      </Link>
+                      <Link to="/donate">Donate Now</Link>
                     </li>
                   </ul>
                 </div>
@@ -535,14 +544,10 @@ const Navbar = () => {
                   <h1 className="quicklinks-heading">Quick Links</h1>
                   <ul className="quick-links">
                     <li>
-                      <Link to="/financials" onClick={toggleMenu}>
-                        Financials
-                      </Link>
+                      <Link to="/financials">Financials</Link>
                     </li>
                     <li>
-                      <Link to="/fellowship" onClick={toggleMenu}>
-                        Apply for Fellowship
-                      </Link>
+                      <Link to="/fellowship">Apply for Fellowship</Link>
                     </li>
                   </ul>
                 </div>
@@ -687,7 +692,9 @@ const Navbar = () => {
               class={`hamburger cross navbar-icon-inner ${
                 isActive ? "active" : ""
               }`}
-              onClick={toggleMenu}
+              onClick={(e) => {
+                toggleMenu(e);
+              }}
             >
               <span class="bar"></span>
               <span class="bar"></span>

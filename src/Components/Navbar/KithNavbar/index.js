@@ -346,9 +346,7 @@ const Navbar = () => {
             style={{ fontSize: "20px" }}
           /> */}
           <li className="navbar-item mobile-padding-left">
-            <Link to="/kith/overview" onClick={toggleMenu}>
-              Overview
-            </Link>
+            <Link to="/kith/overview">Overview</Link>
           </li>
           <li
             className="navbar-item mobile-padding-left dropdown"
@@ -371,19 +369,13 @@ const Navbar = () => {
                 <div className="dropdown-container">
                   <ul className="list-item-container">
                     <li>
-                      <Link to="/kith/how-to" onClick={toggleMenu}>
-                        How to ?
-                      </Link>
+                      <Link to="/kith/how-to">How to ?</Link>
                     </li>
                     <li>
-                      <Link to="/kith/enrollment" onClick={toggleMenu}>
-                        Online Enrollment
-                      </Link>
+                      <Link to="/kith/enrollment">Online Enrollment</Link>
                     </li>
                     <li>
-                      <Link to="/kith/financials" onClick={toggleMenu}>
-                        Financials
-                      </Link>
+                      <Link to="/kith/financials">Financials</Link>
                     </li>
                   </ul>
                 </div>
@@ -411,27 +403,22 @@ const Navbar = () => {
                 <div className="dropdown-container">
                   <ul className="list-item-container">
                     <li>
-                      <Link to="/kith/campus-and-culture" onClick={toggleMenu}>
+                      <Link to="/kith/campus-and-culture">
                         Campus & Culture
                       </Link>
                     </li>
                     <li>
-                      <Link to="/kith/club-and-commitee" onClick={toggleMenu}>
+                      <Link to="/kith/club-and-commitee">
                         Committees & Clubs
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/kith/safety-and-wellbeing"
-                        onClick={toggleMenu}
-                      >
+                      <Link to="/kith/safety-and-wellbeing">
                         Safety & Wellbeing
                       </Link>
                     </li>
                     <li>
-                      <Link to="/kith/academics" onClick={toggleMenu}>
-                        Academics
-                      </Link>
+                      <Link to="/kith/academics">Academics</Link>
                     </li>
                   </ul>
                 </div>
@@ -460,29 +447,19 @@ const Navbar = () => {
                 <div className="dropdown-container">
                   <ul className="list-item-container">
                     <li>
-                      <Link to="/kith/leadership" onClick={toggleMenu}>
-                        Leadership
-                      </Link>
+                      <Link to="/kith/leadership">Leadership</Link>
                     </li>
                     <li>
-                      <Link to="/kith/employment" onClick={toggleMenu}>
-                        Employment
-                      </Link>
+                      <Link to="/kith/employment">Employment</Link>
                     </li>
                     <li>
-                      <Link to="/kith/alumni" onClick={toggleMenu}>
-                        Alumni
-                      </Link>
+                      <Link to="/kith/alumni">Alumni</Link>
                     </li>
                     <li>
-                      <Link to="/kith/faqs" onClick={toggleMenu}>
-                        FAQ
-                      </Link>
+                      <Link to="/kith/faqs">FAQ</Link>
                     </li>
                     <li>
-                      <Link to="/kith/donate" onClick={toggleMenu}>
-                        Donate
-                      </Link>
+                      <Link to="/kith/donate">Donate</Link>
                     </li>
                   </ul>
                 </div>
