@@ -494,19 +494,19 @@ class OurRole extends Component {
                                 onClick={() => close()}
                               />
                             </button>
-                            <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  OUR KITH PROGRAMME
-                                </h3>
-                                <p className="popup-font20">
-                                  As part of Lokarpan's commitment to achieving
-                                  great results through innovation, the
-                                  organisation helped accelerate the development
-                                  of an integrated teaching model.
-                                </p>
-                              </div>
+                            <div className="popup-section popup-mobile">
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    OUR KITH PROGRAMME
+                                  </h3>
+                                  <p className="popup-font20">
+                                    As part of Lokarpan's commitment to
+                                    achieving great results through innovation,
+                                    the organisation helped accelerate the
+                                    development of an integrated teaching model.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -547,7 +547,7 @@ class OurRole extends Component {
                                     of learning.
                                   </p>
 
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     Our Kith n Kin Centre of Excellence,
                                     providing specialised training for educators
                                     and pioneering ed-tech solutions. Through
@@ -609,17 +609,17 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  TRANSITION TO DIGITAL LEARNING DURING COVID.
-                                </h3>
-                                <p className="popup-font20">
-                                  Our digital resources offer an enriching
-                                  educational experience that nurtures curiosity
-                                  and knowledge.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    TRANSITION TO DIGITAL LEARNING DURING COVID.
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Our digital resources offer an enriching
+                                    educational experience that nurtures
+                                    curiosity and knowledge.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -643,7 +643,7 @@ class OurRole extends Component {
                                     into powerful insights for tailored
                                     instruction.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     In response to the challenges posed by the
                                     COVID-19 pandemic, Lokarpan accelerated the
                                     development of Hybrid, adding digitised
@@ -710,17 +710,17 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  SOLVING INDIA'S READING CRISIS
-                                </h3>
-                                <p className="popup-font20">
-                                  Our innovative reading assessments are
-                                  enhancing educational outcomes for children in
-                                  diverse learning environments.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    SOLVING INDIA'S READING CRISIS
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Our innovative reading assessments are
+                                    enhancing educational outcomes for children
+                                    in diverse learning environments.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -740,7 +740,7 @@ class OurRole extends Component {
                                     speed. This helps educators tailor
                                     strategies to individual learning needs.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     Through the READ assessment, we weave
                                     together Likert scales and multiple-choice
                                     options for clear, consistent insights. From
@@ -1106,16 +1106,16 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  MATERNAL AND CHILD HEALTH INITIATIVES
-                                </h3>
-                                <p className="popup-font20">
-                                  Project VISTAAR: Advocating for improved MNCHN
-                                  programming
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    MATERNAL AND CHILD HEALTH INITIATIVES
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Project VISTAAR: Advocating for improved
+                                    MNCHN programming
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -1141,7 +1141,7 @@ class OurRole extends Component {
                                     coordination with Auxiliary Nurse Midwives
                                     (ANMs).
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     Building on this legacy, Lokarpan, in 2006
                                     launched Project VISTAAR in Bulandshahr
                                     district, focusing on providing strategic
@@ -1211,19 +1211,19 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  {" "}
-                                  OUR VACCINATION INITIATIVES
-                                </h3>
-                                <p className="popup-font20">
-                                  Lokarpan has worked to ensure that children –
-                                  no matter who they are or where they live –
-                                  have access to the vaccines they need to
-                                  survive and thrive.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    {" "}
+                                    OUR VACCINATION INITIATIVES
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Lokarpan has worked to ensure that children
+                                    – no matter who they are or where they live
+                                    – have access to the vaccines they need to
+                                    survive and thrive.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -1241,7 +1241,7 @@ class OurRole extends Component {
                                     malaria and polio, ensuring the robust
                                     health of our communities.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     In close coordination with government
                                     counterparts, we facilitated TT vaccination,
                                     distributed essential IFA tablets, and
@@ -1303,18 +1303,18 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  FOOD AID PROGRAMME
-                                </h3>
-                                <p className="popup-font20">
-                                  We monitor health indicators closely to
-                                  address any nutritional gaps and implement
-                                  programs that combat malnutrition and promote
-                                  healthy growth.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    FOOD AID PROGRAMME
+                                  </h3>
+                                  <p className="popup-font20">
+                                    We monitor health indicators closely to
+                                    address any nutritional gaps and implement
+                                    programs that combat malnutrition and
+                                    promote healthy growth.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -1335,7 +1335,7 @@ class OurRole extends Component {
                                     members on the significance of balanced
                                     diets for optimal growth and development.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     Through initiatives such as the Village
                                     Health and Nutrition Day (VHND) and
                                     sector-level meetings, Lokarpan continues to
@@ -1816,17 +1816,17 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  MICROFINANCE INITIATIVES
-                                </h3>
-                                <p className="popup-font20">
-                                  In Uttar Pradesh, Lokarpan has helped reshape
-                                  communities by fostering financial autonomy
-                                  among women entrepreneurs
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    MICROFINANCE INITIATIVES
+                                  </h3>
+                                  <p className="popup-font20">
+                                    In Uttar Pradesh, Lokarpan has helped
+                                    reshape communities by fostering financial
+                                    autonomy among women entrepreneurs
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -1845,7 +1845,7 @@ class OurRole extends Component {
                                     facilitate their access to vital funds for
                                     livelihood enhancement.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     Out of the formed groups, a commendable 41
                                     SHGs successfully inaugurated bank accounts
                                     with HDFC, enabling them to proficiently
@@ -1912,18 +1912,18 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  ECONOMIC RESILIENCE PROGRAMMES
-                                </h3>
-                                <p className="popup-font20">
-                                  Lokarpan's vision for the future includes a
-                                  comprehensive Livelihoods intervention,
-                                  ensuring sustainable growth and improved
-                                  quality of life for rural households.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    ECONOMIC RESILIENCE PROGRAMMES
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Lokarpan's vision for the future includes a
+                                    comprehensive Livelihoods intervention,
+                                    ensuring sustainable growth and improved
+                                    quality of life for rural households.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -1947,7 +1947,7 @@ class OurRole extends Component {
                                     was driven by the goal of fostering economic
                                     empowerment within these communities.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     The programme's objectives centred on
                                     transforming the rural economic landscape.
                                     It aimed to bolster household incomes by
@@ -2339,18 +2339,18 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  DESIGN FELLOWSHIP
-                                </h3>
-                                <p className="popup-font20">
-                                  Drawing insights from challenges in rural
-                                  educational infrastructure, we invite experts
-                                  to join us in designing the most optimal
-                                  learning spaces
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    DESIGN FELLOWSHIP
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Drawing insights from challenges in rural
+                                    educational infrastructure, we invite
+                                    experts to join us in designing the most
+                                    optimal learning spaces
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -2386,7 +2386,7 @@ class OurRole extends Component {
                                     building phase rather than long-term
                                     sustainability measures.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     By fostering a culture of innovation and
                                     strategic planning, we seek to create
                                     educational spaces that not only meet
@@ -2448,15 +2448,17 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">READING ROOMS</h3>
-                                <p className="popup-font20">
-                                  Transforming spaces that support inclusive
-                                  approaches to education, enabling children to
-                                  learn together.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    READING ROOMS
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Transforming spaces that support inclusive
+                                    approaches to education, enabling children
+                                    to learn together.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -2486,7 +2488,7 @@ class OurRole extends Component {
                                     its impact in fostering a love for reading
                                     and learning among children.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     The project's objectives are clear: to
                                     create a space where children can
                                     comfortably immerse themselves in the world
@@ -2551,17 +2553,17 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  CHILD-FRIENDLY SANITATION STALLS
-                                </h3>
-                                <p className="popup-font20">
-                                  Ensuring a safer, comfortable, and
-                                  age-appropriate restroom experience for
-                                  children
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    CHILD-FRIENDLY SANITATION STALLS
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Ensuring a safer, comfortable, and
+                                    age-appropriate restroom experience for
+                                    children
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -2584,7 +2586,7 @@ class OurRole extends Component {
                                     and easily accessible amenities like clothes
                                     hooks and trash bins.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     The project scope encompasses a holistic
                                     approach, from optimising space utilisation
                                     and incorporating energy-efficient lighting
@@ -2991,18 +2993,18 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  TREE PLANTATIONS
-                                </h3>
-                                <p className="popup-font20">
-                                  Our ongoing tree plantation initiatives aim to
-                                  enhance green cover, combat climate change,
-                                  and promote a healthier environment for
-                                  generations to come.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    TREE PLANTATIONS
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Our ongoing tree plantation initiatives aim
+                                    to enhance green cover, combat climate
+                                    change, and promote a healthier environment
+                                    for generations to come.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -3025,7 +3027,7 @@ class OurRole extends Component {
                                     deeply committed to safeguarding these
                                     natural treasures.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     One of our key conservation efforts involves
                                     extensive tree planting initiatives, working
                                     closely with farmers and local communities.
@@ -3096,16 +3098,16 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  ANNUAL MIGRATORY BIRD SURVEY
-                                </h3>
-                                <p className="popup-font20">
-                                  Tracking migratory birds across districts to
-                                  monitor and conserve exotic bird populations
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    ANNUAL MIGRATORY BIRD SURVEY
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Tracking migratory birds across districts to
+                                    monitor and conserve exotic bird populations
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -3125,7 +3127,7 @@ class OurRole extends Component {
                                     insights into their behaviour, habitat
                                     preferences, and seasonal movements.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     The overarching goal of this initiative is
                                     to safeguard biodiversity in our regions by
                                     identifying and protecting critical habitats
@@ -3192,17 +3194,18 @@ class OurRole extends Component {
                               />
                             </button>
                             <div className="popup-section">
-                              <div className="popup-left-container">
-                                <h3 className="popup-font40">
-                                  WATER CONSERVATION
-                                </h3>
-                                <p className="popup-font20">
-                                  Promoting conservation practices and fostering
-                                  a harmonious balance between human needs and
-                                  the preservation of our natural resources.
-                                </p>
-                              </div>
                               <div className="popup-right-container">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    WATER CONSERVATION
+                                  </h3>
+                                  <p className="popup-font20">
+                                    Promoting conservation practices and
+                                    fostering a harmonious balance between human
+                                    needs and the preservation of our natural
+                                    resources.
+                                  </p>
+                                </div>
                                 <img
                                   src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
                                   alt="popup-img"
@@ -3224,7 +3227,7 @@ class OurRole extends Component {
                                     and promote effective water conservation
                                     practices.
                                   </p>
-                                  <p className="popup-font16">
+                                  <p className="popup-font16 popup-last-space">
                                     In addition to our focus on water quality,
                                     Lokarpan actively engages in the
                                     preservation of village ponds, essential

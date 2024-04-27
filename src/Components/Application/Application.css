@@ -178,6 +178,12 @@
 }
 
 @media screen and (max-width: 748px) {
+  .app-para-5 {
+    font-size: 18px;
+  }
+  .app-para-4 {
+    font-size: 18px;
+  }
   .app-page {
     padding: 10px 30px;
   }
@@ -199,13 +205,17 @@
     height: 350px;
   }
   .application-para1 {
-    font-size: 16px;
-    padding: 16px 0px 45px;
+    font-size: 18px;
+    padding: 30px 0px 45px;
+    font-weight: 500;
+    line-height: 28px;
   }
 
   .application-para2 {
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px 0px 42px;
+    font-weight: 500;
+    line-height: 28px;
   }
 
   .choose-plan {

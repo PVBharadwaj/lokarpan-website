@@ -340,9 +340,9 @@ const Navbar = () => {
                 <div className="dropdown-container">
                   <h1 className="quicklinks-heading">Quick Links</h1>
                   <ul className="quick-links">
-                    <li>
+                    {/* <li>
                       <Link to="/alumni">Alumni</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/contact-us">Contact</Link>
                     </li>
