@@ -133,7 +133,7 @@ const PodCasts = () => {
               <div className="like-right-img-cont">
                 <div className="like-img like-img1" onClick={() => openpopup(0)}></div>
                 <div className="like-img like-img2" onClick={() => openpopup(1)}></div>
-                <div className="like-img like-img2" onClick={() => openpopup(2)}></div>
+               
                 {/* <img
                   src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713273901/Screenshot_2024-04-16_185311_gwamnh.png"
                   className="like-img"
@@ -144,11 +144,7 @@ const PodCasts = () => {
                   className="like-img"
                   onClick={() => openpopup(1)}
                 />
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708787838/Rectangle_1812_1_dhzqgy.png"
-                  className="like-img"
-                  onClick={() => openpopup(2)}
-                /> */}
+               */}
               </div>
 
               {popupVisibility[0] && (
@@ -189,26 +185,7 @@ const PodCasts = () => {
                 </div>
               </div>
               )}
-              {popupVisibility[2] && (
-              <div className="misson-popup">
-                <div className="misson-popup-content">
-                  <RxCross2 
-                    onClick={() => closepopup(2)} 
-                    className="x"
-                  />
-                  <p className="mission-para">
-                  At Lokarpan, a spirit of innovation has always guided our path. From our early days, our team has been driven by a relentless pursuit of excellence, refusing to settle for anything less than the best. This ethos was embodied by our founder, H.V. Singh, a man of unwavering patience and a sincere belief in the shared responsibility of all community members for fostering true transformation.
-                  </p>
-                  <p className="mission-para">
-                  In 1996, Lokarpan was born from Singh's vision, dedicated to addressing some of the most pressing challenges in our communities: high child mortality, unemployment, socio-economic disparities, and inadequate education. The organisation helped revitalise the communities, reform the education system and rescue mothers and their children from neonatal complications in the region.
-                  </p>
-                  <p className="mission-para">
-                  Over the past 28 years, we have worked hand-in-hand with communities, listening to their needs and aspirations to develop tailored solutions. Today, we are pioneering a new era of education with fully immersive, cross-compatible technologies designed to enhance learning outcomes and empower both students and teachers.
-                  </p>
-                </div>
-              </div>
-              )}
-
+             
             </div>
           </div>
           <div className="lower-podcasts-cont">

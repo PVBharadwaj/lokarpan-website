@@ -83,7 +83,14 @@ const History = () => {
               their own progress. This ethos formed the bedrock of our mission:
               to organise and empower the rural poor, fostering development as a
               catalyst for social justice, economic growth, and self-reliance.
-              Over two decades, Lokarpan has developed a comprehensive strategy
+             
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="history-section-container">
+        {/* ------------------------- */}
+<div className="his-sec-text"> Over two decades, Lokarpan has developed a comprehensive strategy
               rooted in community engagement, forging sustainable solutions to
               the diverse challenges confronting rural India. Through our
               strategic partnerships, we've built a robust network of
@@ -91,14 +98,7 @@ const History = () => {
               development. With a team of sector-specialist trainers, locally
               trained staff, and grassroots infrastructure, Lokarpan remains
               steadfast in its commitment to a brighter, more equitable future
-              for all.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="history-section-container">
-        {/* ------------------------- */}
-
+              for all.</div>
         {/* -------------------- */}
         <div className="history-jumto">Jump to :</div>
 
