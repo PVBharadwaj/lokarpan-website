@@ -3,80 +3,80 @@ import Navbar from "../Navbar/Navbar";
 import "./Moonshots.css";
 import { Link } from "react-router-dom";
 const Moonshots = () => {
-  const scrollToTopAndNavigate = () => {
-    window.scrollTo(0, 0); 
-  };
   return (
     <>
       <Navbar />
-      <div className="moonshots-top"></div>
+      {/* <div className="moonshots-top"></div> */}
+      <div className="livelihood-full-img-text moonshots-top">
+        {/* <div className="moonshots-top"> */}
+        <h1 className="livelihood-full-img-text-head moonshot-text">
+          So, what does the future hold for Lokarpan and its mission for
+          educational equity?
+        </h1>
+      </div>
       <div className="fellowship-page">
-        <div className="second-div">
-          <div className="sub-div">
-            <img
-              className="fellow-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623658/100_2093_1_zr9bw1.png"
-              alt="img1"
-            />
-            <h3 className="impact-title">Progressive Curriculum:</h3>
-            <p className="fellow-data">
-            Developing technology-driven, innovative curriculum to empower rural students for a brighter future.
-
-            </p>
-          </div>
-          <div className="sub-div">
-            <img
-              className="fellow-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623659/IMG_3313_2_zapx1r.png"
-              alt="img2"
-            />
-            <h3 className="impact-title">Empowering Educators:</h3>
-            <p className="fellow-data">
-            Empowering Educators: Equipping teachers with skills for engaging lesson plans, enhancing Mathematics and Science education quality.
-
-            </p>
-          </div>
+        <div className="why-donate-topdiv">
+          <p>
+            Lokarpan aims to reimagine education from the ground up, introducing
+            immersive technologies, personalised learning pathways, and dynamic
+            content creation tools. Our goal is not just to improve learning
+            outcomes, but to empower learners of all ages and backgrounds to
+            thrive in the digital age.
+          </p>
         </div>
-        
-        <div className="second-div">
-          <div className="sub-div">
-            <img
-              className="fellow-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623659/DSC04890_1_xxtsrn.png"
-              alt="img1"
-            />
-            <h3 className="impact-title">Strategic Partnerships: </h3>
-            <p className="fellow-data">
-            Forging collaborations with higher education institutes, fostering innovation in education practices.
-
-            </p>
+        <p className="moonshots-head">Our focus Areas</p>
+        <div className="second-div moonshots-div">
+          <div className="moonshots-sub-div moonshots-img1">
+            <div className="moons-text-div">
+              <p className="moons-head">Progressive Curriculum</p>
+              <p className="moons-text">
+                Developing technology-driven, innovative curriculum to empower
+                rural students for a brighter future
+              </p>
+            </div>
           </div>
-          <div className="sub-div">
-            <img
-              className="fellow-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623657/Rectangle_1875_akaqkc.png"
-              alt="img2"
-            />
-            <h3 className="impact-title">Infrastructure Investment:</h3>
-            <p className="fellow-data">
-            Building modern facilities and classrooms to inspire creativity and ensure access to quality education.
-
-
-            </p>
+          <div className="moonshots-sub-div moonshots-img2">
+            <div className="moons-text-div">
+              <p className="moons-head">Empowering Educators</p>
+              <p className="moons-text">
+                Equipping teachers with skills for engaging lesson plans,
+                enhancing Mathematics and Science education quality.
+              </p>
+            </div>
+          </div>
+          <div className="moonshots-sub-div moonshots-img3">
+            <div className="moons-text-div">
+              <p className="moons-head">Strategic Partnerships</p>
+              <p className="moons-text">
+                Forging collaborations with higher education institutes,
+                fostering innovation in education practices.
+              </p>
+            </div>
+          </div>
+          <div className="moonshots-sub-div moonshots-img4">
+            <div className="moons-text-div">
+              <p className="moons-head">Infrastructure Investment</p>
+              <p className="moons-text">
+                Building modern facilities and classrooms to inspire creativity
+                and ensure access to quality education.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div className="donate-section">
-              <h1 className="last-space">Be a Catalyst for Change</h1>
-              <p className="our-role-font24">
-              Join Lokarpan in our mission to combat social and economic disparities, empowering at-risk communities for a brighter future. Your support fuels innovation and transformative impact.
-              </p>
-              <Link to="/donate" onClick={scrollToTopAndNavigate}>
-                <button type="button" className="our-role-apply-btn">
-                  Donate
-                </button>
-              </Link>
-            </div>
+        <h1 className="last-space">Be a Catalyst for Change</h1>
+        <p className="our-role-font24">
+          Join Lokarpan in our mission to combat social and economic
+          disparities, empowering at-risk communities for a brighter future.
+          Your support fuels innovation and transformative impact.
+        </p>
+        <Link to="/donate">
+          <button type="button" className="our-role-apply-btn">
+            Donate
+          </button>
+        </Link>
+      </div>
       <Footer />
     </>
   );

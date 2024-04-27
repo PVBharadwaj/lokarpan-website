@@ -50,20 +50,23 @@ import CampusAndCulture from "./Components/CampusAndCulture";
 import SafetyAndWellBeing from "./Components/SafetyAndWellBeing";
 import ClubAndCommitee from "./Components/ClubAndCommitee";
 import Information from "./Components/Information";
-import Carek from "./Components/Kith/KithComp/careerkith/careerk"
+import Carek from "./Components/Kith/KithComp/careerkith/careerk";
 import Alumni from "./Components/Alumni";
 import KithLeadership from "./Components/KithLeadership";
 import KithFaq from "./Components/Kith/KithComp/faqkith/faqk";
 import Sidemap from "./Components/Sitemap/Sidemap";
 import "./styles.css";
 import CodeOfConduct from "./Components/About/Mission/CodeOfConduct";
+import ScrollToTop from "./Components/ScrollToTop";
+import WriteToUs from "./Components/WriteToUs";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/lokarpan-website">
+        <ScrollToTop />
         <Routes>
-          <Route path="/sitemap" element={<Sidemap/>}></Route>
+          <Route path="/sitemap" element={<Sidemap />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/faqs" element={<KithFaq />}></Route>
@@ -87,7 +90,7 @@ function App() {
           <Route path="/mission" element={<Mission />}></Route>
           <Route path="/history" element={<History />}></Route>
           <Route path="/code-of-conduct" element={<CodeOfConduct />}></Route>
-          
+
           <Route path="/design" element={<DesignPage />}></Route>
           <Route path="/designlist" element={<DesignList />}></Route>
           <Route path="/designindividual" element={<IndiDesignpage />}></Route>
@@ -110,6 +113,7 @@ function App() {
           ></Route>
           <Route path="/podcasts" element={<PodCasts />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
+          <Route path="/contact-us/write-to-us" element={<WriteToUs />}></Route>
           <Route path="/our-supporter" element={<OurSupporter />}></Route>
           <Route path="/kith/enrollment" element={<OnlineEnrollment />}></Route>
           <Route path="/kith/how-to" element={<HowTo />}></Route>

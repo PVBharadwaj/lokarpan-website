@@ -65,11 +65,13 @@
   color: #181818;
   font-size: 40px;
   font-weight: bold;
+  line-height: 32px;
 }
 
 .desp-cards p{
   color: #333333;
   font-size: 20px;
+  line-height: 32px;
 }
 
 .desp-card-list {

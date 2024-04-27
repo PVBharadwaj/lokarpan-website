@@ -11,20 +11,30 @@ export default class d_home3 extends Component {
         <Navbar />
         <SubnavBar />
         {/* ------------------------------------------------------------- */}
-        <section className="guideline_design"></section>
+        <section className="guideline_design">
+          <h1>
+            At Lokarpan, we set the standard for education infrastructure in
+            rural areas.
+          </h1>
+        </section>
         {/* ------------------------------------------------------------- */}
 
         <section className="d_home_section1_mobile">
           <div className="d_home_section1_mobile_image"></div>
           <h1 className="d_home_section1_mobile_text">
-            Help management understand how planning can cut long term costs and
-            add value to construction
+            Leveraging local materials and innovative approaches, Lokarpan
+            pioneers rural design and landscaping, envisioning vibrant
+            communities rooted in sustainability. Our guidance empowers
+            community leaders, shaping rural construction policies for a better,
+            more sustainable future
           </h1>
         </section>
         <section className="d_home_section1_mobile">
           <div className="d_home_section1_mobile_image"></div>
           <h1 className="d_home_section1_mobile_text">
-            Browse accessories or find new colours to go with your devices.
+            Our comprehensive design manual offers a blueprint for constructing
+            large-footprint schools, integrating local resources and sustainable
+            practices to create optimal learning environments
           </h1>
         </section>
         {/* ------------------------------------------------------------- */}
@@ -33,7 +43,9 @@ export default class d_home3 extends Component {
 
           <div className="d_home_section1_right">
             <h1>
-              Browse accessories or find new colours to go with your devices.
+              Our comprehensive design manual offers a blueprint for
+              constructing large-footprint schools, integrating local resources
+              and sustainable practices to create optimal learning environments
             </h1>
           </div>
         </section>
@@ -42,10 +54,13 @@ export default class d_home3 extends Component {
         {/* ------------------------------------------------------------- */}
         <section className="d_home_section1">
           <div className="d_home_section1_right">
-            <h1>
-              Help management understand how planning can cut long term costs
-              and add value to construction
-            </h1>
+            <p className="design-p2">
+              Leveraging local materials and innovative approaches, Lokarpan
+              pioneers rural design and landscaping, envisioning vibrant
+              communities rooted in sustainability. Our guidance empowers
+              community leaders, shaping rural construction policies for a
+              better, more sustainable future
+            </p>
           </div>
           <div className="d_home_section1_left image_right"></div>
         </section>

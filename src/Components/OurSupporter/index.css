@@ -68,26 +68,39 @@
   max-width: 1100px;
 }
 .donor-section {
-  height: 380px;
+  /* height: 380px; */
   width: calc(100% - 32px);
-  margin: 138px auto;
+  margin: 38px auto 138px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .donor-below-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
+  max-width: 1100px;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.padding100{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 .each-sec {
-  height: 150px;
+  /* height: 150px; */
   width: 310px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-bottom: 50px;
+}
+.supp-each-sec{
+  align-items: center;
 }
 .philantropic-section {
   min-height: 550px;
@@ -103,6 +116,7 @@
   /* height: 550px; */
   width: 80%;
   margin: 50px auto;
+  text-align: center;
 }
 .philantropic-below-section p {
   font-size: 24px;
@@ -111,12 +125,12 @@
   width: 45%;
 }
 .in-support-section {
-  height: 390px;
+  /* height: 390px; */
   width: 100%;
-  margin: 350px 0;
+  margin: 150px 0;
 }
 .in-support-below-section {
-  height: 180px;
+  /* height: 180px; */
   width: 500px;
   margin: 42px auto;
   display: flex;
@@ -130,10 +144,13 @@
   font-weight: bold;
 }
 .donor-last-sec {
-  height: 120px;
+  /* height: 120px; */
   width: calc(100% - 300px);
   margin: auto;
   margin-top: 150px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .black {
@@ -153,18 +170,19 @@
     width: calc(100% - 100px);
   }
   .donor-section {
-    width: calc(100% - 200px);
+    width: calc(100% - 20px);
     margin: auto;
-    height: 700px;
+    /* height: 700px; */
     margin-top: 100px;
   }
   .donor-below-section {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    flex-direction: column;
   }
   .each-sec {
-    height: 80px;
+    /* height: 80px; */
     width: 310px;
     margin: 50px 0;
   }
@@ -189,7 +207,7 @@
     margin: 20px 0;
   }
   .in-support-section {
-    height: 300px;
+    /* height: 300px; */
     margin-top: 100px;
   }
   .in-support-section .font48 {

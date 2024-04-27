@@ -34,7 +34,7 @@ const FlipCard = () => {
               {/* <h1>
                 Browse accessories to find new colors to go with your devices.
               </h1> */}
-              <h1>Why Volunteer with Lokarpan?</h1>
+              <h1>Contribute directly to initiatives that uplift underprivileged communities and enhance their well-being.</h1>
               <img
                 src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632775/image_327_tg9gsn.png"
                 alt=""
@@ -46,7 +46,7 @@ const FlipCard = () => {
           </div>
           <div className="flip-card-back">
             <div>
-              <h1>Why Volunteer with Lokarpan?</h1>
+              <h1>Contribute directly to initiatives that uplift underprivileged communities and enhance their well-being.</h1>
               {/* <p>
                 A gift to the Harvard Art Museums’ Annual Appeal provides
                 crucial support for daily operations while also ensuring that

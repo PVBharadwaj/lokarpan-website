@@ -151,7 +151,7 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 295px) {
+@media screen and (max-width: 340px) {
   .prev-arrow {
     bottom: 60% !important; 
     left: 43% !important;
@@ -163,43 +163,55 @@
   }
 }
 
-@media screen and (min-width: 295px) and (max-width: 380px){
+@media screen and (min-width: 340px) and (max-width: 400px){
   .prev-arrow {
-    bottom: 50% !important; 
+    bottom: 52% !important; 
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 50% !important; 
+    bottom: 52% !important; 
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 380px) and (max-width: 465px){
+@media screen and (min-width: 400px) and (max-width: 470px){
   .prev-arrow {
-    bottom: 43% !important; 
+    bottom: 45% !important; 
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 43% !important; 
+    bottom: 45% !important; 
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 465px) and (max-width: 602px){
+@media screen and (min-width: 470px) and (max-width: 561px){
   .prev-arrow {
-    bottom: 35% !important; 
+    bottom: 40% !important; 
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 35% !important; 
+    bottom: 40% !important; 
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 602px) and (max-width: 875px){
+@media screen and (min-width: 561px) and (max-width: 675px){
+  .prev-arrow {
+    bottom: 34% !important; 
+    left: 43% !important;
+  }
+
+  .next-arrow {
+    bottom: 34% !important; 
+    left: 50% !important;
+  }
+}
+
+@media screen and (min-width: 675px) and (max-width: 775px){
   .prev-arrow {
     bottom: 28% !important; 
     left: 43% !important;
@@ -207,6 +219,18 @@
 
   .next-arrow {
     bottom: 28% !important; 
+    left: 50% !important;
+  }
+}
+
+@media screen and (min-width: 775px) and (max-width: 875px){
+  .prev-arrow {
+    bottom: 24% !important; 
+    left: 43% !important;
+  }
+
+  .next-arrow {
+    bottom: 24% !important; 
     left: 50% !important;
   }
 }

@@ -187,8 +187,8 @@
   cursor: pointer;
   outline: none;
   background-color: white;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   color: white;
   background-color: black;
 }
@@ -364,7 +364,7 @@
 }
 .row-container {
   height: 184px;
-  width: 75%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -410,7 +410,6 @@
 }
 .lok-head-cont {
   height: 300px;
-  width: 680px;
   margin: 50px auto;
   margin-bottom: 50px;
 }
@@ -543,7 +542,8 @@
   outline: none;
   margin: 30px auto;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .home-banner p {
@@ -577,9 +577,29 @@
   .text-m1 {
     margin-top: 50px;
   }
+
+  .row-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .row-container {
+    flex-direction: column;
+  }
+  .lok-head-cont {
+    margin-bottom: 100px;
+  }
+
+  .row-element {
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (max-width: 748px) {
+  .row-element {
+    width: 100%;
+  }
   .mobile-home {
     display: flex;
     margin-top: -130px;
@@ -655,18 +675,7 @@
     width: calc(100% - 40px);
     margin-top: 100px;
   }
-  .row-container {
-    flex-direction: column;
-    height: 400px;
-    margin-bottom: 100px;
-    margin-top: 0;
-    width: 90%;
-  }
-  .row-element {
-    height: 45%;
-    width: 100%;
-    align-items: center;
-  }
+
   .design-img {
     border-radius: 20px;
   }
@@ -862,6 +871,9 @@
   }
   .under-cont {
     height: 90%;
+  }
+  .read-btn1 {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 354px) {
