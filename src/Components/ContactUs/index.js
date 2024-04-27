@@ -106,6 +106,7 @@ class ContactUs extends Component {
                 <p className="contact-font16-normal">V&P Malhausi</p>
                 <p className="contact-font16-normal">Auariya, UP 206255</p>
                 <p className="contact-font16-normal">India</p>
+                <p className="contact-font16-normal">Tele : XXX-XXX-XXXX</p>
                 <a href="#" className="contact-anchor">
                   Directions
                 </a>
@@ -127,39 +128,34 @@ class ContactUs extends Component {
               <li className="each-item">
                 <p className="contact-font28">Donate</p>
                 <p className="each-item-p">
-                  Visit our <a href="#">Support</a> Page to find how can help
+                Explore our Support Page to learn how you can make a difference through your generosity.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">LeaderShip</p>
                 <p className="each-item-p">
-                  Visit our <a href="#">LeaderShip</a> to ...
+                Visit our Leadership Page to meet the team driving Lokarpan's mission forward.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Alumni</p>
                 <p className="each-item-p">
-                  Visit our <a href="#">Alumni Page</a> to ...
+                Connect with fellow Lokarpan alumni and discover how you can stay engaged with our community on our Alumni Page.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Careers</p>
                 <p className="each-item-p">
-                  Visit our <a href="#">Careers Page</a> to ...
+                Unlock exciting opportunities to join Lokarpan's dedicated team by visiting our Careers Page.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Financial Info</p>
                 <p className="each-item-p">
-                  Visit our <a href="#">Financial Info </a> to ...
+                Gain insights into Lokarpan's financial transparency and stewardship by exploring our Financial Info Page.
                 </p>
               </li>
-              <li className="each-item">
-                <p className="contact-font28">Careers</p>
-                <p className="each-item-p">
-                  Visit our <a href="#">Careers Page</a> to ...
-                </p>
-              </li>
+              
             </ul>
           </div>
           {/* <div className="new-contact-sec">

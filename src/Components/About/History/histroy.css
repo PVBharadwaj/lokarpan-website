@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .history-section-container {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', sans-serif; 
   padding: 4rem 2rem;
 }
 .history-buttons button {
@@ -14,21 +16,24 @@
   border-radius: 100px;
 }
 .history-left-side {
-  width: 40%;
+  font-family: 'Inter', sans-serif; 
+  width: 50%;
 }
 .timeline-body {
   text-align: center;
 }
 .timeline-date {
+  font-family: 'Inter', sans-serif; 
   padding: 1rem;
   font-size: 2.5rem;
   font-weight: 300;
 }
 .history-lsh1 {
-  /* text-align: right; */
+  text-align: right;
+  font-family: 'Inter', sans-serif;  
   font-weight: 600;
   font-size: 64px;
-  /* margin-top: 100px; */
+   margin-top: 100px; 
   margin-right: 15%;
 }
 .history-down {
@@ -37,12 +42,14 @@
 }
 .history-lsh2 {
   display: flex;
-  /* justify-content: flex-end; */
+  font-family: 'Inter', sans-serif; 
+  justify-content: flex-end; 
   font-weight: 600;
   font-size: 64px;
-  /* margin-right: 15%; */
+   margin-right: 15%; 
 }
 .history-lsh21 {
+  font-family: 'Inter', sans-serif; 
   font-weight: 300;
   font-size: 1.75rem;
   padding-right: 5px;
@@ -51,11 +58,12 @@
 
 .history-right-side {
   font-size: 15px;
-
+  font-family: 'Inter', sans-serif; 
   width: 60%;
   text-align: left;
 }
 .history-jumto {
+  font-family: 'Inter', sans-serif; 
   padding: 4% 2% 0.5% 2%;
 
   font-weight: 600;
@@ -68,17 +76,22 @@
   align-items: center;
   background-color: #000;
   color: #fff;
-  /* margin: 100px 0; */
-  /* padding: 8rem 8rem 10rem 8rem ; */
+ 
+  padding: 0 8rem ; 
 }
+.his-sec-text{
+  font-size: 24px;
 
+  font-weight: 450;
+  padding: 2rem 4rem;
+}
 .history-top-sec-cont {
   width: 85%;
   margin: 100px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: center; */
+  
 }
 .history-left-side-mobile {
   justify-content: center;

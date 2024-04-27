@@ -132,7 +132,7 @@ class Fellowship extends Component {
                 </div> */}
               </div>
 
-              <p className="lokarpan-para2">Education</p>
+             
             </div>
             <div className="each-carousal1">
               <div className="carousal1">
@@ -148,7 +148,7 @@ class Fellowship extends Component {
                 </div> */}
               </div>
 
-              <p className="lokarpan-para2">Environemnt</p>
+              
             </div>
             <div className="each-carousal1">
               <div className="carousal1">
@@ -164,7 +164,7 @@ class Fellowship extends Component {
                 </div> */}
               </div>
 
-              <p className="lokarpan-para2">Health</p>
+              
             </div>
             <div className="each-carousal1">
               <div className="carousal1">
@@ -180,7 +180,7 @@ class Fellowship extends Component {
                 </div> */}
               </div>
 
-              <p className="lokarpan-para2">Livelihood</p>
+             
             </div>
           </Marquee>
         </div>

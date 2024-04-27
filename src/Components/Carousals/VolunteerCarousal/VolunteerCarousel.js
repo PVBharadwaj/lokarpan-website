@@ -9,34 +9,22 @@ import { IoChevronForward } from "react-icons/io5";
 const VolunteerCarousel = () => {
   const persons = [
     {
-      name: "X",
-      position: "a Lokarpan Volunteer",
-      desp: "meet X, a dedicated volunteer with Lokarpan's Kith n Kin School initiative in rural Uttar Pradesh. Rahul has served as a teacher trainer, contributing tirelessly to the development and coordination of educational programs for underserved communities. In his first year as a volunteer, he was able to earn recognition from colleagues and partners alike for his invaluable contributions to enhancing learning opportunities for children in the region.On the International Day of Education, ",
-      img: "https://lh3.googleusercontent.com/9REEk-wB0sHICrkyVRTy80exW_7CWIQPjUBdvyuRjsJ4Bn2cbW12G_oaZZY8TOJjwwVLd5-HhhwORP0VIDJYnq6W2enbDDgNm8rt9Q=w1424-h1600-n-l80-sg-rj",
+      name: "Akshay Wakhlu",
+      position: "A Lokarpan Volunteer",
+      desp: "Introducing Akshay, a dedicated Lokarpan volunteer originating from the vibrant city of Lucknow. With a Bachelor's degree in Economics from the University of Delhi, he gained valuable experience as an analyst in the Investment Banking Division at Goldman Sachs, Bangalore, spanning nearly three enriching years. Outside of his professional endeavours, Akshay is deeply passionate about music. As a self-trained flautist, tabla, and guitar player, he finds solace and joy in the intricate art of composition. Driven by the ethos of giving back more than he receives, Akshay is committed to leveraging his skills and experiences as a volunteer with Lokarpan to make a meaningful impact in our communities. ",
+      img: "https://res.cloudinary.com/digbzwlfx/image/upload/v1714214899/person1_a0rbpw.jpg",
     },
     {
-      name: "Charniece",
-      position: "PRODUCT MANAGER",
-      desp: "I was motivated by the opportunity to combine my technical skills with my passion for criminal justice reform. My fellowship with the Vera Institute offered me the rigor and challenge I was craving professionally, while simultaneously enabling me to have a bigger impact on our legal system.",
-      img: "https://lh3.googleusercontent.com/vndE4LkIZBHKAM9ZkPqbJaQZUaOtEuFQVFiuw5fbsDhotYBpCJjmMx0B1KVBlJ26OvX6j7wC5RSoal9RrbN0797vUhpJlO5CHmZT=w1424-h1600-n-l80-sg-rj",
+      name: "Yash Goray",
+      position: "A Lokarpan Volunteer",
+      desp: "Meet Yash Goray, hailing from Mumbai. For the past 3.5 years, he has been dedicatedly serving as an Investment Banking Analyst at JP Morgan, with his most recent focus in the Oil and Gas sector. Despite his background in Computer Science Engineering, Yash has found his passion in the dynamic world of finance. Beyond his professional pursuits, Yash harbours a deep love for football. In 2018, he realised a childhood dream by witnessing Liverpool play at Anfield. Inspired by the guidance of his mentors, Yash is committed to paying it forward by contributing to the betterment of children's lives in any way possible.",
+      img: "https://res.cloudinary.com/digbzwlfx/image/upload/v1714215001/person2_sbw3v6.jpg",
     },
     {
-      name: "Ben",
-      position: "SOFTWARE ENGINEER",
-      desp: "Full Fact is a UK-based independent fact checking organization. We worked together to create machine learning-based software that can identify claims and quotes from various news sources, including online newspapers, social media, and online radio, and help fact checkers verify their accuracy.",
-      img: "https://lh3.googleusercontent.com/pxmzlbe911EcLkLZ1FsRg5hrzARbSlfwHqbjqYEsY_l5AQrLIq12OuW9YEr-saw8O_CSi4PcIJzTy5AdGrdEHkXbgGJTnHUpfM1W9S4=w1424-h1600-n-l80-sg-rj",
-    },
-    {
-      name: "Aamir",
-      position: "PRODUCT MANAGER",
-      desp: "TalkingPoints is using AI to enable parent-teacher communication to help improve student outcomes in underserved communities. The best part of the experience was getting to work with an inspiring nonprofit, facing the same challenges and issues as them and figuring out creative solutions that scale.",
-      img: "https://lh3.googleusercontent.com/sxQDSkuwvYgGthGmITPd-Uda9GCnajOumttBLqKgQnV1abpAWCIibt-xGgGVowZlLvBUuyTjUM6Xxy4E999DSHPNWtSuBC9AoTAP0Ak=w1424-h1600-n-l80-sg-rj",
-    },
-    {
-      name: "Samantha",
-      position: "SOFTWARE ENGINEER",
-      desp: "Thorn focuses on building technology to defend children from online sexual abuse. During my fellowship, I was reminded that our mission as engineers is not to simply build the newest and fastest technologies: our mission is to seek solutions to pressing problems no matter how daunting.",
-      img: "https://lh3.googleusercontent.com/x5GrNOcE9BRqQ9hXl91EOBxEvSq7rZzy8ARrSrn1NPMP3RdqpXvGhhvX02ph3EKjp9iyX0R5tswT_d54GtC3ABBaL9npRLVC9A3lwA=w1424-h1600-n-l80-sg-rj",
+      name: "Ayesha Safwi",
+      position: "A Lokarpan Volunteer",
+      desp: "Ayesha, hailing from Lucknow, is a passionate advocate for social change. Holding a Bachelor's degree in Political Science and an MSW from Delhi University, she has dedicated her career to empowering rural artisans through her social enterprise. Driven by the belief that individuals have a responsibility to contribute to society, Ayesha is deeply committed to making a meaningful impact through her endeavours. She firmly believes that even small efforts can lead to significant positive change, and it is these efforts that bring her the greatest joy and satisfaction. With her unwavering dedication to social welfare, Ayesha embodies Lokarpan's mission of empowering communities and fostering sustainable development.",
+      img: "https://res.cloudinary.com/digbzwlfx/image/upload/v1714215152/person3_lwymqk.jpg",
     },
   ];
 
@@ -52,7 +40,7 @@ const VolunteerCarousel = () => {
         zIndex: 1,
       }}
     >
-      <IoChevronBackOutline className="app-nav-icon"/>
+      <IoChevronBackOutline className="app-nav-icon" />
     </div>
   );
 
@@ -68,12 +56,12 @@ const VolunteerCarousel = () => {
         zIndex: 1,
       }}
     >
-      <IoChevronForward className="app-nav-icon"/>
+      <IoChevronForward className="app-nav-icon" />
     </div>
   );
 
   const [activeSlide, setActiveSlide] = useState(0);
-  
+
   const handleAfterChange = (index) => {
     setActiveSlide(index);
   };
@@ -100,7 +88,7 @@ const VolunteerCarousel = () => {
           <img
             style={{
               width: "70px",
-              height: "70px",
+              height: "80px",
               opacity: "1",
             }}
             src={img}
@@ -110,7 +98,7 @@ const VolunteerCarousel = () => {
         </a>
       );
     },
-    dots:  showDots, 
+    dots: showDots,
     dotsClass: "slick-dots slick-thumb",
     fade: true,
     infinite: true,
@@ -152,9 +140,11 @@ const VolunteerCarousel = () => {
                     <div
                       key={index}
                       className="main-img"
-                      style={{
-                        // padding: "20px",
-                      }}
+                      style={
+                        {
+                          // padding: "20px",
+                        }
+                      }
                     >
                       <img src={item.img} alt="" />
                     </div>
