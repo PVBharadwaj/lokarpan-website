@@ -32,12 +32,12 @@ class Livelihood extends Component {
         head: "Community Capacity Building",
         des: "Strengthening community resilience through education, awareness, and collaborative initiatives for long-term prosperity.",
       },
-      {
-        id: 5,
-        img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png",
-        head: "Empowering Communities, Igniting Economic Growth",
-        des: " Lokarpan is dedicated to creating avenues for economic growth and prosperity. We work tirelessly to identify and develop new opportunities for income generation, whether through entrepreneurship support, market linkages, or innovative business models.",
-      },
+      // {
+      //   id: 5,
+      //   img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png",
+      //   head: "Empowering Communities, Igniting Economic Growth",
+      //   des: " Lokarpan is dedicated to creating avenues for economic growth and prosperity. We work tirelessly to identify and develop new opportunities for income generation, whether through entrepreneurship support, market linkages, or innovative business models.",
+      // },
     ];
 
     return (
@@ -53,7 +53,7 @@ class Livelihood extends Component {
             </h1>
           </div>
           <div className="health-container-section livelihood-cont-section">
-            <div className="health-each-container">
+            <div style={{marginBottom: "50px"}} className="health-each-container">
               <div className="health-content-section content-left">
                 <h1 className="health-lokarpan-head3">Our Approach</h1>
                 <p className="health-para">

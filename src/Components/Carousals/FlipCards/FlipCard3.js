@@ -40,9 +40,9 @@ const FlipCard3 = () => {
                 alt=""
               />
             </div>
-            <div className="right-align">
+            {/* <div className="right-align">
               <FaCirclePlus className="size-100" onClick={handleClickin} />
-            </div>
+            </div> */}
           </div>
           <div className="flip-card-back">
             <div>

@@ -8,11 +8,11 @@ const EducationSubNav = () => {
   const timeoutRef = useRef(null);
 
   const toggleNavmenu = () => {
-    if(isNavmenuOpen) {
-      setNavmenuOpen(false)
+    if (isNavmenuOpen) {
+      setNavmenuOpen(false);
     } else {
       clearTimeout(timeoutRef.current);
-      setNavmenuOpen(true)
+      setNavmenuOpen(true);
     }
   };
 
@@ -25,7 +25,7 @@ const EducationSubNav = () => {
     // setNavmenuOpen(false);
     timeoutRef.current = setTimeout(() => {
       setNavmenuOpen(false);
-    }, 500); 
+    }, 500);
   };
 
   return (
@@ -49,11 +49,13 @@ const EducationSubNav = () => {
             onMouseLeave={closeBrowseMenu}
           >
             <p>
-            {/* <p onClick={toggleNavmenu}> */}
+              {/* <p onClick={toggleNavmenu}> */}
               <span className="desktop-only">Browse All</span>
-            <BsChevronDown 
-              className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
-            />
+              <BsChevronDown
+                className={`react-icon arrow-down ${
+                  isNavmenuOpen ? "arrow-rotate" : ""
+                }`}
+              />
             </p>
             <div
               className={` navbar-links click-dropdown ${
@@ -69,7 +71,7 @@ const EducationSubNav = () => {
                       <Link to="/approach">Approach</Link>
                     </li>
                     <li>
-                      <Link to="/digital-tools">Digital Tools</Link>
+                      <Link to="/digital-tool">Digital Tools</Link>
                     </li>
                     <li>
                       <Link to="/application">Application</Link>
