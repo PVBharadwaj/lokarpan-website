@@ -37,7 +37,7 @@
   justify-content: center;
 }
 
-.slick-dots li{
+.slick-dots li {
   margin: 0 10px;
 }
 
@@ -65,7 +65,7 @@
   padding: 15px 0px;
 }
 
-.carousel-inner h2{
+.carousel-inner h2 {
   font-size: 36px;
 }
 
@@ -76,14 +76,14 @@
 }
 
 .carousel-inner p {
-  font-size: 20px;
+  font-size: 18px;
   color: #333333;
   font-weight: 500;
 }
 
 .carousel-inner h2,
-.carousel-inner h3, 
-.carousel-inner p{
+.carousel-inner h3,
+.carousel-inner p {
   padding-right: 20px;
 }
 
@@ -153,84 +153,84 @@
 
 @media screen and (max-width: 340px) {
   .prev-arrow {
-    bottom: 60% !important; 
+    bottom: 60% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 60% !important; 
+    bottom: 60% !important;
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 340px) and (max-width: 400px){
+@media screen and (min-width: 340px) and (max-width: 400px) {
   .prev-arrow {
-    bottom: 52% !important; 
+    bottom: 52% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 52% !important; 
+    bottom: 52% !important;
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 470px){
+@media screen and (min-width: 400px) and (max-width: 470px) {
   .prev-arrow {
-    bottom: 45% !important; 
+    bottom: 45% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 45% !important; 
+    bottom: 45% !important;
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 470px) and (max-width: 561px){
+@media screen and (min-width: 470px) and (max-width: 561px) {
   .prev-arrow {
-    bottom: 40% !important; 
+    bottom: 40% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 40% !important; 
+    bottom: 40% !important;
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 561px) and (max-width: 675px){
+@media screen and (min-width: 561px) and (max-width: 675px) {
   .prev-arrow {
-    bottom: 34% !important; 
+    bottom: 34% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 34% !important; 
+    bottom: 34% !important;
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 675px) and (max-width: 775px){
+@media screen and (min-width: 675px) and (max-width: 775px) {
   .prev-arrow {
-    bottom: 28% !important; 
+    bottom: 28% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 28% !important; 
+    bottom: 28% !important;
     left: 50% !important;
   }
 }
 
-@media screen and (min-width: 775px) and (max-width: 875px){
+@media screen and (min-width: 775px) and (max-width: 875px) {
   .prev-arrow {
-    bottom: 24% !important; 
+    bottom: 24% !important;
     left: 43% !important;
   }
 
   .next-arrow {
-    bottom: 24% !important; 
+    bottom: 24% !important;
     left: 50% !important;
   }
 }
@@ -241,7 +241,7 @@
     /* grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); */
     grid-template-rows: repeat(6, 1fr);
     height: inherit;
-  }  
+  }
 
   .remove-inline-block {
     height: inherit;
@@ -249,8 +249,7 @@
     /* grid-template-rows: repeat(6, 1fr); */
     grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   }
-  
-  
+
   .carousel-container {
     grid-column: span 6;
     grid-row: span 6;
@@ -259,7 +258,7 @@
   .carousel-container > div {
     height: 100%;
   }
-  
+
   .carousel-container1 {
     grid-column: span 6;
     grid-row: span 3;
@@ -269,7 +268,7 @@
   }
   .carousel-container2 {
     grid-column: span 6;
-    grid-row: span 3;    
+    grid-row: span 3;
     grid-row-start: 1;
     grid-row-end: 3;
   }
@@ -283,28 +282,27 @@
     bottom: 50% !important; 
     left: 50% !important;
   } */
-  
 
   .main-img {
     /* height: 400px; */
     width: 100%;
   }
-  
-  .carousel-inner h2{
+
+  .carousel-inner h2 {
     font-size: 32px;
   }
-  
+
   .carousel-inner h3 {
     font-size: 24px;
   }
-  
+
   .carousel-inner p {
     font-size: 16px;
-  }  
+  }
 
   .carousel-inner h2,
-  .carousel-inner h3, 
-  .carousel-inner p{
+  .carousel-inner h3,
+  .carousel-inner p {
     padding-left: 20px;
   }
 }

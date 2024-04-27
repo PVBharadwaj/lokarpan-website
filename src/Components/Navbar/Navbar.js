@@ -63,6 +63,10 @@ const Navbar = () => {
     }
   }, [activeDropdown]);
 
+  const handleSubscribeClick = () => {
+    setPopupVisible(true); // Set popup visibility to true when the "Subscribe" link is clicked
+  };
+
   // useEffect(() => {
   //   const handleScroll = () => {
   //     if (isMenuOpen) {
@@ -343,16 +347,12 @@ const Navbar = () => {
                       <Link to="/contact-us">Contact</Link>
                     </li>
                     <li>
-                      <Link to="/our-role">
-                        {/*  need to update to in Link  */}
+                      <a href="https://medium.com/lokarpan" target="_blank">
                         Blog
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/leadership">
-                        {/*  need to update to in Link  */}
-                        Subscribe
-                      </Link>
+                      <Link to="/">Subscribe</Link>
                     </li>
                   </ul>
                 </div>

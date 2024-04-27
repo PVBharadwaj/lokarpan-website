@@ -192,6 +192,20 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 1400px) {
+  .temp-each-cont {
+    width: 300px;
+    margin: 60px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .temp-each-cont {
+    width: 300px;
+    margin: 50px 25px;
+  }
+}
+
 @media screen and (max-width: 748px) {
   .digital-tool-img-sec h1 {
     font-size: 28px;
