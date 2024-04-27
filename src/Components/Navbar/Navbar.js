@@ -340,14 +340,13 @@ const Navbar = () => {
                 <div className="dropdown-container">
                   <h1 className="quicklinks-heading">Quick Links</h1>
                   <ul className="quick-links">
-                    <li>
-                      <Link to="/alumni">Alumni</Link>
-                    </li>
+                    
                     <li>
                       <Link to="/contact-us">Contact</Link>
                     </li>
                     <li>
                       <a href="https://medium.com/lokarpan" target="_blank">
+
                         Blog
                       </a>
                     </li>
@@ -598,14 +597,23 @@ const Navbar = () => {
                       <div>
                         <h4>Quick Links</h4>
                         <ul className="quick-links">
+                        <li>
+                            <Link to="/our-role">Our-Role</Link>
+                          </li>
                           <li>
                             <Link to="/history">History</Link>
                           </li>
                           <li>
-                            <Link to="/moonshots">Careers</Link>
+                            <Link to="/fellowship">Fellowship</Link>
                           </li>
                           <li>
-                            <Link to="/our-role">Blog</Link>
+                            <Link to="/being-a-volunteer">Being a Volunteer</Link>
+                          </li>
+                          <li>
+                            <Link to="/donate">Donate</Link>
+                          </li>
+                          <li>
+                            <Link to="/contact-us">Contact</Link>
                           </li>
                         </ul>
                       </div>
