@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lokarpan-website/static/css/main.465b3611.css",
-    "main.js": "/lokarpan-website/static/js/main.8b8dff6c.js",
+    "main.css": "/lokarpan-website/static/css/main.f3cf8ee5.css",
+    "main.js": "/lokarpan-website/static/js/main.e85338fa.js",
     "reactPlayerYouTube.js": "/lokarpan-website/static/js/reactPlayerYouTube.7d058357.chunk.js",
     "reactPlayerSoundCloud.js": "/lokarpan-website/static/js/reactPlayerSoundCloud.62df2e3b.chunk.js",
     "reactPlayerVimeo.js": "/lokarpan-website/static/js/reactPlayerVimeo.77d3098c.chunk.js",
@@ -20,8 +20,8 @@
     "static/media/slick.ttf": "/lokarpan-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/lokarpan-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/lokarpan-website/index.html",
-    "main.465b3611.css.map": "/lokarpan-website/static/css/main.465b3611.css.map",
-    "main.8b8dff6c.js.map": "/lokarpan-website/static/js/main.8b8dff6c.js.map",
+    "main.f3cf8ee5.css.map": "/lokarpan-website/static/css/main.f3cf8ee5.css.map",
+    "main.e85338fa.js.map": "/lokarpan-website/static/js/main.e85338fa.js.map",
     "reactPlayerYouTube.7d058357.chunk.js.map": "/lokarpan-website/static/js/reactPlayerYouTube.7d058357.chunk.js.map",
     "reactPlayerSoundCloud.62df2e3b.chunk.js.map": "/lokarpan-website/static/js/reactPlayerSoundCloud.62df2e3b.chunk.js.map",
     "reactPlayerVimeo.77d3098c.chunk.js.map": "/lokarpan-website/static/js/reactPlayerVimeo.77d3098c.chunk.js.map",
@@ -37,7 +37,7 @@
     "reactPlayerPreview.79649fe0.chunk.js.map": "/lokarpan-website/static/js/reactPlayerPreview.79649fe0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.465b3611.css",
-    "static/js/main.8b8dff6c.js"
+    "static/css/main.f3cf8ee5.css",
+    "static/js/main.e85338fa.js"
   ]
 }
