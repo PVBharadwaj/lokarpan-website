@@ -275,13 +275,13 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/our-role" onClick={toggleMenu}>
+                      <Link to="/" onClick={toggleMenu}>
                         {/*  need to update to in Link  */}
                         Blog
                       </Link>
                     </li>
                     <li>
-                      <Link to="/leadership" onClick={toggleMenu}>
+                      <Link to="/" onClick={toggleMenu}>
                         {/*  need to update to in Link  */}
                         Subscribe
                       </Link>
@@ -350,7 +350,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/our-role" onClick={toggleMenu}>
+                      <Link to="/being-a-volunteer" onClick={toggleMenu}>
                         {/*  need to update to in Link  */}
                         Volunteer
                       </Link>
@@ -407,7 +407,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/our-role" onClick={toggleMenu}>
+                      <Link to="/" onClick={toggleMenu}>
                         Resources
                       </Link>
                     </li>

@@ -26,7 +26,7 @@ const WhyDonate = () => {
         </p> */}
       </div>
       <div className="why-donate">
-        <div className="why-donate-topdiv">
+        {/* <div className="why-donate-topdiv">
           <p>
             We are facing our worst inequity ever. Millions of children in India
             do not have access to quality education. We envision a future where
@@ -37,7 +37,7 @@ const WhyDonate = () => {
             Fellow with training, mentors and resources to help them put
             children on a different life path.
           </p>
-        </div>
+        </div> */}
         {/* <div className="donate-card">
           <div className="donate-card-img donate-card-img-1"></div>
           <div className="donate-card-text">

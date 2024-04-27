@@ -41,9 +41,9 @@ const FlipCard2 = () => {
               <h1>Connect with a diverse network of passionate volunteers dedicated to making a difference in rural communities.</h1>
 
             </div>
-            <div className="right-align">
+            {/* <div className="right-align">
               <FaCirclePlus className="size-100" onClick={handleClickin} />
-            </div>
+            </div> */}
           </div>
           <div className="flip-card-back">
             <div>
