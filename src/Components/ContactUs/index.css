@@ -45,8 +45,8 @@
 }
 .contact-font64-left {
   font-size: 44px;
-  width: 530px;
   margin-bottom: 130px;
+  text-align: center;
 }
 .contact-font24-left {
   font-size: 24px;
@@ -293,6 +293,7 @@
   .new-follow-sec {
     flex-direction: column;
     margin-bottom: 100px;
+    width: 80%;
   }
   .new-f-left {
     width: 100%;
@@ -376,7 +377,6 @@
   .contact-font64-left {
     font-size: 40px;
     margin-top: 50px;
-    width: 400px;
   }
   .contact-font48-left {
     font-size: 36px;

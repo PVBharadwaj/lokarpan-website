@@ -34,33 +34,27 @@ class WriteToUs extends Component {
               <li className="w-list-item">
                 search for{" "}
                 <Link to="/career" className="w-link">
-                  careers
+                  <span className="w-line"> careers</span>
                 </Link>{" "}
                 at the foundation
               </li>
               <li className="w-list-item">
                 learn more about{" "}
-                <span>
-                  <Link to="/ways-to-give" className="w-link">
-                    grant opportunities
-                  </Link>{" "}
-                </span>
+                <Link to="/ways-to-give" className="w-link">
+                  <span className="w-line">grant opportunities</span>
+                </Link>{" "}
               </li>
               <li className="w-list-item">
                 access information about our{" "}
-                <span>
-                  <Link to="/financials" className="w-link">
-                    financials
-                  </Link>{" "}
-                </span>
+                <Link to="/financials" className="w-link">
+                  <span className="w-line"> financials</span>
+                </Link>{" "}
               </li>
               <li className="w-list-item">
                 learn about our{" "}
-                <span>
-                  <Link to="/kith/overview" className="w-link">
-                    kith
-                  </Link>{" "}
-                </span>
+                <Link to="/kith/overview" className="w-link">
+                  <span className="w-line"> kith</span>
+                </Link>{" "}
                 programme
               </li>
             </ul>
@@ -106,12 +100,14 @@ class WriteToUs extends Component {
               <label className="w-label">Postal/Zip Code</label>
               <input className="w-input" />
               <label className="w-label">Message* (max 500 characters)</label>
-              <textarea rows={15} cols={70} className="w-text-area" />
+              <textarea rows={15} cols={55} className="w-text-area" />
               <button className="w-submit">Submit</button>
             </form>
             <p className="w-para2">
-              By clicking Submit, you agree to Lokarpan's Privacy and Cookies
-              Notice.
+              By clicking Submit, you agree to{" "}
+              <span className="w-line cur">
+                Lokarpan's Privacy and Cookies Notice.
+              </span>
             </p>
           </div>
         </div>

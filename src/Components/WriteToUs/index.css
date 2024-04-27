@@ -33,6 +33,7 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: 300;
+  text-decoration: none;
 }
 .w-para2 {
   font-size: 18px;
@@ -85,4 +86,63 @@
   outline: none;
   cursor: pointer;
   margin-bottom: 40px;
+}
+
+.w-line {
+  position: relative;
+}
+
+.w-line::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: black;
+}
+
+.w-line:hover::before {
+  animation: shrinkWidth 0.4s ease forwards;
+  animation-delay: 0s;
+}
+
+@keyframes shrinkWidth {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.w-line:hover::before {
+  animation: expandWidth 0.4s ease forwards;
+  animation-delay: 0.4s; /* Delay expansion after shrinking */
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.cur {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+  .w-input {
+    width: 100%;
+  }
+  .w-input-select {
+    width: 105%;
+  }
+  .w-text-area {
+    width: 100%;
+  }
 }
