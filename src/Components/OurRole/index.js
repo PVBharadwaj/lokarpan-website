@@ -200,60 +200,52 @@ class OurRole extends Component {
                                   <div className="popup-content">
                                     <h3 className="popup-font18">SPOTLIGHT</h3>
                                     <p className="popup-font16">
-                                      Lokarpan's vision extends far beyond
-                                      traditional education, aiming to cultivate
-                                      a holistic educational ecosystem that
+                                      Lokarpan's vision extends far beyond a
+                                      traditional learning environment, aiming
+                                      to cultivate an educational ecosystem that
                                       empowers parents, students, and educators
                                       alike. Anchored in a meticulously curated
                                       curriculum and cutting-edge teaching
-                                      tools, Lokarpan stands as a beacon of
-                                      empowerment, supporting effective
-                                      curriculum delivery across our expansive
-                                      network of 75 partner schools.
+                                      tools, Lokarpan is working on the delivery
+                                      of an effective and innovative curriculum
+                                      across an expansive network of 75 partner
+                                      schools.
                                     </p>
 
                                     <p className="popup-font16">
                                       At the heart of this initiative lies the
-                                      Kith n Kin Centre of Excellence, a beacon
-                                      of innovation and growth. This nurturing
-                                      hub provides specialised training for
-                                      educators and pioneers groundbreaking
-                                      ed-tech solutions. Through the Kith
-                                      Programme, we seek to not only replicate
-                                      successful learning models but also scale
-                                      up pilots to elevate the educational
-                                      landscape, standardising quality metrics
-                                      for low-cost private and publicly aided
-                                      schools alike.
-                                    </p>
-
-                                    <p className="popup-font16">
-                                      In the pursuit of continuous evolution,
-                                      Lokarpan proudly introduces its Research
-                                      Centre—a crucible of ideas and innovation.
-                                      Here, we delve deep into educational
-                                      methodologies, pioneering new strategies
-                                      to enhance learning outcomes. From
-                                      data-driven insights to cutting-edge
-                                      pedagogical approaches, Lokarpan Research
-                                      Centre is at the forefront of educational
+                                      Kith and Kin School in Auraiya, Uttar
+                                      Pradesh. Founded in April 2014, the scool
+                                      embodies Lokarpan's commitment to
+                                      uplifting educational standards in the
+                                      region. Serving as a model of excellence,
+                                      the school pioneers specially designed
+                                      curriculums and infrastructure development
+                                      for partner schools in rural districts.
+                                      Through state-of-the-art digital
+                                      classrooms, and a research centre, we
+                                      delve deep into educational methodologies,
+                                      curating new strategies to enhance
+                                      learning outcomes. From data-driven
+                                      insights to emerging pedagogical
+                                      approaches, the Kith n Kin Research Centre
+                                      is at the forefront of educational
                                       innovation, shaping the future of
                                       learning.
                                     </p>
 
                                     <p className="popup-font16">
-                                      Founded in April 2014, the Kith and Kin
-                                      School in Auraiya, Uttar Pradesh, embodies
-                                      Lokarpan's commitment to uplifting
-                                      educational standards in the region.
-                                      Serving as a model of excellence, the
-                                      school pioneers specially designed
-                                      curriculum strategies and infrastructure
-                                      development for partner schools in rural
-                                      districts. Through state-of-the-art
-                                      digital classrooms, Lokarpan ignites
-                                      curiosity and fortifies knowledge
-                                      retention among students.
+                                      Our Kith n Kin Centre of Excellence,
+                                      providing specialised training for
+                                      educators and pioneering ed-tech
+                                      solutions. Through the Kith Programme, we
+                                      seek to not only replicate successful
+                                      learning models among partner schools but
+                                      also scale up pilots to elevate the
+                                      educational landscape across several
+                                      districts, standardising quality metrics
+                                      for low-cost private and publicly aided
+                                      schools alike.
                                     </p>
                                   </div>
                                 </div>
@@ -523,69 +515,49 @@ class OurRole extends Component {
                                 <div className="popup-content">
                                   <h3 className="popup-font18">SPOTLIGHT</h3>
                                   <p className="popup-font16">
-                                    Lokarpan's vision extends far beyond
-                                    traditional education, aiming to cultivate a
-                                    holistic educational ecosystem that empowers
-                                    parents, students, and educators alike.
-                                    Anchored in a meticulously curated
+                                    Lokarpan's vision extends far beyond a
+                                    traditional learning environment, aiming to
+                                    cultivate an educational ecosystem that
+                                    empowers parents, students, and educators
+                                    alike. Anchored in a meticulously curated
                                     curriculum and cutting-edge teaching tools,
-                                    Lokarpan stands as a beacon of empowerment,
-                                    supporting effective curriculum delivery
-                                    across our expansive network of 75 partner
-                                    schools.
+                                    Lokarpan is working on the delivery of an
+                                    effective and innovative curriculum across
+                                    an expansive network of 75 partner schools.
                                   </p>
 
                                   <p className="popup-font16">
                                     At the heart of this initiative lies the
-                                    Kith n Kin Centre of Excellence, a beacon of
-                                    innovation and growth. This nurturing hub
-                                    provides specialised training for educators
-                                    and pioneers groundbreaking ed-tech
-                                    solutions. Through the Kith Programme, we
-                                    seek to not only replicate successful
-                                    learning models but also scale up pilots to
-                                    elevate the educational landscape,
-                                    standardising quality metrics for low-cost
-                                    private and publicly aided schools alike.
-                                  </p>
-
-                                  <p className="popup-font16">
-                                    In the pursuit of continuous evolution,
-                                    Lokarpan proudly introduces its Research
-                                    Centre—a crucible of ideas and innovation.
-                                    Here, we delve deep into educational
-                                    methodologies, pioneering new strategies to
-                                    enhance learning outcomes. From data-driven
-                                    insights to cutting-edge pedagogical
-                                    approaches, Lokarpan Research Centre is at
-                                    the forefront of educational innovation,
-                                    shaping the future of learning.
-                                  </p>
-
-                                  <p className="popup-font16">
-                                    Founded in April 2014, the Kith and Kin
-                                    School in Auraiya, Uttar Pradesh, embodies
-                                    Lokarpan's commitment to uplifting
+                                    Kith and Kin School in Auraiya, Uttar
+                                    Pradesh. Founded in April 2014, the scool
+                                    embodies Lokarpan's commitment to uplifting
                                     educational standards in the region. Serving
                                     as a model of excellence, the school
-                                    pioneers specially designed curriculum
-                                    strategies and infrastructure development
-                                    for partner schools in rural districts.
-                                    Through state-of-the-art digital classrooms,
-                                    Lokarpan ignites curiosity and fortifies
-                                    knowledge retention among students.
+                                    pioneers specially designed curriculums and
+                                    infrastructure development for partner
+                                    schools in rural districts. Through
+                                    state-of-the-art digital classrooms, and a
+                                    research centre, we delve deep into
+                                    educational methodologies, curating new
+                                    strategies to enhance learning outcomes.
+                                    From data-driven insights to emerging
+                                    pedagogical approaches, the Kith n Kin
+                                    Research Centre is at the forefront of
+                                    educational innovation, shaping the future
+                                    of learning.
                                   </p>
 
                                   <p className="popup-font16">
-                                    Lokarpan's latest initiative—the Rural
-                                    Planning and School Design Guidelines—ushers
-                                    in a new era of educational infrastructure.
-                                    By setting benchmarks for construction, we
-                                    ensure nurturing learning environments that
-                                    transcend generations. At Lokarpan, every
-                                    endeavour is a stride towards a brighter
-                                    future, where education knows no bounds and
-                                    possibilities are endless.
+                                    Our Kith n Kin Centre of Excellence,
+                                    providing specialised training for educators
+                                    and pioneering ed-tech solutions. Through
+                                    the Kith Programme, we seek to not only
+                                    replicate successful learning models among
+                                    partner schools but also scale up pilots to
+                                    elevate the educational landscape across
+                                    several districts, standardising quality
+                                    metrics for low-cost private and publicly
+                                    aided schools alike.
                                   </p>
                                 </div>
                               </div>
@@ -1417,14 +1389,14 @@ class OurRole extends Component {
               </div>
               <div className="education-cards-container">
                 <div className="cards-left-container">
-                  <div className="card">
+                  {/* <div className="card">
                     <img
                       src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
                       className="edu-img"
                       alt="Card 1"
                     />
                     <div className="card-content">
-                      {/* <h4>Skill Development</h4> */}
+                      <h4>Skill Development</h4>
                       <h3>
                         Tailored skill development programmes fostering
                         entrepreneurship and self-reliance.
@@ -1506,7 +1478,7 @@ class OurRole extends Component {
                         )}
                       </Popup>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="cards-right-container">
                   <div className="card space">
@@ -1713,14 +1685,14 @@ class OurRole extends Component {
                 </div>
               </div>
               <div className="mobile-education-cards-container">
-                <div className="card">
+                {/* <div className="card">
                   <img
                     src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
                     className="edu-img"
                     alt="Card 1"
                   />
                   <div className="card-content">
-                    {/* <h4>Skill Development</h4> */}
+                    <h4>Skill Development</h4>
                     <h3>
                       Tailored skill development programmes fostering
                       entrepreneurship and self-reliance.
@@ -1803,7 +1775,7 @@ class OurRole extends Component {
                       )}
                     </Popup>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="card">
                   <img
@@ -2263,7 +2235,9 @@ class OurRole extends Component {
                               </button>
                               <div className="popup-section">
                                 <div className="popup-left-container">
-                                  <h3 className="popup-font40">SANITATION</h3>
+                                  <h3 className="popup-font40">
+                                    CHILD-FRIENDLY SANITATION STALLS
+                                  </h3>
                                   <p className="popup-font20">
                                     Ensuring a safer, comfortable, and
                                     age-appropriate restroom experience for
@@ -2578,7 +2552,9 @@ class OurRole extends Component {
                             </button>
                             <div className="popup-section">
                               <div className="popup-left-container">
-                                <h3 className="popup-font40">SANITATION</h3>
+                                <h3 className="popup-font40">
+                                  CHILD-FRIENDLY SANITATION STALLS
+                                </h3>
                                 <p className="popup-font20">
                                   Ensuring a safer, comfortable, and
                                   age-appropriate restroom experience for
@@ -2914,8 +2890,7 @@ class OurRole extends Component {
                               <div className="popup-section">
                                 <div className="popup-left-container">
                                   <h3 className="popup-font40">
-                                    WATER QUALITY ASSESSMENT AND FRESHWATER
-                                    AVAILABILITY
+                                    WATER CONSERVATION
                                   </h3>
                                   <p className="popup-font20">
                                     Promoting conservation practices and
@@ -3219,8 +3194,7 @@ class OurRole extends Component {
                             <div className="popup-section">
                               <div className="popup-left-container">
                                 <h3 className="popup-font40">
-                                  WATER QUALITY ASSESSMENT AND FRESHWATER
-                                  AVAILABILITY
+                                  WATER CONSERVATION
                                 </h3>
                                 <p className="popup-font20">
                                   Promoting conservation practices and fostering
