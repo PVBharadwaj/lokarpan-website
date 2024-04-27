@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Sd from './Sitemap.svg';
+
 import './Sidemap.css';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
