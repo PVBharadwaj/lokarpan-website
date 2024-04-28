@@ -111,7 +111,7 @@ class ContactUs extends Component {
                   Directions
                 </a>
                 <h3 className="contact-font24-left">How to access</h3>
-                <p>
+                <p className="contact-font24-le">
                   The Apple Store faces Union Square. Parking: Union Square
                   Garage, accessed from Post or Geary. Public Transit: Bart to
                   Powell St. ; use Stockton exit. Light Rail F line to Market &

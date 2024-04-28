@@ -66,8 +66,8 @@
   text-align: center;
   margin-top: 0;
 }
-.contact-font24 p{
-padding-top: 2rem;
+.contact-font24-le{
+  padding-top: 2rem;
 }
 .contact-font28 {
   font-size: 36px;
@@ -99,8 +99,8 @@ padding-top: 2rem;
 .btn-section {
   height: 50px;
   width: 450px;
-  border: 1px solid #979797;
-  border-radius: 30px;
+
+ 
   margin-top: 62px;
   display: flex;
   flex-direction: row;
@@ -116,6 +116,7 @@ padding-top: 2rem;
   outline: none;
   border: none;
   font-size: 24px;
+  font-size: 600;
 }
 .inquiries-sec {
   height: 200px;

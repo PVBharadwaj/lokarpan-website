@@ -151,12 +151,12 @@ const Health = () => {
               />
               <div className="health-stories-each-card-content">
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
-                <span
+                {/* <span
                   onClick={() => healthopenpopup(0)}
                   className="approach-anchor health-space-left"
                 >
                   Read more
-                </span>
+                </span> */}
               </div>
             </div>
             {healthPopupVisibility[0] && (
@@ -210,12 +210,12 @@ const Health = () => {
               />
               <div className="health-stories-each-card-content">
                 <p>ASHA Workers: Guardians of Community Well-being</p>
-                <span
+                {/* <span
                   onClick={() => healthopenpopup(1)}
                   className="approach-anchor health-space-left"
                 >
                   Read more
-                </span>
+                </span> */}
               </div>
             </div>
             {healthPopupVisibility[1] && (
@@ -268,12 +268,12 @@ const Health = () => {
                   Baby’s health, Mother’s Freedom: A Journey of Resilience and
                   Transformation
                 </p>
-                <span
+                {/* <span
                   onClick={() => healthopenpopup(2)}
                   className="approach-anchor health-space-left"
                 >
                   Read more
-                </span>
+                </span> */}
               </div>
             </div>
             {healthPopupVisibility[2] && (
