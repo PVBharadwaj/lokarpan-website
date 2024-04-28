@@ -1388,100 +1388,8 @@ class OurRole extends Component {
                 </p>
               </div>
               <div className="education-cards-container">
-                <div className="cards-left-container">
-                  {/* <div className="card">
-                    <img
-                      src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
-                      className="edu-img"
-                      alt="Card 1"
-                    />
-                    <div className="card-content">
-                      <h4>Skill Development</h4>
-                      <h3>
-                        Tailored skill development programmes fostering
-                        entrepreneurship and self-reliance.
-                      </h3>
-                      <Popup
-                        trigger={
-                          <div className="expand-sec">
-                            <p>EXPAND TO LEARN MORE</p>
-                            <IoMdExpand />
-                          </div>
-                        }
-                        modal
-                        onOpen={this.updatePopUpOpen}
-                        onClose={this.updatePopUpOpen}
-                        onKeyDown={(event, close) => {
-                          this.onKeyDown(event, close);
-                        }}
-                      >
-                        {(close) => (
-                          <>
-                            <div className="popup-container">
-                              <button className="close-btn">
-                                <IoMdClose
-                                  style={{
-                                    fontSize: "30px",
-                                  }}
-                                  onClick={() => close()}
-                                />
-                              </button>
-                              <div className="popup-section">
-                                <div className="popup-left-container">
-                                  <h3 className="popup-font40">
-                                    SKILL DEVELOPMENT
-                                  </h3>
-                                  <p className="popup-font20">
-                                    Our initiatives enhance employability,
-                                    creating sustainable livelihoods for
-                                    community growth.
-                                  </p>
-                                </div>
-                                <div className="popup-right-container">
-                                  <img
-                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
-                                    alt="popup-img"
-                                    className="popup-img"
-                                  />
-                                  <div className="popup-content">
-                                    <h3 className="popup-font18">SPOTLIGHT</h3>
-                                    <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                    <p className="popup-font16">
-                                      GiveDirectly empowers marginalized
-                                      communities and those affected by
-                                      disasters like COVID-19 through direct
-                                      cash transfers, which give people the
-                                      flexibility to provide for their true
-                                      needs, in contrast to in-kind donations.
-                                      Since 2012, Google.org has provided over
-                                      $10 million to GiveDirectly to support
-                                      people in need and research the impact of
-                                      GiveDirectly’s innovative approach.
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="popup-overlay"></div>
-                          </>
-                        )}
-                      </Popup>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="cards-right-container">
-                  <div className="card space">
+                <div className="cards-left-container liv-space-above">
+                  <div className="card">
                     <img
                       src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
                       className="edu-img"
@@ -1579,6 +1487,106 @@ class OurRole extends Component {
                       </Popup>
                     </div>
                   </div>
+                </div>
+                <div className="cards-right-container">
+                  {/* <div className="card space">
+                    <img
+                      src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"
+                      className="edu-img"
+                      alt="Card 1"
+                    />
+                    <div className="card-content">
+                     
+                      <h3>
+                        Empowering individuals and communities through financial
+                        inclusion.
+                      </h3>
+
+                      <Popup
+                        trigger={
+                          <div className="expand-sec">
+                            <p>EXPAND TO LEARN MORE</p>
+                            <IoMdExpand />
+                          </div>
+                        }
+                        modal
+                        onOpen={this.updatePopUpOpen}
+                        onClose={this.updatePopUpOpen}
+                        onKeyDown={(event, close) => {
+                          this.onKeyDown(event, close);
+                        }}
+                      >
+                        {(close) => (
+                          <>
+                            <div className="popup-container">
+                              <button className="close-btn">
+                                <IoMdClose
+                                  style={{
+                                    fontSize: "30px",
+                                  }}
+                                  onClick={() => close()}
+                                />
+                              </button>
+                              <div className="popup-section">
+                                <div className="popup-left-container">
+                                  <h3 className="popup-font40">
+                                    MICROFINANCE INITIATIVES
+                                  </h3>
+                                  <p className="popup-font20">
+                                    In Uttar Pradesh, Lokarpan has helped
+                                    reshape communities by fostering financial
+                                    autonomy among women entrepreneurs
+                                  </p>
+                                </div>
+                                <div className="popup-right-container">
+                                  <img
+                                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709805492/IMG_3308_1_cz5yw3.png"
+                                    alt="popup-img"
+                                    className="popup-img"
+                                  />
+                                  <div className="popup-content">
+                                    <h3 className="popup-font18">SPOTLIGHT</h3>
+                                    <p className="popup-font16">
+                                      Lokarpan initiated the establishment of
+                                      Self-Help Groups (SHGs) in 2003,
+                                      recognising the compelling need for
+                                      economic empowerment among the women
+                                      engaged in our health and education
+                                      initiatives. This pivotal step introduced
+                                      a structured microcredit and savings
+                                      program, strategically designed to
+                                      facilitate their access to vital funds for
+                                      livelihood enhancement.
+                                    </p>
+                                    <p className="popup-font16">
+                                      Out of the formed groups, a commendable 41
+                                      SHGs successfully inaugurated bank
+                                      accounts with HDFC, enabling them to
+                                      proficiently manage bank loans and
+                                      internal lending. With a total membership
+                                      tallying 3133 individuals spread across
+                                      169 villages, Lokarpan maintained a
+                                      steadfast engagement with these groups.
+                                      The program facilitated the mobilisation
+                                      of savings, inspiring members to
+                                      strategically deploy funds towards
+                                      pressing economic exigencies. Loans were
+                                      utilised by women to venture into
+                                      livestock acquisition, launch small-scale
+                                      enterprises, establish tailoring
+                                      boutiques, store agricultural produce, and
+                                      engage in profitable sales.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="popup-overlay"></div>
+                          </>
+                        )}
+                      </Popup>
+                    </div>
+                  </div> */}
                   <div className="card">
                     <img
                       src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704824773/image_183_nayqzx.png"

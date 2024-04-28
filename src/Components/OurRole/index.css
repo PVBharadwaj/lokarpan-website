@@ -513,6 +513,9 @@
   padding-bottom: 40px;
 }
 
+.liv-space-above {
+  margin-top: 210px;
+}
 @media screen and (max-width: 1110px) {
   .our-role-each-container {
     width: 100%;
