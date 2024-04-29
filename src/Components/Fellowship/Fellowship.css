@@ -3,7 +3,12 @@
   display: flex;
   align-items: center;
 }
-
+.fellows{
+  text-align: center;
+  font-size: 48px;
+  color: #181818;
+  font-weight: 500;
+}
 .fellowship-nav h1 {
   font-size: 20px;
 }
@@ -42,6 +47,27 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.each-carousal1 {
+  position: relative;
+}
+
+.read-more-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.each-carousal1:hover .read-more-container {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* .fellowship-top::before { 

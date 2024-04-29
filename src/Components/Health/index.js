@@ -153,7 +153,7 @@ const Health = () => {
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
                 <span
                   onClick={() => healthopenpopup(0)}
-                  className="approach-anchor health-space-left"
+                  className=" read-more"
                 >
                   Read more
                 </span>
@@ -163,6 +163,10 @@ const Health = () => {
               <div className="misson-popup">
                 <div className="misson-popup-content">
                   <RxCross2 onClick={() => healthclosepopup(0)} className="x" />
+          
+                  <div className="mission-head">
+                  Empowering Communities, One Safe Delivery at a Time.
+                  </div>
                   <p className="mission-para">
                     Annapurna is a dedicated midwife (DAI) from the serene
                     village of Ghurau in Kanpur Dehat. In rural settings where
@@ -212,7 +216,7 @@ const Health = () => {
                 <p>ASHA Workers: Guardians of Community Well-being</p>
                 <span
                   onClick={() => healthopenpopup(1)}
-                  className="approach-anchor health-space-left"
+                  className=" read-more"
                 >
                   Read more
                 </span>
@@ -222,6 +226,9 @@ const Health = () => {
               <div className="misson-popup">
                 <div className="misson-popup-content">
                   <RxCross2 onClick={() => healthclosepopup(1)} className="x" />
+                  <div className="mission-head">
+                  ASHA Workers: Guardians of Community Well-being
+                  </div>
                   <p className="mission-para">
                     Usha Devi is a resilient resident of Sithau village, whose
                     journey from a hesitant observer to a confident leader in
@@ -270,8 +277,9 @@ const Health = () => {
                 </p>
                 <span
                   onClick={() => healthopenpopup(2)}
-                  className="approach-anchor health-space-left"
+                  className=" read-more"
                 >
+                  
                   Read more
                 </span>
               </div>
@@ -280,6 +288,9 @@ const Health = () => {
               <div className="misson-popup">
                 <div className="misson-popup-content">
                   <RxCross2 onClick={() => healthclosepopup(2)} className="x" />
+                  <div className="mission-head">
+                  Baby’s health, Mother’s Freedom: A Journey of Resilience and Transformation
+                  </div>
                   <p className="mission-para">
                     The story of Kaunsar Jahan from Bandariyapur village in
                     Auraiya district, Uttar Pradesh, highlights the

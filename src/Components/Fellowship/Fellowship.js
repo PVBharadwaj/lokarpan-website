@@ -108,6 +108,7 @@ class Fellowship extends Component {
         </div>
 
         <div className="carousal-container1">
+        <h3 className="fellows">Fellows</h3>
           <div className="arrows-cont1">
             <button className="button1" onClick={this.handlePauseClick}>
               {!isPaused ? (
@@ -118,22 +119,7 @@ class Fellowship extends Component {
             </button>
           </div>
           <Marquee play={!isPaused} className="marquee">
-            <div className="each-carousal1">
-              <div className="carousal1">
-                <img
-                  src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708614197/DSC03458_1_tjuemh.png"
-                  alt="Slide 1"
-                  className="carousal-img1"
-                />
-                {/* <div className="link-cont">
-                  <Link to="/approach">
-                    <button className="home-link">Education</button>
-                  </Link>
-                </div> */}
-              </div>
-
-             
-            </div>
+            
             <div className="each-carousal1">
               <div className="carousal1">
                 <img
@@ -141,14 +127,14 @@ class Fellowship extends Component {
                   alt="Slide 1"
                   className="carousal-img1"
                 />
-                {/* <div className="link-cont">
-                  <Link to="/environment">
-                    <button className="home-link">Environment</button>
-                  </Link>
-                </div> */}
+              <div className="link-cont">
+                
+                    <button className="home-link">Learn More</button>
+              
+                </div> 
               </div>
 
-              
+              <p className="lokarpan-para2">Nyssa Desai</p>
             </div>
             <div className="each-carousal1">
               <div className="carousal1">
@@ -157,13 +143,13 @@ class Fellowship extends Component {
                   alt="Slide 1"
                   className="carousal-img1"
                 />
-                {/* <div className="link-cont">
-                  <Link to="/health">
-                    <button className="home-link">Health</button>
-                  </Link>
-                </div> */}
+                 <div className="link-cont">
+                
+                    <button className="home-link">Learn More</button>
+                
+                </div> 
               </div>
-
+              <p className="lokarpan-para2">Divya Chaudhary</p>
               
             </div>
             <div className="each-carousal1">
@@ -173,14 +159,14 @@ class Fellowship extends Component {
                   alt="Slide 1"
                   className="carousal-img1"
                 />
-                {/* <div className="link-cont">
-                  <Link to="/livelihood">
-                    <button className="home-link">Livelihood</button>
-                  </Link>
-                </div> */}
+             <div className="link-cont">
+               
+                    <button className="home-link">Learn More</button>
+              
+                </div> 
               </div>
 
-             
+              <p className="lokarpan-para2">Shreya Kothawale</p>
             </div>
           </Marquee>
         </div>
