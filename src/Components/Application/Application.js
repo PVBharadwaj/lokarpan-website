@@ -1,4 +1,5 @@
 import AppCarousel from "../Carousals/ApplicationCarousal/AppCarousal";
+import { useState, useEffect } from "react";
 import Footer from "../Footer/Footer";
 import EducationSubNav from "../Navbar/EducationSubNav";
 import Navbar from "../Navbar/Navbar";
@@ -6,6 +7,7 @@ import "./Application.css";
 import { FaRegGem } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
 
 const Plans = [
   {
@@ -32,6 +34,40 @@ const Plans = [
 ];
 
 const Application = () => {
+  const [popupVisibility, setPopupVisibility] = useState([false]);
+
+  const openpopup = (index) => {
+    const updatedVisibility = [...popupVisibility];
+    updatedVisibility[index] = true;
+    setPopupVisibility(updatedVisibility);
+  };
+
+  const closepopup = (index) => {
+    const updatedVisibility = [...popupVisibility];
+    updatedVisibility[index] = false;
+    setPopupVisibility(updatedVisibility);
+  };
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.which === 27) {
+        setPopupVisibility(popupVisibility.map(() => false));
+      }
+    };
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [popupVisibility]);
+
+  useEffect(() => {
+    if (popupVisibility.some((isVisible) => isVisible)) {
+      document.body.classList.add("body-no-scroll");
+    } else {
+      document.body.classList.remove("body-no-scroll");
+    }
+  }, [popupVisibility]);
+
   return (
     <>
       <Navbar />
@@ -115,17 +151,94 @@ const Application = () => {
           <h1 className="title3">
             Learn more about our organisation’s code of conduct.
           </h1>
-          <div className="apply-btn browse-text-button transparent">
-            <Link
-              to="/code-of-conduct"
-              className="apply-btn-text-black body-btn"
-            >
-              Learn more
-            </Link>
-          </div>
+
+          <button className="app-apply-btn" onClick={() => openpopup(0)}>
+            Code of Conduct
+          </button>
         </div>
         <div className="browse-img"></div>
       </div>
+      {popupVisibility[0] && (
+        <div className="misson-popup">
+          <div className="misson-popup-content">
+            <RxCross2 onClick={() => closepopup(0)} className="x" />
+            <div className="code-cont">
+              <h1>Code of conduct</h1>
+
+              <h3>Integrity and Honesty</h3>
+              <p>
+                At Lokarpan, we conduct ourselves with the highest standards of
+                integrity and honesty. We are committed to transparency in all
+                our dealings and interactions, ensuring that our actions are
+                always in alignment with our values.
+              </p>
+              <h3>Respect and Inclusivity</h3>
+              <p>
+                We respect the dignity and rights of every individual, valuing
+                diversity and inclusivity in all aspects of our work.
+                Discrimination of any kind is not tolerated, and we strive to
+                create an environment where everyone feels valued and heard.
+              </p>
+              <h3>Confidentiality and Privacy</h3>
+              <p>
+                We understand the importance of confidentiality and privacy,
+                especially when dealing with sensitive information. All personal
+                and organisational data is handled with the utmost care and
+                respect for privacy rights.
+              </p>
+              <h3>Empowerment and Self-Reliance</h3>
+              <p>
+                Our aim is to empower individuals and communities to become
+                self-reliant and independent. We believe in fostering
+                self-sufficiency through education, skill-building, and creating
+                opportunities for growth.
+              </p>
+              <h3>Accountability and Responsibility</h3>
+              <p>
+                Every member of Lokarpan is accountable for their actions and
+                decisions. We take responsibility for the impact of our work and
+                strive to continuously improve and learn from both successes and
+                failures.
+              </p>
+              <h3>Professionalism and Excellence</h3>
+              <p>
+                We uphold professional standards of conduct in all our
+                interactions, maintaining a commitment to excellence in our
+                work. We strive for quality, innovation, and continuous
+                improvement in everything we do.
+              </p>
+              <h3>Compliance with Laws and Regulations</h3>
+              <p>
+                Lokarpan operates in full compliance with all applicable laws,
+                regulations, and ethical standards. We ensure that our actions
+                are legal, ethical, and in accordance with our mission and
+                values.
+              </p>
+              <h3>Conflict Resolution and Open Communication</h3>
+              <p>
+                In the event of conflicts or disagreements, we encourage open
+                and respectful communication to find constructive solutions. We
+                value feedback and input from all stakeholders and work towards
+                resolving issues in a fair and timely manner.
+              </p>
+              <h3>Environmental Responsibility</h3>
+              <p>
+                Recognizing our impact on the environment, we are committed to
+                sustainable practices and minimising our ecological footprint.
+                We strive to protect and preserve natural resources for future
+                generations.
+              </p>
+              <h3>Community Engagement and Collaboration</h3>
+              <p>
+                Lokarpan values partnerships and collaboration with local
+                communities, organisations, and stakeholders. We believe in the
+                power of collective action and work together towards shared
+                goals for the betterment of society.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="new-platform-sec">
         <h1>Be a Catalyst for Change</h1>
         {/* <h1>An all-new for developers</h1> */}

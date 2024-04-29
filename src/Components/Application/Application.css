@@ -177,6 +177,17 @@
   margin-top: 0;
 }
 
+.app-apply-btn {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 16px;
+  margin-top: 50px;
+  cursor: pointer;
+  outline: none;
+}
 @media screen and (max-width: 748px) {
   .app-para-5 {
     font-size: 18px;

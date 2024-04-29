@@ -37,7 +37,7 @@
   margin: 100px 0;
 }
 
-.padding40{
+.padding40 {
   padding: 40px 0px;
 }
 .give-card-img {
@@ -92,10 +92,13 @@
 }
 
 .give-card-link {
-  font-size: 20px;
+  font-size: 16px;
   padding: 6px 0px;
   text-decoration: underline;
   color: #3f86f0;
+}
+.ways-space-up {
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 748px) {
