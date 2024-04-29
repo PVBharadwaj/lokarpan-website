@@ -666,7 +666,7 @@ const Navbar = () => {
                         <h4>Quick Links</h4>
                         <ul className="quick-links">
                           <li>
-                            <Link to="/our-role">Our-Role</Link>
+                            <Link to="/our-role">Our Role</Link>
                           </li>
                           <li>
                             <Link to="/history">History</Link>
