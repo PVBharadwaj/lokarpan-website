@@ -79,7 +79,6 @@
 .environment-desp-cards {
   padding: 60px 0px 0px !important;
   gap: 40px !important;
-
 }
 
 .justify-top {
@@ -282,7 +281,6 @@
   margin: auto;
 }
 .health-cards-cont-each-card {
-
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -313,7 +311,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 .health-stories-each-card {
   width: 300px;
@@ -334,9 +331,10 @@
 
 .health-stories-each-card p {
   font-size: 18px;
-  padding: 25px 10px 10px 25px;
+  /* padding: 25px 10px 10px 25px; */
   font-weight: 500;
-
+  width: 90%;
+  margin: 0px auto;
 }
 .health-stories-each-card {
   position: relative;
@@ -345,8 +343,8 @@
 .read-more {
   font-size: 18px;
   font-weight: 450;
-width: 120px;
-text-align: center;
+  width: 120px;
+  text-align: center;
   display: none;
   position: absolute;
   top: 40%;
@@ -356,13 +354,12 @@ text-align: center;
   padding: 10px;
   border-radius: 20px;
 }
-.read-more:hover{
-background-color: #f3eaea;
+.read-more:hover {
+  background-color: #f3eaea;
 }
 .health-stories-each-card:hover .read-more {
   cursor: pointer;
   display: block;
-  
 }
 .health-stories-each-card:hover .stories-img {
   filter: grayscale(50%); /* Apply grayscale filter on hover */
@@ -374,6 +371,13 @@ background-color: #f3eaea;
   text-align: center;
 }
 
+.health-stories-each-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 @media screen and (min-width: 748px) and (max-width: 1000px) {
   .health-full-img-text,
   .livelihood-full-img-text {

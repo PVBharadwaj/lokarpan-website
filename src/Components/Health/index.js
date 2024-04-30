@@ -150,11 +150,9 @@ const Health = () => {
                 className="stories-img"
               />
               <div className="health-stories-each-card-content">
+                <h1 className="popup-font18">ARTICLE</h1>
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
-                <span
-                  onClick={() => healthopenpopup(0)}
-                  className=" read-more"
-                >
+                <span onClick={() => healthopenpopup(0)} className=" read-more">
                   Read more
                 </span>
               </div>
@@ -163,9 +161,9 @@ const Health = () => {
               <div className="misson-popup">
                 <div className="misson-popup-content">
                   <RxCross2 onClick={() => healthclosepopup(0)} className="x" />
-          
+
                   <div className="mission-head">
-                  Empowering Communities, One Safe Delivery at a Time.
+                    Empowering Communities, One Safe Delivery at a Time.
                   </div>
                   <p className="mission-para">
                     Annapurna is a dedicated midwife (DAI) from the serene
@@ -213,11 +211,9 @@ const Health = () => {
                 className="stories-img"
               />
               <div className="health-stories-each-card-content">
+                <h1 className="popup-font18">ARTICLE</h1>
                 <p>ASHA Workers: Guardians of Community Well-being</p>
-                <span
-                  onClick={() => healthopenpopup(1)}
-                  className=" read-more"
-                >
+                <span onClick={() => healthopenpopup(1)} className=" read-more">
                   Read more
                 </span>
               </div>
@@ -227,7 +223,7 @@ const Health = () => {
                 <div className="misson-popup-content">
                   <RxCross2 onClick={() => healthclosepopup(1)} className="x" />
                   <div className="mission-head">
-                  ASHA Workers: Guardians of Community Well-being
+                    ASHA Workers: Guardians of Community Well-being
                   </div>
                   <p className="mission-para">
                     Usha Devi is a resilient resident of Sithau village, whose
@@ -271,15 +267,12 @@ const Health = () => {
                 className="stories-img"
               />
               <div className="health-stories-each-card-content">
+                <h1 className="popup-font18">ARTICLE</h1>
                 <p>
                   Baby’s health, Mother’s Freedom: A Journey of Resilience and
                   Transformation
                 </p>
-                <span
-                  onClick={() => healthopenpopup(2)}
-                  className=" read-more"
-                >
-                  
+                <span onClick={() => healthopenpopup(2)} className=" read-more">
                   Read more
                 </span>
               </div>
@@ -289,7 +282,8 @@ const Health = () => {
                 <div className="misson-popup-content">
                   <RxCross2 onClick={() => healthclosepopup(2)} className="x" />
                   <div className="mission-head">
-                  Baby’s health, Mother’s Freedom: A Journey of Resilience and Transformation
+                    Baby’s health, Mother’s Freedom: A Journey of Resilience and
+                    Transformation
                   </div>
                   <p className="mission-para">
                     The story of Kaunsar Jahan from Bandariyapur village in

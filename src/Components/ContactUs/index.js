@@ -67,7 +67,7 @@ class ContactUs extends Component {
           </div>
           {active === "General" && (
             <div className="inquiries-sec">
-              <h1 className="contact-font48">General Queries</h1>
+              {/* <h1 className="contact-font48">General Queries</h1> */}
               <div className="inquiries-below-section">
                 <div>
                   <p className="contact-font24-left bold">Phone</p>
@@ -82,8 +82,10 @@ class ContactUs extends Component {
           )}
           {active === "Press" && (
             <div className="inquiries-sec">
-              <h1 className="contact-font48">Press</h1>
-              <p className="contact-font18">For media inquiries and interview requests, please contact us at support@lokarpan.com.</p>
+              {/* <h1 className="contact-font48">Press</h1> */}
+              <p className="contact-font18">
+                For media inquiries and interview requests, please contact us.
+              </p>
               <div className="inquiries-below-section">
                 <div>
                   <p className="contact-font24-left bold">Phone</p>
@@ -99,18 +101,17 @@ class ContactUs extends Component {
           <div className="maps-section">
             <h1 className="contact-font48">Maps & Directions</h1>
             <div className="maps-below-section">
-            <div className="health-cont-img-div contact-us-img1">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5015994442724!2d72.57717227386523!3d23.00534801697351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8553c71a49d9%3A0x107c166b9a9e6b16!2sLOKARPAN%20FOUNDATION!5e0!3m2!1sen!2sin!4v1714337317984!5m2!1sen!2sin" 
-    width="550" 
-    height="350" 
-    style={{ border: "0" }} 
-    allowFullScreen={true} 
-    loading="lazy" 
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
-
+              <div className="health-cont-img-div contact-us-img1">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5015994442724!2d72.57717227386523!3d23.00534801697351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8553c71a49d9%3A0x107c166b9a9e6b16!2sLOKARPAN%20FOUNDATION!5e0!3m2!1sen!2sin!4v1714337317984!5m2!1sen!2sin"
+                  width="550"
+                  height="350"
+                  style={{ border: "0" }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
 
               <div className="maps-below-right-sec">
                 <h3 className="contact-font24-left">Address</h3>
@@ -122,7 +123,9 @@ class ContactUs extends Component {
                 <a href="#" className="contact-anchor">
                   Directions
                 </a>
-                <h3 className="contact-font24-left contact-font24-left1">How to access</h3>
+                <h3 className="contact-font24-left contact-font24-left1">
+                  How to access
+                </h3>
                 <p className="contact-font24-le">
                   The Apple Store faces Union Square. Parking: Union Square
                   Garage, accessed from Post or Geary. Public Transit: Bart to
@@ -140,40 +143,45 @@ class ContactUs extends Component {
               <li className="each-item">
                 <p className="contact-font28">Donate</p>
                 <p className="each-item-p">
-                Explore our Support Page to learn how you can make a difference through your generosity.
+                  Explore our Support Page to learn how you can make a
+                  difference through your generosity.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Leadership</p>
                 <p className="each-item-p">
-                Visit our Leadership Page to meet the team driving Lokarpan's mission forward.
+                  Visit our Leadership Page to meet the team driving Lokarpan's
+                  mission forward.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Alumni</p>
                 <p className="each-item-p">
-                Connect with fellow Lokarpan alumni and discover how you can stay engaged with our community on our Alumni Page.
+                  Connect with fellow Lokarpan alumni and discover how you can
+                  stay engaged with our community on our Alumni Page.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Careers</p>
                 <p className="each-item-p">
-                Unlock exciting opportunities to join Lokarpan's dedicated team by visiting our Careers Page.
+                  Unlock exciting opportunities to join Lokarpan's dedicated
+                  team by visiting our Careers Page.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Financial Info</p>
                 <p className="each-item-p">
-                Gain insights into Lokarpan's financial transparency and stewardship by exploring our Financial Info Page.
+                  Gain insights into Lokarpan's financial transparency and
+                  stewardship by exploring our Financial Info Page.
                 </p>
               </li>
               <li className="each-item">
                 <p className="contact-font28">Newsletters</p>
                 <p className="each-item-p">
-                Stay updated on Lokarpan's latest news, initiatives, and events by subscribing to our newsletters.
+                  Stay updated on Lokarpan's latest news, initiatives, and
+                  events by subscribing to our newsletters.
                 </p>
               </li>
-              
             </ul>
           </div>
           {/* <div className="new-contact-sec">

@@ -3,14 +3,13 @@
   overflow-x: hidden;
 }
 .contact-us-top-section {
-  /* height: 1100px; */
+  height: 1100px;
   width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 100px;
 }
 .contact-us-top-section img {
   width: 100%;
@@ -39,9 +38,8 @@
 
 .contact-font64 {
   font-size: 64px;
-  line-height: 30px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .contact-font64-left {
   font-size: 44px;
@@ -52,13 +50,13 @@
   font-size: 24px;
   font-weight: auto;
   margin-bottom: 0;
- 
+
   text-align: left;
 }
-.contact-font24-left1{
+.contact-font24-left1 {
   margin-top: 60px;
 }
-.contact-font24-le{
+.contact-font24-le {
   padding-top: 1rem;
 }
 .contact-anchor {
@@ -68,7 +66,7 @@
   margin: 20px 0;
 }
 .contact-font24 {
-  font-size: 36px;
+  font-size: 25px;
   text-align: center;
   margin-top: 0;
 }
@@ -94,11 +92,13 @@
   font-weight: bold;
   margin-top: 1rem;
 }
-.contact-font18{
+.contact-font18 {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 18;
-  font-weight:450 ;
+  font-size: 20px;
+  font-weight: 450;
+  margin: 50px auto;
+  margin-bottom: 0px;
 }
 .contact-font16-normal {
   font-size: 16px;
@@ -110,7 +110,6 @@
   height: 50px;
   width: 450px;
 
- 
   margin-top: 62px;
   display: flex;
   flex-direction: row;
@@ -125,9 +124,9 @@
   cursor: pointer;
   outline: none;
   border: none;
-  
+
   font-size: 42px;
-font-weight: 900;
+  font-weight: 900;
 }
 .inquiries-sec {
   height: 200px;
@@ -136,13 +135,14 @@ font-weight: 900;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .inquiries-below-section {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 50px;
 }
 .maps-section {
   height: 441px;
@@ -298,8 +298,6 @@ font-weight: 900;
   margin: 10px 0;
   font-weight: 500;
 }
-
-
 
 @media screen and (max-width: 748px) {
   .new-icons-cont {
