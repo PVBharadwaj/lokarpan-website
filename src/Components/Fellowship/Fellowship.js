@@ -120,7 +120,7 @@ const Fellowship = () => {
       </div>
 
       <div className="carousal-container1 fellow-carousal-cont1">
-        <h3 className="fellows">Fellows</h3>
+        <h3 className="fellows">Meet Our Fellows</h3>
         <div className="arrows-cont1">
           <button className="button1" onClick={handlePauseClick}>
             {!isPaused ? (
