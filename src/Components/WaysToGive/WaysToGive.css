@@ -6,6 +6,9 @@
   /* padding: 100px 123px; */
   min-width: 320px;
 }
+.link {
+  color: #3f86f0;
+}
 
 .ways-top {
   width: 100%;

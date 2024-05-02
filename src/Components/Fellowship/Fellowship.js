@@ -12,6 +12,7 @@ const Fellowship = () => {
   const [popupVisibility, setPopupVisibility] = useState([false, false, false]); // Initialize with false for each popup
 
   const handlePauseClick = () => {
+    console.log("clicked");
     setIsPaused((prevState) => !prevState);
   };
 
@@ -118,7 +119,7 @@ const Fellowship = () => {
         </div>
       </div>
 
-      <div className="carousal-container1">
+      <div className="carousal-container1 fellow-carousal-cont1">
         <h3 className="fellows">Fellows</h3>
         <div className="arrows-cont1">
           <button className="button1" onClick={handlePauseClick}>
@@ -130,12 +131,12 @@ const Fellowship = () => {
           </button>
         </div>
         <Marquee play={!isPaused} className="marquee">
-          <div className="each-carousal1">
-            <div className="carousal1">
+          <div className="each-carousal1 fellow-each-carousal1">
+            <div className="carousal1 fellow-carousal1">
               <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1714480299/fp1_a6flep.png"
                 alt="Slide 1"
-                className="carousal-img1"
+                className="carousal-img1 fellow-carousal1-img "
               />
               <div className="link-cont">
                 <button className="home-link" onClick={() => openpopup(0)}>
@@ -146,12 +147,12 @@ const Fellowship = () => {
             <p className="lokarpan-para2">Nyssa Desai</p>
           </div>
 
-          <div className="each-carousal1">
-            <div className="carousal1">
+          <div className="each-carousal1 fellow-each-carousal1">
+            <div className="carousal1 fellow-carousal1">
               <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1714480431/fp2_irtkd3.png"
                 alt="Slide 1"
-                className="carousal-img1"
+                className="carousal-img1 fellow-carousal1-img "
               />
               <div className="link-cont">
                 <button className="home-link" onClick={() => openpopup(1)}>
@@ -162,12 +163,12 @@ const Fellowship = () => {
             <p className="lokarpan-para2">Divya Chaudhary</p>
           </div>
 
-          <div className="each-carousal1">
-            <div className="carousal1">
+          <div className="each-carousal1 fellow-each-carousal1">
+            <div className="carousal1 fellow-carousal1">
               <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1714480276/fp3_mu5ikn.jpg"
                 alt="Slide 1"
-                className="carousal-img1"
+                className="carousal-img1 fellow-carousal1-img "
               />
               <div className="link-cont">
                 <button className="home-link" onClick={() => openpopup(2)}>
@@ -178,6 +179,7 @@ const Fellowship = () => {
             <p className="lokarpan-para2">Shreya Kothawale</p>
           </div>
         </Marquee>
+
         {popupVisibility[0] && (
           <div className="misson-popup">
             <div className="misson-popup-content">
@@ -249,6 +251,14 @@ const Fellowship = () => {
           </div>
         )}
       </div>
+
+      <button className="button1 mobile-home1" onClick={handlePauseClick}>
+        {!isPaused ? (
+          <PiPauseCircleThin className="carousal-icon1" />
+        ) : (
+          <PiPlayCircleThin className="carousal-icon1" />
+        )}
+      </button>
 
       <div className="opp">
         <h3 className="opp-head fellow-data">What You’ll Do</h3>

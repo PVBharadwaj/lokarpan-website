@@ -314,7 +314,7 @@
 }
 .health-stories-each-card {
   width: 300px;
-  height: 350px;
+  height: 400px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -330,7 +330,7 @@
 }
 
 .health-stories-each-card p {
-  font-size: 18px;
+  font-size: 16px;
   /* padding: 25px 10px 10px 25px; */
   font-weight: 500;
   width: 90%;
