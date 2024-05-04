@@ -608,7 +608,7 @@ const Donate = () => {
                   </div>
                 </fieldset>
               </div>
-              <div className="donate-part">
+              <div className="donate-part" style={{paddingTop: "80px"}}>
                 <div className="page-marker">05/06</div>
                 <fieldset>
                   <legend className="donate-form-sec-title">
