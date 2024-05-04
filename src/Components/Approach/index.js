@@ -114,14 +114,10 @@ const Approach = () => {
         <div className="approach">
           {headingRefs.map((ref, index) => (
             <h1 key={index} className="font48-podcasts" ref={ref}>
-              {index === 0 &&
-                "A delivery system that revolutionises education at the systemic level"}
+              {index === 0 && "Revolutionising education at the systemic level"}
               {index === 1 &&
-                "Utilising technology to bring experts into classrooms"}
-              {index === 2 &&
-                "Inspiring Excellence Through interactive, project-Based Learning"}
-              {index === 3 &&
-                "Leveraging data to tailor learning experiences and measure progress"}
+                "Utilising technology to bring experts to the classroom"}
+              {index === 2 && "Leveraging data to tailor learning experiences"}
             </h1>
           ))}
         </div>

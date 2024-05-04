@@ -24,7 +24,7 @@ const Moonshots = () => {
             thrive in the digital age.
           </p>
         </div>
-        <p className="moonshots-head">Our focus Areas</p>
+        <p className="moonshots-head">Our Focus Areas</p>
         <div className="second-div moonshots-div">
           <div className="moonshots-sub-div moonshots-img1">
             <div className="moons-text-div">

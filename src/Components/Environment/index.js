@@ -127,7 +127,7 @@ const Environment = () => {
               </div> */}
 
           <div className="livelihood-top-section">
-            <h1 className="livelihood-desp-cards-head">Our focus Areas</h1>
+            <h1 className="livelihood-desp-cards-head">Our Focus Areas</h1>
             <div className="desp-cards environment-desp-cards">
               {Desp.map((item, index) => (
                 <DespCard

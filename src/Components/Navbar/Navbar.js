@@ -35,7 +35,7 @@ const Navbar = () => {
   const timeoutRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
-  
+
   const [popupVisible, setPopup] = useState(false);
 
   useEffect(() => {
@@ -43,8 +43,10 @@ const Navbar = () => {
       const activeElement = document.activeElement;
       const InputText = document.getElementsByClassName("text-input");
       const TextInput = Array.from(InputText);
-      const activeElementNotInArray = !TextInput.some(element => element === activeElement);
-      
+      const activeElementNotInArray = !TextInput.some(
+        (element) => element === activeElement
+      );
+
       if (activeElementNotInArray) {
         if (event.key === "s" || event.key === "S") {
           setPopup(true);
@@ -52,12 +54,12 @@ const Navbar = () => {
           setPopup(false);
         }
       }
-      };   
-      window.addEventListener("keydown", handleKeyPress);
-      return () => {
-        window.removeEventListener("keydown", handleKeyPress);
-      };
-    }, []);
+    };
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -363,49 +365,62 @@ const Navbar = () => {
                 <div className="dropdown-container">
                   <h1 className="quicklinks-heading">Quick Links</h1>
                   <ul className="quick-links">
-                    
+                    {/* <li>
+                      <Link to="/alumni">Alumni</Link>
+                    </li> */}
                     <li>
                       <Link to="/contact-us">Contact</Link>
                     </li>
                     <li>
                       <a href="https://medium.com/lokarpan" target="_blank">
-
                         Blog
                       </a>
                     </li>
-                    <li className="quicklinks-subscribe-text" onClick={() => {
-                setPopup(true);
-              }}>
+                    <li
+                      className="quicklinks-subscribe-text"
+                      onClick={() => {
+                        setPopup(true);
+                      }}
+                    >
                       {/* <Link to="/leadership"> */}
-                        {/*  need to update to in Link  */}
-                        Subscribe
+                      {/*  need to update to in Link  */}
+                      Subscribe
                       {/* </Link> */}
                     </li>
-                      {popupVisible &&                     
-                          <div className="popup-on">
-                          <div className="popup-back"></div>
-                          <div className="popup-in">
-                            <div className="pop">
-                              <h2>Subscribe to our Newsletters!</h2>
-                              <RxCross2 
-                                onClick={() => {
-                                  setPopup(false);
-                                }} 
-                                className="x"/>
-                            </div>
-                            <div className="popup-text">
-                              <p>
-                              Join our vibrant community of engaged readers as we deliver the latest updates, success stories, and transformative initiatives aimed at empowering rural education. Receive valuable insights and impactful stories directly to your inbox every week, and be a part of the journey towards positive change.
-                              </p>
-                              <form action="">
-                                <input type="text" placeholder="Email address" />
-                                <button type="submit">Subscribe</button>
-                              </form>
-                              <p>We respect your privacy. Unsubscribe at any time.</p>
-                            </div>
+                    {popupVisible && (
+                      <div className="popup-on">
+                        <div className="popup-back"></div>
+                        <div className="popup-in">
+                          <div className="pop">
+                            <h2>Subscribe to our Newsletters!</h2>
+                            <RxCross2
+                              onClick={() => {
+                                setPopup(false);
+                              }}
+                              className="x"
+                            />
+                          </div>
+                          <div className="popup-text">
+                            <p>
+                              Join our vibrant community of engaged readers as
+                              we deliver the latest updates, success stories,
+                              and transformative initiatives aimed at empowering
+                              rural education. Receive valuable insights and
+                              impactful stories directly to your inbox every
+                              week, and be a part of the journey towards
+                              positive change.
+                            </p>
+                            <form action="">
+                              <input type="text" placeholder="Email address" />
+                              <button type="submit">Subscribe</button>
+                            </form>
+                            <p>
+                              We respect your privacy. Unsubscribe at any time.
+                            </p>
                           </div>
                         </div>
-                      }
+                      </div>
+                    )}
                   </ul>
                 </div>
               </div>
@@ -650,8 +665,8 @@ const Navbar = () => {
                       <div>
                         <h4>Quick Links</h4>
                         <ul className="quick-links">
-                        <li>
-                            <Link to="/our-role">Our-Role</Link>
+                          <li>
+                            <Link to="/our-role">Our Role</Link>
                           </li>
                           <li>
                             <Link to="/history">History</Link>
@@ -660,7 +675,9 @@ const Navbar = () => {
                             <Link to="/fellowship">Fellowship</Link>
                           </li>
                           <li>
-                            <Link to="/being-a-volunteer">Being a Volunteer</Link>
+                            <Link to="/being-a-volunteer">
+                              Being a Volunteer
+                            </Link>
                           </li>
                           <li>
                             <Link to="/donate">Donate</Link>

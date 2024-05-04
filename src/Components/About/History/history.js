@@ -59,7 +59,7 @@ const History = () => {
       <div className="history-left-side-mobile">
         <div className="history-lsh1-mobile">History</div>
         <div className="history-lsh2-mobile">
-          {" "}
+      
           <div className="history-lsh21-mobile">of our </div> Firm
         </div>
       </div>
@@ -68,7 +68,7 @@ const History = () => {
           <div className="history-left-side">
             <div className="history-lsh1">History</div>
             <div className="history-lsh2">
-              {" "}
+          
               <div className="history-lsh21">of our </div> Firm
             </div>
           </div>

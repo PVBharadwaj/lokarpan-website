@@ -6,10 +6,6 @@ import Footer from "../Footer/Footer";
 import React, { useState, useEffect } from "react";
 import { RxCross2 } from "react-icons/rx";
 const WaysToGive = () => {
-
-
-
-  
   const [popupVisibility, setPopupVisibility] = useState([false, false]); // Initialize with false for each popup
 
   const openpopup = (index) => {
@@ -38,13 +34,11 @@ const WaysToGive = () => {
 
   useEffect(() => {
     if (popupVisibility.some((isVisible) => isVisible)) {
-      document.body.classList.add('body-no-scroll');
+      document.body.classList.add("body-no-scroll");
     } else {
-      document.body.classList.remove('body-no-scroll');
+      document.body.classList.remove("body-no-scroll");
     }
   }, [popupVisibility]);
-
-
 
   return (
     <>
@@ -59,39 +53,75 @@ const WaysToGive = () => {
           <div className="give-card-text">
             <h1>Make a Gift</h1>
             <p>
-            Lokarpan's impactful initiatives are sustained through the generosity of philanthropic support. Our programs have thrived thanks to the contributions of diverse donors, including individuals like yourself. These vital donations often take the form of endowment gifts or direct contributions, providing essential resources for our work. Additionally, we benefit from investment assets and planned gifting, where donors utilise estate planning and various funds to secure our ability to continue making a meaningful difference.
+              Lokarpan's impactful initiatives are sustained through the
+              generosity of philanthropic support. Our programs have thrived
+              thanks to the contributions of diverse donors, including
+              individuals like yourself. These vital donations often take the
+              form of endowment gifts or direct contributions, providing
+              essential resources for our work. Additionally, we benefit from
+              investment assets and planned gifting, where donors utilise estate
+              planning and various funds to secure our ability to continue
+              making a meaningful difference.
             </p>
-            <Link className="give-card-link" to="/donate">Donate Now</Link>
-            <span onClick={() => openpopup(0)} className="give-card-link" style={{cursor: "pointer"}}>Explore a Gift</span>
+            <Link className="give-card-link ways-space-up" to="/donate">
+              Donate now
+            </Link>
+            <span
+              onClick={() => openpopup(0)}
+              className="give-card-link"
+              style={{ cursor: "pointer" }}
+            >
+              Explore a Gift
+            </span>
             {popupVisibility[0] && (
-                <div className="misson-popup">
-                  <div className="misson-popup-content">
-                    <RxCross2 
-                      onClick={() => closepopup(0)} 
-                      className="x"
-                    />
-                    <h1 style={{width: "100%", paddingTop: "30px"}}>Planned Giving</h1>
-                    <p className="mission-para">
-                    Your investment in Lokarpan will empower our students and rural communities to make the most of their potential. To explore how your gift can advance our work, please contact us at support@lokarpan.com.
-                    </p>
-                    <p className="mission-para">
-                    In times of crisis, our culture shines through as we respond swiftly and effectively to provide support and assistance where it is most needed. We are committed to advancing sustainability, both environmentally and socially, by implementing practices that promote long-term well-being and resilience.
-                    </p>
-                    <p style={{width: "100%"}} className="mission-para">
+              <div className="misson-popup">
+                <div className="misson-popup-content">
+                  <RxCross2 onClick={() => closepopup(0)} className="x" />
+                  <h1 style={{ width: "100%", paddingTop: "30px" }}>
+                    Planned Giving
+                  </h1>
+                  <p className="mission-para">
+                    Your investment in Lokarpan will empower our students and
+                    rural communities to make the most of their potential. To
+                    explore how your gift can advance our work, please contact
+                    us at support@lokarpan.com.
+                  </p>
+                  <p className="mission-para">
+                    In times of crisis, our culture shines through as we respond
+                    swiftly and effectively to provide support and assistance
+                    where it is most needed. We are committed to advancing
+                    sustainability, both environmentally and socially, by
+                    implementing practices that promote long-term well-being and
+                    resilience.
+                  </p>
+                  <p style={{ width: "100%" }} className="mission-para">
                     Thank you for your generous support.
-                    </p>
-                  </div>
+                  </p>
                 </div>
-              )}
+              </div>
+            )}
           </div>
         </div>
         <div className="give-card padding40 give-card-reverse">
           <div className="give-card-text">
             <h1>Friend Circle</h1>
             <p>
-            Join our Friend Circle to help us in our mission to empower rural communities through education. As a member, you'll gain special insights into our projects and opportunities to engage with our initiatives throughout the year. This circle is specifically tailored for our alumni, including past volunteers and fellows, who wish to continue supporting Lokarpan's impactful work beyond their service period. Subscribe to our newsletters and email us at support@lokarpan.com for more information.
+              Join our Friend Circle to help us in our mission to empower rural
+              communities through education. As a member, you'll gain special
+              insights into our projects and opportunities to engage with our
+              initiatives throughout the year. This circle is specifically
+              tailored for our alumni, including past volunteers and fellows,
+              who wish to continue supporting Lokarpan's impactful work beyond
+              their service period. Subscribe to our newsletters and email us at
+              support@lokarpan.com for more information.
             </p>
+<<<<<<< HEAD
             <Link className="give-card-link" to="/our-supporter">Register</Link>
+=======
+            <Link className="give-card-link ways-space-up" to="/newsletter">
+              Register
+            </Link>
+>>>>>>> origin/master
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-2"></div>
@@ -101,19 +131,48 @@ const WaysToGive = () => {
           <div className="give-card-text">
             <h1>Volunteers</h1>
             <p>
-            Join us as a volunteer or a fellow and become an integral part of our mission to transform rural education. Volunteers dedicate their time and skills to support our programs, making a significant impact in the communities we serve. Our fellowship program offers a longer-term opportunity to devise innovative solutions that drive meaningful change, while receiving exceptional training and mentoring sessions from experienced colleagues and partners.
+              Join us as a volunteer or a fellow and become an integral part of
+              our mission to transform rural education. Volunteers dedicate
+              their time and skills to support our programs, making a
+              significant impact in the communities we serve. Our fellowship
+              program offers a longer-term opportunity to devise innovative
+              solutions that drive meaningful change, while receiving
+              exceptional training and mentoring sessions from experienced
+              colleagues and partners.
             </p>
+<<<<<<< HEAD
             <Link className="give-card-link" to="/being-a-volunteer">Volunteer opportunities</Link>
             <Link className="give-card-link" to="/fellowship">Fellowship</Link>
+=======
+            <Link className="give-card-link" to="/being-a-volunteer">
+              Volunteer Opportunities
+            </Link>
+            <Link className="give-card-link" to="/fellowship">
+              Fellowship
+            </Link>
+>>>>>>> origin/master
           </div>
         </div>
         <div className="give-card padding40 give-card-reverse">
           <div className="give-card-text">
             <h1>Corporate Partnerships</h1>
             <p>
-            We invite inquiries regarding building robust partnerships with corporations and business entities interested in supporting Lokarpan's mission. Corporate support opportunities are available for various research activities and programs, empowering us to extend our impact and make education accessible to more children. To join our community of corporate supporters and gain exclusive insights into our projects and initiatives, please contact us at support@lokarpan.com.
+              We invite inquiries regarding building robust partnerships with
+              corporations and business entities interested in supporting
+              Lokarpan's mission. Corporate support opportunities are available
+              for various research activities and programs, empowering us to
+              extend our impact and make education accessible to more children.
+              To join our community of corporate supporters and gain exclusive
+              insights into our projects and initiatives, please contact us at{" "}
+              <a href="mailto:support@lokarpan.com" className="give-card-link">
+                support@lokarpan.com
+              </a>
             </p>
+<<<<<<< HEAD
             {/* <Link className="give-card-link" to="/">Link</Link> */}
+=======
+
+>>>>>>> origin/master
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-4"></div>

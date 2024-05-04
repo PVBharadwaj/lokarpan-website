@@ -90,12 +90,8 @@ import { IoMdClose } from "react-icons/io";
 //     }
 //   };
 
-
-
-
-
 const Newslettert = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [selectedNewsletters, setSelectedNewsletters] = useState([]);
 
   const handleCheckboxChange = (event) => {
@@ -103,7 +99,9 @@ const Newslettert = () => {
     if (checked) {
       setSelectedNewsletters([...selectedNewsletters, value]);
     } else {
-      setSelectedNewsletters(selectedNewsletters.filter(item => item !== value));
+      setSelectedNewsletters(
+        selectedNewsletters.filter((item) => item !== value)
+      );
     }
   };
 
@@ -118,219 +116,220 @@ const Newslettert = () => {
         email: email,
         newsletters: selectedNewsletters,
       };
-      const response = await axios.post('http://localhost:8000/api/newsletter_subscribe/', formData);
+      const response = await axios.post(
+        "http://localhost:8000/api/newsletter_subscribe/",
+        formData
+      );
       if (response.status === 201) {
-        alert('Subscription successful!');
-        setEmail('');
+        alert("Subscription successful!");
+        setEmail("");
         setSelectedNewsletters([]);
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
-    return (
-      <div className="newsletter">
-        <Navbar />
-        <div className="newsletter-top-section">
-          <h1 className="newsletter-heading">
-            Stay Informed, Stay Inspired: Join Lokarpan's Newsletter Community
-            Today.
-          </h1>
-          <h2 className="newsletter-heading2">
-            Select the newsletters you’d like to receive. Then, add your e-mail
-            to sign up.
-          </h2>
-        </div>
-        <section className="newsletter-letters">
-          {/* Your existing newsletter sections */}
-          <h3 className="news-head3">Newsletters</h3>
-          <div className="newletter-inner-section">
-            <div className="daily">
-              <div className="daily-icon">
-                <FontAwesomeIcon icon={faNewspaper} className="daily-icon1" />
-                <div
-                  className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("Daily") ? "" : ""
-                  }`}
-                >
-                  <input
-                    type="checkbox"
-                    id="newsletter-checkbox-daily"
-                    onClick={handleCheckboxChange}
-                  />
-                  <label
-                    htmlFor="newsletter-checkbox-daily"
-                    className="ihmHAQ"
-                  ></label>
-                </div>
-              </div>
-              <div className="newsbox-heading">Lokarpan</div>
-              <div className="newsbox-content">
-                Our flagship newsletter highlights the latest developments and
-                insights from our kith programme, our research and learning
-                initiatives and podcasts
-              </div>
-              <button className="newsbox-tag">Lokarpan</button>
-            </div>
-
-            <div className="daily">
-              <div className="daily-icon">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  className="daily-icon12"
-                />
-                <div
-                  className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("Weekly") ? "" : ""
-                  }`}
-                >
-                  <input
-                    type="checkbox"
-                    id="newsletter-checkbox-weekly"
-                    onClick={handleCheckboxChange}
-                  />
-                  <label
-                    htmlFor="newsletter-checkbox-weekly"
-                    className="ihmHAQ"
-                  ></label>
-                </div>
-              </div>
-              <div className="newsbox-heading">Technology</div>
-              <div className="newsbox-content">
-                Lokarpan's specialised newsletter, where we delve into the
-                latest advancements, trends, and innovations shaping the
-                intersection of technology and rural education
-              </div>
-              <button className="newsbox-tag">Technology</button>
-            </div>
-          </div>
-        </section>
-        <section className="newsletter-letters-1">
-          {/* Your existing newsletter sections */}
-          <div className="kith">Kith</div>
-          <div className="newsletter-letters-1-newsboxs">
-            <div className="daily">
-              <div className="daily-icon">
-                <FontAwesomeIcon icon={faComputer} className="ic1" />
-                <div
-                  className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("NewYorker") ? "" : ""
-                  }`}
-                >
-                  <input
-                    type="checkbox"
-                    id="newsletter-checkbox-newyorker"
-                    onClick={handleCheckboxChange}
-                  />
-                  <label
-                    htmlFor="newsletter-checkbox-newyorker"
-                    className="ihmHAQ"
-                  ></label>
-                </div>
-              </div>
-              <div className="newsbox-heading">Quarterly newsletter</div>
-              <div className="newsbox-content">
-                Latest updates, success stories, and impactful initiatives aimed
-                at transforming education in rural communities.
-              </div>
-              <button className="newsbox-tag">Quarterly Newsletter</button>
-            </div>
-            <div className="daily">
-              <div className="daily-icon">
-                <FontAwesomeIcon icon={faMicroscope} className="ic1" />
-                <div
-                  className={`newsletter-icon-container ${
-                    selectedNewsletters.includes("Science") ? "" : ""
-                  }`}
-                >
-                  <input
-                    type="checkbox"
-                    id="newsletter-checkbox-science"
-                    onClick={handleCheckboxChange}
-                  />
-                  <label
-                    htmlFor="newsletter-checkbox-science"
-                    className="ihmHAQ"
-                  ></label>
-                </div>
-              </div>
-              <div className="newsbox-heading">Annual Newsletter</div>
-              <div className="newsbox-content">
-                Comprehensive insights, impactful milestones, and compelling
-                narratives that showcase the ear-long journey of our annual Kith
-                newsletter
-              </div>
-              <button className="newsbox-tag">Annual Newsletter</button>
-            </div>
-          </div>
-        </section>
-        <section className="subs-newsletter">
-          <ul>
-            <li>Daily</li>
-            <li>Weekly</li>
-          </ul>
-        </section>
-
-        <section className="subs-newsletter">
-          <ul>
-            <li>Daily</li>
-            <li>Weekly</li>
-          </ul>
-        </section>
-        {selectedNewsletters.length > 0 && (
-          <Popup
-            className="newsletter-popup-container"
-            modal
-            trigger={
-              <div className="email">
-                <div className="counter">{counter}</div>
-                <div>E-mail address</div>
-              </div>
-            }
-          >
-            {(close) => (
-              <div className="modal">
-                <button className="btn-close" onClick={close}>
-                  <IoMdClose style={{ fontSize: "24px" }} />
-                </button>
-                <div className="n-header"> Email Address </div>
-                <div className="n-content">
-                  <input
-                    type="text"
-                    className="n-input"
-                    placeholder="E-mail Address"
-                    value={email}
-                    onChange={onChangeEmail}
-                  />
-                  <button className="n-email-box" onClick={handleSubmit}>
-                    <span className="span-c">{counter}</span>
-                    <p>complete sign-up</p>
-                  </button>
-                  <p className="n-para">
-                    By signing up, you agree to our User Agreement and Privacy
-                    Policy & Cookie Statement. This site is protected by
-                    reCAPTCHA and the Google Privacy Policy and Terms of Service
-                    apply.
-                  </p>
-                </div>
-              </div>
-            )}
-          </Popup>
-        )}
-        <Footer />
+  return (
+    <div className="newsletter">
+      <Navbar />
+      <div className="newsletter-top-section">
+        <h1 className="newsletter-heading">
+          Stay Informed, Stay Inspired: Join Lokarpan's Newsletter Community
+          Today.
+        </h1>
+        <h2 className="newsletter-heading2">
+          Select the newsletters you’d like to receive. Then, add your e-mail to
+          sign up.
+        </h2>
       </div>
-    );
-  }
+      <section className="newsletter-letters">
+        {/* Your existing newsletter sections */}
+        <h3 className="news-head3">Newsletters</h3>
+        <div className="newletter-inner-section">
+          <div className="daily">
+            <div className="daily-icon">
+              <FontAwesomeIcon icon={faNewspaper} className="daily-icon1" />
+              <div
+                className={`newsletter-icon-container ${
+                  selectedNewsletters.includes("Daily") ? "" : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  id="newsletter-checkbox-daily"
+                  onClick={handleCheckboxChange}
+                />
+                <label
+                  htmlFor="newsletter-checkbox-daily"
+                  className="ihmHAQ"
+                ></label>
+              </div>
+            </div>
+            <div className="newsbox-heading">Lokarpan</div>
+            <div className="newsbox-content">
+              Our flagship newsletter highlights the latest developments and
+              insights from our kith programme, our research and learning
+              initiatives and podcasts
+            </div>
+            <button className="newsbox-tag">Lokarpan</button>
+          </div>
+
+          <div className="daily">
+            <div className="daily-icon">
+              <FontAwesomeIcon icon={faCalendarDays} className="daily-icon12" />
+              <div
+                className={`newsletter-icon-container ${
+                  selectedNewsletters.includes("Weekly") ? "" : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  id="newsletter-checkbox-weekly"
+                  onClick={handleCheckboxChange}
+                />
+                <label
+                  htmlFor="newsletter-checkbox-weekly"
+                  className="ihmHAQ"
+                ></label>
+              </div>
+            </div>
+            <div className="newsbox-heading">Technology</div>
+            <div className="newsbox-content">
+              Lokarpan's specialised newsletter, where we delve into the latest
+              advancements, trends, and innovations shaping the intersection of
+              technology and rural education
+            </div>
+            <button className="newsbox-tag">Technology</button>
+          </div>
+        </div>
+      </section>
+      <section className="newsletter-letters-1">
+        {/* Your existing newsletter sections */}
+        <div className="kith">Kith</div>
+        <div className="newsletter-letters-1-newsboxs">
+          <div className="daily">
+            <div className="daily-icon">
+              <FontAwesomeIcon icon={faComputer} className="ic1" />
+              <div
+                className={`newsletter-icon-container ${
+                  selectedNewsletters.includes("NewYorker") ? "" : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  id="newsletter-checkbox-newyorker"
+                  onClick={handleCheckboxChange}
+                />
+                <label
+                  htmlFor="newsletter-checkbox-newyorker"
+                  className="ihmHAQ"
+                ></label>
+              </div>
+            </div>
+            <div className="newsbox-heading">Quarterly newsletter</div>
+            <div className="newsbox-content">
+              Latest updates, success stories, and impactful initiatives aimed
+              at transforming education in rural communities.
+            </div>
+            <button className="newsbox-tag">Quarterly Newsletter</button>
+          </div>
+          <div className="daily">
+            <div className="daily-icon">
+              <FontAwesomeIcon icon={faMicroscope} className="ic1" />
+              <div
+                className={`newsletter-icon-container ${
+                  selectedNewsletters.includes("Science") ? "" : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  id="newsletter-checkbox-science"
+                  onClick={handleCheckboxChange}
+                />
+                <label
+                  htmlFor="newsletter-checkbox-science"
+                  className="ihmHAQ"
+                ></label>
+              </div>
+            </div>
+            <div className="newsbox-heading">Annual Newsletter</div>
+            <div className="newsbox-content">
+              Comprehensive insights, impactful milestones, and compelling
+              narratives that showcase the ear-long journey of our annual Kith
+              newsletter
+            </div>
+            <button className="newsbox-tag">Annual Newsletter</button>
+          </div>
+        </div>
+      </section>
+      <section className="subs-newsletter">
+        <ul>
+          <li>Daily</li>
+          <li>Weekly</li>
+        </ul>
+      </section>
+
+      <section className="subs-newsletter">
+        <ul>
+          <li>Daily</li>
+          <li>Weekly</li>
+        </ul>
+      </section>
+      {selectedNewsletters.length > 0 && (
+        <Popup
+          className="newsletter-popup-container"
+          modal
+          trigger={
+            <div className="email">
+              <div className="counter">{selectedNewsletters.length}</div>
+              <div>E-mail address</div>
+            </div>
+          }
+        >
+          {(close) => (
+            // <div className="modal">
+            //   <button className="btn-close" onClick={close}>
+            //     <IoMdClose style={{ fontSize: "24px" }} />
+            //   </button>
+            //   <div className="n-header"> Email Address </div>
+            //   <div className="n-content">
+            //     <input
+            //       type="text"
+            //       className="n-input"
+            //       placeholder="E-mail Address"
+            //       value={email}
+            //       onChange={onChangeEmail}
+            //     />
+            //     <button className="n-email-box" onClick={handleSubmit}>
+            //       <span className="span-c">{counter}</span>
+            //       <p>complete sign-up</p>
+            //     </button>
+            //     <p className="n-para">
+            //       By signing up, you agree to our User Agreement and Privacy
+            //       Policy & Cookie Statement. This site is protected by reCAPTCHA
+            //       and the Google Privacy Policy and Terms of Service apply.
+            //     </p>
+            //   </div>
+            // </div>
+            <iframe
+              src="https://swathipyla.substack.com/embed"
+              width="480"
+              height="320"
+              style={{ border: "1px solid #EEE", background: "white" }}
+              sandbox="allow-scripts allow-same-origin"
+              // scrolling="no"
+            />
+          )}
+        </Popup>
+      )}
+      <Footer />
+    </div>
+  );
+};
 // }
 
 export default Newslettert;
-
-
-
-
-
-
 
 // import React, { useState } from "react";
 // import "./Newsletter.css";
@@ -383,7 +382,7 @@ export default Newslettert;
 //   //         },
 //   //       }
 //   //     );
-      
+
 //   //     alert("Form Data:", formData);
 //   //     if (response.status === 201) {
 //   //       alert("Subscription successful!");
@@ -398,8 +397,6 @@ export default Newslettert;
 //   //   }
 //   // };
 
-
-
 //   const handleSubmit = async (event) => {
 //     event.preventDefault();
 //     try {
@@ -407,7 +404,7 @@ export default Newslettert;
 //         email: email,
 //         newsletters: selectedNewsletters,
 //       };
-  
+
 //       const response = await axios.post(
 //         "http://localhost:8000/api/newsletter_subscribe/",
 //         formData,
@@ -417,12 +414,12 @@ export default Newslettert;
 //           },
 //         }
 //       );
-  
+
 //       // Convert formData to string for displaying in the alert
 //       const formDataString = JSON.stringify(formData, null, 2);
-  
+
 //       alert("Form Data:\n" + formDataString);
-      
+
 //       if (response.status === 201) {
 //         alert("Subscription successful!");
 //         setEmail("");
@@ -432,7 +429,6 @@ export default Newslettert;
 //       console.error("Error:", error);
 //     }
 //   };
-  
 
 //   return (
 //     <div className="newsletter">

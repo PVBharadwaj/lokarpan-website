@@ -509,7 +509,13 @@
 .space-left {
   margin-left: 30px;
 }
+.popup-last-space {
+  padding-bottom: 40px;
+}
 
+.liv-space-above {
+  margin-top: 210px;
+}
 @media screen and (max-width: 1110px) {
   .our-role-each-container {
     width: 100%;
@@ -565,7 +571,7 @@
     margin-left: 16px;
   }
   .our-role-each-container-content {
-    width: 95%;
+    width: 80%;
     align-items: center;
     margin: auto;
     order: 1;
@@ -600,7 +606,7 @@
     padding-top: 100px;
   }
   .popup-left-container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: auto;
   }
@@ -609,6 +615,7 @@
     margin: auto;
     background-color: transparent;
     overflow-y: visible;
+    padding-bottom: 50px;
   }
   .popup-content {
     height: 100%;
@@ -679,6 +686,10 @@
   .our-role-font24 {
     width: calc(100% - 40px);
     margin: 0 auto;
+    line-height: 30px;
+  }
+  .popup-font18 {
+    width: 100%;
   }
 }
 

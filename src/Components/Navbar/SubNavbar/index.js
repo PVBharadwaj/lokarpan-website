@@ -9,11 +9,11 @@ const SubNavbar = () => {
   const timeoutRef = useRef(null);
 
   const toggleNavmenu = () => {
-    if(isNavmenuOpen) {
-      setNavmenuOpen(false)
+    if (isNavmenuOpen) {
+      setNavmenuOpen(false);
     } else {
       clearTimeout(timeoutRef.current);
-      setNavmenuOpen(true)
+      setNavmenuOpen(true);
     }
   };
 
@@ -25,7 +25,7 @@ const SubNavbar = () => {
   const closeBrowseMenu = () => {
     timeoutRef.current = setTimeout(() => {
       setNavmenuOpen(false);
-    }, 500); 
+    }, 500);
   };
 
   return (
@@ -38,16 +38,22 @@ const SubNavbar = () => {
       <div className="navbar-rest">
         <ul className="navbar-links">
           <li className="navbar-item desktop">
-            <Link to="/history">History</Link>
+            <Link to="/about">Our Role</Link>
           </li>
           <li className="navbar-item desktop">
-            <Link to="/mission">Mission</Link>
+            <Link to="/history">History</Link>
           </li>
-          <li className="navbar-item dropdown" onClick={toggleNavmenu} onMouseLeave={closeBrowseMenu}>
+          <li
+            className="navbar-item dropdown"
+            onClick={toggleNavmenu}
+            onMouseLeave={closeBrowseMenu}
+          >
             <p>
               <span className="desktop">Browse All</span>
-              <BsChevronDown 
-                className={`react-icon arrow-down ${isNavmenuOpen ? "arrow-rotate" : ""}`} 
+              <BsChevronDown
+                className={`react-icon arrow-down ${
+                  isNavmenuOpen ? "arrow-rotate" : ""
+                }`}
               />
             </p>
             <div
