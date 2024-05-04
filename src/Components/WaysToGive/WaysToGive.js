@@ -115,13 +115,9 @@ const WaysToGive = () => {
               their service period. Subscribe to our newsletters and email us at
               support@lokarpan.com for more information.
             </p>
-<<<<<<< HEAD
-            <Link className="give-card-link" to="/our-supporter">Register</Link>
-=======
             <Link className="give-card-link ways-space-up" to="/newsletter">
               Register
             </Link>
->>>>>>> origin/master
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-2"></div>
@@ -140,17 +136,12 @@ const WaysToGive = () => {
               exceptional training and mentoring sessions from experienced
               colleagues and partners.
             </p>
-<<<<<<< HEAD
-            <Link className="give-card-link" to="/being-a-volunteer">Volunteer opportunities</Link>
-            <Link className="give-card-link" to="/fellowship">Fellowship</Link>
-=======
             <Link className="give-card-link" to="/being-a-volunteer">
               Volunteer Opportunities
             </Link>
             <Link className="give-card-link" to="/fellowship">
               Fellowship
             </Link>
->>>>>>> origin/master
           </div>
         </div>
         <div className="give-card padding40 give-card-reverse">
@@ -168,11 +159,7 @@ const WaysToGive = () => {
                 support@lokarpan.com
               </a>
             </p>
-<<<<<<< HEAD
-            {/* <Link className="give-card-link" to="/">Link</Link> */}
-=======
 
->>>>>>> origin/master
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-4"></div>
