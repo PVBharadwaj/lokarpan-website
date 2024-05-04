@@ -91,7 +91,7 @@ const WaysToGive = () => {
             <p>
             Join our Friend Circle to help us in our mission to empower rural communities through education. As a member, you'll gain special insights into our projects and opportunities to engage with our initiatives throughout the year. This circle is specifically tailored for our alumni, including past volunteers and fellows, who wish to continue supporting Lokarpan's impactful work beyond their service period. Subscribe to our newsletters and email us at support@lokarpan.com for more information.
             </p>
-            <Link className="give-card-link" to="/our-supporter">Link</Link>
+            <Link className="give-card-link" to="/our-supporter">Register</Link>
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-2"></div>
@@ -103,8 +103,8 @@ const WaysToGive = () => {
             <p>
             Join us as a volunteer or a fellow and become an integral part of our mission to transform rural education. Volunteers dedicate their time and skills to support our programs, making a significant impact in the communities we serve. Our fellowship program offers a longer-term opportunity to devise innovative solutions that drive meaningful change, while receiving exceptional training and mentoring sessions from experienced colleagues and partners.
             </p>
-            <Link className="give-card-link" to="/being-a-volunteer">Link for volunteer opportunities</Link>
-            <Link className="give-card-link" to="/fellowship">Link for Fellowship</Link>
+            <Link className="give-card-link" to="/being-a-volunteer">Volunteer opportunities</Link>
+            <Link className="give-card-link" to="/fellowship">Fellowship</Link>
           </div>
         </div>
         <div className="give-card padding40 give-card-reverse">
@@ -113,7 +113,7 @@ const WaysToGive = () => {
             <p>
             We invite inquiries regarding building robust partnerships with corporations and business entities interested in supporting Lokarpan's mission. Corporate support opportunities are available for various research activities and programs, empowering us to extend our impact and make education accessible to more children. To join our community of corporate supporters and gain exclusive insights into our projects and initiatives, please contact us at support@lokarpan.com.
             </p>
-            <Link className="give-card-link" to="/">Link</Link>
+            {/* <Link className="give-card-link" to="/">Link</Link> */}
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
           <div className="give-card-img give-card-img-4"></div>
