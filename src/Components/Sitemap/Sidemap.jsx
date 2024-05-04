@@ -55,7 +55,7 @@ class Sidemap extends Component {
                 </div>
             </section>
 
-            <section className='sitemap_content'>
+            <section className='sitemap_content1'>
                 <div>
                     <div className='site_item_head'>Design</div>
                     <ul className='site_item_list'>
