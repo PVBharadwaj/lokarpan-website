@@ -156,9 +156,7 @@ const Footer = () => {
                 <li>
                   <Link to="/newsletter">Newsletter</Link>
                 </li>
-                <li>
-                  <Link to="/sitemap">Sitemap</Link>
-                </li>
+               
               </ul>
               <hr className="footer-hor-line" />
             </div>
@@ -307,6 +305,9 @@ const Footer = () => {
               <span className="desktop-footer-last-sec">
                 <Link to="/">Terms of Use</Link>
               </span>
+              <span className="desktop-footer-last-sec">
+                  <Link to="/sitemap">Sitemap</Link>
+                </span>
               <span className="mobile-footer-last-sec">
                 <Link to="/">Privacy Policy</Link> |{" "}
                 <Link to="/">Terms of Use</Link>
