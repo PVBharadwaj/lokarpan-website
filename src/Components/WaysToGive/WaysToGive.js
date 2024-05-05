@@ -154,9 +154,9 @@ const WaysToGive = () => {
               for various research activities and programs, empowering us to
               extend our impact and make education accessible to more children.
               To join our community of corporate supporters and gain exclusive
-              insights into our projects and initiatives, please contact us at{" "}
+              insights into our projects and initiatives, please{" "}
               <a href="mailto:support@lokarpan.com" className="give-card-link">
-                support@lokarpan.com
+                contact us.
               </a>
             </p>
 
