@@ -459,7 +459,7 @@ const Donate = () => {
                       ₹500
                     </label>
                     <input
-                      className="labelless-input text-input radio-label amount"
+                      className="labelless-input text-input1 radio-label amount"
                       placeholder="Enter Amount"
                       type="number"
                       name="form-donate-amount"
@@ -588,7 +588,7 @@ const Donate = () => {
                       />
                     </label>
                     <label
-                      className="input-label long"
+                      className="input-label long  text-input"
                       htmlFor="form-donate-country"
                     >
                       Country of Residence <br />
@@ -598,16 +598,17 @@ const Donate = () => {
                         id="form-donate-country"
                       /> */}
                       <select
+                         className="long1" 
                         id="form-donate-country"
                         name="donate-form-country"
                       >
-                        <option value="">Select Country</option>
+                        <option   value="">Select Country</option>
                       </select>
                     </label>
                   </div>
                 </fieldset>
               </div>
-              <div className="donate-part">
+              <div className="donate-part" style={{paddingTop: "80px"}}>
                 <div className="page-marker">05/06</div>
                 <fieldset>
                   <legend className="donate-form-sec-title">

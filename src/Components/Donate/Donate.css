@@ -79,6 +79,7 @@
   padding: 20px 0px;
   opacity: 0;
 }
+
 .donate-ans-sec {
   position: absolute;
   top: 30px;
@@ -142,8 +143,14 @@
   grid-column: span 4;
   text-align: center;
 }
-
+ .long1{
+  height: 60px;
+  color:#979797;
+  font-size: 20px;
+ padding:2rem ;
+}
 .grid .long {
+  
   grid-column: span 12;
 }
 
@@ -161,6 +168,9 @@
   text-align: center;
   border: 2px solid #1e1e1e;
   border-radius: 36px;
+}
+.text-input1{
+  font-size: 24px;
 }
 
 input:checked + .radio-label {
@@ -180,7 +190,12 @@ input:checked + .radio-label {
   border-radius: 15px;
   grid-column: span 4;
 }
-
+.text-input{
+ height: 40px;
+  font-size: 20px;
+  padding: 2rem ;
+ 
+}
 #form-donate-amount-custom {
   border: none;
   border-radius: 0px;
@@ -192,7 +207,7 @@ input:checked + .radio-label {
 }
 
 input:checked + .radio-label-with-img {
-  border: 2px solid black;
+  border: 2px solid #979797;
 }
 
 .radio-label-with-img-text {
@@ -215,7 +230,7 @@ input:checked + .radio-label-with-img {
   padding: 10px 15px;
   margin: 10px 0px;
   /* line-height: 24px; */
-  border: 2px solid #1e1e1e;
+  border: 2px solid #979797;
   border-radius: 36px;
   width: calc(100% - 30px);
 }
@@ -309,7 +324,7 @@ input:checked + .radio-label-with-img {
 }
 
 .labelless-input {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .input-label {
