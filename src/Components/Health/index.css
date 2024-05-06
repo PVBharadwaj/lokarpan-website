@@ -326,7 +326,7 @@
 .stories-img {
   border-radius: 15px 15px 0 0;
   width: 100%;
-  height: 50%;
+  height: 180px;
 }
 
 .health-stories-each-card p {
@@ -348,23 +348,21 @@
   font-size: 18px;
   font-weight: 450;
   width: 120px;
-  text-align: center;
-  display: none;
+  text-align: left;
+
   position: absolute;
-  top: 25%;
-  left: 50%;
+  top: 92%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 20px;
+ 
+
   border: none;
 }
-.read-more:hover {
-  background-color: #f3eaea;
-}
+
 .health-stories-each-card:hover .read-more {
   cursor: pointer;
-  display: block;
+  color: grey;
+  
 }
 .health-stories-each-card:hover .stories-img {
   filter: grayscale(50%); /* Apply grayscale filter on hover */
@@ -377,11 +375,11 @@
 }
 
 .health-stories-each-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  margin-top: 20px;
+  
+ 
+ 
+ 
 }
 @media screen and (min-width: 748px) and (max-width: 1000px) {
   .health-full-img-text,
@@ -391,6 +389,9 @@
 }
 
 @media screen and (max-width: 748px) {
+  .health-stories-each-card-content h1{
+    padding-left: .9rem;
+  }
   .health-stories-card-sec {
     flex-direction: column;
   }

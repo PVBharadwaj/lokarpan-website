@@ -176,9 +176,7 @@
 }
 
 @media screen and (max-width: 748px) {
-  .why-donate {
-    /* padding: 100px 30px; */
-  }
+ 
 
   .why-donate-topdiv{
     font-size: 18px;
@@ -254,9 +252,7 @@
     padding: 150px;
   }
 
-  .why-donate {
-    /* padding: 110px 50px; */
-  }
+
 
   .whydonate-opp h1 {
     padding: 20px 75px;

@@ -349,7 +349,7 @@ const Donate = () => {
                       type="radio"
                       name="form-donate-frequency"
                       id="form-donate-frequency-once"
-                      className="radio-hidden"
+                      className="radio-hidden text-input1"
                       value={"Once"}
                       onClick={handleFrequencyChange}
                     />

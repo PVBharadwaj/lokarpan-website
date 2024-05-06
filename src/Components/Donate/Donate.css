@@ -170,7 +170,8 @@
   border-radius: 36px;
 }
 .text-input1{
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 input:checked + .radio-label {
@@ -193,7 +194,7 @@ input:checked + .radio-label {
 .text-input{
  height: 40px;
   font-size: 20px;
-  padding: 2rem ;
+  padding: 2rem  4rem;
  
 }
 #form-donate-amount-custom {
@@ -253,6 +254,14 @@ input:checked + .radio-label-with-img {
 
 .donate-recap-section > div > a {
   color: black;
+}
+.recap{
+  padding: 2rem 0;
+}
+.apply-btn{
+
+  font-weight: 600;
+  width: 700px;
 }
 
 .donate-submit-section {
