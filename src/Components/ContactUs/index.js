@@ -67,6 +67,9 @@ class ContactUs extends Component {
           </div>
           {active === "General" && (
             <div className="inquiries-sec">
+              <p className="contact-font18">
+                For media inquiries and interview requests, please contact us.
+              </p>
               {/* <h1 className="contact-font48">General Queries</h1> */}
               <div className="inquiries-below-section">
                 <div>
