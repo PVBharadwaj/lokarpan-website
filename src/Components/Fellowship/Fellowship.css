@@ -1,5 +1,5 @@
 .fellowship-nav {
-  height: 62px;
+  height: 52px;
   display: flex;
   align-items: center;
 }
@@ -20,11 +20,18 @@
   text-align: center;
   min-width: 320px;
 }
+.fellow-hero{
+  display: flex;
+  text-align: center;
+  font-size: 56px;
+  padding: 200px 0px 100px;
+}
 
 .fellowship-nav h1,
 .fellowship-top h1,
 .fellowship-page > div,
-.opp-data {
+.opp-data,
+.fellow-hero {
   margin: var(--navbar-margin);
   box-sizing: border-box;
   width: 100%;
@@ -92,6 +99,7 @@
 
 .second-div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 15px;
   padding: 100px 0px;
@@ -112,7 +120,7 @@
 .fellow-img {
   width: 100%;
   height: auto;
-  max-height: 360px;
+  /* max-height: 360px; */
 }
 
 .fellowship-top > .impact-title {
@@ -121,7 +129,7 @@
 }
 
 .third-div > .impact-title {
-  padding: 0px 80px 150px;
+  padding: 0px 80px 0px;
   font-size: 36px;
 }
 
@@ -136,7 +144,7 @@
   align-items: center;
   flex-direction: column;
   gap: 24px;
-  margin: 50px auto !important;
+  margin: 150px auto 70px !important;
 }
 
 .impact-div {
@@ -152,9 +160,11 @@
 }
 
 .impact-head {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 64px;
   color: #181818;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 600;
 }
 
 .impact-head,
@@ -175,13 +185,13 @@
 
 .fourth-div-data {
   padding: 0px 120px;
-  font-size: 24px;
+  font-size: 20px;
   color: #333333;
   margin-bottom: 100px;
 }
 
 .fourth-div > .impact-title {
-  font-size: 28px;
+  font-size: 64px;
 }
 
 .opp {
@@ -191,10 +201,42 @@
   color: white;
 }
 
+.fellow-opp-horizontal-cards{
+  font-size: 20px !important;
+  padding-left: 0% !important;
+}
+
+.blue-font{
+  color: #3f86f0 !important;
+  font-size: 54px;
+}
+
+.grey-font{
+  padding-top: 30px;
+  color: #616161;
+  font-weight: 600;
+}
+.grey-back{
+  background-color: aliceblue !important;
+  color: #181818;
+}
+
+.weight-800{
+  font-weight: 800 !important;
+}
+
 .opp-data {
   padding: 30px;
   font-size: 24px;
   font-weight: 500;
+  text-align: left;
+}
+
+.fellow-what-sec{
+  display: flex;
+}
+.fellow-opp-new-head{
+  font-size: 64px
 }
 
 .opp-head {
@@ -286,6 +328,10 @@
     padding: 10px 20px;
     text-align: left;
   }
+  .fellow-hero{
+    font-size: 32px;
+    padding: 100px 20px 50px;
+  }
 
   .fellowship-top h1 {
     font-size: 24px;
@@ -316,7 +362,7 @@
     flex-direction: column;
   }
   .third-div > .impact-head {
-    font-size: 20px;
+    font-size: 34px;
   }
   .third-div > .impact-title {
     padding: 0px 0px 25px;

@@ -74,10 +74,15 @@ class OurRole extends Component {
         <SubNavbar />
         <div className="our-role-container">
           <div className="top-section">
-            <h1>
+            {/* <h1>
               We focus our work on the areas where we can have the largest
               impact.
-            </h1>
+            </h1> */}
+          </div>
+          <div className="our-role-topdiv">
+            <p>
+            We concentrate our efforts in areas where we can make the greatest difference.
+            </p>
           </div>
           <div className="menu-items">
             <div className="items">

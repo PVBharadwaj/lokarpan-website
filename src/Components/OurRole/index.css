@@ -266,6 +266,14 @@
   margin: auto;
   margin-right: 30px;
 }
+.our-role-topdiv{
+  display: flex;
+  text-align: center;
+  padding: 50px 0px 150px 0px;
+  font-size: 42px;
+  font-weight: 700;
+  max-width: 900px;
+}
 
 .space {
   margin-bottom: 30px !important;
@@ -575,6 +583,11 @@
     align-items: center;
     margin: auto;
     order: 1;
+  }
+  .our-role-topdiv{
+    padding: 50px 20px 100px;
+    font-size: 36px;
+    font-weight: 500;
   }
   .our-role-each-container-content h1 {
     font-size: 40px;
