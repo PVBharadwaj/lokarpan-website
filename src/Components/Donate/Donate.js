@@ -776,7 +776,7 @@ const Donate = () => {
                 </fieldset>
                 <div>
                   <div className="donate-submit-section">
-                    <div className="apply-btn transparent">
+                    <div className="apply-btn transparent donate-apply-btn">
                       <Link
                         to="/donate"
                         className="apply-btn-text-black body-btn"

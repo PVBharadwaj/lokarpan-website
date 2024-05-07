@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 80px 123px;
+  padding: 80px 0px;
 }
 
 .app-title {
@@ -107,7 +107,7 @@
 }
 
 .app-div-bottom {
-  padding: 60px 0px;
+  padding: 50px 0px 0px;
 }
 
 .browse {
@@ -168,9 +168,9 @@
 
 .app-card-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
-  margin: 10px 0px;
+  margin: 40px 0px;
   gap: 20px;
 }
 
@@ -183,9 +183,15 @@
   flex-direction: column;
   justify-content: left;
   padding: 20px;
-  gap: 24px;
+  /* gap: 24px; */
+  width: calc(100% / 3 - 20px);
   border: solid 1px #e2e4e5;
   border-radius: 10px;
+}
+
+.plan-list-font{
+  text-align: left;
+  font-size: 24px;
 }
 
 .plan-list p,
@@ -193,6 +199,20 @@
   margin: 0px 0px;
   display: flex;
   align-items: center;
+}
+
+.features-div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0px;
+  height: 200px;
+}
+
+.plan-list-desp{
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 0px;
 }
 
 .choose-plan-para {
@@ -222,18 +242,20 @@
   display: none;
 }
 .app-para-5 {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 40px auto;
-  line-height: 40px;
+  /* font-size: 24px;
+  font-weight: 400; */
+  /* margin: 40px auto; */
+  /* line-height: 40px; */
+  padding-bottom: 50px;
 }
 
 .app-para-4 {
-  font-size: 24px;
-  font-weight: 400;
+  /* font-size: 24px;
+  font-weight: 400; */
   margin: 40px auto;
   line-height: 40px;
   margin-top: 0;
+  padding-bottom: 180px;
 }
 
 .app-apply-btn {
@@ -281,6 +303,11 @@
     line-height: 28px;
   }
 
+  .app-card-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .application-para2 {
     font-size: 18px;
     padding: 10px 0px 42px;
@@ -298,7 +325,7 @@
 
   .plan-list {
     margin: 10px 0px;
-    width: 100%;
+    width: 400px;
   }
 
   .browse {
@@ -320,5 +347,18 @@
 
   .application-top-img{
     min-height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .plan-list {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .adobe-horizon {
+    flex-direction: column;
   }
 }
