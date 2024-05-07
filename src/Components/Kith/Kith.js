@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import Navbar from '../Navbar/KithNavbar'
 import Footer from '../KithFooter'
-import Marquee from "react-fast-marquee";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { RxCross2 } from "react-icons/rx";
@@ -143,7 +143,7 @@ const Kith = () => {
               <div className="health-stories-each-card-content1">
                 <h1 className="popup-font18">ARTICLE</h1>
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
-                <span onClick={() => healthopenpopup(0)} className=" read-more">
+                <span onClick={() => healthopenpopup(0)} className=" read-more1k">
                   Read more
                 </span>
               </div>
@@ -204,7 +204,7 @@ const Kith = () => {
               <div className="health-stories-each-card-content1">
                 <h1 className="popup-font18">ARTICLE</h1>
                 <p>ASHA Workers: Guardians of Community Well-being</p>
-                <span onClick={() => healthopenpopup(1)} className=" read-more">
+                <span onClick={() => healthopenpopup(1)} className=" read-more1k">
                   Read more
                 </span>
               </div>
@@ -263,7 +263,7 @@ const Kith = () => {
                   Baby’s health, Mother’s Freedom: A Journey of Resilience and
                   Transformation
                 </p>
-                <span onClick={() => healthopenpopup(2)} className=" read-more">
+                <span onClick={() => healthopenpopup(2)} className=" read-more1k">
                   Read more
                 </span>
               </div>
@@ -326,17 +326,7 @@ const Kith = () => {
           </div>
         </div>
 
-        <Marquee className="kith-marquee">
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709463582/ebebeb_hofiqy.png" />
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709463582/ebebeb_hofiqy.png" />
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709463582/ebebeb_hofiqy.png" />
-          </div>
-        </Marquee>
+        
       </div>
       <div className='kith-overview-div kith-overview-last-div'>
         <h3>Even more places to get Lokarpan</h3>

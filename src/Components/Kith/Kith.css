@@ -359,7 +359,7 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-.read-more {
+.read-more1k {
   font-size: 18px;
   font-weight: 450;
   width: 120px;
@@ -367,14 +367,14 @@
 
   position: absolute;
   top: 92%;
-margin-left: 1rem;
+margin-left: 4.75rem;
   transform: translate(-50%, -50%);
  
 
   border: none;
 }
 
-.health-stories-each-card1:hover .read-more {
+.health-stories-each-card1:hover .read-more1k {
   cursor: pointer;
   color: grey;
   
