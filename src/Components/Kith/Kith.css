@@ -12,6 +12,515 @@
   align-items: center;
   margin-bottom: 120px;
 }
+.health-full-img {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+  /* margin-top: 28px; */
+}
+
+.health-full-img-text,
+.livelihood-full-img-text {
+  padding: 150px 120px;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  min-height: 345px;
+}
+
+.health-full-img-text {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png");
+}
+
+.livelihood-full-img-text {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png");
+}
+
+.health-full-img-text p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.livelihood-full-img-text p {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.livelihood-full-img-text-head {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.livelihood-full-img-text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.environment-container-section {
+  margin: 75px 0px 0px !important;
+}
+.livelihood-top-section {
+  margin: var(--navbar-margin);
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
+}
+
+.livelihood-desp-cards-head {
+  font-size: 54px;
+}
+
+.livelihood-top-section h1 {
+  padding: 150px 0px 20px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.livelihood-top-section p {
+  padding: 20px 0px;
+  font-size: 28px;
+}
+.environment-desp-cards {
+  padding: 60px 0px 0px !important;
+  gap: 40px !important;
+}
+
+.justify-top {
+  justify-content: flex-start !important;
+}
+
+.health-full-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.health-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.health-container-section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 83px 250px;
+}
+.health-each-container {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 200px 0;
+  margin-top: 0;
+}
+
+.environment-main-head {
+  padding: 0px 100px !important;
+  font-size: 48px;
+}
+
+.health-content-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  padding: 0px 5%;
+  padding-top: 0;
+}
+.health-cont-img-div {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.health-img1 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png");
+}
+.health-img2 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png");
+}
+.health-img3 {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png");
+}
+.health-cont-img {
+  height: 100%;
+  width: 50%;
+}
+.health-lokarpan-head3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.health-lokarpan-head4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.health-para {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 32px;
+}
+.livelihood-card-list {
+  gap: 0px !important;
+}
+
+.livelihood-cont-section {
+  margin-bottom: 0px;
+}
+
+.last-card {
+  grid-column: span 10;
+  grid-column-start: 2 !important;
+  grid-column-end: 12 !important;
+  align-items: center;
+}
+
+.last-card p {
+  text-align: center;
+}
+
+.livelihood-card-list h4 {
+  font-size: 30px !important;
+}
+.environment-bottom-section {
+  text-align: left;
+  padding-bottom: 30px;
+}
+.environment-bottom-section h1 {
+  font-size: 38px;
+  font-weight: 400;
+}
+.environment-bottom-section p {
+  font-size: 20px;
+  line-height: 32px;
+}
+.learn-more {
+  color: #3f86f0;
+  text-decoration: none;
+}
+
+.content-right {
+  margin-right: 0;
+}
+.content-left {
+  margin-left: 0;
+}
+.space-below {
+  margin-bottom: 100px;
+}
+
+.new-head-text {
+  width: 80%;
+  margin: 170px auto;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.health-care-section {
+  width: 80%;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.health-care-section h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.health-care-section p {
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+.health-cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: 100px auto;
+}
+.health-head {
+  margin-bottom: 30px;
+}
+.health-para2 {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.health-cards-cont {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  margin: auto;
+}
+.health-cards-cont-each-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.health-cards-cont-each-card h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.health-cards-cont-each-card p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.health-stories-cont {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.health-stories-card-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.health-stories-each-card1 {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+.stories-img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 180px;
+}
+
+.health-stories-each-card1 p {
+  font-size: 16px;
+  /* padding: 25px 10px 10px 25px; */
+  font-weight: 500;
+  width: 90%;
+  margin: 0px auto;
+}
+.health-stories-each-card1 {
+  border-radius: 15px;
+  position: relative;
+  border: none;
+  text-align: left;
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.read-more {
+  font-size: 18px;
+  font-weight: 450;
+  width: 120px;
+  text-align: left;
+
+  position: absolute;
+  top: 92%;
+margin-left: 1rem;
+  transform: translate(-50%, -50%);
+ 
+
+  border: none;
+}
+
+.health-stories-each-card1:hover .read-more {
+  cursor: pointer;
+  color: grey;
+  
+}
+.health-stories-each-card1:hover .stories-img {
+  filter: grayscale(50%); /* Apply grayscale filter on hover */
+  cursor: pointer;
+}
+
+.health-space-below {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.health-stories-each-card-content1 {
+  
+  
+ padding: 1rem;
+ 
+ 
+}
+@media screen and (min-width: 748px) and (max-width: 1000px) {
+  .health-full-img-text,
+  .livelihood-full-img-text {
+    padding: 150px 20px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .health-stories-each-card-content h1{
+    padding-left: .9rem;
+  }
+  .health-stories-card-sec {
+    flex-direction: column;
+  }
+  .health-stories-each-card {
+    margin: 50px auto;
+  }
+
+  .health-cards-cont {
+    flex-direction: column;
+    width: 90%;
+  }
+  .health-para2 {
+    width: 100%;
+  }
+  .health-cards-cont-each-card {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .health-full-img {
+    height: 270px;
+  }
+  .health-full-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .health-full-img-text,
+  .livelihood-full-img-text {
+    padding: 40px 0px;
+  }
+  .health-full-img-text,
+  .livelihood-full-img-text p {
+    font-size: 20px;
+  }
+  .livelihood-full-img-text-head {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .environment-main-head {
+    padding: 0px 20px !important;
+    font-size: 30px;
+  }
+
+  .livelihood-full-img-text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .livelihood-top-section h1 {
+    font-size: 30px;
+  }
+  .livelihood-card-list h4 {
+    font-size: 24px !important;
+  }
+  .health-container-section {
+    width: calc(100% - 100px);
+    margin: auto;
+    margin-top: 150px;
+  }
+  .health-each-container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 80px;
+  }
+  .health-cont-img {
+    width: 100%;
+    order: 1;
+  }
+  .health-cont-img-div {
+    order: 1;
+    width: 100%;
+    height: 320px;
+  }
+  .health-content-section {
+    margin-top: 30px;
+    width: 100%;
+    order: 2;
+  }
+  .health-lokarpan-head3 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .health-para {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 25px;
+  }
+  .space-below {
+    margin-bottom: 150px;
+  }
+  .health-each-container {
+    margin: 75px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .health-cont-img-div {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .health-container-section {
+    width: calc(100% - 40px);
+  }
+  .health-container-section {
+    margin-top: 50px;
+  }
+
+  .health-each-container {
+    margin-top: 50px;
+  }
+}
 
 .kith-overview-head h1,
 .kith-overview-head p {
