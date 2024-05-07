@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import "../Health/index.css";
 import FAQ from "../About/Mission/faq";
 import { Link } from "react-router-dom";
+import "./index.css";
 
 const Environment = () => {
   // const [faqs, setFaqs] = useState([
@@ -93,13 +94,14 @@ const Environment = () => {
       <div className="fellowship-nav">
         <h1>Environment</h1>
       </div>
+      <div className="env-hero-cont">
+        <h1 className="environment-main-head">
+          We aim to cultivate a greener, more sustainable future, ensuring the
+          well-being of both people and the environment.
+        </h1>
+      </div>
       <div className="health-container">
-        <div className="health-full-img-text">
-          <h1 className="environment-main-head">
-            We aim to cultivate a greener, more sustainable future, ensuring the
-            well-being of both people and the environment.
-          </h1>
-        </div>
+        <div className="health-full-img-text"></div>
         <div className="health-container-section environment-container-section">
           {/* <div className="health-each-container"> */}
           {/* <img
@@ -142,32 +144,45 @@ const Environment = () => {
           </div>
 
           <div className="livelihood-top-section environment-bottom-section">
-            <h1>
-              Imagine the impact of clean water in a rural village for the very
-              first time. It marks the beginning of a transformation, a turning
-              point towards a brighter future.
-            </h1>
-            <p>
-              Right now, in countless rural areas like those we serve, millions
-              of families lack access to safe water, clean toilets, and proper
-              hygiene. For children like those in our communities, this means
-              enduring long walks to collect water, missing school, and facing
-              the risk of illness.
-            </p>
-            <p>
-              By supporting Lokarpan's initiatives, you're not just providing
-              water—you're changing lives. Your contribution helps us conserve
-              precious water sources, ensuring that rural communities can spend
-              more time learning and growing, rather than struggling for the
-              basics.
-            </p>
-            <p>
-              Join us in our mission to safeguard water resources, replenish
-              depleted ponds, and protect freshwater ecosystems. Together, we'll
-              make sure that every community we touch has access to clean water,
-              decent sanitation, and the knowledge to maintain a healthy
-              environment for generations to come.
-            </p>
+            <span className="g-l1">Imagine the impact of clean water in </span>
+            <br />
+            <span className="g-l2">
+              a rural village for the very first time. It marks the beginning of
+              a transformation, a turning point towards a brighter future.
+            </span>
+            <div className="env-grid-sec">
+              <div>
+                <span className="env-l1">Right now, </span>
+                <span className="env-l2">
+                  in countless rural areas like those we serve, millions of
+                  families lack access to safe water, clean toilets, and proper
+                  hygiene. For children like those in our communities, this
+                  means enduring long walks to collect water, missing school,
+                  and facing the risk of illness.
+                </span>
+              </div>
+              <div>
+                <span className="env-l1">
+                  By supporting Lokarpan's initiatives,
+                </span>
+                <span className="env-l2">
+                  you're not just providing water—you're changing lives. Your
+                  contribution helps us conserve precious water sources,
+                  ensuring that rural communities can spend more time learning
+                  and growing, rather than struggling for the basics.
+                </span>
+              </div>
+              <div>
+                <span className="env-l1">Join us in</span>
+                <span className="env-l2">
+                  our mission to safeguard water resources, replenish depleted
+                  ponds, and protect freshwater ecosystems. Together, we'll make
+                  sure that every community we touch has access to clean water,
+                  decent sanitation, and the knowledge to maintain a healthy
+                  environment for generations to come.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -212,8 +227,9 @@ const DespCard = ({ item, index, totalCount }) => {
         src={item.img}
         style={{ width: "50px", height: "50px", paddingBottom: "20px" }}
       />
-      <h4>{item.head}</h4>
-      <p>{item.des}</p>
+
+      <span className="e-l1">{item.head}</span>
+      <span className="e-l2">{item.des}</span>
     </div>
   );
 };

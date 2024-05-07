@@ -49,13 +49,10 @@ const Health = () => {
       <div className="fellowship-nav">
         <h1>Health</h1>
       </div>
-      <div className="health-container">
-        <div className="health-full-img-text">
-          <h1 className="environment-main-head">
-            Join Lokarpan in Bridging the Healthcare Gap for Rural Communities
-          </h1>
-        </div>
-
+      <div className="env-hero-cont">
+        <h1 className="environment-main-head">
+          Join Lokarpan in Bridging the Healthcare Gap for Rural Communities.
+        </h1>
         <h1 className="new-head-text">
           Join us in our unwavering commitment to make healthcare accessible and
           available to all, particularly in the regions we serve. Our health
@@ -64,6 +61,10 @@ const Health = () => {
           supplies reach those who need them most, precisely when they need
           them.
         </h1>
+      </div>
+      <div className="health-container">
+        <div className="health-full-img-text"></div>
+
         <div className="health-care-section">
           <h1>Healthcare for All</h1>
           <p>
@@ -144,13 +145,14 @@ const Health = () => {
         <div className="health-stories-cont">
           <h1 className="health-head health-space-below">Stories of Change</h1>
           <div className="health-stories-card-sec">
-            <div className="health-stories-each-card">
-              <img
+            <div className="health-stories-each-card hlth-card1">
+              {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704820084/image_177_gagtm0.png"
                 className="stories-img"
-              />
+              /> */}
+              <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="popup-font18">ARTICLE</h1>
+                <h1 className="hlth-popup-font18">ARTICLE</h1>
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
                 <span onClick={() => healthopenpopup(0)} className=" read-more">
                   Read more
@@ -205,13 +207,10 @@ const Health = () => {
                 </div>
               </div>
             )}
-            <div className="health-stories-each-card">
-              <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704820084/image_177_gagtm0.png"
-                className="stories-img"
-              />
+            <div className="health-stories-each-card hlth-card2">
+              <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="popup-font18">ARTICLE</h1>
+                <h1 className="hlth-popup-font18">ARTICLE</h1>
                 <p>ASHA Workers: Guardians of Community Well-being</p>
                 <span onClick={() => healthopenpopup(1)} className=" read-more">
                   Read more
@@ -261,13 +260,10 @@ const Health = () => {
               </div>
             )}
 
-            <div className="health-stories-each-card">
-              <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704820084/image_177_gagtm0.png"
-                className="stories-img"
-              />
+            <div className="health-stories-each-card hlth-card3">
+              <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="popup-font18">ARTICLE</h1>
+                <h1 className="hlth-popup-font18">ARTICLE</h1>
                 <p>
                   Baby’s health, Mother’s Freedom: A Journey of Resilience and
                   Transformation

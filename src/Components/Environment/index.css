@@ -75,6 +75,36 @@
   margin-bottom: 40px;
 }
 
+.e-l1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.e-l2 {
+  color: rgb(134, 134, 139);
+  font-size: 32px;
+  font-weight: 700;
+}
+.env-grid-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.env-grid-sec div {
+  width: 30%;
+  margin-top: 50px;
+}
+
+.env-l1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.env-l2 {
+  color: rgb(134, 134, 139);
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 748px) {
   .health-full-img {
     height: 270px;
