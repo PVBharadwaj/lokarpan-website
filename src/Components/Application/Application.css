@@ -11,6 +11,16 @@
   text-align: center;
 }
 
+.application-top-img {
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .application-img {
   width: 100%;
   height: auto;
@@ -22,8 +32,57 @@
   background-size: cover;
 }
 
+.adobe-horizon{
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.adobe-horizon-in{
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.square-cards{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  max-width: 1100px;
+}
+.square-cards-out{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.square-cards-each-cont{
+  height: 280px;
+  width: 280px;
+  display: flex;
+  background-color: #eeeeee;
+  border-radius: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 25px;
+}
+
+.square-cards-each-cont p{
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+}
+
 .title2 {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 .title3 {
@@ -256,6 +315,10 @@
 
   .browse-img {
     width: 100%;
+    min-height: 350px;
+  }
+
+  .application-top-img{
     min-height: 350px;
   }
 }

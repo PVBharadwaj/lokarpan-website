@@ -91,11 +91,20 @@ const Approach = () => {
             src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768925/image_314_vscall.png"
             alt="health-img"
           /> */}
-          <h1 className="white-head">
+          {/* <h1 className="white-head">
             At Lokarpan, we are committed to reshaping the landscape of
             education, ensuring that every child has the opportunity to thrive
             and contribute meaningfully to India's bright future.
-          </h1>
+          </h1> */}
+
+
+            <h1 className="white-head">
+              Inspiring every kind of learner.
+            </h1>
+            <p className="white-head">
+            At Lokarpan, we are committed to reshaping the landscape of education, ensuring that every child has the opportunity to thrive and contribute meaningfully to India's bright future.
+            </p>
+
         </div>
         {/* <div className="taglines-section">
           <h1>

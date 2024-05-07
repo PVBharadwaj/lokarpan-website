@@ -72,18 +72,15 @@ const Application = () => {
     <>
       <Navbar />
       <EducationSubNav />
+      <div className="application-top-img"></div>
       <div className="app-page">
         <div className="app-div">
+          {/* <div className="application-img"></div> */}
+         
           <h1 className="app-title title2">
             Lokarpan presents a suite of digital applications to redefine
             classroom strategies
           </h1>
-          <div className="application-img"></div>
-          {/* <img
-            className="application-img"
-            src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708623660/Rectangle_1932_qjoyip.png"
-            alt=""
-          /> */}
           <p className="application-para1">
             The education sector is constantly evolving, and technology has
             played a significant role in shaping the way we learn. Our goal? To
@@ -91,22 +88,28 @@ const Application = () => {
             learning management systems, and predictive performance based
             analytics for educational success.
           </p>
-          <h2 className="app-title title3">Adobe</h2>
-          <p className="application-para2">
-            Introducing Lokarpan's Adobe-powered web application, a
-            transformative tool for tracking student performance and well-being.
-            With modules like RankMaster for academic rankings and HealthMap for
-            health monitoring, schools can efficiently manage exams and provide
-            real-time feedback, empowering rural communities in Uttar Pradesh.
-          </p>
-          <h2 className="app-title title3">Horizon</h2>
-          <p className="application-para2">
-            Horizon, our innovative web application, harnesses Bayesian models
-            to analyse student quizzes and assessments. This enables us to offer
-            personalised recommendations for academic improvement, providing
-            teachers with invaluable insights to tailor their teaching
-            strategies effectively.
-          </p>
+          <div className="adobe-horizon">
+            <div className="adobe-horizon-in">
+              <h2 className="app-title title3">Adobe</h2>
+              <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
+                Introducing Lokarpan's Adobe-powered web application, a
+                transformative tool for tracking student performance and well-being.
+                With modules like RankMaster for academic rankings and HealthMap for
+                health monitoring, schools can efficiently manage exams and provide
+                real-time feedback, empowering rural communities in Uttar Pradesh.
+              </p>
+            </div>
+            <div className="adobe-horizon-in">
+              <h2 className="app-title title3">Horizon</h2>
+              <p style={{padding: "0px 30px 50px",textAlign: "left"}} className="application-para2">
+                Horizon, our innovative web application, harnesses Bayesian models
+                to analyse student quizzes and assessments. This enables us to offer
+                personalised recommendations for academic improvement, providing
+                teachers with invaluable insights to tailor their teaching
+                strategies effectively.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="app-page">
@@ -119,7 +122,98 @@ const Application = () => {
           digital security, and time-saving solutions for educators.
         </p>
       </div>
-      <AppCarousel />
+      {/* <AppCarousel /> */}
+
+
+
+      <div className="square-cards-out">
+      <div className="square-cards">
+            {/* <div className="temp-container"> */}
+              <div className="square-cards-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                {/* <h4>Adobe</h4> */}
+                <p>
+                Track student performance on leaderboards
+                </p>
+              </div>
+              <div className="square-cards-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784144/Group_1762_qugdzn.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                {/* <h4>Content Creation</h4> */}
+                <p>
+                Gamify results to boost student engagement
+                </p>
+              </div>
+              <div className="square-cards-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784137/Group_1761_xkcnfs.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                {/* <h4>Analytics & Prediction</h4> */}
+                <p>
+                Track health and nutrition metrics and submit sickness reports
+                </p>
+              </div>
+              <div className="square-cards-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784129/Group_1755_sfm8yd.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                {/* <h4>Exams & Quizzes</h4> */}
+                <p>
+                Gather insights into education and health trends across institutions
+                </p>
+              </div>
+              <div className="square-cards-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                {/* <h4>Adobe</h4> */}
+                <p>
+                Track student performance on leaderboards
+                </p>
+              </div>
+              <div className="square-cards-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                {/* <h4>Adobe</h4> */}
+                <p>
+                Track student performance on leaderboards
+                </p>
+              </div>
+            {/* </div> */}
+
+          </div>
+      </div>
+
+
+      <div className="square-cards">
+        {/* <div>Track student performance on leaderboards</div> */}
+        {/* <div>Gamify results to boost student engagement</div> */}
+        {/* <div>Track health and nutrition metrics and submit sickness reports</div> */}
+        {/* <div>Gather insights into education and health trends across institutions</div>
+        <div>Gather insights into education and health trends across institutions</div> */}
+      </div>
       <div className="app-page">
         <div className="app-div app-div-bottom">
           <div className="plan">
@@ -152,9 +246,9 @@ const Application = () => {
             Learn more about our organisation’s code of conduct.
           </h1>
 
-          <button className="app-apply-btn" onClick={() => openpopup(0)}>
+          {/* <button className="app-apply-btn" onClick={() => openpopup(0)}>
             Code of Conduct
-          </button>
+          </button> */}
         </div>
         <div className="browse-img"></div>
       </div>
@@ -239,22 +333,18 @@ const Application = () => {
           </div>
         </div>
       )}
-      <div className="new-platform-sec">
-        <h1>Be a Catalyst for Change</h1>
-        {/* <h1>An all-new for developers</h1> */}
-        <p>
-          Join Lokarpan in our mission to combat educational disparities,
+
+      <div className="donate-section">
+        <h1 className="last-space">Be a Catalyst for Change</h1>
+        <p className="our-role-font24">
+        Join Lokarpan in our mission to combat educational disparities,
           empowering at-risk communities for a brighter future. Your support
           fuels innovation and transformative impact.
         </p>
-        {/* <a href="#" className="approach-anchor">
-            Learn More
-          </a> */}
-        <Link to="/ways-to-give" className="approach-anchor white-content">
-          {/* <button type="button" className="our-role-apply-btn">
-                Donate
-              </button> */}
-          Learn More
+        <Link to="/donate">
+          <button type="button" className="our-role-apply-btn">
+            Donate
+          </button>
         </Link>
       </div>
       <Footer />

@@ -224,19 +224,36 @@ const Publications = () => {
       <Navbar />
       <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
       <div className="public-top">
-      <h1 className="public-title">
-        Let's accelerate sustainable and inclusive growth together.
-      </h1>
-      <p className="public-desp">
-        Lokarpan is a non-profit organization registered under the Societies
-        Registration Act 1860 Lokarpan is registered u/s 12A of the Income Tax
-        Act, 1961. Lokarpan is registered under the Foreign Contributions
-        (Regulation) Act FCRA 136550133, and renewed dated 01.11.2016 for the
-        receipt of foreign donations. Lokarpan assumes no obligation to update
-        any forward looking statement or information, which speak as of their
-        respective dates.
-      </p>
+        {/* <h1 className="public-title">
+          Let's accelerate sustainable and inclusive growth together.
+        </h1>
+        <p className="public-desp">
+          Lokarpan is a non-profit organization registered under the Societies
+          Registration Act 1860 Lokarpan is registered u/s 12A of the Income Tax
+          Act, 1961. Lokarpan is registered under the Foreign Contributions
+          (Regulation) Act FCRA 136550133, and renewed dated 01.11.2016 for the
+          receipt of foreign donations. Lokarpan assumes no obligation to update
+          any forward looking statement or information, which speak as of their
+          respective dates.
+        </p> */}
       </div>
+
+      {/* below section used in moonshots also */}
+      <div className="public-text"> 
+        <h1 className="public-title">
+          Let's accelerate sustainable and inclusive growth together.
+        </h1>
+        <p className="public-desp">
+          Lokarpan is a non-profit organization registered under the Societies
+          Registration Act 1860 Lokarpan is registered u/s 12A of the Income Tax
+          Act, 1961. Lokarpan is registered under the Foreign Contributions
+          (Regulation) Act FCRA 136550133, and renewed dated 01.11.2016 for the
+          receipt of foreign donations. Lokarpan assumes no obligation to update
+          any forward looking statement or information, which speak as of their
+          respective dates.
+        </p>
+      </div>
+      
       <div className="publication-page">      
         <div >
           <h1 className="public-archives">Archives</h1>

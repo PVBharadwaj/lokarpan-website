@@ -70,7 +70,8 @@ class Home extends Component {
 
           <div className="who-we-are">
             <p className="lokarpan-head4">Our Approach</p>
-            <h1 className="home-head3">
+            <h1 style={{fontSize: "64px", padding: "10px 0px 40px 0px"}}>Spotlight</h1>
+            <h1 style={{fontSize: "42px"}} className="home-head3">
               Big change is impossible without a little help. For 28 years, we
               have worked closely with communities to identify their needs and
               aspirations in order to serve them.

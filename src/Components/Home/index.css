@@ -64,10 +64,11 @@
   max-width: 1100px;
 }
 .home-upper-section-head3 {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
   text-align: center;
   line-height: 55px;
+  max-width: 800px;
 }
 
 .lokarpan-head4 {
@@ -111,7 +112,8 @@
   text-align: center;
   width: calc(100% - 200px);
   margin-top: 25px;
-  max-width: 1100px;
+  max-width: 800px;
+  font-weight: 600;
 }
 
 .lokarpan-para2 {
@@ -206,10 +208,10 @@
   overflow: hidden;
   margin-top: 0px;
   /* padding-top: 20px; */
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   gap: 16px;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 .carousal-img1 {
   margin-bottom: 20;
@@ -328,7 +330,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-top: 150px;
   gap: 5px;
 }
@@ -438,7 +440,7 @@
 
 .app-container-m1 {
   width: 980px;
-  height: 500px;
+  height: 600px;
   background-color: #3f86f0;
   border-radius: 32px;
   color: #000000;
@@ -456,6 +458,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: -50px;
+  padding-top: 50px;
 }
 .text-m1 {
   font-size: 48px;

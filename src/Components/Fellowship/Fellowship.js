@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { RxCross2 } from "react-icons/rx";
+import { IoIosArrowForward } from "react-icons/io";
 import "./Fellowship.css";
 
 const Fellowship = () => {
@@ -55,12 +56,23 @@ const Fellowship = () => {
         <h1>Fellowship</h1>
       </div>
       <div className="fellowship-top">
-        <h1>
+        {/* <h1>
           At Lokarpan, we firmly believe that the best solutions arise from
           those who intimately understand the challenges at hand
-        </h1>
+        </h1> */}
       </div>
+      <h1 className="fellow-hero">
+          At Lokarpan, we firmly believe that the best solutions arise from
+          those who intimately understand the challenges at hand
+      </h1>
+          
       <div className="fellowship-page">
+      <div className="third-div">
+          <h3 style={{fontSize: "64px", fontWeight: "600"}} className="impact-head">ACCLERATING IMPACT</h3>
+          <h2 className="impact-title">
+          We provide support through a combination of funding, innovation and technical expertise.
+          </h2>
+        </div>
         <div className="second-div">
           <div className="sub-div">
             <img
@@ -73,14 +85,14 @@ const Fellowship = () => {
               By joining Lokarpan Fellows, you become part of a community-driven
               initiative where your insights, experiences, and ideas are not
               just valued but actively sought after. Whether you're working in a
-              classroom, collaborating with our teams, or engaging directly with
-              communities, your voice matters.
+              {/* classroom, collaborating with our teams, or engaging directly with
+              communities, your voice matters. */}
             </p>
           </div>
           <div className="sub-div">
             <img
               className="fellow-img"
-              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708613080/cannon_040_1_skwlle.png"
+              src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1714983509/IMG_3313_2_vdy6sq.png"
               alt="img2"
             />
             <h3 className="impact-title">Our Approach is Community Centric</h3>
@@ -88,21 +100,21 @@ const Fellowship = () => {
               We believe that true solutions emerge when we listen closely to
               the voices of the communities we serve. By engaging directly with
               those most affected by social challenges, we gain valuable
-              insights into their needs and aspirations. Together, we co-create
+              {/* insights into their needs and aspirations. Together, we co-create
               innovative initiatives and programs that have a meaningful impact
               and pave the way for a more equitable society. engaging directly
-              with communities, your voice matters.
+              with communities, your voice matters. */}
             </p>
           </div>
         </div>
-        <div className="third-div">
+        {/* <div className="third-div">
           <h3 className="impact-head">ACCLERATING IMPACT</h3>
           <h2 className="impact-title">
             We provide support through a combination of funding, innovation and
             technical expertise.
           </h2>
-        </div>
-        <div className="fourth-div">
+        </div> */}
+        {/* <div className="fourth-div">
           <h3 className="impact-title">Who You’ll Work with</h3>
           <p className="fourth-div-data fellow-data">
             You'll join one of our locations on site or opt for working
@@ -116,7 +128,7 @@ const Fellowship = () => {
             will also work with a diverse range of experts in the organisation,
             from researchers to software and app designers.
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div className="carousal-container1 fellow-carousal-cont1">
@@ -252,6 +264,24 @@ const Fellowship = () => {
         )}
       </div>
 
+      <div className="fellowship-page">
+      <div className="fourth-div">
+          <h3 className="impact-title">Who You’ll Work with</h3>
+          <p className="fourth-div-data fellow-data">
+            You'll join one of our locations on site or opt for working
+            remotely. Fellows join our technical and research projects from
+            around the world to work in teams and directly with our
+            beneficiaries. When you join Lokarpan as a Fellow, you are joining
+            an organisation that will challenge you and invest heavily in your
+            professional development. In this role you will have the opportunity
+            to work in teams and help the most vulnerable – across a wide range
+            of initiatives – solving some of their most difficult problems. You
+            will also work with a diverse range of experts in the organisation,
+            from researchers to software and app designers.
+          </p>
+        </div>
+      </div>
+
       <button className="button1 mobile-home1" onClick={handlePauseClick}>
         {!isPaused ? (
           <PiPauseCircleThin className="carousal-icon1" />
@@ -260,7 +290,37 @@ const Fellowship = () => {
         )}
       </button>
 
-      <div className="opp">
+      <div style={{marginBottom: "0px"}} className="opp grey-back ">
+          <h1 className="blue-font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</h1>
+          <p className="grey-font">Daniel Trego, Educational & Media Design Specialist at Michigan State University</p>
+        </div>
+
+      <div style={{marginBottom: "0px"}} className="opp grey-back">
+        <h3 style={{paddingBottom: "40px"}} className="opp-head fellow-data weight-800">What You’ll Do</h3>
+        <h1 className="fellow-opp-new-head">As a Lokarpan Fellow, you'll be an integral </h1>
+        <div className="fellow-what-sec">
+        <p className="opp-data impact-title fellow-opp-horizontal-cards">
+          As a Lokarpan Fellow, you'll be an integral part of a team of
+          passionate individuals, actively engaged in our mission to transform
+          education and empower rural communities.
+        </p>
+        <p className="opp-data impact-title fellow-opp-horizontal-cards">
+          Your role will involve formulating innovative solutions to drive
+          impactful change. You'll have the opportunity to develop and present
+          recommendations to our partner schools and communities, working
+          closely with our dedicated team members on ground. Throughout your
+          journey, you'll receive exceptional training and mentoring sessions
+          from experienced colleagues and partners.
+        </p>
+        <p className="opp-data impact-title fellow-opp-horizontal-cards">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        </div>
+
+      </div>
+
+
+      {/* <div className="opp">
         <h3 className="opp-head fellow-data">What You’ll Do</h3>
         <p className="opp-data impact-title">
           As a Lokarpan Fellow, you'll be an integral part of a team of
@@ -275,8 +335,8 @@ const Fellowship = () => {
           journey, you'll receive exceptional training and mentoring sessions
           from experienced colleagues and partners.
         </p>
-      </div>
-      <div className="new-f-text-cont">
+      </div> */}
+      {/* <div className="new-f-text-cont">
         <h1 className="new-f-text">
           At Lokarpan, we believe in broadening your skills and experiences.
           While you'll contribute your unique talents and insights, you'll also
@@ -289,7 +349,40 @@ const Fellowship = () => {
         <Link to="/">
           <button className="fell-apply-btn">Apply</button>
         </Link>
-      </div>
+      </div> */}
+
+
+      <div style={{marginTop: "0px"}} className="donate-section">
+          {/* <h1 className="last-space">Be a Catalyst for Change</h1> */}
+          <p className="our-role-font24">
+          At Lokarpan, we believe in broadening your skills and experiences.
+          While you'll contribute your unique talents and insights, you'll also
+          have the chance to learn and grow in a diverse and dynamic
+          environment. Whether you're new to the field or an experienced
+          professional, joining our Fellowship Program means embarking on a
+          journey of discovery and impact.
+          </p>
+          {/* <Link to="/donate"> */}
+          {/* <Link to="/donate">
+            <button type="button" className="our-role-apply-btn">
+            Apply
+            </button>
+          </Link> */}
+
+          <div>
+            <Link
+              to="/donate"
+              style={{color: "#3f86f0", paddingTop: "40px"}}
+              className="donate-hyperlink"
+              href="/d0nate"
+            >
+              Apply
+              <IoIosArrowForward style={{ color: "#3f86f0", fontSize: "15px" }} />
+            </Link>
+          </div>
+        </div>
+
+
       <Footer />
     </>
   );

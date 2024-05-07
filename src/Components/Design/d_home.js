@@ -34,8 +34,39 @@ export default class d_home extends Component {
         </section> */}
 
         {/* ------------------------------------------------------------- */}
-        <h1 className="our-projects-head">Our Projects</h1>
-        <section className="d_home_section1">
+        <div className="new-total-cont">
+          <div className="new-our-projects-cont">
+            <div className="new-our-projects-each-cont">
+              <div className="new-our-projects-each-left-cont">
+                <p className="new-our-projects-head">OUR PROJECTS</p>
+                <h1>
+                  Design can be a powerful force for positive environmental
+                  impact.
+                </h1>
+
+                <Link to="/" className="link-text">
+                  Browse our design initiatives tailored for rural school
+                  infrastructure
+                </Link>
+              </div>
+              <div className="new-our-projects-each-right-cont"></div>
+            </div>
+          </div>
+
+          <div className="new-our-projects-cont">
+            <div className="new-our-projects-each-cont">
+              <div className="new-our-projects-each-right-cont"></div>
+              <div className="new-our-projects-each-left-cont new-space-left">
+                <p className="new-our-projects-head">DESIGN GUIDELINES</p>
+                <h1>
+                  We build, design and model perfect rural structures serving
+                  their best interests of its communities.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <section className="d_home_section1">
           <div className="d_home_section1_left image_left"></div>
 
           <div className="d_home_section1_right">
@@ -47,8 +78,8 @@ export default class d_home extends Component {
               infrastructure
             </Link>
           </div>
-        </section>
-        <section className="d_home_section1_mobile">
+        </section> */}
+        {/* <section className="d_home_section1_mobile">
           <div className="d_home_section1_mobile_image"></div>
           <h1 className="d_home_section1_mobile_text">
             Design can be a powerful force for positive environmental impact.
@@ -57,23 +88,13 @@ export default class d_home extends Component {
             Browse our design initiatives tailored for rural school
             infrastructure
           </Link>
-        </section>
-        {/* ------------------------------------------------------------- */}
-        <section className="d_home_section2">
-          <h1>
-            Navigating the complexity of rural infrastructure, our Design
-            fellowship brings together a diverse team of planners, designers,
-            and engineers to shape resilient environments for the future.
-          </h1>
-          <Link to="/fellowship">
-            <button className="join-us-btn">Join Us</button>
-          </Link>
+        </section> */}
 
-          <div className="d_home_section2_image"></div>
-        </section>
         {/* ------------------------------------------------------------- */}
 
-        <section className="d_home_section3">
+        {/* ------------------------------------------------------------- */}
+
+        {/* <section className="d_home_section3">
           <h1>Design Guidelines</h1>
           <div className="d_home_section3_box">
             <div className="d_home_section3_content">
@@ -85,7 +106,7 @@ export default class d_home extends Component {
 
             <div className="d_home_section3_image"></div>
           </div>
-        </section>
+        </section> */}
         {/* ------------------------------------------------------------- */}
         <section className="d_home_section1_mobile">
           <h1 className="d_home_section1_mobile_guideline">
@@ -97,7 +118,7 @@ export default class d_home extends Component {
             best interests of its communities
           </h1>
         </section>
-        <p className="design-p">
+        {/* <p className="design-p">
           Lokarpan's latest initiative—the Rural Planning and School Design
           Guidelines—ushers in a new era of educational infrastructure. By
           setting benchmarks for construction, we ensure learning environments
@@ -105,7 +126,20 @@ export default class d_home extends Component {
           solutions, and stringent safety measures. By adhering to government
           norms and dimensions while allowing for flexibility and innovation, we
           aim to empower schools with enduring and adaptable structures.
-        </p>
+        </p> */}
+
+        <div className="d_home_section2_image"></div>
+
+        <section className="d_home_section2">
+          <h1>
+            Navigating the complexity of rural infrastructure, our Design
+            fellowship brings together a diverse team of planners, designers,
+            and engineers to shape resilient environments for the future.
+          </h1>
+          <Link to="/fellowship">
+            <button className="join-us-btn">Join Us</button>
+          </Link>
+        </section>
 
         {/* ------------------------------------------------------------- */}
         <Footer />

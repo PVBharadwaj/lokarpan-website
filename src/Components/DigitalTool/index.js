@@ -67,87 +67,90 @@ class DigitalTool extends Component {
               </p>
             </div>
           </div>
-          <div className="temp-container">
-            <div className="temp-each-cont">
-              <div className="icon">
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784180/Group_1756_wixb2m.png"
-                  className="dig-icon-img"
-                />
+          <div className="temp-cont">
+            <div className="temp-container">
+              <div className="temp-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784180/Group_1756_wixb2m.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                <h4>Data Repository</h4>
+                <p>
+                  Survey, collect, and organise data efficiently with our
+                  user-friendly tools tailored for diverse research needs.
+                </p>
               </div>
-              <h4>Data Repository</h4>
-              <p>
-                Survey, collect, and organise data efficiently with our
-                user-friendly tools tailored for diverse research needs.
-              </p>
-            </div>
-            <div className="temp-each-cont">
-              <div className="icon">
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784166/Group_1757_bkkh55.png"
-                  className="dig-icon-img"
-                />
+              <div className="temp-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784166/Group_1757_bkkh55.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                <h4>Learning Management Systems</h4>
+                <p>
+                  Seamlessly manage classrooms, programs, and users with our
+                  Hybrid, Google Classroom, Notion, and Wiki platforms.
+                </p>
               </div>
-              <h4>Learning Management Systems</h4>
-              <p>
-                Seamlessly manage classrooms, programs, and users with our
-                Hybrid, Google Classroom, Notion, and Wiki platforms.
-              </p>
-            </div>
-            <div className="temp-each-cont">
-              <div className="icon">
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
-                  className="dig-icon-img"
-                />
+              <div className="temp-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                <h4>Adobe</h4>
+                <p>
+                  Transform health and education data into insightful visuals with
+                  our informatics web app for dynamic data visualisation.
+                </p>
               </div>
-              <h4>Adobe</h4>
-              <p>
-                Transform health and education data into insightful visuals with
-                our informatics web app for dynamic data visualisation.
-              </p>
-            </div>
-            <div className="temp-each-cont">
-              <div className="icon">
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784144/Group_1762_qugdzn.png"
-                  className="dig-icon-img"
-                />
+              <div className="temp-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784144/Group_1762_qugdzn.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                <h4>Content Creation</h4>
+                <p>
+                  A repository of engaging digital content, captivating stories,
+                  and immersive audio podcasts effortlessly with our innovative
+                  tools.
+                </p>
               </div>
-              <h4>Content Creation</h4>
-              <p>
-                A repository of engaging digital content, captivating stories,
-                and immersive audio podcasts effortlessly with our innovative
-                tools.
-              </p>
-            </div>
-            <div className="temp-each-cont">
-              <div className="icon">
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784137/Group_1761_xkcnfs.png"
-                  className="dig-icon-img"
-                />
+              <div className="temp-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784137/Group_1761_xkcnfs.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                <h4>Analytics & Prediction</h4>
+                <p>
+                  Gain valuable insights into performance trends and predict
+                  future outcomes with our advanced analytics practices.
+                </p>
               </div>
-              <h4>Analytics & Prediction</h4>
-              <p>
-                Gain valuable insights into performance trends and predict
-                future outcomes with our advanced analytics practices.
-              </p>
-            </div>
-            <div className="temp-each-cont">
-              <div className="icon">
-                <img
-                  src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784129/Group_1755_sfm8yd.png"
-                  className="dig-icon-img"
-                />
+              <div className="temp-each-cont">
+                <div className="icon">
+                  <img
+                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784129/Group_1755_sfm8yd.png"
+                    className="dig-icon-img"
+                  />
+                </div>
+                <h4>Exams & Quizzes</h4>
+                <p>
+                  Create and conduct engaging exams and quizzes for learners of
+                  all ages using our Horizon app, designed for effective
+                  assessments.
+                </p>
               </div>
-              <h4>Exams & Quizzes</h4>
-              <p>
-                Create and conduct engaging exams and quizzes for learners of
-                all ages using our Horizon app, designed for effective
-                assessments.
-              </p>
             </div>
+
           </div>
           <div className="digital-tool-last-sec">
             <h3>Be a Catalyst for Change</h3>

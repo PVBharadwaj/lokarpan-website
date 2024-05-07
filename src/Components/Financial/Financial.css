@@ -34,15 +34,16 @@
   padding-inline-end: max(20px, var(--navbar-padding));
 }
 .fin-desp-head h1 {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
-  /* padding: 50px; */
+  padding: 50px 0px;
   color: white;
 }
 
 .fin-desp-head p {
   font-size: 24px;
   color: white;
+  font-weight: 500;
 }
 
 .fin-annual-repo {

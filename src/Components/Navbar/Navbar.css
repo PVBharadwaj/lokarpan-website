@@ -11,7 +11,7 @@
   margin: 0;
   width: 100%;
   min-width: 320px;
-  height: 54px;
+  height: 48px;
 }
 
 .navbar {
@@ -21,7 +21,7 @@
   justify-content: space-between;
   background-color: white;
   color: black;
-  height: 54px;
+  height: 48px;
   z-index: 100;
   gap: 16px;
   margin: var(--navbar-margin);

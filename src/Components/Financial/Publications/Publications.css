@@ -8,7 +8,6 @@
 
 .public-top{
   margin: 0px;
-  padding: 50px 123px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -21,8 +20,14 @@
   background-size: cover;
 }
 
-.public-top h1,
-.public-top p,
+.public-text{
+  padding: 100px 0px;
+}
+
+/* .public-top h1,
+.public-top p, */
+.public-text h1,
+.public-text p,
 .publication-page{
   margin: var(--navbar-margin);
   box-sizing: border-box;
@@ -34,18 +39,21 @@
   padding-inline-end: max(20px, var(--navbar-padding));
 }
 
-.public-top h1 {
+/* .public-top h1, */
+.public-text h1 {
 font-size: 64px;
 font-weight: bolder;
 text-align: center;
-color: #fff;
+padding: 30px 0px;
 }
 
-.public-top p {
+/* .public-top p, */
+.public-text p {
   font-size: 24px;
   font-weight: bolder;
   text-align: center;
-  color: #fff;
+  max-width: 850px;
+  color: #555;
 }
 
 .public-desp{
@@ -134,12 +142,14 @@ color: #fff;
     padding: 70px 10px;
   }
 
-  .public-top h1{
+  /* .public-top h1, */
+  .public-text h1{
     font-size: 40px;
     padding: 5px;
   }
   
-  .public-top p{
+  /* .public-top p, */
+  .public-text p{
     font-size: 16px;
     font-weight: bold;
   }

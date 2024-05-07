@@ -6,16 +6,29 @@ const Moonshots = () => {
   return (
     <>
       <Navbar />
-      {/* <div className="moonshots-top"></div> */}
       <div className="livelihood-full-img-text moonshots-top">
         {/* <div className="moonshots-top"> */}
-        <h1 className="livelihood-full-img-text-head moonshot-text">
+        {/* <h1 className="livelihood-full-img-text-head moonshot-text">
           So, what does the future hold for Lokarpan and its mission for
           educational equity?
-        </h1>
+        </h1> */}
       </div>
       <div className="fellowship-page">
-        <div className="why-donate-topdiv">
+
+        {/* below section taken from publications page */}
+      <div className="public-text"> 
+        <h1 className="public-title">
+        What does the future hold
+        </h1>
+        <p className="public-desp">
+          Lokarpan aims to reimagine education from the ground up, introducing
+          immersive technologies, personalised learning pathways, and dynamic
+          content creation tools. Our goal is not just to improve learning
+          outcomes, but to empower learners of all ages and backgrounds to
+          thrive in the digital age.
+        </p>
+      </div>
+        {/* <div className="why-donate-topdiv">
           <p>
             Lokarpan aims to reimagine education from the ground up, introducing
             immersive technologies, personalised learning pathways, and dynamic
@@ -23,9 +36,9 @@ const Moonshots = () => {
             outcomes, but to empower learners of all ages and backgrounds to
             thrive in the digital age.
           </p>
-        </div>
+        </div> */}
         <p className="moonshots-head">Our Focus Areas</p>
-        <div className="second-div moonshots-div">
+        <div className="second-div moonshots-div no-max-width-set">
           <div className="moonshots-sub-div moonshots-img1">
             <div className="moons-text-div">
               <p className="moons-head">Progressive Curriculum</p>
