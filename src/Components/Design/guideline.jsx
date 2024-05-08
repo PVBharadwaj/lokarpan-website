@@ -19,7 +19,7 @@ export default class d_home3 extends Component {
         </section>
         {/* ------------------------------------------------------------- */}
 
-        <section className="d_home_section1_mobile">
+        {/* <section className="d_home_section1_mobile">
           <div className="d_home_section1_mobile_image"></div>
           <h1 className="d_home_section1_mobile_text">
             Leveraging local materials and innovative approaches, Lokarpan
@@ -36,9 +36,9 @@ export default class d_home3 extends Component {
             large-footprint schools, integrating local resources and sustainable
             practices to create optimal learning environments
           </h1>
-        </section>
+        </section> */}
         {/* ------------------------------------------------------------- */}
-        <section className="d_home_section1">
+        {/* <section className="d_home_section1">
           <div className="d_home_section1_left image_left"></div>
 
           <div className="d_home_section1_right">
@@ -48,11 +48,21 @@ export default class d_home3 extends Component {
               and sustainable practices to create optimal learning environments
             </h1>
           </div>
-        </section>
+        </section> */}
+
+        <div className="new-guidelines-sec">
+          <h1>
+            Our comprehensive design manual offers a blueprint for constructing
+            large-footprint schools, integrating local resources and sustainable
+            practices to create optimal learning environments.
+          </h1>
+
+          <a href="#">View our design manual</a>
+        </div>
         {/* ------------------------------------------------------------- */}
         <Home />
         {/* ------------------------------------------------------------- */}
-        <section className="d_home_section1">
+        {/* <section className="d_home_section1">
           <div className="d_home_section1_right">
             <p className="design-p2">
               Leveraging local materials and innovative approaches, Lokarpan
@@ -63,7 +73,21 @@ export default class d_home3 extends Component {
             </p>
           </div>
           <div className="d_home_section1_left image_right"></div>
-        </section>
+        </section> */}
+
+        <div className="new-guidelines-last-head">
+          <span className="g-l1">
+            Leveraging local materials and innovative approaches,
+          </span>
+
+          <br />
+          <span className="g-l2">
+            Lokarpan pioneers rural design and landscaping, envisioning vibrant
+            communities rooted in sustainability. Our guidance empowers
+            community leaders, shaping rural construction policies for a better,
+            more sustainable future.
+          </span>
+        </div>
 
         {/* ------------------------------------------------------------- */}
         <Footer />

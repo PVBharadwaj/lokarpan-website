@@ -58,8 +58,10 @@
 }
 .link-text {
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 400;
   color: #3f86f0;
+  line-height: 25px;
 }
 .image_left {
   background-color: #f8edff;
@@ -173,6 +175,131 @@
   text-align: center;
   margin-top: 100px;
 }
+
+.new-our-projects-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 100vh;
+  margin: 100px auto;
+}
+.new-our-projects-each-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.new-our-projects-each-left-cont {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.new-our-projects-each-left-cont h1 {
+  font-size: 48px;
+  font-weight: 600;
+  /* line-height: 1.0834933333; */
+}
+.new-total-cont {
+  background-color: #f2f8ff;
+  padding: 50px 0px;
+  margin: 200px auto;
+  height: auto;
+}
+
+.new-our-projects-each-right-cont {
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1704897435/image_190_ssmaol.png");
+  /* height: 100%; */
+  width: 55%;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+}
+
+.new-our-projects-head {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgb(0, 128, 9);
+}
+.new-space-left {
+  margin-left: auto;
+  width: 40%;
+}
+
+.new-guidelines-sec {
+  width: 85%;
+  margin: 100px auto;
+  height: auto;
+}
+
+.new-guidelines-sec h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.new-guidelines-sec a {
+  font-size: 17px;
+  color: #3f86f0;
+  margin: 40px auto;
+  display: inline-block;
+  text-decoration: none;
+}
+.new-guidelines-sec a:hover {
+  text-decoration: underline;
+}
+
+.new-guidelines-last-head {
+  width: 85%;
+  margin: 100px auto;
+}
+.g-l1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.g-l2 {
+  color: rgb(134, 134, 139);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+  .new-our-projects-each-right-cont {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .new-our-projects-cont {
+    height: 1000px;
+  }
+  .new-our-projects-each-cont {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .new-our-projects-each-right-cont {
+    order: 1;
+    width: auto;
+    height: 120%;
+    box-sizing: content-box;
+  }
+  .new-our-projects-each-left-cont {
+    order: 2;
+    width: 100%;
+  }
+  .link-text {
+    /* margin-top: 50px; */
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 @media (max-width: 850px) {
   .guideline_design h1 {
     font-size: 32px;
@@ -211,9 +338,7 @@
   .d_home_section1_mobile_guideline {
     padding: 4rem 0 2rem 0;
   }
-  .link-text {
-    margin-top: 50px;
-  }
+
   .d_home_section1_mobile_text {
     margin-bottom: 30px;
   }
@@ -221,5 +346,23 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .new-our-projects-each-right-cont {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .new-our-projects-each-right-cont {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .new-our-projects-each-right-cont {
+    height: 45%;
   }
 }
