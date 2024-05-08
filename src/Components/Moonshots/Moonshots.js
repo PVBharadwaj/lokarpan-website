@@ -38,9 +38,10 @@ const Moonshots = () => {
           </p>
         </div> */}
         <p className="moonshots-head">Our Focus Areas</p>
+        {/* second-div class taken from fellowshihp.js */}
         <div className="second-div moonshots-div no-max-width-set">
           <div className="moonshots-sub-div moonshots-img1">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "pink"}} className="moons-text-div">
               <p className="moons-head">Progressive Curriculum</p>
               <p className="moons-text">
                 Developing technology-driven, innovative curriculum to empower
@@ -49,7 +50,7 @@ const Moonshots = () => {
             </div>
           </div>
           <div className="moonshots-sub-div moonshots-img2">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "#a4fba4"}} className="moons-text-div">
               <p className="moons-head">Empowering Educators</p>
               <p className="moons-text">
                 Equipping teachers with skills for engaging lesson plans,
@@ -58,7 +59,7 @@ const Moonshots = () => {
             </div>
           </div>
           <div className="moonshots-sub-div moonshots-img3">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "#ff8cff"}} className="moons-text-div">
               <p className="moons-head">Strategic Partnerships</p>
               <p className="moons-text">
                 Forging collaborations with higher education institutes,
@@ -67,7 +68,7 @@ const Moonshots = () => {
             </div>
           </div>
           <div className="moonshots-sub-div moonshots-img4">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "#c3c3ff"}} className="moons-text-div">
               <p className="moons-head">Infrastructure Investment</p>
               <p className="moons-text">
                 Building modern facilities and classrooms to inspire creativity

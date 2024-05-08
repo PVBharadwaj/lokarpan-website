@@ -234,7 +234,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 96%;
+  /* width: 96%; */
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease; /* Add transition for the background */
@@ -372,8 +373,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 215px;
-  margin-bottom: 360px;
+  margin-top: 120px;
+  margin-bottom: 220px;
 }
 .row-element {
   width: 50%;

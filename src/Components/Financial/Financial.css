@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 630px;
+  min-height: 750px;
   min-width: 320px;
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708923066/image_338_t09wfz.png");
   background-position: center;
@@ -35,7 +35,7 @@
 }
 .fin-desp-head h1 {
   font-size: 64px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 50px 0px;
   color: white;
 }
@@ -112,6 +112,15 @@ hr {
 @media screen and  (min-width: 748px) and (max-width: 1000px) {
   .add-repo-text {
     grid-column: span 6;
+  }
+  .fin-desp-head{
+    min-height: 900px;
+  }
+}
+
+@media screen and  (min-width: 410px) and (max-width: 748px) {
+  .fin-desp-head{
+    min-height: 540px;
   }
 }
 

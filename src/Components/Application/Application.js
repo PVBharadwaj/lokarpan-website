@@ -104,6 +104,7 @@ const Application = () => {
             Lokarpan presents a suite of digital applications to redefine
             classroom strategies
           </h1>
+          {/* className="application-para1"  -- used in approach -> index.js */}
           <p className="application-para1">
             The education sector is constantly evolving, and technology has
             played a significant role in shaping the way we learn. Our goal? To

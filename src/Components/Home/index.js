@@ -64,19 +64,19 @@ class Home extends Component {
               className="home-top-container-img"
             />
           </div>
-          <div className="home-logo-animation-section">
-            {/* Animation-section */}
-          </div>
+          {/* <div className="home-logo-animation-section">
+             Animation-section
+          </div> */}
 
           <div className="who-we-are">
-            <p className="lokarpan-head4">Our Approach</p>
-            <h1 style={{fontSize: "64px", padding: "10px 0px 40px 0px"}}>Spotlight</h1>
+            <p style={{padding: "10px 0px 40px 0px"}} className="lokarpan-head4">Our Approach</p>
             <h1 style={{fontSize: "42px"}} className="home-head3">
               Big change is impossible without a little help. For 28 years, we
               have worked closely with communities to identify their needs and
               aspirations in order to serve them.
             </h1>
           </div>
+          <h1 style={{fontSize: "64px"}}>Spotlight</h1>
           <div className="row-container">
             <div className="row-element">
               <img
