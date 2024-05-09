@@ -105,7 +105,7 @@ const Fellowship = () => {
               alt="img2"
             />
             <p className="fellow-large-text">
-              <span className="fellow-large-text-head">Our Approach is Community Centric</span>
+              <span className="fellow-large-text-head">Our Approach is Community Centric </span>
               We believe that true solutions emerge when we listen closely to
               the voices of the communities we serve. By engaging directly with
               those most affected by social challenges, we gain valuable

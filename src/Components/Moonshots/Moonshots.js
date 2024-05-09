@@ -1,3 +1,4 @@
+import MoonshotCarousel from "../Carousals/MoonshotCarousel/MoonshotCarousel";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Moonshots.css";
@@ -37,9 +38,10 @@ const Moonshots = () => {
             thrive in the digital age.
           </p>
         </div> */}
-        <p className="moonshots-head">Our Focus Areas</p>
+        <p className="moonshots-head padding-bottom-80">Our Focus Areas</p>
+        <MoonshotCarousel />
         {/* second-div class taken from fellowshihp.js */}
-        <div className="second-div moonshots-div no-max-width-set">
+        {/* <div className="second-div moonshots-div no-max-width-set">
           <div className="moonshots-sub-div moonshots-img1">
             <div style={{backgroundColor: "pink"}} className="moons-text-div">
               <p className="moons-head">Progressive Curriculum</p>
@@ -76,9 +78,9 @@ const Moonshots = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="donate-section">
+      <div className="donate-section moonshots-margin-top">
         <h1 className="last-space">Be a Catalyst for Change</h1>
         <p className="our-role-font24">
           Join Lokarpan in our mission to combat social and economic

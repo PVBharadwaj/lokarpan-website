@@ -70,13 +70,13 @@ class Home extends Component {
 
           <div className="who-we-are">
             <p style={{padding: "10px 0px 40px 0px"}} className="lokarpan-head4">Our Approach</p>
-            <h1 style={{fontSize: "42px"}} className="home-head3">
+            <h1 className="home-head3 home-head-42">
               Big change is impossible without a little help. For 28 years, we
               have worked closely with communities to identify their needs and
               aspirations in order to serve them.
             </h1>
           </div>
-          <h1 style={{fontSize: "64px"}}>Spotlight</h1>
+          <h1 className="large-font-head">Spotlight</h1>
           <div className="row-container">
             <div className="row-element">
               <img
