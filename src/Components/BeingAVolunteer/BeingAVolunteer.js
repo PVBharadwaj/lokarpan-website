@@ -20,7 +20,7 @@ const BeingAVolunteer = () => {
           The road to end educational inequity is long and we cannot do this on our own. If you are passionate about our vision and have a certain number of hours a week to put in, you can volunteer with Fellows in their classroom or with different departments on staff.
           </p>
         </div>
-        <h1 className="vol-head-div-text">Why Volunteer with Lokarpan?</h1>
+        <h1 className="vol-head-div-text">Why?</h1>
         <FlipCard />
         <FlipCard2 />
         <FlipCard3 />
@@ -38,8 +38,7 @@ const BeingAVolunteer = () => {
           </h1> */}
           <h1>Explore current volunteering opportunities</h1>
           <p>Lokarpan collaborates with volunteers primarily through our dedicated volunteer program. If you hold an undergraduate degree, possess relevant work experience, and are passionate about making a difference, you may qualify to join us as a volunteer.
-            Our volunteer program provides opportunities for impactful assignments across various initiatives within Lokarpan. While we do not directly recruit volunteers, interested individuals can explore potential opportunities through our volunteer program. To learn more and register your interest, please visit our volunteer signup page.
-            Additionally, volunteer positions may also be available through our affiliated partners and organisations.
+           
           </p>
           <div style={{width: "150px"}} className="hyperlinks">
           <div className="apply-btn white">
