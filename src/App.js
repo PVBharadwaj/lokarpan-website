@@ -66,6 +66,7 @@ function App() {
       <BrowserRouter basename="/lokarpan-website">
         <ScrollToTop />
         <Routes>
+       
           <Route path="/sitemap" element={<Sidemap />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>

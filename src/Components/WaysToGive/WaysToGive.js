@@ -63,15 +63,23 @@ const WaysToGive = () => {
               planning and various funds to secure our ability to continue
               making a meaningful difference.
             </p>
-            <Link className="give-card-link ways-space-up" to="/donate">
-              Donate now
-            </Link>
+            <Link className="give-card-link ways-space-up" to="/donate" style={{ color: '#06c' }}>
+  Donate now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
+  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
+  <path fill="none" d="M0 0h24v24H0z"/>
+</svg>
+
+</Link>
+
             <span
               onClick={() => openpopup(0)}
               className="give-card-link"
               style={{ cursor: "pointer" }}
             >
-              Explore a Gift
+              Explore a Gift <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
+  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
+  <path fill="none" d="M0 0h24v24H0z"/>
+</svg>
             </span>
             {popupVisibility[0] && (
               <div className="misson-popup">
@@ -116,7 +124,10 @@ const WaysToGive = () => {
               support@lokarpan.com for more information.
             </p>
             <Link className="give-card-link ways-space-up" to="/newsletter">
-              Register
+              Register <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
+  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
+  <path fill="none" d="M0 0h24v24H0z"/>
+</svg>
             </Link>
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
@@ -137,10 +148,16 @@ const WaysToGive = () => {
               colleagues and partners.
             </p>
             <Link className="give-card-link" to="/being-a-volunteer">
-              Volunteer Opportunities
+              Volunteer Opportunities <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
+  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
+  <path fill="none" d="M0 0h24v24H0z"/>
+</svg>
             </Link>
             <Link className="give-card-link" to="/fellowship">
-              Fellowship
+              Fellowship <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
+  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
+  <path fill="none" d="M0 0h24v24H0z"/>
+</svg>
             </Link>
           </div>
         </div>

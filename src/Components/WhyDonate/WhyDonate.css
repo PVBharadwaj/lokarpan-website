@@ -60,7 +60,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 345px;
+  height:712px;
 }
 
 .donate-first-div h1 {
@@ -164,7 +164,17 @@
 .hyperlinks a {
   text-decoration: none;
 }
-
+.last-space1{
+  font-size: 56px;
+  font-weight:700 ;
+  padding: 2rem;
+}
+.our-role-font241{
+  text-align: center;
+padding: 1rem 10rem;
+  font-size: 24px;
+  font-weight: 600;
+}
 .donate-hyperlink {
   font-size: 24px;
   margin: 0px 24px;
@@ -244,6 +254,17 @@
     flex-direction: column-reverse;
     height: auto;
     justify-content: center;
+  }
+  .last-space1{
+    font-size: 24px;
+    font-weight:700 ;
+    padding: 1rem 1rem;
+  }
+  .our-role-font241{
+    text-align: center;
+  padding: 1rem;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 
