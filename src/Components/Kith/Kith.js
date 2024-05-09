@@ -14,7 +14,7 @@ const Kith = () => {
     <Navbar />
       <div className="kith-overview-head kith-overview-div">
           <h1>Overview</h1>
-          <p>Those who venture here—to learn, research, teach, work, and grow—join nearly four centuries of students and scholars in the pursuit of truth, knowledge, and a better world</p>
+          <p>Those who venture here—to learn, research, teach, work, and grow—join nearly three decades of students and scholars in the pursuit of truth, knowledge, and a better world. At Kith, we advocate for quality education as a means to unlock every child's potential, fostering a future where socio-economic barriers do not hinder growth.</p>
       </div>
       <div className="kith-overview-div kith-overview-second-div">
           <p>These are just a few of the dedicated individuals who form the backbone of Lokarpan. Each member of our faculty plays a crucial role in driving our initiatives forward and making a positive impact in the communities we serve.</p>
@@ -25,7 +25,7 @@ const Kith = () => {
           <div className="kith-overview-card-text">
             <h3>Who we are?</h3>
             <p>
-            As you embark on this journey with us, your commitment and enthusiasm are integral to our success. Lokarpan is built on the principles of transparency, inclusivity, and empowerment.
+            Founded in 2014, Kith and Kin School in Auraiya, Uttar Pradesh, aims to elevate education levels, especially in low-income communities. We strive towards a vision where every child receives exceptional education, creating equity that paves the way for India's holistic development. Our ecosystem centres on parent, student, and teacher collaboration.
             </p>
           </div>
         </div>
@@ -33,34 +33,34 @@ const Kith = () => {
           <div className="kith-overview-card-text">
             <h3>Our faculty</h3>
             <p>
-            We are proud to introduce the talented and dedicated individuals who make up our esteemed faculty at Lokarpan Non-Profit Organization. Our faculty members bring a wealth of experience, expertise, and a shared commitment to our mission 
+            These are just a few of the dedicated individuals who form the backbone of Kith. Our faculty members bring a wealth of experience, expertise, and a shared commitment to our mission. Each member of our staff plays a crucial role in driving our initiatives forward and making a positive impact in the communities we serve.
             </p> <span className='our-role-faculty'>Shunyuan  Zhang, The professor, Lokarpan</span>
           </div>
           <div className='kith-overview-card-img kith-overview-card-img-2'></div>
         </div>
       </div>
-      <div className="kith-overview-div grid-head">NEW AT LOKARPAN BLOG</div>
+      <div className="kith-overview-div grid-head">NEW AT KITH</div>
       <div className="kith-overview-div kith-overview-grid">
         <div className='overview-grid-inner kith-overview-grid-inner1'>
           <div>
-            <p>At McKinsey, we hire people, not degrees. There is no set definition for what exceptional looks like</p>
-            <Link to="/" className='kith-link'>Ready to apply? Search for other roles</Link> 
+            <p>We prioritise accessibility and excellence in education. Join our vibrant learning community today. </p>
+            <Link to="/kith/admission" className='kith-link'>Learn more about our Admissions</Link> 
           </div>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner2'>
           <div className='mobile-only'>
-            <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
-            <Link to="/" className='kith-link'>Learn more about our interviews</Link> 
+            <p>Explore transparent and accessible information about tuition fees and scholarships available to support your child's education journey at the Kith n Kin School</p>
+            <Link to="/kith/financials" className='kith-link'>Learn more about our Financials</Link> 
           </div>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner3'>
           <div>
-            <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
-            <Link to="/" className='kith-link'>Learn more about our interviews</Link> 
+            <p>Explore transparent and accessible information about tuition fees and scholarships available to support your child's education journey at the Kith n Kin School</p>
+            <Link to="/kith/financials" className='kith-link'>Learn more about our Financials</Link> 
           </div>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner4'>
-        <p>Exceptional can come anywhere from.</p>
+        <p>Exceptionalism can come anywhere from.</p>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner5'>
           <div>
@@ -76,15 +76,15 @@ const Kith = () => {
 
         <div className='overview-grid-inner kith-overview-grid-inner7'>
           <div>
-            <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
-            <div><Link to="/" className='kith-link'>Read more on our blog <FaArrowRightLong/></Link> </div>
+            <p>Immerse yourself in our dynamic campus environment, cultural activities and a curriculum tailored to meet the diverse learning needs of students, empowering them to achieve academic excellence and personal growth.</p>
+            <div><Link to="/kith/life-at-school" className='kith-link'>Read more about Life at School <FaArrowRightLong/></Link> </div>
           </div>
         </div>
 
         <div className='overview-grid-inner kith-overview-grid-inner8'>
           <div>
-            <p>we know it can come from anywhere. We believe in your potential, regardless of your pedigree.</p>
-            <Link to="/" className='kith-link'>Learn more about our interviews</Link> 
+            <p>Access essential information about our school's leadership, employment opportunities, frequently asked questions, and donation options to support our mission.</p>
+            <Link to="/kith/leadership" className='kith-link'>Read more </Link> 
           </div>
         </div>
       </div>
