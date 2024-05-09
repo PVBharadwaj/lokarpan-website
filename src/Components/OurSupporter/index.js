@@ -25,7 +25,7 @@ class OurSupporter extends Component {
             </p> */}
           </div>
           <div className="donor-section">
-            <div className="why-donate-topdiv">
+            <div className="why-donate-topdiv1">
               <p>
               Lokarpan understands the value of partnerships. We would like to
               thank our supporters who have helped us grow and stay true to our
@@ -57,21 +57,32 @@ class OurSupporter extends Component {
             </div>
           </div>
           <div className="philantropic-section">
-            <h1 className="font36 padding100">Philanthropic Partners</h1>
-            <div className="philantropic-below-section">
-              <p>
-                Catholic Relief Services Poorest Areas Civil Society Department
-                for International Development, UK Create Fund National Bank for
-                Agriculture and Rural Development, India MGNREGA, Government of
-                India Taproot Foundation
-              </p>
-              <p>
-                State Innovations in Family Planning Services Project Agency
-                Development Alternatives USAID The Dalai Lama Foundation HDFC
-                Bank Birla Sun Life Insurance
-              </p>
-            </div>
-          </div>
+  <h1 className="font36 padding100">Philanthropic Partners</h1>
+  <div className="philantropic-below-section">
+    <div className="philantropic-organization">
+      <p>Catholic Relief Services</p>
+      <p>Poorest Areas Civil Society Department for International Development, UK</p>
+      <p>Create Fund National Bank for Agriculture and Rural Development, India</p>
+      <p>MGNREGA, Government of India</p>
+      <p>Taproot Foundation</p>
+      <p>Birla Sun Life Insurance</p>
+      
+      
+    </div>
+    <div className="philantropic-organization">
+      <p>State Innovations in Family Planning Services Project Agency</p>
+      <p>Development Alternatives</p>
+      <p>USAID</p>
+      <p>The Dalai Lama Foundation</p>
+      
+      <p>Development Alternatives</p>
+      <p>USAID</p>
+    
+      <p>HDFC Bank</p>
+    </div>
+  </div>
+</div>
+
           <div className="in-support-section">
             <h1 className="font64  black support-space-below">
               In-Kind support
@@ -81,7 +92,7 @@ class OurSupporter extends Component {
               <p>Create Fund TARA Akshar+ City Montessori School</p>
             </div>
             <div className="donor-last-sec">
-              <p className="font32">
+              <p className="why-donate-topdiv1">
                 We strive to be as accurate as possible when recognizing our
                 donors. If a mistake is noticed, please contact us at
                 support@lokarpan.com

@@ -32,7 +32,7 @@
 
 .flip-card-front {
   color: black;
-  border-radius: 32px;
+  border-radius: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;

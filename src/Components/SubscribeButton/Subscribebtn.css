@@ -65,13 +65,16 @@
 .popup-in {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align:center;
   padding: 40px;
   width: 601px;
   height: 359px;
   border-radius: 24px;
   background-color: #f3f3f3;
   z-index: 160;
+}
+.popup-text input::placeholder {
+  font-family: 'Inter', sans-serif;
 }
 
 .popup-in h2 {
