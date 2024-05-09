@@ -162,17 +162,15 @@
 }
 
 .radio-label {
-  font-size: 20px;
-  font-weight: 600;
   margin: 0px;
- padding:  10px;
+  padding: 8px 10px;
   line-height: 24px;
   text-align: center;
   border: 2px solid #1e1e1e;
   border-radius: 36px;
 }
 .text-input1{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -194,8 +192,7 @@ input:checked + .radio-label {
   grid-column: span 4;
 }
 .text-input{
- height: 30px;
- font-weight: 600;
+ height: 40px;
   font-size: 20px;
   padding: 2rem  4rem;
  
@@ -261,11 +258,10 @@ input:checked + .radio-label-with-img {
 .recap{
   padding: 2rem 0;
 }
-.apply-btn{
+.donate-apply-btn{
 
   font-weight: 600;
   width: 700px;
-  border-radius: 20px;
 }
 
 .donate-submit-section {

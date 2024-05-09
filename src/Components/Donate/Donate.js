@@ -777,7 +777,6 @@ const Donate = () => {
                 <div>
                   <div className="donate-submit-section">
                     <div className="apply-btn transparent donate-apply-btn">
-                    <div className="apply-btn1 transparent">
                       <Link
                         to="/donate"
                         className="apply-btn-text-black body-btn"
