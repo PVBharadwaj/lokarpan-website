@@ -66,7 +66,7 @@
 
 .moons-head {
   width: calc(100% - 40px);
-  padding: 0px 0px 20px 20px;
+  padding: 20px 0px 20px 20px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -80,9 +80,10 @@
 }
 
 .moons-text-div {
-  background-image: linear-gradient(transparent, black);
+  /* background-image: linear-gradient(transparent, black); */
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  color: black;
 }
 
 @media screen and (max-width: 748px) {

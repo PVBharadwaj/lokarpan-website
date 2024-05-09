@@ -261,10 +261,8 @@ input:checked + .radio-label-with-img {
 .recap{
   padding: 2rem 0;
 }
-.apply-btn1{
-  display: flex;
-  justify-content: center;
-text-align: center;
+.apply-btn{
+
   font-weight: 600;
   width: 700px;
   border-radius: 20px;
