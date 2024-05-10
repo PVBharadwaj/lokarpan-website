@@ -1,113 +1,58 @@
-.health-full-img {
+.new-liv-sec {
   width: 100%;
-  height: 430px;
-  overflow: hidden;
-  /* margin-top: 28px; */
-}
-
-.health-full-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.health-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.health-container-section {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 83px 250px;
-}
-.health-each-container {
-  height: 310px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 60px 0;
-  margin-top: 0;
-}
-
-.health-content-section {
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 48%;
-  height: 100%;
-  margin: auto;
-
-  padding-top: 0;
-}
-.health-cont-img {
-  height: 100%;
-  width: 48%;
-}
-.health-lokarpan-head3 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-top: 0;
-}
-.health-para {
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 0;
 }
 
-.content-right {
-  margin-right: 0;
-}
-.content-left {
-  margin-left: 0;
-}
-.space-below {
-  margin-bottom: 40px;
+.new-liv-sec h1 {
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.768px;
+  line-height: 90px;
 }
 
-@media screen and (max-width: 748px) {
-  .health-full-img {
-    height: 270px;
-  }
-  .health-full-img img {
-    width: 100%;
-    object-fit: cover;
-  }
-  .health-container-section {
-    width: calc(100% - 40px);
-    margin: auto;
-    margin-top: 100px;
-  }
-  .health-each-container {
-    flex-direction: column;
-    height: auto;
-  }
-  .health-cont-img {
-    width: 100%;
-    order: 1;
-  }
-  .health-content-section {
-    width: 100%;
-    order: 2;
-  }
-  .health-lokarpan-head3 {
-    font-size: 28px;
-    line-height: 40px;
-    margin-top: 20px;
-  }
-  .health-para {
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: justify;
-  }
+.new-liv-sec p {
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.768px;
+  line-height: 90px;
+  color: rgb(153, 153, 153);
+}
+.new-liv-card-head {
+  font-size: 21px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: 0.252px;
+  line-height: 29px;
+}
+
+.new-liv-card-para {
+  font-size: 21px;
+  font-weight: 600;
+  color: rgb(153, 153, 153);
+  letter-spacing: 0.252px;
+  line-height: 29px;
+  text-align: left;
+}
+
+.new-liv-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.new-liv-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 300px;
 }

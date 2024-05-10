@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./AppCarousal.css";
@@ -98,7 +99,7 @@ const AppCarousal = () => {
     <>
       <div className="carousel-container">
         <div>
-          <Slider className="slider" {...settings}>
+          <Slider className="slider" {...settings} ref={carouselRef}>
             {items.map((item, index) => (
               <div
                 key={index}
