@@ -75,7 +75,7 @@ const WaysToGive = () => {
   className="give-pop-up-button"
   style={{ cursor: "pointer" }}
 >
-  Explore a Gift<AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '5px' }} />
+  Explore a Gift<AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
   
 </button>
             {popupVisibility[0] && (
