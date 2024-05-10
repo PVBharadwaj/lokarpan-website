@@ -4,6 +4,8 @@ import "./d_home.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import SubnavBar from "./DesignSubNavbar/index";
+import { IoIosArrowForward } from "react-icons/io";
+
 export default class d_home extends Component {
   render() {
     return (
@@ -13,8 +15,7 @@ export default class d_home extends Component {
         {/* ------------------------------------------------------------- */}
         <section className="d_home_hero">
           <div className="d_home_hero_head1">
-            Lokarpan's Design Approach: Building Sustainable Foundations for
-            Rural Education
+            Building Sustainable Foundations for Rural Education.
           </div>
           {/* <div className="d_home_hero_head2">Entertainment.</div> */}
           <div className="d_home_hero_content">
@@ -44,10 +45,11 @@ export default class d_home extends Component {
                   impact.
                 </h1>
 
-                <Link to="/" className="link-text">
+                <p className="link-para">
                   Browse our design initiatives tailored for rural school
-                  infrastructure
-                </Link>
+                  infrastructure.
+                </p>
+                <button className="new-btn-design">Read More</button>
               </div>
               <div className="new-our-projects-each-right-cont"></div>
             </div>
@@ -136,8 +138,10 @@ export default class d_home extends Component {
             fellowship brings together a diverse team of planners, designers,
             and engineers to shape resilient environments for the future.
           </h1>
-          <Link to="/fellowship">
-            <button className="join-us-btn">Join Us</button>
+          <Link to="/fellowship" className="d-home-link">
+            {/* <button className="join-us-btn">Join Us</button> */}
+            Join Us
+            <IoIosArrowForward className="mar-below-space" />
           </Link>
         </section>
 

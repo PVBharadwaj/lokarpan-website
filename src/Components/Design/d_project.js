@@ -135,8 +135,10 @@ const D_project = () => {
       <SubnavBar />
       {/* ------------------------------------------------------------- */}
       <section className="d_home_hero">
-        <div className="d_home_hero_head1">Explore Lokarpan's </div>
-        <div className="d_home_hero_head2">Design Initiatives</div>
+        <div className="d_home_hero_head1">
+          Explore Lokarpan's Design Initiatives.
+        </div>
+        {/* <div className="d_home_hero_head2">Design Initiatives</div> */}
         <div className="d_home_hero_content">
           Our design approach prioritises sustainability and efficient use of
           spaces, integrating grid layouts and child-centric design elements.

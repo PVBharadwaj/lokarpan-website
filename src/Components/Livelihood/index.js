@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import "../Health/index.css";
 import { Link } from "react-router-dom";
 import { PiContactlessPaymentFill } from "react-icons/pi";
+import "./index.css";
 
 class Livelihood extends Component {
   render() {
@@ -47,13 +48,16 @@ class Livelihood extends Component {
           <h1>Livelihood</h1>
         </div>
         <div className="health-container">
-          <div className="livelihood-full-img-text">
-            <h1 className="livelihood-full-img-text-head">
-              Building sustainable futures for communities living in stress
-            </h1>
-          </div>
+          <h1 className="livelihood-full-img-text-head">
+            Building sustainable futures for communities living in stress.
+          </h1>
+          <div className="livelihood-full-img-text"></div>
+
           <div className="health-container-section livelihood-cont-section">
-            <div style={{marginBottom: "50px"}} className="health-each-container">
+            <div
+              style={{ marginBottom: "50px" }}
+              className="health-each-container"
+            >
               <div className="health-content-section content-left">
                 <h1 className="health-lokarpan-head3">Our Approach</h1>
                 <p className="health-para">
@@ -69,7 +73,7 @@ class Livelihood extends Component {
               </div>
               <div className="health-cont-img-div health-img2"></div>
             </div>
-            <div className="livelihood-top-section environment-bottom-section">
+            {/* <div className="livelihood-top-section environment-bottom-section">
               <h1>Strengthening Livelihoods Across Every Link in the Chain</h1>
               <p>
                 In the face of growing economic challenges, particularly amidst
@@ -83,11 +87,28 @@ class Livelihood extends Component {
                 of livelihood development, ensuring that underserved communities
                 have access to the resources they need to thrive.
               </p>
+            </div> */}
+            <div className="new-liv-sec">
+              <h1>Strengthening Livelihoods Across Every Link in the Chain.</h1>
+              <p>
+                In the face of growing economic challenges, particularly amidst
+                the global pandemic, securing livelihoods stands as a crucial
+                mission within Lokarpan's work across various sectors.
+              </p>
+              <p>
+                As a dedicated advocate for empowering communities, Lokarpan
+                focuses on bolstering each pivotal element in the livelihood
+                supply chain. Our programs are designed to support every aspect
+                of livelihood development, ensuring that underserved communities
+                have access to the resources they need to thrive.
+              </p>
             </div>
-            <div className="livelihood-top-section">
-              <h1 className="livelihood-desp-cards-head">Our Programs</h1>
-              <div className="desp-cards">
-                {Desp.map((item, index) => (
+          </div>
+
+          <div className="livelihood-top-section">
+            <h1 className="livelihood-desp-cards-head">Our Programs</h1>
+            <div className="new-liv-cards">
+              {Desp.map((item, index) => (
                 <DespCard
                   key={index}
                   item={item}
@@ -95,7 +116,6 @@ class Livelihood extends Component {
                   totalCount={Desp.length}
                 />
               ))}
-              </div>
             </div>
           </div>
 
@@ -127,13 +147,9 @@ const DespCard = ({ item, index, totalCount }) => {
   }`;
 
   return (
-    <div className={cardClassName}>
-      <img
-        src={item.img}
-        style={{ width: "50px", height: "50px", paddingBottom: "20px" }}
-      />
-      <h4>{item.head}</h4>
-      <p>{item.des}</p>
+    <div className="new-liv-card">
+      <h2 className="new-liv-card-head">{item.head}</h2>
+      <h2 className="new-liv-card-para">{item.des}</h2>
     </div>
   );
 };

@@ -1,60 +1,33 @@
-import React, { useState, Component } from "react";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-// import "./index.css";
 import "../Health/index.css";
-import FAQ from "../About/Mission/faq";
-import { Link } from "react-router-dom";
+
 import "./index.css";
+import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 
 const Environment = () => {
-  // const [faqs, setFaqs] = useState([
-  //   {
-  //     question: "Enhancing Green Cover for a Sustainable Future",
-  //     answer:
-  //       "Lokarpan's tree planting endeavours are paving the way for a greener, healthier environment for generations to come.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Tracking Exotic Bird Populations for Biodiversity Conservation",
-  //     answer:
-  //       "Our efforts in bird migration tracking contribute to scientific knowledge and vital conservation strategies, ensuring the continued existence of these fascinating avian species.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Promoting Sustainable Water Management for Community Well-being",
-  //     answer:
-  //       "Through education and advocacy, we work towards the maintenance and restoration of local water bodies, ensuring sustainable access to clean water for rural communities.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Renewable Energy Solutions for a Sustainable Tomorrow",
-  //     answer:
-  //       "Lokarpan leads the charge in renewable energy production, committed to a low carbon footprint for a cleaner, greener future.",
-  //     open: false,
-  //   },
-  //   {
-  //     question: "Addressing Indoor Air Pollution",
-  //     answer:
-  //       "We promote environmentally-friendly, renewable energy sources such as Biogas to educate rural communities on safe cooking methods, including smokeless technologies like improved chulhas and solar cookers to mitigate indoor air pollution.",
-  //     open: false,
-  //   },
-  // ]);
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
 
-  // const toggleFAQ = (index) => {
-  //   setFaqs(
-  //     faqs.map((faq, i) => {
-  //       if (i === index) {
-  //         faq.open = !faq.open;
-  //       } else {
-  //         faq.open = false;
-  //       }
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
 
-  //       return faq;
-  //     })
-  //   );
-  // };
-
+    slidesToScroll: 1,
+    arrows: true,
+  };
   const Desp = [
     {
       id: 1,
@@ -94,42 +67,22 @@ const Environment = () => {
       <div className="fellowship-nav">
         <h1>Environment</h1>
       </div>
-      <div className="env-hero-cont">
-        <h1 className="environment-main-head">
-          We aim to cultivate a greener, more sustainable future, ensuring the
-          well-being of both people and the environment.
-        </h1>
-      </div>
+
       <div className="health-container">
         <div className="health-full-img-text"></div>
-        <div className="health-container-section environment-container-section">
-          {/* <div className="health-each-container"> */}
-          {/* <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
-                alt="learn-img"
-                className="health-cont-img"
-              /> */}
-          {/* <div className="health-cont-img-div health-img1"></div>
-                <div className="health-content-section justify-top content-right">
-                  <div className="mission-principles-container-in">
-                  <p className="health-lokarpan-head4">Will you help transform lives today?</p>
-                  <p className="health-lokarpan-head4">Our focus Areas</p>
-                  <p className="health-para">Will you help transform lives today?</p>
-                  <div className="faqs">
-                    {faqs.map((faq, index) => (
-                      <FAQ
-                        faq={faq}
-                        index={index}
-                        key={index}
-                        toggleFAQ={toggleFAQ}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div> */}
+        <div className="env-hero-cont">
+          <h1 className="environment-main-head">
+            We aim to cultivate a greener, more sustainable future, ensuring the
+            well-being of both people and the environment.
+          </h1>
+        </div>
 
+        {/* <div className="new-liv-carousal-cont">
+          <h1 className="livelihood-desp-cards-head">Our Focus Areas</h1>
+        </div> */}
+
+        {/* <div className="health-container-section environment-container-section">
           <div className="livelihood-top-section">
-            <h1 className="livelihood-desp-cards-head">Our Focus Areas</h1>
             <div className="desp-cards environment-desp-cards">
               {Desp.map((item, index) => (
                 <DespCard
@@ -140,7 +93,6 @@ const Environment = () => {
                 />
               ))}
             </div>
-            {/* </div> */}
           </div>
 
           <div className="livelihood-top-section environment-bottom-section">
@@ -173,7 +125,7 @@ const Environment = () => {
                 </span>
               </div>
               <div>
-                <span className="env-l1">Join us in</span>
+                <span className="env-l1">Join us in </span>{" "}
                 <span className="env-l2">
                   our mission to safeguard water resources, replenish depleted
                   ponds, and protect freshwater ecosystems. Together, we'll make
@@ -183,6 +135,114 @@ const Environment = () => {
                 </span>
               </div>
             </div>
+          </div>
+        </div> */}
+
+        <div className="env-carousal-container">
+          <h1 className="env-carousal-head">Our Focus Areas</h1>
+          <Slider
+            {...settings}
+            ref={(slider) => {
+              sliderRef = slider;
+            }}
+          >
+            <div className="env-c">
+              <div className="env-carousal-card">
+                <img
+                  src="https://www.apple.com/v/home-app/f/images/overview/icon/icon_watering__c4f2nr78tay6_large_2x.png"
+                  className="env-card-img"
+                  alt="Slide 1"
+                />
+                <h2 className="env-card-head">
+                  Enhancing Green Cover for a Sustainable Future
+                </h2>
+                <p className="env-card-para">
+                  Lokarpan's tree planting endeavours are paving the way for a
+                  greener, healthier environment for generations to come.
+                </p>
+              </div>
+            </div>
+            <div className="env-c">
+              <div className="env-carousal-card">
+                <img
+                  src="https://www.apple.com/v/home-app/f/images/overview/icon/icon_watering__c4f2nr78tay6_large_2x.png"
+                  className="env-card-img"
+                  alt="Slide 2"
+                />
+                <h2 className="env-card-head">
+                  Tracking Exotic Bird Populations for Biodiversity Conservation
+                </h2>
+                <p className="env-card-para">
+                  Our efforts in bird migration tracking contribute to
+                  scientific knowledge and vital conservation strategies,
+                  ensuring the continued existence of these fascinating avian
+                  species.
+                </p>
+              </div>
+            </div>
+            <div className="env-c">
+              <div className="env-carousal-card">
+                <img
+                  src="https://www.apple.com/v/home-app/f/images/overview/icon/icon_watering__c4f2nr78tay6_large_2x.png"
+                  className="env-card-img"
+                  alt="Slide 3"
+                />
+                <h2 className="env-card-head">
+                  Promoting Sustainable Water Management for Community
+                  Well-being
+                </h2>
+                <p className="env-card-para">
+                  Through education and advocacy, we work towards the
+                  maintenance and restoration of local water bodies, ensuring
+                  sustainable access to clean water for rural communities.
+                </p>
+              </div>
+            </div>
+            <div className="env-c">
+              <div className="env-carousal-card">
+                <img
+                  src="https://www.apple.com/v/home-app/f/images/overview/icon/icon_watering__c4f2nr78tay6_large_2x.png"
+                  className="env-card-img"
+                  alt="Slide 3"
+                />
+                <h2 className="env-card-head">
+                  Renewable Energy Solutions for a Sustainable Tomorrow
+                </h2>
+                <p className="env-card-para">
+                  Lokarpan leads the charge in renewable energy production,
+                  committed to a low carbon footprint for a cleaner, greener
+                  future.
+                </p>
+              </div>
+            </div>
+            <div className="env-c">
+              <div className="env-carousal-card">
+                <img
+                  src="https://www.apple.com/v/home-app/f/images/overview/icon/icon_watering__c4f2nr78tay6_large_2x.png"
+                  className="env-card-img"
+                  alt="Slide 3"
+                />
+                <h2 className="env-card-head">
+                  Addressing Indoor Air Pollution
+                </h2>
+                <p className="env-card-para">
+                  We promote environmentally-friendly, renewable energy sources
+                  such as Biogas to educate rural communities on safe cooking
+                  methods, including smokeless technologies like improved
+                  chulhas and solar cookers to mitigate indoor air pollution.
+                </p>
+              </div>
+            </div>
+          </Slider>
+          <div className="env-arrows-cont">
+            <button className="left-arrow-box" onClick={previous}>
+              <div className="left-arrow"></div>
+            </button>
+            <button className="right-arrow-box" onClick={next}>
+              <div className="right-arrow"></div>
+            </button>
+            {/* <IoIosArrowDropleft className="each-arrow" onClick={previous} />
+          <IoIosArrowDropright className="each-arrow" onClick={next} /> */}
           </div>
         </div>
 
@@ -200,13 +260,6 @@ const Environment = () => {
             </button>
           </Link>
         </div>
-
-        {/* <div className="health-full-img space-below">
-            <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704818233/image_176_tcqfoh.png"
-              alt="health-img"
-            />
-          </div> */}
       </div>
 
       <Footer />

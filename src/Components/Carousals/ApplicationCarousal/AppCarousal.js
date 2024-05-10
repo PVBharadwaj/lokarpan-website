@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./AppCarousal.css";
@@ -94,11 +95,23 @@ const AppCarousal = () => {
     settings.slidesToShow = 4;
   }
 
+  const carouselRef = useRef(null); // Ref to access the carousel component
+
+  // Function to handle clicking the previous arrow
+  const handlePrev = () => {
+    carouselRef.current && carouselRef.current.slidePrev();
+  };
+
+  // Function to handle clicking the next arrow
+  const handleNext = () => {
+    carouselRef.current && carouselRef.current.slideNext();
+  };
+
   return (
     <>
       <div className="carousel-container">
         <div>
-          <Slider className="slider" {...settings}>
+          <Slider className="slider" {...settings} ref={carouselRef}>
             {items.map((item, index) => (
               <div
                 key={index}

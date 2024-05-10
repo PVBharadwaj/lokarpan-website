@@ -9,24 +9,30 @@
   min-height: 600px;
   height: auto;
   background-color: aquamarine;
+  padding: 50px 0px;
 }
 .d_home_hero_head1 {
-  font-size: 52px;
-  width: 80%;
+  font-size: 96px;
+  width: 70%;
   margin: 0px auto;
-  font-weight: bold;
+  font-weight: 700;
+  max-width: 1100px;
+  letter-spacing: -1.44px;
+  line-height: 100px;
 }
 .d_home_hero_head2 {
   font-size: 64px;
   font-weight: bold;
 }
 .d_home_hero_content {
-  width: 80%;
+  width: 70%;
+  max-height: 1100px;
   margin: 0px auto;
-  font-size: 28px;
-  font-weight: 500;
-  margin-top: 50px;
-  line-height: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 26px;
+  line-height: 36px;
+  letter-spacing: 0.128px;
 }
 .d_home_section1 {
   display: flex;
@@ -56,26 +62,38 @@
 .image_right {
   background-color: #f5eee6;
 }
-.link-text {
-  margin-top: 30px;
+.link-para {
   font-size: 17px;
   font-weight: 400;
-  color: #3f86f0;
+  color: rgb(29, 29, 31);
   line-height: 25px;
+  letter-spacing: -0.374px;
+  margin: 30px 0px;
 }
+
 .image_left {
   background-color: #f8edff;
 }
 .d_home_section2 {
+  text-align: center;
+  padding: 3rem 15%;
+  font-size: 1.5rem;
+  background-color: black;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 3rem 10%;
-  font-size: 1.5rem;
+  margin: 100px 0px;
 }
+
 .d_home_section2 h1 {
-  font-size: 48px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.128px;
   margin-bottom: 50px;
+  color: rgb(110, 110, 115);
 }
 .d_home_section2_image {
   padding-bottom: 4rem;
@@ -124,12 +142,32 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding: 50px 0px;
 }
 .guideline_design h1 {
-  font-size: 64px;
-  width: 80%;
+  font-size: 96px;
+  width: 70%;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -1.44px;
   margin: 0px auto;
   text-align: center;
+}
+.d-home-link {
+  color: rgb(41, 151, 255);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.126px;
+  line-height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.d-home-link:hover {
+  text-decoration: underline;
+}
+.mar-below-space {
+  margin-bottom: -4px;
+  stroke-width: 15px;
 }
 
 .d_home_section1_mobile_image {
@@ -201,10 +239,27 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+.new-btn-design {
+  height: 50px;
+  width: 160px;
+  border-radius: 25px;
+  border: 2px solid rgb(39, 39, 41);
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: rgb(39, 39, 41);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.374px;
+  line-height: 20px;
+}
 .new-our-projects-each-left-cont h1 {
   font-size: 48px;
   font-weight: 600;
   /* line-height: 1.0834933333; */
+  line-height: 52px;
+  letter-spacing: -0.144px;
 }
 .new-total-cont {
   background-color: #f2f8ff;
@@ -236,13 +291,23 @@
 
 .new-guidelines-sec {
   width: 85%;
-  margin: 100px auto;
+  margin: 150px auto;
   height: auto;
 }
 
 .new-guidelines-sec h1 {
   font-size: 48px;
   font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.144px;
+}
+.new-guidelines-sec p {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.228px;
+  line-height: 23px;
+  color: rgb(29, 29, 31);
+  margin: 30px 0px;
 }
 
 .new-guidelines-sec a {
@@ -251,7 +316,9 @@
   margin: 40px auto;
   display: inline-block;
   text-decoration: none;
+  margin-top: 0;
 }
+
 .new-guidelines-sec a:hover {
   text-decoration: underline;
 }
@@ -263,11 +330,63 @@
 .g-l1 {
   font-size: 48px;
   font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.144px;
 }
 .g-l2 {
   color: rgb(134, 134, 139);
   font-size: 48px;
   font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.144px;
+}
+.new-design-carousal-container {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  position: relative;
+  margin: 150px 0px;
+}
+.new-design-carousal-card-out {
+  height: 650px;
+}
+.new-design-carousal-card {
+  width: 95%;
+  height: 80%;
+  border-radius: 30px;
+}
+.des-card1 {
+  background-image: url("https://www.apple.com/v/environment/z/images/overview/people_conserve__f4scnercv8mu_large_2x.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.des-card2 {
+  background-image: url("https://www.apple.com/v/environment/z/images/overview/people_energy__f0ej8xduixym_large_2x.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.des-card3 {
+  background-image: url("https://www.apple.com/v/environment/z/images/overview/people_carbon__cvwqtl8av9yu_large_2x.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.des-card4 {
+  background-image: url("https://www.apple.com/v/environment/z/images/overview/people_climate__bosgd4mutfma_large_2x.jpg");
+  background-position: cover;
+  background-size: cover;
+}
+
+.des-arrows-cont {
+  position: absolute;
+
+  bottom: 0px;
+  height: 50px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -301,8 +420,26 @@
   }
 }
 @media (max-width: 850px) {
+  .new-design-carousal-container {
+    height: 600px;
+  }
   .guideline_design h1 {
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.144;
+  }
+  .new-guidelines-sec h1 {
+    font-size: 40px;
+  }
+  .g-l1 {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.196px;
+  }
+  .g-l2 {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.196px;
   }
   .d_home_hero_content {
     padding: 1rem 1.5rem;
@@ -311,8 +448,10 @@
     padding: 0;
   }
   .d_home_hero_head1 {
-    padding-top: 4rem;
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.144px;
+    width: 80%;
   }
   .d_home_hero_head2 {
     padding-bottom: 2rem;
