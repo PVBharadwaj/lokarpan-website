@@ -345,7 +345,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             style={{ fontSize: "20px" }}
           /> */}
-          <li className="navbar-item mobile-padding-left">
+          <li className="navbar-item mobile-padding-left mobile-padding-top">
             <Link to="/kith/overview">Overview</Link>
           </li>
           <li

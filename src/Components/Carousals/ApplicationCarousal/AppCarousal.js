@@ -95,18 +95,6 @@ const AppCarousal = () => {
     settings.slidesToShow = 4;
   }
 
-  const carouselRef = useRef(null); // Ref to access the carousel component
-
-  // Function to handle clicking the previous arrow
-  const handlePrev = () => {
-    carouselRef.current && carouselRef.current.slidePrev();
-  };
-
-  // Function to handle clicking the next arrow
-  const handleNext = () => {
-    carouselRef.current && carouselRef.current.slideNext();
-  };
-
   return (
     <>
       <div className="carousel-container">

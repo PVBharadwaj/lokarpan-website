@@ -75,6 +75,10 @@
   padding: 100px 123px;
 }
 
+.life-at-school{
+  width: 100%;
+}
+
 .clubs-div {
   display: flex;
   gap: 24px;
