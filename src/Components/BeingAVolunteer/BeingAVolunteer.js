@@ -21,6 +21,7 @@ const BeingAVolunteer = () => {
           </p>
         </div>
         <h1 className="vol-head-div-text">Why?</h1>
+        
         <FlipCard />
         <FlipCard2 />
         <FlipCard3 />

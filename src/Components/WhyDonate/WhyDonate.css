@@ -120,12 +120,13 @@
   padding: 0px 5%;
 }
 
-.donate-card-text h1 {
-  font-size: 28px;
+.donate-card-text h1{
+  font-size: 64px;
+  font-weight: 700;
 }
 .donate-card-text p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   color: #333333;
   line-height: 32px;
 }

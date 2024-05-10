@@ -78,12 +78,12 @@
 .carousel-inner p {
   font-size: 18px;
   color: #333333;
-  font-weight: 500;
+  padding-right: 2rem;
+  font-weight: 600;
 }
 
 .carousel-inner h2,
-.carousel-inner h3,
-.carousel-inner p {
+.carousel-inner h3 {
   padding-right: 20px;
 }
 
