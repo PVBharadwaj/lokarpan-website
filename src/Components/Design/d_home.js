@@ -26,13 +26,6 @@ export default class d_home extends Component {
           </div>
         </section>
         {/* ------------------------------------------------------------- */}
-        {/* <section className="d_home_section1_mobile">
-          <div className="d_home_section1_mobile_image"></div>
-          <h1 className="d_home_section1_mobile_text">
-            Help management understand how planning can cut long term costs and
-            add value to construction
-          </h1>
-        </section> */}
 
         {/* ------------------------------------------------------------- */}
         <div className="new-total-cont">
@@ -68,58 +61,9 @@ export default class d_home extends Component {
             </div>
           </div>
         </div>
-        {/* <section className="d_home_section1">
-          <div className="d_home_section1_left image_left"></div>
-
-          <div className="d_home_section1_right">
-            <h1>
-              Design can be a powerful force for positive environmental impact.
-            </h1>
-            <Link to="/" className="link-text">
-              Browse our design initiatives tailored for rural school
-              infrastructure
-            </Link>
-          </div>
-        </section> */}
-        {/* <section className="d_home_section1_mobile">
-          <div className="d_home_section1_mobile_image"></div>
-          <h1 className="d_home_section1_mobile_text">
-            Design can be a powerful force for positive environmental impact.
-          </h1>
-          <Link to="/designlist" className="link-text">
-            Browse our design initiatives tailored for rural school
-            infrastructure
-          </Link>
-        </section> */}
 
         {/* ------------------------------------------------------------- */}
 
-        {/* ------------------------------------------------------------- */}
-
-        {/* <section className="d_home_section3">
-          <h1>Design Guidelines</h1>
-          <div className="d_home_section3_box">
-            <div className="d_home_section3_content">
-              <h1>
-                We build, design and model perfect rural structures serving
-                their best interests of its communities
-              </h1>
-            </div>
-
-            <div className="d_home_section3_image"></div>
-          </div>
-        </section> */}
-        {/* ------------------------------------------------------------- */}
-        <section className="d_home_section1_mobile">
-          <h1 className="d_home_section1_mobile_guideline">
-            Design Guidelines
-          </h1>
-          <div className="d_home_section1_mobile_image"></div>
-          <h1 className="d_home_section1_mobile_text">
-            We build, design and model perfect rural structures serving their
-            best interests of its communities
-          </h1>
-        </section>
         {/* <p className="design-p">
           Lokarpan's latest initiative—the Rural Planning and School Design
           Guidelines—ushers in a new era of educational infrastructure. By

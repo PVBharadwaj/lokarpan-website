@@ -52,42 +52,36 @@ class Livelihood extends Component {
             Building sustainable futures for communities living in stress.
           </h1>
           <div className="livelihood-full-img-text"></div>
+          <div className="new-liv-grid-sec">
+            <h1 className="new-liv-grid-head">Our Approach</h1>
+            <div className="env-grid-sec">
+              <div>
+                <span className="env-l1"> At Lokarpan,</span>
+                <span className="env-l2">
+                  our approach to livelihood development is rooted in
+                  empowerment and sustainability.
+                </span>
+              </div>
+              <div>
+                <span className="env-l1">We believe</span>{" "}
+                <span className="env-l2">
+                  in creating lasting change by providing opportunities for
+                  skill development, fostering entrepreneurship, and
+                  facilitating access to markets.
+                </span>
+              </div>
+              <div>
+                <span className="env-l1">By focusing on </span>{" "}
+                <span className="env-l2">
+                  self-sufficiency, improving agricultural practices, and
+                  enhancing trade networks, we pave the way for communities to
+                  thrive and grow economically.
+                </span>
+              </div>
+            </div>
+          </div>
 
           <div className="health-container-section livelihood-cont-section">
-            <div
-              style={{ marginBottom: "50px" }}
-              className="health-each-container"
-            >
-              <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Our Approach</h1>
-                <p className="health-para">
-                  At Lokarpan, our approach to livelihood development is rooted
-                  in empowerment and sustainability. We believe in creating
-                  lasting change by providing opportunities for skill
-                  development, fostering entrepreneurship, and facilitating
-                  access to markets. By focusing on self-sufficiency, improving
-                  agricultural practices, and enhancing trade networks, we pave
-                  the way for communities to thrive and grow economically.
-                  <br />
-                </p>
-              </div>
-              <div className="health-cont-img-div health-img2"></div>
-            </div>
-            {/* <div className="livelihood-top-section environment-bottom-section">
-              <h1>Strengthening Livelihoods Across Every Link in the Chain</h1>
-              <p>
-                In the face of growing economic challenges, particularly amidst
-                the global pandemic, securing livelihoods stands as a crucial
-                mission within Lokarpan's work across various sectors.
-              </p>
-              <p>
-                As a dedicated advocate for empowering communities, Lokarpan
-                focuses on bolstering each pivotal element in the livelihood
-                supply chain. Our programs are designed to support every aspect
-                of livelihood development, ensuring that underserved communities
-                have access to the resources they need to thrive.
-              </p>
-            </div> */}
             <div className="new-liv-sec">
               <h1>Strengthening Livelihoods Across Every Link in the Chain.</h1>
               <p>
