@@ -81,7 +81,7 @@ class OurRole extends Component {
           </div>
           <div className="our-role-topdiv">
             <p>
-            We concentrate our efforts in areas where we can make the greatest difference.
+            We prioritise our efforts where they matter most.
             </p>
           </div>
           <div className="menu-items">

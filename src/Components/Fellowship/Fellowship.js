@@ -68,26 +68,35 @@ const Fellowship = () => {
           
       <div className="fellowship-page">
       <div className="third-div">
-          <h3 style={{fontSize: "64px", fontWeight: "600"}} className="impact-head">ACCLERATING IMPACT</h3>
+          <h3 className="impact-head">ACCLERATING IMPACT</h3>
           <h2 className="impact-title">
           We provide support through a combination of funding, innovation and technical expertise.
           </h2>
         </div>
-        <div className="second-div">
+        {/* ****************  second-div class also used in moonshots */}
+        <div className="second-div fellow-second-div">
           <div className="sub-div">
             <img
               className="fellow-img"
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708613081/DSC03865_1_qx9uvp.png"
               alt="img1"
             />
-            <h3 className="impact-title">We look for big ideas.</h3>
-            <p className="fellow-data fellow-space-above">
+            <p className="fellow-large-text">
+              <span className="fellow-large-text-head">We look for big ideas.</span>
               By joining Lokarpan Fellows, you become part of a community-driven
               initiative where your insights, experiences, and ideas are not
               just valued but actively sought after. Whether you're working in a
-              {/* classroom, collaborating with our teams, or engaging directly with
-              communities, your voice matters. */}
+              classroom, collaborating with our teams, or engaging directly with
+              communities, your voice matters.
             </p>
+            {/* <h3 className="impact-title">We look for big ideas.</h3>
+            <p className="fellow-data fellow-data-no-padding fellow-space-above">
+              By joining Lokarpan Fellows, you become part of a community-driven
+              initiative where your insights, experiences, and ideas are not
+              just valued but actively sought after. Whether you're working in a
+              classroom, collaborating with our teams, or engaging directly with
+              communities, your voice matters.
+            </p> */}
           </div>
           <div className="sub-div">
             <img
@@ -95,16 +104,26 @@ const Fellowship = () => {
               src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1714983509/IMG_3313_2_vdy6sq.png"
               alt="img2"
             />
-            <h3 className="impact-title">Our Approach is Community Centric</h3>
-            <p className="fellow-data">
+            <p className="fellow-large-text">
+              <span className="fellow-large-text-head">Our Approach is Community Centric </span>
               We believe that true solutions emerge when we listen closely to
               the voices of the communities we serve. By engaging directly with
               those most affected by social challenges, we gain valuable
-              {/* insights into their needs and aspirations. Together, we co-create
+              insights into their needs and aspirations. Together, we co-create
               innovative initiatives and programs that have a meaningful impact
               and pave the way for a more equitable society. engaging directly
-              with communities, your voice matters. */}
+              with communities, your voice matters.
             </p>
+            {/* <h3 className="impact-title">Our Approach is Community Centric</h3>
+            <p className="fellow-data fellow-data-no-padding">
+              We believe that true solutions emerge when we listen closely to
+              the voices of the communities we serve. By engaging directly with
+              those most affected by social challenges, we gain valuable
+              insights into their needs and aspirations. Together, we co-create
+              innovative initiatives and programs that have a meaningful impact
+              and pave the way for a more equitable society. engaging directly
+              with communities, your voice matters.
+            </p> */}
           </div>
         </div>
         {/* <div className="third-div">
@@ -282,13 +301,13 @@ const Fellowship = () => {
         </div>
       </div>
 
-      <button className="button1 mobile-home1" onClick={handlePauseClick}>
+      {/* <button className="button1 mobile-home1" onClick={handlePauseClick}>
         {!isPaused ? (
           <PiPauseCircleThin className="carousal-icon1" />
         ) : (
           <PiPlayCircleThin className="carousal-icon1" />
         )}
-      </button>
+      </button> */}
 
       <div style={{marginBottom: "0px"}} className="opp grey-back ">
           <h1 className="blue-font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</h1>
@@ -354,7 +373,7 @@ const Fellowship = () => {
 
       <div style={{marginTop: "0px"}} className="donate-section">
           {/* <h1 className="last-space">Be a Catalyst for Change</h1> */}
-          <p className="our-role-font24">
+          <p className="our-role-font24 fellow-width-800">
           At Lokarpan, we believe in broadening your skills and experiences.
           While you'll contribute your unique talents and insights, you'll also
           have the chance to learn and grow in a diverse and dynamic

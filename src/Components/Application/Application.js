@@ -14,21 +14,44 @@ const Plans = [
     color: "appblue",
     name: "Basic",
     cost: "₹100/mo.",
-    features: "loremipsum loremipsum",
+    desp: "Save $9/mo.** on your favorite content and iCloud+ storage.",
+    // features: "loremipsum loremipsum",
+    features1: [
+      "icloud",
+      "tv",
+      "music",
+      "arcade",
+    ],
     type: "Basic",
   },
   {
     color: "red",
     name: "Plus",
     cost: "₹100/mo.",
-    features: "loremipsum loremipsum",
+    desp: "Save $9/mo.** on your favorite content and iCloud+ storage.",
+    // features: "loremipsum loremipsum",
+    features1: [
+      "icloud",
+      "tv",
+      "music",
+      "arcade",
+    ],
     type: "Plus",
   },
   {
     color: "green",
     name: "Pro",
     cost: "₹100/mo.",
-    features: "loremipsum loremipsum",
+    desp: "Save $9/mo.** on your favorite content and iCloud+ storage.",
+    // features: "loremipsum loremipsum",
+    features1: [
+      "icloud",
+      "tv",
+      "music",
+      "arcade",
+      'fitness', 
+      'news',
+    ],
     type: "Pro",
   },
 ];
@@ -81,6 +104,7 @@ const Application = () => {
             Lokarpan presents a suite of digital applications to redefine
             classroom strategies
           </h1>
+          {/* className="application-para1"  -- used in approach -> index.js */}
           <p className="application-para1">
             The education sector is constantly evolving, and technology has
             played a significant role in shaping the way we learn. Our goal? To
@@ -112,15 +136,20 @@ const Application = () => {
           </div>
         </div>
       </div>
-      <div className="app-page">
-        <h1 className="title2">
+      <div className="app-page app-div-bottom ">
+        <div className="app-div">
+        {/* <h1 className="title2"> */}
+        <h1 className="app-title title2">
           Empower Teaching and Learning with Advanced Tools
         </h1>
-        <p className="app-para-5">
+        {/* <p className="app-para-5"> */}
+        <p className="application-para1 app-para-5">
           Unlock the potential of personalised learning experiences, instant
           feedback, enhanced accessibility, well-being tracking, fortified
           digital security, and time-saving solutions for educators.
         </p>
+        </div>
+
       </div>
       {/* <AppCarousel /> */}
 
@@ -132,7 +161,7 @@ const Application = () => {
               <div className="square-cards-each-cont">
                 <div className="icon">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png"
                     className="dig-icon-img"
                   />
                 </div>
@@ -144,7 +173,7 @@ const Application = () => {
               <div className="square-cards-each-cont">
                 <div className="icon">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784144/Group_1762_qugdzn.png"
+                    src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png"
                     className="dig-icon-img"
                   />
                 </div>
@@ -156,7 +185,7 @@ const Application = () => {
               <div className="square-cards-each-cont">
                 <div className="icon">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784137/Group_1761_xkcnfs.png"
+                    src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png"
                     className="dig-icon-img"
                   />
                 </div>
@@ -168,7 +197,7 @@ const Application = () => {
               <div className="square-cards-each-cont">
                 <div className="icon">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784129/Group_1755_sfm8yd.png"
+                    src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png"
                     className="dig-icon-img"
                   />
                 </div>
@@ -180,7 +209,7 @@ const Application = () => {
               <div className="square-cards-each-cont">
                 <div className="icon">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png"
                     className="dig-icon-img"
                   />
                 </div>
@@ -192,7 +221,7 @@ const Application = () => {
               <div className="square-cards-each-cont">
                 <div className="icon">
                   <img
-                    src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708784153/Group_1759_cdfdoy.png"
+                    src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1713120024/shuffle_ehqjjw.png"
                     className="dig-icon-img"
                   />
                 </div>
@@ -205,33 +234,25 @@ const Application = () => {
 
           </div>
       </div>
-
-
-      <div className="square-cards">
-        {/* <div>Track student performance on leaderboards</div> */}
-        {/* <div>Gamify results to boost student engagement</div> */}
-        {/* <div>Track health and nutrition metrics and submit sickness reports</div> */}
-        {/* <div>Gather insights into education and health trends across institutions</div>
-        <div>Gather insights into education and health trends across institutions</div> */}
-      </div>
       <div className="app-page">
-        <div className="app-div app-div-bottom">
+        <div className="app-div">
           <div className="plan">
-            <h1 className="app-title title3">Access one of our plans below</h1>
-            <p className="app-para-4">
+            <h1 className="app-title title2">Access one of our plans below</h1>
+            {/* <p className="app-para-4"> */}
+        <p className="application-para1 app-para-5">
               In education, technology serves as a powerful supplement to the
               expertise and creativity of educators. Our commitment to
               responsible tech practices ensures that our tools are
               human-centered and meticulously designed to enhance teaching and
               learning experiences.
             </p>
-            <div className="choose-plan">
+            {/* <div className="choose-plan">
               <h4 className="choose-plan-head">Plans</h4>
               <p className="choose-plan-second-head">Choose your plan</p>
               <p className="choose-plan-para">
                 We are here to help you to choose correct plan.
               </p>
-            </div>
+            </div> */}
             <div className="app-card-list">
               {Plans.map((item, index) => (
                 <Card key={index} item={item} />
@@ -240,15 +261,15 @@ const Application = () => {
           </div>
         </div>
       </div>
-      <div className="browse">
+      {/* <div className="browse">
         <div className="browse-text">
           <h1 className="title3">
             Learn more about our organisation’s code of conduct.
           </h1>
 
-          {/* <button className="app-apply-btn" onClick={() => openpopup(0)}>
+          <button className="app-apply-btn" onClick={() => openpopup(0)}>
             Code of Conduct
-          </button> */}
+          </button>
         </div>
         <div className="browse-img"></div>
       </div>
@@ -332,7 +353,7 @@ const Application = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="donate-section">
         <h1 className="last-space">Be a Catalyst for Change</h1>
@@ -355,27 +376,39 @@ const Application = () => {
 const Card = ({ item }) => {
   return (
     <div className="plan-list">
-      <h1 className={item.color}>
-        <FaRegGem className="app-card-icon" />
+      <h3 className="plan-list-font">
+      {/* <h1 className={item.color}> */}
+        {/* <FaRegGem className="app-card-icon" /> */}
         {item.name}
-      </h1>
-      <h1>{item.cost}</h1>
-      <p>
-        <FaCheckCircle className={`app-card-icon ${item.color}`} />
-        {item.features}
-      </p>
-      <p>
-        <FaCheckCircle className={`app-card-icon ${item.color}`} />
-        {item.features}
-      </p>
-      <p>
-        <FaCheckCircle className={`app-card-icon  ${item.color}`} />
-        {item.features}
-      </p>
-      <p>
-        <FaCheckCircle className={`app-card-icon  ${item.color}`} />
-        {item.features}
-      </p>
+      </h3>
+      <h1 className={item.color}>{item.cost}</h1>
+      <p className="plan-list-desp">{item.desp}</p>
+      <hr style={{margin: "10px 0px"}} />
+      <div className="features-div">
+        {item.features1.map((feature, index) => (
+          <p key={index}>
+            <FaCheckCircle className={`app-card-icon ${item.color}`} />
+            {feature}
+          </p>
+        ))}
+        {/* <p>
+          <FaCheckCircle className={`app-card-icon ${item.color}`} />
+          {item.features}
+        </p>
+        <p>
+          <FaCheckCircle className={`app-card-icon ${item.color}`} />
+          {item.features}
+        </p>
+        <p>
+          <FaCheckCircle className={`app-card-icon  ${item.color}`} />
+          {item.features}
+        </p>
+        <p>
+          <FaCheckCircle className={`app-card-icon  ${item.color}`} />
+          {item.features}
+        </p> */}
+      </div>
+
       <div className="apply-btn transparent">
         <Link to="/donate" className="apply-btn-text-black body-btn">
           Choose {item.type}

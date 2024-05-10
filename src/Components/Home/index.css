@@ -234,7 +234,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 96%;
+  /* width: 96%; */
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease; /* Add transition for the background */
@@ -280,6 +281,14 @@
   padding-right: 20px;
 }
 
+.home-head-42{
+  font-size: 42px;
+}
+
+.large-font-head{
+  font-size: 64px;
+}
+
 .slider {
   margin-bottom: 30px;
 }
@@ -292,7 +301,7 @@
   height: 50px;
 }
 .who-we-are {
-  height: 319px;
+  /* height: 319px; */
   width: calc(100% - 300px);
   margin: 150px auto;
   display: flex;
@@ -365,18 +374,19 @@
   align-items: center;
 }
 .row-container {
-  height: 184px;
+  /* height: 184px; */
   width: 80%;
   margin: auto;
   display: flex;
+  gap: 30px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 215px;
-  margin-bottom: 360px;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 .row-element {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -391,7 +401,7 @@
   overflow: hidden;
 }
 .under-cont {
-  width: 200px;
+  /* width: 200px; */
   height: 100%;
 }
 
@@ -609,6 +619,10 @@
     align-self: flex-start;
     margin-left: 30px;
     z-index: 1;
+  }
+
+  .large-font-head{
+    font-size: 32px;
   }
 
   .arrows-cont1 {
@@ -853,6 +867,17 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .row-container {
+    width: 90%;
+  }
+
+  .design-img {
+    height: 90%;
+    width: 150px;
+  }
+}
+
 @media screen and (max-width: 393px) {
   .home-upper-section-head3 {
     width: calc(100% - 30px);
@@ -861,17 +886,11 @@
     width: calc(100% - 32px);
     height: 300px;
   }
-  .row-container {
-    width: 90%;
-  }
 
   .home-images-container {
     width: calc(100% - 32px);
   }
-  .design-img {
-    height: 90%;
-    width: 150px;
-  }
+
   .under-cont {
     height: 90%;
   }

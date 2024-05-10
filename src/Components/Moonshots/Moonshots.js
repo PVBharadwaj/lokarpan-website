@@ -1,3 +1,4 @@
+import MoonshotCarousel from "../Carousals/MoonshotCarousel/MoonshotCarousel";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Moonshots.css";
@@ -37,10 +38,12 @@ const Moonshots = () => {
             thrive in the digital age.
           </p>
         </div> */}
-        <p className="moonshots-head">Our Focus Areas</p>
-        <div className="second-div moonshots-div no-max-width-set">
+        <p className="moonshots-head padding-bottom-80">Our Focus Areas</p>
+        <MoonshotCarousel />
+        {/* second-div class taken from fellowshihp.js */}
+        {/* <div className="second-div moonshots-div no-max-width-set">
           <div className="moonshots-sub-div moonshots-img1">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "pink"}} className="moons-text-div">
               <p className="moons-head">Progressive Curriculum</p>
               <p className="moons-text">
                 Developing technology-driven, innovative curriculum to empower
@@ -49,7 +52,7 @@ const Moonshots = () => {
             </div>
           </div>
           <div className="moonshots-sub-div moonshots-img2">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "#a4fba4"}} className="moons-text-div">
               <p className="moons-head">Empowering Educators</p>
               <p className="moons-text">
                 Equipping teachers with skills for engaging lesson plans,
@@ -58,7 +61,7 @@ const Moonshots = () => {
             </div>
           </div>
           <div className="moonshots-sub-div moonshots-img3">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "#ff8cff"}} className="moons-text-div">
               <p className="moons-head">Strategic Partnerships</p>
               <p className="moons-text">
                 Forging collaborations with higher education institutes,
@@ -67,7 +70,7 @@ const Moonshots = () => {
             </div>
           </div>
           <div className="moonshots-sub-div moonshots-img4">
-            <div className="moons-text-div">
+            <div style={{backgroundColor: "#c3c3ff"}} className="moons-text-div">
               <p className="moons-head">Infrastructure Investment</p>
               <p className="moons-text">
                 Building modern facilities and classrooms to inspire creativity
@@ -75,9 +78,9 @@ const Moonshots = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="donate-section">
+      <div className="donate-section moonshots-margin-top">
         <h1 className="last-space">Be a Catalyst for Change</h1>
         <p className="our-role-font24">
           Join Lokarpan in our mission to combat social and economic

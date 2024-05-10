@@ -101,11 +101,15 @@ const Approach = () => {
             <h1 className="white-head">
               Inspiring every kind of learner.
             </h1>
-            <p className="white-head">
+            {/* <p className="white-head">
             At Lokarpan, we are committed to reshaping the landscape of education, ensuring that every child has the opportunity to thrive and contribute meaningfully to India's bright future.
-            </p>
+            </p> */}
 
         </div>
+        {/* className="application-para1"  -- taken from application.js */}
+          <p className="application-para1 approach-para1">
+          At Lokarpan, we are committed to reshaping the landscape of education, ensuring that every child has the opportunity to thrive and contribute meaningfully to India's bright future.
+          </p>
         {/* <div className="taglines-section">
           <h1>
             A delivery system that revolutionises education at the systemic

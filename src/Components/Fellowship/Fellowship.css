@@ -99,7 +99,7 @@
 
 .second-div {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   gap: 15px;
   padding: 100px 0px;
@@ -144,7 +144,7 @@
   align-items: center;
   flex-direction: column;
   gap: 24px;
-  margin: 150px auto 70px !important;
+  margin: 70px auto !important;
 }
 
 .impact-div {
@@ -160,8 +160,8 @@
 }
 
 .impact-head {
-  /* font-size: 24px; */
-  font-size: 64px;
+  font-size: 24px;
+  /* font-size: 64px; */
   color: #181818;
   /* font-weight: 500; */
   font-weight: 600;
@@ -183,11 +183,17 @@
   gap: 24px;
 }
 
+.fellow-width-800{
+  width: 800px;
+}
+
 .fourth-div-data {
-  padding: 0px 120px;
-  font-size: 20px;
-  color: #333333;
-  margin-bottom: 100px;
+    /* padding: 0px 120px; */
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 100px;
+    font-weight: 700;
+    max-width: 1000px;
 }
 
 .fourth-div > .impact-title {
@@ -230,6 +236,26 @@
   font-size: 24px;
   font-weight: 500;
   text-align: left;
+}
+
+.fellow-second-div{
+  flex-direction: column;
+}
+
+.fellow-data-no-padding{
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.fellow-large-text{
+  padding: 20px 0px 80px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #555;
+}
+
+.fellow-large-text-head{
+  color: #181818;
 }
 
 .fellow-what-sec{
@@ -279,20 +305,27 @@
 }
 
 .fellow-carousal-cont1 {
-  height: 500px !important;
+  height: 600px !important;
 }
 .fellow-each-carousal1 {
-  height: 390px !important;
+  /* height: 390px !important; */
+  height: 450px !important;
+  width: 330px !important;
 }
 
 .fellow-carousal1 {
-  height: 346px !important;
+  height: calc(100% - 50px);
+  width: unset;
 }
 .fellow-carousal1-img {
-  height: 346px !important;
+  height: 100%;
 }
 .mobile-home1 {
   display: none;
+}
+
+.fellow-carousal-cont1 .rfm-marquee {
+  min-width: unset;
 }
 
 @media screen and (max-width: 748px) {
@@ -308,7 +341,9 @@
   .fellow-carousal1-img {
     height: 300px !important;
   }
-
+  .fellow-width-800{
+    width: calc(100% - 40px);
+  }
   .mobile-home1 {
     display: flex;
     margin-top: -70px;

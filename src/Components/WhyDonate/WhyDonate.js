@@ -109,8 +109,8 @@ const WhyDonate = () => {
       </div>
 
       <div className="donate-section">
-        <h1 className="last-space">Be a Catalyst for Change</h1>
-        <p className="our-role-font24">
+        <h1 className="last-space1">Be a Catalyst for Change</h1>
+        <p className="our-role-font241">
           Join Lokarpan in our mission to combat social and economic
           disparities, empowering at-risk communities for a brighter future.
           Your support fuels innovation and transformative impact.

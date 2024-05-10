@@ -29,7 +29,7 @@
   height: 500px;
   border-radius: 25px;
   color: white;
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: column;
@@ -64,9 +64,17 @@
   background-size: cover;
 }
 
+.padding-bottom-80{
+  padding-bottom: 80px;
+}
+
+.moonshots-margin-top{
+  margin-top: 200px;
+}
+
 .moons-head {
   width: calc(100% - 40px);
-  padding: 0px 0px 20px 20px;
+  padding: 20px 0px 20px 20px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -80,9 +88,11 @@
 }
 
 .moons-text-div {
-  background-image: linear-gradient(transparent, black);
+  /* background-image: linear-gradient(transparent, black); */
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  color: black;
+  width: 100%;
 }
 
 @media screen and (max-width: 748px) {

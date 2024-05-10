@@ -89,7 +89,7 @@ class DigitalTool extends Component {
                     className="dig-icon-img"
                   />
                 </div>
-                <h4>Learning Management Systems</h4>
+                <h4>Learning Management</h4>
                 <p>
                   Seamlessly manage classrooms, programs, and users with our
                   Hybrid, Google Classroom, Notion, and Wiki platforms.

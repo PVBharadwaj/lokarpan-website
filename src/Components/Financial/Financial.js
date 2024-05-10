@@ -37,7 +37,7 @@ const Financials = () => {
       <FinancialNav navbarTitle="Financials" navitem1="Overview" navitem2="Publications" link1="/financials" link2="/publications" />
       <div className="fin-desp-head">
           <h1>Let’s accelerate sustainable and inclusive growth together.</h1>
-          <p>
+          <p style={{maxWidth: "900px"}}>
             Lokarpan is a non-profit organization registered under the Societies
             Registration Act 1860. Lokarpan is registered u/s 12A of the Income
             Tax Act, 1961. Lokarpan is registered under the Foreign

@@ -32,7 +32,7 @@ const Subscribebtn = () => {
         <div className="popup-back"></div>
         <div className="popup-in">
           <div className="pop">
-            <h2>Subscribe to our Newsletters!</h2>
+            <h2>Get updates from Lokarpan.</h2>
             {/* <i
               onClick={() => {
                 setPopup(false);
@@ -53,7 +53,7 @@ const Subscribebtn = () => {
               <input type="text" placeholder="Email address" />
               <button type="submit">Subscribe</button>
             </form>
-            <p>We respect your privacy. Unsubscribe at any time.</p>
+           
           </div>
         </div>
       </div>
