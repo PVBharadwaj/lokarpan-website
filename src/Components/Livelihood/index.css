@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
   padding-top: 50px;
 }
@@ -95,6 +95,7 @@
   }
   .new-liv-cards {
     flex-direction: column;
+    width: 80%;
   }
   .new-liv-card {
     width: 100%;
