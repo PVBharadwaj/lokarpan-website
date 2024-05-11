@@ -10,39 +10,67 @@ const HowTo = () => {
   const howtoFaqs = [
     {
       id: 1,
-      question: "1. What is Lokarpan?",
-      answer: "Add Text",
+      question: "1. How do I apply for admission to Kith n Kin School?",
+      answer:
+        "You can start the admission process by registering an interest on our website or by contacting our admissions office for further assistance.",
     },
     {
       id: 2,
-      question: "2. How can I involved with Lokarpan?",
-      answer: "Add Text",
+      question:
+        "2. What are the age requirements for admission to different grades?",
+      answer:
+        "Age requirements vary depending on the grade level. Please contact our admissions office for specific age criteria.",
     },
     {
       id: 3,
-      question: "3. Are there any employment opportunities at Lokarpan?",
-      answer: "Add Text",
+      question: "3. What documents are required for the admission process?",
+      answer:
+        "Required documents typically include a completed application form, academic transcripts, birth certificate, copies of aadhar, PEN code, and your UDISE+ number.",
     },
     {
       id: 4,
-      question: "4. How can I support Lokarpan mission financially?",
-      answer: "Add Text",
+      question: "4. Is there an entrance exam for admission?",
+      answer:
+        "Yes, depending on the grade level, applicants may be required to take an entrance exam as part of the admission process. However, we do conduct a basic aptitude and language test during our interview round to determine your eligibility. Please contact our admissions office for more information.",
     },
     {
       id: 5,
-      question:
-        "5. NIs Lokarpan open to collaborations with other organisations?",
-      answer: "Add Text",
+      question: "5. When does the admission process start and end?",
+      answer:
+        "The admission process typically starts in March and ends in August. Specific dates may vary each year, so it's advisable to check our website or contact our admissions office for current information.",
     },
     {
       id: 6,
-      question: "6. How can I stay updated on Lokarpan activities and events?",
-      answer: "Add Text",
+      question:
+        "6. Are there any specific criteria for admission, such as academic or extracurricular achievements?",
+      answer:
+        "Admission criteria may include academic performance, extracurricular activities, and an assessment of the student's character and potential to contribute positively to the school community.",
     },
     {
       id: 7,
-      question: "7. Is Lokarpan only online or does it have physical presence?",
-      answer: "Add Text",
+      question: "7. Is financial aid or scholarships available for students?",
+      answer:
+        "Yes, we offer scholarships to eligible students based on both merit and need. For more information on financial assistance options, please contact our admissions office.",
+    },
+    {
+      id: 8,
+      question: "8. How will I be notified of my admission status?",
+      answer:
+        "You will be notified of your admission status via email or postal mail within a specified timeframe after completing the application process.",
+    },
+    {
+      id: 9,
+      question:
+        "9. Can I schedule a campus tour or interview before applying for admission?",
+      answer:
+        "Yes, we encourage prospective students and their families to schedule a campus tour and interview to learn more about our school community and programs. Please contact our admissions office to arrange a visit.",
+    },
+    {
+      id: 10,
+      question:
+        "10. Whom should I contact if I have further questions about the admission process?",
+      answer:
+        "For any further questions or assistance regarding the admission process, please feel free to contact our admissions office either by phone or email. We're here to help!",
     },
   ];
 
@@ -58,10 +86,9 @@ const HowTo = () => {
   const handleCheckboxChange = (id) => {
     setCheckboxes({
       // ...checkboxes,  //  Spread operator to keep the previous change
-      [id]: !checkboxes[id]
+      [id]: !checkboxes[id],
     });
   };
-
 
   return (
     <>
@@ -69,8 +96,8 @@ const HowTo = () => {
       <KithAdmissionSubNavbar />
       <div className="how-to-upper-section">
         <h1>
-          We are thrilled to extend a warm welcome to you as part of the
-          Lokarpan family.
+          We are thrilled to extend a warm welcome to you as part of the Kith n
+          Kin family
         </h1>
       </div>
       <div className="howto-page">
@@ -91,7 +118,12 @@ const HowTo = () => {
         <div className="how-to-faq-section">
           <div className="how-to-head-sec">
             <h1 className="how-to-faqs-head">Frequently asked Questions</h1>
-            <p className="how-to-faqs-para-1" onClick={() => setShowAll(!showAll)}>Show All</p>
+            <p
+              className="how-to-faqs-para-1"
+              onClick={() => setShowAll(!showAll)}
+            >
+              Show All
+            </p>
           </div>
 
           <ul className="how-to-questions-container-1">
@@ -117,7 +149,7 @@ const HowTo = () => {
         </div>
       </div>
       <div className="howto-apply">
-        <h1>Ready to apply</h1>
+        <h1>Ready to Apply</h1>
         <button className="how-to-apply-btn">Apply</button>
       </div>
       <Footer />

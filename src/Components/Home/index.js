@@ -69,7 +69,12 @@ class Home extends Component {
           </div> */}
 
           <div className="who-we-are">
-            <p style={{padding: "10px 0px 40px 0px"}} className="lokarpan-head4">Our Approach</p>
+            <p
+              style={{ padding: "10px 0px 40px 0px" }}
+              className="lokarpan-head4"
+            >
+              Our Approach
+            </p>
             <h1 className="home-head3 home-head-42">
               Big change is impossible without a little help. For 28 years, we
               have worked closely with communities to identify their needs and
@@ -189,7 +194,7 @@ class Home extends Component {
                   </div>
                 </div>
 
-                <p className="lokarpan-para2">Environemnt</p>
+                <p className="lokarpan-para2">Environment</p>
               </div>
               <div className="each-carousal1">
                 <div className="carousal1">

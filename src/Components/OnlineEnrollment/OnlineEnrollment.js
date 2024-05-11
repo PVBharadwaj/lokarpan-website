@@ -30,7 +30,7 @@ const OnlineEnrollment = () => {
       <div className="enrollment-div">
         <h3>Start your Application</h3>
         <p>
-          Applications to Kith are submitted online via the Common Application. 
+          Applications to Kith are submitted online via the Application Form.
         </p>
       </div>
       <div className="enrollment-form enrollment-card-div enrollment-div">
@@ -39,9 +39,12 @@ const OnlineEnrollment = () => {
           <div className="enrollment-card-text">
             <h3>Application Form</h3>
             <p className="white-txt">
-              A Registration of Interest allows you to submit general and
-              contact information for a parent or guardian as well as the
-              potential candidate’s general information. Read more
+              This form is for submitting detailed information required for the
+              admissions process. It includes general and contact information
+              for a parent or guardian, as well as specific details about the
+              potential candidate's academic background, extracurricular
+              activities, and any other relevant information. Click here to
+              access the Admissions Application Form.
             </p>
             <Link to="/" className="kith-apply-btn white">
               Submit Application
@@ -52,9 +55,12 @@ const OnlineEnrollment = () => {
           <div className="enrollment-card-text">
             <h3>Registration of Interest</h3>
             <p className="white-txt">
-              A Registration of Interest allows you to submit general and
-              contact information for a parent or guardian as well as the
-              potential candidate’s general information. Read more
+              The ROI allows you to express your interest in the school by
+              providing basic general and contact information for a parent or
+              guardian, along with general information about the potential
+              candidate. It serves as an initial step before completing the full
+              admissions application. Click here to submit your Registration of
+              Interest.
             </p>
             <Link to="/" className="kith-apply-btn white">
               Submit ROI
