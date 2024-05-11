@@ -52,10 +52,10 @@ const Health = () => {
         <h1>Health</h1>
       </div>
       <div className="env-hero-cont">
-        <h1 className="environment-main-head">
+        <h1 className="hlth-environment-main-head">
           Join Lokarpan in Bridging the Healthcare Gap for Rural Communities.
         </h1>
-        <h1 className="new-head-text">
+        <h1 className="hlth-new-head-text">
           Join us in our unwavering commitment to make healthcare accessible and
           available to all, particularly in the regions we serve. Our health
           programmes represent our response to the growing healthcare needs of

@@ -92,7 +92,7 @@
 }
 .env-grid-sec div {
   width: 30%;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .env-l1 {
@@ -103,6 +103,7 @@
   color: rgb(134, 134, 139);
   font-size: 18px;
   font-weight: 600;
+  line-height: 24px;
 }
 
 .new-liv-carousal-cont {
@@ -245,6 +246,15 @@
   text-align: center;
   width: 75%;
 }
+.environment-main-head {
+  font-size: 80px;
+  letter-spacing: -1.2px;
+  line-height: 84px;
+  font-weight: 600;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 @media screen and (max-width: 1150px) {
 .env-carousal-card {
@@ -253,6 +263,29 @@
 }
 
 @media screen and (max-width: 748px) {
+  .env-grid-sec {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .env-grid-sec div {
+    width: 90%;
+  }
+  .env-l2 {
+    font-size: 17px;
+    letter-spacing: -0.374px;
+    line-height: 25px;
+  }
+  .env-l1 {
+    font-size: 17px;
+    letter-spacing: -0.374px;
+    line-height: 25px;
+  }
+  .environment-main-head {
+    font-size: 48px;
+    letter-spacing: -0.144px;
+    line-height: 52px;
+    width: 90%;
+  }
   .health-full-img {
     height: 270px;
   }

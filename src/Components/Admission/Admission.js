@@ -19,25 +19,41 @@ const Admission = () => {
         <div className="admission-card">
           <div className="admission-card-img admission-card-img-1"></div>
           <div className="admission-card-text">
-            <h3>Who we are?</h3>
+            <h3>About Us</h3>
             <p>
-              As you embark on this journey with us, your commitment and
-              enthusiasm are integral to our success. Lokarpan is built on the
-              principles of transparency, inclusivity, and empowerment.
+              At the Kith n Kin school, academics take on added dimensions. Here
+              academic striving encompasses a life-long thirst for scholarship
+              and curiosity. The School aims to instil a progressive mind-set
+              and nurture leaders of tomorrow, who will succeed in any endeavour
+              that they turn their hand to, anywhere in the world.
             </p>
           </div>
         </div>
         <div className="admission-card admission-card-reverse">
           <div className="admission-card-text">
-            <h3>Our faculty</h3>
+            <h3>Our Team</h3>
             <p>
-              We are proud to introduce the talented and dedicated individuals
-              who make up our esteemed faculty at Lokarpan Non-Profit
-              Organization. Our faculty members bring a wealth of experience,
-              expertise, and a shared commitment to our mission
+              The School Management Team comprises the principal as the Head of
+              institution assisted by the School's Senior Management Team (SMT).
+              Our faculty members bring a wealth of experience, expertise, and a
+              shared commitment to our mission
             </p>
           </div>
           <div className="admission-card-img admission-card-img-2"></div>
+        </div>
+        <div className="admission-card">
+          <div className="admission-card-img admission-card-img-1"></div>
+          <div className="admission-card-text">
+            <h3>Admissions Information</h3>
+            <p>
+              If you have a child currently enrolled at Kith or one who has
+              recently graduated from Kith, please do not create a separate
+              profile for the new prospective student. Instead, we encourage you
+              to log in with your existing account details. If you don't
+              remember your login information, please reach out to us at
+              Admissions@kithnkinschool.org for assistance.
+            </p>
+          </div>
         </div>
       </div>
       <div className="admissions-div2">
@@ -64,19 +80,19 @@ const Admission = () => {
             <p>Faculty Engagement by the Numbers</p>
           </div>
           <div className="admission-grid-inner3 admissions-grid-inner side-div">
-            <h3>110</h3>
-            <p>Faculty teaching first year seminars</p>
+            <h3>X</h3>
+            <p>Faculty teaching primary and secondary school</p>
           </div>
           <div className="admission-grid-inner4 admissions-grid-inner side-div">
-            <h3>260</h3>
-            <p>Pre-concentration advisors</p>
+            <h3>Y</h3>
+            <p>Technical advisors</p>
           </div>
           <div className="admission-grid-inner5 admissions-grid-inner side-div">
-            <h3>7:1</h3>
+            <h3>X:Y</h3>
             <p>Student-to-faculty ratio</p>
           </div>
           <div className="admission-grid-inner6 admissions-grid-inner side-div">
-            <h3>10</h3>
+            <h3>Z</h3>
             <p>Median course size</p>
           </div>
         </div>

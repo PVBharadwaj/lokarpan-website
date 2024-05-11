@@ -34,6 +34,46 @@ export default class d_home3 extends Component {
       centerMode: true,
       centerPadding: "13%",
       arrows: true,
+      responsive: [
+        {
+          breakpoint: 1150,
+          settings: {
+            centerPadding: "5%",
+          },
+        },
+        {
+          breakpoint: 1080,
+          settings: {
+            centerPadding: "10%",
+          },
+        },
+        {
+          breakpoint: 951,
+          settings: {
+            centerPadding: "0",
+          },
+        },
+        {
+          breakpoint: 950,
+          settings: {
+            centerPadding: "10%",
+          },
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            centerPadding: "0%",
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            centerPadding: "0%",
+            slidesToShow: 1,
+          },
+        },
+      ],
     };
     return (
       <div>

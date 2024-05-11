@@ -90,20 +90,7 @@ const Environment = () => {
           <h1 className="livelihood-desp-cards-head">Our Focus Areas</h1>
         </div> */}
 
-        {/* <div className="health-container-section environment-container-section">
-          <div className="livelihood-top-section">
-            <div className="desp-cards environment-desp-cards">
-              {Desp.map((item, index) => (
-                <DespCard
-                  key={index}
-                  item={item}
-                  index={index}
-                  totalCount={Desp.length}
-                />
-              ))}
-            </div>
-          </div>
-
+        <div className="health-container-section environment-container-section">
           <div className="livelihood-top-section environment-bottom-section">
             <span className="g-l1">Imagine the impact of clean water in </span>
             <br />
@@ -145,7 +132,7 @@ const Environment = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="env-carousal-container">
           <h1 className="env-carousal-head">Our Focus Areas</h1>
@@ -250,8 +237,6 @@ const Environment = () => {
             <button className="right-arrow-box" onClick={next}>
               <div className="right-arrow"></div>
             </button>
-            {/* <IoIosArrowDropleft className="each-arrow" onClick={previous} />
-          <IoIosArrowDropright className="each-arrow" onClick={next} /> */}
           </div>
         </div>
 
@@ -273,26 +258,6 @@ const Environment = () => {
 
       <Footer />
     </>
-  );
-};
-
-const DespCard = ({ item, index, totalCount }) => {
-  const isOddTotalCount = totalCount % 2 !== 0;
-  const isLastCard = index === totalCount - 1;
-  const cardClassName = `desp-card-list livelihood-card-list ${
-    isOddTotalCount && isLastCard ? "last-card" : ""
-  }`;
-
-  return (
-    <div className={cardClassName}>
-      <img
-        src={item.img}
-        style={{ width: "50px", height: "50px", paddingBottom: "20px" }}
-      />
-
-      <span className="e-l1">{item.head}</span>
-      <span className="e-l2">{item.des}</span>
-    </div>
   );
 };
 
