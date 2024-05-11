@@ -234,8 +234,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 96%; */
-  width: 100%;
+  width: 95.5%;
+  /* width: 100%; */
   height: 100%;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease; /* Add transition for the background */
@@ -281,11 +281,11 @@
   padding-right: 20px;
 }
 
-.home-head-42{
+.home-head-42 {
   font-size: 42px;
 }
 
-.large-font-head{
+.large-font-head {
   font-size: 64px;
 }
 
@@ -621,7 +621,7 @@
     z-index: 1;
   }
 
-  .large-font-head{
+  .large-font-head {
     font-size: 32px;
   }
 

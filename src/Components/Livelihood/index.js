@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import "../Health/index.css";
 import { Link } from "react-router-dom";
 import { PiContactlessPaymentFill } from "react-icons/pi";
+import "./index.css";
 
 class Livelihood extends Component {
   render() {
@@ -47,30 +48,42 @@ class Livelihood extends Component {
           <h1>Livelihood</h1>
         </div>
         <div className="health-container">
-          <div className="livelihood-full-img-text">
-            <h1 className="livelihood-full-img-text-head">
-              Building sustainable futures for communities living in stress
-            </h1>
-          </div>
-          <div className="health-container-section livelihood-cont-section">
-            <div style={{marginBottom: "50px"}} className="health-each-container">
-              <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Our Approach</h1>
-                <p className="health-para">
-                  At Lokarpan, our approach to livelihood development is rooted
-                  in empowerment and sustainability. We believe in creating
-                  lasting change by providing opportunities for skill
-                  development, fostering entrepreneurship, and facilitating
-                  access to markets. By focusing on self-sufficiency, improving
-                  agricultural practices, and enhancing trade networks, we pave
-                  the way for communities to thrive and grow economically.
-                  <br />
-                </p>
+          <h1 className="livelihood-full-img-text-head">
+            Building sustainable futures for communities living in stress.
+          </h1>
+          <div className="livelihood-full-img-text"></div>
+          <div className="new-liv-grid-sec">
+            <h1 className="new-liv-grid-head">Our Approach</h1>
+            <div className="env-grid-sec">
+              <div>
+                <span className="env-l1"> At Lokarpan,</span>
+                <span className="env-l2">
+                  our approach to livelihood development is rooted in
+                  empowerment and sustainability.
+                </span>
               </div>
-              <div className="health-cont-img-div health-img2"></div>
+              <div>
+                <span className="env-l1">We believe</span>{" "}
+                <span className="env-l2">
+                  in creating lasting change by providing opportunities for
+                  skill development, fostering entrepreneurship, and
+                  facilitating access to markets.
+                </span>
+              </div>
+              <div>
+                <span className="env-l1">By focusing on </span>{" "}
+                <span className="env-l2">
+                  self-sufficiency, improving agricultural practices, and
+                  enhancing trade networks, we pave the way for communities to
+                  thrive and grow economically.
+                </span>
+              </div>
             </div>
-            <div className="livelihood-top-section environment-bottom-section">
-              <h1>Strengthening Livelihoods Across Every Link in the Chain</h1>
+          </div>
+
+          <div className="health-container-section livelihood-cont-section">
+            <div className="new-liv-sec">
+              <h1>Strengthening Livelihoods Across Every Link in the Chain.</h1>
               <p>
                 In the face of growing economic challenges, particularly amidst
                 the global pandemic, securing livelihoods stands as a crucial
@@ -84,10 +97,12 @@ class Livelihood extends Component {
                 have access to the resources they need to thrive.
               </p>
             </div>
-            <div className="livelihood-top-section">
-              <h1 className="livelihood-desp-cards-head">Our Programs</h1>
-              <div className="desp-cards">
-                {Desp.map((item, index) => (
+          </div>
+
+          <div className="livelihood-top-section">
+            <h1 className="livelihood-desp-cards-head">Our Programs</h1>
+            <div className="new-liv-cards">
+              {Desp.map((item, index) => (
                 <DespCard
                   key={index}
                   item={item}
@@ -95,7 +110,6 @@ class Livelihood extends Component {
                   totalCount={Desp.length}
                 />
               ))}
-              </div>
             </div>
           </div>
 
@@ -127,13 +141,9 @@ const DespCard = ({ item, index, totalCount }) => {
   }`;
 
   return (
-    <div className={cardClassName}>
-      <img
-        src={item.img}
-        style={{ width: "50px", height: "50px", paddingBottom: "20px" }}
-      />
-      <h4>{item.head}</h4>
-      <p>{item.des}</p>
+    <div className="new-liv-card">
+      <h2 className="new-liv-card-head">{item.head}</h2>
+      <h2 className="new-liv-card-para">{item.des}</h2>
     </div>
   );
 };

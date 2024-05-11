@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { RxCross2 } from "react-icons/rx";
+import { IoIosArrowForward } from "react-icons/io";
+
 import "./index.css";
 
 const Health = () => {
@@ -50,10 +52,10 @@ const Health = () => {
         <h1>Health</h1>
       </div>
       <div className="env-hero-cont">
-        <h1 className="environment-main-head">
+        <h1 className="hlth-environment-main-head">
           Join Lokarpan in Bridging the Healthcare Gap for Rural Communities.
         </h1>
-        <h1 className="new-head-text">
+        <h1 className="hlth-new-head-text">
           Join us in our unwavering commitment to make healthcare accessible and
           available to all, particularly in the regions we serve. Our health
           programmes represent our response to the growing healthcare needs of
@@ -156,6 +158,7 @@ const Health = () => {
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
                 <span onClick={() => healthopenpopup(0)} className=" read-more">
                   Read more
+                  <IoIosArrowForward className="new-margin-btn" />
                 </span>
               </div>
             </div>
@@ -210,10 +213,11 @@ const Health = () => {
             <div className="health-stories-each-card hlth-card2">
               <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="hlth-popup-font18">ARTICLE</h1>
-                <p>ASHA Workers: Guardians of Community Well-being</p>
+                <h1 className="hlth-popup-font18">ASHA Workers</h1>
+                <p>Guardians of Community Well-being</p>
                 <span onClick={() => healthopenpopup(1)} className=" read-more">
                   Read more
+                  <IoIosArrowForward className="new-margin-btn" />
                 </span>
               </div>
             </div>
@@ -264,12 +268,10 @@ const Health = () => {
               <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
                 <h1 className="hlth-popup-font18">ARTICLE</h1>
-                <p>
-                  Baby’s health, Mother’s Freedom: A Journey of Resilience and
-                  Transformation
-                </p>
+                <p>Baby’s health, Mother’s Freedom</p>
                 <span onClick={() => healthopenpopup(2)} className=" read-more">
                   Read more
+                  <IoIosArrowForward className="new-margin-btn" />
                 </span>
               </div>
             </div>

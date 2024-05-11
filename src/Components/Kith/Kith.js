@@ -132,7 +132,7 @@ const Kith = () => {
           <KithCarousels />
         </div> */}
        
-       <div className="health-stories-cont">
+       {/* <div className="health-stories-cont">
           <h1 className="health-head health-space-below">Stories of Change</h1>
           <div className="health-stories-card-sec">
             <div className="health-stories-each-card1">
@@ -324,7 +324,7 @@ const Kith = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
 
         
       </div>
