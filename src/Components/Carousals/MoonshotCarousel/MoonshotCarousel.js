@@ -59,7 +59,7 @@ const MoonshotCarousel = () => {
   } else if (window.innerWidth > 700 && window.innerWidth <= 950) {
     settings.slidesToShow = 2;
   } else {
-    settings.slidesToShow = 2;
+    settings.slidesToShow = 3;
   }
 
 

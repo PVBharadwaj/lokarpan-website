@@ -7,7 +7,7 @@ const Moonshots = () => {
   return (
     <>
       <Navbar />
-      <div className="livelihood-full-img-text moonshots-top">
+      <div style={{padding: "150px 0px"}} className="livelihood-full-img-text moonshots-top">
         {/* <div className="moonshots-top"> */}
         {/* <h1 className="livelihood-full-img-text-head moonshot-text">
           So, what does the future hold for Lokarpan and its mission for

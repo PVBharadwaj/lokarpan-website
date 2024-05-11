@@ -93,6 +93,7 @@
   border-bottom-right-radius: 25px;
   color: black;
   width: 100%;
+  min-height: 220px;
 }
 
 @media screen and (max-width: 748px) {
@@ -109,11 +110,14 @@
   .moons-head {
     font-size: 20px;
     font-weight: bold;
-    padding: 0px 20px 10px;
+    padding: 20px 20px 10px;
   }
 
   .moons-text {
     font-size: 14px;
     padding: 0px 20px 20px;
+  }
+  .moons-text-div{
+    min-height: unset;
   }
 }

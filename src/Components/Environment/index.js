@@ -24,10 +24,19 @@ const Environment = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-
     slidesToScroll: 1,
     arrows: true,
   };
+
+  if (window.innerWidth <= 600) {
+    settings.slidesToShow = 1;
+  } else if (window.innerWidth > 600 && window.innerWidth <= 700) {
+    settings.slidesToShow = 2;
+  } else if (window.innerWidth > 700 && window.innerWidth <= 950) {
+    settings.slidesToShow = 2;
+  } else {
+    settings.slidesToShow = 3;
+  }
   const Desp = [
     {
       id: 1,
