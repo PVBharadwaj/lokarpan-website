@@ -63,22 +63,26 @@ class OurSupporter extends Component {
       <p>Catholic Relief Services</p>
       <p>Poorest Areas Civil Society Department for International Development, UK</p>
       <p>Create Fund National Bank for Agriculture and Rural Development, India</p>
+      
+      <p>HDFC Bank</p>
+      
+    </div>
+    <div className="philantropic-organization">
+      
       <p>MGNREGA, Government of India</p>
       <p>Taproot Foundation</p>
       <p>Birla Sun Life Insurance</p>
-      
+      <p>USAID</p>
       
     </div>
     <div className="philantropic-organization">
       <p>State Innovations in Family Planning Services Project Agency</p>
       <p>Development Alternatives</p>
-      <p>USAID</p>
+     
       <p>The Dalai Lama Foundation</p>
       
-      <p>Development Alternatives</p>
-      <p>USAID</p>
+      
     
-      <p>HDFC Bank</p>
     </div>
   </div>
 </div>
@@ -94,9 +98,13 @@ class OurSupporter extends Component {
             <div className="donor-last-sec">
               <p className="why-donate-topdiv1">
                 We strive to be as accurate as possible when recognizing our
-                donors. If a mistake is noticed, please contact us at
-                support@lokarpan.com
+                donors. If a mistake is noticed
+
               </p>
+             <div className="ccus">
+              <button onClick={() => window.location.href = "mailto:support@lokarpan.com"}  >Contact Us</button>
+
+              </div>
             </div>
           </div>
         </div>

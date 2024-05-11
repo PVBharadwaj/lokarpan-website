@@ -27,7 +27,7 @@ const FlipCard4 = () => {
 
   return (
     <>
-      <div className="flip-card">
+      <div className="flip-card flip-card-last">
         <div className={`flip-card-inner ${isFlipped ? "flipped" : ""}`}>
           <div className="flip-card-front">
             <div>
@@ -38,7 +38,7 @@ const FlipCard4 = () => {
                 src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632775/image_327_tg9gsn.png"
                 alt=""
               />
-              <h1>Join Lokarpan in its mission to empower individuals and families, ensuring access to education, healthcare, and sustainable livelihoods for rural populations.</h1>
+              <h1 >Join Lokarpan in its mission to empower individuals and families, ensuring access to education, healthcare, and sustainable livelihoods for rural populations.</h1>
 
             </div>
             {/* <div className="right-align">

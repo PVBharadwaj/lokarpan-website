@@ -3,6 +3,8 @@ import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import "./WaysToGive.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React, { useState, useEffect } from "react";
 import { RxCross2 } from "react-icons/rx";
 const WaysToGive = () => {
@@ -64,23 +66,18 @@ const WaysToGive = () => {
               making a meaningful difference.
             </p>
             <Link className="give-card-link ways-space-up" to="/donate" style={{ color: '#06c' }}>
-  Donate now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
-  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
-  <path fill="none" d="M0 0h24v24H0z"/>
-</svg>
+  Donate now <ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
 
 </Link>
 
-            <span
-              onClick={() => openpopup(0)}
-              className="give-card-link"
-              style={{ cursor: "pointer" }}
-            >
-              Explore a Gift <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
-  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
-  <path fill="none" d="M0 0h24v24H0z"/>
-</svg>
-            </span>
+<button
+  onClick={() => openpopup(0)}
+  className="give-pop-up-button"
+  style={{ cursor: "pointer" }}
+>
+  Explore a Gift<AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+  
+</button>
             {popupVisibility[0] && (
               <div className="misson-popup">
                 <div className="misson-popup-content">
@@ -124,10 +121,7 @@ const WaysToGive = () => {
               support@lokarpan.com for more information.
             </p>
             <Link className="give-card-link ways-space-up" to="/newsletter">
-              Register <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
-  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
-  <path fill="none" d="M0 0h24v24H0z"/>
-</svg>
+              Register<ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
             </Link>
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
@@ -148,16 +142,11 @@ const WaysToGive = () => {
               colleagues and partners.
             </p>
             <Link className="give-card-link" to="/being-a-volunteer">
-              Volunteer Opportunities <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
-  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
-  <path fill="none" d="M0 0h24v24H0z"/>
-</svg>
+              Volunteer Opportunities<ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
             </Link>
             <Link className="give-card-link" to="/fellowship">
-              Fellowship <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style={{ verticalAlign: 'middle', marginBottom: '2px' }}>
-  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41" style={{ strokeWidth: 1, strokeLinecap: 'round', stroke: '#06c' }} />
-  <path fill="none" d="M0 0h24v24H0z"/>
-</svg>
+              Fellowship<ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
+
             </Link>
           </div>
         </div>
