@@ -114,40 +114,8 @@ const Fellowship = () => {
               and pave the way for a more equitable society. engaging directly
               with communities, your voice matters.
             </p>
-            {/* <h3 className="impact-title">Our Approach is Community Centric</h3>
-            <p className="fellow-data fellow-data-no-padding">
-              We believe that true solutions emerge when we listen closely to
-              the voices of the communities we serve. By engaging directly with
-              those most affected by social challenges, we gain valuable
-              insights into their needs and aspirations. Together, we co-create
-              innovative initiatives and programs that have a meaningful impact
-              and pave the way for a more equitable society. engaging directly
-              with communities, your voice matters.
-            </p> */}
           </div>
         </div>
-        {/* <div className="third-div">
-          <h3 className="impact-head">ACCLERATING IMPACT</h3>
-          <h2 className="impact-title">
-            We provide support through a combination of funding, innovation and
-            technical expertise.
-          </h2>
-        </div> */}
-        {/* <div className="fourth-div">
-          <h3 className="impact-title">Who You’ll Work with</h3>
-          <p className="fourth-div-data fellow-data">
-            You'll join one of our locations on site or opt for working
-            remotely. Fellows join our technical and research projects from
-            around the world to work in teams and directly with our
-            beneficiaries. When you join Lokarpan as a Fellow, you are joining
-            an organisation that will challenge you and invest heavily in your
-            professional development. In this role you will have the opportunity
-            to work in teams and help the most vulnerable – across a wide range
-            of initiatives – solving some of their most difficult problems. You
-            will also work with a diverse range of experts in the organisation,
-            from researchers to software and app designers.
-          </p>
-        </div> */}
       </div>
 
       <div className="carousal-container1 fellow-carousal-cont1">
@@ -372,8 +340,8 @@ const Fellowship = () => {
 
 
       <div style={{marginTop: "0px"}} className="donate-section">
-          {/* <h1 className="last-space">Be a Catalyst for Change</h1> */}
-          <p className="our-role-font24 fellow-width-800">
+          <h1 className="last-space blue-font">Be a Catalyst for Change</h1>
+          <p style={{color: "#6e6e73"}} className="our-role-font24 fellow-width-800">
           At Lokarpan, we believe in broadening your skills and experiences.
           While you'll contribute your unique talents and insights, you'll also
           have the chance to learn and grow in a diverse and dynamic

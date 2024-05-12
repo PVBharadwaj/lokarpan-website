@@ -10,7 +10,7 @@
 
 .home-top-container1 {
   width: 100%;
-  height: 1200px;
+  /* height: 1200px; */
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -35,11 +35,12 @@
   margin-bottom: 20px;
 }
 .home-head1 {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 32px;
   margin: 0 auto;
   text-align: center;
-  line-height: 30px;
+  line-height: 1.05;
+  padding-top: 150px;
 }
 .lokarpan-head3 {
   font-size: 48px;
@@ -64,15 +65,15 @@
   max-width: 1100px;
 }
 .home-upper-section-head3 {
-  font-size: 64px;
-  font-weight: bold;
+  font-size: 80px;
+  font-weight: 700;
   text-align: center;
-  line-height: 55px;
-  max-width: 800px;
+  line-height: 1.05;
+  max-width: 1000px;
 }
 
 .lokarpan-head4 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   margin: 0 auto;
   text-align: center;
@@ -103,16 +104,16 @@
 
 .lokarpan-container-para1 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #646a7b;
   margin-top: 15px;
 }
 .home-para1 {
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
   width: calc(100% - 200px);
   margin-top: 25px;
-  max-width: 800px;
+  max-width: 1000px;
   font-weight: 600;
 }
 
@@ -153,7 +154,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: calc(100% - 320px);
+  /* width: calc(100% - 320px);  */
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
+  max-width: 1100px;
 }
 .img2 {
   width: 48%;
@@ -351,6 +355,8 @@
 .next-step-section1 a {
   color: #3f86f0;
   font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
 }
 /* .subscribe-btn {
   height: 50px;
@@ -384,6 +390,7 @@
   align-items: center;
   margin-top: 120px;
   margin-bottom: 100px;
+  max-width: 1100px;
 }
 .row-element {
   width: 100%;
@@ -421,7 +428,7 @@
   margin-top: 70px;
 }
 .lok-head-cont {
-  height: 300px;
+  /* height: 300px; */
   margin: 50px auto;
   margin-bottom: 50px;
 }
@@ -592,7 +599,7 @@
   }
 
   .row-container {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -609,6 +616,23 @@
   }
 }
 
+@media only screen and (max-width: 1010px) and (min-width: 748px){
+  .home-head1, .home-para1 {
+    font-size: 28px;
+  }
+
+  .home-upper-section-head3 {
+    font-size: 64px;
+  }
+  .home-head-42 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .large-font-head {
+    font-size: 48px;
+  }
+}
+
 @media only screen and (max-width: 748px) {
   .row-element {
     width: 100%;
@@ -622,7 +646,7 @@
   }
 
   .large-font-head {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .arrows-cont1 {
@@ -643,12 +667,17 @@
     margin-right: 5px;
   }
   .home-head1 {
-    font-size: 14px;
+    font-size: 24px;
+    padding-top: 0px;
   }
   .home-upper-section-head3 {
-    font-size: 40px;
+    font-size: 48px;
     width: calc(100% - 100px);
-    line-height: 40px;
+    line-height: 1.05;
+  }
+  .home-head-42 {
+    font-size: 24px;
+    line-height: 1.5;
   }
   .home-top-container1 {
     margin-bottom: 0;
@@ -665,10 +694,9 @@
     width: calc(100% - 130px);
   }
   .home-para1 {
-    font-size: 17px;
-    font-weight: 500;
-    width: calc(100% - 54px);
-    margin: 0 auto;
+    font-size: 24px;
+    /* font-weight: 500; */
+    width: calc(100% - 40px);
   }
   .home-full-img {
     height: 300px;
@@ -681,16 +709,16 @@
   }
   .lokarpan-head4 {
     font-size: 20px;
-    text-align: justify;
+    /* text-align: justify; */
   }
   .home-head3 {
-    font-size: 24px;
+    font-size: 32px;
     width: 100%;
     line-height: 30px;
   }
   .who-we-are {
     width: calc(100% - 40px);
-    margin-top: 100px;
+    margin: 100px auto;
   }
 
   .design-img {
@@ -711,7 +739,7 @@
     margin: auto;
   }
   .lok-head-cont {
-    height: 300px;
+    /* height: 300px; */
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
@@ -811,7 +839,7 @@
     font-size: 28px;
   }
   .lokarpan-head4 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .lok {
     width: calc(100% - 70px);
@@ -875,6 +903,9 @@
   .design-img {
     height: 90%;
     width: 150px;
+  }
+  .large-font-head {
+    font-size: 32px;
   }
 }
 

@@ -160,6 +160,7 @@
 }
 .digital-tool-last-sec {
   width: 70%;
+  max-width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,6 +178,7 @@
   margin: 20px;
   font-size: 20px;
   text-align: center;
+  font-weight: 600;
 }
 .digital-tool-btn {
   height: 40px;
