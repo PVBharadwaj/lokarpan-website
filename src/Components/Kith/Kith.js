@@ -55,10 +55,12 @@ const Kith = () => {
           <h1>Overview</h1>
           {/* <p>Those who venture here—to learn, research, teach, work, and grow—join nearly three decades of students and scholars in the pursuit of truth, knowledge, and a better world. At Kith, we advocate for quality education as a means to unlock every child's potential, fostering a future where socio-economic barriers do not hinder growth.</p> */}
       </div>
+      {/* used in life at school also - below div */}
       <div className="kith-overview-div kith-overview-second-div">
           <p>Those who venture here—to learn, research, teach, work, and grow—join nearly three decades of students and scholars in the pursuit of truth, knowledge, and a better world. At Kith, we advocate for quality education as a means to unlock every child's potential, fostering a future where socio-economic barriers do not hinder growth.</p>
       </div>
       <div className="kith-overview-div kith-overview-third-div">
+        {/* used in campus-and-culture */}
         <div className="kith-overview-card">
           <div className='kith-overview-card-img kith-overview-card-img-1'></div>
           <div className="kith-overview-card-text">
@@ -116,7 +118,7 @@ const Kith = () => {
         <div className='overview-grid-inner kith-overview-grid-inner7'>
           <div>
             <p>Immerse yourself in our dynamic campus environment, cultural activities and a curriculum tailored to meet the diverse learning needs of students, empowering them to achieve academic excellence and personal growth.</p>
-            <div><Link to="/kith/life-at-school" className='kith-link'>Read more about Life at School <FaArrowRightLong/></Link> </div>
+            <div className='no-hover-effect'><Link to="/kith/life-at-school" className='kith-link'>Read more about Life at School <FaArrowRightLong/></Link> </div>
           </div>
         </div>
 

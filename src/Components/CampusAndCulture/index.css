@@ -37,7 +37,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 230px auto;
+  margin: 70px auto;
+  padding: 50px 0px;
 }
 .campus-faq-section-left {
   width: 40%;
@@ -46,16 +47,29 @@
   color: white;
 }
 .campus-faq-section-left h1 {
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 56px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .campus-font20 {
   font-size: 20px;
   margin: 10px auto;
   margin-top: 0;
+  line-height: 1.5;
+  font-weight:600;
 }
 
+.campus-head, .campus-para{
+  text-align: center;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
+}
+.campus-head{
+  padding: 150px 0px 20px;
+}
+.campus-para{
+  max-width: 1000px;
+}
 .campus-faq-section-right {
   width: 40%;
   margin: auto;
@@ -199,6 +213,9 @@
     margin-top: 150px;
     font-size: 28px;
   }
+  .mob-pad-bot{
+    padding-bottom: 60px;
+  }
   .campus-font32 {
     font-size: 16px;
     width: calc(100% - 200px);
@@ -230,14 +247,14 @@
   }
 
   .campus-faq-section-left h1 {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 10px;
     margin-top: 50px;
   }
   .campus-font20 {
     font-size: 16px;
-    margin: 10px auto;
+    margin: 10px auto 50px;
     margin-top: 0;
   }
   .questions-container {

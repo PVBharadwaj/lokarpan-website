@@ -19,19 +19,21 @@
 
 .safety-font48 {
   font-size: 64px;
-  font-weight: 500;
-  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: 'Noto Serif Display';
 }
 .safety-space-below {
   margin-bottom: 300px;
 }
 
 .safety-upper-section-content {
-  width: calc(100% - 320px);
+  width: calc(100% - 100px);
   margin: 50px auto;
   padding: 0;
   margin-bottom: 0;
-  line-height: 32px;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 900px;
 }
 
 .safety-font24 {
@@ -76,6 +78,7 @@
 }
 .safety-last-section-content-list {
   margin: 20px auto;
+  line-height: 1.5;
 }
 .safety-last-section-content-list li {
   list-style-type: disc;
