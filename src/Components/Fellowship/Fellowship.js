@@ -339,7 +339,7 @@ const Fellowship = () => {
       </div> */}
 
 
-      <div style={{marginTop: "0px"}} className="donate-section">
+      <div style={{marginTop: "0px"}} className="donate-section fellow-donate">
           <h1 className="last-space blue-font">Be a Catalyst for Change</h1>
           <p style={{color: "#6e6e73"}} className="our-role-font24 fellow-width-800">
           At Lokarpan, we believe in broadening your skills and experiences.
@@ -359,7 +359,7 @@ const Fellowship = () => {
           <div>
             <Link
               to="/donate"
-              style={{color: "#3f86f0", paddingTop: "40px"}}
+              style={{color: "#3f86f0", paddingTop: "40px", paddingBottom: "30px"}}
               className="donate-hyperlink"
               href="/d0nate"
             >

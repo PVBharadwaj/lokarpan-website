@@ -667,7 +667,9 @@
     height: 100vh;
   }
   .donate-section {
-    width: 100%;
+    width: calc(100% - 40px);
+    padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
     margin: 150px auto;
     height: 500px;
     min-width: 320px;

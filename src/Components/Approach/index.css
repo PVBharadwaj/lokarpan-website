@@ -417,6 +417,7 @@
   .approach-full-img h1{
     font-size: 40px;
     font-weight: 700;
+    line-height: 1.5;
     padding: 10px 20px;
   }
   .approach-full-img p{
@@ -461,7 +462,7 @@
   }
   .approach-row-container {
     flex-direction: column;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     margin: 60px auto;
     height: auto;
   }
@@ -544,6 +545,7 @@
   .approach-last-sec-cont p {
     font-size: 16px;
     margin-bottom: 20px;
+    width: unset;
   }
   .approach-last-sec-each-cont {
     flex-wrap: wrap;
@@ -578,10 +580,10 @@
 }
 @media screen and (max-width: 393px) {
   .approach-last-sec-cont {
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
   }
   .mobile-approach-modal-container {
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
   }
   .app-row-cont-left-container {
     width: 100%;
