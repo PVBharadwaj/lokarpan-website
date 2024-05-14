@@ -98,7 +98,7 @@ const Application = () => {
       <div className="application-top-img"></div>
       <div className="app-page">
         <div className="app-div">
-        {/* app-title title2, application-para1 - used in kith/life-at-school/campus-and-culture */}
+        {/* app-title title2, application-para1 - used in approach and kith/life-at-school/campus-and-culture */}
           <h1 className="app-title title2">
             Lokarpan presents a suite of digital applications to redefine
             classroom strategies
