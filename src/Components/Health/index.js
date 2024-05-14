@@ -154,7 +154,7 @@ const Health = () => {
               /> */}
               <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="hlth-popup-font18">ARTICLE</h1>
+                <h1 className="hlth-popup-font18">Annapurna</h1>
                 <p>Empowering Communities, One Safe Delivery at a Time</p>
                 <span onClick={() => healthopenpopup(0)} className=" read-more">
                   Read more
@@ -213,7 +213,7 @@ const Health = () => {
             <div className="health-stories-each-card hlth-card2">
               <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="hlth-popup-font18">ASHA Workers</h1>
+                <h1 className="hlth-popup-font18">Usha Devi</h1>
                 <p>Guardians of Community Well-being</p>
                 <span onClick={() => healthopenpopup(1)} className=" read-more">
                   Read more
@@ -267,7 +267,7 @@ const Health = () => {
             <div className="health-stories-each-card hlth-card3">
               <div className="stories-img"></div>
               <div className="health-stories-each-card-content">
-                <h1 className="hlth-popup-font18">ARTICLE</h1>
+                <h1 className="hlth-popup-font18">Kaunsar Jahan</h1>
                 <p>Baby’s health, Mother’s Freedom</p>
                 <span onClick={() => healthopenpopup(2)} className=" read-more">
                   Read more
