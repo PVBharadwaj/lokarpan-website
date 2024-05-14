@@ -392,31 +392,25 @@ const Navbar = () => {
                         <div className="popup-back"></div>
                         <div className="popup-in">
                           <div className="pop">
-                            <h2>Subscribe to our Newsletters!</h2>
-                            <RxCross2
-                              onClick={() => {
-                                setPopup(false);
-                              }}
-                              className="x"
-                            />
+                            <h2>Get updates from Lokarpan.</h2>
                           </div>
+                          <RxCross2
+                            onClick={() => {
+                              setPopup(false);
+                            }}
+                            className="x"
+                          />
                           <div className="popup-text">
                             <p>
                               Join our vibrant community of engaged readers as
                               we deliver the latest updates, success stories,
                               and transformative initiatives aimed at empowering
-                              rural education. Receive valuable insights and
-                              impactful stories directly to your inbox every
-                              week, and be a part of the journey towards
-                              positive change.
+                              rural education.
                             </p>
                             <form action="">
                               <input type="text" placeholder="Email address" />
                               <button type="submit">Subscribe</button>
                             </form>
-                            <p>
-                              We respect your privacy. Unsubscribe at any time.
-                            </p>
                           </div>
                         </div>
                       </div>
