@@ -123,11 +123,10 @@ const Environment = () => {
               <div>
                 <span className="env-l1">Join us in </span>{" "}
                 <span className="env-l2">
-                  our mission to safeguard water resources, replenish depleted
-                  ponds, and protect freshwater ecosystems. Together, we'll make
-                  sure that every community we touch has access to clean water,
-                  decent sanitation, and the knowledge to maintain a healthy
-                  environment for generations to come.
+                  our mission to safeguard our water resources. Together, we'll
+                  make sure that every community we touch has access to clean
+                  water, decent sanitation, and the knowledge to maintain a
+                  healthy environment for generations to come.
                 </span>
               </div>
             </div>
@@ -166,13 +165,11 @@ const Environment = () => {
                   alt="Slide 2"
                 />
                 <h2 className="env-card-head">
-                  Tracking Exotic Bird Populations for Biodiversity Conservation
+                  Tracking Exotic Bird Populations
                 </h2>
                 <p className="env-card-para">
                   Our efforts in bird migration tracking contribute to
-                  scientific knowledge and vital conservation strategies,
-                  ensuring the continued existence of these fascinating avian
-                  species.
+                  scientific knowledge and vital conservation strategies.
                 </p>
               </div>
             </div>
@@ -184,13 +181,11 @@ const Environment = () => {
                   alt="Slide 3"
                 />
                 <h2 className="env-card-head">
-                  Promoting Sustainable Water Management for Community
-                  Well-being
+                  Promoting Sustainable Water Management
                 </h2>
                 <p className="env-card-para">
                   Through education and advocacy, we work towards the
-                  maintenance and restoration of local water bodies, ensuring
-                  sustainable access to clean water for rural communities.
+                  maintenance and restoration of local water bodies.
                 </p>
               </div>
             </div>
@@ -201,9 +196,7 @@ const Environment = () => {
                   className="env-card-img"
                   alt="Slide 3"
                 />
-                <h2 className="env-card-head">
-                  Renewable Energy Solutions for a Sustainable Tomorrow
-                </h2>
+                <h2 className="env-card-head">Renewable Energy Solutions</h2>
                 <p className="env-card-para">
                   Lokarpan leads the charge in renewable energy production,
                   committed to a low carbon footprint for a cleaner, greener
@@ -223,9 +216,8 @@ const Environment = () => {
                 </h2>
                 <p className="env-card-para">
                   We promote environmentally-friendly, renewable energy sources
-                  such as Biogas to educate rural communities on safe cooking
-                  methods, including smokeless technologies like improved
-                  chulhas and solar cookers to mitigate indoor air pollution.
+                  including smokeless technologies to mitigate indoor air
+                  pollution.
                 </p>
               </div>
             </div>

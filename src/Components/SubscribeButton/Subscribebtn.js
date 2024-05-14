@@ -10,8 +10,10 @@ const Subscribebtn = () => {
       const activeElement = document.activeElement;
       const InputText = document.getElementsByClassName("text-input");
       const TextInput = Array.from(InputText);
-      const activeElementNotInArray = !TextInput.some(element => element === activeElement);
-      
+      const activeElementNotInArray = !TextInput.some(
+        (element) => element === activeElement
+      );
+
       if (activeElementNotInArray) {
         if (event.key === "s" || event.key === "S") {
           setPopup(true);
@@ -19,12 +21,12 @@ const Subscribebtn = () => {
           setPopup(false);
         }
       }
-      };   
-      window.addEventListener("keydown", handleKeyPress);
-      return () => {
-        window.removeEventListener("keydown", handleKeyPress);
-      };
-    }, []);
+    };
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
 
   return (
     <div className="subscribe-container">
@@ -39,21 +41,23 @@ const Subscribebtn = () => {
               }}
               class="x bi bi-x"
             ></i> */}
-            <RxCross2 
+            <RxCross2
               onClick={() => {
                 setPopup(false);
-              }} 
-              className="x"/>
+              }}
+              className="x"
+            />
           </div>
           <div className="popup-text">
             <p>
-            Join our vibrant community of engaged readers as we deliver the latest updates, success stories, and transformative initiatives aimed at empowering rural education. Receive valuable insights and impactful stories directly to your inbox every week, and be a part of the journey towards positive change.
+              Join our vibrant community of engaged readers as we deliver the
+              latest updates, success stories, and transformative initiatives
+              aimed at empowering rural education.
             </p>
             <form action="">
               <input type="text" placeholder="Email address" />
               <button type="submit">Subscribe</button>
             </form>
-           
           </div>
         </div>
       </div>
