@@ -215,6 +215,8 @@
 .blue-font{
   color: #3f86f0 !important;
   font-size: 54px;
+  margin-top: 30px;
+  max-width: 1100px;
 }
 
 .grey-font{
@@ -254,15 +256,21 @@
   color: #555;
 }
 
+.fellow-carousal-cont1 .carousal1::before{
+  width: 100%;
+}
+
 .fellow-large-text-head{
   color: #181818;
 }
 
 .fellow-what-sec{
   display: flex;
+  max-width: 1100px;
 }
 .fellow-opp-new-head{
-  font-size: 64px
+  font-size: 64px;
+  max-width: 1100px;
 }
 
 .opp-head {
@@ -331,6 +339,7 @@
 @media screen and (max-width: 748px) {
   .fellow-carousal-cont1 {
     height: 400px !important;
+    margin-bottom: 20px;
   }
   .fellow-each-carousal1 {
     height: 350px !important;
@@ -342,7 +351,7 @@
     height: 300px !important;
   }
   .fellow-width-800{
-    width: calc(100% - 40px);
+    width: 100%;
   }
   .mobile-home1 {
     display: flex;
@@ -358,6 +367,9 @@
   .fellow-space-above {
     padding-top: 0;
   }
+  .fourth-div > .impact-title {
+    font-size: 48px;
+}
   .fellowship-top > .impact-title {
     font-size: 20px;
     padding: 10px 20px;
@@ -385,6 +397,14 @@
     gap: 50px;
     padding: 50px 0px;
   }
+  .fellow-what-sec{
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .fellow-donate{
+    height: unset;
+  }
 
   .second-div > .sub-div > .impact-title {
     padding: 12px 0px;
@@ -411,19 +431,20 @@
 
   .fourth-div-data {
     padding: 0px;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.2;
   }
   .opp {
     padding: 30px;
     margin-bottom: 100px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
   .opp-data,
   .opp-head {
     padding: 10px 0px;
   }
   .opp-head {
-    font-size: 14px;
+    font-size: 24px;
     padding: 20px 0px;
   }
   .opp-data {

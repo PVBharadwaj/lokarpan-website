@@ -42,15 +42,17 @@
 /* .public-top h1, */
 .public-text h1 {
 font-size: 64px;
-font-weight: bolder;
+font-weight: 700;
 text-align: center;
 padding: 30px 0px;
+padding-inline-start: max(20px, var(--navbar-padding));
+padding-inline-end: max(20px, var(--navbar-padding));
 }
 
 /* .public-top p, */
 .public-text p {
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: 600;
   text-align: center;
   max-width: 850px;
   color: #555;
@@ -132,6 +134,12 @@ padding: 30px 0px;
   font-weight: 900 !important;
 }
 
+@media screen and  (min-width: 748px) and (max-width: 1010px) {
+  .public-text h1{
+    font-size: 48px;
+  }
+}
+
 @media screen and (max-width: 748px) {
   .publication-page {
     padding: 10px 30px;
@@ -144,14 +152,15 @@ padding: 30px 0px;
 
   /* .public-top h1, */
   .public-text h1{
-    font-size: 40px;
+    font-size: 36px;
     padding: 5px;
   }
   
   /* .public-top p, */
   .public-text p{
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
   }
   
   .public-archives{

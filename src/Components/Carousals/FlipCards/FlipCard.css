@@ -1,10 +1,13 @@
 .flip-card {
-  width: 970px;
+
+  width:  1140px;
   height: 500px;
   perspective: 1000px;
-  margin: 30px 0px 100px;
+  margin-top: 2rem;
 }
-
+.flip-card-last{
+  margin-bottom: 4rem;
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -31,20 +34,22 @@
 }
 
 .flip-card-front {
+  font-size: 40px;
   color: black;
   border-radius: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .flip-card-front div,
 .flip-card-back div {
   display: flex;
   text-align: left;
+
   gap: 32px;
-  margin: 20px 50px 50px 50px;
+  margin: 20px 50px 20px 50px;
   align-items: center;
 }
 
@@ -52,7 +57,11 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.flip-card-front h1{
 
+  font-weight: 700;
+  margin: 6rem;
+}
 .flip-card-front img {
   color: black;
   height: 300px;

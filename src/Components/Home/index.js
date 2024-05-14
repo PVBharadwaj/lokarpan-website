@@ -49,10 +49,10 @@ class Home extends Component {
             </p>
           </div>
           <div className="home-top-container1">
-            <p className="home-head1">The Mission</p>
-            <h1 className="home-upper-section-head3">
+            <h1 className="home-head1">The Mission</h1>
+            <h2 className="home-upper-section-head3">
               Commitment beyond conventional boundaries
-            </h1>
+            </h2>
             <p className="home-para1">
               Lokarpan is dedicated to bringing the best minds together and
               offering innovative solutions to support and empower underserved

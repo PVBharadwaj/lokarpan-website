@@ -98,7 +98,7 @@
 .our-role-font24 {
   font-size: 24px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   width: 600px;
   line-height: 36px;
 }
@@ -584,11 +584,12 @@
     margin: auto;
     order: 1;
   }
-  .our-role-topdiv{
-    padding: 50px 20px 100px;
+  .our-role-topdiv {
+    padding: 100px 20px;
     font-size: 36px;
-    font-weight: 500;
-  }
+    font-weight: 700;
+    width: 80%;
+}
   .our-role-each-container-content h1 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -666,7 +667,9 @@
     height: 100vh;
   }
   .donate-section {
-    width: 100%;
+    width: calc(100% - 40px);
+    padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
     margin: 150px auto;
     height: 500px;
     min-width: 320px;
@@ -718,4 +721,11 @@
     line-height: 10px;
     width: 70px;
   } */
+
+  .our-role-topdiv {
+    padding: 50px 20px;
+    font-size: 36px;
+    font-weight: 600;
+    width: 80%;
+}
 }

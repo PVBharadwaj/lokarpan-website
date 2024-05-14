@@ -135,13 +135,13 @@ const Approach = () => {
           ))}
         </div>
 
-        <div className="health-container-section">
-          <div className="health-each-container">
-            <div className="health-content-section content-left">
-              <h1 className="health-lokarpan-head3">
+        {/* <div className="health-container-section"> */}
+          <div className="health-each-container approach-each-container">
+            <div className="health-content-section approach-content-section content-left">
+              <h1 className="approach-lokarpan-head3">
                 Discover how we are shaping the learning environment
               </h1>
-              <p className="health-para">
+              <p className="approach-card-para">
                 Despite India's vast school network, many children struggle with
                 basic literacy and numeracy skills. Lokarpan recognises the
                 transformative power of education and is committed to bridging
@@ -155,7 +155,7 @@ const Approach = () => {
               </a> */}
               <span
                 onClick={() => approachopenpopup(0)}
-                className="approach-anchor"
+                className="approach-anchor give-card-link"
               >
                 Read more
               </span>
@@ -217,18 +217,18 @@ const Approach = () => {
 
             <div className="health-cont-img-div approach-img1"></div>
           </div>
-          <div className="health-each-container">
+          <div className="health-each-container approach-each-container">
             {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710768741/Rectangle_1764_1_mwljyp.png"
               alt="learn-img"
               className="health-cont-img"
             /> */}
             <div className="health-cont-img-div approach-img2"></div>
-            <div className="health-content-section content-right">
-              <h1 className="health-lokarpan-head3">
+            <div className="health-content-section approach-content-section content-right">
+              <h1 className="approach-lokarpan-head3">
                 Empowering Education Through Digital Innovation
               </h1>
-              <p className="health-para">
+              <p className="approach-card-para">
                 Lokarpan pioneers digital transformation in education, offering
                 tailored content, personalised learning, and advanced analytics.
                 Our digital infrastructure, including interactive apps and
@@ -237,7 +237,7 @@ const Approach = () => {
               </p>
               <span
                 onClick={() => approachopenpopup(1)}
-                className="approach-anchor"
+                className="approach-anchor give-card-link"
               >
                 Read more
               </span>
@@ -282,10 +282,10 @@ const Approach = () => {
               </div>
             )}
           </div>
-          <div className="health-each-container">
-            <div className="health-content-section content-left">
-              <h1 className="health-lokarpan-head3">Fellowship Programme</h1>
-              <p className="health-para">
+          <div className="health-each-container approach-each-container">
+            <div className="health-content-section approach-content-section content-left">
+              <h1 className="approach-lokarpan-head3">Fellowship Programme</h1>
+              <p className="approach-card-para">
                 The road to end educational inequity is long, and Lokarpan
                 recognises the power of collective effort in achieving this
                 vision. We invite passionate individuals who share our
@@ -296,7 +296,7 @@ const Approach = () => {
               </p>
               <span
                 onClick={() => approachopenpopup(2)}
-                className="approach-anchor"
+                className="approach-anchor give-card-link"
               >
                 Read more
               </span>
@@ -343,7 +343,7 @@ const Approach = () => {
             /> */}
             <div className="health-cont-img-div approach-img3"></div>
           </div>
-        </div>
+        {/* </div> */}
 
         <div className="health-full-img">
           <img

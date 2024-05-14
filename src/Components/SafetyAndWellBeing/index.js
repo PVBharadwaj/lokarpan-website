@@ -18,19 +18,16 @@ class SafetyAndWellBeing extends Component {
           </div>
           <ul className="safety-upper-section-content">
             <li className="safety-font24">
-              We have implemented comprehensive safety measures to protect your
-              privacy and personal information.
+            At Kith, your safety and well-being are paramount. We've implemented robust measures to safeguard your privacy and personal information across all our platforms, online and offline.
             </li>
             <li className="safety-font24">
-              Our online platforms are secure, and we continuously update our
-              systems to maintain a safe digital space.
+            Whether you're engaging virtually or in person, we strictly adhere to health and safety guidelines to ensure the protection of all our members. Additionally, our Kith n Kin Help Center offers a range of confidential services, including counselling, workshops, and facilitated discussions, providing comprehensive support for our community.
             </li>
             <li className="safety-font24">
-              In all our activities, whether virtual or in person, we adhere to
-              guidelines that prioritize the health and safety of our members.
+            As the Director of the Kith n Kin Centre (KnK) and Education Programs, Ujjwala Singh serves as a crucial resource for Lokarpan students. From academic challenges to personal difficulties, she offers guidance and connects students with the necessary resources. In emergency situations, she provides immediate assistance and support. With a commitment to fostering open communication, our team and fellow members are here to lend a listening ear and offer assistance whenever needed, creating a supportive environment for all.
             </li>
           </ul>
-          <ul className="safety-upper-section-content">
+          {/* <ul className="safety-upper-section-content">
             <li className="safety-font24">
               Lokarpan is committed to supporting the mental health and
               wellbeing of our members.
@@ -43,7 +40,7 @@ class SafetyAndWellBeing extends Component {
               If you ever need support, our team and fellow members are here to
               listen and assist.
             </li>
-          </ul>
+          </ul> */}
           <div className="safety-last-section">
             <h1 className="safety-font48">Committee & Clubs</h1>
             <div className="safety-last-section-content">

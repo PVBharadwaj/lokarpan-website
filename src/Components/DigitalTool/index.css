@@ -160,6 +160,7 @@
 }
 .digital-tool-last-sec {
   width: 70%;
+  max-width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,6 +178,7 @@
   margin: 20px;
   font-size: 20px;
   text-align: center;
+  font-weight: 600;
 }
 .digital-tool-btn {
   height: 40px;
@@ -255,11 +257,11 @@
     margin-top: 0;
   }
   .browse-cont h2 {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
   .browse-cont p {
-    font-size: 14px;
+    font-size: 20px;
     color: #333333;
   }
   .digital-tool-last-sec {

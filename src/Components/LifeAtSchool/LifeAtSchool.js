@@ -13,9 +13,12 @@ const LifeAtSchool = () => {
       <KithLifeAtSchoolSubNavbar />
       <div className="life-at-school-upper-section">
         <h1>Welcome to Kith</h1>
-        <p>
+        {/* <p>
         Step into a place where every student's potential is nurtured and celebrated, and where our collective vision drives us towards excellence. At Kith n Kin School, our culture is built on inclusivity, collaboration, and a strong dedication to making a positive impact.
-        </p>
+        </p> */}
+      </div>
+      <div className="kith-overview-div kith-overview-second-div">
+          <p>Step into a place where every student's potential is nurtured and celebrated, and where our collective vision drives us towards excellence. At Kith n Kin School, our culture is built on inclusivity, collaboration, and a strong dedication to making a positive impact.</p>
       </div>
       <div className="life-at-school-div">
         <h3>Our Campus</h3>

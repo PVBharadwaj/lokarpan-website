@@ -38,6 +38,8 @@
   font-weight: 700;
   padding: 50px 0px;
   color: white;
+  padding-inline-start: max(20px, var(--navbar-padding));
+  padding-inline-end: max(20px, var(--navbar-padding));
 }
 
 .fin-desp-head p {
@@ -109,12 +111,15 @@ hr {
   padding: 5px 20px;
 }
 
-@media screen and  (min-width: 748px) and (max-width: 1000px) {
+@media screen and  (min-width: 748px) and (max-width: 1010px) {
   .add-repo-text {
     grid-column: span 6;
   }
   .fin-desp-head{
-    min-height: 900px;
+    min-height: 780px;
+  }
+  .fin-desp-head h1 {
+    font-size: 48px;
   }
 }
 
@@ -134,14 +139,14 @@ hr {
   }
 
   .fin-desp-head h1 {
-    font-size: 40px;
+    font-size: 36px;
     padding: 10px 0px;
   }
 
   .fin-desp-head p {
     padding: 40px 0px;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 20px;
   }
 
   .fin-annual-repo {

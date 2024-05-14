@@ -94,6 +94,11 @@
   background-size: cover;
 }
 
+.why-donate-div-head {
+  font-size: 64px !important;
+  font-weight: 700 !important;
+}
+
 .donate-card-img-1 {
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708628227/Rectangle_1766_1_uufero.png");
 }
@@ -121,11 +126,11 @@
 }
 
 .donate-card-text h1 {
-  font-size: 28px;
+font-size: 56px !important;
 }
 .donate-card-text p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   color: #333333;
   line-height: 32px;
 }
