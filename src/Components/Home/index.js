@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "./index.css";
 
 const row1 = [
@@ -142,17 +143,20 @@ class Home extends Component {
             </p>
             <button className="get-in-touch-btn1">Apply</button>
           </div>
-          <div className="lokarpan-container">
-            <p className="lokarpan-head5">Our Programs</p>
-            <h1 className="home-head3">
-              Empowering Communities for Positive Change
-            </h1>
-            <p className="lokarpan-container-para1">
-              Since its inception in 1996, Lokarpan has strived to organise and
-              empower rural communities to promote development as a liberating
-              force aimed at social justice, economic growth and self-reliance.
-            </p>
+          <div className="lok-home-div">
+            <div className="lokarpan-container">
+              <p className="lokarpan-head5">Our Programs</p>
+              <h1 className="home-head3">
+                Empowering Communities for Positive Change
+              </h1>
+              <p className="lokarpan-container-para1">
+                Since its inception in 1996, Lokarpan has strived to organise and
+                empower rural communities to promote development as a liberating
+                force aimed at social justice, economic growth and self-reliance.
+              </p>
+            </div>
           </div>
+
           <div className="carousal-container1">
             <div className="arrows-cont1">
               <button className="button1" onClick={this.handlePauseClick}>
@@ -326,7 +330,7 @@ class Home extends Component {
             </button>
           </div>
           <div className="next-step-section1">
-            <h1 className="lokarpan-head6">Take Action. Support Change</h1>
+            <h1 className="lokarpan-head6">Take Action. <br/> Support Change.</h1>
             <p className="lokarpan-head4 lok center">
               Lokarpan supports transformative programs for children and adults,
               empowering them to lead better and safer lives. Get involved and
@@ -334,7 +338,7 @@ class Home extends Component {
               life.
             </p>
             {/* <a href="#">Learn More</a> */}
-            <Link to="/ways-to-give">Learn More</Link>
+            <Link to="/ways-to-give">Learn More <ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '14px'}} /></Link>
             <Link to="/donate">
               <button type="button" className="home-donate-btn1">
                 Donate

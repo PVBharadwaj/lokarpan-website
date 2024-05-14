@@ -19,7 +19,7 @@ const Moonshots = () => {
         {/* below section taken from publications page */}
       <div className="public-text"> 
         <h1 className="public-title">
-        What does the future hold
+        What does the future hold?
         </h1>
         <p className="public-desp">
           Lokarpan aims to reimagine education from the ground up, introducing
