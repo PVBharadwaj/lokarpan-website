@@ -41,13 +41,13 @@ const Subscribebtn = () => {
               }}
               class="x bi bi-x"
             ></i> */}
-            <RxCross2
-              onClick={() => {
-                setPopup(false);
-              }}
-              className="x"
-            />
           </div>
+          <RxCross2
+            onClick={() => {
+              setPopup(false);
+            }}
+            className="x"
+          />
           <div className="popup-text">
             <p>
               Join our vibrant community of engaged readers as we deliver the

@@ -328,6 +328,7 @@
   width: 85%;
   margin: 100px auto;
   max-width: 890px;
+  margin-bottom: 0px;
 }
 .g-l1 {
   font-size: 48px;
@@ -348,36 +349,90 @@
   overflow: hidden;
   position: relative;
   margin: 150px 0px;
+  margin-top: 50px;
 }
 .new-design-carousal-card-out {
   height: 650px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.new-flipped {
+  transform: rotateX(180deg);
+}
+.new-design-front,
+.new-design-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.new-design-back {
+  color: black;
+  border-radius: 32px;
+  transform: rotateX(180deg);
+}
+
+.new-plus-icon {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.new-cross-icon {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
 }
 .new-design-carousal-card {
   width: 95%;
   height: 80%;
   border-radius: 30px;
   min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
+.new-des-front-head {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 70%;
+}
+
 .des-card1 {
   background-image: url("https://www.apple.com/v/environment/z/images/overview/people_conserve__f4scnercv8mu_large_2x.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .des-card2 {
   background-image: url("https://www.apple.com/v/environment/z/images/overview/people_energy__f0ej8xduixym_large_2x.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .des-card3 {
   background-image: url("https://www.apple.com/v/environment/z/images/overview/people_carbon__cvwqtl8av9yu_large_2x.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .des-card4 {
   background-image: url("https://www.apple.com/v/environment/z/images/overview/people_climate__bosgd4mutfma_large_2x.jpg");
   background-position: cover;
   background-size: cover;
+  position: relative;
 }
 
 .des-arrows-cont {
@@ -391,6 +446,21 @@
   justify-content: space-between;
   align-items: center;
 }
+.new-back-card {
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-back-card h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+}
 .slick-slide {
   opacity: 0.4; /* Adjust the opacity value as needed */
   transition: opacity 0.5s ease; /* Add a transition for smoother effect */
@@ -398,6 +468,19 @@
 
 .slick-slide.slick-active {
   opacity: 1; /* Make the active slide fully visible */
+}
+.new-des-arrows-cont {
+  position: absolute;
+  left: 47%;
+  transform: "translateX(-50%)";
+  bottom: -50px;
+  height: 50px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 1200px) {
   .new-our-projects-each-right-cont {
@@ -519,6 +602,13 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .new-des-front-head {
+    font-size: 32px;
+  }
+  .new-back-card h1 {
+    font-size: 32px;
+    width: 80%;
+  }
   .new-design-carousal-card {
     margin: 0px 30px;
     min-width: 300px;
