@@ -111,7 +111,23 @@ const Application = () => {
             learning management systems, and predictive performance based
             analytics for educational success.
           </p>
+
+          <div className="adobe-horizon-in">
+              <h2 className="app-title title3">Adobe</h2>
+              <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
+                Introducing Lokarpan's Adobe-powered web application, a
+                transformative tool for tracking student performance and well-being.
+                With modules like RankMaster for academic rankings and HealthMap for
+                health monitoring, schools can efficiently manage exams and provide
+                real-time feedback, empowering rural communities in Uttar Pradesh.
+              </p>
+            </div>
           <div className="adobe-horizon">
+
+
+
+
+
             <div className="adobe-horizon-in">
               <h2 className="app-title title3">Adobe</h2>
               <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
@@ -122,6 +138,7 @@ const Application = () => {
                 real-time feedback, empowering rural communities in Uttar Pradesh.
               </p>
             </div>
+
             <div className="adobe-horizon-in">
               <h2 className="app-title title3">Horizon</h2>
               <p style={{padding: "0px 30px 50px",textAlign: "left"}} className="application-para2">
@@ -133,6 +150,22 @@ const Application = () => {
               </p>
             </div>
           </div>
+
+
+          
+          <div className="adobe-horizon-in">
+              <h2 className="app-title title3">Adobe</h2>
+              <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
+                Introducing Lokarpan's Adobe-powered web application, a
+                transformative tool for tracking student performance and well-being.
+                With modules like RankMaster for academic rankings and HealthMap for
+                health monitoring, schools can efficiently manage exams and provide
+                real-time feedback, empowering rural communities in Uttar Pradesh.
+              </p>
+            </div>
+
+
+            
         </div>
       </div>
       <div className="app-page app-div-bottom ">

@@ -43,6 +43,7 @@
   background-color: aliceblue;
   border-radius: 30px;
   display: flex;
+  margin: 15px 0px;
   flex-direction: column;
 }
 
@@ -360,5 +361,6 @@
 @media screen and (max-width: 650px) {
   .adobe-horizon {
     flex-direction: column;
+    gap: 0px;
   }
 }

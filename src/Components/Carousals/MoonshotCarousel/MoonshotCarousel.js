@@ -67,37 +67,37 @@ const MoonshotCarousel = () => {
     <div className="moonshots-carousel">
       <Slider {...settings}>
         <div className="moonshots-sub-div mooncarouselsubdiv moonshots-img1">
-          <div style={{ backgroundColor: 'pink' }} className="moons-text-div">
-            <p className="moons-head">Progressive Curriculum</p>
-            <p className="moons-text">
-              Developing technology-driven, innovative curriculum to empower rural students for a brighter future
+          <div style={{ backgroundColor: '#e9bfde' }} className="moons-text-div">
+            <p className="moons-car-head">Progressive Curriculum</p>
+            <p className="moons-car-text">
+            Develop technology-driven, innovative curriculum to empower rural students.
             </p>
           </div>
         </div>
         <div className="moonshots-sub-div mooncarouselsubdiv moonshots-img2">
-          <div style={{ backgroundColor: '#a4fba4' }} className="moons-text-div">
-            <p className="moons-head">Empowering Educators</p>
-            <p className="moons-text">
-              Equipping teachers with skills for engaging lesson plans, enhancing Mathematics and Science education quality.
+          <div style={{ backgroundColor: '#d2e1b4' }} className="moons-text-div">
+            <p className="moons-car-head">Empowering Educators</p>
+            <p className="moons-car-text">
+            Equip teachers with skills for engaging lesson plans, enhancing education quality.
             </p>
           </div>
         </div>
         <div className="moonshots-sub-div mooncarouselsubdiv moonshots-img3">
-          <div style={{ backgroundColor: '#ff8cff' }} className="moons-text-div">
-            <p className="moons-head">Strategic Partnerships</p>
-            <p className="moons-text">
-              Forging collaborations with higher education institutes, fostering innovation in education practices.
+          <div style={{ backgroundColor: '#e9bfde' }} className="moons-text-div">
+            <p className="moons-car-head">Strategic Partnerships</p>
+            <p className="moons-car-text">
+            Forge collaborations to foster innovative practices.
             </p>
           </div>
         </div>
         <div className="moonshots-sub-div mooncarouselsubdiv moonshots-img4">
-          <div style={{ backgroundColor: '#c3c3ff' }} className="moons-text-div">
-            <p className="moons-head">Infrastructure Investment</p>
-            <p className="moons-text">
-              Building modern facilities and classrooms to inspire creativity and ensure access to quality education.
+          <div style={{ backgroundColor: '#d8f1ff' }} className="moons-text-div">
+            <p className="moons-car-head">Infrastructure Investment</p>
+            <p className="moons-car-text">
+            Build modern facilities and classrooms to inspire creativity.
             </p>
-          </div>
-        </div>
+              </div>
+            </div>
       </Slider>
     </div>
   );
