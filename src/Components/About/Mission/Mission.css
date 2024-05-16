@@ -50,8 +50,9 @@
   padding-inline-end: max(20px, var(--navbar-padding));
 }
 .mission-head {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
+  padding: 0px 20px;
 }
 .mission-content1 {
   font-size: 28px;
@@ -159,14 +160,14 @@
 }
 
 .our-principles-head {
-  font-size: 30px;
+  font-size: 32px;
   padding: 10px 0px;
 }
 
 .our-principles-inner p {
   font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .our-purpose {
@@ -236,6 +237,10 @@
   width: 450px;
   height: 280px;
   background-color: black;
+}
+
+.mission-card > .give-card-text h1{
+  font-size: 48px;
 }
 
 .mission-read-more {
@@ -348,17 +353,27 @@
   display: none;
 }
 
-@media (min-width: 750px) and (max-width: 1150px) {
+@media (min-width: 748px) and (max-width: 1150px) {
   .mission-desktop {
     display: none;
   }
   .mision-mobi-7481150 {
     display: block;
   }
+
+  .mission-card > .give-card-text h1{
+    font-size: 38px;
+  }
+  .mission-card > .give-card-text {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 748px) {
   .mission-head {
+    font-size: 44px;
+  }
+  .mission-card > .give-card-text h1{
     font-size: 36px;
   }
   .mission-content1,
@@ -372,11 +387,16 @@
     font-size: 28px;
   }
   .our-principles-inner p {
-    font-size: 16px;
+    font-size: 20px;
   }
-  .mission-card {
-    height: 100%;
+
+  .mission-card > .give-card-text{
+    padding: 0px;
   }
+  
+/* .mission-card{
+  padding: 0px;
+} */
 }
 
 @media (max-width: 850px) {

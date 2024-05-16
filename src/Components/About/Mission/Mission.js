@@ -6,6 +6,7 @@ import Footer from "../../Footer/Footer";
 import SubNavbar from "../../Navbar/SubNavbar";
 import { Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 const Mission = () => {
   const [popupVisibility, setPopupVisibility] = useState([
     false,
@@ -84,38 +85,11 @@ const Mission = () => {
             <div className="mission-head">
               Lokarpan offers solutions to empower communities living in stress.
             </div>
-            {/* <div className="mission-content1">
-              Lokarpan is dedicated to bringing the best minds together and offering innovative solutions to support and empower underserved communities. We create and support participatory projects to address socio-economic issues in rural India. <br/>
-              <div className="hyperlinks mission-popup">
-              <div className="apply-btn white">
-                  <span  onClick={() => openpopup(0)} className="mission-read-more apply-btn-text-black body-btn">Read more</span>
-              </div>
-              </div>
-            </div>
-            {popupVisibility[0] && (
-              <div className="misson-popup">
-                <div className="misson-popup-content">
-                  <RxCross2 
-                    onClick={() => closepopup(0)} 
-                    className="x"
-                  />
-                  <p className="mission-para">
-                  At Lokarpan, a spirit of innovation has always guided our path. From our early days, our team has been driven by a relentless pursuit of excellence, refusing to settle for anything less than the best. This ethos was embodied by our founder, H.V. Singh, a man of unwavering patience and a sincere belief in the shared responsibility of all community members for fostering true transformation.
-                  </p>
-                  <p className="mission-para">
-                  In 1996, Lokarpan was born from Singh's vision, dedicated to addressing some of the most pressing challenges in our communities: high child mortality, unemployment, socio-economic disparities, and inadequate education. The organisation helped revitalise the communities, reform the education system and rescue mothers and their children from neonatal complications in the region.
-                  </p>
-                  <p className="mission-para">
-                  Over the past 28 years, we have worked hand-in-hand with communities, listening to their needs and aspirations to develop tailored solutions. Today, we are pioneering a new era of education with fully immersive, cross-compatible technologies designed to enhance learning outcomes and empower both students and teachers.
-                  </p>
-                </div>
-              </div>
-            )} */}
           </div>
         </section>
 
         <section className="our-purpose">
-          <div className="give-card give-card-reverse">
+          <div className="give-card mission-card">
             <div className="give-card-img mission-card-img-1"></div>
             <div className="give-card-text">
               <h1>Our Mission</h1>
@@ -123,14 +97,23 @@ const Mission = () => {
                 Lokarpan is dedicated to bringing the best minds together and
                 offering innovative solutions to support and empower underserved
                 communities. We create and support participatory projects to
-                address socio-economic issues in rural India. <br />
+                address socio-economic issues in rural India. 
+                {/* <br />
                 <span
                   onClick={() => openpopup(0)}
                   className="mission-read-more"
                 >
                   Read more
-                </span>
+                </span> */}
               </p>
+              <button
+                onClick={() => openpopup(0)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer"}}
+              >
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
               {popupVisibility[0] && (
                 <div className="misson-popup">
                   <div className="misson-popup-content">
@@ -167,18 +150,6 @@ const Mission = () => {
             </div>
           </div>
         </section>
-        {/* <section className="our-mission-mobile">
-          <div className="our-mission-mobile-image"></div>
-          <div className="our-mission-text">
-            <div className="our-mission-text-heading">Our Mission</div>
-            <div className="our-mission-text-content">
-            At Lokarpan, our mission is to empower rural communities through innovative and sustainable solutions. Since 1996, we have been dedicated to improving the social and economic conditions of those living in stress.
-            </div>
-            <div className="our-mission-text-button">
-              <button>Read More</button>
-            </div>
-          </div>
-        </section> */}
 
         <div className="our-principles">
           <h1 className="our-principles-main-head">Our Vision</h1>
@@ -211,73 +182,50 @@ const Mission = () => {
           </div>
         </div>
 
-        {/* <div className="our-principles">
-          <h1 className="our-principles-main-head">Our Principles</h1>
-          <div className="our-principles-inner">
-            <div className="ourp-left">
-              <h3 className="our-principles-head">Community centric collaboration</h3>
-              <p>Lokarpan is dedicated to actively engaging and empowering rural communities, ensuring their voices are heard and their needs are addressed through collaborative projects. We believe that true progress is achieved when communities are active participants in their own development, and we work to build partnerships that foster sustainable growth and self-reliance.</p>
-            </div>
-            <div className="ourp-right">
-              <h3 className="our-principles-head">Equity and Inclusivity</h3>
-              <p>Lokarpan upholds the principles of equity and inclusivity, striving to create a world where every individual has equal access to opportunities, resources, and rights, regardless of their background or circumstance. We are committed to breaking down barriers and addressing systemic inequalities, working towards a society where everyone can thrive and contribute to the common good.</p>
-          </div>
-          </div>
-        </div> */}
+          <h1 style={{paddingTop: "80px"}} className="our-principles-main-head">Our Principles</h1>
 
         <section className="our-purpose">
-          <div className="give-card mission-principles-container mission-principles-container2">
-            <div className="give-card-text mission-card-text">
-              <div className="mission-principles-container-in">
-                <h1>Our Principles</h1>
-                <div className="mission-princ-text-inner mission-desktop">
-                  <div>
-                    <h3 className="our-principles-head">
-                      Community centric collaboration
-                    </h3>
-                    <p>
-                      Lokarpan is dedicated to actively engaging and empowering
-                      rural communities, ensuring their voices are heard and
-                      their needs are addressed through collaborative projects.
-                      We believe that true progress is achieved when communities
-                      are active participants in their own development, and we
-                      work to build partnerships that foster sustainable growth
-                      and self-reliance
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="our-principles-head">
-                      Equity and Inclusivity
-                    </h3>
-                    <p>
-                      Lokarpan upholds the principles of equity and inclusivity,
-                      striving to create a world where every individual has
-                      equal access to opportunities, resources, and rights,
-                      regardless of their background or circumstance. We are
-                      committed to breaking down barriers and addressing
-                      systemic inequalities, working towards a society where
-                      everyone can thrive and contribute to the common good
-                    </p>
-                  </div>
-                </div>
-                <div className="faqs mision-mobi-7481150">
-                  {faqs.map((faq, index) => (
-                    <FAQ
-                      faq={faq}
-                      index={index}
-                      key={index}
-                      toggleFAQ={toggleFAQ}
-                    />
-                  ))}
-                </div>
-              </div>
+          <div className="give-card mission-card">
+            <div className="give-card-img mission-card-img-1"></div>
+            <div className="give-card-text">
+              <h1>
+                Community centric collaboration
+              </h1>
+              <p>
+                Lokarpan is dedicated to actively engaging and empowering
+                rural communities, ensuring their voices are heard and
+                their needs are addressed through collaborative projects.
+                We believe that true progress is achieved when communities
+                are active participants in their own development, and we
+                work to build partnerships that foster sustainable growth
+                and self-reliance. 
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="our-purpose">
+          <div className="give-card mission-card give-card-reverse">
+            <div className="give-card-text">
+              <h1>
+              Equity and Inclusivity
+              </h1>
+              <p>
+                Lokarpan upholds the principles of equity and inclusivity,
+                striving to create a world where every individual has
+                equal access to opportunities, resources, and rights,
+                regardless of their background or circumstance. We are
+                committed to breaking down barriers and addressing
+                systemic inequalities, working towards a society where
+                everyone can thrive and contribute to the common good.
+              </p>
             </div>
             <div className="give-card-img mission-card-img-1"></div>
           </div>
         </section>
 
         <section className="our-purpose">
-          <div className="give-card give-card-reverse">
+          <div className="give-card mission-card">
             <div className="give-card-img mission-card-img-1"></div>
             <div className="give-card-text">
               <h1>Our Culture</h1>
@@ -286,14 +234,23 @@ const Mission = () => {
                 commitment to growth, both for our organisation and the
                 communities we serve. Our goal is to expand opportunities for
                 all, breaking down barriers to access and creating pathways to
-                success. <br />
+                success. 
+                {/* <br />
                 <span
                   onClick={() => openpopup(1)}
                   className="mission-read-more"
                 >
                   Know more
-                </span>
+                </span> */}
               </p>
+              <button
+                onClick={() => openpopup(1)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
+              >
+                Know more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
               {popupVisibility[1] && (
                 <div className="misson-popup">
                   <div className="misson-popup-content">
@@ -329,7 +286,7 @@ const Mission = () => {
           </div>
         </section>
         <section className="our-purpose">
-          <div className="give-card mission-card">
+          <div className="give-card give-card-reverse mission-card">
             <div className="give-card-text">
               <h1>Ethics and Compliance</h1>
               <p>
@@ -339,14 +296,24 @@ const Mission = () => {
                 empowering communities. Our Ethics and Compliance policies form
                 the bedrock of our business practices, guiding us in upholding
                 our values and principles each day.
-                <br />
+                {/* <br />
                 <span
                   onClick={() => openpopup(2)}
                   className="mission-read-more"
                 >
                   Know more
-                </span>
+                </span> */}
               </p>
+
+              
+              <button
+                onClick={() => openpopup(2)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer"}}
+              >
+                Know more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
               {popupVisibility[2] && (
                 <div className="misson-popup">
                   <div className="misson-popup-content">
@@ -390,16 +357,20 @@ const Mission = () => {
                   </div>
                 </div>
               )}
-              <div className="hyperlinks coc-link">
-                <div className="apply-btn transparent">
-                  <span
-                    className="apply-btn-text-black body-btn"
-                    onClick={() => openpopup(3)}
-                  >
-                    Code of Conduct
-                  </span>
-                </div>
-              </div>
+            </div>
+            <div className="give-card-img mission-card-img-2"></div>
+          </div>
+        </section>
+
+        
+        <button
+                onClick={() => openpopup(3)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer", backgroundColor: "orange"}}
+              >
+                Code of Conduct <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
               {popupVisibility[3] && (
                 <div className="misson-popup">
                   <div className="misson-popup-content">
@@ -486,22 +457,9 @@ const Mission = () => {
                   </div>
                 </div>
               )}
-            </div>
-            <div className="give-card-img mission-card-img-2"></div>
-            {/* <div className="give-card-img mission-card-img-1"></div> */}
-          </div>
-        </section>
-        {/* <section className="our-vision"> */}
-        {/* <div className="our-vision-head">Ethics and Compliance</div>
-          <div className="our-vision-text">
-          At Lokarpan, we conduct our operations ethically, honestly, and in strict compliance with the law. We believe that our conduct is just as crucial to our success as our commitment to empowering communities. Our Ethics and Compliance policies form the bedrock of our business practices, guiding us in upholding our values and principles each day.
-          </div>
-          <div className="hyperlinks">
-          <div className="apply-btn transparent">
-              <Link to="/ethics" className="apply-btn-text-black body-btn">Know more</Link>
-          </div>
-          </div> */}
-        {/* </section> */}
+
+              
+          <div style={{height: "100px"}}></div>
       </div>
       <Footer />
     </div>

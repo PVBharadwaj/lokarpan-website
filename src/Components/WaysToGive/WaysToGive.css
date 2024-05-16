@@ -69,13 +69,13 @@
 }
 .give-pop-up-button{
   margin: 1rem 0 0 0;
-  padding: 14px 22px;
+  padding: 10px 20px;
   font-weight: 600;
   font-size: 17px;
   background-color: #fff;
     border: 3px solid #000;
     
- width: 200px;
+ width: fit-content;
     border-radius: 980px;
 }
 .give-card-text {
@@ -179,7 +179,7 @@ line-height: 32px;
     padding: 0px;
   }
   .give-card-text p {
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px 0px;
     line-height: 25px;
     font-weight: 600;

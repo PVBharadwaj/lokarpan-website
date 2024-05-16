@@ -4,6 +4,7 @@ import EducationSubNav from "../Navbar/EducationSubNav";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { RxCross2 } from "react-icons/rx";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 import "./index.css";
 import "../Health/index.css";
@@ -98,14 +99,18 @@ const Approach = () => {
           </h1> */}
 
 
-            <h1 className="white-head">
+            {/* <h1 className="white-head">
               Inspiring every kind of learner.
-            </h1>
+            </h1> */}
             {/* <p className="white-head">
             At Lokarpan, we are committed to reshaping the landscape of education, ensuring that every child has the opportunity to thrive and contribute meaningfully to India's bright future.
             </p> */}
 
         </div>
+        {/* className="app-title title2"  -- taken from application.js */}
+        <h1 className="app-title title2 approach-head1">
+              Inspiring every kind of learner.
+            </h1> 
         {/* className="application-para1"  -- taken from application.js */}
           <p className="application-para1 approach-para1">
           At Lokarpan, we are committed to reshaping the landscape of education, ensuring that every child has the opportunity to thrive and contribute meaningfully to India's bright future.
@@ -150,15 +155,14 @@ const Approach = () => {
                 students, but at building a brighter future for generations to
                 come.
               </p>
-              {/* <a href="#" className="approach-anchor">
-                Read more
-              </a> */}
-              <span
+              <button
                 onClick={() => approachopenpopup(0)}
-                className="approach-anchor give-card-link"
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
               >
-                Read more
-              </span>
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
               {/* <div className="hyperlinks mission-popup">
                 <div className="apply-btn white">
                   <span
@@ -235,12 +239,20 @@ const Approach = () => {
                 virtual training, ensures efficient and effective education
                 delivery, fostering a culture of continuous improvement.
               </p>
-              <span
+              {/* <span
                 onClick={() => approachopenpopup(1)}
                 className="approach-anchor give-card-link"
               >
                 Read more
-              </span>
+              </span> */}
+              <button
+                onClick={() => approachopenpopup(1)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
+              >
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
             </div>
             {approachPopupVisibility[1] && (
               <div className="misson-popup">
@@ -294,12 +306,14 @@ const Approach = () => {
                 volunteering in our classrooms or contributing to our existing
                 programmes can make a significant impact.
               </p>
-              <span
+              <button
                 onClick={() => approachopenpopup(2)}
-                className="approach-anchor give-card-link"
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
               >
-                Read more
-              </span>
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
             </div>
             {approachPopupVisibility[2] && (
               <div className="misson-popup">

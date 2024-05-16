@@ -8,19 +8,17 @@ const FlipCard = () => {
   const [isFlipOpen, setFlipOpen] = useState(false);
   const screenWidth = window.innerWidth;
   const handleClickin = () => {
-    if(screenWidth > 748){
+    if (screenWidth > 748) {
       setFlipped(true);
-    }
-    else {
+    } else {
       setFlipOpen(true);
     }
   };
 
   const handleClickout = () => {
-    if(screenWidth > 748){
+    if (screenWidth > 748) {
       setFlipped(false);
-    }
-    else {
+    } else {
       setFlipOpen(false);
     }
   };
@@ -31,8 +29,10 @@ const FlipCard = () => {
         <div className={`flip-card-inner ${isFlipped ? "flipped" : ""}`}>
           <div className="flip-card-front">
             <div>
-             
-              <h1 className="fliphead">Contribute directly to initiatives that uplift underprivileged communities and enhance their well-being.</h1>
+              <h1 className="fliphead">
+                Contribute directly to initiatives that uplift underprivileged
+                communities and enhance their well-being.
+              </h1>
               <img
                 src="https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632775/image_327_tg9gsn.png"
                 alt=""
@@ -44,12 +44,24 @@ const FlipCard = () => {
           </div>
           <div className="flip-card-back">
             <div>
-              <h1>Contribute directly to initiatives that uplift underprivileged communities and enhance their well-being.</h1>
-           
-                  <p>Contribute directly to initiatives that uplift underprivileged communities and enhance their well-being.
-                <br/>Connect with a diverse network of passionate volunteers dedicated to making a difference in rural communities.
-                <br/>Expand your skill set and gain valuable experience that can enrich your personal and professional growth.
-                <br/>Join Lokarpan in its mission to empower individuals and families, ensuring access to education, healthcare, and sustainable livelihoods for rural populations.
+              <h1>
+                Contribute directly to initiatives that uplift underprivileged
+                communities and enhance their well-being.
+              </h1>
+
+              <p>
+                Contribute directly to initiatives that uplift underprivileged
+                communities and enhance their well-being.
+                <br />
+                Connect with a diverse network of passionate volunteers
+                dedicated to making a difference in rural communities.
+                <br />
+                Expand your skill set and gain valuable experience that can
+                enrich your personal and professional growth.
+                <br />
+                Join Lokarpan in its mission to empower individuals and
+                families, ensuring access to education, healthcare, and
+                sustainable livelihoods for rural populations.
               </p>
             </div>
             <div className="right-align">
@@ -58,21 +70,31 @@ const FlipCard = () => {
           </div>
         </div>
       </div>
-      <div className={`flip-not-open set-z-high ${isFlipOpen ? "flipopened" : ""}`}>  
-            {/* <div className="right-align"> */}
-            <div className="flip-back ">
-              <IoIosCloseCircle className="size-80" onClick={handleClickout} />
-            </div>
-            <div>
-              <h1>Why Volunteer with Lokarpan?</h1>
-              <p>
-                Contribute directly to initiatives that uplift underprivileged communities and enhance their well-being.
-                <br/>Connect with a diverse network of passionate volunteers dedicated to making a difference in rural communities.
-                <br/>Expand your skill set and gain valuable experience that can enrich your personal and professional growth.
-                <br/>Join Lokarpan in its mission to empower individuals and families, ensuring access to education, healthcare, and sustainable livelihoods for rural populations.
-              </p>
-            </div>
+      <div
+        className={`flip-not-open set-z-high ${isFlipOpen ? "flipopened" : ""}`}
+      >
+        {/* <div className="right-align"> */}
+        <div className="flip-back ">
+          <IoIosCloseCircle className="size-80" onClick={handleClickout} />
         </div>
+        <div>
+          <h1>Why Volunteer with Lokarpan?</h1>
+          <p>
+            Contribute directly to initiatives that uplift underprivileged
+            communities and enhance their well-being.
+            <br />
+            Connect with a diverse network of passionate volunteers dedicated to
+            making a difference in rural communities.
+            <br />
+            Expand your skill set and gain valuable experience that can enrich
+            your personal and professional growth.
+            <br />
+            Join Lokarpan in its mission to empower individuals and families,
+            ensuring access to education, healthcare, and sustainable
+            livelihoods for rural populations.
+          </p>
+        </div>
+      </div>
     </>
   );
 };

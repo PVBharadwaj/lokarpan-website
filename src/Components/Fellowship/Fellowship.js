@@ -284,23 +284,16 @@ const Fellowship = () => {
 
       <div style={{marginBottom: "0px"}} className="opp grey-back">
         <h3 style={{paddingBottom: "40px"}} className="opp-head fellow-data weight-800">What You’ll Do</h3>
-        <h1 className="fellow-opp-new-head">As a Lokarpan Fellow, you'll be an integral </h1>
+        <h1 className="fellow-opp-new-head">As a Lokarpan Fellow, you join a mission to transform education and empower rural communities. </h1>
         <div className="fellow-what-sec">
         <p className="opp-data impact-title fellow-opp-horizontal-cards">
-          As a Lokarpan Fellow, you'll be an integral part of a team of
-          passionate individuals, actively engaged in our mission to transform
-          education and empower rural communities.
+        You will formulate innovative solutions to drive impactful change, working closely with our dedicated team members on ground
         </p>
         <p className="opp-data impact-title fellow-opp-horizontal-cards">
-          Your role will involve formulating innovative solutions to drive
-          impactful change. You'll have the opportunity to develop and present
-          recommendations to our partner schools and communities, working
-          closely with our dedicated team members on ground. Throughout your
-          journey, you'll receive exceptional training and mentoring sessions
-          from experienced colleagues and partners.
+        You'll have the opportunity to develop and present recommendations to our partner schools and communities.
         </p>
         <p className="opp-data impact-title fellow-opp-horizontal-cards">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Throughout your journey, you'll receive exceptional training and mentoring sessions from experienced colleagues and partners.
         </p>
         </div>
 
