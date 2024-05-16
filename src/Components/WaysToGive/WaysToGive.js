@@ -66,16 +66,17 @@ const WaysToGive = () => {
               making a meaningful difference.
             </p>
             <Link className="give-card-link ways-space-up" to="/donate" style={{ color: '#06c' }}>
-  Donate now <ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
-
-</Link>
+  Donate now<span className="arrow-icon">
+        <ArrowForwardIosIcon style={{ verticalAlign: 'middle', fontSize: '15px' }} />
+      </span></Link>
 
 <button
   onClick={() => openpopup(0)}
   className="give-pop-up-button"
   style={{ cursor: "pointer" }}
 >
-  Explore a Gift<AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+  Explore a Gift<AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' 
+}} />
   
 </button>
             {popupVisibility[0] && (
@@ -98,10 +99,11 @@ const WaysToGive = () => {
                     sustainability, both environmentally and socially, by
                     implementing practices that promote long-term well-being and
                     resilience.
+                   <br></br> <span  className="mission-para1"> Thank you for your generous support.
+                </span>
                   </p>
-                  <p style={{ width: "100%" }} className="mission-para">
-                    Thank you for your generous support.
-                  </p>
+                  
+                   
                 </div>
               </div>
             )}
@@ -121,7 +123,9 @@ const WaysToGive = () => {
               support@lokarpan.com for more information.
             </p>
             <Link className="give-card-link ways-space-up" to="/newsletter">
-              Register<ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
+              Register<span className="arrow-icon">
+        <ArrowForwardIosIcon style={{ verticalAlign: 'middle', fontSize: '15px' }} />
+      </span>
             </Link>
             {/* <Link className="give-card-link" to="/">Free Membership</Link> */}
           </div>
@@ -142,10 +146,14 @@ const WaysToGive = () => {
               colleagues and partners.
             </p>
             <Link className="give-card-link" to="/being-a-volunteer">
-              Volunteer Opportunities<ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
+              Volunteer Opportunities<span className="arrow-icon">
+        <ArrowForwardIosIcon style={{ verticalAlign: 'middle', fontSize: '15px' }} />
+      </span>
             </Link>
             <Link className="give-card-link" to="/fellowship">
-              Fellowship<ArrowForwardIosIcon style={{ verticalAlign: 'middle' ,fontSize: '20px'}} />
+              Fellowship<span className="arrow-icon">
+        <ArrowForwardIosIcon style={{ verticalAlign: 'middle', fontSize: '15px' }} />
+      </span>
 
             </Link>
           </div>
