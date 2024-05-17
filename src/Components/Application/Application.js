@@ -57,39 +57,39 @@ const Plans = [
 ];
 
 const Application = () => {
-  const [popupVisibility, setPopupVisibility] = useState([false]);
+  // const [popupVisibility, setPopupVisibility] = useState([false]);
 
-  const openpopup = (index) => {
-    const updatedVisibility = [...popupVisibility];
-    updatedVisibility[index] = true;
-    setPopupVisibility(updatedVisibility);
-  };
+  // const openpopup = (index) => {
+  //   const updatedVisibility = [...popupVisibility];
+  //   updatedVisibility[index] = true;
+  //   setPopupVisibility(updatedVisibility);
+  // };
 
-  const closepopup = (index) => {
-    const updatedVisibility = [...popupVisibility];
-    updatedVisibility[index] = false;
-    setPopupVisibility(updatedVisibility);
-  };
+  // const closepopup = (index) => {
+  //   const updatedVisibility = [...popupVisibility];
+  //   updatedVisibility[index] = false;
+  //   setPopupVisibility(updatedVisibility);
+  // };
 
-  useEffect(() => {
-    const handleKeyPress = (event) => {
-      if (event.which === 27) {
-        setPopupVisibility(popupVisibility.map(() => false));
-      }
-    };
-    window.addEventListener("keydown", handleKeyPress);
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  }, [popupVisibility]);
+  // useEffect(() => {
+  //   const handleKeyPress = (event) => {
+  //     if (event.which === 27) {
+  //       setPopupVisibility(popupVisibility.map(() => false));
+  //     }
+  //   };
+  //   window.addEventListener("keydown", handleKeyPress);
+  //   return () => {
+  //     window.removeEventListener("keydown", handleKeyPress);
+  //   };
+  // }, [popupVisibility]);
 
-  useEffect(() => {
-    if (popupVisibility.some((isVisible) => isVisible)) {
-      document.body.classList.add("body-no-scroll");
-    } else {
-      document.body.classList.remove("body-no-scroll");
-    }
-  }, [popupVisibility]);
+  // useEffect(() => {
+  //   if (popupVisibility.some((isVisible) => isVisible)) {
+  //     document.body.classList.add("body-no-scroll");
+  //   } else {
+  //     document.body.classList.remove("body-no-scroll");
+  //   }
+  // }, [popupVisibility]);
 
   return (
     <>
@@ -105,47 +105,47 @@ const Application = () => {
           </h1>
           {/* className="application-para1"  -- used in approach -> index.js */}
           <p className="application-para1">
-            The education sector is constantly evolving, and technology has
-            played a significant role in shaping the way we learn. Our goal? To
-            craft a digital roadmap that integrates our data repository,
-            learning management systems, and predictive performance based
-            analytics for educational success.
+            
+The education sector is constantly evolving, and technology has played a significant role in shaping the way we learn. Our goal? To take the stress out of assessment for learners and instructors alike. 
+
           </p>
-          <div className="adobe-horizon">
-            <div className="adobe-horizon-in">
-              <h2 className="app-title title3">Adobe</h2>
-              <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
-                Introducing Lokarpan's Adobe-powered web application, a
-                transformative tool for tracking student performance and well-being.
-                With modules like RankMaster for academic rankings and HealthMap for
-                health monitoring, schools can efficiently manage exams and provide
-                real-time feedback, empowering rural communities in Uttar Pradesh.
-              </p>
+
+          <div>
+            <div style={{backgroundColor: "#ff8cbd"}} className="adobe-horizon-in app-width-wise">
+                <h2 className="app-title title3 adobe-horizon-in-text">Learning with Horizon: Earn points, unlock levels, gain real-world skills</h2>
+                {/* <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
+                </p> */}
+              </div>
+            <div className="adobe-horizon app-height-wise">
+
+
+              <div style={{border: "solid 2px black"}} className="adobe-horizon-in">
+                <h2 className="app-title title3 adobe-horizon-in-text">Students can practice bite-size quizzes anywhere, anytime</h2>
+              </div>
+
+              <div style={{backgroundColor: "#ff8cbd"}} className="adobe-horizon-in">
+                <h2 className="app-title title3 adobe-horizon-in-text">Teachers can choose assessments, grade them and provide feedback with ease</h2>
+              </div>
             </div>
-            <div className="adobe-horizon-in">
-              <h2 className="app-title title3">Horizon</h2>
-              <p style={{padding: "0px 30px 50px",textAlign: "left"}} className="application-para2">
-                Horizon, our innovative web application, harnesses Bayesian models
-                to analyse student quizzes and assessments. This enables us to offer
-                personalised recommendations for academic improvement, providing
-                teachers with invaluable insights to tailor their teaching
-                strategies effectively.
-              </p>
-            </div>
+            <div style={{border: "solid 2px black"}} className="adobe-horizon-in app-width-wise">
+                <h2 className="app-title title3 adobe-horizon-in-text">Streamlined assessments can drive student progress with constant visibility</h2> 
+              </div>
           </div>
+
+
+
+            
         </div>
       </div>
       <div className="app-page app-div-bottom ">
         <div className="app-div">
         {/* <h1 className="title2"> */}
-        <h1 className="app-title title2">
+        <h1 className="app-title title2 app-" style={{maxWidth: "800px"}}>
           Empower Teaching and Learning with Advanced Tools
         </h1>
         {/* <p className="app-para-5"> */}
         <p className="application-para1 app-para-5">
-          Unlock the potential of personalised learning experiences, instant
-          feedback, enhanced accessibility, well-being tracking, fortified
-          digital security, and time-saving solutions for educators.
+        Our Applications unlock the potential of personalised learning experiences, and time-saving solutions for educators.
         </p>
         </div>
 
@@ -166,7 +166,7 @@ const Application = () => {
                 </div>
                 {/* <h4>Adobe</h4> */}
                 <p>
-                Track student performance on leaderboards
+                Track student performances
                 </p>
               </div>
               <div className="square-cards-each-cont">
@@ -178,7 +178,7 @@ const Application = () => {
                 </div>
                 {/* <h4>Content Creation</h4> */}
                 <p>
-                Gamify results to boost student engagement
+                Track health and nutrition metrics
                 </p>
               </div>
               <div className="square-cards-each-cont">
@@ -190,7 +190,7 @@ const Application = () => {
                 </div>
                 {/* <h4>Analytics & Prediction</h4> */}
                 <p>
-                Track health and nutrition metrics and submit sickness reports
+                Gather data driven insights
                 </p>
               </div>
               <div className="square-cards-each-cont">
@@ -202,7 +202,7 @@ const Application = () => {
                 </div>
                 {/* <h4>Exams & Quizzes</h4> */}
                 <p>
-                Gather insights into education and health trends across institutions
+                Gamify results
                 </p>
               </div>
               <div className="square-cards-each-cont">
@@ -214,7 +214,7 @@ const Application = () => {
                 </div>
                 {/* <h4>Adobe</h4> */}
                 <p>
-                Track student performance on leaderboards
+                Submit sickness reports
                 </p>
               </div>
               <div className="square-cards-each-cont">
@@ -226,7 +226,7 @@ const Application = () => {
                 </div>
                 {/* <h4>Adobe</h4> */}
                 <p>
-                Track student performance on leaderboards
+                Access trends across institutions
                 </p>
               </div>
             {/* </div> */}

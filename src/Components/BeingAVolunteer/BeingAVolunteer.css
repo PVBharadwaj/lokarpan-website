@@ -116,8 +116,15 @@
   font-size: 52px;
   padding-top: 150px;
 }
+@media screen and (max-width: 1100px){
+  .bavflip{
+    display: none;
+  }
+
+}
 
 @media screen and (max-width: 748px) {
+ 
   .being-a-volunteer {
     padding: 10px 30px;
     /* gap: 140px; */

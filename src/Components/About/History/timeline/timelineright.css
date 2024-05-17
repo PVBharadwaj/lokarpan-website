@@ -36,6 +36,8 @@
 .timeline-right-section-content{
   font-size: 20px;
   padding-top: 1.5rem;  
+  font-weight: 600;
+  color: grey;
 }
 .timeline-rs-text{
   padding: 5rem 1rem;

@@ -4,6 +4,7 @@ import EducationSubNav from "../Navbar/EducationSubNav";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { RxCross2 } from "react-icons/rx";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 import "./index.css";
 import "../Health/index.css";
@@ -140,6 +141,7 @@ const Approach = () => {
         </div>
 
         {/* <div className="health-container-section"> */}
+        {/* used in careers */}
           <div className="health-each-container approach-each-container">
             <div className="health-content-section approach-content-section content-left">
               <h1 className="approach-lokarpan-head3">
@@ -154,15 +156,14 @@ const Approach = () => {
                 students, but at building a brighter future for generations to
                 come.
               </p>
-              {/* <a href="#" className="approach-anchor">
-                Read more
-              </a> */}
-              <span
+              <button
                 onClick={() => approachopenpopup(0)}
-                className="approach-anchor give-card-link"
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
               >
-                Read more
-              </span>
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
               {/* <div className="hyperlinks mission-popup">
                 <div className="apply-btn white">
                   <span
@@ -239,12 +240,20 @@ const Approach = () => {
                 virtual training, ensures efficient and effective education
                 delivery, fostering a culture of continuous improvement.
               </p>
-              <span
+              {/* <span
                 onClick={() => approachopenpopup(1)}
                 className="approach-anchor give-card-link"
               >
                 Read more
-              </span>
+              </span> */}
+              <button
+                onClick={() => approachopenpopup(1)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
+              >
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
             </div>
             {approachPopupVisibility[1] && (
               <div className="misson-popup">
@@ -298,12 +307,14 @@ const Approach = () => {
                 volunteering in our classrooms or contributing to our existing
                 programmes can make a significant impact.
               </p>
-              <span
+              <button
                 onClick={() => approachopenpopup(2)}
-                className="approach-anchor give-card-link"
+                className="give-pop-up-button"
+                style={{ cursor: "pointer" }}
               >
-                Read more
-              </span>
+                Read more <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button>
             </div>
             {approachPopupVisibility[2] && (
               <div className="misson-popup">

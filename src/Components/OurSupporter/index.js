@@ -88,7 +88,7 @@ class OurSupporter extends Component {
 </div>
 
           <div className="in-support-section">
-            <h1 className="font64  black support-space-below">
+            <h1 className="font64  support-space-below">
               In-Kind support
             </h1>
             <div className="in-support-below-section">
