@@ -88,6 +88,11 @@
   padding: 100px 5%;
   box-sizing: border-box;
 }
+.arrow-icon {
+
+  font-weight: 600;
+  /* Define additional styles for your arrow icon */
+}
 
 .give-card-text h1 {
   font-size: 64px;
@@ -100,12 +105,15 @@
   padding: 8px 4rem 8px 0;
   color: #333333;
   font-weight: 600;
-  line-height: 1.5;
+
   
 }
-
+.give-pop-up-button:hover{
+  background-color: #000;
+  color:#fff;
+}
 .give-card-link {
-  padding: 1rem 0 1rem 0;
+  padding: .5rem 0 .5rem 0;
   color: #06c;
   font-size: 19px;
   font-weight: 600;
@@ -117,12 +125,24 @@
   text-decoration: underline; /* Underline on hover */
 }
 
-
+.mission-para1{
+line-height: 32px;
+  font-size:  19px;
+  font-weight: 700;
+}
 @media screen and (max-width: 748px) {
+  .mission-para1{
+    font-size:  16px;
+    font-weight: 600;
+  }
   .ways-page {
     padding: 80px 0px;
   }
-
+.give-pop-up-button{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
   .ways-top h1 {
     font-size: 40px;
   }
@@ -161,12 +181,15 @@
   .give-card-text p {
     font-size: 20px;
     padding: 15px 0px;
+    line-height: 25px;
+    font-weight: 600;
   }
 
   .give-card-link {
-    font-size: 14px;
-    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
     color: #3f86f0;
+    padding: 10px 0;
   }
 }
 

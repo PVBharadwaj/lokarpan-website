@@ -46,7 +46,7 @@ background-color: #fff;
   margin-bottom: 0;
   text-align: left;
 }
-.font64 {
+.font64{
   font-size: 64px;
   font-weight: bold;
   line-height: 70px;
@@ -160,7 +160,7 @@ background-color: #fff;
 .in-support-section {
   /* height: 390px; */
   width: 100%;
-  margin: 150px 0;
+  margin: 150px 0 ;
 }
 .in-support-below-section {
   /* height: 180px; */
@@ -186,14 +186,43 @@ background-color: #fff;
     justify-content: center;
 }
 
-.black {
-  color: black;
-}
+
 @media screen and (max-width: 748px) {
+ .padding100{
+  padding: 4rem 2rem 2rem;
+ }
+  .supp-each-sec{
+    align-items: flex-start;
+  }
+  .why-donate-topdiv1{
+    padding:0 2rem 2rem 2rem;
+    font-size: 24px;
+    text-align: left;
+
+  }
+  .font20{
+    text-align: left;
+  }
+  .ccus{
+    justify-content: flex-start;
+  }
+  .ccus button{
+    margin-left: 2rem;
+    margin-bottom: 50px;
+  }
+  .philantropic-organization{
+    padding: 0 4rem;
+    width: 250px;
+  }
+  .philantropic-organization p{
+    padding: 0 1rem;
+  }
   .font48 {
     font-size: 32px;
   }
   .font64 {
+    
+    
     font-size: 40px;
     width: calc(100% - 47px);
     line-height: 50px;
@@ -202,7 +231,9 @@ background-color: #fff;
     font-size: 16px;
     width: calc(100% - 100px);
   }
+ 
   .donor-section {
+align-items: flex-start;
     width: calc(100% - 20px);
     margin: auto;
     /* height: 700px; */
@@ -220,7 +251,8 @@ background-color: #fff;
     margin: 50px 0;
   }
   .font48-left {
-    font-size: 40px;
+
+      font-size: 40px;
   }
   .font28 {
     font-size: 24px;
@@ -230,18 +262,18 @@ background-color: #fff;
     min-height: 600px;
   }
   .philantropic-below-section {
-    flex-direction: column;
-    justify-content: flex-start;
+  padding: 0 0 4rem 0;
+   display: grid;
   }
   .philantropic-below-section p {
     width: 100%;
     font-size: 16px;
     line-height: 25px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
   }
   .in-support-section {
     /* height: 300px; */
-    margin-top: 100px;
+   margin: 2rem 0;
   }
   .in-support-section .font48 {
     font-size: 36px;
