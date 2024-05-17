@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import SupportSubNav from "../Navbar/SupportSubNav/SupportSubNav";
 import { Link } from "react-router-dom";
 import "./BeingAVolunteer.css";
+import MobileFlipcards from "../Carousals/FlipCards/MobileFlipcards";
 import FlipCard2 from "../Carousals/FlipCards/FlipCard2";
 import FlipCard3 from "../Carousals/FlipCards/FlipCard3";
 import FlipCard4 from "../Carousals/FlipCards/FlipCard4";
@@ -22,10 +23,14 @@ const BeingAVolunteer = () => {
         </div>
         <h1 className="vol-head-div-text">Why?</h1>
         
-        <FlipCard />
-        <FlipCard2 />
+     <MobileFlipcards/>
+     <div className="bavflip">
+        <FlipCard/>
+        <FlipCard2/>
+       
         <FlipCard3 />
-        <FlipCard4 />
+        <FlipCard4 /> 
+        </div>
       </div>
         <h1 className="meet-vol">Meet Our Volunteers</h1>
       <div className="being-a-volunteer-second">

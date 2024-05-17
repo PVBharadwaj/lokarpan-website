@@ -56,13 +56,7 @@ const History = () => {
     <>
       <Navbar />
       <SubNavbar />
-      <div className="history-left-side-mobile">
-        <div className="history-lsh1-mobile">History</div>
-        <div className="history-lsh2-mobile">
       
-          <div className="history-lsh21-mobile">of our </div> Firm
-        </div>
-      </div>
       <div className="history-top_section">
         <div className="history-top-sec-cont">
           <div className="history-left-side">
