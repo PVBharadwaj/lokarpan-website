@@ -43,7 +43,7 @@
 }
 
 .head1 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 32px;
   margin: 20px auto;
   text-align: center;
@@ -74,6 +74,7 @@
   text-align: center;
   margin-bottom: 30px;
   max-width: 1100px;
+  font-weight: 600;
 }
 .career-para {
   font-size: 20px;
@@ -126,7 +127,7 @@ a {
   cursor: pointer;
   outline: none;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 17px;
 }
 
@@ -233,7 +234,7 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 700px;
+    /* height: 700px; */
     width: 100%;
   }
   .mobile-career-top-container img {
@@ -254,6 +255,7 @@ a {
     font-size: 18px;
     width: calc(100% - 100px);
     text-align: center;
+    font-weight: 600;
   }
   .head2 {
     font-size: 48px;
@@ -309,6 +311,8 @@ a {
     border-radius: 50px;
     height: 40px;
     font-size: 14px;
+    padding: 10px 0px;
+    font-weight: 600;
   }
   .mobile-para2 {
     font-size: 20px;
