@@ -51,6 +51,8 @@
     padding-top: 1.5rem;
     font-size: 20px;
     text-align: right;
+    font-weight: 600;
+    color: grey;
    }
    
    .timeline-right-image{
