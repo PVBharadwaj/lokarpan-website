@@ -127,12 +127,13 @@
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 50px;
-  padding-right: 12rem;
+  padding-right: 5rem;
 }
 .history-subheader1 {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
+  padding-right: 5rem;
 }
 .timeline-mobile {
   display: none;
@@ -179,9 +180,9 @@
   }
 .his-sec-text{
   text-align: left;
-margin: 0 2rem;
+margin: 1rem 2rem;
 font-size: 20px;
-padding: 0 1rem;
+padding: 0 1rem 1rem;
 }
 .history-subheader{
   text-align: left;
