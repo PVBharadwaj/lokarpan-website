@@ -363,10 +363,19 @@ const Mission = () => {
         </section>
 
         
-        <button
+        {/* <button
                 onClick={() => openpopup(3)}
                 className="give-pop-up-button"
                 style={{ cursor: "pointer", backgroundColor: "orange"}}
+              >
+                Code of Conduct <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
+                
+              </button> */}
+
+              <button
+                onClick={() => openpopup(3)}
+                className="give-pop-up-button"
+                style={{ cursor: "pointer"}}
               >
                 Code of Conduct <AddCircleOutlineIcon style={{ verticalAlign: 'middle', marginLeft: '10px' }} />
                 

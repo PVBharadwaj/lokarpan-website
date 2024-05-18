@@ -12,7 +12,7 @@ class Sidemap extends Component {
             <div className="sitemap-nav">
                 <h1>Lokarpan Sitemap</h1>
             </div>
-
+            <div className='sitemap-section'>
             <section className='sitemap_content'>
                 <div>
                     <div className='site_item_head site_item_head1'>About</div>
@@ -87,6 +87,8 @@ class Sidemap extends Component {
                     </ul>
                 </div>
             </section>
+            </div>
+
 
             <Footer/>
             </>

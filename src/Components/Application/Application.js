@@ -109,10 +109,15 @@ const Application = () => {
 The education sector is constantly evolving, and technology has played a significant role in shaping the way we learn. Our goal? To take the stress out of assessment for learners and instructors alike. 
 
           </p>
+            
+        </div>
+      </div>
 
+
+      <div className="app-wide-cards">
           <div>
             <div style={{backgroundColor: "#ff8cbd"}} className="adobe-horizon-in app-width-wise">
-                <h2 className="app-title title3 adobe-horizon-in-text">Learning with Horizon: Earn points, unlock levels, gain real-world skills</h2>
+                <h2 className="app-title title3 adobe-horizon-in-text adobe-horizon-wide-text">Learning with Horizon: Earn points, unlock levels, gain real-world skills</h2>
                 {/* <p style={{padding: "0px 30px 50px", textAlign: "left"}} className="application-para2">
                 </p> */}
               </div>
@@ -127,16 +132,14 @@ The education sector is constantly evolving, and technology has played a signifi
                 <h2 className="app-title title3 adobe-horizon-in-text">Teachers can choose assessments, grade them and provide feedback with ease</h2>
               </div>
             </div>
-            <div style={{border: "solid 2px black"}} className="adobe-horizon-in app-width-wise">
-                <h2 className="app-title title3 adobe-horizon-in-text">Streamlined assessments can drive student progress with constant visibility</h2> 
+            <div style={{border: "solid 2px #d7d7d7"}} className="adobe-horizon-in app-width-wise">
+                <h2 className="app-title title3 adobe-horizon-in-text adobe-horizon-wide-text">Streamlined assessments can drive student progress with constant visibility</h2> 
               </div>
           </div>
-
-
-
-            
         </div>
-      </div>
+
+
+        
       <div className="app-page app-div-bottom ">
         <div className="app-div">
         {/* <h1 className="title2"> */}
@@ -236,7 +239,7 @@ The education sector is constantly evolving, and technology has played a signifi
       <div className="app-page">
         <div className="app-div">
           <div className="plan">
-            <h1 className="app-title title2">Access one of our plans below</h1>
+            <h1 style={{maxWidth: "500px"}} className="app-title title2">Access one of our plans below</h1>
             {/* <p className="app-para-4"> */}
         <p className="application-para1 app-para-5">
               In education, technology serves as a powerful supplement to the
