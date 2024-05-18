@@ -59,6 +59,8 @@ import "./styles.css";
 import CodeOfConduct from "./Components/About/Mission/CodeOfConduct";
 import ScrollToTop from "./Components/ScrollToTop";
 import WriteToUs from "./Components/WriteToUs";
+import Employment from "./Components/Employment";
+import KithCareer from "./Components/KithCareer";
 
 function App() {
   return (
@@ -66,7 +68,6 @@ function App() {
       <BrowserRouter basename="/lokarpan-website">
         <ScrollToTop />
         <Routes>
-       
           <Route path="/sitemap" element={<Sidemap />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
           <Route path="/kith/career" element={<Carek />}></Route>
@@ -138,6 +139,8 @@ function App() {
           <Route path="/kith/information" element={<Information />}></Route>
           <Route path="/kith/alumni" element={<Alumni />}></Route>
           <Route path="/kith/leadership" element={<KithLeadership />}></Route>
+          <Route path="/kith/employment" element={<Employment />}></Route>
+          {/* <Route path="/kith/career" element={<KithCareer />}></Route> */}
         </Routes>
 
         <Subscribebtn />

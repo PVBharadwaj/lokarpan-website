@@ -126,7 +126,9 @@
 }
 
 @media screen and (max-width: 748px) {
- 
+  .volunter-opp p{
+    line-height: 25px;
+  }
   .being-a-volunteer {
     padding: 10px 30px;
     /* gap: 140px; */
