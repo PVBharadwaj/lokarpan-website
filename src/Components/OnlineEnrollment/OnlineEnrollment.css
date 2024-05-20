@@ -399,6 +399,9 @@
     margin: 0;
     margin-bottom: 20px;
   }
+  .enrollment-upper-section-a {
+    font-size: 16px;
+  }
   .left {
     margin: 0;
   }
@@ -415,6 +418,9 @@
   }
   .right {
     margin: 0;
+  }
+  .white {
+    font-size: 14px;
   }
 
   .enrollment-upper-section h1 {

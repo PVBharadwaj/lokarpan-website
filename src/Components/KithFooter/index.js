@@ -178,7 +178,7 @@ const Footer = () => {
                       <Link to="/history">Online Enrollment</Link>
                     </li>
                     <li>
-                      <Link to="/mission">Scholorships</Link>
+                      <Link to="/mission">Scholarships</Link>
                     </li>
                   </ul>
                 </div>

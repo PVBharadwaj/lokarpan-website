@@ -21,11 +21,11 @@
 
 .academics-upper-section h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .academics-upper-section p {
   font-size: 24px;
-  width: 500px;
+  width: 600px;
   font-weight: 500;
   margin-top: 20px;
 }
@@ -47,7 +47,8 @@
 }
 
 .academics-div h1 {
-  font-size: 62px;
+  font-size: 48px;
+  font-weight: 700;
   font-family: "Noto Serif Display", serif;
 }
 
@@ -76,14 +77,14 @@
 
 .academics-stats p {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .academics-card {
   display: flex;
   /* gap: 30px; */
   /* padding: 75px 0px; */
-  height: 110vh;
+  height: 120vh;
   width: 100%;
   margin: 100px 0 !important;
 }
@@ -120,18 +121,23 @@
 
 .academics-card-text h3 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 20px;
 }
 
 .academics-card-text p {
-  font-size: 18px;
-  line-height: 32px;
-  padding: 4px 0px;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 600;
+  /* padding: 4px 0px; */
+  margin: 10px 0px;
 }
 
 .academics-card-text .kith-link {
   color: #3f86f0;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 .academics-div-blue {
@@ -140,10 +146,13 @@
 }
 
 .academics-div-blue h3 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 600;
   color: white;
+  line-height: 1.2;
   padding-bottom: 30px;
+  width: 70%;
+  margin: 0px auto;
 }
 
 .academics-div-last {
@@ -160,7 +169,7 @@
   }
   .academics-upper-section p {
     width: 400px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .academics-head {
     padding: 75px 32px !important;
@@ -201,11 +210,11 @@
 
   .academics-div > h1 {
     font-size: 24px;
-    font-weight: bolder;
   }
 
   .academics-div h3 {
     font-size: 24px;
+    width: 80%;
   }
 
   .academics-div > p {

@@ -52,18 +52,18 @@ class KithLeadership extends Component {
           </div>
           <ul className="kith-leadership-list">
             <li>
-              <b> Executive Leadership Team:</b> Guide the strategic direction
-              of Lokarpan and oversee organizational initiatives.
+              <b> Executive Leadership Team:</b> Guides the strategic direction
+              of Kith and oversees organisational initiatives.
             </li>
             <li>
-              <b> Committee Leadership: </b> Lead one of our dynamic committees,
+              <b> Student Committees: </b> Our dynamic student committees are
               shaping the path for program development, community outreach, and
-              innovation.
+              innovation in education.
             </li>
             <li>
-              <b> Club Leadership:</b> Inspire and guide members as you lead a
-              club dedicated to environmental stewardship, youth empowerment, or
-              art for social change.
+              <b> Student Clubs:</b> Inspiring and guiding members dedicated to
+              environmental stewardship, youth empowerment, or art for social
+              change.
             </li>
           </ul>
           <div className="kith-leadership-images-container">
