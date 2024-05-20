@@ -31,13 +31,12 @@
   text-align: center;
   padding-top: 100px;
 }
-.temp-cont{
+.temp-cont {
   background-color: #181818;
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
-
 }
 .digital-tool-img-sec {
   width: 100%;
@@ -198,6 +197,8 @@
   text-decoration: none;
   font-weight: 400;
   font-size: 17px;
+  letter-spacing: -0.374px;
+  line-height: 20px;
 }
 .donate-orange {
   background-color: #ff9f0a;

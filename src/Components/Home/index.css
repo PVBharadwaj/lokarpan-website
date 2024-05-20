@@ -199,6 +199,8 @@
   font-weight: 400;
   color: white;
   background-color: black;
+  letter-spacing: -0.374px;
+  line-height: 20px;
 }
 .slick-slide {
   transition: transform 1s ease-in-out;
@@ -259,7 +261,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   height: 40px;
-  width: 180px;
+  width: 150px;
   border-radius: 30px;
   background-color: white;
   text-align: center;
@@ -267,7 +269,10 @@
   transition: opacity 1s ease;
   outline: none;
   border: none;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.374px;
+  line-height: 20px;
   z-index: 100;
   cursor: pointer;
 }
@@ -393,7 +398,7 @@
   margin-bottom: 100px;
   max-width: 1100px;
 }
-.lok-home-div{
+.lok-home-div {
   display: flex;
   justify-content: center;
 }
@@ -422,12 +427,14 @@
   width: 150px;
   border-radius: 30px;
   text-align: center;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   background-color: transparent;
   border: 1px solid #333333;
   margin-top: 50px;
   cursor: pointer;
+  letter-spacing: -0.374px;
+  line-height: 20px;
 }
 .home-space-above {
   margin-top: 70px;
@@ -569,6 +576,8 @@
   color: white;
   font-weight: 400;
   font-size: 17px;
+  letter-spacing: -0.374px;
+  line-height: 20px;
 }
 
 .home-banner p {
@@ -621,13 +630,14 @@
     max-width: 500px;
   }
 }
-@media only screen and (max-width: 1000px) and (min-width: 900px){
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
   .design-img {
     width: 50%;
   }
 }
-@media only screen and (max-width: 1010px) and (min-width: 748px){
-  .home-head1, .home-para1 {
+@media only screen and (max-width: 1010px) and (min-width: 748px) {
+  .home-head1,
+  .home-para1 {
     font-size: 28px;
   }
 
@@ -893,7 +903,7 @@
   .carousal-img1 {
     height: 100%;
     width: 240px;
-    border-radius: 10px
+    border-radius: 10px;
   }
   .home-link {
     width: 150px;

@@ -19,7 +19,9 @@ const OnlineEnrollment = () => {
           information for a parent or guardian as well as the potential
           candidate’s general information.{" "}
           <span>
-            <a href="/">Read more</a>
+            <a href="/" className="enrollment-upper-section-a">
+              Read more
+            </a>
           </span>
         </p>
         <Link to="/donate" className="kith-apply-btn white">

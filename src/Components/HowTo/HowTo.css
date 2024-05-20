@@ -19,7 +19,7 @@
 .how-to-upper-section h1 {
   font-size: 64px;
   text-align: center;
-  width: calc(100% - 200px);
+  width: calc(100% - 200px) !important;
 }
 
 .howto-div h1 {

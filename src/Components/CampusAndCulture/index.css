@@ -47,27 +47,30 @@
   color: white;
 }
 .campus-faq-section-left h1 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 600;
   margin-bottom: 30px;
+  font-family: "Noto Serif Display", serif;
 }
 .campus-font20 {
   font-size: 20px;
   margin: 10px auto;
   margin-top: 0;
   line-height: 1.5;
-  font-weight:600;
+  font-weight: 600;
 }
 
-.campus-head, .campus-para{
+.campus-head,
+.campus-para {
   text-align: center;
   padding-inline-start: max(20px, var(--navbar-padding));
   padding-inline-end: max(20px, var(--navbar-padding));
 }
-.campus-head{
+.campus-head {
   padding: 150px 0px 20px;
+  font-family: "Noto Serif Display", serif;
 }
-.campus-para{
+.campus-para {
   max-width: 1000px;
 }
 .campus-faq-section-right {
@@ -213,8 +216,9 @@
     margin-top: 150px;
     font-size: 28px;
   }
-  .mob-pad-bot{
+  .mob-pad-bot {
     padding-bottom: 60px;
+    height: auto;
   }
   .campus-font32 {
     font-size: 16px;

@@ -13,25 +13,25 @@
   background-size: cover;
 }
 
-.ccus{
+.ccus {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ccus button{
+.ccus button {
   cursor: pointer;
-  font-weight: 500;
-  font-size: 20px;
-  font-weight: 500;
-border-radius: 100px;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 100px;
   border: 1px solid rgb(3, 3, 3);
-padding: 1rem;
-width: 180px;
-background-color: #fff;
+  /* padding: 1rem; */
+  background-color: #fff;
+  height: 40px;
+  width: 150px;
 }
-.ccus button:hover{
-  background-color:rgb(3, 3, 3) ;
-  color:#fff;
+.ccus button:hover {
+  background-color: rgb(3, 3, 3);
+  color: #fff;
 }
 .font48 {
   font-size: 28px;
@@ -46,7 +46,7 @@ background-color: #fff;
   margin-bottom: 0;
   text-align: left;
 }
-.font64{
+.font64 {
   font-size: 64px;
   font-weight: bold;
   line-height: 70px;
@@ -56,7 +56,7 @@ background-color: #fff;
   text-align: center;
   color: #fff;
 }
-.font641{
+.font641 {
   font-size: 64px;
   font-weight: bold;
   line-height: 70px;
@@ -115,7 +115,7 @@ background-color: #fff;
   align-content: center;
   flex-wrap: wrap;
 }
-.padding100{
+.padding100 {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
@@ -129,7 +129,7 @@ background-color: #fff;
   align-items: flex-start;
   padding-bottom: 50px;
 }
-.supp-each-sec{
+.supp-each-sec {
   align-items: center;
 }
 .philantropic-section {
@@ -137,25 +137,21 @@ background-color: #fff;
   width: 100%;
   background-color: #e2e4e5;
   height: auto;
-
 }
 
 .philantropic-below-section {
- 
   display: flex;
   justify-content: center;
- 
+
   text-align: left;
 }
-.philantropic-organization{
-
+.philantropic-organization {
   font-size: 19px;
   font-weight: 600;
   width: 400px;
-
 }
-.philantropic-organization p{
-  padding: 0 1rem .5rem 1rem;
+.philantropic-organization p {
+  padding: 0 1rem 0.5rem 1rem;
 }
 .why-donate-topdiv1{
   font-size: 48px;
@@ -166,11 +162,10 @@ background-color: #fff;
   max-width: 1100px;
 }
 
-
 .in-support-section {
   /* height: 390px; */
   width: 100%;
-  margin: 150px 0 ;
+  margin: 150px 0;
 }
 .in-support-below-section {
   /* height: 180px; */
@@ -191,17 +186,16 @@ background-color: #fff;
   width: calc(100% - 300px);
   margin: auto;
   margin-top: 100px;
- 
-    align-items: center;
-    justify-content: center;
+
+  align-items: center;
+  justify-content: center;
 }
 
-
 @media screen and (max-width: 748px) {
- .padding100{
-  padding: 4rem 2rem 2rem;
- }
-  .supp-each-sec{
+  .padding100 {
+    padding: 4rem 2rem 2rem;
+  }
+  .supp-each-sec {
     align-items: flex-start;
   }
   .why-donate-topdiv1{
@@ -209,7 +203,7 @@ background-color: #fff;
     font-size: 32px;
     text-align: center;
   }
-  .font20{
+  .font20 {
     text-align: left;
   }
   /* .ccus{
@@ -223,15 +217,14 @@ background-color: #fff;
     /* padding: 0 4rem; */
     width: 250px;
   }
-  .philantropic-organization p{
+  .philantropic-organization p {
     padding: 0 1rem;
   }
   .font48 {
     font-size: 32px;
   }
-  .font641,.font64 {
-    
-    
+  .font641,
+  .font64 {
     font-size: 40px;
     width: calc(100% - 47px);
     line-height: 50px;
@@ -248,7 +241,7 @@ background-color: #fff;
   }
 
   .donor-section {
-align-items: flex-start;
+    align-items: flex-start;
     width: calc(100% - 20px);
     margin: auto;
     /* height: 700px; */
@@ -268,8 +261,7 @@ align-items: flex-start;
     max-width: 300px;
   }
   .font48-left {
-
-      font-size: 40px;
+    font-size: 40px;
   }
   .font28 {
     font-size: 24px;
@@ -279,8 +271,8 @@ align-items: flex-start;
     min-height: 600px;
   }
   .philantropic-below-section {
-  padding: 0 0 4rem 0;
-   display: grid;
+    padding: 0 0 4rem 0;
+    display: grid;
   }
   .philantropic-below-section p {
     /* width: 100%; */
@@ -290,7 +282,7 @@ align-items: flex-start;
   }
   .in-support-section {
     /* height: 300px; */
-   margin: 2rem 0;
+    margin: 2rem 0;
   }
   .in-support-section .font48 {
     font-size: 36px;

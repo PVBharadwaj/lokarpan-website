@@ -17,10 +17,16 @@
   align-items: center;
 }
 
+.safety-font80 {
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Noto Serif Display";
+}
 .safety-font48 {
-  font-size: 64px;
-  font-weight: 700;
-  font-family: 'Noto Serif Display';
+  font-size: 48px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Noto Serif Display";
 }
 .safety-space-below {
   margin-bottom: 300px;
@@ -82,6 +88,9 @@
 }
 .safety-last-section-content-list li {
   list-style-type: disc;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 748px) {
@@ -90,6 +99,9 @@
   }
   .safety-font48 {
     font-size: 28px;
+  }
+  .safety-font80 {
+    font-size: 48px;
   }
   .safety-space-below {
     margin-bottom: 200px;
@@ -101,7 +113,7 @@
   }
 
   .safety-font24 {
-    font-size: 14px;
+    font-size: 18px;
   }
   .safety-last-section {
     width: calc(100% - 100px);
@@ -117,8 +129,11 @@
   .safety-last-section-content-right {
     width: 100%;
   }
+  .safety-last-section-content-list {
+    padding-left: 15px;
+  }
   .safety-last-section-content-list li {
-    font-size: 14px;
+    font-size: 18px;
   }
   .safety-last-img {
     height: 400px;
