@@ -15,58 +15,60 @@ class faqk extends Component {
                     <div className='faqk-qna'>
                         <div className='faq-q'>1. What is Lokarpan?</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
+                            <li>Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                           
                         </ul>
                     </div>
                     <div className='faqk-qna'>
-                        <div  className='faq-q'>2. What is Lokarpan?</div>
+                        <div  className='faq-q'>2. How can i involved with Lokarpan ?</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
+                            <li>Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                           
                         </ul>
                     </div>
                     <div className='faqk-qna'>
-                        <div  className='faq-q'>3. What is Lokarpan?</div>
+                        <div  className='faq-q'>3.  Are there any employment opportunities at Lokarpan ?
+</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
+                            <li>Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                            
                         </ul>
                     </div>
                     <div className='faqk-qna'>
-                        <div  className='faq-q'>4. What is Lokarpan?</div>
+                        <div  className='faq-q'>4. How can I support Lokarpan mission Financially ?
+</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
+                            <li> Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                           
                         </ul>
                     </div>
                     <div className='faqk-qna'>
-                        <div  className='faq-q'>5. What is Lokarpan?</div>
+                        <div  className='faq-q'>5.  Is Lokarpan open to collaboration with other Organization?</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
-                        </ul>
+                            <li> Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                                </ul>
                     </div>
                     <div className='faqk-qna'>
-                        <div  className='faq-q'>6. What is Lokarpan?</div>
+                        <div  className='faq-q'>6.  How can i stay updated on Lokarpan’s activities and events?
+</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
+                            <li> Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                            
                         </ul>
                     </div>
                     <div  className='faqk-qna'>
-                        <div  className='faq-q'>7. What is Lokarpan?</div>
+                        <div  className='faq-q'>7. Is Lokarpan only online, or does it have a physical presence?
+</div>
                         <ul className='faqk-a'>
-                            <li>We have implemented comprehensive safety measures to protect your privacy and personal information.</li>
-                            <li>Our online platforms are secure, and we continuously update our systems to maintain a safe digital space.</li>
-                            <li>In all our activities, whether virtual or in person, we adhere to guidelines that prioritize the health and safety of our members.</li>
-                        </ul>
+                            <li>Through the Stronger Together campaign, our goal is to bridge the learning loss and strengthen our core program in Akanksha schools and communities
+</li>
+                               </ul>
                     </div>
                     </section>
 
