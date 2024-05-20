@@ -152,7 +152,7 @@ const Footer = () => {
                 <a href="/">Online Enrollment</a>
               </li>
               <li>
-                <a href="/">Scholorships</a>
+                <a href="/">Scholarships</a>
               </li>
             </ul>
             <hr className="footer-hor-line" />
@@ -178,7 +178,7 @@ const Footer = () => {
                       <Link to="/history">Online Enrollment</Link>
                     </li>
                     <li>
-                      <Link to="/mission">Scholorships</Link>
+                      <Link to="/mission">Scholarships</Link>
                     </li>
                   </ul>
                 </div>
@@ -359,9 +359,9 @@ const Footer = () => {
             <span className="desktop-footer-last-sec">
               <a href="/">Terms of Use</a>
             </span>
-              <span className="desktop-footer-last-sec">
-                  <Link to="/sitemap">Sitemap</Link>
-                </span>
+            <span className="desktop-footer-last-sec">
+              <Link to="/sitemap">Sitemap</Link>
+            </span>
             <span className="mobile-footer-last-sec">
               <a href="/">Privacy Policy</a> | <a href="/">Terms of Use</a>
             </span>

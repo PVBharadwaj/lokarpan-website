@@ -54,10 +54,15 @@ const WhyDonate = () => {
             </p>
           </div>
         </div> */}
-        <div className="donate-card donate-second">
-          <div className="donate-card-text">
-            <h1>Help us further our vision</h1>
-            <p>
+
+
+
+          <div className="health-each-container approach-each-container">
+            <div className="health-content-section why-donate-cards-cont approach-content-section content-left">
+              <h1 className="approach-lokarpan-head3">
+              Help us further our vision
+              </h1>
+              <p className="approach-card-para">
               We are facing our worst inequity ever. Millions of children in
               India do not have access to quality education. We envision a
               future where each one of these children will have an opportunity
@@ -66,16 +71,17 @@ const WhyDonate = () => {
               one of us at Lokarpan to work harder. We do all that we can to
               support every Fellow with training, mentors and resources to help
               them put children on a different life path.
-            </p>
+              </p>
+            </div>
+            <div className="health-cont-img-div donate-card-img-2"></div>
           </div>
-          <div className="donate-card-img donate-card-img-2"></div>
-        </div>
-        <div className="donate-card">
-          <div className="donate-card-img donate-card-img-3"></div>
-
-          <div className="donate-card-text">
-            <h1>Why Education?</h1>
-            <p>
+          <div className="health-each-container approach-each-container">
+            <div className="health-cont-img-div donate-card-img-3"></div>
+            <div className="health-content-section why-donate-cards-cont approach-content-section content-left">
+              <h1 className="approach-lokarpan-head3">
+              Why Education?
+              </h1>
+              <p className="approach-card-para">
               Education is the cornerstone of societal advancement, empowering
               individuals with the knowledge, skills, and confidence to thrive
               in an ever-changing world. At Lokarpan, we believe that investing
@@ -84,13 +90,15 @@ const WhyDonate = () => {
               quality education, we equip individuals with the tools they need
               to break the cycle of poverty, contribute meaningfully to their
               communities, and drive progress for generations to come.
-            </p>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="donate-card donate-second">
-          <div className="donate-card-text">
-            <h1>Why Focus on Rural Communities?</h1>
-            <p>
+          <div className="health-each-container approach-each-container">
+            <div className="health-content-section why-donate-cards-cont approach-content-section content-left">
+              <h1 className="approach-lokarpan-head3">
+              Why Focus on Rural Communities?
+              </h1>
+              <p className="approach-card-para">
               Rural communities are the backbone of our nation, yet they often
               face significant challenges in accessing basic services and
               opportunities. At Lokarpan, we believe in the power of inclusive
@@ -102,10 +110,11 @@ const WhyDonate = () => {
               targeted interventions and community-driven initiatives, we strive
               to empower rural communities to build sustainable futures and
               thrive in the face of adversity.
-            </p>
+              </p>
+            </div>
+
+            <div className="health-cont-img-div donate-card-img-4"></div>
           </div>
-          <div className="donate-card-img donate-card-img-4"></div>
-        </div>
       </div>
 
       <div className="donate-section">

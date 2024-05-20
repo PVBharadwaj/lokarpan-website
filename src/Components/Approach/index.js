@@ -141,6 +141,7 @@ const Approach = () => {
         </div>
 
         {/* <div className="health-container-section"> */}
+        {/* used in careers, why-donate */}
           <div className="health-each-container approach-each-container">
             <div className="health-content-section approach-content-section content-left">
               <h1 className="approach-lokarpan-head3">

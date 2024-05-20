@@ -153,6 +153,9 @@ padding-left: 0 2rem !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.why-donate-cards-cont{
+  text-align: left;
+}
 
 .whydonate-opp h1 {
   font-size: 40px;
@@ -216,6 +219,7 @@ padding: 1rem 10rem;
 
   .donate-first-div {
     padding: 40px 30px;
+    margin-bottom: 100px;
   }
   .donate-first-div h1 {
     font-size: 32px !important;
@@ -274,6 +278,7 @@ padding: 1rem 10rem;
     font-size: 24px;
     font-weight:700 ;
     padding: 1rem 1rem;
+    text-align: center;
   }
   .our-role-font241{
     text-align: center;
@@ -288,7 +293,14 @@ padding: 1rem 10rem;
     padding: 150px;
   }
 
-
+  .why-donate-cards-cont > h1{
+    font-size: 32px;
+  }
+  .donate-card-text h1 {
+    font-size: 48px !important;
+    padding-left: 0 2rem !important;
+    
+  }
 
   .whydonate-opp h1 {
     padding: 20px 75px;

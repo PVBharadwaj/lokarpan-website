@@ -43,11 +43,11 @@ class Career extends Component {
               <p className="mobile-para2">Follow us on LinkedIn</p>
             </div>
           </div>
-          <div className="health-container-section">
-            <div className="health-each-container">
-              <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">Volunteer with us</h1>
-                <p className="health-para">
+          {/* <div className="health-container-section"> */}
+            <div className="health-each-container approach-each-container">
+              <div className="health-content-section approach-content-section content-left">
+                <h1 className="approach-lokarpan-head3">Volunteer with us</h1>
+                <p className="approach-card-para">
                   The journey to eradicate educational inequity is a
                   collaborative one, and we welcome passionate individuals to
                   join us. If you have a few hours to spare each week and share
@@ -67,18 +67,18 @@ class Career extends Component {
               /> */}
               <div className="career-cont-img-div1"></div>
             </div>
-            <div className="health-each-container">
+            <div className="health-each-container approach-each-container">
               {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1704897449/Rectangle_1764_nfpppj.png"
                 alt="learn-img"
                 className="health-cont-img"
               /> */}
               <div className="career-cont-img-div2"></div>
-              <div className="health-content-section content-right">
-                <h1 className="health-lokarpan-head3">
+              <div className="health-content-section approach-content-section content-right">
+                <h1 className="approach-lokarpan-head3">
                   Exceptional can come from anywhere
                 </h1>
-                <p className="health-para">
+                <p className="approach-card-para">
                   We value people over credentials. Lokarpan is a place where
                   your potential is recognised, regardless of your background.
                   We embrace diversity and welcome individuals with a range of
@@ -89,12 +89,12 @@ class Career extends Component {
                 </a> */}
               </div>
             </div>
-            <div className="health-each-container">
-              <div className="health-content-section content-left">
-                <h1 className="health-lokarpan-head3">
+            <div className="health-each-container approach-each-container">
+              <div className="health-content-section approach-content-section content-left">
+                <h1 className="approach-lokarpan-head3">
                   Drive Impact through Meaningful Projects
                 </h1>
-                <p className="health-para">
+                <p className="approach-card-para">
                   Every day at Lokarpan brings new challenges and opportunities
                   for growth. As a member of our team, you'll have the chance to
                   tackle diverse projects that make a difference in rural
@@ -113,16 +113,16 @@ class Career extends Component {
               /> */}
               <div className="career-cont-img-div3"></div>
             </div>
-            <div className="health-each-container">
+            <div className="health-each-container approach-each-container">
               {/* <img
                 src="https://res.cloudinary.com/digbzwlfx/image/upload/v1710771178/image_190_2_zge0vl.png"
                 alt="learn-img"
                 className="health-cont-img"
               /> */}
               <div className="career-cont-img-div4"></div>
-              <div className="health-content-section content-right">
-                <h1 className="health-lokarpan-head3">Our Culture</h1>
-                <p className="health-para">
+              <div className="health-content-section approach-content-section content-right">
+                <h1 className="approach-lokarpan-head3">Our Culture</h1>
+                <p className="approach-card-para">
                   At Lokarpan, we foster innovation and collaboration,
                   empowering every team member to make a difference in rural
                   communities. Our mission is to uplift lives through impactful
@@ -136,7 +136,7 @@ class Career extends Component {
                 </a> */}
               </div>
             </div>
-          </div>
+          {/* </div> */}
 
           <div className="health-full-img">
             <img

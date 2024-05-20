@@ -70,6 +70,7 @@
   width: 80%;
   margin: 100px auto;
   display: flex;
+  max-width: 1100px;
   flex-direction: column;
   justify-content: flex-start;
 }

@@ -48,8 +48,9 @@
 }
 
 .enrollment-upper-section h1 {
-  font-size: 64px;
-  font-weight: bolder;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.05;
   font-family: "Noto Serif Display", serif;
   width: calc(100% - 500px);
   text-align: center;
@@ -64,10 +65,17 @@
 }
 
 .enrollment-upper-section > p {
-  font-size: 28px;
+  font-size: 32px;
   width: calc(100% - 300px);
   margin: 0 auto;
   text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.enrollment-upper-section-a {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .enrollment-card {
@@ -139,15 +147,21 @@
   color: black;
   text-decoration: none;
   border: none;
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: -0.374px;
+  line-height: 20px;
+  font-weight: 400;
 }
 .enrollment-div p {
   font-size: 24px;
-  font-family: 500;
+  font-weight: 600;
+  line-height: 1.125;
 }
 .white-txt {
   color: white !important;
   margin-top: 30px;
+  font-size: 19px !important;
+  line-height: 1.5 !important;
 }
 .enrollment-imgs-list {
   display: flex;
@@ -207,13 +221,19 @@
   }
   .enrollment-upper-section h1 {
     width: calc(100% - 200px);
-    font-size: 24px;
+    font-size: 48px;
   }
   .enrollment-upper-section > p {
     width: calc(100% - 100px);
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.166;
+    font-weight: 600;
     margin-bottom: 40px;
+  }
+  .enrollment-upper-section-a {
+    font-size: 24px;
+    line-height: 1.166;
+    font-weight: 600;
   }
   .enrollment-div {
     padding: 110px 60px;
@@ -280,16 +300,18 @@
     height: auto;
   }
   .each-card-1 h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 30px;
     margin-left: 50px;
     margin-right: auto;
   }
   .each-card-1 p {
-    font-size: 16px;
+    font-size: 24px;
     width: calc(100% - 300px);
     margin-left: 50px;
     margin-right: auto;
+    font-weight: 600;
+    line-height: 1.126;
   }
   .left {
     margin-left: 50px;
@@ -309,18 +331,20 @@
     height: auto;
   }
   .each-card-2 h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 30px;
-    margin-right: 150px;
+    margin-right: 120px;
     margin-left: auto;
     color: white;
   }
   .each-card-2 p {
-    font-size: 16px;
+    font-size: 24px;
     margin-right: 50px;
     margin-left: auto;
     width: calc(100% - 300px);
     color: white;
+    font-weight: 600;
+    line-height: 1.125;
   }
   .right {
     margin-right: 200px;
@@ -375,6 +399,9 @@
     margin: 0;
     margin-bottom: 20px;
   }
+  .enrollment-upper-section-a {
+    font-size: 16px;
+  }
   .left {
     margin: 0;
   }
@@ -391,6 +418,9 @@
   }
   .right {
     margin: 0;
+  }
+  .white {
+    font-size: 14px;
   }
 
   .enrollment-upper-section h1 {

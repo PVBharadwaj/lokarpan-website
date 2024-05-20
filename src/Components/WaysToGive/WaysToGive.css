@@ -130,6 +130,22 @@ line-height: 32px;
   font-size:  19px;
   font-weight: 700;
 }
+@media screen and (min-width: 748px) and (max-width: 1000px) {
+  .give-card-img {
+    width: 35%
+  }
+
+  .give-card-text {
+    width: 65%;
+  }
+  .give-card-text h1 {
+    font-size: 46px;
+  }
+  .give-card-text p{
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 748px) {
   .mission-para1{
     font-size:  16px;
@@ -180,6 +196,7 @@ line-height: 32px;
   }
   .give-card-text p {
     font-size: 20px;
+    line-height: 1.5;
     padding: 15px 0px;
     line-height: 25px;
     font-weight: 600;

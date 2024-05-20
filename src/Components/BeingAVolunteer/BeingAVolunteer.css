@@ -12,7 +12,8 @@
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1708632802/image_325_zhdkyv.png");
   color: white;
   background-repeat: no-repeat;
-  background-color: rgb(82, 182, 199);
+  background-color: #67b0c6;
+  
 }
 
 .vol-head-div-text{
@@ -43,7 +44,7 @@
 .volunteer-first-div p {
   font-size: 28px;
   padding: 10px 50px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .being-a-volunteer-second{
@@ -101,14 +102,15 @@
 }
 
 .volunter-opp h1 {
-  font-size: 40px;
+  font-size: 48px;
   padding: 50px 50px;
 }
 
 .volunter-opp p{
-  font-size: 20px;
- font-weight: 500;
-  padding: 0 40px ;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0 40px;
+  font-weight: 600;
 }
 
 .meet-vol{

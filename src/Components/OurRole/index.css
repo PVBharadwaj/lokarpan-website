@@ -129,6 +129,8 @@
   font-weight: 400;
   cursor: pointer;
   font-size: 17px;
+  letter-spacing: -0.374px;
+  line-height: 20px;
 }
 .lokarpan-head1 {
   font-weight: 500;
@@ -266,7 +268,7 @@
   margin: auto;
   margin-right: 30px;
 }
-.our-role-topdiv{
+.our-role-topdiv {
   display: flex;
   text-align: center;
   padding: 50px 0px 150px 0px;
@@ -589,7 +591,7 @@
     font-size: 36px;
     font-weight: 700;
     width: 80%;
-}
+  }
   .our-role-each-container-content h1 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -669,7 +671,7 @@
   .donate-section {
     width: calc(100% - 40px);
     padding-inline-start: max(20px, var(--navbar-padding));
-  padding-inline-end: max(20px, var(--navbar-padding));
+    padding-inline-end: max(20px, var(--navbar-padding));
     margin: 150px auto;
     height: 500px;
     min-width: 320px;
@@ -727,5 +729,5 @@
     font-size: 36px;
     font-weight: 600;
     width: 80%;
-}
+  }
 }

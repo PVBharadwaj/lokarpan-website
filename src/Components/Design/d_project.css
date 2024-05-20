@@ -84,7 +84,7 @@
 .sort-inner {
   display: flex;
   align-items: center;
-  font-size: 13.33px;
+  font-size: 18px;
 }
 
 .searchBar {
@@ -204,7 +204,7 @@
   width: calc(100% - 40px);
   height: 40px;
   color: #000000;
-  padding-left: 40px;
+  padding: 10px 10px 10px 40px;
   text-align: left;
   font-family: "Inter", sans-serif;
 }
@@ -233,7 +233,9 @@
   background-color: white;
   border: none;
   text-align: left;
-  padding: 10px 10px;
+  padding: 10px 10px;    
+  font-size: 18px;
+  color: gray;
 }
 
 .inactive-btn:hover,
@@ -256,6 +258,8 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 18px;
+  color: gray;
 }
 
 .dropdown-toggle-btn::after {
