@@ -217,9 +217,9 @@
 }
 
 @media screen and (max-width: 748px) {
-  .donate-upper-section {
-    /* height: 370px; */
-  }
+  /* .donate-upper-section {
+    height: 370px;
+  } */
   .faqs-font64 {
     font-size: 36px !important;
     text-align: center;
