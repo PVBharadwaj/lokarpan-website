@@ -6,6 +6,7 @@ const SearchBar = () => {
     <div>
       <div className="search-bar">
         <input
+        style={{padding: "0px"}}
           className="form-control text-input"
           type="text"
           placeholder="Search by name or position"

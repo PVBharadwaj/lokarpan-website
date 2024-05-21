@@ -15,7 +15,7 @@
 
 .title1 {
   font-size: 32px;
-  padding: 40px 0px 10px;
+  padding: 40px 0px;
   text-align: left;
 }
 
@@ -64,13 +64,14 @@
 .desp-cards h4{
   color: #181818;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 32px;
 }
 
 .desp-cards p{
   color: #333333;
   font-size: 20px;
+  font-weight: 600;
   line-height: 32px;
 }
 

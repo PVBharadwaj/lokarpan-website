@@ -65,7 +65,7 @@ const SupportSubNav = () => {
                     <Link to="/being-a-volunteer">Being a Volunteer</Link>
                   </li>
                   <li>
-                    <Link to="/our-role">Our Supporters</Link>
+                    <Link to="/our-supporter">Our Supporters</Link>
                   </li>
                   <li>
                     <Link to="/why-donate">Why Donate</Link>
