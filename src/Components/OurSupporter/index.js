@@ -33,7 +33,7 @@ class OurSupporter extends Component {
               world!
               </p>
             </div>
-            <h1 className="font48-left padding100">Donors</h1>
+            <h1 className="font48-left padding100 donars-head">Donors</h1>
             <div className="donor-below-section">
               <div className="each-sec supp-each-sec">
                 <p className="font28">$1,000,000 and above</p>

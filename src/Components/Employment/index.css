@@ -3,7 +3,7 @@
   height: auto;
 }
 .emp-upper-section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,9 +19,9 @@
   margin: 0px auto;
   text-align: center;
 }
-.emp-seg-section {
+.emp-emp-seg-section {
   width: 80%;
-  margin: 100px auto;
+  margin: 0px auto 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -74,6 +74,7 @@
   font-size: 20px;
   color: #333333;
   font-weight: 500;
+  padding-bottom: 30px;
 }
 .emp-admin-ul {
   padding: 15px;
@@ -90,8 +91,8 @@
 .emp-space-above {
   margin-top: 50px;
 }
-.emp-last-sec {
-  width: 400px;
+.emp-emp-last-sec {
+  /* width: 400px; */
   height: auto;
   display: flex;
   flex-direction: column;

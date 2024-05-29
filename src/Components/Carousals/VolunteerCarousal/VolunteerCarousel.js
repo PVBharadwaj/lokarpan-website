@@ -26,6 +26,12 @@ const VolunteerCarousel = () => {
       desp: "Ayesha, hailing from Lucknow, is a passionate advocate for social change. Holding a Bachelor's degree in Political Science and an MSW from Delhi University, she has dedicated her career to empowering rural artisans through her social enterprise. Driven by the belief that individuals have a responsibility to contribute to society, Ayesha is deeply committed to making a meaningful impact through her endeavours. She firmly believes that even small efforts can lead to significant positive change, and it is these efforts that bring her the greatest joy and satisfaction. With her unwavering dedication to social welfare, Ayesha embodies Lokarpan's mission of empowering communities and fostering sustainable development.",
       img: "https://res.cloudinary.com/digbzwlfx/image/upload/v1714215152/person3_lwymqk.jpg",
     },
+    {
+      name: "Anushka Gupta",
+
+      desp: "Anushka is an architect with a passion for sustainability and design. Volunteering for Lokarpan, she lends her expertise to architectural design tasks that involve defining design standards and creating spaces that fulfil the vital aspect of improving education infrastructure. Through her work, Anushka strives to combine her design creativity with her commitment to sustainable practices, ensuring Lokarpan's educational facilities are not only functional and inspiring but also environmentally responsible.",
+      img: "https://res.cloudinary.com/dtfzxqpoy/image/upload/v1716314148/1000026253_myksdq.jpg",
+    },
   ];
 
   const CustomPrevArrow = (props) => (

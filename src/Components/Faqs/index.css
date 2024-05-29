@@ -46,6 +46,7 @@
 .faqs-browse-sec p {
   font-size: 28px;
   width: 50%;
+  font-weight: 600;
 }
 .donate-faq-section {
   /* width: calc(100% - 300px); */
@@ -106,6 +107,7 @@
   padding: 0;
   list-style-type: none;
   width: 100%;
+  font-weight: 600;
 }
 .faqs-head-sec {
   width: 100%;
@@ -128,6 +130,7 @@
   color: black;
   position: relative;
   font-size: 15px;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -214,11 +217,11 @@
 }
 
 @media screen and (max-width: 748px) {
-  .donate-upper-section {
-    /* height: 370px; */
-  }
+  /* .donate-upper-section {
+    height: 370px;
+  } */
   .faqs-font64 {
-    font-size: 36px;
+    font-size: 36px !important;
     text-align: center;
     width: calc(100% - 50px);
   }
