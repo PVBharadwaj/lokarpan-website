@@ -168,11 +168,11 @@
 
 .overview-grid-inner .kith-link {
   color: #3f86f0;
-  padding: 20px;
+  padding:0 40px;
 }
 
 .kith-overview-grid-inner1 .kith-link {
-  padding: 20px;
+
   font-weight: 600;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .kith-overview-grid-inner3 {
-  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_269_l82sa9.png");
+  
   grid-row: span 2;
   grid-column: span 2;
   display: flex;
@@ -219,7 +219,7 @@
 }
 
 .kith-overview-grid-inner5 {
-  background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_270_f1zohb.png");
+
   grid-row: span 2;
   grid-column: span 2;
 }
@@ -246,50 +246,68 @@
 }
 
 .kith-overview-grid-inner7 > div > div {
-  background-color: #3f86f0;
+  background-color: #2251ff;
   padding: 30px 0px;
 }
 
 .kith-overview-grid-inner1:hover,
 .kith-overview-grid-inner2:hover,
-.kith-overview-grid-inner3:hover,
-.kith-overview-grid-inner5:hover,
+
+
 .kith-overview-grid-inner6:hover,
 .kith-overview-grid-inner8:hover {
+  cursor: pointer;
+
   background-size: 140%;
   transition: all 1s ease-in-out;
 }
-
+.kith-overview-grid-inner3:hover{
+  background-size: 120%;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
 .kith-overview-grid-inner1 p {
   font-size: 28px;
   color: white;
-  padding: 20px 200px 20px 20px;
+  padding: 20px 80px 20px 40px;
   font-weight: 600;
   line-height: 1.5;
+}
+.kith-link1{
+  padding: 0 20px 0 40px;
+  color:#fff ;
+}
+.kith-link1 a{
+  text-decoration: none;
 }
 
 .kith-overview-grid-inner3 p {
   color: #fff;
+  padding: 20px 0;
 }
 
 .kith-overview-grid-inner2 p,
 .kith-overview-grid-inner3 p,
 .kith-overview-grid-inner7 p,
-.kith-overview-grid-inner8 p {
+.kith-overview-grid-inner8 p ,
+.kith-overview-grid-inner5 p{
   font-size: 16px;
   color: black;
-  font-weight: 500;
-  padding: 20px;
+  font-weight: 600;
+  padding: 110px 40px 20px 40px;
   line-height: 1.2;
 }
 
 .kith-overview-grid-inner2 .kith-link,
 .kith-overview-grid-inner3 .kith-link,
-.kith-overview-grid-inner8 .kith-link {
+.kith-overview-grid-inner8 .kith-link ,
+.kith-overview-grid-inner5 .kith-link{
   font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
 }
 
-.kith-overview-grid-inner7 .kith-link {
+.kith-overview-grid-inner7 .kith-link1 {
   color: #fff;
   text-decoration: none;
   display: flex;
@@ -298,9 +316,10 @@
   transition: all 1s;
 }
 
-.kith-overview-grid-inner7 .kith-link:hover {
+.kith-overview-grid-inner7 .kith-link1:hover {
   gap: 20px;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .kith-overview-grid-inner1 div {
@@ -308,7 +327,7 @@
   transition: all 1s ease-in-out;
 }
 
-.kith-overview-grid-inner1:hover div {
+.kith-overview-grid-inner1:hover div p{
   color: #3f86f0;
   transform: translateY(-10px);
   transition: all 1s ease-in-out;
@@ -321,13 +340,17 @@
   transition: all 1s ease-in-out;
 }
 
-.kith-overview-grid-inner2:hover div,
-.kith-overview-grid-inner3:hover div,
+.kith-overview-grid-inner2:hover div
+,
+.kith-overview-grid-inner3:hover div p,
 .kith-overview-grid-inner8:hover div,
-.kith-overview-grid-inner7:hover div p {
+.kith-overview-grid-inner7:hover div p,
+.kith-overview-grid-inner5:hover div p 
+{
   color: #3f86f0;
   transform: translateY(-10px);
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .mobile-only {
@@ -337,7 +360,7 @@
 .kith-overview-grid-inner4 p {
   color: white;
   font-size: 28px;
-  padding: 20px 200px 20px 20px;
+  padding: 40px;
   transition: all 1s ease-in-out;
   font-weight: 600;
   line-height: 1.5;
@@ -345,8 +368,9 @@
 
 .kith-overview-grid-inner4:hover p {
   color: black;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .kith-marquee {
@@ -391,8 +415,65 @@
   width: 150px;
   height: 50px;
 }
-
+.new-kith-display-mobile{
+  display: none;
+}
 @media only screen and (max-width: 805px) {
+  .new-kith-display-mobile{
+    display: block;
+  }
+  .new-kith-display1 {
+    width: 100%;
+    height: 370px;
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_266_gupyt0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-kith-display2 {
+    width: 100%;
+    height: 370px;
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_267_ju4vv1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-kith-display3 {
+    width: 100%;
+    height: 370px;
+    background-color: #3f86f0;
+}
+
+.new-kith-display4 {
+    width: 100%;
+    height: 370px;
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_265_azvlwk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-kith-display5 {
+    width: 100%;
+    height: 370px;
+    background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446764/image_268_ygauso.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+  .new-kith-display6{
+
+    width: 100%;
+    height: 75px;
+    background-color: #2251ff;
+
+  }
+  .new-kith-display{
+    display: none;
+  }
   .kith-overview-card {
     flex-direction: column;
     gap: 16px;
@@ -451,9 +532,9 @@
     font-size: 24px;
   }
 
-  .kith-overview-card-text p {
+   /* .kith-overview-card-text p {
     /* font-size: 16px; */
-  }
+  
 
   .our-role-faculty {
     font-size: 16px;

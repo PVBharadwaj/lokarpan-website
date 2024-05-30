@@ -57,6 +57,9 @@ const KithLifeAtSchoolSubNavbar = () => {
                 <ul className="support-subnav-list">
                   <h1 className="sub-heading">Explore Life At School</h1>
                   <li>
+                      <Link to="/kith/life-at-school">Explore</Link>
+                    </li>
+                  <li>
                     <Link to="/kith/campus-and-culture">Campus & Culture</Link>
                   </li>
                   <li>

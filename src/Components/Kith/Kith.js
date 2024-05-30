@@ -81,6 +81,7 @@ const Kith = () => {
         </div>
       </div>
       <div className="kith-overview-div grid-head">NEW AT KITH</div>
+      <div className='new-kith-display'>
       <div className="kith-overview-div kith-overview-grid">
         <div className='overview-grid-inner kith-overview-grid-inner1'>
           <div>
@@ -104,8 +105,9 @@ const Kith = () => {
         <p>Exceptionalism can come anywhere from.</p>
         </div>
         <div className='overview-grid-inner kith-overview-grid-inner5'>
-          <div>
-            {/* text can be added in this div */}
+        <div>
+            <p>Access essential information about our school's leadership, employment opportunities, frequently asked questions, and donation options to support our mission.</p>
+            <Link to="/kith/leadership" className='kith-link'>Read more </Link> 
           </div>
         </div>
 
@@ -118,17 +120,42 @@ const Kith = () => {
         <div className='overview-grid-inner kith-overview-grid-inner7'>
           <div>
             <p>Immerse yourself in our dynamic campus environment, cultural activities and a curriculum tailored to meet the diverse learning needs of students, empowering them to achieve academic excellence and personal growth.</p>
-            <div className='no-hover-effect'><Link to="/kith/life-at-school" className='kith-link'>Read more about Life at School <FaArrowRightLong/></Link> </div>
+            <div className='no-hover-effect'><Link to="/kith/life-at-school" className='kith-link1'>Read more about Life at School <FaArrowRightLong/></Link> </div>
           </div>
         </div>
 
         <div className='overview-grid-inner kith-overview-grid-inner8'>
-          <div>
-            <p>Access essential information about our school's leadership, employment opportunities, frequently asked questions, and donation options to support our mission.</p>
-            <Link to="/kith/leadership" className='kith-link'>Read more </Link> 
-          </div>
+        
         </div>
+        </div>
+        
       </div>
+      <div className='new-kith-display-mobile'>
+        <div className='new-kith-display1'>
+
+
+        </div>
+        <div className='new-kith-display2'>
+
+
+        </div>
+        <div className='new-kith-display3'>
+
+
+        </div>
+        <div className='new-kith-display4'>
+
+
+        </div>
+        <div className='new-kith-display5'>
+
+
+        </div>
+        <div className='new-kith-display6'>
+
+
+        </div>
+        </div>
       <div className='kith-overview-div overview-img-div'>
         {/* <div className="kith-overview-img-list">
           <KithCarousels />
