@@ -7,7 +7,7 @@
 }
 .campus-culture-upper-section {
   background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1707757845/image_283_szquvy.png");
-  height: 90vh;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   text-align: center;
 }
 .campus-faq-section {
-  min-height: 100vh;
+  min-height: 110vh;
   width: 100%;
   background-color: #3f86f0;
   display: flex;
@@ -38,18 +38,24 @@
   justify-content: space-between;
   align-items: center;
   margin: 70px auto;
-  padding: 50px 0px;
 }
 .campus-faq-section-left {
-  width: 40%;
-  height: 70%;
+  width: 50%;
+  height: 100%;
   margin: auto;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 5%;
 }
 .campus-faq-section-left h1 {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 30px;
+  align-self: flex-start;
   font-family: "Noto Serif Display", serif;
 }
 .campus-font20 {
@@ -74,10 +80,13 @@
   max-width: 1000px;
 }
 .campus-faq-section-right {
-  width: 40%;
-  margin: auto;
-  height: 70%;
+  width: 50%;
+  margin: 0px auto;
+  height: 110vh;
   display: flex;
+  background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1707799693/Rectangle_1882_uamn0n.png");
+  background-size: cover;
+  background-position: center;
 }
 .each-question {
   display: flex;
@@ -237,6 +246,7 @@
     order: 2;
     height: auto;
     margin-top: 0;
+    padding-left: 0;
   }
   .campus-faq-section-right {
     width: 80%;

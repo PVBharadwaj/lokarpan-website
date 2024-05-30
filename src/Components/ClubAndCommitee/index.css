@@ -54,38 +54,39 @@
 }
 
 .club-commitee-culture-section {
-  height: 650px;
+  height: 110vh;
   width: 100%;
   background-color: #3f86f0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
   box-sizing: border-box;
   margin-bottom: 120px;
 }
 
 .club-commitee-culture-section img {
-  height: 70%;
-  width: 45%;
+  height: 100%;
+  width: 50%;
 }
 
 .club-commitee-culture-section div {
-  height: 85%;
-  width: 45%;
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: white;
-  margin-left: auto;
+  box-sizing: border-box;
+  padding: 0px 3%;
 }
 
 .club-commitee-culture-section div h1 {
   font-size: 48px;
   margin-bottom: 30px;
   font-family: "Noto Serif Display", serif;
+  align-self: flex-start;
 }
 .club-commitee-culture-section div p
 /* ul li  */ {
@@ -150,6 +151,9 @@
 }
 
 @media screen and (max-width: 748px) {
+  .club-commitee-img1 {
+    height: 300px;
+  }
   .club-commitee-upper-section a {
     font-size: 20px;
     width: 75%;
@@ -179,8 +183,8 @@
   }
 
   .club-commitee-culture-section {
-    height: 850px;
-    padding: 30px;
+    height: auto;
+    padding: 10px;
     flex-direction: column;
   }
 
@@ -188,7 +192,7 @@
     width: 90%;
   }
   .club-commitee-culture-section div {
-    width: 90%;
+    width: 95%;
     margin-top: 50px;
   }
   .club-commitee-culture-section div h1 {
@@ -235,7 +239,6 @@
     width: calc(100% - 40px);
   }
   .club-commitee-culture-section {
-    height: 1000px;
     padding: 30px;
   }
 }

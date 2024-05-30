@@ -49,7 +49,7 @@ class ClubAndCommitee extends Component {
           </div>
           <div className="club-commitee-culture-section">
             {/* <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707966843/Rectangle_1766_1_ewa8o6.png" /> */}
-            <div className="health-cont-img-div club-commitee-img1"></div>
+            <span className="health-cont-img-div club-commitee-img1"></span>
             <div>
               <h1>Our culture</h1>
               <p>
