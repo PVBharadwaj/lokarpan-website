@@ -368,6 +368,9 @@ const Navbar = () => {
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
                   <ul className="list-item-container">
+                  <li>
+                      <Link to="/kith/admission">Explore</Link>
+                    </li>
                     <li>
                       <Link to="/kith/how-to">How to ?</Link>
                     </li>
@@ -402,6 +405,9 @@ const Navbar = () => {
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
                   <ul className="list-item-container">
+                  <li>
+                      <Link to="/kith/life-at-school">Explore</Link>
+                    </li>
                     <li>
                       <Link to="/kith/campus-and-culture">
                         Campus & Culture
@@ -446,6 +452,9 @@ const Navbar = () => {
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
                   <ul className="list-item-container">
+                  <li>
+                      <Link to="/kith/information">Explore</Link>
+                    </li>
                     <li>
                       <Link to="/kith/leadership">Leadership</Link>
                     </li>
