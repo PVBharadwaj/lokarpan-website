@@ -2,8 +2,10 @@ import { Component } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import KithNavbar from "../Navbar/KithNavbar/index";
 import KithInfoSubNavbar from "../Navbar/KithInfoSubNavbar";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import KithFooter from "../KithFooter/index";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 class Alumni extends Component {
   render() {
@@ -13,12 +15,27 @@ class Alumni extends Component {
         <KithInfoSubNavbar />
         <div className="alumni-container">
           <div className="alumni-upper-container">
-            <h1>
-              We are thrilled to extend a warm welcome to you as part of the
-              Lokarpan family.
-            </h1>
+            {/* <h1>
+            Alumni Day Registration Now Open!
+            </h1> */}
           </div>
-          <div className="safety-last-section">
+
+          <div className="app-page">
+        <div className="app-div">
+        {/* app-title title2, application-para1 - used in approach and kith/life-at-school/campus-and-culture */}
+          <h1 className="app-title title2">
+            Alumni Day Registration Now Open!
+          </h1>
+          {/* className="application-para1"  -- used in approach -> index.js */}
+          <p className="application-para1">
+            
+          All alumni are invited to join the Lokarpan Alumni Association honouring alumni impact, citizenship, and community.
+
+          </p>
+            
+        </div>
+        </div>
+          {/* <div className="safety-last-section">
             <div className="safety-last-section-content">
               <div className="safety-last-section-content-left">
                 <h1 className="alumni-font36">Connect For Event</h1>
@@ -69,8 +86,48 @@ class Alumni extends Component {
                 </a>
               </div>
             </div>
+          </div> */}
+
+          <div className="alumini-mail-section-top">
+            <div className="alumni-mail-section">
+              <div className="alumni-mail-first-sec">
+                <h1 className="alumni-font28">Library</h1>
+                <p className="alumni-font20">
+                Alumni are eligible to visit the Kith n Kin libraries as well as apply for on-site Library access and borrowing
+                </p>
+              </div>
+              <div className="alumni-mail-second-sec">
+                <div>
+                  <h1 className="alumni-font28">Sports Facilities</h1>
+                  <p className="alumni-font20">
+                  Gain access to Kith’s athletics facilities through alumni and family membership passes.
+                  </p>
+                  {/* <ul>
+                    <li>Harvard College Fund</li>
+                    <li> Divinity School Annual Fund</li>
+                    <li> Business School John A. Smith Scholarship Fund</li>
+                  </ul> */}
+                </div>
+                {/* <div>
+                  <h1 className="alumni-font28">Kith Club</h1>
+                  <p className="alumni-font20">
+                  Get involved in one of the Kith Clubs across more than 5 countries worldwide.
+                  </p>
+                </div> */}
+              </div>
+              <div className="alumni-mail-third-sec">
+                <h1 className="alumni-font28">
+                Kith Club
+                </h1>
+                <p className="alumni-font20">
+                Get involved in one of the Kith Clubs across more than 5 countries worldwide.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="alumni-donate-section">
+
+
+          <div className="alumni-donate-section alumini-top-padding">
             {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708016452/Rectangle_1812_ci3h1r.png"
               className="alumni-donate-img"
@@ -79,72 +136,37 @@ class Alumni extends Component {
             <div className="alumni-donate-cont">
               <h1>Donate</h1>
               <p>
-                I appreciate your willingness to donate to Lokarpan
-                organization. However, as of my last knowledge update in January
-                2022, I don't have specific information about an organization
-                called Lokarpan. It's possible that it's a local or new
-                organization that has emerged since then.
+              The impactful initiatives of Kith and Kin School and the Centre of Excellence are sustained through generous philanthropic support. Our success is made possible by the contributions of diverse donors, including individuals like you. To continue supporting us, please click on the link below.
               </p>
-              <button className="alumni-donate-btn">Donate</button>
+              {/* <button className="alumni-donate-btn">Donate</button> */}
+              <Link className="give-card-link ways-space-up" to="/donate" style={{ color: '#06c' }}>
+                Donate<span className="arrow-icon">
+                <ArrowForwardIosIcon style={{ verticalAlign: 'middle', fontSize: '15px' }} />
+                </span></Link>
             </div>
           </div>
-          <div className="alumni-mail-section">
-            <div className="alumni-mail-first-sec">
-              <h1 className="alumni-font28">By Mail</h1>
-              <p className="alumni-font20">
-                Please complete our check donation form, print it and enclose
-                with a check payable to: "President and Fellows of Harvard
-                College." In the check's memo section, please designate the
-                allocation of the gift.
-              </p>
-            </div>
-            <div className="alumni-mail-second-sec">
-              <div>
-                <h1 className="alumni-font28">Example allocations include:</h1>
-                <ul>
-                  <li>Harvard College Fund</li>
-                  <li> Divinity School Annual Fund</li>
-                  <li> Business School John A. Smith Scholarship Fund</li>
-                </ul>
-              </div>
-              <div>
-                <h1 className="alumni-font28">Checks should be mailed to:</h1>
-                <p className="alumni-font20">
-                  Harvard University
-                  <br /> PO Box 419209Boston,
-                  <br /> MA 02241-9209
-                </p>
-              </div>
-            </div>
-            <div className="alumni-mail-third-sec">
-              <h1 className="alumni-font28">
-                For donors choosing Fedex or UPS:
-              </h1>
-              <p className="alumni-font20">
-                Bank of America Lockbox ServicesPresident & Fellows of Harvard
-                College Box 4192092 Morrissey BlvdMA5-527-02-07Dorchester, MA
-                02125
-              </p>
-            </div>
-          </div>
+
+
+
           <div className="alumni-donate-section">
             {/* <img
               src="https://res.cloudinary.com/digbzwlfx/image/upload/v1708016442/Rectangle_1814_u7as3o.png"
               className="alumni-donate-img"
             /> */}
-            <div className="health-cont-img-div alumni-img2"></div>
             <div className="alumni-donate-cont">
-              <h1>How to make a gifts</h1>
+              <h1>Make a Gift</h1>
               <p>
-                There are several ways to make a gift. If you would like to make
-                a gift today to the University, Schools, or affiliates, you may
-                do so by credit card, stock transfer, or mutual fund transfer
-                using our online giving forms.
+              Our vital donations often come as endowment gifts or direct contributions, providing essential resources for our work. Additionally, we benefit from investment assets and planned giving, where donors use estate planning and various funds to secure our ability to continue making a meaningful difference. To learn more, please click on the link below.
               </p>
-              <button className="alumni-donate-btn">Gift</button>
+              {/* <button className="alumni-donate-btn">Gift</button> */}
+              <Link className="give-card-link ways-space-up" to="/donate" style={{ color: '#06c' }}>
+                Gift<span className="arrow-icon">
+                <ArrowForwardIosIcon style={{ verticalAlign: 'middle', fontSize: '15px' }} />
+              </span></Link>
             </div>
+            <div className="health-cont-img-div alumni-img2"></div>
           </div>
-          <div className="alumni-last-section">
+          {/* <div className="alumni-last-section">
             <h1 className="alumni-font24-last alumni-space-left">
               Alumni center Resources
             </h1>
@@ -231,7 +253,7 @@ class Alumni extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <KithFooter />
       </>

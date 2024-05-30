@@ -96,6 +96,7 @@ const Application = () => {
       <Navbar />
       <EducationSubNav />
       <div className="application-top-img"></div>
+      {/* used kith alumini and employment pages */}
       <div className="app-page">
         <div className="app-div">
         {/* app-title title2, application-para1 - used in approach and kith/life-at-school/campus-and-culture */}

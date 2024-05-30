@@ -55,7 +55,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 300px;
+  width: calc(50% - 20px);
   margin-bottom: 30px;
 }
 .new-liv-grid-head {
