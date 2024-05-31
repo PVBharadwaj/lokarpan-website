@@ -49,6 +49,7 @@ const WaysToGive = () => {
       <div className="ways-top">
         <h1>Ways to give</h1>
       </div>
+      {/* used in kith/employment */}
       <div className="ways-page">
         <div className="give-card padding40">
           <div className="give-card-img give-card-img-1"></div>
