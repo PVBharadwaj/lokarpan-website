@@ -15,8 +15,8 @@ const Academics = () => {
         <div className="academics-upper-section-text">
           <h1>Academics</h1>
           <p>
-          Our curriculum fosters academic excellence, encouraging independent thinking and nurturing a lifelong curiosity and love for learning.
-
+            Our curriculum fosters academic excellence, encouraging independent
+            thinking and nurturing a lifelong curiosity and love for learning.
           </p>
         </div>
       </div>
@@ -37,41 +37,46 @@ const Academics = () => {
       <div className="academics-div">
         <h1>Curriculum and Approach</h1>
         <div className="academics-card">
-          <div className="academics-card-img academics-card-img-1">
-            {/* <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709277369/Rectangle_1922_ygjslo.png"
-              alt=""
-            /> */}
-          </div>
+          <div className="academics-card-img academics-card-img-1"></div>
           <div className="academics-card-text">
             <div>
-              <h3>Holistic and Beyond Standard Policies
-</h3>
+              <h3>Holistic and Beyond Standard Policies</h3>
               <p>
-              Our curriculum personalised learning pathways that extend beyond the NEP policy for Indian students, incorporating international standards like the Macau International School, IB Curriculum, and ICSE board.
-
+                Our curriculum personalised learning pathways that extend beyond
+                the NEP policy for Indian students, incorporating international
+                standards like the Macau International School, IB Curriculum,
+                and ICSE board.
               </p>
               <Link to="/" className="kith-link">
                 Stanford Undergrad
               </Link>
             </div>
+          </div>
+        </div>
+        <div className="academics-card">
+          <div className="academics-card-text">
             <div>
-              <h3>Innovative and Inclusive Learning Environment
-</h3>
+              <h3>Innovative and Inclusive Learning Environment</h3>
               <p>
-              The Kith Centre of Excellence is dedicated to training educators to deliver world-class education
-
+                The Kith Centre of Excellence is dedicated to training educators
+                to deliver world-class education
               </p>
               <Link to="/" className="kith-link">
                 Explore Majors
               </Link>
             </div>
+          </div>
+          <div className="academics-card-img academics-card-img-1"></div>
+        </div>
+        <div className="academics-card">
+          <div className="academics-card-img academics-card-img-1"></div>
+          <div className="academics-card-text">
             <div>
-              <h3>Integration with Lokarpan
-</h3>
+              <h3>Integration with Lokarpan</h3>
               <p>
-              Kith works alongside Lokarpan to innovate and refine solutions in online learning, analytics, teaching methodology, performance feedback, practice and testing, as well as health and nutrition.
-
+                Kith works alongside Lokarpan to innovate and refine solutions
+                in online learning, analytics, teaching methodology, performance
+                feedback, practice and testing, as well as health and nutrition.
               </p>
               <Link to="/" className="kith-link">
                 Facts about the Undergraduate Program
@@ -82,8 +87,9 @@ const Academics = () => {
       </div>
       <div className="academics-div academics-div-blue">
         <h3>
-        At Kith, we integrate technology as a tool to deliver a state of the art curriculum, offering students boundless opportunities to pursue their passions. 
-
+          At Kith, we integrate technology as a tool to deliver a state of the
+          art curriculum, offering students boundless opportunities to pursue
+          their passions.
         </h3>
         <Link to="/donate" className="kith-apply-btn white">
           Apply
@@ -96,62 +102,76 @@ const Academics = () => {
             <div>
               <h3>Encouraging Bilingualism</h3>
               <p>
-              English is the medium of instruction, with opportunities to learn and build expertise across both English and other languages.
+                English is the medium of instruction, with opportunities to
+                learn and build expertise across both English and other
+                languages.
               </p>
               <Link to="/" className="kith-link">
                 Graduate Education
               </Link>
             </div>
+          </div>
+          <div className="academics-card-img academics-card-img-2"></div>
+        </div>
+        <div className="academics-card">
+          <div className="academics-card-img academics-card-img-2"></div>
+          <div className="academics-card-text">
             <div>
               <h3>Language Learning Opportunities</h3>
               <p>
-              Beyond the primary years, students are individually advised on their choices of foreign language classes including Sanskrit, German, Portuguese, and Spanish.
+                Beyond the primary years, students are individually advised on
+                their choices of foreign language classes including Sanskrit,
+                German, Portuguese, and Spanish.
               </p>
               <Link to="/" className="kith-link">
                 Graduate Educations
               </Link>
             </div>
           </div>
-          <div className="academics-card-img academics-card-img-2">
-            {/* <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709277385/Rectangle_1924_qhodkb.png"
-              alt=""
-            /> */}
-          </div>
         </div>
       </div>
       <div className="academics-div academics-div-last">
         <h1>Academic Standards</h1>
         <div className="academics-card">
-          <div className="academics-card-img academics-card-img-3">
-            {/* <img
-              src="https://res.cloudinary.com/digbzwlfx/image/upload/v1709281412/Rectangle_1925_ue0lq3.png"
-              alt=""
-            /> */}
-          </div>
+          <div className="academics-card-img academics-card-img-3"></div>
           <div className="academics-card-text">
             <div>
               <h3>High Academic Standards</h3>
               <p>
-              We ensure a significantly low teacher-to-student ratio, allowing for more personalised attention and support.
+                We ensure a significantly low teacher-to-student ratio, allowing
+                for more personalised attention and support.
               </p>
               <Link to="/" className="kith-link">
                 Stanford Undergrad
               </Link>
             </div>
+          </div>
+        </div>
+        <div className="academics-card">
+          <div className="academics-card-text">
             <div>
               <h3>Professional Development for Educators</h3>
               <p>
-              Teachers are regularly evaluated and provided with professional development opportunities to enhance their teaching skills and methodologies.
- </p>
+                Teachers are regularly evaluated and provided with professional
+                development opportunities to enhance their teaching skills and
+                methodologies.
+              </p>
               <Link to="/" className="kith-link">
                 Explore Majors
               </Link>
             </div>
+          </div>
+          <div className="academics-card-img academics-card-img-3"></div>
+        </div>
+        <div className="academics-card">
+          <div className="academics-card-img academics-card-img-3"></div>
+          <div className="academics-card-text">
             <div>
               <h3>Commitment to Excellence</h3>
               <p>
-              We uphold an honour code with a 100% pass percentage and high performance, particularly in STEM subjects.</p>
+                We uphold an honour code with a 100% pass percentage and high
+                performance, particularly in STEM subjects.
+              </p>
               <Link to="/" className="kith-link">
                 Facts about the Undergraduate Program
               </Link>

@@ -39,11 +39,14 @@
 .information-list {
   width: calc(100% - 250px);
   height: 180px;
-  margin: 100px auto;
+  margin: 140px auto;
 }
 
 .information-list li {
-  list-style-type: disc;
+  font-size: 32px;
+  font-weight: 600;
+  list-style-type: none;
+  text-align: center;
 }
 .information-alumni-employment-section {
   height: auto;
@@ -124,7 +127,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-height: 120px;
+  max-height: 300px;
   padding: 0;
   border-bottom: 1px solid #c9c9c9;
 }
@@ -144,7 +147,7 @@
 }
 
 .info-input:checked + label + div {
-  max-height: 200px;
+  max-height: 500px;
   visibility: visible;
   opacity: 1;
   padding: 20px;
@@ -196,6 +199,11 @@
   display: none;
 }
 
+.inf-font-24 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
 @media screen and (max-width: 748px) {
   .mobile-information-upper-section {
     display: flex;

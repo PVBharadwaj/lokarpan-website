@@ -46,18 +46,27 @@ class CampusAndCulture extends Component {
           </div>
 
           <h1 className="app-title title2 campus-head">
-          Discover what it’s like to work here
+            Discover what it’s like to work here
           </h1>
           <p className="application-para1 campus-para">
-          Welcome to a place where passion meets purpose, and where every individual is a valued contributor to our shared vision. Lokarpan's culture is one of inclusivity, collaboration, and a deep commitment to making a positive impact.
+            Welcome to a place where passion meets purpose, and where every
+            individual is a valued contributor to our shared vision. Lokarpan's
+            culture is one of inclusivity, collaboration, and a deep commitment
+            to making a positive impact.
           </p>
-
 
           <div className="campus-faq-section">
             <div className="campus-faq-section-left">
               <h1>Our Clubs</h1>
               <p className="campus-font20">
-              Our campus is a more dynamic hub of activity than it has ever been and this is well reflected in the growing popularity of clubs and committees that celebrate and champion innovation and academic excellence in its many forms – from our x and y clubs to the z club. Over the years, our clubs have been blessed with a rich array of experts in their fields who are able to communicate their knowledge and experience with passion and enthusiasm.
+                Our campus is a more dynamic hub of activity than it has ever
+                been and this is well reflected in the growing popularity of
+                clubs and committees that celebrate and champion innovation and
+                academic excellence in its many forms – from our x and y clubs
+                to the z club. Over the years, our clubs have been blessed with
+                a rich array of experts in their fields who are able to
+                communicate their knowledge and experience with passion and
+                enthusiasm.
               </p>
 
               {/* <ul className="questions-container">
@@ -79,23 +88,28 @@ class CampusAndCulture extends Component {
                 ))}
               </ul> */}
             </div>
-            <div className="campus-faq-section-right">
-              <img
-                src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707799693/Rectangle_1882_uamn0n.png"
-                className="right-img"
-              />
-            </div>
+            <div className="campus-faq-section-right"></div>
           </div>
 
           <div className="kith-overview-card mob-pad-bot">
-          <div className='kith-overview-card-img kith-overview-card-img-1'></div>
-          <div className="kith-overview-card-text">
-            <h3>Our Culture</h3>
-            <p>
-            At Kith, we foster a deeply inclusive environment where every member of our community—children, staff, and families alike—feels valued and welcomed without exception. Our commitment to fostering a culture of acceptance, diversity, and inclusion is fundamental to our ethos. Every educator is responsible for ensuring that no child's self-worth is undermined or their potential hindered by any form of bullying. We strive to identify and eliminate any obstacles that may impede a child's growth and fulfillment. Inclusive education guides us in respectfully navigating disagreements and coexisting harmoniously, even with diverse perspectives.
-            </p>
+            <div className="kith-overview-card-img kith-overview-card-img-1"></div>
+            <div className="kith-overview-card-text">
+              <h3>Our Culture</h3>
+              <p>
+                At Kith, we foster a deeply inclusive environment where every
+                member of our community—children, staff, and families
+                alike—feels valued and welcomed without exception. Our
+                commitment to fostering a culture of acceptance, diversity, and
+                inclusion is fundamental to our ethos. Every educator is
+                responsible for ensuring that no child's self-worth is
+                undermined or their potential hindered by any form of bullying.
+                We strive to identify and eliminate any obstacles that may
+                impede a child's growth and fulfillment. Inclusive education
+                guides us in respectfully navigating disagreements and
+                coexisting harmoniously, even with diverse perspectives.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
         <KithFooter />
       </>

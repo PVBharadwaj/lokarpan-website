@@ -29,45 +29,24 @@ class KithLeadership extends Component {
         <div className="kith-leadership-container">
           <div className="kith-leadership-upper-section">
             <div>
-              <h1>Leadership</h1>
+              <h1>Building the Next Big Thing</h1>
               <p>
-                At Lokarpan, we believe that leadership is not just about
-                holding a title; it's about inspiring positive change and
-                fostering growth within our community. We are excited to share
-                the various leadership opportunities available and the qualities
-                that define our leaders.
+              Leadership at Kith is about trusting your team to introduce revolutionary ideas that will boost classroom outcomes.
+
               </p>
             </div>
             <img src="https://res.cloudinary.com/digbzwlfx/image/upload/v1707978452/Rectangle_1809_ke4omy.png" />
           </div>
           <div className="mobile-kith-leadership-upper-section">
-            <h1>Leadership</h1>
+            <h1>Building the Next Big Thing</h1>
             <p>
-              At Lokarpan, we believe that leadership is not just about holding
-              a title; it's about inspiring positive change and fostering growth
-              within our community. We are excited to share the various
-              leadership opportunities available and the qualities that define
-              our leaders.
+            Leadership at Kith is about trusting your team to introduce revolutionary ideas that will boost classroom outcomes.
+
             </p>
           </div>
-          <ul className="kith-leadership-list">
-            <li>
-              <b> Executive Leadership Team:</b> Guides the strategic direction
-              of Kith and oversees organisational initiatives.
-            </li>
-            <li>
-              <b> Student Committees: </b> Our dynamic student committees are
-              shaping the path for program development, community outreach, and
-              innovation in education.
-            </li>
-            <li>
-              <b> Student Clubs:</b> Inspiring and guiding members dedicated to
-              environmental stewardship, youth empowerment, or art for social
-              change.
-            </li>
-          </ul>
+          
           <div className="kith-leadership-images-container">
-            <h1 className="kith-font48">Board</h1>
+            <h1 className="kith-font48">Officers</h1>
             <KithSearchBar />
             <ul className="images-list">
               {imagesList.map((each) => (
