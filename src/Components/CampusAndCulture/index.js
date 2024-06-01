@@ -38,22 +38,18 @@ class CampusAndCulture extends Component {
         <KithNavbar />
         <KithLifeAtSchoolSubNavbar />
         <div className="campus-culture-container">
-          <div className="campus-culture-upper-section">
-            {/* <h1 className="campus-font48">Discover what it’s like to work here</h1>
-            <p className="campus-font32">
-            Welcome to a place where passion meets purpose, and where every individual is a valued contributor to our shared vision. Lokarpan's culture is one of inclusivity, collaboration, and a deep commitment to making a positive impact.
-            </p> */}
+          <div className="campus-culture-upper-section"></div>
+          <div className="campus-cul-content-section">
+            <h1 className="kith-life-head ">
+              Discover what it’s like to work here
+            </h1>
+            <p className="kith-life-para">
+              Welcome to a place where passion meets purpose, and where every
+              individual is a valued contributor to our shared vision.
+              Lokarpan's culture is one of inclusivity, collaboration, and a
+              deep commitment to making a positive impact.
+            </p>
           </div>
-
-          <h1 className="app-title title2 campus-head">
-            Discover what it’s like to work here
-          </h1>
-          <p className="application-para1 campus-para">
-            Welcome to a place where passion meets purpose, and where every
-            individual is a valued contributor to our shared vision. Lokarpan's
-            culture is one of inclusivity, collaboration, and a deep commitment
-            to making a positive impact.
-          </p>
 
           <div className="campus-faq-section">
             <div className="campus-faq-section-left">
