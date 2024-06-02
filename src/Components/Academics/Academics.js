@@ -11,14 +11,13 @@ const Academics = () => {
     <>
       <KithNavbar />
       <KithLifeAtSchoolSubNavbar />
-      <div className="academics-upper-section">
-        <div className="academics-upper-section-text">
-          <h1>Academics</h1>
-          <p>
-            Our curriculum fosters academic excellence, encouraging independent
-            thinking and nurturing a lifelong curiosity and love for learning.
-          </p>
-        </div>
+      <div className="academics-upper-section"></div>
+      <div className="academics-upper-section-text">
+        <h1>Academics</h1>
+        <p>
+          Our curriculum fosters academic excellence, encouraging independent
+          thinking and nurturing a lifelong curiosity and love for learning.
+        </p>
       </div>
       <div className="academics-stats">
         <div>
@@ -47,9 +46,9 @@ const Academics = () => {
                 standards like the Macau International School, IB Curriculum,
                 and ICSE board.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Stanford Undergrad
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -61,9 +60,9 @@ const Academics = () => {
                 The Kith Centre of Excellence is dedicated to training educators
                 to deliver world-class education
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Explore Majors
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="academics-card-img academics-card-img-1"></div>
@@ -78,9 +77,9 @@ const Academics = () => {
                 in online learning, analytics, teaching methodology, performance
                 feedback, practice and testing, as well as health and nutrition.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Facts about the Undergraduate Program
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -106,9 +105,9 @@ const Academics = () => {
                 learn and build expertise across both English and other
                 languages.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Graduate Education
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="academics-card-img academics-card-img-2"></div>
@@ -123,9 +122,9 @@ const Academics = () => {
                 their choices of foreign language classes including Sanskrit,
                 German, Portuguese, and Spanish.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Graduate Educations
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -141,9 +140,9 @@ const Academics = () => {
                 We ensure a significantly low teacher-to-student ratio, allowing
                 for more personalised attention and support.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Stanford Undergrad
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -156,9 +155,9 @@ const Academics = () => {
                 development opportunities to enhance their teaching skills and
                 methodologies.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Explore Majors
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="academics-card-img academics-card-img-3"></div>
@@ -172,9 +171,9 @@ const Academics = () => {
                 We uphold an honour code with a 100% pass percentage and high
                 performance, particularly in STEM subjects.
               </p>
-              <Link to="/" className="kith-link">
+              {/* <Link to="/" className="kith-link">
                 Facts about the Undergraduate Program
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

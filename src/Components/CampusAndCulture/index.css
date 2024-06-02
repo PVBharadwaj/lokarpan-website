@@ -62,8 +62,9 @@
   font-size: 20px;
   margin: 10px auto;
   margin-top: 0;
-  line-height: 1.5;
   font-weight: 600;
+  line-height: 1.1666666667;
+  letter-spacing: 0.216px;
 }
 
 .campus-head,
@@ -75,6 +76,15 @@
 .campus-head {
   padding: 150px 0px 20px;
   font-family: "Noto Serif Display", serif;
+}
+
+.campus-cul-content-section {
+  width: 70%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .campus-para {
   max-width: 1000px;
@@ -218,6 +228,9 @@
 }
 
 @media screen and (max-width: 748px) {
+  .campus-cul-content-section {
+    width: 90%;
+  }
   .campus-culture-upper-section {
     height: 400px;
   }

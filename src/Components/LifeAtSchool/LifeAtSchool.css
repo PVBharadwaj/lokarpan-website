@@ -21,13 +21,16 @@
   margin-bottom: 30px;
   line-height: 1.05;
 }
-.life-at-school-upper-section > p {
-  font-size: 28px;
-  width: calc(100% - 300px);
-  margin: 0 auto;
-  text-align: center;
-}
 
+.kith-life-para {
+  width: 80% !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  line-height: 1.1666666667 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.216px;
+}
 .life-at-school-head h1,
 .life-at-school-head p {
   position: relative;
@@ -42,12 +45,11 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  gap: 64px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 100px 20px;
+  padding: 100px 0px;
 }
 
 .life-at-school-div > h1 {
@@ -108,6 +110,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
+  margin-top: 30px;
 }
 
 .life-at-school-div img {
@@ -126,7 +129,30 @@
 .clubs-div div {
   margin-bottom: 30px;
 }
+.kith-life-head {
+  font-size: 96px !important;
+  line-height: 1;
+  font-weight: 700 !important;
+  letter-spacing: -0.1.344px;
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 30px !important;
+  text-align: center !important;
+}
 @media screen and (max-width: 748px) {
+  .kith-life-head {
+    font-size: 44px !important;
+    line-height: 1.0909090909 !important;
+    font-weight: 700;
+    letter-spacing: -0.616px !important;
+  }
+  .kith-life-para {
+    font-size: 17px !important;
+    line-height: 1.2353641176 !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.629px !important;
+    width: 90% !important;
+    padding: 0px !important;
+  }
   .life-at-school-head {
     padding: 75px 32px !important;
   }

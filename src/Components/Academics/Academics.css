@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
 
 .academics-upper-section {
-  height: 600px;
+  height: 700px;
   background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709281455/Rectangle_1812_2_x0edne.png");
   background-position: center;
   background-size: cover;
@@ -9,25 +9,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  /* padding-left: 123px; */
+  align-items: center;
+  margin-bottom: 70px;
 }
 
 .academics-upper-section-text {
-  width: 500px;
-  height: auto;
-  padding-left: 50px;
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.academics-upper-section h1 {
-  font-size: 48px;
-  font-weight: 700;
+.academics-upper-section-text h1 {
+  font-size: 80px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  font-family: "Noto Serif Display", serif;
 }
-.academics-upper-section p {
-  font-size: 24px;
-  width: 600px;
-  font-weight: 500;
-  margin-top: 20px;
+.academics-upper-section-text p {
+  font-size: 21px;
+  line-height: 1.381002381;
+  font-weight: 600;
+  letter-spacing: -0.231px;
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
 }
 .academics-upper-section-text,
 .academics-div > h1,
@@ -84,7 +93,7 @@
   display: flex;
   /* gap: 30px; */
   /* padding: 75px 0px; */
-  height: 120vh;
+  height: 110vh;
   width: 100%;
   margin: 100px 0 !important;
 }
