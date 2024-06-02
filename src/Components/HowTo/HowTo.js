@@ -84,9 +84,24 @@ const HowTo = () => {
   );
 
   const handleCheckboxChange = (id) => {
-    setCheckboxes({
-      // ...checkboxes,  //  Spread operator to keep the previous change
-      [id]: !checkboxes[id],
+    setCheckboxes((prev) => ({
+      // ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
+  const handleShowAllClick = () => {
+    setShowAll((prevShowAll) => {
+      const newShowAll = !prevShowAll;
+      if (!newShowAll) {
+        setCheckboxes(
+          howtoFaqs.reduce((acc, curr) => {
+            acc[curr.id] = false;
+            return acc;
+          }, {})
+        );
+      }
+      return newShowAll;
     });
   };
 
@@ -118,17 +133,14 @@ const HowTo = () => {
         <div className="how-to-faq-section">
           <div className="how-to-head-sec">
             <h1 className="how-to-faqs-head">Frequently asked Questions</h1>
-            <p
-              className="how-to-faqs-para-1"
-              onClick={() => setShowAll(!showAll)}
-            >
-              Show All
+            <p className="how-to-faqs-para-1" onClick={handleShowAllClick}>
+              {showAll ? "Hide All" : "Show All"}
             </p>
           </div>
 
           <ul className="how-to-questions-container-1">
             {howtoFaqs.map((each) => (
-              <li className="how-to-each-question-1">
+              <li className="how-to-each-question-1" key={each.id}>
                 <input
                   type="checkbox"
                   id={each.id}
