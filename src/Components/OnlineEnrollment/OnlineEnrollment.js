@@ -15,14 +15,8 @@ const OnlineEnrollment = () => {
       <div className="enrollment-upper-section">
         <h1>Welcome to our Admissions portal</h1>
         <p>
-          A Registration of Interest allows you to submit general and contact
-          information for a parent or guardian as well as the potential
-          candidate’s general information.{" "}
-          <span>
-            <a href="/" className="enrollment-upper-section-a">
-              Read more
-            </a>
-          </span>
+        A Registration of Interest allows you to submit general and contact information for a parent or guardian as well as the potential candidate’s general information. 
+
         </p>
         <Link to="/donate" className="kith-apply-btn white">
           Apply
@@ -32,7 +26,7 @@ const OnlineEnrollment = () => {
       <div className="enrollment-div">
         <h3>Start your Application</h3>
         <p>
-          Applications to Kith are submitted online via the Application Form.
+        Applications to Kith are submitted online via the Application Form. 
         </p>
       </div>
       <div className="enrollment-form enrollment-card-div enrollment-div">
@@ -41,12 +35,7 @@ const OnlineEnrollment = () => {
           <div className="enrollment-card-text">
             <h3>Application Form</h3>
             <p className="white-txt">
-              This form is for submitting detailed information required for the
-              admissions process. It includes general and contact information
-              for a parent or guardian, as well as specific details about the
-              potential candidate's academic background, extracurricular
-              activities, and any other relevant information. Click here to
-              access the Admissions Application Form.
+            This form is for submitting detailed information required for the admissions process. It includes general and contact information for a parent or guardian, as well as specific details about the potential candidate's academic background, extracurricular activities, and any other relevant information. Click here to access the Admissions Application Form.
             </p>
             <Link to="/" className="kith-apply-btn white">
               Submit Application

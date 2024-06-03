@@ -2,7 +2,7 @@
 
 .admissions-upper-section {
   background-image: url("https://res.cloudinary.com/digbzwlfx/image/upload/v1709032199/image_278_lu8lql.png");
-  height: 600px;
+  height: 712px;
   width: 100%;
   /* background-position: center; */
   background-size: cover;
@@ -16,8 +16,8 @@
 .admissions-upper-section h1 {
   font-size: 64px;
   text-align: center;
-  width: calc(100% - 200px);
-  margin: 0 auto;
+  width: calc(100% - 400px);
+  margin: 0  auto;
 }
 
 .admissions-head h1 {

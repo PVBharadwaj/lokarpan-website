@@ -59,9 +59,7 @@ const KithInfoSubNavbar = () => {
                   <li>
                       <Link to="/kith/information">Explore</Link>
                     </li>
-                    <li>
-                      <Link to="/kith/information">Explore</Link>
-                    </li>
+                   
                   <li>
                     <Link to="/kith/leadership">Leadership</Link>
                   </li>

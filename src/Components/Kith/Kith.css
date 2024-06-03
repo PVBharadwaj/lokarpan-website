@@ -3,7 +3,7 @@
 .kith-overview-head {
   background-image: url("https://res.cloudinary.com/dtfzxqpoy/image/upload/v1709446765/image_274_lwa7he.png");
   background-size: cover;
-  height: 600px;
+  height: 712px;
   width: 100%;
   background-size: cover;
   display: flex;
@@ -167,7 +167,7 @@
 }
 
 .overview-grid-inner .kith-link {
-  color: #3f86f0;
+  color: #000;
   padding: 0 40px;
 }
 
@@ -184,7 +184,7 @@
   background-repeat: no-repeat;
   background-size: 130%;
   background-position: center center;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .kith-overview-grid-inner1 {
@@ -211,7 +211,7 @@
 }
 
 .kith-overview-grid-inner4 {
-  background-color: #3f86f0;
+  background-color: #030224;
   grid-row: span 1;
   grid-column: span 4;
 }
@@ -241,7 +241,34 @@
   display: flex;
   align-items: flex-start;
 }
+.kith-explore{
+  padding: 120px 40px 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.kith-explore {
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
 
+.kith-explore:hover {
+  color: #2251ff;
+  transform: translateY(-10px);
+}
+
+.kith-explore a {
+  color: inherit;
+
+}
+
+.kith-explore:hover a {
+  color: inherit;
+}
+
+
+.exll{
+  padding-top: 10px;
+}
 .kith-overview-grid-inner7 > div > div {
   background-color: #2251ff;
   padding: 30px 0px;
@@ -254,13 +281,13 @@
   cursor: pointer;
 
   background-size: 140%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
-.kith-overview-grid-inner3:hover {
-  background-size: 120%;
-  transition: all 1s ease-in-out;
-  cursor: pointer;
+
+.kith-overview-grid-inner1 .kith-link{
+  color: #fff;
 }
+
 .kith-overview-grid-inner1 p {
   font-size: 28px;
   color: white;
@@ -308,43 +335,44 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: all 1s;
+  transition: all .5s;
 }
 
 .kith-overview-grid-inner7 .kith-link1:hover {
   gap: 20px;
-  transition: all 1s;
+  transition: all .5s;
   cursor: pointer;
 }
 
 .kith-overview-grid-inner1 div {
   padding-bottom: 50px;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.kith-overview-grid-inner1:hover div p {
-  color: #3f86f0;
-  transform: translateY(-10px);
-  transition: all 1s ease-in-out;
+.kith-overview-grid-inner1:hover div p ,.kith-overview-grid-inner1:hover .kith-link{
+  color: #2251ff;
+  transform: translateY(-5px);
+  transition: all .5s ease-in-out;
 }
 
 .kith-overview-grid-inner2 div,
 .kith-overview-grid-inner3 div,
 .kith-overview-grid-inner8 div,
 .kith-overview-grid-inner7 div p {
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .kith-overview-grid-inner2:hover div,
-.kith-overview-grid-inner3:hover div p,
+
 .kith-overview-grid-inner8:hover div,
 .kith-overview-grid-inner7:hover div p,
 .kith-overview-grid-inner5:hover div p {
-  color: #3f86f0;
+  color: #2251ff;
   transform: translateY(-10px);
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
   cursor: pointer;
 }
+
 
 .mobile-only {
   display: none;
@@ -352,17 +380,19 @@
 
 .kith-overview-grid-inner4 p {
   color: white;
-  font-size: 28px;
-  padding: 40px;
-  transition: all 1s ease-in-out;
+  font-size: 24px;
+  padding: 4rem;
+  padding-right: 20rem;
+  transition: all .5s ease-in-out;
   font-weight: 600;
   line-height: 1.5;
 }
 
 .kith-overview-grid-inner4:hover p {
-  color: black;
+  color: #007aff;
+  
   transform: translateY(-5px);
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
   cursor: pointer;
 }
 
@@ -384,7 +414,7 @@
 .kith-overview-last-div {
   background-color: #3f86f0;
   color: white;
-  padding: 200px;
+  padding: 100px;
   margin-bottom: 300px;
 }
 
@@ -414,6 +444,7 @@
 @media only screen and (max-width: 805px) {
   .new-kith-display-mobile {
     display: block;
+    color: #fff;
   }
   .new-kith-display1 {
     width: 100%;
@@ -423,7 +454,29 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
+.new-kith-display-head{
+  padding: 20px;
+  padding-top: 200px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.new-kith-display-head1{
+  padding: 20px;
+  padding-top: 250px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+.new-kith-display-link{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 20px ;
+}
+.new-kith-display-link1{
+  padding: 1rem;
+  font-size: 24px;
+  font-weight: 600;
+}
   .new-kith-display2 {
     width: 100%;
     height: 370px;
@@ -436,7 +489,7 @@
   .new-kith-display3 {
     width: 100%;
     height: 370px;
-    background-color: #3f86f0;
+    background-color: #030224;
   }
 
   .new-kith-display4 {
