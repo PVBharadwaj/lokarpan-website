@@ -368,9 +368,7 @@ const Navbar = () => {
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
                   <ul className="list-item-container">
-                  <li>
-                      <Link to="/kith/admission">Explore</Link>
-                    </li>
+                  
                     <li>
                       <Link to="/kith/admission">Admission</Link>
                     </li>
@@ -408,9 +406,7 @@ const Navbar = () => {
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
                   <ul className="list-item-container">
-                  <li>
-                      <Link to="/kith/life-at-school">Explore</Link>
-                    </li>
+                 
                     <li>
                       <Link to="/kith/life-at-school">
                         Life At School
@@ -460,9 +456,7 @@ const Navbar = () => {
               <div className="dropdown-content-inner">
                 <div className="dropdown-container">
                   <ul className="list-item-container">
-                  <li>
-                      <Link to="/kith/information">Explore</Link>
-                    </li>
+                 
                     <li>
                       <Link to="/kith/information">Information</Link>
                     </li>

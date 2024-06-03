@@ -111,8 +111,8 @@ const HowTo = () => {
       <KithAdmissionSubNavbar />
       <div className="how-to-upper-section">
         <h1>
-          We are thrilled to extend a warm welcome to you as part of the Kith n
-          Kin family
+        We are thrilled to extend a warm welcome to you as part of the Kith n Kin family
+
         </h1>
       </div>
       <div className="howto-page">
@@ -120,11 +120,11 @@ const HowTo = () => {
           <div className="howto-card-img"></div>
           <div className="howto-card-text">
             <h3>How to?</h3>
+            <p>Dear Parent or Guardian,
+</p>
             <p>
-              As you embark on this journey with us, your commitment and
-              enthusiasm are integral to our success. Lokarpan is built on the
-              principles of transparency, inclusivity, and empowerment.
-            </p>
+            Thank you for your interest in having your child considered for admission at the Kith n Kin School. The admission process is as follows:
+</p>
           </div>
         </div>
         <SegmentButton />

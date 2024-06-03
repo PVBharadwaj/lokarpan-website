@@ -66,7 +66,7 @@ const KithAdmissionSubNavbar = () => {
                     <Link to="/kith/enrollment">OnlineEnrollment</Link>
                   </li>
                   <li>
-                    <Link to="/kith/academics">Academics</Link>
+                    <Link to="/kith/financials">Financials</Link>
                   </li>
                 </ul>
               </div>
